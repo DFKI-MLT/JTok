@@ -1,0 +1,195 @@
+<project name="JTok" default="compile" basedir="..">
+
+  <description>
+  This buildfile is used to build the JTok project.
+  </description>
+
+  <!-- set global properties for this build -->
+  <property name="bin" value="${basedir}/bin" />
+  <property name="build" value="${basedir}/build" />
+  <property name="conf" value="${basedir}/conf" />
+  <property name="classes" value="${basedir}/classes" />
+  <property name="doc" value="${basedir}/doc" />
+  <property name="lib" value="${basedir}/lib" />
+  <property name="src" value="${basedir}/src" />
+  <property name="jar.file" value="${basedir}/jtok.jar" />
+  <property name="sa-jar.file" value="${basedir}/jtok-standalone.jar" />
+
+
+  <!-- 
+    set default compile options -->
+  <property name="compile.debug" value="true" />
+  <property name="compile.deprecation" value="false" />
+  <property name="compile.optimize" value="true" />
+  <property name="compile.includeantruntime" value="false" />
+
+  <!-- set class path for compilation and docs -->
+  <path id="compile.class.path">
+    <pathelement location="${src}" />
+    <fileset dir="${lib}" includes="**/*.jar" />
+  </path>
+
+
+  <!-- INIT target -->
+  <target name="init" description="This initializes the time stamp.">
+    <!-- Create the time stamp -->
+    <tstamp />
+  </target>
+
+
+  <!-- CLEAN target -->
+  <target name="clean"
+          depends="init"
+          description="This deletes all stuff that can be created with targets of this build.">
+    <delete dir="${classes}" />
+    <delete dir="${doc}" />
+    <delete file="${jar.file}" />
+    <delete file="${sa-jar.file}" />
+  </target>
+
+
+  <!-- COMPILE target -->
+  <target name="compile"
+          depends="init"
+          description="This compiles all sources.">
+    <!-- create the ${classes} directory -->
+    <mkdir dir="${classes}" />
+    <!-- compile the java code from ${src} into ${classes} -->
+    <javac destdir="${classes}"
+           srcdir="${src}"
+           debug="${compile.debug}"
+           includeantruntime="${compile.includeantruntime}"
+           deprecation="${compile.deprecation}"
+           optimize="${compile.optimize}"
+           excludes="**/others/*"
+           classpathref="compile.class.path" />
+  </target>
+
+
+  <!-- JAR target -->
+  <target name="jar" depends="compile" description="This creates a jar file.">
+    <jar jarfile="${jar.file}" basedir="${classes}" />
+  </target>
+
+
+  <!-- JAR_DIST target -->
+  <target name="jar_dist"
+          depends="compile"
+          description="This creates a standalone jar distribution with config included">
+    <!-- delete the old jar file -->
+    <delete file="${sa-jar.file}" />
+    <!-- Put everything in ${classes} and ${conf} into the standalone jar file -->
+    <jar destfile="${sa-jar.file}" compress="true">
+      <fileset dir="${classes}">
+        <include name="**/*.class" />
+      </fileset>
+      <fileset dir="${conf}">
+        <include name="**/*" />
+      </fileset>
+    </jar>
+  </target>
+
+
+  <!-- DOC target -->
+  <target name="doc"
+          depends="init"
+          description="This creates the Java docs for the project.">
+    <!-- delete the doc directory tree -->
+    <delete dir="${doc}" />
+    <!-- create a new doc directory -->
+    <mkdir dir="${doc}" />
+    <!-- create documentation -->
+    <javadoc sourcepath="${src}"
+             destdir="${doc}"
+             packagenames="de.dfki.lt.tools.tokenizer.*"
+             excludepackagenames="de.dfki.lt.tools.tokenizer.regexp.others"
+             classpathref="compile.class.path"
+             Version="true"
+             Author="true"
+             Private="false" />
+  </target>
+
+
+  <!-- DIST target -->
+  <target name="dist"
+          depends="clean, compile, doc"
+          description="This creates a distribution archive without the sources.">
+    <!-- query version number to use for this distribution -->
+    <input message="Enter version number for this release"
+           addproperty="version.number" />
+    <!-- tar relevant files -->
+    <tar tarfile="${basedir}/JTok-V${version.number}-${DSTAMP}.tar">
+      <!-- tar bin directory -->
+      <tarfileset dir="${basedir}"
+                  prefix="jtok-${version.number}"
+                  mode="755"
+                  includes="bin/**" />
+      <!-- tar data directory -->
+      <tarfileset dir="${basedir}"
+                  prefix="jtok-${version.number}"
+                  includes="data/german/**,data/english/**,data/test/**"
+                  excludes="data/english/mm-test.txt" />
+      <!-- tar lib directory -->
+      <tarfileset dir="${basedir}"
+                  prefix="jtok-${version.number}"
+                  includes="lib/**" />
+      <!-- tar conf and doc directory and readme file -->
+      <tarfileset dir="${basedir}"
+                  prefix="jtok-${version.number}"
+                  includes="conf/**,${doc}/**,${jar.file},readme.txt" />
+    </tar>
+    <!-- zip the tar file -->
+    <gzip zipfile="${basedir}/JTok-V${version.number}-${DSTAMP}.tar.gz"
+          src="${basedir}/JTok-V${version.number}-${DSTAMP}.tar" />
+    <!-- delete tar file -->
+    <delete file="${basedir}/JTok-V${version.number}-${DSTAMP}.tar" />
+  </target>
+
+
+  <!-- DIST_ALL target -->
+  <target name="dist_all"
+          depends="clean, compile, doc"
+          description="This creates a distribution archive including the sources.">
+    <!-- query version number to use for this distribution -->
+    <input message="Enter version number for this release"
+           addproperty="version.number" />
+    <!-- tar relevant files -->
+    <tar tarfile="${basedir}/JTok+src-V${version.number}-${DSTAMP}.tar">
+      <!-- tar bin directory -->
+      <tarfileset dir="${basedir}"
+                  prefix="jtok-${version.number}"
+                  mode="755"
+                  includes="bin/**" />
+      <!-- tar data directory -->
+      <tarfileset dir="${basedir}"
+                  prefix="jtok-${version.number}"
+                  includes="data/german/**,data/english/**,data/test/**"
+                  excludes="data/english/mm-test.txt" />
+      <!-- tar lib directory -->
+      <tarfileset dir="${basedir}"
+                  prefix="jtok-${version.number}"
+                  includes="lib/**" />
+      <!-- tar conf and docs directory and readme file -->
+      <tarfileset dir="${basedir}"
+                  prefix="jtok-${version.number}"
+                  includes="conf/**,${doc}/**,${jar.file},readme.txt" />
+      <!-- tar src directory -->
+      <tarfileset dir="${basedir}"
+                  prefix="jtok-${version.number}"
+                  includes="src/**"
+                  excludes="**/others/*" />
+      <!-- tar build directory -->
+      <tarfileset dir="${basedir}"
+                  prefix="jtok-${version.number}"
+                  includes="build/**" />
+    </tar>
+    <!-- zip the tar file -->
+    <gzip zipfile="${basedir}/JTok+src-V${version.number}-${DSTAMP}.tar.gz"
+          src="${basedir}/JTok+src-V${version.number}-${DSTAMP}.tar" />
+    <!-- delete tar file -->
+    <delete file="${basedir}/JTok+src-V${version.number}-${DSTAMP}.tar" />
+  </target>
+
+</project>
+
+
