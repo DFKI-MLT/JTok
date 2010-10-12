@@ -258,7 +258,7 @@ public class JTok {
 
     // iterate over input
     for(char c = input.first(); c != CharacterIterator.DONE; c = input.next()) {
-      if (Character.isWhitespace(c)) {
+      if (Character.isWhitespace(c) || c == '\u00a0') {
         if (tokenFound) {
           // annotate newly identified token
           input.annotate(CLASS_ANNO, rootClass,
