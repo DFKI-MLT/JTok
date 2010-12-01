@@ -12,7 +12,7 @@
   <property name="doc" value="${basedir}/doc" />
   <property name="lib" value="${basedir}/lib" />
   <property name="src" value="${basedir}/src" />
-  <property name="jar.file" value="${basedir}/jtok.jar" />
+  <property name="jar.file" value="${lib}/jtok.jar" />
   <property name="sa-jar.file" value="${basedir}/jtok-standalone.jar" />
 
 
@@ -112,7 +112,7 @@
 
   <!-- DIST target -->
   <target name="dist"
-          depends="clean, compile, doc"
+          depends="clean, jar, doc"
           description="This creates a distribution archive without the sources.">
     <!-- query version number to use for this distribution -->
     <input message="Enter version number for this release"
