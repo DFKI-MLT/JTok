@@ -9,9 +9,11 @@
   <property name="build" value="${basedir}/build" />
   <property name="conf" value="${basedir}/conf" />
   <property name="classes" value="${basedir}/classes" />
+  <property name="data" value="${basedir}/data" />
   <property name="doc" value="${basedir}/doc" />
   <property name="lib" value="${basedir}/lib" />
   <property name="src" value="${basedir}/src" />
+  <property name="test" value="${basedir}/test" />
   <property name="jar.file" value="${lib}/jtok.jar" />
   <property name="sa-jar.file" value="${basedir}/jtok-standalone.jar" />
 
@@ -26,6 +28,9 @@
   <!-- set class path for compilation and docs -->
   <path id="compile.class.path">
     <pathelement location="${src}" />
+    <pathelement location="${classes}" />
+    <pathelement location="${conf}" />
+    <pathelement location="${data}" />
     <fileset dir="${lib}" includes="**/*.jar" />
   </path>
 
@@ -61,7 +66,14 @@
            includeantruntime="${compile.includeantruntime}"
            deprecation="${compile.deprecation}"
            optimize="${compile.optimize}"
-           excludes="**/others/*"
+           classpathref="compile.class.path" />
+    <!-- compile the java code from ${test} into ${classes} -->
+    <javac destdir="${classes}"
+           srcdir="${test}"
+           debug="${compile.debug}"
+           includeantruntime="${compile.includeantruntime}"
+           deprecation="${compile.deprecation}"
+           optimize="${compile.optimize}"
            classpathref="compile.class.path" />
   </target>
 
@@ -87,6 +99,22 @@
         <include name="**/*" />
       </fileset>
     </jar>
+  </target>
+
+
+  <!-- TEST target -->
+  <target name="test"
+          depends="compile"
+          description="This runs the JUnit tests.">
+    <junit printsummary="yes" haltonfailure="no">
+      <classpath refid="compile.class.path" />
+      <jvmarg value="-Dlog4j.configuration=file:${conf}/log4j.properties" />
+      <batchtest fork="yes">
+        <fileset dir="${classes}">
+          <include name="**/Test*.class" />
+        </fileset>
+      </batchtest>
+    </junit>
   </target>
 
 

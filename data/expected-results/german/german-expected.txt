@@ -1,0 +1,2441 @@
+Paragraph Start: 0
+Paragraph End: 763
+  Text Unit Start: 0
+  Text Unit End: 108
+    Token: "Die"          	Type: TOKEN	Start: 0	End: 3
+    Token: "beginnende"   	Type: TOKEN	Start: 4	End: 14
+    Token: "Rezession"    	Type: TOKEN	Start: 15	End: 24
+    Token: "in"           	Type: TOKEN	Start: 25	End: 27
+    Token: "Deutschland"  	Type: TOKEN	Start: 28	End: 39
+    Token: "droht"        	Type: TOKEN	Start: 40	End: 45
+    Token: "schwerer"     	Type: TOKEN	Start: 46	End: 54
+    Token: "zu"           	Type: TOKEN	Start: 55	End: 57
+    Token: "werden"       	Type: TOKEN	Start: 58	End: 64
+    Token: "und"          	Type: TOKEN	Start: 65	End: 68
+    Token: "länger"       	Type: TOKEN	Start: 69	End: 75
+    Token: "zu"           	Type: TOKEN	Start: 76	End: 78
+    Token: "dauern"       	Type: TOKEN	Start: 79	End: 85
+    Token: "als"          	Type: TOKEN	Start: 86	End: 89
+    Token: "bisher"       	Type: TOKEN	Start: 90	End: 96
+    Token: "angenommen"   	Type: TOKEN	Start: 97	End: 107
+    Token: "."            	Type: TERM_PUNCT_P	Start: 107	End: 108
+  Text Unit Start: 109
+  Text Unit End: 247
+    Token: """            	Type: OPEN_PUNCT	Start: 109	End: 110	PTB: "``"
+    Token: "Wir"          	Type: TOKEN	Start: 110	End: 113
+    Token: "sind"         	Type: TOKEN	Start: 114	End: 118
+    Token: "soeben"       	Type: TOKEN	Start: 119	End: 125
+    Token: "übergeschnappt"	Type: TOKEN	Start: 126	End: 140
+    Token: """            	Type: CLOSE_PUNCT	Start: 140	End: 141	PTB: "''"
+    Token: ","            	Type: PUNCTUATION	Start: 141	End: 142
+    Token: "wirbt"        	Type: TOKEN	Start: 143	End: 148
+    Token: "der"          	Type: TOKEN	Start: 149	End: 152
+    Token: "Herrenausstatter"	Type: TOKEN	Start: 153	End: 169
+    Token: "Paul"         	Type: TOKEN	Start: 170	End: 174
+    Token: "Jardin"       	Type: TOKEN	Start: 175	End: 181
+    Token: "mit"          	Type: TOKEN	Start: 182	End: 185
+    Token: "großen"       	Type: TOKEN	Start: 186	End: 192
+    Token: "Lettern"      	Type: TOKEN	Start: 193	End: 200
+    Token: ","            	Type: PUNCTUATION	Start: 200	End: 201
+    Token: """            	Type: OPEN_PUNCT	Start: 202	End: 203	PTB: "``"
+    Token: "wir"          	Type: TOKEN	Start: 203	End: 206
+    Token: "verscherbeln" 	Type: TOKEN	Start: 207	End: 219
+    Token: "alles"        	Type: TOKEN	Start: 220	End: 225
+    Token: "60"           	Type: DIGITAL	Start: 226	End: 228
+    Token: "Prozent"      	Type: TOKEN	Start: 229	End: 236
+    Token: "billiger"     	Type: TOKEN	Start: 237	End: 245
+    Token: "."            	Type: TERM_PUNCT_P	Start: 245	End: 246
+    Token: """            	Type: CLOSE_PUNCT	Start: 246	End: 247	PTB: "''"
+  Text Unit Start: 248
+  Text Unit End: 363
+    Token: "350"          	Type: DIGITAL	Start: 248	End: 251
+    Token: "bis"          	Type: TOKEN	Start: 252	End: 255
+    Token: "unter"        	Type: TOKEN	Start: 256	End: 261
+    Token: "die"          	Type: TOKEN	Start: 262	End: 265
+    Token: "Decke"        	Type: TOKEN	Start: 266	End: 271
+    Token: "mit"          	Type: TOKEN	Start: 272	End: 275
+    Token: "Präsenten"    	Type: TOKEN	Start: 276	End: 285
+    Token: "gefüllte"     	Type: TOKEN	Start: 286	End: 294
+    Token: "Geschäfte"    	Type: TOKEN	Start: 295	End: 304
+    Token: "in"           	Type: TOKEN	Start: 305	End: 307
+    Token: "Amerikas"     	Type: TOKEN	Start: 308	End: 316
+    Token: "zweitgrößtem" 	Type: TOKEN	Start: 317	End: 329
+    Token: "Einkaufszentrum"	Type: TOKEN	Start: 330	End: 345
+    Token: "buhlen"       	Type: TOKEN	Start: 346	End: 352
+    Token: "um"           	Type: TOKEN	Start: 353	End: 355
+    Token: "Kunden"       	Type: TOKEN	Start: 356	End: 362
+    Token: "."            	Type: TERM_PUNCT_P	Start: 362	End: 363
+  Text Unit Start: 364
+  Text Unit End: 490
+    Token: "Nichts"       	Type: TOKEN	Start: 364	End: 370
+    Token: "fehlt"        	Type: TOKEN	Start: 371	End: 376
+    Token: "in"           	Type: TOKEN	Start: 377	End: 379
+    Token: "der"          	Type: TOKEN	Start: 380	End: 383
+    Token: "Del"          	Type: TOKEN	Start: 384	End: 387
+    Token: "Amo"          	Type: TOKEN	Start: 388	End: 391
+    Token: "Mall"         	Type: TOKEN	Start: 392	End: 396
+    Token: "von"          	Type: TOKEN	Start: 397	End: 400
+    Token: "Los"          	Type: TOKEN	Start: 401	End: 404
+    Token: "Angeles"      	Type: TOKEN	Start: 405	End: 412
+    Token: ","            	Type: PUNCTUATION	Start: 412	End: 413
+    Token: "was"          	Type: TOKEN	Start: 414	End: 417
+    Token: "das"          	Type: TOKEN	Start: 418	End: 421
+    Token: "amerikanische"	Type: TOKEN	Start: 422	End: 435
+    Token: "Verbraucherherz"	Type: TOKEN	Start: 436	End: 451
+    Token: "kurz"         	Type: TOKEN	Start: 452	End: 456
+    Token: "vor"          	Type: TOKEN	Start: 457	End: 460
+    Token: "Heiligabend"  	Type: TOKEN	Start: 461	End: 472
+    Token: "vermissen"    	Type: TOKEN	Start: 473	End: 482
+    Token: "könnte"       	Type: TOKEN	Start: 483	End: 489
+    Token: "."            	Type: TERM_PUNCT_P	Start: 489	End: 490
+  Text Unit Start: 491
+  Text Unit End: 661
+    Token: "Es"           	Type: TOKEN	Start: 491	End: 493
+    Token: "gibt"         	Type: TOKEN	Start: 494	End: 498
+    Token: "zuckrig"      	Type: TOKEN	Start: 499	End: 506
+    Token: "dekorierte"   	Type: TOKEN	Start: 507	End: 517
+    Token: "Christbäume"  	Type: TOKEN	Start: 518	End: 529
+    Token: ","            	Type: PUNCTUATION	Start: 529	End: 530
+    Token: "riesenhaft"   	Type: TOKEN	Start: 531	End: 541
+    Token: "aufgeplusterte"	Type: TOKEN	Start: 542	End: 556
+    Token: "Schaumstoff-Weihnachtsmänner"	Type: TOKEN	Start: 557	End: 585
+    Token: "und"          	Type: TOKEN	Start: 586	End: 589
+    Token: "mechanische"  	Type: TOKEN	Start: 590	End: 601
+    Token: "Eichhörnchen" 	Type: TOKEN	Start: 602	End: 614
+    Token: ","            	Type: PUNCTUATION	Start: 614	End: 615
+    Token: "die"          	Type: TOKEN	Start: 616	End: 619
+    Token: "stundenlang"  	Type: TOKEN	Start: 620	End: 631
+    Token: "fröhlich"     	Type: TOKEN	Start: 632	End: 640
+    Token: "mit"          	Type: TOKEN	Start: 641	End: 644
+    Token: "dem"          	Type: TOKEN	Start: 645	End: 648
+    Token: "Kopf"         	Type: TOKEN	Start: 649	End: 653
+    Token: "nicken"       	Type: TOKEN	Start: 654	End: 660
+    Token: "."            	Type: TERM_PUNCT_P	Start: 660	End: 661
+  Text Unit Start: 662
+  Text Unit End: 739
+    Token: "Nur"          	Type: TOKEN	Start: 662	End: 665
+    Token: "-"            	Type: PUNCTUATION	Start: 666	End: 667
+    Token: "aus"          	Type: TOKEN	Start: 668	End: 671
+    Token: "den"          	Type: TOKEN	Start: 672	End: 675
+    Token: "Verkäufermienen"	Type: TOKEN	Start: 676	End: 691
+    Token: "hat"          	Type: TOKEN	Start: 692	End: 695
+    Token: "sich"         	Type: TOKEN	Start: 696	End: 700
+    Token: "die"          	Type: TOKEN	Start: 701	End: 704
+    Token: "Fröhlichkeit" 	Type: TOKEN	Start: 705	End: 717
+    Token: "längst"       	Type: TOKEN	Start: 718	End: 724
+    Token: "verabschiedet"	Type: TOKEN	Start: 725	End: 738
+    Token: "."            	Type: TERM_PUNCT_P	Start: 738	End: 739
+  Text Unit Start: 740
+  Text Unit End: 763
+    Token: "Die"          	Type: TOKEN	Start: 740	End: 743
+    Token: "Kunden"       	Type: TOKEN	Start: 744	End: 750
+    Token: "bleiben"      	Type: TOKEN	Start: 751	End: 758
+    Token: "aus"          	Type: TOKEN	Start: 759	End: 762
+    Token: "."            	Type: TERM_PUNCT_P	Start: 762	End: 763
+
+Paragraph Start: 767
+Paragraph End: 1223
+  Text Unit Start: 767
+  Text Unit End: 1000
+    Token: "Viertausend"  	Type: TOKEN	Start: 767	End: 778
+    Token: "Kilometer"    	Type: TOKEN	Start: 779	End: 788
+    Token: "weiter"       	Type: TOKEN	Start: 789	End: 795
+    Token: "oestlich"     	Type: TOKEN	Start: 796	End: 804
+    Token: "schwelgt"     	Type: TOKEN	Start: 805	End: 813
+    Token: "ganz"         	Type: TOKEN	Start: 814	End: 818
+    Token: "Washington"   	Type: TOKEN	Start: 819	End: 829
+    Token: "im"           	Type: TOKEN	Start: 830	End: 832
+    Token: "Aufschwungstaumel"	Type: TOKEN	Start: 833	End: 850
+    Token: ":"            	Type: PUNCTUATION	Start: 850	End: 851
+    Token: "Zum"          	Type: TOKEN	Start: 852	End: 855
+    Token: "ersten"       	Type: TOKEN	Start: 856	End: 862
+    Token: "Mal"          	Type: TOKEN	Start: 863	End: 866
+    Token: "seit"         	Type: TOKEN	Start: 867	End: 871
+    Token: "1988"         	Type: DIGITAL	Start: 872	End: 876
+    Token: "hat"          	Type: TOKEN	Start: 877	End: 880
+    Token: "das"          	Type: TOKEN	Start: 881	End: 884
+    Token: "US-Handelsministerium"	Type: TOKEN	Start: 885	End: 906
+    Token: "seine"        	Type: TOKEN	Start: 907	End: 912
+    Token: "vierteljaehrlichen"	Type: TOKEN	Start: 913	End: 931
+    Token: "Wachstumsschaetzungen"	Type: TOKEN	Start: 932	End: 953
+    Token: "nicht"        	Type: TOKEN	Start: 954	End: 959
+    Token: "nach"         	Type: TOKEN	Start: 960	End: 964
+    Token: "unten"        	Type: TOKEN	Start: 965	End: 970
+    Token: ","            	Type: PUNCTUATION	Start: 970	End: 971
+    Token: "sondern"      	Type: TOKEN	Start: 972	End: 979
+    Token: "nach"         	Type: TOKEN	Start: 980	End: 984
+    Token: "oben"         	Type: TOKEN	Start: 985	End: 989
+    Token: "revidiert"    	Type: TOKEN	Start: 990	End: 999
+    Token: "."            	Type: TERM_PUNCT_P	Start: 999	End: 1000
+  Text Unit Start: 1001
+  Text Unit End: 1223
+    Token: "Die"          	Type: TOKEN	Start: 1001	End: 1004
+    Token: "frohe"        	Type: TOKEN	Start: 1005	End: 1010
+    Token: "Kunde"        	Type: TOKEN	Start: 1011	End: 1016
+    Token: ","            	Type: PUNCTUATION	Start: 1016	End: 1017
+    Token: "wonach"       	Type: TOKEN	Start: 1018	End: 1024
+    Token: "das"          	Type: TOKEN	Start: 1025	End: 1028
+    Token: "Bruttoinlandsprodukt"	Type: TOKEN	Start: 1029	End: 1049
+    Token: "im"           	Type: TOKEN	Start: 1050	End: 1052
+    Token: "dritten"      	Type: TOKEN	Start: 1053	End: 1060
+    Token: "Quartal"      	Type: TOKEN	Start: 1061	End: 1068
+    Token: "nicht"        	Type: TOKEN	Start: 1069	End: 1074
+    Token: "um"           	Type: TOKEN	Start: 1075	End: 1077
+    Token: "geschaetzte"  	Type: TOKEN	Start: 1078	End: 1089
+    Token: "2,7"          	Type: DIGITAL	Start: 1090	End: 1093
+    Token: ","            	Type: PUNCTUATION	Start: 1093	End: 1094
+    Token: "sondern"      	Type: TOKEN	Start: 1095	End: 1102
+    Token: "tatsaechlich" 	Type: TOKEN	Start: 1103	End: 1115
+    Token: "um"           	Type: TOKEN	Start: 1116	End: 1118
+    Token: "3,9"          	Type: DIGITAL	Start: 1119	End: 1122
+    Token: "Prozent"      	Type: TOKEN	Start: 1123	End: 1130
+    Token: "gewachsen"    	Type: TOKEN	Start: 1131	End: 1140
+    Token: "ist"          	Type: TOKEN	Start: 1141	End: 1144
+    Token: ","            	Type: PUNCTUATION	Start: 1144	End: 1145
+    Token: "betoerte"     	Type: TOKEN	Start: 1146	End: 1154
+    Token: "in"           	Type: TOKEN	Start: 1155	End: 1157
+    Token: "Banken"       	Type: TOKEN	Start: 1158	End: 1164
+    Token: "und"          	Type: TOKEN	Start: 1165	End: 1168
+    Token: "Grossbetrieben"	Type: TOKEN	Start: 1169	End: 1183
+    Token: "ganze"        	Type: TOKEN	Start: 1184	End: 1189
+    Token: "volkswirtschaftliche"	Type: TOKEN	Start: 1190	End: 1210
+    Token: "Abteilungen"  	Type: TOKEN	Start: 1211	End: 1222
+    Token: "."            	Type: TERM_PUNCT_P	Start: 1222	End: 1223
+
+Paragraph Start: 1227
+Paragraph End: 1553
+  Text Unit Start: 1227
+  Text Unit End: 1553
+    Token: "Aus"          	Type: TOKEN	Start: 1227	End: 1230
+    Token: "den"          	Type: TOKEN	Start: 1231	End: 1234
+    Token: "Augen"        	Type: TOKEN	Start: 1235	End: 1240
+    Token: ","            	Type: PUNCTUATION	Start: 1240	End: 1241
+    Token: "aus"          	Type: TOKEN	Start: 1242	End: 1245
+    Token: "dem"          	Type: TOKEN	Start: 1246	End: 1249
+    Token: "Sinn"         	Type: TOKEN	Start: 1250	End: 1254
+    Token: "waren"        	Type: TOKEN	Start: 1255	End: 1260
+    Token: "ploetzlich"   	Type: TOKEN	Start: 1261	End: 1271
+    Token: "die"          	Type: TOKEN	Start: 1272	End: 1275
+    Token: "maessig-trueben"	Type: TOKEN	Start: 1276	End: 1291
+    Token: "1,5"          	Type: DIGITAL	Start: 1292	End: 1295
+    Token: "Prozent"      	Type: TOKEN	Start: 1296	End: 1303
+    Token: "Wachstum"     	Type: TOKEN	Start: 1304	End: 1312
+    Token: "aus"          	Type: TOKEN	Start: 1313	End: 1316
+    Token: "dem"          	Type: TOKEN	Start: 1317	End: 1320
+    Token: "Vorquartal"   	Type: TOKEN	Start: 1321	End: 1331
+    Token: ","            	Type: PUNCTUATION	Start: 1331	End: 1332
+    Token: "verflogen"    	Type: TOKEN	Start: 1333	End: 1342
+    Token: "all"          	Type: TOKEN	Start: 1343	End: 1346
+    Token: "die"          	Type: TOKEN	Start: 1347	End: 1350
+    Token: "Warnungen"    	Type: TOKEN	Start: 1351	End: 1360
+    Token: "vor"          	Type: TOKEN	Start: 1361	End: 1364
+    Token: "einem"        	Type: TOKEN	Start: 1365	End: 1370
+    Token: "erneuten"     	Type: TOKEN	Start: 1371	End: 1379
+    Token: "Abschwung"    	Type: TOKEN	Start: 1380	End: 1389
+    Token: ","            	Type: PUNCTUATION	Start: 1389	End: 1390
+    Token: "ausgeraeumt"  	Type: TOKEN	Start: 1391	End: 1402
+    Token: "der"          	Type: TOKEN	Start: 1403	End: 1406
+    Token: "Verdacht"     	Type: TOKEN	Start: 1407	End: 1415
+    Token: ","            	Type: PUNCTUATION	Start: 1415	End: 1416
+    Token: """            	Type: OPEN_PUNCT	Start: 1417	End: 1418	PTB: "``"
+    Token: "tricky"       	Type: TOKEN	Start: 1418	End: 1424
+    Token: """            	Type: CLOSE_PUNCT	Start: 1424	End: 1425	PTB: "''"
+    Token: "George"       	Type: TOKEN	Start: 1426	End: 1432
+    Token: "Bush"         	Type: TOKEN	Start: 1433	End: 1437
+    Token: "habe"         	Type: TOKEN	Start: 1438	End: 1442
+    Token: "kurz"         	Type: TOKEN	Start: 1443	End: 1447
+    Token: "vor"          	Type: TOKEN	Start: 1448	End: 1451
+    Token: "der"          	Type: TOKEN	Start: 1452	End: 1455
+    Token: "US-Wahl"      	Type: TOKEN	Start: 1456	End: 1463
+    Token: "noch"         	Type: TOKEN	Start: 1464	End: 1468
+    Token: "an"           	Type: TOKEN	Start: 1469	End: 1471
+    Token: "der"          	Type: TOKEN	Start: 1472	End: 1475
+    Token: "damals"       	Type: TOKEN	Start: 1476	End: 1482
+    Token: "als"          	Type: TOKEN	Start: 1483	End: 1486
+    Token: "recht"        	Type: TOKEN	Start: 1487	End: 1492
+    Token: "optimistisch" 	Type: TOKEN	Start: 1493	End: 1505
+    Token: "geltenden"    	Type: TOKEN	Start: 1506	End: 1515
+    Token: "2,7-Prozent-Schaetzung"	Type: TOKEN	Start: 1516	End: 1538
+    Token: "drehen"       	Type: TOKEN	Start: 1539	End: 1545
+    Token: "lassen"       	Type: TOKEN	Start: 1546	End: 1552
+    Token: "."            	Type: TERM_PUNCT_P	Start: 1552	End: 1553
+
+Paragraph Start: 1557
+Paragraph End: 1834
+  Text Unit Start: 1557
+  Text Unit End: 1578
+    Token: "Was"          	Type: TOKEN	Start: 1557	End: 1560
+    Token: "nun"          	Type: TOKEN	Start: 1561	End: 1564
+    Token: ","            	Type: PUNCTUATION	Start: 1564	End: 1565
+    Token: "Deutschland"  	Type: TOKEN	Start: 1566	End: 1577
+    Token: "?"            	Type: TERM_PUNCT	Start: 1577	End: 1578
+  Text Unit Start: 1579
+  Text Unit End: 1749
+    Token: "Kann"         	Type: TOKEN	Start: 1579	End: 1583
+    Token: "Bill"         	Type: TOKEN	Start: 1584	End: 1588
+    Token: "Clintons"     	Type: TOKEN	Start: 1589	End: 1597
+    Token: "neues"        	Type: TOKEN	Start: 1598	End: 1603
+    Token: "Amerika"      	Type: TOKEN	Start: 1604	End: 1611
+    Token: "Deutschland"  	Type: TOKEN	Start: 1612	End: 1623
+    Token: "und"          	Type: TOKEN	Start: 1624	End: 1627
+    Token: "den"          	Type: TOKEN	Start: 1628	End: 1631
+    Token: "Rest"         	Type: TOKEN	Start: 1632	End: 1636
+    Token: "der"          	Type: TOKEN	Start: 1637	End: 1640
+    Token: "Welt"         	Type: TOKEN	Start: 1641	End: 1645
+    Token: "aus"          	Type: TOKEN	Start: 1646	End: 1649
+    Token: "der"          	Type: TOKEN	Start: 1650	End: 1653
+    Token: """            	Type: OPEN_PUNCT	Start: 1654	End: 1655	PTB: "``"
+    Token: "weltweiten"   	Type: TOKEN	Start: 1655	End: 1665
+    Token: "Wirtschafts"  	Type: TOKEN	Start: 1666	End: 1677
+    Token: "-"            	Type: PUNCTUATION	Start: 1677	End: 1678
+    Token: "und"          	Type: TOKEN	Start: 1679	End: 1682
+    Token: "Arbeitslosigkeitskrise"	Type: TOKEN	Start: 1683	End: 1705
+    Token: """            	Type: CLOSE_PUNCT	Start: 1705	End: 1706	PTB: "''"
+    Token: "("            	Type: OPEN_BRACKET	Start: 1707	End: 1708	PTB: "-LRB-"
+    Token: "Alt-Bundeskanzler"	Type: TOKEN	Start: 1708	End: 1725
+    Token: "Helmut"       	Type: TOKEN	Start: 1726	End: 1732
+    Token: "Schmidt"      	Type: TOKEN	Start: 1733	End: 1740
+    Token: ")"            	Type: CLOSE_BRACKET	Start: 1740	End: 1741	PTB: "-RRB-"
+    Token: "retten"       	Type: TOKEN	Start: 1742	End: 1748
+    Token: "?"            	Type: TERM_PUNCT	Start: 1748	End: 1749
+  Text Unit Start: 1750
+  Text Unit End: 1834
+    Token: "Ist"          	Type: TOKEN	Start: 1750	End: 1753
+    Token: "den"          	Type: TOKEN	Start: 1754	End: 1757
+    Token: "Washingtoner" 	Type: TOKEN	Start: 1758	End: 1770
+    Token: "Statistikern" 	Type: TOKEN	Start: 1771	End: 1783
+    Token: "eher"         	Type: TOKEN	Start: 1784	End: 1788
+    Token: "zu"           	Type: TOKEN	Start: 1789	End: 1791
+    Token: "trauen"       	Type: TOKEN	Start: 1792	End: 1798
+    Token: "als"          	Type: TOKEN	Start: 1799	End: 1802
+    Token: "den"          	Type: TOKEN	Start: 1803	End: 1806
+    Token: "Konsummuffeln"	Type: TOKEN	Start: 1807	End: 1820
+    Token: "Kaliforniens" 	Type: TOKEN	Start: 1821	End: 1833
+    Token: "?"            	Type: TERM_PUNCT	Start: 1833	End: 1834
+
+Paragraph Start: 1838
+Paragraph End: 2240
+  Text Unit Start: 1838
+  Text Unit End: 2002
+    Token: "Selten"       	Type: TOKEN	Start: 1838	End: 1844
+    Token: "war"          	Type: TOKEN	Start: 1845	End: 1848
+    Token: "die"          	Type: TOKEN	Start: 1849	End: 1852
+    Token: "Unsicherheit" 	Type: TOKEN	Start: 1853	End: 1865
+    Token: "ueber"        	Type: TOKEN	Start: 1866	End: 1871
+    Token: "die"          	Type: TOKEN	Start: 1872	End: 1875
+    Token: "Wirtschaftsentwicklung"	Type: TOKEN	Start: 1876	End: 1898
+    Token: "beim"         	Type: TOKEN	Start: 1899	End: 1903
+    Token: "grossen"      	Type: TOKEN	Start: 1904	End: 1911
+    Token: "Bruder"       	Type: TOKEN	Start: 1912	End: 1918
+    Token: "so"           	Type: TOKEN	Start: 1919	End: 1921
+    Token: "eng"          	Type: TOKEN	Start: 1922	End: 1925
+    Token: "verknuepft"   	Type: TOKEN	Start: 1926	End: 1936
+    Token: "mit"          	Type: TOKEN	Start: 1937	End: 1940
+    Token: "den"          	Type: TOKEN	Start: 1941	End: 1944
+    Token: "deutschen"    	Type: TOKEN	Start: 1945	End: 1954
+    Token: "Konjunkturaussichten"	Type: TOKEN	Start: 1955	End: 1975
+    Token: "wie"          	Type: TOKEN	Start: 1976	End: 1979
+    Token: "zu"           	Type: TOKEN	Start: 1980	End: 1982
+    Token: "dieser"       	Type: TOKEN	Start: 1983	End: 1989
+    Token: "Jahreswende"  	Type: TOKEN	Start: 1990	End: 2001
+    Token: "."            	Type: TERM_PUNCT_P	Start: 2001	End: 2002
+  Text Unit Start: 2003
+  Text Unit End: 2172
+    Token: "Ohne"         	Type: TOKEN	Start: 2003	End: 2007
+    Token: "den"          	Type: TOKEN	Start: 2008	End: 2011
+    Token: "ersehnten"    	Type: TOKEN	Start: 2012	End: 2021
+    Token: "US-Boom"      	Type: TOKEN	Start: 2022	End: 2029
+    Token: ","            	Type: PUNCTUATION	Start: 2029	End: 2030
+    Token: "da"           	Type: TOKEN	Start: 2031	End: 2033
+    Token: "sind"         	Type: TOKEN	Start: 2034	End: 2038
+    Token: "sich"         	Type: TOKEN	Start: 2039	End: 2043
+    Token: "Unternehmer"  	Type: TOKEN	Start: 2044	End: 2055
+    Token: "und"          	Type: TOKEN	Start: 2056	End: 2059
+    Token: "Sachverstaendige"	Type: TOKEN	Start: 2060	End: 2076
+    Token: "einig"        	Type: TOKEN	Start: 2077	End: 2082
+    Token: ","            	Type: PUNCTUATION	Start: 2082	End: 2083
+    Token: "gibt"         	Type: TOKEN	Start: 2084	End: 2088
+    Token: "es"           	Type: TOKEN	Start: 2089	End: 2091
+    Token: "fuer"         	Type: TOKEN	Start: 2092	End: 2096
+    Token: "die"          	Type: TOKEN	Start: 2097	End: 2100
+    Token: "deutsche"     	Type: TOKEN	Start: 2101	End: 2109
+    Token: "Wirtschaft"   	Type: TOKEN	Start: 2110	End: 2120
+    Token: "im"           	Type: TOKEN	Start: 2121	End: 2123
+    Token: "kommenden"    	Type: TOKEN	Start: 2124	End: 2133
+    Token: "Jahr"         	Type: TOKEN	Start: 2134	End: 2138
+    Token: "aus"          	Type: TOKEN	Start: 2139	End: 2142
+    Token: "der"          	Type: TOKEN	Start: 2143	End: 2146
+    Token: "Rezession"    	Type: TOKEN	Start: 2147	End: 2156
+    Token: "kein"         	Type: TOKEN	Start: 2157	End: 2161
+    Token: "Entrinnen"    	Type: TOKEN	Start: 2162	End: 2171
+    Token: "."            	Type: TERM_PUNCT_P	Start: 2171	End: 2172
+  Text Unit Start: 2173
+  Text Unit End: 2240
+    Token: "Im"           	Type: TOKEN	Start: 2173	End: 2175
+    Token: "Gegenteil"    	Type: TOKEN	Start: 2176	End: 2185
+    Token: ":"            	Type: PUNCTUATION	Start: 2185	End: 2186
+    Token: "Der"          	Type: TOKEN	Start: 2187	End: 2190
+    Token: "Abschwung"    	Type: TOKEN	Start: 2191	End: 2200
+    Token: "wird"         	Type: TOKEN	Start: 2201	End: 2205
+    Token: "erst"         	Type: TOKEN	Start: 2206	End: 2210
+    Token: "so"           	Type: TOKEN	Start: 2211	End: 2213
+    Token: "richtig"      	Type: TOKEN	Start: 2214	End: 2221
+    Token: "ins"          	Type: TOKEN	Start: 2222	End: 2225
+    Token: "Rollen"       	Type: TOKEN	Start: 2226	End: 2232
+    Token: "kommen"       	Type: TOKEN	Start: 2233	End: 2239
+    Token: "."            	Type: TERM_PUNCT_P	Start: 2239	End: 2240
+
+Paragraph Start: 2244
+Paragraph End: 2901
+  Text Unit Start: 2244
+  Text Unit End: 2398
+    Token: """            	Type: OPEN_PUNCT	Start: 2244	End: 2245	PTB: "``"
+    Token: "Springt"      	Type: TOKEN	Start: 2245	End: 2252
+    Token: "die"          	Type: TOKEN	Start: 2253	End: 2256
+    Token: "US-Konjunktur"	Type: TOKEN	Start: 2257	End: 2270
+    Token: "nicht"        	Type: TOKEN	Start: 2271	End: 2276
+    Token: "an"           	Type: TOKEN	Start: 2277	End: 2279
+    Token: """            	Type: CLOSE_PUNCT	Start: 2279	End: 2280	PTB: "''"
+    Token: ","            	Type: PUNCTUATION	Start: 2280	End: 2281
+    Token: "sagt"         	Type: TOKEN	Start: 2282	End: 2286
+    Token: "BMW-Chefvolkswirt"	Type: TOKEN	Start: 2287	End: 2304
+    Token: "Helmut"       	Type: TOKEN	Start: 2305	End: 2311
+    Token: "Becker"       	Type: TOKEN	Start: 2312	End: 2318
+    Token: ","            	Type: PUNCTUATION	Start: 2318	End: 2319
+    Token: """            	Type: OPEN_PUNCT	Start: 2320	End: 2321	PTB: "``"
+    Token: "sehe"         	Type: TOKEN	Start: 2321	End: 2325
+    Token: "ich"          	Type: TOKEN	Start: 2326	End: 2329
+    Token: "die"          	Type: TOKEN	Start: 2330	End: 2333
+    Token: "deutsche"     	Type: TOKEN	Start: 2334	End: 2342
+    Token: "Konjunktur"   	Type: TOKEN	Start: 2343	End: 2353
+    Token: "in"           	Type: TOKEN	Start: 2354	End: 2356
+    Token: "der"          	Type: TOKEN	Start: 2357	End: 2360
+    Token: "schwersten"   	Type: TOKEN	Start: 2361	End: 2371
+    Token: "Krise"        	Type: TOKEN	Start: 2372	End: 2377
+    Token: "der"          	Type: TOKEN	Start: 2378	End: 2381
+    Token: "Nachkriegszeit"	Type: TOKEN	Start: 2382	End: 2396
+    Token: "."            	Type: TERM_PUNCT_P	Start: 2396	End: 2397
+    Token: """            	Type: CLOSE_PUNCT	Start: 2397	End: 2398	PTB: "''"
+  Text Unit Start: 2399
+  Text Unit End: 2688
+    Token: "Noch"         	Type: TOKEN	Start: 2399	End: 2403
+    Token: "ist"          	Type: TOKEN	Start: 2404	End: 2407
+    Token: "nicht"        	Type: TOKEN	Start: 2408	End: 2413
+    Token: "nur"          	Type: TOKEN	Start: 2414	End: 2417
+    Token: "ungewiss"     	Type: TOKEN	Start: 2418	End: 2426
+    Token: ","            	Type: PUNCTUATION	Start: 2426	End: 2427
+    Token: "ob"           	Type: TOKEN	Start: 2428	End: 2430
+    Token: "sich"         	Type: TOKEN	Start: 2431	End: 2435
+    Token: "1993"         	Type: DIGITAL	Start: 2436	End: 2440
+    Token: "direkt"       	Type: TOKEN	Start: 2441	End: 2447
+    Token: "belebende"    	Type: TOKEN	Start: 2448	End: 2457
+    Token: "Effekte"      	Type: TOKEN	Start: 2458	End: 2465
+    Token: "ueberhaupt"   	Type: TOKEN	Start: 2466	End: 2476
+    Token: "auf"          	Type: TOKEN	Start: 2477	End: 2480
+    Token: "die"          	Type: TOKEN	Start: 2481	End: 2484
+    Token: "tief"         	Type: TOKEN	Start: 2485	End: 2489
+    Token: "deprimierten" 	Type: TOKEN	Start: 2490	End: 2502
+    Token: "Deutschen"    	Type: TOKEN	Start: 2503	End: 2512
+    Token: "uebertragen"  	Type: TOKEN	Start: 2513	End: 2524
+    Token: "-"            	Type: PUNCTUATION	Start: 2525	End: 2526
+    Token: "nur"          	Type: TOKEN	Start: 2527	End: 2530
+    Token: "knapp"        	Type: TOKEN	Start: 2531	End: 2536
+    Token: "acht"         	Type: TOKEN	Start: 2537	End: 2541
+    Token: "Prozent"      	Type: TOKEN	Start: 2542	End: 2549
+    Token: "des"          	Type: TOKEN	Start: 2550	End: 2553
+    Token: "deutschen"    	Type: TOKEN	Start: 2554	End: 2563
+    Token: "Exportvolumens"	Type: TOKEN	Start: 2564	End: 2578
+    Token: "und"          	Type: TOKEN	Start: 2579	End: 2582
+    Token: "hoechstens"   	Type: TOKEN	Start: 2583	End: 2593
+    Token: "zehn"         	Type: TOKEN	Start: 2594	End: 2598
+    Token: "Prozent"      	Type: TOKEN	Start: 2599	End: 2606
+    Token: "der"          	Type: TOKEN	Start: 2607	End: 2610
+    Token: "Exportmasse"  	Type: TOKEN	Start: 2611	End: 2622
+    Token: "aus"          	Type: TOKEN	Start: 2623	End: 2626
+    Token: "den"          	Type: TOKEN	Start: 2627	End: 2630
+    Token: "wichtigen"    	Type: TOKEN	Start: 2631	End: 2640
+    Token: "Partnerlaendern"	Type: TOKEN	Start: 2641	End: 2656
+    Token: "in"           	Type: TOKEN	Start: 2657	End: 2659
+    Token: "Westeuropa"   	Type: TOKEN	Start: 2660	End: 2670
+    Token: "gehen"        	Type: TOKEN	Start: 2671	End: 2676
+    Token: "in"           	Type: TOKEN	Start: 2677	End: 2679
+    Token: "die"          	Type: TOKEN	Start: 2680	End: 2683
+    Token: "USA"          	Type: TOKEN	Start: 2684	End: 2687
+    Token: "."            	Type: TERM_PUNCT_P	Start: 2687	End: 2688
+  Text Unit Start: 2689
+  Text Unit End: 2901
+    Token: "Auch"         	Type: TOKEN	Start: 2689	End: 2693
+    Token: "der"          	Type: TOKEN	Start: 2694	End: 2697
+    Token: "Eindruck"     	Type: TOKEN	Start: 2698	End: 2706
+    Token: ","            	Type: PUNCTUATION	Start: 2706	End: 2707
+    Token: "den"          	Type: TOKEN	Start: 2708	End: 2711
+    Token: "US-Konjunkturindikatoren"	Type: TOKEN	Start: 2712	End: 2736
+    Token: "bisher"       	Type: TOKEN	Start: 2737	End: 2743
+    Token: "vermittelt"   	Type: TOKEN	Start: 2744	End: 2754
+    Token: "haben"        	Type: TOKEN	Start: 2755	End: 2760
+    Token: ","            	Type: PUNCTUATION	Start: 2760	End: 2761
+    Token: "gibt"         	Type: TOKEN	Start: 2762	End: 2766
+    Token: "nicht"        	Type: TOKEN	Start: 2767	End: 2772
+    Token: "gerade"       	Type: TOKEN	Start: 2773	End: 2779
+    Token: "zur"          	Type: TOKEN	Start: 2780	End: 2783
+    Token: "Euphorie"     	Type: TOKEN	Start: 2784	End: 2792
+    Token: "Anlass"       	Type: TOKEN	Start: 2793	End: 2799
+    Token: "-"            	Type: PUNCTUATION	Start: 2800	End: 2801
+    Token: "von"          	Type: TOKEN	Start: 2802	End: 2805
+    Token: "einem"        	Type: TOKEN	Start: 2806	End: 2811
+    Token: """            	Type: OPEN_PUNCT	Start: 2812	End: 2813	PTB: "``"
+    Token: "Schwarzenegger"	Type: TOKEN	Start: 2813	End: 2827
+    Token: """            	Type: CLOSE_PUNCT	Start: 2827	End: 2828	PTB: "''"
+    Token: ","            	Type: PUNCTUATION	Start: 2828	End: 2829
+    Token: "witzelte"     	Type: TOKEN	Start: 2830	End: 2838
+    Token: """            	Type: OPEN_PUNCT	Start: 2839	End: 2840	PTB: "``"
+    Token: "Business"     	Type: TOKEN	Start: 2840	End: 2848
+    Token: "Week"         	Type: TOKEN	Start: 2849	End: 2853
+    Token: """            	Type: CLOSE_PUNCT	Start: 2853	End: 2854	PTB: "''"
+    Token: ","            	Type: PUNCTUATION	Start: 2854	End: 2855
+    Token: "koenne"       	Type: TOKEN	Start: 2856	End: 2862
+    Token: "bei"          	Type: TOKEN	Start: 2863	End: 2866
+    Token: "der"          	Type: TOKEN	Start: 2867	End: 2870
+    Token: "US-Wirtschaft"	Type: TOKEN	Start: 2871	End: 2884
+    Token: "keine"        	Type: TOKEN	Start: 2885	End: 2890
+    Token: "Rede"         	Type: TOKEN	Start: 2891	End: 2895
+    Token: "sein"         	Type: TOKEN	Start: 2896	End: 2900
+    Token: "."            	Type: TERM_PUNCT_P	Start: 2900	End: 2901
+
+Paragraph Start: 2905
+Paragraph End: 3273
+  Text Unit Start: 2905
+  Text Unit End: 3134
+    Token: "Schon"        	Type: TOKEN	Start: 2905	End: 2910
+    Token: "haelt"        	Type: TOKEN	Start: 2911	End: 2916
+    Token: "Herbert"      	Type: TOKEN	Start: 2917	End: 2924
+    Token: "Hax"          	Type: TOKEN	Start: 2925	End: 2928
+    Token: ","            	Type: PUNCTUATION	Start: 2928	End: 2929
+    Token: "der"          	Type: TOKEN	Start: 2930	End: 2933
+    Token: "Vorsitzende"  	Type: TOKEN	Start: 2934	End: 2945
+    Token: "des"          	Type: TOKEN	Start: 2946	End: 2949
+    Token: "deutschen"    	Type: TOKEN	Start: 2950	End: 2959
+    Token: "Sachverstaendigenrats"	Type: TOKEN	Start: 2960	End: 2981
+    Token: "zur"          	Type: TOKEN	Start: 2982	End: 2985
+    Token: "Begutachtung" 	Type: TOKEN	Start: 2986	End: 2998
+    Token: "der"          	Type: TOKEN	Start: 2999	End: 3002
+    Token: "gesamtwirtschaftlichen"	Type: TOKEN	Start: 3003	End: 3025
+    Token: "Entwicklung"  	Type: TOKEN	Start: 3026	End: 3037
+    Token: ","            	Type: PUNCTUATION	Start: 3037	End: 3038
+    Token: "die"          	Type: TOKEN	Start: 3039	End: 3042
+    Token: "Prognose"     	Type: TOKEN	Start: 3043	End: 3051
+    Token: "der"          	Type: TOKEN	Start: 3052	End: 3055
+    Token: "fuenf"        	Type: TOKEN	Start: 3056	End: 3061
+    Token: "Weisen"       	Type: TOKEN	Start: 3062	End: 3068
+    Token: "("            	Type: OPEN_BRACKET	Start: 3069	End: 3070	PTB: "-LRB-"
+    Token: "Nullwachstum" 	Type: TOKEN	Start: 3070	End: 3082
+    Token: "in"           	Type: TOKEN	Start: 3083	End: 3085
+    Token: "Westdeutschland"	Type: TOKEN	Start: 3086	End: 3101
+    Token: ")"            	Type: CLOSE_BRACKET	Start: 3101	End: 3102	PTB: "-RRB-"
+    Token: "fuer"         	Type: TOKEN	Start: 3103	End: 3107
+    Token: """            	Type: OPEN_PUNCT	Start: 3108	End: 3109	PTB: "``"
+    Token: "eigentlich"   	Type: TOKEN	Start: 3109	End: 3119
+    Token: "optimistisch" 	Type: TOKEN	Start: 3120	End: 3132
+    Token: """            	Type: CLOSE_PUNCT	Start: 3132	End: 3133	PTB: "''"
+    Token: "."            	Type: TERM_PUNCT_P	Start: 3133	End: 3134
+  Text Unit Start: 3135
+  Text Unit End: 3273
+    Token: "Zweifel"      	Type: TOKEN	Start: 3135	End: 3142
+    Token: "an"           	Type: TOKEN	Start: 3143	End: 3145
+    Token: "der"          	Type: TOKEN	Start: 3146	End: 3149
+    Token: "Zugkraft"     	Type: TOKEN	Start: 3150	End: 3158
+    Token: "des"          	Type: TOKEN	Start: 3159	End: 3162
+    Token: "US-Motors"    	Type: TOKEN	Start: 3163	End: 3172
+    Token: "haben"        	Type: TOKEN	Start: 3173	End: 3178
+    Token: "auch"         	Type: TOKEN	Start: 3179	End: 3183
+    Token: "das"          	Type: TOKEN	Start: 3184	End: 3187
+    Token: "Muenchner"    	Type: TOKEN	Start: 3188	End: 3197
+    Token: "Ifo-Institut" 	Type: TOKEN	Start: 3198	End: 3210
+    Token: "und"          	Type: TOKEN	Start: 3211	End: 3214
+    Token: "das"          	Type: TOKEN	Start: 3215	End: 3218
+    Token: "Deutsche"     	Type: TOKEN	Start: 3219	End: 3227
+    Token: "Institut"     	Type: TOKEN	Start: 3228	End: 3236
+    Token: "fuer"         	Type: TOKEN	Start: 3237	End: 3241
+    Token: "Wirtschaftsforschung"	Type: TOKEN	Start: 3242	End: 3262
+    Token: "in"           	Type: TOKEN	Start: 3263	End: 3265
+    Token: "Berlin"       	Type: TOKEN	Start: 3266	End: 3272
+    Token: "."            	Type: TERM_PUNCT_P	Start: 3272	End: 3273
+
+Paragraph Start: 3278
+Paragraph End: 3581
+  Text Unit Start: 3278
+  Text Unit End: 3437
+    Token: "Die"          	Type: TOKEN	Start: 3278	End: 3281
+    Token: "beiden"       	Type: TOKEN	Start: 3282	End: 3288
+    Token: "Denk-Fabriken"	Type: TOKEN	Start: 3289	End: 3302
+    Token: "haben"        	Type: TOKEN	Start: 3303	End: 3308
+    Token: "ihre"         	Type: TOKEN	Start: 3309	End: 3313
+    Token: "Wachstumsprognosen"	Type: TOKEN	Start: 3314	End: 3332
+    Token: "fuer"         	Type: TOKEN	Start: 3333	End: 3337
+    Token: "Westdeutschland"	Type: TOKEN	Start: 3338	End: 3353
+    Token: "gerade"       	Type: TOKEN	Start: 3354	End: 3360
+    Token: "erst"         	Type: TOKEN	Start: 3361	End: 3365
+    Token: "um"           	Type: TOKEN	Start: 3366	End: 3368
+    Token: "jeweils"      	Type: TOKEN	Start: 3369	End: 3376
+    Token: "einen"        	Type: TOKEN	Start: 3377	End: 3382
+    Token: "Prozentpunkt" 	Type: TOKEN	Start: 3383	End: 3395
+    Token: "auf"          	Type: TOKEN	Start: 3396	End: 3399
+    Token: "minus"        	Type: TOKEN	Start: 3400	End: 3405
+    Token: "0,5"          	Type: DIGITAL	Start: 3406	End: 3409
+    Token: "Prozent"      	Type: TOKEN	Start: 3410	End: 3417
+    Token: "heruntergestrichen"	Type: TOKEN	Start: 3418	End: 3436
+    Token: "."            	Type: TERM_PUNCT_P	Start: 3436	End: 3437
+  Text Unit Start: 3438
+  Text Unit End: 3581
+    Token: "Diethard"     	Type: TOKEN	Start: 3438	End: 3446
+    Token: "Simmert"      	Type: TOKEN	Start: 3447	End: 3454
+    Token: ","            	Type: PUNCTUATION	Start: 3454	End: 3455
+    Token: "oberster"     	Type: TOKEN	Start: 3456	End: 3464
+    Token: "Vermoegensverwalter"	Type: TOKEN	Start: 3465	End: 3484
+    Token: "der"          	Type: TOKEN	Start: 3485	End: 3488
+    Token: "Provinzial-Versicherung"	Type: TOKEN	Start: 3489	End: 3512
+    Token: ","            	Type: PUNCTUATION	Start: 3512	End: 3513
+    Token: "glaubt"       	Type: TOKEN	Start: 3514	End: 3520
+    Token: "gar"          	Type: TOKEN	Start: 3521	End: 3524
+    Token: "an"           	Type: TOKEN	Start: 3525	End: 3527
+    Token: "ein"          	Type: TOKEN	Start: 3528	End: 3531
+    Token: "deutsches"    	Type: TOKEN	Start: 3532	End: 3541
+    Token: "Wachstumsminus"	Type: TOKEN	Start: 3542	End: 3556
+    Token: "von"          	Type: TOKEN	Start: 3557	End: 3560
+    Token: "bis"          	Type: TOKEN	Start: 3561	End: 3564
+    Token: "zu"           	Type: TOKEN	Start: 3565	End: 3567
+    Token: "zwei"         	Type: TOKEN	Start: 3568	End: 3572
+    Token: "Prozent"      	Type: TOKEN	Start: 3573	End: 3580
+    Token: "."            	Type: TERM_PUNCT_P	Start: 3580	End: 3581
+
+Paragraph Start: 3585
+Paragraph End: 4075
+  Text Unit Start: 3585
+  Text Unit End: 3822
+    Token: "Zwar"         	Type: TOKEN	Start: 3585	End: 3589
+    Token: "verzeichneten"	Type: TOKEN	Start: 3590	End: 3603
+    Token: "US-Produzenten"	Type: TOKEN	Start: 3604	End: 3618
+    Token: "im"           	Type: TOKEN	Start: 3619	End: 3621
+    Token: "Oktober"      	Type: TOKEN	Start: 3622	End: 3629
+    Token: "gegenueber"   	Type: TOKEN	Start: 3630	End: 3640
+    Token: "dem"          	Type: TOKEN	Start: 3641	End: 3644
+    Token: "Vormonat"     	Type: TOKEN	Start: 3645	End: 3653
+    Token: "um"           	Type: TOKEN	Start: 3654	End: 3656
+    Token: "neun"         	Type: TOKEN	Start: 3657	End: 3661
+    Token: "Prozent"      	Type: TOKEN	Start: 3662	End: 3669
+    Token: "hoehere"      	Type: TOKEN	Start: 3670	End: 3677
+    Token: "Auftragseingaenge"	Type: TOKEN	Start: 3678	End: 3695
+    Token: ","            	Type: PUNCTUATION	Start: 3695	End: 3696
+    Token: "legte"        	Type: TOKEN	Start: 3697	End: 3702
+    Token: "der"          	Type: TOKEN	Start: 3703	End: 3706
+    Token: "private"      	Type: TOKEN	Start: 3707	End: 3714
+    Token: "Verbrauch"    	Type: TOKEN	Start: 3715	End: 3724
+    Token: ","            	Type: PUNCTUATION	Start: 3724	End: 3725
+    Token: "zu"           	Type: TOKEN	Start: 3726	End: 3728
+    Token: "zwei"         	Type: TOKEN	Start: 3729	End: 3733
+    Token: "Dritteln"     	Type: TOKEN	Start: 3734	End: 3742
+    Token: "an"           	Type: TOKEN	Start: 3743	End: 3745
+    Token: "der"          	Type: TOKEN	Start: 3746	End: 3749
+    Token: "Wertschoepfung"	Type: TOKEN	Start: 3750	End: 3764
+    Token: "beteiligt"    	Type: TOKEN	Start: 3765	End: 3774
+    Token: ","            	Type: PUNCTUATION	Start: 3774	End: 3775
+    Token: "im"           	Type: TOKEN	Start: 3776	End: 3778
+    Token: "dritten"      	Type: TOKEN	Start: 3779	End: 3786
+    Token: "Quartal"      	Type: TOKEN	Start: 3787	End: 3794
+    Token: "kraeftig"     	Type: TOKEN	Start: 3795	End: 3803
+    Token: "um"           	Type: TOKEN	Start: 3804	End: 3806
+    Token: "3,7"          	Type: DIGITAL	Start: 3807	End: 3810
+    Token: "Prozent"      	Type: TOKEN	Start: 3811	End: 3818
+    Token: "zu"           	Type: TOKEN	Start: 3819	End: 3821
+    Token: "."            	Type: TERM_PUNCT_P	Start: 3821	End: 3822
+  Text Unit Start: 3823
+  Text Unit End: 4075
+    Token: "Doch"         	Type: TOKEN	Start: 3823	End: 3827
+    Token: "die"          	Type: TOKEN	Start: 3828	End: 3831
+    Token: "Nachfrageschuebe"	Type: TOKEN	Start: 3832	End: 3848
+    Token: ","            	Type: PUNCTUATION	Start: 3848	End: 3849
+    Token: "ausgeloest"   	Type: TOKEN	Start: 3850	End: 3860
+    Token: "durch"        	Type: TOKEN	Start: 3861	End: 3866
+    Token: "die"          	Type: TOKEN	Start: 3867	End: 3870
+    Token: "Milliardenschaeden"	Type: TOKEN	Start: 3871	End: 3889
+    Token: "zweier"       	Type: TOKEN	Start: 3890	End: 3896
+    Token: "Hurrikans"    	Type: TOKEN	Start: 3897	End: 3906
+    Token: ","            	Type: PUNCTUATION	Start: 3906	End: 3907
+    Token: "drohen"       	Type: TOKEN	Start: 3908	End: 3914
+    Token: ","            	Type: PUNCTUATION	Start: 3914	End: 3915
+    Token: "als"          	Type: TOKEN	Start: 3916	End: 3919
+    Token: "blosse"       	Type: TOKEN	Start: 3920	End: 3926
+    Token: "Strohfeuer"   	Type: TOKEN	Start: 3927	End: 3937
+    Token: "zu"           	Type: TOKEN	Start: 3938	End: 3940
+    Token: "verlodern"    	Type: TOKEN	Start: 3941	End: 3950
+    Token: ":"            	Type: PUNCTUATION	Start: 3950	End: 3951
+    Token: "Waehrend"     	Type: TOKEN	Start: 3952	End: 3960
+    Token: "die"          	Type: TOKEN	Start: 3961	End: 3964
+    Token: "Ausgaben"     	Type: TOKEN	Start: 3965	End: 3973
+    Token: "der"          	Type: TOKEN	Start: 3974	End: 3977
+    Token: "US-Haushalte" 	Type: TOKEN	Start: 3978	End: 3990
+    Token: "zunaechst"    	Type: TOKEN	Start: 3991	End: 4000
+    Token: "nach"         	Type: TOKEN	Start: 4001	End: 4005
+    Token: "oben"         	Type: TOKEN	Start: 4006	End: 4010
+    Token: "schnellten"   	Type: TOKEN	Start: 4011	End: 4021
+    Token: ","            	Type: PUNCTUATION	Start: 4021	End: 4022
+    Token: "gab"          	Type: TOKEN	Start: 4023	End: 4026
+    Token: "es"           	Type: TOKEN	Start: 4027	End: 4029
+    Token: "bei"          	Type: TOKEN	Start: 4030	End: 4033
+    Token: "den"          	Type: TOKEN	Start: 4034	End: 4037
+    Token: "Einkommen"    	Type: TOKEN	Start: 4038	End: 4047
+    Token: "so"           	Type: TOKEN	Start: 4048	End: 4050
+    Token: "gut"          	Type: TOKEN	Start: 4051	End: 4054
+    Token: "wie"          	Type: TOKEN	Start: 4055	End: 4058
+    Token: "keine"        	Type: TOKEN	Start: 4059	End: 4064
+    Token: "Zuwaechse"    	Type: TOKEN	Start: 4065	End: 4074
+    Token: "."            	Type: TERM_PUNCT_P	Start: 4074	End: 4075
+
+Paragraph Start: 4079
+Paragraph End: 4431
+  Text Unit Start: 4079
+  Text Unit End: 4431
+    Token: "Das"          	Type: TOKEN	Start: 4079	End: 4082
+    Token: "Zentrum"      	Type: TOKEN	Start: 4083	End: 4090
+    Token: "fuer"         	Type: TOKEN	Start: 4091	End: 4095
+    Token: "Europaeische" 	Type: TOKEN	Start: 4096	End: 4108
+    Token: "Wirtschaftsforschung"	Type: TOKEN	Start: 4109	End: 4129
+    Token: "("            	Type: OPEN_BRACKET	Start: 4130	End: 4131	PTB: "-LRB-"
+    Token: "ZEW"          	Type: TOKEN	Start: 4131	End: 4134
+    Token: ")"            	Type: CLOSE_BRACKET	Start: 4134	End: 4135	PTB: "-RRB-"
+    Token: ","            	Type: PUNCTUATION	Start: 4135	End: 4136
+    Token: "das"          	Type: TOKEN	Start: 4137	End: 4140
+    Token: "monatlich"    	Type: TOKEN	Start: 4141	End: 4150
+    Token: "im"           	Type: TOKEN	Start: 4151	End: 4153
+    Token: "Auftrag"      	Type: TOKEN	Start: 4154	End: 4161
+    Token: "der"          	Type: TOKEN	Start: 4162	End: 4165
+    Token: "Wirtschaftswoche"	Type: TOKEN	Start: 4166	End: 4182
+    Token: "die"          	Type: TOKEN	Start: 4183	End: 4186
+    Token: "Finanzmanager"	Type: TOKEN	Start: 4187	End: 4200
+    Token: "von"          	Type: TOKEN	Start: 4201	End: 4204
+    Token: "Banken"       	Type: TOKEN	Start: 4205	End: 4211
+    Token: "und"          	Type: TOKEN	Start: 4212	End: 4215
+    Token: "Unternehmen"  	Type: TOKEN	Start: 4216	End: 4227
+    Token: "befragt"      	Type: TOKEN	Start: 4228	End: 4235
+    Token: ","            	Type: PUNCTUATION	Start: 4235	End: 4236
+    Token: "sieht"        	Type: TOKEN	Start: 4237	End: 4242
+    Token: "denn"         	Type: TOKEN	Start: 4243	End: 4247
+    Token: "auch"         	Type: TOKEN	Start: 4248	End: 4252
+    Token: "kein"         	Type: TOKEN	Start: 4253	End: 4257
+    Token: "Ende"         	Type: TOKEN	Start: 4258	End: 4262
+    Token: "der"          	Type: TOKEN	Start: 4263	End: 4266
+    Token: "amerikanischen"	Type: TOKEN	Start: 4267	End: 4281
+    Token: "Schuldenkrise"	Type: TOKEN	Start: 4282	End: 4295
+    Token: ":"            	Type: PUNCTUATION	Start: 4295	End: 4296
+    Token: "Eine"         	Type: TOKEN	Start: 4297	End: 4301
+    Token: "kraeftige"    	Type: TOKEN	Start: 4302	End: 4311
+    Token: "Ausweitung"   	Type: TOKEN	Start: 4312	End: 4322
+    Token: "der"          	Type: TOKEN	Start: 4323	End: 4326
+    Token: "Konsumnachfrage"	Type: TOKEN	Start: 4327	End: 4342
+    Token: ","            	Type: PUNCTUATION	Start: 4342	End: 4343
+    Token: "die"          	Type: TOKEN	Start: 4344	End: 4347
+    Token: "das"          	Type: TOKEN	Start: 4348	End: 4351
+    Token: "Konjunkturruder"	Type: TOKEN	Start: 4352	End: 4367
+    Token: "endgueltig"   	Type: TOKEN	Start: 4368	End: 4378
+    Token: "herumreissen" 	Type: TOKEN	Start: 4379	End: 4391
+    Token: "koennte"      	Type: TOKEN	Start: 4392	End: 4399
+    Token: ","            	Type: PUNCTUATION	Start: 4399	End: 4400
+    Token: "wird"         	Type: TOKEN	Start: 4401	End: 4405
+    Token: "auch"         	Type: TOKEN	Start: 4406	End: 4410
+    Token: "1993"         	Type: DIGITAL	Start: 4411	End: 4415
+    Token: "nicht"        	Type: TOKEN	Start: 4416	End: 4421
+    Token: "erwartet"     	Type: TOKEN	Start: 4422	End: 4430
+    Token: "."            	Type: TERM_PUNCT_P	Start: 4430	End: 4431
+
+Paragraph Start: 4435
+Paragraph End: 5166
+  Text Unit Start: 4435
+  Text Unit End: 4700
+    Token: "Der"          	Type: TOKEN	Start: 4435	End: 4438
+    Token: "Anteil"       	Type: TOKEN	Start: 4439	End: 4445
+    Token: "der"          	Type: TOKEN	Start: 4446	End: 4449
+    Token: "Ratenkredite" 	Type: TOKEN	Start: 4450	End: 4462
+    Token: "am"           	Type: TOKEN	Start: 4463	End: 4465
+    Token: "Durchschnittseinkommen"	Type: TOKEN	Start: 4466	End: 4488
+    Token: ","            	Type: PUNCTUATION	Start: 4488	End: 4489
+    Token: "der"          	Type: TOKEN	Start: 4490	End: 4493
+    Token: "die"          	Type: TOKEN	Start: 4494	End: 4497
+    Token: "Schuldenlast" 	Type: TOKEN	Start: 4498	End: 4510
+    Token: "der"          	Type: TOKEN	Start: 4511	End: 4514
+    Token: "kreditkartenverwoehnten"	Type: TOKEN	Start: 4515	End: 4538
+    Token: "Verbraucher"  	Type: TOKEN	Start: 4539	End: 4550
+    Token: "dokumentiert" 	Type: TOKEN	Start: 4551	End: 4563
+    Token: ","            	Type: PUNCTUATION	Start: 4563	End: 4564
+    Token: "liegt"        	Type: TOKEN	Start: 4565	End: 4570
+    Token: "mit"          	Type: TOKEN	Start: 4571	End: 4574
+    Token: "14,4"         	Type: DIGITAL	Start: 4575	End: 4579
+    Token: "Prozent"      	Type: TOKEN	Start: 4580	End: 4587
+    Token: "nach"         	Type: TOKEN	Start: 4588	End: 4592
+    Token: "der"          	Type: TOKEN	Start: 4593	End: 4596
+    Token: "ZEW-Analyse"  	Type: TOKEN	Start: 4597	End: 4608
+    Token: """            	Type: OPEN_PUNCT	Start: 4609	End: 4610	PTB: "``"
+    Token: "noch"         	Type: TOKEN	Start: 4610	End: 4614
+    Token: "weit"         	Type: TOKEN	Start: 4615	End: 4619
+    Token: "ueber"        	Type: TOKEN	Start: 4620	End: 4625
+    Token: "dem"          	Type: TOKEN	Start: 4626	End: 4629
+    Token: "Tiefpunkt"    	Type: TOKEN	Start: 4630	End: 4639
+    Token: "von"          	Type: TOKEN	Start: 4640	End: 4643
+    Token: "zwoelf"       	Type: TOKEN	Start: 4644	End: 4650
+    Token: "Prozent"      	Type: TOKEN	Start: 4651	End: 4658
+    Token: "waehrend"     	Type: TOKEN	Start: 4659	End: 4667
+    Token: "der"          	Type: TOKEN	Start: 4668	End: 4671
+    Token: "letzten"      	Type: TOKEN	Start: 4672	End: 4679
+    Token: "beiden"       	Type: TOKEN	Start: 4680	End: 4686
+    Token: "Rezessionen"  	Type: TOKEN	Start: 4687	End: 4698
+    Token: """            	Type: CLOSE_PUNCT	Start: 4698	End: 4699	PTB: "''"
+    Token: "."            	Type: TERM_PUNCT_P	Start: 4699	End: 4700
+  Text Unit Start: 4701
+  Text Unit End: 4935
+    Token: "Schon"        	Type: TOKEN	Start: 4701	End: 4706
+    Token: "meldet"       	Type: TOKEN	Start: 4707	End: 4713
+    Token: "der"          	Type: TOKEN	Start: 4714	End: 4717
+    Token: "Federal"      	Type: TOKEN	Start: 4718	End: 4725
+    Token: "Reserve"      	Type: TOKEN	Start: 4726	End: 4733
+    Token: "Board"        	Type: TOKEN	Start: 4734	End: 4739
+    Token: "eine"         	Type: TOKEN	Start: 4740	End: 4744
+    Token: "im"           	Type: TOKEN	Start: 4745	End: 4747
+    Token: "Oktober"      	Type: TOKEN	Start: 4748	End: 4755
+    Token: """            	Type: OPEN_PUNCT	Start: 4756	End: 4757	PTB: "``"
+    Token: "deutlich"     	Type: TOKEN	Start: 4757	End: 4765
+    Token: "langsamere"   	Type: TOKEN	Start: 4766	End: 4776
+    Token: """            	Type: CLOSE_PUNCT	Start: 4776	End: 4777	PTB: "''"
+    Token: "Ausweitung"   	Type: TOKEN	Start: 4778	End: 4788
+    Token: "der"          	Type: TOKEN	Start: 4789	End: 4792
+    Token: "Ratenkredite" 	Type: TOKEN	Start: 4793	End: 4805
+    Token: ","            	Type: PUNCTUATION	Start: 4805	End: 4806
+    Token: "laufen"       	Type: TOKEN	Start: 4807	End: 4813
+    Token: "an"           	Type: TOKEN	Start: 4814	End: 4816
+    Token: "der"          	Type: TOKEN	Start: 4817	End: 4820
+    Token: "Wall"         	Type: TOKEN	Start: 4821	End: 4825
+    Token: "Street"       	Type: TOKEN	Start: 4826	End: 4832
+    Token: "Geruechte"    	Type: TOKEN	Start: 4833	End: 4842
+    Token: "um"           	Type: TOKEN	Start: 4843	End: 4845
+    Token: ","            	Type: PUNCTUATION	Start: 4845	End: 4846
+    Token: "dass"         	Type: TOKEN	Start: 4847	End: 4851
+    Token: "1500"         	Type: DIGITAL	Start: 4852	End: 4856
+    Token: "US-Banken"    	Type: TOKEN	Start: 4857	End: 4866
+    Token: "vor"          	Type: TOKEN	Start: 4867	End: 4870
+    Token: "dem"          	Type: TOKEN	Start: 4871	End: 4874
+    Token: "Bankrott"     	Type: TOKEN	Start: 4875	End: 4883
+    Token: "stehen"       	Type: TOKEN	Start: 4884	End: 4890
+    Token: ","            	Type: PUNCTUATION	Start: 4890	End: 4891
+    Token: "weil"         	Type: TOKEN	Start: 4892	End: 4896
+    Token: "Altforderungen"	Type: TOKEN	Start: 4897	End: 4911
+    Token: "nicht"        	Type: TOKEN	Start: 4912	End: 4917
+    Token: "beglichen"    	Type: TOKEN	Start: 4918	End: 4927
+    Token: "werden"       	Type: TOKEN	Start: 4928	End: 4934
+    Token: "."            	Type: TERM_PUNCT_P	Start: 4934	End: 4935
+  Text Unit Start: 4936
+  Text Unit End: 5166
+    Token: "Die"          	Type: TOKEN	Start: 4936	End: 4939
+    Token: "Organisation" 	Type: TOKEN	Start: 4940	End: 4952
+    Token: "fuer"         	Type: TOKEN	Start: 4953	End: 4957
+    Token: "wirtschaftliche"	Type: TOKEN	Start: 4958	End: 4973
+    Token: "Zusammenarbeit"	Type: TOKEN	Start: 4974	End: 4988
+    Token: "und"          	Type: TOKEN	Start: 4989	End: 4992
+    Token: "Entwicklung"  	Type: TOKEN	Start: 4993	End: 5004
+    Token: "("            	Type: OPEN_BRACKET	Start: 5005	End: 5006	PTB: "-LRB-"
+    Token: "OECD"         	Type: TOKEN	Start: 5006	End: 5010
+    Token: ")"            	Type: CLOSE_BRACKET	Start: 5010	End: 5011	PTB: "-RRB-"
+    Token: "hat"          	Type: TOKEN	Start: 5012	End: 5015
+    Token: "allzu"        	Type: TOKEN	Start: 5016	End: 5021
+    Token: "optimistische"	Type: TOKEN	Start: 5022	End: 5035
+    Token: "US-Wachstumsprognosen"	Type: TOKEN	Start: 5036	End: 5057
+    Token: "des"          	Type: TOKEN	Start: 5058	End: 5061
+    Token: "Internationalen"	Type: TOKEN	Start: 5062	End: 5077
+    Token: "Waehrungsfonds"	Type: TOKEN	Start: 5078	End: 5092
+    Token: "("            	Type: OPEN_BRACKET	Start: 5093	End: 5094	PTB: "-LRB-"
+    Token: "IWF"          	Type: TOKEN	Start: 5094	End: 5097
+    Token: ")"            	Type: CLOSE_BRACKET	Start: 5097	End: 5098	PTB: "-RRB-"
+    Token: "zuletzt"      	Type: TOKEN	Start: 5099	End: 5106
+    Token: "um"           	Type: TOKEN	Start: 5107	End: 5109
+    Token: "fast"         	Type: TOKEN	Start: 5110	End: 5114
+    Token: "zwei"         	Type: TOKEN	Start: 5115	End: 5119
+    Token: "Punkte"       	Type: TOKEN	Start: 5120	End: 5126
+    Token: "auf"          	Type: TOKEN	Start: 5127	End: 5130
+    Token: "2"            	Type: DIGITAL	Start: 5131	End: 5132
+    Token: "bis"          	Type: TOKEN	Start: 5133	End: 5136
+    Token: "2,5"          	Type: DIGITAL	Start: 5137	End: 5140
+    Token: "Prozent"      	Type: TOKEN	Start: 5141	End: 5148
+    Token: "heruntergekuerzt"	Type: TOKEN	Start: 5149	End: 5165
+    Token: "."            	Type: TERM_PUNCT_P	Start: 5165	End: 5166
+
+Paragraph Start: 5170
+Paragraph End: 5859
+  Text Unit Start: 5170
+  Text Unit End: 5314
+    Token: "Um"           	Type: TOKEN	Start: 5170	End: 5172
+    Token: "so"           	Type: TOKEN	Start: 5173	End: 5175
+    Token: "nachdruecklicher"	Type: TOKEN	Start: 5176	End: 5192
+    Token: "warnen"       	Type: TOKEN	Start: 5193	End: 5199
+    Token: "die"          	Type: TOKEN	Start: 5200	End: 5203
+    Token: "Vereinten"    	Type: TOKEN	Start: 5204	End: 5213
+    Token: "Nationen"     	Type: TOKEN	Start: 5214	End: 5222
+    Token: "vor"          	Type: TOKEN	Start: 5223	End: 5226
+    Token: "uebertriebenen"	Type: TOKEN	Start: 5227	End: 5241
+    Token: "Hoffnungen"   	Type: TOKEN	Start: 5242	End: 5252
+    Token: "der"          	Type: TOKEN	Start: 5253	End: 5256
+    Token: "Europaeer"    	Type: TOKEN	Start: 5257	End: 5266
+    Token: "auf"          	Type: TOKEN	Start: 5267	End: 5270
+    Token: "eine"         	Type: TOKEN	Start: 5271	End: 5275
+    Token: "deutliche"    	Type: TOKEN	Start: 5276	End: 5285
+    Token: "Belebung"     	Type: TOKEN	Start: 5286	End: 5294
+    Token: "der"          	Type: TOKEN	Start: 5295	End: 5298
+    Token: "Weltwirtschaft"	Type: TOKEN	Start: 5299	End: 5313
+    Token: "."            	Type: TERM_PUNCT_P	Start: 5313	End: 5314
+  Text Unit Start: 5315
+  Text Unit End: 5529
+    Token: "Zu"           	Type: TOKEN	Start: 5315	End: 5317
+    Token: "stark"        	Type: TOKEN	Start: 5318	End: 5323
+    Token: "schlaegt"     	Type: TOKEN	Start: 5324	End: 5332
+    Token: "die"          	Type: TOKEN	Start: 5333	End: 5336
+    Token: "Flaute"       	Type: TOKEN	Start: 5337	End: 5343
+    Token: "auch"         	Type: TOKEN	Start: 5344	End: 5348
+    Token: "in"           	Type: TOKEN	Start: 5349	End: 5351
+    Token: "Japan"        	Type: TOKEN	Start: 5352	End: 5357
+    Token: "zu"           	Type: TOKEN	Start: 5358	End: 5360
+    Token: "Buche"        	Type: TOKEN	Start: 5361	End: 5366
+    Token: ","            	Type: PUNCTUATION	Start: 5366	End: 5367
+    Token: "das"          	Type: TOKEN	Start: 5368	End: 5371
+    Token: "den"          	Type: TOKEN	Start: 5372	End: 5375
+    Token: "."            	Type: TERM_PUNCT_P	Start: 5376	End: 5377
+    Token: "ch"           	Type: TOKEN	Start: 5377	End: 5379
+    Token: "in"           	Type: TOKEN	Start: 5380	End: 5382
+    Token: "Japan"        	Type: TOKEN	Start: 5383	End: 5388
+    Token: "zu"           	Type: TOKEN	Start: 5389	End: 5391
+    Token: "Buche"        	Type: TOKEN	Start: 5392	End: 5397
+    Token: ","            	Type: PUNCTUATION	Start: 5397	End: 5398
+    Token: "das"          	Type: TOKEN	Start: 5399	End: 5402
+    Token: "den"          	Type: TOKEN	Start: 5403	End: 5406
+    Token: "schlimmsten"  	Type: TOKEN	Start: 5407	End: 5418
+    Token: "Konjunktureinbruch"	Type: TOKEN	Start: 5419	End: 5437
+    Token: "seit"         	Type: TOKEN	Start: 5438	End: 5442
+    Token: "18"           	Type: DIGITAL	Start: 5443	End: 5445
+    Token: "Jahren"       	Type: TOKEN	Start: 5446	End: 5452
+    Token: "erlebt"       	Type: TOKEN	Start: 5453	End: 5459
+    Token: ","            	Type: PUNCTUATION	Start: 5459	End: 5460
+    Token: "als"          	Type: TOKEN	Start: 5461	End: 5464
+    Token: "dass"         	Type: TOKEN	Start: 5465	End: 5469
+    Token: "vor"          	Type: TOKEN	Start: 5470	End: 5473
+    Token: "allem"        	Type: TOKEN	Start: 5474	End: 5479
+    Token: "die"          	Type: TOKEN	Start: 5480	End: 5483
+    Token: "Deutschen"    	Type: TOKEN	Start: 5484	End: 5493
+    Token: "Hilfe"        	Type: TOKEN	Start: 5494	End: 5499
+    Token: "von"          	Type: TOKEN	Start: 5500	End: 5503
+    Token: "aussen"       	Type: TOKEN	Start: 5504	End: 5510
+    Token: "erwarten"     	Type: TOKEN	Start: 5511	End: 5519
+    Token: "koennten"     	Type: TOKEN	Start: 5520	End: 5528
+    Token: "."            	Type: TERM_PUNCT_P	Start: 5528	End: 5529
+  Text Unit Start: 5530
+  Text Unit End: 5859
+    Token: "Allein"       	Type: TOKEN	Start: 5530	End: 5536
+    Token: "die"          	Type: TOKEN	Start: 5537	End: 5540
+    Token: "gedaempften"  	Type: TOKEN	Start: 5541	End: 5552
+    Token: "Erwartungen"  	Type: TOKEN	Start: 5553	End: 5564
+    Token: "fuer"         	Type: TOKEN	Start: 5565	End: 5569
+    Token: "den"          	Type: TOKEN	Start: 5570	End: 5573
+    Token: "Welthandel"   	Type: TOKEN	Start: 5574	End: 5584
+    Token: "-"            	Type: PUNCTUATION	Start: 5585	End: 5586
+    Token: "statt"        	Type: TOKEN	Start: 5587	End: 5592
+    Token: "eines"        	Type: TOKEN	Start: 5593	End: 5598
+    Token: "Zuwachses"    	Type: TOKEN	Start: 5599	End: 5608
+    Token: "von"          	Type: TOKEN	Start: 5609	End: 5612
+    Token: "8,5"          	Type: DIGITAL	Start: 5613	End: 5616
+    Token: "Prozent"      	Type: TOKEN	Start: 5617	End: 5624
+    Token: "prognostiziert"	Type: TOKEN	Start: 5625	End: 5639
+    Token: "die"          	Type: TOKEN	Start: 5640	End: 5643
+    Token: "OECD"         	Type: TOKEN	Start: 5644	End: 5648
+    Token: "jetzt"        	Type: TOKEN	Start: 5649	End: 5654
+    Token: "nur"          	Type: TOKEN	Start: 5655	End: 5658
+    Token: "noch"         	Type: TOKEN	Start: 5659	End: 5663
+    Token: "einen"        	Type: TOKEN	Start: 5664	End: 5669
+    Token: "Anstieg"      	Type: TOKEN	Start: 5670	End: 5677
+    Token: "um"           	Type: TOKEN	Start: 5678	End: 5680
+    Token: "fuenf"        	Type: TOKEN	Start: 5681	End: 5686
+    Token: "Prozent"      	Type: TOKEN	Start: 5687	End: 5694
+    Token: "in"           	Type: TOKEN	Start: 5695	End: 5697
+    Token: "1993"         	Type: DIGITAL	Start: 5698	End: 5702
+    Token: "-"            	Type: PUNCTUATION	Start: 5703	End: 5704
+    Token: "bedeuten"     	Type: TOKEN	Start: 5705	End: 5713
+    Token: "nach"         	Type: TOKEN	Start: 5714	End: 5718
+    Token: "Berechnungen" 	Type: TOKEN	Start: 5719	End: 5731
+    Token: "des"          	Type: TOKEN	Start: 5732	End: 5735
+    Token: "Rheinisch-Westfaelischen"	Type: TOKEN	Start: 5736	End: 5760
+    Token: "Instituts"    	Type: TOKEN	Start: 5761	End: 5770
+    Token: "fuer"         	Type: TOKEN	Start: 5771	End: 5775
+    Token: "Wirtschaftsforschung"	Type: TOKEN	Start: 5776	End: 5796
+    Token: "weitere"      	Type: TOKEN	Start: 5797	End: 5804
+    Token: "Wachstumsverluste"	Type: TOKEN	Start: 5805	End: 5822
+    Token: "in"           	Type: TOKEN	Start: 5823	End: 5825
+    Token: "Deutschland"  	Type: TOKEN	Start: 5826	End: 5837
+    Token: "um"           	Type: TOKEN	Start: 5838	End: 5840
+    Token: "1,5"          	Type: DIGITAL	Start: 5841	End: 5844
+    Token: "Prozentpunkte"	Type: TOKEN	Start: 5845	End: 5858
+    Token: "."            	Type: TERM_PUNCT_P	Start: 5858	End: 5859
+
+Paragraph Start: 5864
+Paragraph End: 6253
+  Text Unit Start: 5864
+  Text Unit End: 5946
+    Token: "Die"          	Type: TOKEN	Start: 5864	End: 5867
+    Token: "deutsche"     	Type: TOKEN	Start: 5868	End: 5876
+    Token: "Konjunktur"   	Type: TOKEN	Start: 5877	End: 5887
+    Token: "droht"        	Type: TOKEN	Start: 5888	End: 5893
+    Token: "1993"         	Type: DIGITAL	Start: 5894	End: 5898
+    Token: "-"            	Type: PUNCTUATION	Start: 5899	End: 5900
+    Token: "im"           	Type: TOKEN	Start: 5901	End: 5903
+    Token: "wahrsten"     	Type: TOKEN	Start: 5904	End: 5912
+    Token: "Sinne"        	Type: TOKEN	Start: 5913	End: 5918
+    Token: "des"          	Type: TOKEN	Start: 5919	End: 5922
+    Token: "Wortes"       	Type: TOKEN	Start: 5923	End: 5929
+    Token: "-"            	Type: PUNCTUATION	Start: 5930	End: 5931
+    Token: "abzuschmieren"	Type: TOKEN	Start: 5932	End: 5945
+    Token: "."            	Type: TERM_PUNCT_P	Start: 5945	End: 5946
+  Text Unit Start: 5947
+  Text Unit End: 6146
+    Token: "Fuer"         	Type: TOKEN	Start: 5947	End: 5951
+    Token: "Daimler-Benz-Chef"	Type: TOKEN	Start: 5952	End: 5969
+    Token: "Edzard"       	Type: TOKEN	Start: 5970	End: 5976
+    Token: "Reuter"       	Type: TOKEN	Start: 5977	End: 5983
+    Token: """            	Type: OPEN_PUNCT	Start: 5984	End: 5985	PTB: "``"
+    Token: "stehen"       	Type: TOKEN	Start: 5985	End: 5991
+    Token: "die"          	Type: TOKEN	Start: 5992	End: 5995
+    Token: "Zeichen"      	Type: TOKEN	Start: 5996	End: 6003
+    Token: "auf"          	Type: TOKEN	Start: 6004	End: 6007
+    Token: "Sturm"        	Type: TOKEN	Start: 6008	End: 6013
+    Token: """            	Type: CLOSE_PUNCT	Start: 6013	End: 6014	PTB: "''"
+    Token: ","            	Type: PUNCTUATION	Start: 6014	End: 6015
+    Token: "Deutschland"  	Type: TOKEN	Start: 6016	End: 6027
+    Token: ","            	Type: PUNCTUATION	Start: 6027	End: 6028
+    Token: "findet"       	Type: TOKEN	Start: 6029	End: 6035
+    Token: "Tyll"         	Type: TOKEN	Start: 6036	End: 6040
+    Token: "Necker"       	Type: TOKEN	Start: 6041	End: 6047
+    Token: ","            	Type: PUNCTUATION	Start: 6047	End: 6048
+    Token: "Chef"         	Type: TOKEN	Start: 6049	End: 6053
+    Token: "des"          	Type: TOKEN	Start: 6054	End: 6057
+    Token: "Bundesverbandes"	Type: TOKEN	Start: 6058	End: 6073
+    Token: "der"          	Type: TOKEN	Start: 6074	End: 6077
+    Token: "Deutschen"    	Type: TOKEN	Start: 6078	End: 6087
+    Token: "Industrie"    	Type: TOKEN	Start: 6088	End: 6097
+    Token: "("            	Type: OPEN_BRACKET	Start: 6098	End: 6099	PTB: "-LRB-"
+    Token: "BDI"          	Type: TOKEN	Start: 6099	End: 6102
+    Token: ";"            	Type: PUNCTUATION	Start: 6102	End: 6103
+    Token: "siehe"        	Type: TOKEN	Start: 6104	End: 6109
+    Token: "auch"         	Type: TOKEN	Start: 6110	End: 6114
+    Token: "Seite"        	Type: TOKEN	Start: 6115	End: 6120
+    Token: "46/47"        	Type: TOKEN	Start: 6121	End: 6126	PTB: "46\/47"
+    Token: ")"            	Type: CLOSE_BRACKET	Start: 6126	End: 6127	PTB: "-RRB-"
+    Token: ","            	Type: PUNCTUATION	Start: 6127	End: 6128
+    Token: """            	Type: OPEN_PUNCT	Start: 6129	End: 6130	PTB: "``"
+    Token: "liegt"        	Type: TOKEN	Start: 6130	End: 6135
+    Token: "im"           	Type: TOKEN	Start: 6136	End: 6138
+    Token: "Dreck"        	Type: TOKEN	Start: 6139	End: 6144
+    Token: """            	Type: CLOSE_PUNCT	Start: 6144	End: 6145	PTB: "''"
+    Token: "."            	Type: TERM_PUNCT_P	Start: 6145	End: 6146
+  Text Unit Start: 6147
+  Text Unit End: 6253
+    Token: "Wie"          	Type: TOKEN	Start: 6147	End: 6150
+    Token: "schon"        	Type: TOKEN	Start: 6151	End: 6156
+    Token: "waehrend"     	Type: TOKEN	Start: 6157	End: 6165
+    Token: "der"          	Type: TOKEN	Start: 6166	End: 6169
+    Token: "Rezessionen"  	Type: TOKEN	Start: 6170	End: 6181
+    Token: "1975"         	Type: DIGITAL	Start: 6182	End: 6186
+    Token: "und"          	Type: TOKEN	Start: 6187	End: 6190
+    Token: "1981/82"      	Type: TOKEN	Start: 6191	End: 6198	PTB: "1981\/82"
+    Token: "beginnt"      	Type: TOKEN	Start: 6199	End: 6206
+    Token: "der"          	Type: TOKEN	Start: 6207	End: 6210
+    Token: "Abschwung"    	Type: TOKEN	Start: 6211	End: 6220
+    Token: "nun"          	Type: TOKEN	Start: 6221	End: 6224
+    Token: ","            	Type: PUNCTUATION	Start: 6224	End: 6225
+    Token: "sich"         	Type: TOKEN	Start: 6226	End: 6230
+    Token: "selbst"       	Type: TOKEN	Start: 6231	End: 6237
+    Token: "zu"           	Type: TOKEN	Start: 6238	End: 6240
+    Token: "verstaerken"  	Type: TOKEN	Start: 6241	End: 6252
+    Token: "."            	Type: TERM_PUNCT_P	Start: 6252	End: 6253
+
+Paragraph Start: 6257
+Paragraph End: 6855
+  Text Unit Start: 6257
+  Text Unit End: 6372
+    Token: "Monat"        	Type: TOKEN	Start: 6257	End: 6262
+    Token: "fuer"         	Type: TOKEN	Start: 6263	End: 6267
+    Token: "Monat"        	Type: TOKEN	Start: 6268	End: 6273
+    Token: "schrumpfen"   	Type: TOKEN	Start: 6274	End: 6284
+    Token: "die"          	Type: TOKEN	Start: 6285	End: 6288
+    Token: "Auftragseingaenge"	Type: TOKEN	Start: 6289	End: 6306
+    Token: "der"          	Type: TOKEN	Start: 6307	End: 6310
+    Token: "westdeutschen"	Type: TOKEN	Start: 6311	End: 6324
+    Token: "Industrie"    	Type: TOKEN	Start: 6325	End: 6334
+    Token: ","            	Type: PUNCTUATION	Start: 6334	End: 6335
+    Token: "im"           	Type: TOKEN	Start: 6336	End: 6338
+    Token: "Oktober"      	Type: TOKEN	Start: 6339	End: 6346
+    Token: "zuletzt"      	Type: TOKEN	Start: 6347	End: 6354
+    Token: "um"           	Type: TOKEN	Start: 6355	End: 6357
+    Token: "fuenf"        	Type: TOKEN	Start: 6358	End: 6363
+    Token: "Prozent"      	Type: TOKEN	Start: 6364	End: 6371
+    Token: "."            	Type: TERM_PUNCT_P	Start: 6371	End: 6372
+  Text Unit Start: 6373
+  Text Unit End: 6492
+    Token: "Laengst"      	Type: TOKEN	Start: 6373	End: 6380
+    Token: "abgebaut"     	Type: TOKEN	Start: 6381	End: 6389
+    Token: "-"            	Type: PUNCTUATION	Start: 6390	End: 6391
+    Token: "seit"         	Type: TOKEN	Start: 6392	End: 6396
+    Token: "knapp"        	Type: TOKEN	Start: 6397	End: 6402
+    Token: "einem"        	Type: TOKEN	Start: 6403	End: 6408
+    Token: "halben"       	Type: TOKEN	Start: 6409	End: 6415
+    Token: "Jahr"         	Type: TOKEN	Start: 6416	End: 6420
+    Token: "-"            	Type: PUNCTUATION	Start: 6421	End: 6422
+    Token: "sind"         	Type: TOKEN	Start: 6423	End: 6427
+    Token: "die"          	Type: TOKEN	Start: 6428	End: 6431
+    Token: "Auftragsbestaende"	Type: TOKEN	Start: 6432	End: 6449
+    Token: "in"           	Type: TOKEN	Start: 6450	End: 6452
+    Token: "der"          	Type: TOKEN	Start: 6453	End: 6456
+    Token: "Maschinenbau" 	Type: TOKEN	Start: 6457	End: 6469
+    Token: "-"            	Type: PUNCTUATION	Start: 6469	End: 6470
+    Token: "und"          	Type: TOKEN	Start: 6471	End: 6474
+    Token: "Elektroindustrie"	Type: TOKEN	Start: 6475	End: 6491
+    Token: "."            	Type: TERM_PUNCT_P	Start: 6491	End: 6492
+  Text Unit Start: 6493
+  Text Unit End: 6855
+    Token: "Waehrend"     	Type: TOKEN	Start: 6493	End: 6501
+    Token: "das"          	Type: TOKEN	Start: 6502	End: 6505
+    Token: "verarbeitende"	Type: TOKEN	Start: 6506	End: 6519
+    Token: "Gewerbe"      	Type: TOKEN	Start: 6520	End: 6527
+    Token: "die"          	Type: TOKEN	Start: 6528	End: 6531
+    Token: "Investitionsplaene"	Type: TOKEN	Start: 6532	End: 6550
+    Token: "fuer"         	Type: TOKEN	Start: 6551	End: 6555
+    Token: "1993"         	Type: DIGITAL	Start: 6556	End: 6560
+    Token: "nach"         	Type: TOKEN	Start: 6561	End: 6565
+    Token: "Berechnungen" 	Type: TOKEN	Start: 6566	End: 6578
+    Token: "des"          	Type: TOKEN	Start: 6579	End: 6582
+    Token: "Muenchner"    	Type: TOKEN	Start: 6583	End: 6592
+    Token: "Ifo-Instituts"	Type: TOKEN	Start: 6593	End: 6606
+    Token: "um"           	Type: TOKEN	Start: 6607	End: 6609
+    Token: "real"         	Type: TOKEN	Start: 6610	End: 6614
+    Token: "zehn"         	Type: TOKEN	Start: 6615	End: 6619
+    Token: "Prozent"      	Type: TOKEN	Start: 6620	End: 6627
+    Token: "gegenueber"   	Type: TOKEN	Start: 6628	End: 6638
+    Token: "dem"          	Type: TOKEN	Start: 6639	End: 6642
+    Token: "Vorjahr"      	Type: TOKEN	Start: 6643	End: 6650
+    Token: "zusammenstrich"	Type: TOKEN	Start: 6651	End: 6665
+    Token: ","            	Type: PUNCTUATION	Start: 6665	End: 6666
+    Token: "stieg"        	Type: TOKEN	Start: 6667	End: 6672
+    Token: "die"          	Type: TOKEN	Start: 6673	End: 6676
+    Token: "Zahl"         	Type: TOKEN	Start: 6677	End: 6681
+    Token: "der"          	Type: TOKEN	Start: 6682	End: 6685
+    Token: "Firmenpleiten"	Type: TOKEN	Start: 6686	End: 6699
+    Token: "von"          	Type: TOKEN	Start: 6700	End: 6703
+    Token: "Januar"       	Type: TOKEN	Start: 6704	End: 6710
+    Token: "bis"          	Type: TOKEN	Start: 6711	End: 6714
+    Token: "September"    	Type: TOKEN	Start: 6715	End: 6724
+    Token: "im"           	Type: TOKEN	Start: 6725	End: 6727
+    Token: "Westen"       	Type: TOKEN	Start: 6728	End: 6734
+    Token: "erstmals"     	Type: TOKEN	Start: 6735	End: 6743
+    Token: "um"           	Type: TOKEN	Start: 6744	End: 6746
+    Token: "mehr"         	Type: TOKEN	Start: 6747	End: 6751
+    Token: "als"          	Type: TOKEN	Start: 6752	End: 6755
+    Token: "sieben"       	Type: TOKEN	Start: 6756	End: 6762
+    Token: "Prozent"      	Type: TOKEN	Start: 6763	End: 6770
+    Token: "auf"          	Type: TOKEN	Start: 6771	End: 6774
+    Token: "ueber"        	Type: TOKEN	Start: 6775	End: 6780
+    Token: "10"           	Type: DIGITAL	Start: 6781	End: 6783
+    Token: "000"          	Type: DIGITAL	Start: 6784	End: 6787
+    Token: ";"            	Type: PUNCTUATION	Start: 6787	End: 6788
+    Token: "in"           	Type: TOKEN	Start: 6789	End: 6791
+    Token: "Ostdeutschland"	Type: TOKEN	Start: 6792	End: 6806
+    Token: "hat"          	Type: TOKEN	Start: 6807	End: 6810
+    Token: "sich"         	Type: TOKEN	Start: 6811	End: 6815
+    Token: "die"          	Type: TOKEN	Start: 6816	End: 6819
+    Token: "Zahl"         	Type: TOKEN	Start: 6820	End: 6824
+    Token: "der"          	Type: TOKEN	Start: 6825	End: 6828
+    Token: "Konkurse"     	Type: TOKEN	Start: 6829	End: 6837
+    Token: "gar"          	Type: TOKEN	Start: 6838	End: 6841
+    Token: "verdreifacht" 	Type: TOKEN	Start: 6842	End: 6854
+    Token: "."            	Type: TERM_PUNCT_P	Start: 6854	End: 6855
+
+Paragraph Start: 6859
+Paragraph End: 7332
+  Text Unit Start: 6859
+  Text Unit End: 7033
+    Token: "Erstmals"     	Type: TOKEN	Start: 6859	End: 6867
+    Token: "in"           	Type: TOKEN	Start: 6868	End: 6870
+    Token: "der"          	Type: TOKEN	Start: 6871	End: 6874
+    Token: "neunjaehrigen"	Type: TOKEN	Start: 6875	End: 6888
+    Token: "Amtszeit"     	Type: TOKEN	Start: 6889	End: 6897
+    Token: "Heinrich"     	Type: TOKEN	Start: 6898	End: 6906
+    Token: "Frankes"      	Type: TOKEN	Start: 6907	End: 6914
+    Token: ","            	Type: PUNCTUATION	Start: 6914	End: 6915
+    Token: "des"          	Type: TOKEN	Start: 6916	End: 6919
+    Token: "Praesidenten" 	Type: TOKEN	Start: 6920	End: 6932
+    Token: "der"          	Type: TOKEN	Start: 6933	End: 6936
+    Token: "Bundesanstalt"	Type: TOKEN	Start: 6937	End: 6950
+    Token: "fuer"         	Type: TOKEN	Start: 6951	End: 6955
+    Token: "Arbeit"       	Type: TOKEN	Start: 6956	End: 6962
+    Token: ","            	Type: PUNCTUATION	Start: 6962	End: 6963
+    Token: "naehert"      	Type: TOKEN	Start: 6964	End: 6971
+    Token: "sich"         	Type: TOKEN	Start: 6972	End: 6976
+    Token: "das"          	Type: TOKEN	Start: 6977	End: 6980
+    Token: "deutsche"     	Type: TOKEN	Start: 6981	End: 6989
+    Token: "Arbeitslosenheer"	Type: TOKEN	Start: 6990	End: 7006
+    Token: "der"          	Type: TOKEN	Start: 7007	End: 7010
+    Token: "Drei-Millionen-Grenze"	Type: TOKEN	Start: 7011	End: 7032
+    Token: "."            	Type: TERM_PUNCT_P	Start: 7032	End: 7033
+  Text Unit Start: 7034
+  Text Unit End: 7332
+    Token: "Addiert"      	Type: TOKEN	Start: 7034	End: 7041
+    Token: "man"          	Type: TOKEN	Start: 7042	End: 7045
+    Token: "die"          	Type: TOKEN	Start: 7046	End: 7049
+    Token: "knapp"        	Type: TOKEN	Start: 7050	End: 7055
+    Token: "1,75"         	Type: DIGITAL	Start: 7056	End: 7060
+    Token: "Millionen"    	Type: TOKEN	Start: 7061	End: 7070
+    Token: "Menschen"     	Type: TOKEN	Start: 7071	End: 7079
+    Token: "hinzu"        	Type: TOKEN	Start: 7080	End: 7085
+    Token: ","            	Type: PUNCTUATION	Start: 7085	End: 7086
+    Token: "die"          	Type: TOKEN	Start: 7087	End: 7090
+    Token: "in"           	Type: TOKEN	Start: 7091	End: 7093
+    Token: "Ostdeutschland"	Type: TOKEN	Start: 7094	End: 7108
+    Token: "nur"          	Type: TOKEN	Start: 7109	End: 7112
+    Token: "mit"          	Type: TOKEN	Start: 7113	End: 7116
+    Token: "Hilfe"        	Type: TOKEN	Start: 7117	End: 7122
+    Token: "oeffentlicher"	Type: TOKEN	Start: 7123	End: 7136
+    Token: "Mittel"       	Type: TOKEN	Start: 7137	End: 7143
+    Token: "in"           	Type: TOKEN	Start: 7144	End: 7146
+    Token: "Lohn"         	Type: TOKEN	Start: 7147	End: 7151
+    Token: "und"          	Type: TOKEN	Start: 7152	End: 7155
+    Token: "Brot"         	Type: TOKEN	Start: 7156	End: 7160
+    Token: "gehalten"     	Type: TOKEN	Start: 7161	End: 7169
+    Token: "werden"       	Type: TOKEN	Start: 7170	End: 7176
+    Token: ","            	Type: PUNCTUATION	Start: 7176	End: 7177
+    Token: "droht"        	Type: TOKEN	Start: 7178	End: 7183
+    Token: "der"          	Type: TOKEN	Start: 7184	End: 7187
+    Token: "Republik"     	Type: TOKEN	Start: 7188	End: 7196
+    Token: "eine"         	Type: TOKEN	Start: 7197	End: 7201
+    Token: "Arbeitslosenquote"	Type: TOKEN	Start: 7202	End: 7219
+    Token: "von"          	Type: TOKEN	Start: 7220	End: 7223
+    Token: "15"           	Type: DIGITAL	Start: 7224	End: 7226
+    Token: "Prozent"      	Type: TOKEN	Start: 7227	End: 7234
+    Token: "-"            	Type: PUNCTUATION	Start: 7235	End: 7236
+    Token: "die"          	Type: TOKEN	Start: 7237	End: 7240
+    Token: "gravierendste"	Type: TOKEN	Start: 7241	End: 7254
+    Token: "Beschaeftigungskrise"	Type: TOKEN	Start: 7255	End: 7275
+    Token: "seit"         	Type: TOKEN	Start: 7276	End: 7280
+    Token: "der"          	Type: TOKEN	Start: 7281	End: 7284
+    Token: "Grossen"      	Type: TOKEN	Start: 7285	End: 7292
+    Token: "Depression"   	Type: TOKEN	Start: 7293	End: 7303
+    Token: "Anfang"       	Type: TOKEN	Start: 7304	End: 7310
+    Token: "der"          	Type: TOKEN	Start: 7311	End: 7314
+    Token: "dreissiger"   	Type: TOKEN	Start: 7315	End: 7325
+    Token: "Jahre"        	Type: TOKEN	Start: 7326	End: 7331
+    Token: "."            	Type: TERM_PUNCT_P	Start: 7331	End: 7332
+
+Paragraph Start: 7336
+Paragraph End: 7836
+  Text Unit Start: 7336
+  Text Unit End: 7487
+    Token: "Die"          	Type: TOKEN	Start: 7336	End: 7339
+    Token: "wachsende"    	Type: TOKEN	Start: 7340	End: 7349
+    Token: "Zahl"         	Type: TOKEN	Start: 7350	End: 7354
+    Token: "der"          	Type: TOKEN	Start: 7355	End: 7358
+    Token: "Arbeitslosen" 	Type: TOKEN	Start: 7359	End: 7371
+    Token: "zeigt"        	Type: TOKEN	Start: 7372	End: 7377
+    Token: "nicht"        	Type: TOKEN	Start: 7378	End: 7383
+    Token: "nur"          	Type: TOKEN	Start: 7384	End: 7387
+    Token: "die"          	Type: TOKEN	Start: 7388	End: 7391
+    Token: "nachlassende" 	Type: TOKEN	Start: 7392	End: 7404
+    Token: "Wirtschaftskraft"	Type: TOKEN	Start: 7405	End: 7421
+    Token: "des"          	Type: TOKEN	Start: 7422	End: 7425
+    Token: "vereinten"    	Type: TOKEN	Start: 7426	End: 7435
+    Token: "Deutschland"  	Type: TOKEN	Start: 7436	End: 7447
+    Token: "an"           	Type: TOKEN	Start: 7448	End: 7450
+    Token: ","            	Type: PUNCTUATION	Start: 7450	End: 7451
+    Token: "sie"          	Type: TOKEN	Start: 7452	End: 7455
+    Token: "belastet"     	Type: TOKEN	Start: 7456	End: 7464
+    Token: "auch"         	Type: TOKEN	Start: 7465	End: 7469
+    Token: "die"          	Type: TOKEN	Start: 7470	End: 7473
+    Token: "Sozialkassen" 	Type: TOKEN	Start: 7474	End: 7486
+    Token: "."            	Type: TERM_PUNCT_P	Start: 7486	End: 7487
+  Text Unit Start: 7488
+  Text Unit End: 7533
+    Token: "Weitere"      	Type: TOKEN	Start: 7488	End: 7495
+    Token: "Abgabenerhoehungen"	Type: TOKEN	Start: 7496	End: 7514
+    Token: "sind"         	Type: TOKEN	Start: 7515	End: 7519
+    Token: "programmiert" 	Type: TOKEN	Start: 7520	End: 7532
+    Token: "."            	Type: TERM_PUNCT_P	Start: 7532	End: 7533
+  Text Unit Start: 7534
+  Text Unit End: 7644
+    Token: "Die"          	Type: TOKEN	Start: 7534	End: 7537
+    Token: "wiederum"     	Type: TOKEN	Start: 7538	End: 7546
+    Token: "schmaelern"   	Type: TOKEN	Start: 7547	End: 7557
+    Token: "den"          	Type: TOKEN	Start: 7558	End: 7561
+    Token: "privaten"     	Type: TOKEN	Start: 7562	End: 7570
+    Token: "Verbrauch"    	Type: TOKEN	Start: 7571	End: 7580
+    Token: "sowie"        	Type: TOKEN	Start: 7581	End: 7586
+    Token: "Absatzerwartungen"	Type: TOKEN	Start: 7587	End: 7604
+    Token: "und"          	Type: TOKEN	Start: 7605	End: 7608
+    Token: "Investitionsneigung"	Type: TOKEN	Start: 7609	End: 7628
+    Token: "der"          	Type: TOKEN	Start: 7629	End: 7632
+    Token: "Wirtschaft"   	Type: TOKEN	Start: 7633	End: 7643
+    Token: "."            	Type: TERM_PUNCT_P	Start: 7643	End: 7644
+  Text Unit Start: 7645
+  Text Unit End: 7836
+    Token: "Staatliche"   	Type: TOKEN	Start: 7645	End: 7655
+    Token: "Mindereinnahmen"	Type: TOKEN	Start: 7656	End: 7671
+    Token: "muessen"      	Type: TOKEN	Start: 7672	End: 7679
+    Token: "mit"          	Type: TOKEN	Start: 7680	End: 7683
+    Token: "zusaetzlicher"	Type: TOKEN	Start: 7684	End: 7697
+    Token: "Verschuldung" 	Type: TOKEN	Start: 7698	End: 7710
+    Token: "am"           	Type: TOKEN	Start: 7711	End: 7713
+    Token: "Kapitalmarkt" 	Type: TOKEN	Start: 7714	End: 7726
+    Token: "ausgeglichen" 	Type: TOKEN	Start: 7727	End: 7739
+    Token: "werden"       	Type: TOKEN	Start: 7740	End: 7746
+    Token: "und"          	Type: TOKEN	Start: 7747	End: 7750
+    Token: "bremsen"      	Type: TOKEN	Start: 7751	End: 7758
+    Token: "den"          	Type: TOKEN	Start: 7759	End: 7762
+    Token: "Abstieg"      	Type: TOKEN	Start: 7763	End: 7770
+    Token: "vom"          	Type: TOKEN	Start: 7771	End: 7774
+    Token: "Zinsgipfel"   	Type: TOKEN	Start: 7775	End: 7785
+    Token: ","            	Type: PUNCTUATION	Start: 7785	End: 7786
+    Token: "auf"          	Type: TOKEN	Start: 7787	End: 7790
+    Token: "den"          	Type: TOKEN	Start: 7791	End: 7794
+    Token: "die"          	Type: TOKEN	Start: 7795	End: 7798
+    Token: "Wirtschaft"   	Type: TOKEN	Start: 7799	End: 7809
+    Token: "derzeit"      	Type: TOKEN	Start: 7810	End: 7817
+    Token: "ungeduldig"   	Type: TOKEN	Start: 7818	End: 7828
+    Token: "wartet"       	Type: TOKEN	Start: 7829	End: 7835
+    Token: "."            	Type: TERM_PUNCT_P	Start: 7835	End: 7836
+
+Paragraph Start: 7840
+Paragraph End: 8852
+  Text Unit Start: 7840
+  Text Unit End: 7999
+    Token: "Mit"          	Type: TOKEN	Start: 7840	End: 7843
+    Token: "ihrer"        	Type: TOKEN	Start: 7844	End: 7849
+    Token: """            	Type: OPEN_PUNCT	Start: 7850	End: 7851	PTB: "``"
+    Token: "irrsinnigen"  	Type: TOKEN	Start: 7851	End: 7862
+    Token: "Kredit"       	Type: TOKEN	Start: 7863	End: 7869
+    Token: "-"            	Type: PUNCTUATION	Start: 7869	End: 7870
+    Token: "und"          	Type: TOKEN	Start: 7871	End: 7874
+    Token: "Wirtschaftspolitik"	Type: TOKEN	Start: 7875	End: 7893
+    Token: """            	Type: CLOSE_PUNCT	Start: 7893	End: 7894	PTB: "''"
+    Token: "("            	Type: OPEN_BRACKET	Start: 7895	End: 7896	PTB: "-LRB-"
+    Token: "Alt-Kanzler"  	Type: TOKEN	Start: 7896	End: 7907
+    Token: "Schmidt"      	Type: TOKEN	Start: 7908	End: 7915
+    Token: ")"            	Type: CLOSE_BRACKET	Start: 7915	End: 7916	PTB: "-RRB-"
+    Token: "hat"          	Type: TOKEN	Start: 7917	End: 7920
+    Token: "die"          	Type: TOKEN	Start: 7921	End: 7924
+    Token: "Bundesregierung"	Type: TOKEN	Start: 7925	End: 7940
+    Token: "den"          	Type: TOKEN	Start: 7941	End: 7944
+    Token: "Absturz"      	Type: TOKEN	Start: 7945	End: 7952
+    Token: "in"           	Type: TOKEN	Start: 7953	End: 7955
+    Token: "die"          	Type: TOKEN	Start: 7956	End: 7959
+    Token: "Rezession"    	Type: TOKEN	Start: 7960	End: 7969
+    Token: "vor"          	Type: TOKEN	Start: 7970	End: 7973
+    Token: "allem"        	Type: TOKEN	Start: 7974	End: 7979
+    Token: "selbst"       	Type: TOKEN	Start: 7980	End: 7986
+    Token: "verschuldet"  	Type: TOKEN	Start: 7987	End: 7998
+    Token: "."            	Type: TERM_PUNCT_P	Start: 7998	End: 7999
+  Text Unit Start: 8000
+  Text Unit End: 8606
+    Token: "Statt"        	Type: TOKEN	Start: 8000	End: 8005
+    Token: "bereits"      	Type: TOKEN	Start: 8006	End: 8013
+    Token: "in"           	Type: TOKEN	Start: 8014	End: 8016
+    Token: "den"          	Type: TOKEN	Start: 8017	End: 8020
+    Token: "einigungsbedingten"	Type: TOKEN	Start: 8021	End: 8039
+    Token: "Boomjahren"   	Type: TOKEN	Start: 8040	End: 8050
+    Token: "1990/91"      	Type: TOKEN	Start: 8051	End: 8058	PTB: "1990\/91"
+    Token: "auf"          	Type: TOKEN	Start: 8059	End: 8062
+    Token: "strikte"      	Type: TOKEN	Start: 8063	End: 8070
+    Token: "Ausgabendisziplin"	Type: TOKEN	Start: 8071	End: 8088
+    Token: "vor"          	Type: TOKEN	Start: 8089	End: 8092
+    Token: "allem"        	Type: TOKEN	Start: 8093	End: 8098
+    Token: "in"           	Type: TOKEN	Start: 8099	End: 8101
+    Token: "westdeutschen"	Type: TOKEN	Start: 8102	End: 8115
+    Token: "Laendern"     	Type: TOKEN	Start: 8116	End: 8124
+    Token: "und"          	Type: TOKEN	Start: 8125	End: 8128
+    Token: "Gemeinden"    	Type: TOKEN	Start: 8129	End: 8138
+    Token: "zu"           	Type: TOKEN	Start: 8139	End: 8141
+    Token: "draengen"     	Type: TOKEN	Start: 8142	End: 8150
+    Token: ","            	Type: PUNCTUATION	Start: 8150	End: 8151
+    Token: "den"          	Type: TOKEN	Start: 8152	End: 8155
+    Token: "Solidaritaetszuschlag"	Type: TOKEN	Start: 8156	End: 8177
+    Token: "weiterzufuehren"	Type: TOKEN	Start: 8178	End: 8193
+    Token: "und"          	Type: TOKEN	Start: 8194	End: 8197
+    Token: "fruehzeitig"  	Type: TOKEN	Start: 8198	End: 8209
+    Token: "Steuererhoehungen"	Type: TOKEN	Start: 8210	End: 8227
+    Token: "anzukuendigen"	Type: TOKEN	Start: 8228	End: 8241
+    Token: ","            	Type: PUNCTUATION	Start: 8241	End: 8242
+    Token: "herrscht"     	Type: TOKEN	Start: 8243	End: 8251
+    Token: "Bonner"       	Type: TOKEN	Start: 8252	End: 8258
+    Token: "Ratlosigkeit" 	Type: TOKEN	Start: 8259	End: 8271
+    Token: ":"            	Type: PUNCTUATION	Start: 8271	End: 8272
+    Token: "Waehrend"     	Type: TOKEN	Start: 8273	End: 8281
+    Token: "das"          	Type: TOKEN	Start: 8282	End: 8285
+    Token: "Defizit"      	Type: TOKEN	Start: 8286	End: 8293
+    Token: "oeffentlicher"	Type: TOKEN	Start: 8294	End: 8307
+    Token: "Haushalte"    	Type: TOKEN	Start: 8308	End: 8317
+    Token: "konjunkturbedingt"	Type: TOKEN	Start: 8318	End: 8335
+    Token: "um"           	Type: TOKEN	Start: 8336	End: 8338
+    Token: "mindestens"   	Type: TOKEN	Start: 8339	End: 8349
+    Token: "15"           	Type: DIGITAL	Start: 8350	End: 8352
+    Token: "weitere"      	Type: TOKEN	Start: 8353	End: 8360
+    Token: "Milliarden"   	Type: TOKEN	Start: 8361	End: 8371
+    Token: "Mark"         	Type: TOKEN	Start: 8372	End: 8376
+    Token: "ansteigt"     	Type: TOKEN	Start: 8377	End: 8385
+    Token: ","            	Type: PUNCTUATION	Start: 8385	End: 8386
+    Token: "ist"          	Type: TOKEN	Start: 8387	End: 8390
+    Token: "die"          	Type: TOKEN	Start: 8391	End: 8394
+    Token: "Finanzierung" 	Type: TOKEN	Start: 8395	End: 8407
+    Token: "des"          	Type: TOKEN	Start: 8408	End: 8411
+    Token: "168-Milliarden-Mark-Transfers"	Type: TOKEN	Start: 8412	End: 8441
+    Token: "nach"         	Type: TOKEN	Start: 8442	End: 8446
+    Token: "Ostdeutschland"	Type: TOKEN	Start: 8447	End: 8461
+    Token: "noch"         	Type: TOKEN	Start: 8462	End: 8466
+    Token: "immer"        	Type: TOKEN	Start: 8467	End: 8472
+    Token: """            	Type: OPEN_PUNCT	Start: 8473	End: 8474	PTB: "``"
+    Token: "zu"           	Type: TOKEN	Start: 8474	End: 8476
+    Token: "mindestens"   	Type: TOKEN	Start: 8477	End: 8487
+    Token: "einem"        	Type: TOKEN	Start: 8488	End: 8493
+    Token: "Drittel"      	Type: TOKEN	Start: 8494	End: 8501
+    Token: "ungeklaert"   	Type: TOKEN	Start: 8502	End: 8512
+    Token: """            	Type: CLOSE_PUNCT	Start: 8512	End: 8513	PTB: "''"
+    Token: ","            	Type: PUNCTUATION	Start: 8513	End: 8514
+    Token: "so"           	Type: TOKEN	Start: 8515	End: 8517
+    Token: "die"          	Type: TOKEN	Start: 8518	End: 8521
+    Token: "Feststellung" 	Type: TOKEN	Start: 8522	End: 8534
+    Token: "von"          	Type: TOKEN	Start: 8535	End: 8538
+    Token: "Horst"        	Type: TOKEN	Start: 8539	End: 8544
+    Token: "Siebert"      	Type: TOKEN	Start: 8545	End: 8552
+    Token: ","            	Type: PUNCTUATION	Start: 8552	End: 8553
+    Token: "Praesident"   	Type: TOKEN	Start: 8554	End: 8564
+    Token: "des"          	Type: TOKEN	Start: 8565	End: 8568
+    Token: "Kieler"       	Type: TOKEN	Start: 8569	End: 8575
+    Token: "Instituts"    	Type: TOKEN	Start: 8576	End: 8585
+    Token: "fuer"         	Type: TOKEN	Start: 8586	End: 8590
+    Token: "Weltwirtschaft"	Type: TOKEN	Start: 8591	End: 8605
+    Token: "."            	Type: TERM_PUNCT_P	Start: 8605	End: 8606
+  Text Unit Start: 8607
+  Text Unit End: 8852
+    Token: "Am"           	Type: TOKEN	Start: 8607	End: 8609
+    Token: "Kapitalmarkt" 	Type: TOKEN	Start: 8610	End: 8622
+    Token: ","            	Type: PUNCTUATION	Start: 8622	End: 8623
+    Token: "so"           	Type: TOKEN	Start: 8624	End: 8626
+    Token: "viel"         	Type: TOKEN	Start: 8627	End: 8631
+    Token: "scheint"      	Type: TOKEN	Start: 8632	End: 8639
+    Token: "klar"         	Type: TOKEN	Start: 8640	End: 8644
+    Token: ","            	Type: PUNCTUATION	Start: 8644	End: 8645
+    Token: "koennen"      	Type: TOKEN	Start: 8646	End: 8653
+    Token: "sich"         	Type: TOKEN	Start: 8654	End: 8658
+    Token: "die"          	Type: TOKEN	Start: 8659	End: 8662
+    Token: "Bonner"       	Type: TOKEN	Start: 8663	End: 8669
+    Token: "kaum"         	Type: TOKEN	Start: 8670	End: 8674
+    Token: "mehr"         	Type: TOKEN	Start: 8675	End: 8679
+    Token: "bedienen"     	Type: TOKEN	Start: 8680	End: 8688
+    Token: ":"            	Type: PUNCTUATION	Start: 8688	End: 8689
+    Token: "Wenn"         	Type: TOKEN	Start: 8690	End: 8694
+    Token: "1995"         	Type: DIGITAL	Start: 8695	End: 8699
+    Token: "die"          	Type: TOKEN	Start: 8700	End: 8703
+    Token: "440"          	Type: DIGITAL	Start: 8704	End: 8707
+    Token: "Milliarden"   	Type: TOKEN	Start: 8708	End: 8718
+    Token: "Mark"         	Type: TOKEN	Start: 8719	End: 8723
+    Token: "Erbschulden"  	Type: TOKEN	Start: 8724	End: 8735
+    Token: "der"          	Type: TOKEN	Start: 8736	End: 8739
+    Token: "ehemaligen"   	Type: TOKEN	Start: 8740	End: 8750
+    Token: "DDR"          	Type: TOKEN	Start: 8751	End: 8754
+    Token: "zu"           	Type: TOKEN	Start: 8755	End: 8757
+    Token: "Buche"        	Type: TOKEN	Start: 8758	End: 8763
+    Token: "schlagen"     	Type: TOKEN	Start: 8764	End: 8772
+    Token: ","            	Type: PUNCTUATION	Start: 8772	End: 8773
+    Token: "wird"         	Type: TOKEN	Start: 8774	End: 8778
+    Token: "die"          	Type: TOKEN	Start: 8779	End: 8782
+    Token: "Zinslastquote"	Type: TOKEN	Start: 8783	End: 8796
+    Token: "von"          	Type: TOKEN	Start: 8797	End: 8800
+    Token: "10"           	Type: DIGITAL	Start: 8801	End: 8803
+    Token: "auf"          	Type: TOKEN	Start: 8804	End: 8807
+    Token: "15"           	Type: DIGITAL	Start: 8808	End: 8810
+    Token: "Prozent"      	Type: TOKEN	Start: 8811	End: 8818
+    Token: "des"          	Type: TOKEN	Start: 8819	End: 8822
+    Token: "Gesamthaushalts"	Type: TOKEN	Start: 8823	End: 8838
+    Token: "katapultiert" 	Type: TOKEN	Start: 8839	End: 8851
+    Token: "."            	Type: TERM_PUNCT_P	Start: 8851	End: 8852
+
+Paragraph Start: 8856
+Paragraph End: 9464
+  Text Unit Start: 8856
+  Text Unit End: 9018
+    Token: "Wen"          	Type: TOKEN	Start: 8856	End: 8859
+    Token: "wundert"      	Type: TOKEN	Start: 8860	End: 8867
+    Token: "'s"           	Type: RIGHTSPLIT	Start: 8867	End: 8869
+    Token: ","            	Type: PUNCTUATION	Start: 8869	End: 8870
+    Token: "wenn"         	Type: TOKEN	Start: 8871	End: 8875
+    Token: "die"          	Type: TOKEN	Start: 8876	End: 8879
+    Token: "Angst"        	Type: TOKEN	Start: 8880	End: 8885
+    Token: "der"          	Type: TOKEN	Start: 8886	End: 8889
+    Token: "Frankfurter"  	Type: TOKEN	Start: 8890	End: 8901
+    Token: "Waehrungshueter"	Type: TOKEN	Start: 8902	End: 8917
+    Token: ","            	Type: PUNCTUATION	Start: 8917	End: 8918
+    Token: "mit"          	Type: TOKEN	Start: 8919	End: 8922
+    Token: "einer"        	Type: TOKEN	Start: 8923	End: 8928
+    Token: "baldigen"     	Type: TOKEN	Start: 8929	End: 8937
+    Token: "Zinssenkung"  	Type: TOKEN	Start: 8938	End: 8949
+    Token: "weiter"       	Type: TOKEN	Start: 8950	End: 8956
+    Token: "an"           	Type: TOKEN	Start: 8957	End: 8959
+    Token: "Glaubwuerdigkeit"	Type: TOKEN	Start: 8960	End: 8976
+    Token: "zu"           	Type: TOKEN	Start: 8977	End: 8979
+    Token: "verlieren"    	Type: TOKEN	Start: 8980	End: 8989
+    Token: ","            	Type: PUNCTUATION	Start: 8989	End: 8990
+    Token: "so"           	Type: TOKEN	Start: 8991	End: 8993
+    Token: "tief"         	Type: TOKEN	Start: 8994	End: 8998
+    Token: "sitzt"        	Type: TOKEN	Start: 8999	End: 9004
+    Token: "wie"          	Type: TOKEN	Start: 9005	End: 9008
+    Token: "noch"         	Type: TOKEN	Start: 9009	End: 9013
+    Token: "nie"          	Type: TOKEN	Start: 9014	End: 9017
+    Token: "."            	Type: TERM_PUNCT_P	Start: 9017	End: 9018
+  Text Unit Start: 9019
+  Text Unit End: 9464
+    Token: "Die"          	Type: TOKEN	Start: 9019	End: 9022
+    Token: "eindringliche"	Type: TOKEN	Start: 9023	End: 9036
+    Token: "Warnung"      	Type: TOKEN	Start: 9037	End: 9044
+    Token: "des"          	Type: TOKEN	Start: 9045	End: 9048
+    Token: "Bundesbankpraesidenten"	Type: TOKEN	Start: 9049	End: 9071
+    Token: "Ende"         	Type: TOKEN	Start: 9072	End: 9076
+    Token: "vorvergangener"	Type: TOKEN	Start: 9077	End: 9091
+    Token: "Woche"        	Type: TOKEN	Start: 9092	End: 9097
+    Token: ","            	Type: PUNCTUATION	Start: 9097	End: 9098
+    Token: "aus"          	Type: TOKEN	Start: 9099	End: 9102
+    Token: "der"          	Type: TOKEN	Start: 9103	End: 9106
+    Token: "Anhebung"     	Type: TOKEN	Start: 9107	End: 9115
+    Token: "des"          	Type: TOKEN	Start: 9116	End: 9119
+    Token: "Geldmengenzielkorridors"	Type: TOKEN	Start: 9120	End: 9143
+    Token: "um"           	Type: TOKEN	Start: 9144	End: 9146
+    Token: "einen"        	Type: TOKEN	Start: 9147	End: 9152
+    Token: "Punkt"        	Type: TOKEN	Start: 9153	End: 9158
+    Token: "auf"          	Type: TOKEN	Start: 9159	End: 9162
+    Token: "4,5"          	Type: DIGITAL	Start: 9163	End: 9166
+    Token: "bis"          	Type: TOKEN	Start: 9167	End: 9170
+    Token: "6,5"          	Type: DIGITAL	Start: 9171	End: 9174
+    Token: "Prozent"      	Type: TOKEN	Start: 9175	End: 9182
+    Token: "eine"         	Type: TOKEN	Start: 9183	End: 9187
+    Token: "Lockerung"    	Type: TOKEN	Start: 9188	End: 9197
+    Token: "des"          	Type: TOKEN	Start: 9198	End: 9201
+    Token: "Frankfurter"  	Type: TOKEN	Start: 9202	End: 9213
+    Token: "Kurses"       	Type: TOKEN	Start: 9214	End: 9220
+    Token: "herauszulesen"	Type: TOKEN	Start: 9221	End: 9234
+    Token: ","            	Type: PUNCTUATION	Start: 9234	End: 9235
+    Token: "wirkte"       	Type: TOKEN	Start: 9236	End: 9242
+    Token: "denn"         	Type: TOKEN	Start: 9243	End: 9247
+    Token: "auch"         	Type: TOKEN	Start: 9248	End: 9252
+    Token: "fast"         	Type: TOKEN	Start: 9253	End: 9257
+    Token: "verzweifelt"  	Type: TOKEN	Start: 9258	End: 9269
+    Token: ":"            	Type: PUNCTUATION	Start: 9269	End: 9270
+    Token: "Von"          	Type: TOKEN	Start: 9271	End: 9274
+    Token: "ihrem"        	Type: TOKEN	Start: 9275	End: 9280
+    Token: "mittelfristigen"	Type: TOKEN	Start: 9281	End: 9296
+    Token: "Ziel"         	Type: TOKEN	Start: 9297	End: 9301
+    Token: ","            	Type: PUNCTUATION	Start: 9301	End: 9302
+    Token: "die"          	Type: TOKEN	Start: 9303	End: 9306
+    Token: "Inflationsrate"	Type: TOKEN	Start: 9307	End: 9321
+    Token: "auf"          	Type: TOKEN	Start: 9322	End: 9325
+    Token: "zwei"         	Type: TOKEN	Start: 9326	End: 9330
+    Token: "Prozent"      	Type: TOKEN	Start: 9331	End: 9338
+    Token: "zu"           	Type: TOKEN	Start: 9339	End: 9341
+    Token: "beschraenken" 	Type: TOKEN	Start: 9342	End: 9354
+    Token: ","            	Type: PUNCTUATION	Start: 9354	End: 9355
+    Token: "ist"          	Type: TOKEN	Start: 9356	End: 9359
+    Token: "die"          	Type: TOKEN	Start: 9360	End: 9363
+    Token: "Bundesbank"   	Type: TOKEN	Start: 9364	End: 9374
+    Token: "noch"         	Type: TOKEN	Start: 9375	End: 9379
+    Token: "niemals"      	Type: TOKEN	Start: 9380	End: 9387
+    Token: "in"           	Type: TOKEN	Start: 9388	End: 9390
+    Token: "ihrer"        	Type: TOKEN	Start: 9391	End: 9396
+    Token: "Geschichte"   	Type: TOKEN	Start: 9397	End: 9407
+    Token: "so"           	Type: TOKEN	Start: 9408	End: 9410
+    Token: "weit"         	Type: TOKEN	Start: 9411	End: 9415
+    Token: "entfernt"     	Type: TOKEN	Start: 9416	End: 9424
+    Token: "gewesen"      	Type: TOKEN	Start: 9425	End: 9432
+    Token: "wie"          	Type: TOKEN	Start: 9433	End: 9436
+    Token: "seit"         	Type: TOKEN	Start: 9437	End: 9441
+    Token: "der"          	Type: TOKEN	Start: 9442	End: 9445
+    Token: "deutschen"    	Type: TOKEN	Start: 9446	End: 9455
+    Token: "Einheit"      	Type: TOKEN	Start: 9456	End: 9463
+    Token: "."            	Type: TERM_PUNCT_P	Start: 9463	End: 9464
+
+Paragraph Start: 9468
+Paragraph End: 9993
+  Text Unit Start: 9468
+  Text Unit End: 9569
+    Token: "Doch"         	Type: TOKEN	Start: 9468	End: 9472
+    Token: "die"          	Type: TOKEN	Start: 9473	End: 9476
+    Token: "deutsche"     	Type: TOKEN	Start: 9477	End: 9485
+    Token: "Hochzinspolitik"	Type: TOKEN	Start: 9486	End: 9501
+    Token: "droht"        	Type: TOKEN	Start: 9502	End: 9507
+    Token: "nicht"        	Type: TOKEN	Start: 9508	End: 9513
+    Token: "nur"          	Type: TOKEN	Start: 9514	End: 9517
+    Token: "das"          	Type: TOKEN	Start: 9518	End: 9521
+    Token: "Europaeische" 	Type: TOKEN	Start: 9522	End: 9534
+    Token: "Waehrungssystem"	Type: TOKEN	Start: 9535	End: 9550
+    Token: "("            	Type: OPEN_BRACKET	Start: 9551	End: 9552	PTB: "-LRB-"
+    Token: "EWS"          	Type: TOKEN	Start: 9552	End: 9555
+    Token: ")"            	Type: CLOSE_BRACKET	Start: 9555	End: 9556	PTB: "-RRB-"
+    Token: "zu"           	Type: TOKEN	Start: 9557	End: 9559
+    Token: "sprengen"     	Type: TOKEN	Start: 9560	End: 9568
+    Token: "."            	Type: TERM_PUNCT_P	Start: 9568	End: 9569
+  Text Unit Start: 9570
+  Text Unit End: 9687
+    Token: "Sie"          	Type: TOKEN	Start: 9570	End: 9573
+    Token: "reisst"       	Type: TOKEN	Start: 9574	End: 9580
+    Token: "auch"         	Type: TOKEN	Start: 9581	End: 9585
+    Token: "Deutschlands" 	Type: TOKEN	Start: 9586	End: 9598
+    Token: "wichtigste"   	Type: TOKEN	Start: 9599	End: 9609
+    Token: "Partner"      	Type: TOKEN	Start: 9610	End: 9617
+    Token: "in"           	Type: TOKEN	Start: 9618	End: 9620
+    Token: "der"          	Type: TOKEN	Start: 9621	End: 9624
+    Token: "Europaeischen"	Type: TOKEN	Start: 9625	End: 9638
+    Token: "Gemeinschaft" 	Type: TOKEN	Start: 9639	End: 9651
+    Token: "("            	Type: OPEN_BRACKET	Start: 9652	End: 9653	PTB: "-LRB-"
+    Token: "EG"           	Type: TOKEN	Start: 9653	End: 9655
+    Token: ")"            	Type: CLOSE_BRACKET	Start: 9655	End: 9656	PTB: "-RRB-"
+    Token: "immer"        	Type: TOKEN	Start: 9657	End: 9662
+    Token: "tiefer"       	Type: TOKEN	Start: 9663	End: 9669
+    Token: "in"           	Type: TOKEN	Start: 9670	End: 9672
+    Token: "die"          	Type: TOKEN	Start: 9673	End: 9676
+    Token: "Rezession"    	Type: TOKEN	Start: 9677	End: 9686
+    Token: "."            	Type: TERM_PUNCT_P	Start: 9686	End: 9687
+  Text Unit Start: 9688
+  Text Unit End: 9820
+    Token: "Unter"        	Type: TOKEN	Start: 9688	End: 9693
+    Token: "dem"          	Type: TOKEN	Start: 9694	End: 9697
+    Token: "Eindruck"     	Type: TOKEN	Start: 9698	End: 9706
+    Token: "drastisch"    	Type: TOKEN	Start: 9707	End: 9716
+    Token: "steigender"   	Type: TOKEN	Start: 9717	End: 9727
+    Token: "Arbeitslosigkeit"	Type: TOKEN	Start: 9728	End: 9744
+    Token: "hat"          	Type: TOKEN	Start: 9745	End: 9748
+    Token: "die"          	Type: TOKEN	Start: 9749	End: 9752
+    Token: "EG"           	Type: TOKEN	Start: 9753	End: 9755
+    Token: "ihre"         	Type: TOKEN	Start: 9756	End: 9760
+    Token: "Wachstumsprognose"	Type: TOKEN	Start: 9761	End: 9778
+    Token: "von"          	Type: TOKEN	Start: 9779	End: 9782
+    Token: "1,75"         	Type: DIGITAL	Start: 9783	End: 9787
+    Token: "schon"        	Type: TOKEN	Start: 9788	End: 9793
+    Token: "auf"          	Type: TOKEN	Start: 9794	End: 9797
+    Token: "1,5"          	Type: DIGITAL	Start: 9798	End: 9801
+    Token: "Prozent"      	Type: TOKEN	Start: 9802	End: 9809
+    Token: "reduziert"    	Type: TOKEN	Start: 9810	End: 9819
+    Token: "."            	Type: TERM_PUNCT_P	Start: 9819	End: 9820
+  Text Unit Start: 9821
+  Text Unit End: 9993
+    Token: "Die"          	Type: TOKEN	Start: 9821	End: 9824
+    Token: "Investitionen"	Type: TOKEN	Start: 9825	End: 9838
+    Token: ","            	Type: PUNCTUATION	Start: 9838	End: 9839
+    Token: "die"          	Type: TOKEN	Start: 9840	End: 9843
+    Token: "einige"       	Type: TOKEN	Start: 9844	End: 9850
+    Token: "Jahre"        	Type: TOKEN	Start: 9851	End: 9856
+    Token: "lang"         	Type: TOKEN	Start: 9857	End: 9861
+    Token: "die"          	Type: TOKEN	Start: 9862	End: 9865
+    Token: "dynamischste" 	Type: TOKEN	Start: 9866	End: 9878
+    Token: "Wachstumskomponente"	Type: TOKEN	Start: 9879	End: 9898
+    Token: "waren"        	Type: TOKEN	Start: 9899	End: 9904
+    Token: ","            	Type: PUNCTUATION	Start: 9904	End: 9905
+    Token: "gingen"       	Type: TOKEN	Start: 9906	End: 9912
+    Token: "bereits"      	Type: TOKEN	Start: 9913	End: 9920
+    Token: "1991"         	Type: DIGITAL	Start: 9921	End: 9925
+    Token: "stark"        	Type: TOKEN	Start: 9926	End: 9931
+    Token: "zurueck"      	Type: TOKEN	Start: 9932	End: 9939
+    Token: "und"          	Type: TOKEN	Start: 9940	End: 9943
+    Token: "werden"       	Type: TOKEN	Start: 9944	End: 9950
+    Token: "voraussichtlich"	Type: TOKEN	Start: 9951	End: 9966
+    Token: "auch"         	Type: TOKEN	Start: 9967	End: 9971
+    Token: "1993"         	Type: DIGITAL	Start: 9972	End: 9976
+    Token: "schwach"      	Type: TOKEN	Start: 9977	End: 9984
+    Token: "bleiben"      	Type: TOKEN	Start: 9985	End: 9992
+    Token: "."            	Type: TERM_PUNCT_P	Start: 9992	End: 9993
+
+Paragraph Start: 9997
+Paragraph End: 10460
+  Text Unit Start: 9997
+  Text Unit End: 10084
+    Token: "Unter"        	Type: TOKEN	Start: 9997	End: 10002
+    Token: "der"          	Type: TOKEN	Start: 10003	End: 10006
+    Token: "nachlassenden"	Type: TOKEN	Start: 10007	End: 10020
+    Token: "Investitionslaune"	Type: TOKEN	Start: 10021	End: 10038
+    Token: "der"          	Type: TOKEN	Start: 10039	End: 10042
+    Token: "Europaeer"    	Type: TOKEN	Start: 10043	End: 10052
+    Token: "leiden"       	Type: TOKEN	Start: 10053	End: 10059
+    Token: "vor"          	Type: TOKEN	Start: 10060	End: 10063
+    Token: "allem"        	Type: TOKEN	Start: 10064	End: 10069
+    Token: "die"          	Type: TOKEN	Start: 10070	End: 10073
+    Token: "Deutschen"    	Type: TOKEN	Start: 10074	End: 10083
+    Token: "."            	Type: TERM_PUNCT_P	Start: 10083	End: 10084
+  Text Unit Start: 10085
+  Text Unit End: 10235
+    Token: "Der"          	Type: TOKEN	Start: 10085	End: 10088
+    Token: "deutsche"     	Type: TOKEN	Start: 10089	End: 10097
+    Token: "Maschinenbau" 	Type: TOKEN	Start: 10098	End: 10110
+    Token: ","            	Type: PUNCTUATION	Start: 10110	End: 10111
+    Token: "seit"         	Type: TOKEN	Start: 10112	End: 10116
+    Token: "zwei"         	Type: TOKEN	Start: 10117	End: 10121
+    Token: "Jahren"       	Type: TOKEN	Start: 10122	End: 10128
+    Token: "unter"        	Type: TOKEN	Start: 10129	End: 10134
+    Token: "Druck"        	Type: TOKEN	Start: 10135	End: 10140
+    Token: "wie"          	Type: TOKEN	Start: 10141	End: 10144
+    Token: "noch"         	Type: TOKEN	Start: 10145	End: 10149
+    Token: "nie"          	Type: TOKEN	Start: 10150	End: 10153
+    Token: ","            	Type: PUNCTUATION	Start: 10153	End: 10154
+    Token: "erwartet"     	Type: TOKEN	Start: 10155	End: 10163
+    Token: "im"           	Type: TOKEN	Start: 10164	End: 10166
+    Token: "kommenden"    	Type: TOKEN	Start: 10167	End: 10176
+    Token: "Jahr"         	Type: TOKEN	Start: 10177	End: 10181
+    Token: "weitere"      	Type: TOKEN	Start: 10182	End: 10189
+    Token: "Produktionsrueckgaenge"	Type: TOKEN	Start: 10190	End: 10212
+    Token: "von"          	Type: TOKEN	Start: 10213	End: 10216
+    Token: "bis"          	Type: TOKEN	Start: 10217	End: 10220
+    Token: "zu"           	Type: TOKEN	Start: 10221	End: 10223
+    Token: "25"           	Type: DIGITAL	Start: 10224	End: 10226
+    Token: "Prozent"      	Type: TOKEN	Start: 10227	End: 10234
+    Token: "."            	Type: TERM_PUNCT_P	Start: 10234	End: 10235
+  Text Unit Start: 10236
+  Text Unit End: 10460
+    Token: "Ging"         	Type: TOKEN	Start: 10236	End: 10240
+    Token: "die"          	Type: TOKEN	Start: 10241	End: 10244
+    Token: "Produktion"   	Type: TOKEN	Start: 10245	End: 10255
+    Token: "etwa"         	Type: TOKEN	Start: 10256	End: 10260
+    Token: "im"           	Type: TOKEN	Start: 10261	End: 10263
+    Token: "EDV"          	Type: TOKEN	Start: 10264	End: 10267
+    Token: "-"            	Type: PUNCTUATION	Start: 10267	End: 10268
+    Token: "und"          	Type: TOKEN	Start: 10269	End: 10272
+    Token: "Bueromaschinenbereich"	Type: TOKEN	Start: 10273	End: 10294
+    Token: "schon"        	Type: TOKEN	Start: 10295	End: 10300
+    Token: "im"           	Type: TOKEN	Start: 10301	End: 10303
+    Token: "laufenden"    	Type: TOKEN	Start: 10304	End: 10313
+    Token: "Jahr"         	Type: TOKEN	Start: 10314	End: 10318
+    Token: "um"           	Type: TOKEN	Start: 10319	End: 10321
+    Token: "25"           	Type: DIGITAL	Start: 10322	End: 10324
+    Token: "Prozent"      	Type: TOKEN	Start: 10325	End: 10332
+    Token: "zurueck"      	Type: TOKEN	Start: 10333	End: 10340
+    Token: ","            	Type: PUNCTUATION	Start: 10340	End: 10341
+    Token: "muss"         	Type: TOKEN	Start: 10342	End: 10346
+    Token: "der"          	Type: TOKEN	Start: 10347	End: 10350
+    Token: "Warenausstoss"	Type: TOKEN	Start: 10351	End: 10364
+    Token: "vorsichtigen" 	Type: TOKEN	Start: 10365	End: 10377
+    Token: "Schaetzungen" 	Type: TOKEN	Start: 10378	End: 10390
+    Token: "zufolge"      	Type: TOKEN	Start: 10391	End: 10398
+    Token: "im"           	Type: TOKEN	Start: 10399	End: 10401
+    Token: "kommenden"    	Type: TOKEN	Start: 10402	End: 10411
+    Token: "Jahr"         	Type: TOKEN	Start: 10412	End: 10416
+    Token: "um"           	Type: TOKEN	Start: 10417	End: 10419
+    Token: "weitere"      	Type: TOKEN	Start: 10420	End: 10427
+    Token: "fuenf"        	Type: TOKEN	Start: 10428	End: 10433
+    Token: "Prozent"      	Type: TOKEN	Start: 10434	End: 10441
+    Token: "gedrosselt"   	Type: TOKEN	Start: 10442	End: 10452
+    Token: "werden"       	Type: TOKEN	Start: 10453	End: 10459
+    Token: "."            	Type: TERM_PUNCT_P	Start: 10459	End: 10460
+
+Paragraph Start: 10464
+Paragraph End: 10884
+  Text Unit Start: 10464
+  Text Unit End: 10619
+    Token: "Und"          	Type: TOKEN	Start: 10464	End: 10467
+    Token: "spaetestens"  	Type: TOKEN	Start: 10468	End: 10479
+    Token: "seit"         	Type: TOKEN	Start: 10480	End: 10484
+    Token: "der"          	Type: TOKEN	Start: 10485	End: 10488
+    Token: "DM-Aufwertung"	Type: TOKEN	Start: 10489	End: 10502
+    Token: "im"           	Type: TOKEN	Start: 10503	End: 10505
+    Token: "September"    	Type: TOKEN	Start: 10506	End: 10515
+    Token: "gegenueber"   	Type: TOKEN	Start: 10516	End: 10526
+    Token: "wichtigen"    	Type: TOKEN	Start: 10527	End: 10536
+    Token: "europaeischen"	Type: TOKEN	Start: 10537	End: 10550
+    Token: "Waehrungen"   	Type: TOKEN	Start: 10551	End: 10561
+    Token: "sind"         	Type: TOKEN	Start: 10562	End: 10566
+    Token: "auch"         	Type: TOKEN	Start: 10567	End: 10571
+    Token: "die"          	Type: TOKEN	Start: 10572	End: 10575
+    Token: "Autofabrikanten"	Type: TOKEN	Start: 10576	End: 10591
+    Token: "arg"          	Type: TOKEN	Start: 10592	End: 10595
+    Token: "ins"          	Type: TOKEN	Start: 10596	End: 10599
+    Token: "Schlingern"   	Type: TOKEN	Start: 10600	End: 10610
+    Token: "geraten"      	Type: TOKEN	Start: 10611	End: 10618
+    Token: "."            	Type: TERM_PUNCT_P	Start: 10618	End: 10619
+  Text Unit Start: 10620
+  Text Unit End: 10819
+    Token: "Volkswagen"   	Type: TOKEN	Start: 10620	End: 10630
+    Token: ","            	Type: PUNCTUATION	Start: 10630	End: 10631
+    Token: "Mercedes-Benz"	Type: TOKEN	Start: 10632	End: 10645
+    Token: "und"          	Type: TOKEN	Start: 10646	End: 10649
+    Token: "Opel"         	Type: TOKEN	Start: 10650	End: 10654
+    Token: "meldeten"     	Type: TOKEN	Start: 10655	End: 10663
+    Token: "Absatzverluste"	Type: TOKEN	Start: 10664	End: 10678
+    Token: "im"           	Type: TOKEN	Start: 10679	End: 10681
+    Token: "Ausland"      	Type: TOKEN	Start: 10682	End: 10689
+    Token: "von"          	Type: TOKEN	Start: 10690	End: 10693
+    Token: "bis"          	Type: TOKEN	Start: 10694	End: 10697
+    Token: "zu"           	Type: TOKEN	Start: 10698	End: 10700
+    Token: "17"           	Type: DIGITAL	Start: 10701	End: 10703
+    Token: "Prozent"      	Type: TOKEN	Start: 10704	End: 10711
+    Token: "-"            	Type: PUNCTUATION	Start: 10712	End: 10713
+    Token: "allein"       	Type: TOKEN	Start: 10714	End: 10720
+    Token: "die"          	Type: TOKEN	Start: 10721	End: 10724
+    Token: "Wolfsburger"  	Type: TOKEN	Start: 10725	End: 10736
+    Token: "VW-Manager"   	Type: TOKEN	Start: 10737	End: 10747
+    Token: "registrieren" 	Type: TOKEN	Start: 10748	End: 10760
+    Token: "seit"         	Type: TOKEN	Start: 10761	End: 10765
+    Token: "Juli"         	Type: TOKEN	Start: 10766	End: 10770
+    Token: "einen"        	Type: TOKEN	Start: 10771	End: 10776
+    Token: "Rueckgang"    	Type: TOKEN	Start: 10777	End: 10786
+    Token: "der"          	Type: TOKEN	Start: 10787	End: 10790
+    Token: "Bestellungen" 	Type: TOKEN	Start: 10791	End: 10803
+    Token: "von"          	Type: TOKEN	Start: 10804	End: 10807
+    Token: "40"           	Type: DIGITAL	Start: 10808	End: 10810
+    Token: "Prozent"      	Type: TOKEN	Start: 10811	End: 10818
+    Token: "."            	Type: TERM_PUNCT_P	Start: 10818	End: 10819
+  Text Unit Start: 10820
+  Text Unit End: 10884
+    Token: "Ein"          	Type: TOKEN	Start: 10820	End: 10823
+    Token: "Ende"         	Type: TOKEN	Start: 10824	End: 10828
+    Token: "des"          	Type: TOKEN	Start: 10829	End: 10832
+    Token: "schrumpfenden"	Type: TOKEN	Start: 10833	End: 10846
+    Token: "Exportgeschaefts"	Type: TOKEN	Start: 10847	End: 10863
+    Token: "ist"          	Type: TOKEN	Start: 10864	End: 10867
+    Token: "nicht"        	Type: TOKEN	Start: 10868	End: 10873
+    Token: "abzusehen"    	Type: TOKEN	Start: 10874	End: 10883
+    Token: "."            	Type: TERM_PUNCT_P	Start: 10883	End: 10884
+
+Paragraph Start: 10888
+Paragraph End: 11436
+  Text Unit Start: 10888
+  Text Unit End: 11025
+    Token: "Serioese"     	Type: TOKEN	Start: 10888	End: 10896
+    Token: "Prognosen"    	Type: TOKEN	Start: 10897	End: 10906
+    Token: "kuendigen"    	Type: TOKEN	Start: 10907	End: 10916
+    Token: "den"          	Type: TOKEN	Start: 10917	End: 10920
+    Token: "Autoherstellern"	Type: TOKEN	Start: 10921	End: 10936
+    Token: "in"           	Type: TOKEN	Start: 10937	End: 10939
+    Token: "den"          	Type: TOKEN	Start: 10940	End: 10943
+    Token: "EG-Laendern"  	Type: TOKEN	Start: 10944	End: 10955
+    Token: "fuer"         	Type: TOKEN	Start: 10956	End: 10960
+    Token: "1993"         	Type: DIGITAL	Start: 10961	End: 10965
+    Token: "ein"          	Type: TOKEN	Start: 10966	End: 10969
+    Token: "in"           	Type: TOKEN	Start: 10970	End: 10972
+    Token: "den"          	Type: TOKEN	Start: 10973	End: 10976
+    Token: "vergangenen"  	Type: TOKEN	Start: 10977	End: 10988
+    Token: "zehn"         	Type: TOKEN	Start: 10989	End: 10993
+    Token: "Jahren"       	Type: TOKEN	Start: 10994	End: 11000
+    Token: "nicht"        	Type: TOKEN	Start: 11001	End: 11006
+    Token: "gekanntes"    	Type: TOKEN	Start: 11007	End: 11016
+    Token: "Tief"         	Type: TOKEN	Start: 11017	End: 11021
+    Token: "an"           	Type: TOKEN	Start: 11022	End: 11024
+    Token: "."            	Type: TERM_PUNCT_P	Start: 11024	End: 11025
+  Text Unit Start: 11026
+  Text Unit End: 11196
+    Token: "Unternehmensberater"	Type: TOKEN	Start: 11026	End: 11045
+    Token: "Detlef"       	Type: TOKEN	Start: 11046	End: 11052
+    Token: "Borscheid"    	Type: TOKEN	Start: 11053	End: 11062
+    Token: ","            	Type: PUNCTUATION	Start: 11062	End: 11063
+    Token: "Managing-Direktor"	Type: TOKEN	Start: 11064	End: 11081
+    Token: "der"          	Type: TOKEN	Start: 11082	End: 11085
+    Token: "Marketing"    	Type: TOKEN	Start: 11086	End: 11095
+    Token: "System"       	Type: TOKEN	Start: 11096	End: 11102
+    Token: "GmbH"         	Type: TOKEN	Start: 11103	End: 11107
+    Token: "in"           	Type: TOKEN	Start: 11108	End: 11110
+    Token: "Essen"        	Type: TOKEN	Start: 11111	End: 11116
+    Token: ","            	Type: PUNCTUATION	Start: 11116	End: 11117
+    Token: "rechnet"      	Type: TOKEN	Start: 11118	End: 11125
+    Token: "europaweit"   	Type: TOKEN	Start: 11126	End: 11136
+    Token: "mit"          	Type: TOKEN	Start: 11137	End: 11140
+    Token: "einem"        	Type: TOKEN	Start: 11141	End: 11146
+    Token: "Rueckgang"    	Type: TOKEN	Start: 11147	End: 11156
+    Token: "der"          	Type: TOKEN	Start: 11157	End: 11160
+    Token: "Pkw-Neuzulassungen"	Type: TOKEN	Start: 11161	End: 11179
+    Token: "um"           	Type: TOKEN	Start: 11180	End: 11182
+    Token: "rund"         	Type: TOKEN	Start: 11183	End: 11187
+    Token: "800"          	Type: DIGITAL	Start: 11188	End: 11191
+    Token: "000"          	Type: DIGITAL	Start: 11192	End: 11195
+    Token: "."            	Type: TERM_PUNCT_P	Start: 11195	End: 11196
+  Text Unit Start: 11197
+  Text Unit End: 11270
+    Token: "Niemand"      	Type: TOKEN	Start: 11197	End: 11204
+    Token: "in"           	Type: TOKEN	Start: 11205	End: 11207
+    Token: "der"          	Type: TOKEN	Start: 11208	End: 11211
+    Token: "Branche"      	Type: TOKEN	Start: 11212	End: 11219
+    Token: "glaubt"       	Type: TOKEN	Start: 11220	End: 11226
+    Token: "indes"        	Type: TOKEN	Start: 11227	End: 11232
+    Token: "an"           	Type: TOKEN	Start: 11233	End: 11235
+    Token: "eine"         	Type: TOKEN	Start: 11236	End: 11240
+    Token: "Besserung"    	Type: TOKEN	Start: 11241	End: 11250
+    Token: "in"           	Type: TOKEN	Start: 11251	End: 11253
+    Token: "den"          	Type: TOKEN	Start: 11254	End: 11257
+    Token: "Folgejahren"  	Type: TOKEN	Start: 11258	End: 11269
+    Token: "."            	Type: TERM_PUNCT_P	Start: 11269	End: 11270
+  Text Unit Start: 11271
+  Text Unit End: 11436
+    Token: """            	Type: OPEN_PUNCT	Start: 11271	End: 11272	PTB: "``"
+    Token: "Die"          	Type: TOKEN	Start: 11272	End: 11275
+    Token: "dramatische"  	Type: TOKEN	Start: 11276	End: 11287
+    Token: "Abwaertsentwicklung"	Type: TOKEN	Start: 11288	End: 11307
+    Token: """            	Type: CLOSE_PUNCT	Start: 11307	End: 11308	PTB: "''"
+    Token: ","            	Type: PUNCTUATION	Start: 11308	End: 11309
+    Token: "resuemierte"  	Type: TOKEN	Start: 11310	End: 11321
+    Token: "beispielsweise"	Type: TOKEN	Start: 11322	End: 11336
+    Token: "Audi-Vorstandschef"	Type: TOKEN	Start: 11337	End: 11355
+    Token: "Franz-Josef"  	Type: TOKEN	Start: 11356	End: 11367
+    Token: "Kortuem"      	Type: TOKEN	Start: 11368	End: 11375
+    Token: "vorvergangene"	Type: TOKEN	Start: 11376	End: 11389
+    Token: "Woche"        	Type: TOKEN	Start: 11390	End: 11395
+    Token: ","            	Type: PUNCTUATION	Start: 11395	End: 11396
+    Token: "werde"        	Type: TOKEN	Start: 11397	End: 11402
+    Token: """            	Type: OPEN_PUNCT	Start: 11403	End: 11404	PTB: "``"
+    Token: "mindestens"   	Type: TOKEN	Start: 11404	End: 11414
+    Token: "drei"         	Type: TOKEN	Start: 11415	End: 11419
+    Token: "Jahre"        	Type: TOKEN	Start: 11420	End: 11425
+    Token: "anhalten"     	Type: TOKEN	Start: 11426	End: 11434
+    Token: """            	Type: CLOSE_PUNCT	Start: 11434	End: 11435	PTB: "''"
+    Token: "."            	Type: TERM_PUNCT_P	Start: 11435	End: 11436
+
+Paragraph Start: 11440
+Paragraph End: 11896
+  Text Unit Start: 11440
+  Text Unit End: 11556
+    Token: "Dass"         	Type: TOKEN	Start: 11440	End: 11444
+    Token: "ein"          	Type: TOKEN	Start: 11445	End: 11448
+    Token: "Grossteil"    	Type: TOKEN	Start: 11449	End: 11458
+    Token: "des"          	Type: TOKEN	Start: 11459	End: 11462
+    Token: "Nachfrageausfalls"	Type: TOKEN	Start: 11463	End: 11480
+    Token: "deutsche"     	Type: TOKEN	Start: 11481	End: 11489
+    Token: "Fabrikate"    	Type: TOKEN	Start: 11490	End: 11499
+    Token: "trifft"       	Type: TOKEN	Start: 11500	End: 11506
+    Token: ","            	Type: PUNCTUATION	Start: 11506	End: 11507
+    Token: "wollten"      	Type: TOKEN	Start: 11508	End: 11515
+    Token: "die"          	Type: TOKEN	Start: 11516	End: 11519
+    Token: "Konzernlenker"	Type: TOKEN	Start: 11520	End: 11533
+    Token: "lange"        	Type: TOKEN	Start: 11534	End: 11539
+    Token: "nicht"        	Type: TOKEN	Start: 11540	End: 11545
+    Token: "wahrhaben"    	Type: TOKEN	Start: 11546	End: 11555
+    Token: "."            	Type: TERM_PUNCT_P	Start: 11555	End: 11556
+  Text Unit Start: 11557
+  Text Unit End: 11769
+    Token: "Waehrend"     	Type: TOKEN	Start: 11557	End: 11565
+    Token: "der"          	Type: TOKEN	Start: 11566	End: 11569
+    Token: "weltweite"    	Type: TOKEN	Start: 11570	End: 11579
+    Token: "Pkw-Absatz"   	Type: TOKEN	Start: 11580	End: 11590
+    Token: "1993"         	Type: DIGITAL	Start: 11591	End: 11595
+    Token: "nach"         	Type: TOKEN	Start: 11596	End: 11600
+    Token: "Berechnungen" 	Type: TOKEN	Start: 11601	End: 11613
+    Token: "der"          	Type: TOKEN	Start: 11614	End: 11617
+    Token: "Investmentberater"	Type: TOKEN	Start: 11618	End: 11635
+    Token: "von"          	Type: TOKEN	Start: 11636	End: 11639
+    Token: "DRI/McGraw-Hill"	Type: TOKEN	Start: 11640	End: 11655	PTB: "DRI\/McGraw-Hill"
+    Token: "um"           	Type: TOKEN	Start: 11656	End: 11658
+    Token: "knapp"        	Type: TOKEN	Start: 11659	End: 11664
+    Token: "1,4"          	Type: DIGITAL	Start: 11665	End: 11668
+    Token: "Millionen"    	Type: TOKEN	Start: 11669	End: 11678
+    Token: "Stueck"       	Type: TOKEN	Start: 11679	End: 11685
+    Token: "zunimmt"      	Type: TOKEN	Start: 11686	End: 11693
+    Token: ","            	Type: PUNCTUATION	Start: 11693	End: 11694
+    Token: "verringert"   	Type: TOKEN	Start: 11695	End: 11705
+    Token: "sich"         	Type: TOKEN	Start: 11706	End: 11710
+    Token: "der"          	Type: TOKEN	Start: 11711	End: 11714
+    Token: "deutsche"     	Type: TOKEN	Start: 11715	End: 11723
+    Token: "Absatz"       	Type: TOKEN	Start: 11724	End: 11730
+    Token: "um"           	Type: TOKEN	Start: 11731	End: 11733
+    Token: "voraussichtlich"	Type: TOKEN	Start: 11734	End: 11749
+    Token: "mindestens"   	Type: TOKEN	Start: 11750	End: 11760
+    Token: "430"          	Type: DIGITAL	Start: 11761	End: 11764
+    Token: "000"          	Type: DIGITAL	Start: 11765	End: 11768
+    Token: "."            	Type: TERM_PUNCT_P	Start: 11768	End: 11769
+  Text Unit Start: 11770
+  Text Unit End: 11896
+    Token: "Ein"          	Type: TOKEN	Start: 11770	End: 11773
+    Token: "ganzes"       	Type: TOKEN	Start: 11774	End: 11780
+    Token: "Buendel"      	Type: TOKEN	Start: 11781	End: 11788
+    Token: "alter"        	Type: TOKEN	Start: 11789	End: 11794
+    Token: "Strukturprobleme"	Type: TOKEN	Start: 11795	End: 11811
+    Token: ","            	Type: PUNCTUATION	Start: 11811	End: 11812
+    Token: "sagt"         	Type: TOKEN	Start: 11813	End: 11817
+    Token: "Unternehmensberater"	Type: TOKEN	Start: 11818	End: 11837
+    Token: "Roland"       	Type: TOKEN	Start: 11838	End: 11844
+    Token: "Berger"       	Type: TOKEN	Start: 11845	End: 11851
+    Token: ","            	Type: PUNCTUATION	Start: 11851	End: 11852
+    Token: "tritt"        	Type: TOKEN	Start: 11853	End: 11858
+    Token: "in"           	Type: TOKEN	Start: 11859	End: 11861
+    Token: "der"          	Type: TOKEN	Start: 11862	End: 11865
+    Token: "Rezession"    	Type: TOKEN	Start: 11866	End: 11875
+    Token: "nun"          	Type: TOKEN	Start: 11876	End: 11879
+    Token: "vehement"     	Type: TOKEN	Start: 11880	End: 11888
+    Token: "zutage"       	Type: TOKEN	Start: 11889	End: 11895
+    Token: "."            	Type: TERM_PUNCT_P	Start: 11895	End: 11896
+
+Paragraph Start: 11900
+Paragraph End: 12676
+  Text Unit Start: 11900
+  Text Unit End: 12114
+    Token: "Wollen"       	Type: TOKEN	Start: 11900	End: 11906
+    Token: "die"          	Type: TOKEN	Start: 11907	End: 11910
+    Token: "fuenf"        	Type: TOKEN	Start: 11911	End: 11916
+    Token: "Weisen"       	Type: TOKEN	Start: 11917	End: 11923
+    Token: "auch"         	Type: TOKEN	Start: 11924	End: 11928
+    Token: "im"           	Type: TOKEN	Start: 11929	End: 11931
+    Token: "neuen"        	Type: TOKEN	Start: 11932	End: 11937
+    Token: "Jahresgutachten"	Type: TOKEN	Start: 11938	End: 11953
+    Token: "nicht"        	Type: TOKEN	Start: 11954	End: 11959
+    Token: "an"           	Type: TOKEN	Start: 11960	End: 11962
+    Token: "eine"         	Type: TOKEN	Start: 11963	End: 11967
+    Token: "fundamentale" 	Type: TOKEN	Start: 11968	End: 11980
+    Token: "Wettbewerbsschwaeche"	Type: TOKEN	Start: 11981	End: 12001
+    Token: "der"          	Type: TOKEN	Start: 12002	End: 12005
+    Token: "deutschen"    	Type: TOKEN	Start: 12006	End: 12015
+    Token: "Wirtschaft"   	Type: TOKEN	Start: 12016	End: 12026
+    Token: "glauben"      	Type: TOKEN	Start: 12027	End: 12034
+    Token: ","            	Type: PUNCTUATION	Start: 12034	End: 12035
+    Token: "so"           	Type: TOKEN	Start: 12036	End: 12038
+    Token: "hat"          	Type: TOKEN	Start: 12039	End: 12042
+    Token: "sich"         	Type: TOKEN	Start: 12043	End: 12047
+    Token: "dieses"       	Type: TOKEN	Start: 12048	End: 12054
+    Token: "Urteil"       	Type: TOKEN	Start: 12055	End: 12061
+    Token: "zumindest"    	Type: TOKEN	Start: 12062	End: 12071
+    Token: "ausserhalb"   	Type: TOKEN	Start: 12072	End: 12082
+    Token: "Deutschlands" 	Type: TOKEN	Start: 12083	End: 12095
+    Token: "bereits"      	Type: TOKEN	Start: 12096	End: 12103
+    Token: "etabliert"    	Type: TOKEN	Start: 12104	End: 12113
+    Token: "."            	Type: TERM_PUNCT_P	Start: 12113	End: 12114
+  Text Unit Start: 12115
+  Text Unit End: 12343
+    Token: "Trotz"        	Type: TOKEN	Start: 12115	End: 12120
+    Token: "einer"        	Type: TOKEN	Start: 12121	End: 12126
+    Token: "leichten"     	Type: TOKEN	Start: 12127	End: 12135
+    Token: "Zunahme"      	Type: TOKEN	Start: 12136	End: 12143
+    Token: "des"          	Type: TOKEN	Start: 12144	End: 12147
+    Token: "Welthandels"  	Type: TOKEN	Start: 12148	End: 12159
+    Token: ","            	Type: PUNCTUATION	Start: 12159	End: 12160
+    Token: "so"           	Type: TOKEN	Start: 12161	End: 12163
+    Token: "die"          	Type: TOKEN	Start: 12164	End: 12167
+    Token: "OECD"         	Type: TOKEN	Start: 12168	End: 12172
+    Token: "in"           	Type: TOKEN	Start: 12173	End: 12175
+    Token: "ihrem"        	Type: TOKEN	Start: 12176	End: 12181
+    Token: "Halbjahresbericht"	Type: TOKEN	Start: 12182	End: 12199
+    Token: "zur"          	Type: TOKEN	Start: 12200	End: 12203
+    Token: "wirtschaftlichen"	Type: TOKEN	Start: 12204	End: 12220
+    Token: "Entwicklung"  	Type: TOKEN	Start: 12221	End: 12232
+    Token: "in"           	Type: TOKEN	Start: 12233	End: 12235
+    Token: "24"           	Type: DIGITAL	Start: 12236	End: 12238
+    Token: "Mitgliedslaendern"	Type: TOKEN	Start: 12239	End: 12256
+    Token: ","            	Type: PUNCTUATION	Start: 12256	End: 12257
+    Token: "werde"        	Type: TOKEN	Start: 12258	End: 12263
+    Token: "der"          	Type: TOKEN	Start: 12264	End: 12267
+    Token: "deutsche"     	Type: TOKEN	Start: 12268	End: 12276
+    Token: "Export"       	Type: TOKEN	Start: 12277	End: 12283
+    Token: "1993"         	Type: DIGITAL	Start: 12284	End: 12288
+    Token: "kaum"         	Type: TOKEN	Start: 12289	End: 12293
+    Token: "nennenswerte" 	Type: TOKEN	Start: 12294	End: 12306
+    Token: "belebende"    	Type: TOKEN	Start: 12307	End: 12316
+    Token: "Effekte"      	Type: TOKEN	Start: 12317	End: 12324
+    Token: "ausloesen"    	Type: TOKEN	Start: 12325	End: 12334
+    Token: "koennen"      	Type: TOKEN	Start: 12335	End: 12342
+    Token: "."            	Type: TERM_PUNCT_P	Start: 12342	End: 12343
+  Text Unit Start: 12344
+  Text Unit End: 12473
+    Token: "Zu"           	Type: TOKEN	Start: 12344	End: 12346
+    Token: "lange"        	Type: TOKEN	Start: 12347	End: 12352
+    Token: "und"          	Type: TOKEN	Start: 12353	End: 12356
+    Token: "zu"           	Type: TOKEN	Start: 12357	End: 12359
+    Token: "einseitig"    	Type: TOKEN	Start: 12360	End: 12369
+    Token: ","            	Type: PUNCTUATION	Start: 12369	End: 12370
+    Token: "urteilen"     	Type: TOKEN	Start: 12371	End: 12379
+    Token: "denn"         	Type: TOKEN	Start: 12380	End: 12384
+    Token: "auch"         	Type: TOKEN	Start: 12385	End: 12389
+    Token: "die"          	Type: TOKEN	Start: 12390	End: 12393
+    Token: "meisten"      	Type: TOKEN	Start: 12394	End: 12401
+    Token: "Unternehmensberater"	Type: TOKEN	Start: 12402	End: 12421
+    Token: ","            	Type: PUNCTUATION	Start: 12421	End: 12422
+    Token: "haben"        	Type: TOKEN	Start: 12423	End: 12428
+    Token: "deutsche"     	Type: TOKEN	Start: 12429	End: 12437
+    Token: "Konzernlenker"	Type: TOKEN	Start: 12438	End: 12451
+    Token: "auf"          	Type: TOKEN	Start: 12452	End: 12455
+    Token: "Wachstum"     	Type: TOKEN	Start: 12456	End: 12464
+    Token: "gesetzt"      	Type: TOKEN	Start: 12465	End: 12472
+    Token: "."            	Type: TERM_PUNCT_P	Start: 12472	End: 12473
+  Text Unit Start: 12474
+  Text Unit End: 12676
+    Token: "Waehrend"     	Type: TOKEN	Start: 12474	End: 12482
+    Token: "die"          	Type: TOKEN	Start: 12483	End: 12486
+    Token: "Konkurrenten" 	Type: TOKEN	Start: 12487	End: 12499
+    Token: "im"           	Type: TOKEN	Start: 12500	End: 12502
+    Token: "europaeischen"	Type: TOKEN	Start: 12503	End: 12516
+    Token: "Ausland"      	Type: TOKEN	Start: 12517	End: 12524
+    Token: "in"           	Type: TOKEN	Start: 12525	End: 12527
+    Token: "den"          	Type: TOKEN	Start: 12528	End: 12531
+    Token: "vergangenen"  	Type: TOKEN	Start: 12532	End: 12543
+    Token: "Jahren"       	Type: TOKEN	Start: 12544	End: 12550
+    Token: "ihre"         	Type: TOKEN	Start: 12551	End: 12555
+    Token: "Fabriken"     	Type: TOKEN	Start: 12556	End: 12564
+    Token: "bereits"      	Type: TOKEN	Start: 12565	End: 12572
+    Token: "konsequent"   	Type: TOKEN	Start: 12573	End: 12583
+    Token: "durchrationalisierten"	Type: TOKEN	Start: 12584	End: 12605
+    Token: ","            	Type: PUNCTUATION	Start: 12605	End: 12606
+    Token: "praegten"     	Type: TOKEN	Start: 12607	End: 12615
+    Token: "in"           	Type: TOKEN	Start: 12616	End: 12618
+    Token: "Deutschland"  	Type: TOKEN	Start: 12619	End: 12630
+    Token: "vor"          	Type: TOKEN	Start: 12631	End: 12634
+    Token: "allem"        	Type: TOKEN	Start: 12635	End: 12640
+    Token: "Erweiterungsinvestitionen"	Type: TOKEN	Start: 12641	End: 12666
+    Token: "das"          	Type: TOKEN	Start: 12667	End: 12670
+    Token: "Bild"         	Type: TOKEN	Start: 12671	End: 12675
+    Token: "."            	Type: TERM_PUNCT_P	Start: 12675	End: 12676
+
+Paragraph Start: 12680
+Paragraph End: 12956
+  Text Unit Start: 12680
+  Text Unit End: 12874
+    Token: "Auch"         	Type: TOKEN	Start: 12680	End: 12684
+    Token: "die"          	Type: TOKEN	Start: 12685	End: 12688
+    Token: "Umsetzung"    	Type: TOKEN	Start: 12689	End: 12698
+    Token: "der"          	Type: TOKEN	Start: 12699	End: 12702
+    Token: "Lean"         	Type: TOKEN	Start: 12703	End: 12707
+    Token: "Production"   	Type: TOKEN	Start: 12708	End: 12718
+    Token: "-"            	Type: PUNCTUATION	Start: 12719	End: 12720
+    Token: "Erhoehung"    	Type: TOKEN	Start: 12721	End: 12730
+    Token: "der"          	Type: TOKEN	Start: 12731	End: 12734
+    Token: "Arbeitsproduktivitaet"	Type: TOKEN	Start: 12735	End: 12756
+    Token: "nach"         	Type: TOKEN	Start: 12757	End: 12761
+    Token: "japanischem"  	Type: TOKEN	Start: 12762	End: 12773
+    Token: "Vorbild"      	Type: TOKEN	Start: 12774	End: 12781
+    Token: "-"            	Type: PUNCTUATION	Start: 12782	End: 12783
+    Token: "geriet"       	Type: TOKEN	Start: 12784	End: 12790
+    Token: "waehrend"     	Type: TOKEN	Start: 12791	End: 12799
+    Token: "der"          	Type: TOKEN	Start: 12800	End: 12803
+    Token: "einigungsbedingten"	Type: TOKEN	Start: 12804	End: 12822
+    Token: "Boomjahre"    	Type: TOKEN	Start: 12823	End: 12832
+    Token: "immer"        	Type: TOKEN	Start: 12833	End: 12838
+    Token: "mehr"         	Type: TOKEN	Start: 12839	End: 12843
+    Token: "aus"          	Type: TOKEN	Start: 12844	End: 12847
+    Token: "dem"          	Type: TOKEN	Start: 12848	End: 12851
+    Token: "Blickfeld"    	Type: TOKEN	Start: 12852	End: 12861
+    Token: "der"          	Type: TOKEN	Start: 12862	End: 12865
+    Token: "Manager"      	Type: TOKEN	Start: 12866	End: 12873
+    Token: "."            	Type: TERM_PUNCT_P	Start: 12873	End: 12874
+  Text Unit Start: 12875
+  Text Unit End: 12956
+    Token: """            	Type: OPEN_PUNCT	Start: 12875	End: 12876	PTB: "``"
+    Token: "Deutsche"     	Type: TOKEN	Start: 12876	End: 12884
+    Token: "Maschinen"    	Type: TOKEN	Start: 12885	End: 12894
+    Token: """            	Type: CLOSE_PUNCT	Start: 12894	End: 12895	PTB: "''"
+    Token: ","            	Type: PUNCTUATION	Start: 12895	End: 12896
+    Token: "sagt"         	Type: TOKEN	Start: 12897	End: 12901
+    Token: "Berger"       	Type: TOKEN	Start: 12902	End: 12908
+    Token: ","            	Type: PUNCTUATION	Start: 12908	End: 12909
+    Token: """            	Type: OPEN_PUNCT	Start: 12910	End: 12911	PTB: "``"
+    Token: "sind"         	Type: TOKEN	Start: 12911	End: 12915
+    Token: "fuer"         	Type: TOKEN	Start: 12916	End: 12920
+    Token: "den"          	Type: TOKEN	Start: 12921	End: 12924
+    Token: "Weltmarkt"    	Type: TOKEN	Start: 12925	End: 12934
+    Token: "heute"        	Type: TOKEN	Start: 12935	End: 12940
+    Token: "viel"         	Type: TOKEN	Start: 12941	End: 12945
+    Token: "zu"           	Type: TOKEN	Start: 12946	End: 12948
+    Token: "teuer"        	Type: TOKEN	Start: 12949	End: 12954
+    Token: "."            	Type: TERM_PUNCT_P	Start: 12954	End: 12955
+    Token: """            	Type: CLOSE_PUNCT	Start: 12955	End: 12956	PTB: "''"
+
+Paragraph Start: 12960
+Paragraph End: 13589
+  Text Unit Start: 12960
+  Text Unit End: 13033
+    Token: "Hinzu"        	Type: TOKEN	Start: 12960	End: 12965
+    Token: "kommt"        	Type: TOKEN	Start: 12966	End: 12971
+    Token: "nicht"        	Type: TOKEN	Start: 12972	End: 12977
+    Token: "nur"          	Type: TOKEN	Start: 12978	End: 12981
+    Token: "die"          	Type: TOKEN	Start: 12982	End: 12985
+    Token: "finanzielle"  	Type: TOKEN	Start: 12986	End: 12997
+    Token: "Last"         	Type: TOKEN	Start: 12998	End: 13002
+    Token: "des"          	Type: TOKEN	Start: 13003	End: 13006
+    Token: "Aufbaus"      	Type: TOKEN	Start: 13007	End: 13014
+    Token: "in"           	Type: TOKEN	Start: 13015	End: 13017
+    Token: "Ostdeutschland"	Type: TOKEN	Start: 13018	End: 13032
+    Token: "."            	Type: TERM_PUNCT_P	Start: 13032	End: 13033
+  Text Unit Start: 13034
+  Text Unit End: 13127
+    Token: "Auch"         	Type: TOKEN	Start: 13034	End: 13038
+    Token: "das"          	Type: TOKEN	Start: 13039	End: 13042
+    Token: "Wegbrechen"   	Type: TOKEN	Start: 13043	End: 13053
+    Token: "der"          	Type: TOKEN	Start: 13054	End: 13057
+    Token: "Ost-Maerkte"  	Type: TOKEN	Start: 13058	End: 13069
+    Token: "hat"          	Type: TOKEN	Start: 13070	End: 13073
+    Token: "vielen"       	Type: TOKEN	Start: 13074	End: 13080
+    Token: "Traditionsbetrieben"	Type: TOKEN	Start: 13081	End: 13100
+    Token: "schon"        	Type: TOKEN	Start: 13101	End: 13106
+    Token: "den"          	Type: TOKEN	Start: 13107	End: 13110
+    Token: "Garaus"       	Type: TOKEN	Start: 13111	End: 13117
+    Token: "gebracht"     	Type: TOKEN	Start: 13118	End: 13126
+    Token: "."            	Type: TERM_PUNCT_P	Start: 13126	End: 13127
+  Text Unit Start: 13128
+  Text Unit End: 13331
+    Token: "Waehrend"     	Type: TOKEN	Start: 13128	End: 13136
+    Token: "noch"         	Type: TOKEN	Start: 13137	End: 13141
+    Token: "1991"         	Type: DIGITAL	Start: 13142	End: 13146
+    Token: "wie"          	Type: TOKEN	Start: 13147	End: 13150
+    Token: "im"           	Type: TOKEN	Start: 13151	End: 13153
+    Token: "Werkzeugmaschinenbau"	Type: TOKEN	Start: 13154	End: 13174
+    Token: "zwoelf"       	Type: TOKEN	Start: 13175	End: 13181
+    Token: "Prozent"      	Type: TOKEN	Start: 13182	End: 13189
+    Token: "der"          	Type: TOKEN	Start: 13190	End: 13193
+    Token: "westdeutschen"	Type: TOKEN	Start: 13194	End: 13207
+    Token: "Exporte"      	Type: TOKEN	Start: 13208	End: 13215
+    Token: "in"           	Type: TOKEN	Start: 13216	End: 13218
+    Token: "die"          	Type: TOKEN	Start: 13219	End: 13222
+    Token: "ehemalige"    	Type: TOKEN	Start: 13223	End: 13232
+    Token: "Sowjetunion"  	Type: TOKEN	Start: 13233	End: 13244
+    Token: "gingen"       	Type: TOKEN	Start: 13245	End: 13251
+    Token: ","            	Type: PUNCTUATION	Start: 13251	End: 13252
+    Token: "hat"          	Type: TOKEN	Start: 13253	End: 13256
+    Token: "die"          	Type: TOKEN	Start: 13257	End: 13260
+    Token: "Branche"      	Type: TOKEN	Start: 13261	End: 13268
+    Token: "auf"          	Type: TOKEN	Start: 13269	End: 13272
+    Token: "Ersatzmaerkten"	Type: TOKEN	Start: 13273	End: 13287
+    Token: "-"            	Type: PUNCTUATION	Start: 13288	End: 13289
+    Token: "etwa"         	Type: TOKEN	Start: 13290	End: 13294
+    Token: "in"           	Type: TOKEN	Start: 13295	End: 13297
+    Token: "China"        	Type: TOKEN	Start: 13298	End: 13303
+    Token: "-"            	Type: PUNCTUATION	Start: 13304	End: 13305
+    Token: "noch"         	Type: TOKEN	Start: 13306	End: 13310
+    Token: "nicht"        	Type: TOKEN	Start: 13311	End: 13316
+    Token: "Tritt"        	Type: TOKEN	Start: 13317	End: 13322
+    Token: "gefasst"      	Type: TOKEN	Start: 13323	End: 13330
+    Token: "."            	Type: TERM_PUNCT_P	Start: 13330	End: 13331
+  Text Unit Start: 13332
+  Text Unit End: 13589
+    Token: "Da"           	Type: TOKEN	Start: 13332	End: 13334
+    Token: "konjunkturelle"	Type: TOKEN	Start: 13335	End: 13349
+    Token: "und"          	Type: TOKEN	Start: 13350	End: 13353
+    Token: "strukturelle" 	Type: TOKEN	Start: 13354	End: 13366
+    Token: "Probleme"     	Type: TOKEN	Start: 13367	End: 13375
+    Token: "die"          	Type: TOKEN	Start: 13376	End: 13379
+    Token: "Wirtschaft"   	Type: TOKEN	Start: 13380	End: 13390
+    Token: "zur"          	Type: TOKEN	Start: 13391	End: 13394
+    Token: "gleichen"     	Type: TOKEN	Start: 13395	End: 13403
+    Token: "Zeit"         	Type: TOKEN	Start: 13404	End: 13408
+    Token: "mit"          	Type: TOKEN	Start: 13409	End: 13412
+    Token: "voller"       	Type: TOKEN	Start: 13413	End: 13419
+    Token: "Wucht"        	Type: TOKEN	Start: 13420	End: 13425
+    Token: "treffen"      	Type: TOKEN	Start: 13426	End: 13433
+    Token: ","            	Type: PUNCTUATION	Start: 13433	End: 13434
+    Token: "sehen"        	Type: TOKEN	Start: 13435	End: 13440
+    Token: "Zukunftsforscher"	Type: TOKEN	Start: 13441	End: 13457
+    Token: "wie"          	Type: TOKEN	Start: 13458	End: 13461
+    Token: "Berger"       	Type: TOKEN	Start: 13462	End: 13468
+    Token: "nun"          	Type: TOKEN	Start: 13469	End: 13472
+    Token: "mehr"         	Type: TOKEN	Start: 13473	End: 13477
+    Token: "als"          	Type: TOKEN	Start: 13478	End: 13481
+    Token: "die"          	Type: TOKEN	Start: 13482	End: 13485
+    Token: "Haelfte"      	Type: TOKEN	Start: 13486	End: 13493
+    Token: "der"          	Type: TOKEN	Start: 13494	End: 13497
+    Token: "traditionellen"	Type: TOKEN	Start: 13498	End: 13512
+    Token: ","            	Type: PUNCTUATION	Start: 13512	End: 13513
+    Token: "im"           	Type: TOKEN	Start: 13514	End: 13516
+    Token: "internationalen"	Type: TOKEN	Start: 13517	End: 13532
+    Token: "Wettbewerb"   	Type: TOKEN	Start: 13533	End: 13543
+    Token: "stehenden"    	Type: TOKEN	Start: 13544	End: 13553
+    Token: "westdeutschen"	Type: TOKEN	Start: 13554	End: 13567
+    Token: "Industrie"    	Type: TOKEN	Start: 13568	End: 13577
+    Token: "gefaehrdet"   	Type: TOKEN	Start: 13578	End: 13588
+    Token: "."            	Type: TERM_PUNCT_P	Start: 13588	End: 13589
+
+Paragraph Start: 13593
+Paragraph End: 13864
+  Text Unit Start: 13593
+  Text Unit End: 13724
+    Token: "Mindestens"   	Type: TOKEN	Start: 13593	End: 13603
+    Token: "sechs"        	Type: TOKEN	Start: 13604	End: 13609
+    Token: "bis"          	Type: TOKEN	Start: 13610	End: 13613
+    Token: "sieben"       	Type: TOKEN	Start: 13614	End: 13620
+    Token: "Jahre"        	Type: TOKEN	Start: 13621	End: 13626
+    Token: ","            	Type: PUNCTUATION	Start: 13626	End: 13627
+    Token: "schaetzt"     	Type: TOKEN	Start: 13628	End: 13636
+    Token: "Berger"       	Type: TOKEN	Start: 13637	End: 13643
+    Token: ","            	Type: PUNCTUATION	Start: 13643	End: 13644
+    Token: "benoetige"    	Type: TOKEN	Start: 13645	End: 13654
+    Token: "die"          	Type: TOKEN	Start: 13655	End: 13658
+    Token: "deutsche"     	Type: TOKEN	Start: 13659	End: 13667
+    Token: "Industrie"    	Type: TOKEN	Start: 13668	End: 13677
+    Token: ","            	Type: PUNCTUATION	Start: 13677	End: 13678
+    Token: "um"           	Type: TOKEN	Start: 13679	End: 13681
+    Token: "die"          	Type: TOKEN	Start: 13682	End: 13685
+    Token: "strukturellen"	Type: TOKEN	Start: 13686	End: 13699
+    Token: "Defizite"     	Type: TOKEN	Start: 13700	End: 13708
+    Token: "zu"           	Type: TOKEN	Start: 13709	End: 13711
+    Token: "bewaeltigen"  	Type: TOKEN	Start: 13712	End: 13723
+    Token: "."            	Type: TERM_PUNCT_P	Start: 13723	End: 13724
+  Text Unit Start: 13725
+  Text Unit End: 13864
+    Token: "Heute"        	Type: TOKEN	Start: 13725	End: 13730
+    Token: "gibt"         	Type: TOKEN	Start: 13731	End: 13735
+    Token: "es"           	Type: TOKEN	Start: 13736	End: 13738
+    Token: "keinen"       	Type: TOKEN	Start: 13739	End: 13745
+    Token: "Industriezweig"	Type: TOKEN	Start: 13746	End: 13760
+    Token: ","            	Type: PUNCTUATION	Start: 13760	End: 13761
+    Token: "erkannte"     	Type: TOKEN	Start: 13762	End: 13770
+    Token: "Bundeswirtschaftsminister"	Type: TOKEN	Start: 13771	End: 13796
+    Token: "Juergen"      	Type: TOKEN	Start: 13797	End: 13804
+    Token: "Moellemann"   	Type: TOKEN	Start: 13805	End: 13815
+    Token: "("            	Type: OPEN_BRACKET	Start: 13816	End: 13817	PTB: "-LRB-"
+    Token: "FDP"          	Type: TOKEN	Start: 13817	End: 13820
+    Token: ")"            	Type: CLOSE_BRACKET	Start: 13820	End: 13821	PTB: "-RRB-"
+    Token: ","            	Type: PUNCTUATION	Start: 13821	End: 13822
+    Token: """            	Type: OPEN_PUNCT	Start: 13823	End: 13824	PTB: "``"
+    Token: "der"          	Type: TOKEN	Start: 13824	End: 13827
+    Token: "nicht"        	Type: TOKEN	Start: 13828	End: 13833
+    Token: "schweren"     	Type: TOKEN	Start: 13834	End: 13842
+    Token: "Zeiten"       	Type: TOKEN	Start: 13843	End: 13849
+    Token: "entgegengeht" 	Type: TOKEN	Start: 13850	End: 13862
+    Token: """            	Type: CLOSE_PUNCT	Start: 13862	End: 13863	PTB: "''"
+    Token: "."            	Type: TERM_PUNCT_P	Start: 13863	End: 13864
+
+Paragraph Start: 13868
+Paragraph End: 14324
+  Text Unit Start: 13868
+  Text Unit End: 14068
+    Token: "Leiden"       	Type: TOKEN	Start: 13868	End: 13874
+    Token: "Konzerne"     	Type: TOKEN	Start: 13875	End: 13883
+    Token: "wie"          	Type: TOKEN	Start: 13884	End: 13887
+    Token: "VW"           	Type: TOKEN	Start: 13888	End: 13890
+    Token: "und"          	Type: TOKEN	Start: 13891	End: 13894
+    Token: "Mercedes-Benz"	Type: TOKEN	Start: 13895	End: 13908
+    Token: "vor"          	Type: TOKEN	Start: 13909	End: 13912
+    Token: "allem"        	Type: TOKEN	Start: 13913	End: 13918
+    Token: "unter"        	Type: TOKEN	Start: 13919	End: 13924
+    Token: "einer"        	Type: TOKEN	Start: 13925	End: 13930
+    Token: "aufgeblaehten"	Type: TOKEN	Start: 13931	End: 13944
+    Token: "Verwaltung"   	Type: TOKEN	Start: 13945	End: 13955
+    Token: "und"          	Type: TOKEN	Start: 13956	End: 13959
+    Token: "einer"        	Type: TOKEN	Start: 13960	End: 13965
+    Token: "ineffizienten"	Type: TOKEN	Start: 13966	End: 13979
+    Token: "Arbeitsorganisation"	Type: TOKEN	Start: 13980	End: 13999
+    Token: ","            	Type: PUNCTUATION	Start: 13999	End: 14000
+    Token: "kaempft"      	Type: TOKEN	Start: 14001	End: 14008
+    Token: "der"          	Type: TOKEN	Start: 14009	End: 14012
+    Token: "Maschinenbau" 	Type: TOKEN	Start: 14013	End: 14025
+    Token: "verzweifelt"  	Type: TOKEN	Start: 14026	End: 14037
+    Token: "mit"          	Type: TOKEN	Start: 14038	End: 14041
+    Token: "immensen"     	Type: TOKEN	Start: 14042	End: 14050
+    Token: "Lohnstueckkosten"	Type: TOKEN	Start: 14051	End: 14067
+    Token: "."            	Type: TERM_PUNCT_P	Start: 14067	End: 14068
+  Text Unit Start: 14069
+  Text Unit End: 14234
+    Token: "Waehrend"     	Type: TOKEN	Start: 14069	End: 14077
+    Token: "die"          	Type: TOKEN	Start: 14078	End: 14081
+    Token: "Produktivitaet"	Type: TOKEN	Start: 14082	End: 14096
+    Token: "im"           	Type: TOKEN	Start: 14097	End: 14099
+    Token: "Jahresdurchschnitt"	Type: TOKEN	Start: 14100	End: 14118
+    Token: "nur"          	Type: TOKEN	Start: 14119	End: 14122
+    Token: "um"           	Type: TOKEN	Start: 14123	End: 14125
+    Token: "ein"          	Type: TOKEN	Start: 14126	End: 14129
+    Token: "Prozent"      	Type: TOKEN	Start: 14130	End: 14137
+    Token: "wuchs"        	Type: TOKEN	Start: 14138	End: 14143
+    Token: ","            	Type: PUNCTUATION	Start: 14143	End: 14144
+    Token: "erhoehten"    	Type: TOKEN	Start: 14145	End: 14154
+    Token: "sich"         	Type: TOKEN	Start: 14155	End: 14159
+    Token: "die"          	Type: TOKEN	Start: 14160	End: 14163
+    Token: "Lohnstueckkosten"	Type: TOKEN	Start: 14164	End: 14180
+    Token: "1990"         	Type: DIGITAL	Start: 14181	End: 14185
+    Token: "um"           	Type: TOKEN	Start: 14186	End: 14188
+    Token: "3,5"          	Type: DIGITAL	Start: 14189	End: 14192
+    Token: ","            	Type: PUNCTUATION	Start: 14192	End: 14193
+    Token: "1991"         	Type: DIGITAL	Start: 14194	End: 14198
+    Token: "um"           	Type: TOKEN	Start: 14199	End: 14201
+    Token: "4,5"          	Type: DIGITAL	Start: 14202	End: 14205
+    Token: "und"          	Type: TOKEN	Start: 14206	End: 14209
+    Token: "1992"         	Type: DIGITAL	Start: 14210	End: 14214
+    Token: "gar"          	Type: TOKEN	Start: 14215	End: 14218
+    Token: "um"           	Type: TOKEN	Start: 14219	End: 14221
+    Token: "5,5"          	Type: DIGITAL	Start: 14222	End: 14225
+    Token: "Prozent"      	Type: TOKEN	Start: 14226	End: 14233
+    Token: "."            	Type: TERM_PUNCT_P	Start: 14233	End: 14234
+  Text Unit Start: 14235
+  Text Unit End: 14324
+    Token: "Von"          	Type: TOKEN	Start: 14235	End: 14238
+    Token: "April"        	Type: TOKEN	Start: 14239	End: 14244
+    Token: "bis"          	Type: TOKEN	Start: 14245	End: 14248
+    Token: "Jahresende"   	Type: TOKEN	Start: 14249	End: 14259
+    Token: "verloren"     	Type: TOKEN	Start: 14260	End: 14268
+    Token: "150"          	Type: DIGITAL	Start: 14269	End: 14272
+    Token: "000"          	Type: DIGITAL	Start: 14273	End: 14276
+    Token: "westdeutsche" 	Type: TOKEN	Start: 14277	End: 14289
+    Token: "Maschinenbauer"	Type: TOKEN	Start: 14290	End: 14304
+    Token: "ihren"        	Type: TOKEN	Start: 14305	End: 14310
+    Token: "Arbeitsplatz" 	Type: TOKEN	Start: 14311	End: 14323
+    Token: "."            	Type: TERM_PUNCT_P	Start: 14323	End: 14324
+
+Paragraph Start: 14328
+Paragraph End: 14739
+  Text Unit Start: 14328
+  Text Unit End: 14473
+    Token: "Laengst"      	Type: TOKEN	Start: 14328	End: 14335
+    Token: "sind"         	Type: TOKEN	Start: 14336	End: 14340
+    Token: "mittelstaendische"	Type: TOKEN	Start: 14341	End: 14358
+    Token: "Marktfuehrer" 	Type: TOKEN	Start: 14359	End: 14371
+    Token: "wie"          	Type: TOKEN	Start: 14372	End: 14375
+    Token: "Maho"         	Type: TOKEN	Start: 14376	End: 14380
+    Token: "und"          	Type: TOKEN	Start: 14381	End: 14384
+    Token: "Traub"        	Type: TOKEN	Start: 14385	End: 14390
+    Token: "oder"         	Type: TOKEN	Start: 14391	End: 14395
+    Token: "Deckel"       	Type: TOKEN	Start: 14396	End: 14402
+    Token: "und"          	Type: TOKEN	Start: 14403	End: 14406
+    Token: "Gildemeister" 	Type: TOKEN	Start: 14407	End: 14419
+    Token: "zu"           	Type: TOKEN	Start: 14420	End: 14422
+    Token: "Kooperationen"	Type: TOKEN	Start: 14423	End: 14436
+    Token: "gezwungen"    	Type: TOKEN	Start: 14437	End: 14446
+    Token: "-"            	Type: PUNCTUATION	Start: 14447	End: 14448
+    Token: "vorerst"      	Type: TOKEN	Start: 14449	End: 14456
+    Token: "nur"          	Type: TOKEN	Start: 14457	End: 14460
+    Token: "im"           	Type: TOKEN	Start: 14461	End: 14463
+    Token: "Vertrieb"     	Type: TOKEN	Start: 14464	End: 14472
+    Token: "."            	Type: TERM_PUNCT_P	Start: 14472	End: 14473
+  Text Unit Start: 14474
+  Text Unit End: 14560
+    Token: "Doch"         	Type: TOKEN	Start: 14474	End: 14478
+    Token: """            	Type: OPEN_PUNCT	Start: 14479	End: 14480	PTB: "``"
+    Token: "die"          	Type: TOKEN	Start: 14480	End: 14483
+    Token: "Not"          	Type: TOKEN	Start: 14484	End: 14487
+    Token: "lehrt"        	Type: TOKEN	Start: 14488	End: 14493
+    Token: "beten"        	Type: TOKEN	Start: 14494	End: 14499
+    Token: """            	Type: CLOSE_PUNCT	Start: 14499	End: 14500	PTB: "''"
+    Token: ","            	Type: PUNCTUATION	Start: 14500	End: 14501
+    Token: "sagt"         	Type: TOKEN	Start: 14502	End: 14506
+    Token: "im"           	Type: TOKEN	Start: 14507	End: 14509
+    Token: "Blick"        	Type: TOKEN	Start: 14510	End: 14515
+    Token: "auf"          	Type: TOKEN	Start: 14516	End: 14519
+    Token: "die"          	Type: TOKEN	Start: 14520	End: 14523
+    Token: "Zukunft"      	Type: TOKEN	Start: 14524	End: 14531
+    Token: "Maho-Sprecher"	Type: TOKEN	Start: 14532	End: 14545
+    Token: "Wolfgang"     	Type: TOKEN	Start: 14546	End: 14554
+    Token: "Ring"         	Type: TOKEN	Start: 14555	End: 14559
+    Token: "."            	Type: TERM_PUNCT_P	Start: 14559	End: 14560
+  Text Unit Start: 14561
+  Text Unit End: 14739
+    Token: "Beten"        	Type: TOKEN	Start: 14561	End: 14566
+    Token: "allein"       	Type: TOKEN	Start: 14567	End: 14573
+    Token: "wird"         	Type: TOKEN	Start: 14574	End: 14578
+    Token: "ihnen"        	Type: TOKEN	Start: 14579	End: 14584
+    Token: "im"           	Type: TOKEN	Start: 14585	End: 14587
+    Token: "Rezessionsjahr"	Type: TOKEN	Start: 14588	End: 14602
+    Token: "1993"         	Type: DIGITAL	Start: 14603	End: 14607
+    Token: "allerdings"   	Type: TOKEN	Start: 14608	End: 14618
+    Token: "nicht"        	Type: TOKEN	Start: 14619	End: 14624
+    Token: "weiterhelfen" 	Type: TOKEN	Start: 14625	End: 14637
+    Token: ":"            	Type: PUNCTUATION	Start: 14637	End: 14638
+    Token: "Die"          	Type: TOKEN	Start: 14639	End: 14642
+    Token: "Deutschen"    	Type: TOKEN	Start: 14643	End: 14652
+    Token: "gehen"        	Type: TOKEN	Start: 14653	End: 14658
+    Token: "in"           	Type: TOKEN	Start: 14659	End: 14661
+    Token: "ein"          	Type: TOKEN	Start: 14662	End: 14665
+    Token: "schweres"     	Type: TOKEN	Start: 14666	End: 14674
+    Token: "Jahr"         	Type: TOKEN	Start: 14675	End: 14679
+    Token: ","            	Type: PUNCTUATION	Start: 14679	End: 14680
+    Token: "vielleicht"   	Type: TOKEN	Start: 14681	End: 14691
+    Token: "das"          	Type: TOKEN	Start: 14692	End: 14695
+    Token: "schwerste"    	Type: TOKEN	Start: 14696	End: 14705
+    Token: "seit"         	Type: TOKEN	Start: 14706	End: 14710
+    Token: "Bestehen"     	Type: TOKEN	Start: 14711	End: 14719
+    Token: "der"          	Type: TOKEN	Start: 14720	End: 14723
+    Token: "Bundesrepublik"	Type: TOKEN	Start: 14724	End: 14738
+    Token: "."            	Type: TERM_PUNCT_P	Start: 14738	End: 14739
+
