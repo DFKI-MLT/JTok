@@ -33,7 +33,8 @@ import java.util.Properties;
 import java.util.Set;
 import java.util.StringTokenizer;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import de.dfki.lt.tools.tokenizer.annotate.AnnotatedString;
 import de.dfki.lt.tools.tokenizer.annotate.FastAnnotatedString;
@@ -56,7 +57,7 @@ public class JTok {
 
   /**
    * This contains the logger object for logging. */
-  static Logger log = Logger.getLogger(JTok.class);
+  private static final Logger LOG = LoggerFactory.getLogger(JTok.class);
 
   /**
    * This is the path to the tokenizer root directory.
@@ -142,7 +143,7 @@ public class JTok {
       String oneLanguage = st.nextToken();
       // add language resources for that language
       String langDir = configProps.getProperty(oneLanguage);
-      log.info("loading language resources for " + oneLanguage
+      LOG.info("loading language resources for " + oneLanguage
         + " from " + langDir);
 
       /*
@@ -1155,7 +1156,7 @@ public class JTok {
         System.out.println(it.next());
       }
     } catch (IOException e) {
-      log.error(e.getLocalizedMessage(), e);
+      LOG.error(e.getLocalizedMessage(), e);
     }
   }
 }

@@ -22,15 +22,13 @@
 
 package de.dfki.lt.tools.tokenizer.output;
 
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.StringWriter;
 import java.io.Writer;
-import java.io.File;
 import java.text.CharacterIterator;
-
-import org.apache.log4j.Logger;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -42,11 +40,13 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import de.dfki.lt.tools.tokenizer.JTok;
 import de.dfki.lt.tools.tokenizer.FileTools;
+import de.dfki.lt.tools.tokenizer.JTok;
 import de.dfki.lt.tools.tokenizer.annotate.AnnotatedString;
 import de.dfki.lt.tools.tokenizer.exceptions.ProcessingException;
 
@@ -63,7 +63,7 @@ public class XMLOutputter {
 
   /**
    * This contains the logger object for logging. */
-  private static Logger log = Logger.getLogger(JTok.class);
+  private static final Logger LOG = LoggerFactory.getLogger(XMLOutputter.class);
 
   /**
    * This is the name of XML elements in the result that describe a
@@ -335,7 +335,7 @@ public class XMLOutputter {
       System.out.println(XMLOutputter.createXMLString(result));
 
     } catch (IOException e) {
-      log.error(e.getLocalizedMessage(), e);
+      LOG.error(e.getLocalizedMessage(), e);
     }
   }
 
