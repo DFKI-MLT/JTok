@@ -1,0 +1,5 @@
+This	0-4	tok
+is	5-7	tok
+a	8-9	tok
+test	10-14	tok
+.	14-15	punct

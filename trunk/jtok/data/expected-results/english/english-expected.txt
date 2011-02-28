@@ -1,0 +1,490 @@
+Paragraph Start: 0
+Paragraph End: 689
+  Text Unit Start: 0
+  Text Unit End: 74
+    Token: "They"         	Type: TOKEN	Start: 0	End: 4
+    Token: "'re"          	Type: RIGHTSPLIT	Start: 4	End: 7
+    Token: "the"          	Type: TOKEN	Start: 8	End: 11
+    Token: "most"         	Type: TOKEN	Start: 12	End: 16
+    Token: "popular"      	Type: TOKEN	Start: 17	End: 24
+    Token: "and"          	Type: TOKEN	Start: 25	End: 28
+    Token: "accomplished" 	Type: TOKEN	Start: 29	End: 41
+    Token: "musical"      	Type: TOKEN	Start: 42	End: 49
+    Token: "artists"      	Type: TOKEN	Start: 50	End: 57
+    Token: "of"           	Type: TOKEN	Start: 58	End: 60
+    Token: "this"         	Type: TOKEN	Start: 61	End: 65
+    Token: "century"      	Type: TOKEN	Start: 66	End: 73
+    Token: "."            	Type: TERM_PUNCT_P	Start: 73	End: 74
+  Text Unit Start: 75
+  Text Unit End: 248
+    Token: "But"          	Type: TOKEN	Start: 75	End: 78
+    Token: "for"          	Type: TOKEN	Start: 79	End: 82
+    Token: "more"         	Type: TOKEN	Start: 83	End: 87
+    Token: "than"         	Type: TOKEN	Start: 88	End: 92
+    Token: "three"        	Type: TOKEN	Start: 93	End: 98
+    Token: "decades"      	Type: TOKEN	Start: 99	End: 106
+    Token: ","            	Type: PUNCTUATION	Start: 106	End: 107
+    Token: "the"          	Type: TOKEN	Start: 108	End: 111
+    Token: "secrets"      	Type: TOKEN	Start: 112	End: 119
+    Token: "behind"       	Type: TOKEN	Start: 120	End: 126
+    Token: "the"          	Type: TOKEN	Start: 127	End: 130
+    Token: "Beatles"      	Type: TOKEN	Start: 131	End: 138
+    Token: "'"            	Type: CLOSE_PUNCT	Start: 138	End: 139	PTB: "''"
+    Token: "unparalleled" 	Type: TOKEN	Start: 140	End: 152
+    Token: "artistic"     	Type: TOKEN	Start: 153	End: 161
+    Token: "evolution"    	Type: TOKEN	Start: 162	End: 171
+    Token: "were"         	Type: TOKEN	Start: 172	End: 176
+    Token: "beyond"       	Type: TOKEN	Start: 177	End: 183
+    Token: "reach"        	Type: TOKEN	Start: 184	End: 189
+    Token: "--"           	Type: PUNCTUATION	Start: 190	End: 192
+    Token: "sealed"       	Type: TOKEN	Start: 193	End: 199
+    Token: "in"           	Type: TOKEN	Start: 200	End: 202
+    Token: "a"            	Type: TOKEN	Start: 203	End: 204
+    Token: "locked"       	Type: TOKEN	Start: 205	End: 211
+    Token: "room"         	Type: TOKEN	Start: 212	End: 216
+    Token: "at"           	Type: TOKEN	Start: 217	End: 219
+    Token: "London"       	Type: TOKEN	Start: 220	End: 226
+    Token: "'s"           	Type: RIGHTSPLIT	Start: 226	End: 228
+    Token: "Abbey"        	Type: TOKEN	Start: 229	End: 234
+    Token: "Road"         	Type: TOKEN	Start: 235	End: 239
+    Token: "Studios"      	Type: TOKEN	Start: 240	End: 247
+    Token: "."            	Type: TERM_PUNCT_P	Start: 247	End: 248
+  Text Unit Start: 249
+  Text Unit End: 689
+    Token: "In"           	Type: TOKEN	Start: 249	End: 251
+    Token: "this"         	Type: TOKEN	Start: 252	End: 256
+    Token: "comprehensive"	Type: TOKEN	Start: 257	End: 270
+    Token: "and"          	Type: TOKEN	Start: 271	End: 274
+    Token: "brilliantly"  	Type: TOKEN	Start: 275	End: 286
+    Token: "rendered"     	Type: TOKEN	Start: 287	End: 295
+    Token: "book"         	Type: TOKEN	Start: 296	End: 300
+    Token: "the"          	Type: TOKEN	Start: 301	End: 304
+    Token: "only"         	Type: TOKEN	Start: 305	End: 309
+    Token: """            	Type: OPEN_PUNCT	Start: 310	End: 311	PTB: "``"
+    Token: "outsider"     	Type: TOKEN	Start: 311	End: 319
+    Token: """            	Type: CLOSE_PUNCT	Start: 319	End: 320	PTB: "''"
+    Token: "to"           	Type: TOKEN	Start: 321	End: 323
+    Token: "gain"         	Type: TOKEN	Start: 324	End: 328
+    Token: "access"       	Type: TOKEN	Start: 329	End: 335
+    Token: "to"           	Type: TOKEN	Start: 336	End: 338
+    Token: "these"        	Type: TOKEN	Start: 339	End: 344
+    Token: "invaluable"   	Type: TOKEN	Start: 345	End: 355
+    Token: "musical"      	Type: TOKEN	Start: 356	End: 363
+    Token: "archives"     	Type: TOKEN	Start: 364	End: 372
+    Token: "provides"     	Type: TOKEN	Start: 373	End: 381
+    Token: "a"            	Type: TOKEN	Start: 382	End: 383
+    Token: "new"          	Type: TOKEN	Start: 384	End: 387
+    Token: ","            	Type: PUNCTUATION	Start: 387	End: 388
+    Token: "fascinating"  	Type: TOKEN	Start: 389	End: 400
+    Token: "look"         	Type: TOKEN	Start: 401	End: 405
+    Token: "at"           	Type: TOKEN	Start: 406	End: 408
+    Token: "the"          	Type: TOKEN	Start: 409	End: 412
+    Token: "music"        	Type: TOKEN	Start: 413	End: 418
+    Token: "and"          	Type: TOKEN	Start: 419	End: 422
+    Token: "artistry"     	Type: TOKEN	Start: 423	End: 431
+    Token: "of"           	Type: TOKEN	Start: 432	End: 434
+    Token: "the"          	Type: TOKEN	Start: 435	End: 438
+    Token: "Beatles"      	Type: TOKEN	Start: 439	End: 446
+    Token: ","            	Type: PUNCTUATION	Start: 446	End: 447
+    Token: "revealing"    	Type: TOKEN	Start: 448	End: 457
+    Token: "how"          	Type: TOKEN	Start: 458	End: 461
+    Token: "four"         	Type: TOKEN	Start: 462	End: 466
+    Token: "untrained"    	Type: TOKEN	Start: 467	End: 476
+    Token: "musicians"    	Type: TOKEN	Start: 477	End: 486
+    Token: "merged"       	Type: TOKEN	Start: 487	End: 493
+    Token: "their"        	Type: TOKEN	Start: 494	End: 499
+    Token: "collective"   	Type: TOKEN	Start: 500	End: 510
+    Token: "genius"       	Type: TOKEN	Start: 511	End: 517
+    Token: "into"         	Type: TOKEN	Start: 518	End: 522
+    Token: "a"            	Type: TOKEN	Start: 523	End: 524
+    Token: "single"       	Type: TOKEN	Start: 525	End: 531
+    Token: "creative"     	Type: TOKEN	Start: 532	End: 540
+    Token: "force"        	Type: TOKEN	Start: 541	End: 546
+    Token: ","            	Type: PUNCTUATION	Start: 546	End: 547
+    Token: "how"          	Type: TOKEN	Start: 548	End: 551
+    Token: "they"         	Type: TOKEN	Start: 552	End: 556
+    Token: "came"         	Type: TOKEN	Start: 557	End: 561
+    Token: "together"     	Type: TOKEN	Start: 562	End: 570
+    Token: "to"           	Type: TOKEN	Start: 571	End: 573
+    Token: "paint"        	Type: TOKEN	Start: 574	End: 579
+    Token: "pictures"     	Type: TOKEN	Start: 580	End: 588
+    Token: "with"         	Type: TOKEN	Start: 589	End: 593
+    Token: "sound"        	Type: TOKEN	Start: 594	End: 599
+    Token: "."            	Type: TERM_PUNCT_P	Start: 599	End: 600
+    Token: "."            	Type: TERM_PUNCT_P	Start: 600	End: 601
+    Token: "."            	Type: TERM_PUNCT_P	Start: 601	End: 602
+    Token: "and"          	Type: TOKEN	Start: 602	End: 605
+    Token: "how"          	Type: TOKEN	Start: 606	End: 609
+    Token: "album"        	Type: TOKEN	Start: 610	End: 615
+    Token: "by"           	Type: TOKEN	Start: 616	End: 618
+    Token: "album"        	Type: TOKEN	Start: 619	End: 624
+    Token: ","            	Type: PUNCTUATION	Start: 624	End: 625
+    Token: "the"          	Type: TOKEN	Start: 626	End: 629
+    Token: "Beatles"      	Type: TOKEN	Start: 630	End: 637
+    Token: "transformed"  	Type: TOKEN	Start: 638	End: 649
+    Token: "the"          	Type: TOKEN	Start: 650	End: 653
+    Token: "landscape"    	Type: TOKEN	Start: 654	End: 663
+    Token: "of"           	Type: TOKEN	Start: 664	End: 666
+    Token: "popular"      	Type: TOKEN	Start: 667	End: 674
+    Token: "music"        	Type: TOKEN	Start: 675	End: 680
+    Token: "forever"      	Type: TOKEN	Start: 681	End: 688
+    Token: "."            	Type: TERM_PUNCT_P	Start: 688	End: 689
+
+Paragraph Start: 693
+Paragraph End: 1128
+  Text Unit Start: 693
+  Text Unit End: 896
+    Token: "Combining"    	Type: TOKEN	Start: 693	End: 702
+    Token: "literary"     	Type: TOKEN	Start: 703	End: 711
+    Token: "analysis"     	Type: TOKEN	Start: 712	End: 720
+    Token: "and"          	Type: TOKEN	Start: 721	End: 724
+    Token: "investigative"	Type: TOKEN	Start: 725	End: 738
+    Token: "reporting"    	Type: TOKEN	Start: 739	End: 748
+    Token: "with"         	Type: TOKEN	Start: 749	End: 753
+    Token: "page-turning" 	Type: TOKEN	Start: 754	End: 766
+    Token: "storytelling" 	Type: TOKEN	Start: 767	End: 779
+    Token: "and"          	Type: TOKEN	Start: 780	End: 783
+    Token: "musical"      	Type: TOKEN	Start: 784	End: 791
+    Token: "explication"  	Type: TOKEN	Start: 792	End: 803
+    Token: ","            	Type: PUNCTUATION	Start: 803	End: 804
+    Token: "author"       	Type: TOKEN	Start: 805	End: 811
+    Token: "Mark"         	Type: TOKEN	Start: 812	End: 816
+    Token: "Hertsgaard"   	Type: TOKEN	Start: 817	End: 827
+    Token: "has"          	Type: TOKEN	Start: 828	End: 831
+    Token: "written"      	Type: TOKEN	Start: 832	End: 839
+    Token: "the"          	Type: TOKEN	Start: 840	End: 843
+    Token: "first"        	Type: TOKEN	Start: 844	End: 849
+    Token: "serious"      	Type: TOKEN	Start: 850	End: 857
+    Token: "biography"    	Type: TOKEN	Start: 858	End: 867
+    Token: "of"           	Type: TOKEN	Start: 868	End: 870
+    Token: "the"          	Type: TOKEN	Start: 871	End: 874
+    Token: "music"        	Type: TOKEN	Start: 875	End: 880
+    Token: "of"           	Type: TOKEN	Start: 881	End: 883
+    Token: "the"          	Type: TOKEN	Start: 884	End: 887
+    Token: "Beatles"      	Type: TOKEN	Start: 888	End: 895
+    Token: "."            	Type: TERM_PUNCT_P	Start: 895	End: 896
+  Text Unit Start: 897
+  Text Unit End: 1128
+    Token: "A"            	Type: TOKEN	Start: 897	End: 898
+    Token: "Day"          	Type: TOKEN	Start: 899	End: 902
+    Token: "in"           	Type: TOKEN	Start: 903	End: 905
+    Token: "the"          	Type: TOKEN	Start: 906	End: 909
+    Token: "Life"         	Type: TOKEN	Start: 910	End: 914
+    Token: "takes"        	Type: TOKEN	Start: 915	End: 920
+    Token: "readers"      	Type: TOKEN	Start: 921	End: 928
+    Token: "inside"       	Type: TOKEN	Start: 929	End: 935
+    Token: "the"          	Type: TOKEN	Start: 936	End: 939
+    Token: "Beatles"      	Type: TOKEN	Start: 940	End: 947
+    Token: "'"            	Type: CLOSE_PUNCT	Start: 947	End: 948	PTB: "''"
+    Token: "creative"     	Type: TOKEN	Start: 949	End: 957
+    Token: "process"      	Type: TOKEN	Start: 958	End: 965
+    Token: "as"           	Type: TOKEN	Start: 966	End: 968
+    Token: "never"        	Type: TOKEN	Start: 969	End: 974
+    Token: "before"       	Type: TOKEN	Start: 975	End: 981
+    Token: ","            	Type: PUNCTUATION	Start: 981	End: 982
+    Token: "from"         	Type: TOKEN	Start: 983	End: 987
+    Token: "the"          	Type: TOKEN	Start: 988	End: 991
+    Token: "first"        	Type: TOKEN	Start: 992	End: 997
+    Token: "tentative"    	Type: TOKEN	Start: 998	End: 1007
+    Token: "run-throughs" 	Type: TOKEN	Start: 1008	End: 1020
+    Token: "in"           	Type: TOKEN	Start: 1021	End: 1023
+    Token: "the"          	Type: TOKEN	Start: 1024	End: 1027
+    Token: "studio"       	Type: TOKEN	Start: 1028	End: 1034
+    Token: "of"           	Type: TOKEN	Start: 1035	End: 1037
+    Token: "such"         	Type: TOKEN	Start: 1038	End: 1042
+    Token: "classics"     	Type: TOKEN	Start: 1043	End: 1051
+    Token: "as"           	Type: TOKEN	Start: 1052	End: 1054
+    Token: """            	Type: OPEN_PUNCT	Start: 1055	End: 1056	PTB: "``"
+    Token: "Eleanor"      	Type: TOKEN	Start: 1056	End: 1063
+    Token: "Rigby"        	Type: TOKEN	Start: 1064	End: 1069
+    Token: """            	Type: CLOSE_PUNCT	Start: 1069	End: 1070	PTB: "''"
+    Token: "and"          	Type: TOKEN	Start: 1071	End: 1074
+    Token: """            	Type: OPEN_PUNCT	Start: 1075	End: 1076	PTB: "``"
+    Token: "I"            	Type: TOKEN	Start: 1076	End: 1077
+    Token: "Want"         	Type: TOKEN	Start: 1078	End: 1082
+    Token: "to"           	Type: TOKEN	Start: 1083	End: 1085
+    Token: "Hold"         	Type: TOKEN	Start: 1086	End: 1090
+    Token: "Your"         	Type: TOKEN	Start: 1091	End: 1095
+    Token: "Hand"         	Type: TOKEN	Start: 1096	End: 1100
+    Token: """            	Type: CLOSE_PUNCT	Start: 1100	End: 1101	PTB: "''"
+    Token: "to"           	Type: TOKEN	Start: 1102	End: 1104
+    Token: "the"          	Type: TOKEN	Start: 1105	End: 1108
+    Token: "final"        	Type: TOKEN	Start: 1109	End: 1114
+    Token: "master"       	Type: TOKEN	Start: 1115	End: 1121
+    Token: "tapes"        	Type: TOKEN	Start: 1122	End: 1127
+    Token: "."            	Type: TERM_PUNCT_P	Start: 1127	End: 1128
+
+Paragraph Start: 1132
+Paragraph End: 1718
+  Text Unit Start: 1132
+  Text Unit End: 1341
+    Token: "Here"         	Type: TOKEN	Start: 1132	End: 1136
+    Token: "we"           	Type: TOKEN	Start: 1137	End: 1139
+    Token: "learn"        	Type: TOKEN	Start: 1140	End: 1145
+    Token: "how"          	Type: TOKEN	Start: 1146	End: 1149
+    Token: "George"       	Type: TOKEN	Start: 1150	End: 1156
+    Token: "Harrison"     	Type: TOKEN	Start: 1157	End: 1165
+    Token: "'s"           	Type: RIGHTSPLIT	Start: 1165	End: 1167
+    Token: "stirring"     	Type: TOKEN	Start: 1168	End: 1176
+    Token: "composition"  	Type: TOKEN	Start: 1177	End: 1188
+    Token: """            	Type: OPEN_PUNCT	Start: 1189	End: 1190	PTB: "``"
+    Token: "While"        	Type: TOKEN	Start: 1190	End: 1195
+    Token: "My"           	Type: TOKEN	Start: 1196	End: 1198
+    Token: "Guitar"       	Type: TOKEN	Start: 1199	End: 1205
+    Token: "Gently"       	Type: TOKEN	Start: 1206	End: 1212
+    Token: "Weeps"        	Type: TOKEN	Start: 1213	End: 1218
+    Token: """            	Type: CLOSE_PUNCT	Start: 1218	End: 1219	PTB: "''"
+    Token: "was"          	Type: TOKEN	Start: 1220	End: 1223
+    Token: "completely"   	Type: TOKEN	Start: 1224	End: 1234
+    Token: "transformed"  	Type: TOKEN	Start: 1235	End: 1246
+    Token: "from"         	Type: TOKEN	Start: 1247	End: 1251
+    Token: "an"           	Type: TOKEN	Start: 1252	End: 1254
+    Token: "achingly"     	Type: TOKEN	Start: 1255	End: 1263
+    Token: "meditative"   	Type: TOKEN	Start: 1264	End: 1274
+    Token: "acoustic"     	Type: TOKEN	Start: 1275	End: 1283
+    Token: "masterpiece"  	Type: TOKEN	Start: 1284	End: 1295
+    Token: "to"           	Type: TOKEN	Start: 1296	End: 1298
+    Token: "a"            	Type: TOKEN	Start: 1299	End: 1300
+    Token: "hard-rocking" 	Type: TOKEN	Start: 1301	End: 1313
+    Token: "hit"          	Type: TOKEN	Start: 1314	End: 1317
+    Token: "--"           	Type: PUNCTUATION	Start: 1318	End: 1320
+    Token: "in"           	Type: TOKEN	Start: 1321	End: 1323
+    Token: "forty-four"   	Type: TOKEN	Start: 1324	End: 1334
+    Token: "takes"        	Type: TOKEN	Start: 1335	End: 1340
+    Token: "."            	Type: TERM_PUNCT_P	Start: 1340	End: 1341
+  Text Unit Start: 1342
+  Text Unit End: 1562
+    Token: "We"           	Type: TOKEN	Start: 1342	End: 1344
+    Token: "recall"       	Type: TOKEN	Start: 1345	End: 1351
+    Token: "how"          	Type: TOKEN	Start: 1352	End: 1355
+    Token: "the"          	Type: TOKEN	Start: 1356	End: 1359
+    Token: "fantastic"    	Type: TOKEN	Start: 1360	End: 1369
+    Token: "final"        	Type: TOKEN	Start: 1370	End: 1375
+    Token: "mix"          	Type: TOKEN	Start: 1376	End: 1379
+    Token: "of"           	Type: TOKEN	Start: 1380	End: 1382
+    Token: """            	Type: OPEN_PUNCT	Start: 1383	End: 1384	PTB: "``"
+    Token: "Strawberry"   	Type: TOKEN	Start: 1384	End: 1394
+    Token: "Fields"       	Type: TOKEN	Start: 1395	End: 1401
+    Token: "Forever"      	Type: TOKEN	Start: 1402	End: 1409
+    Token: """            	Type: CLOSE_PUNCT	Start: 1409	End: 1410	PTB: "''"
+    Token: "opens"        	Type: TOKEN	Start: 1411	End: 1416
+    Token: "the"          	Type: TOKEN	Start: 1417	End: 1420
+    Token: "door"         	Type: TOKEN	Start: 1421	End: 1425
+    Token: "to"           	Type: TOKEN	Start: 1426	End: 1428
+    Token: "a"            	Type: TOKEN	Start: 1429	End: 1430
+    Token: "psychedelic"  	Type: TOKEN	Start: 1431	End: 1442
+    Token: "utopia"       	Type: TOKEN	Start: 1443	End: 1449
+    Token: ","            	Type: PUNCTUATION	Start: 1449	End: 1450
+    Token: "but"          	Type: TOKEN	Start: 1451	End: 1454
+    Token: "discover"     	Type: TOKEN	Start: 1455	End: 1463
+    Token: "it"           	Type: TOKEN	Start: 1464	End: 1466
+    Token: "'s"           	Type: RIGHTSPLIT	Start: 1466	End: 1468
+    Token: "the"          	Type: TOKEN	Start: 1469	End: 1472
+    Token: "haunting"     	Type: TOKEN	Start: 1473	End: 1481
+    Token: "solo"         	Type: TOKEN	Start: 1482	End: 1486
+    Token: "version"      	Type: TOKEN	Start: 1487	End: 1494
+    Token: "that"         	Type: TOKEN	Start: 1495	End: 1499
+    Token: "takes"        	Type: TOKEN	Start: 1500	End: 1505
+    Token: "us"           	Type: TOKEN	Start: 1506	End: 1508
+    Token: "down"         	Type: TOKEN	Start: 1509	End: 1513
+    Token: "to"           	Type: TOKEN	Start: 1514	End: 1516
+    Token: "the"          	Type: TOKEN	Start: 1517	End: 1520
+    Token: "core"         	Type: TOKEN	Start: 1521	End: 1525
+    Token: "of"           	Type: TOKEN	Start: 1526	End: 1528
+    Token: "John"         	Type: TOKEN	Start: 1529	End: 1533
+    Token: "Lennon"       	Type: TOKEN	Start: 1534	End: 1540
+    Token: "'s"           	Type: RIGHTSPLIT	Start: 1540	End: 1542
+    Token: "disillusioned"	Type: TOKEN	Start: 1543	End: 1556
+    Token: "soul"         	Type: TOKEN	Start: 1557	End: 1561
+    Token: "."            	Type: TERM_PUNCT_P	Start: 1561	End: 1562
+  Text Unit Start: 1563
+  Text Unit End: 1718
+    Token: "And"          	Type: TOKEN	Start: 1563	End: 1566
+    Token: "only"         	Type: TOKEN	Start: 1567	End: 1571
+    Token: "here"         	Type: TOKEN	Start: 1572	End: 1576
+    Token: "do"           	Type: TOKEN	Start: 1577	End: 1579
+    Token: "we"           	Type: TOKEN	Start: 1580	End: 1582
+    Token: "see"          	Type: TOKEN	Start: 1583	End: 1586
+    Token: "how"          	Type: TOKEN	Start: 1587	End: 1590
+    Token: "the"          	Type: TOKEN	Start: 1591	End: 1594
+    Token: "Beatles"      	Type: TOKEN	Start: 1595	End: 1602
+    Token: "'"            	Type: CLOSE_PUNCT	Start: 1602	End: 1603	PTB: "''"
+    Token: "audacious"    	Type: TOKEN	Start: 1604	End: 1613
+    Token: "ability"      	Type: TOKEN	Start: 1614	End: 1621
+    Token: "to"           	Type: TOKEN	Start: 1622	End: 1624
+    Token: "reinvent"     	Type: TOKEN	Start: 1625	End: 1633
+    Token: "themselves"   	Type: TOKEN	Start: 1634	End: 1644
+    Token: "stamped"      	Type: TOKEN	Start: 1645	End: 1652
+    Token: "the"          	Type: TOKEN	Start: 1653	End: 1656
+    Token: "group"        	Type: TOKEN	Start: 1657	End: 1662
+    Token: "'s"           	Type: RIGHTSPLIT	Start: 1662	End: 1664
+    Token: "unfolding"    	Type: TOKEN	Start: 1665	End: 1674
+    Token: "ingenuity"    	Type: TOKEN	Start: 1675	End: 1684
+    Token: "on"           	Type: TOKEN	Start: 1685	End: 1687
+    Token: "each"         	Type: TOKEN	Start: 1688	End: 1692
+    Token: "album"        	Type: TOKEN	Start: 1693	End: 1698
+    Token: "like"         	Type: TOKEN	Start: 1699	End: 1703
+    Token: "a"            	Type: TOKEN	Start: 1704	End: 1705
+    Token: "fingerprint"  	Type: TOKEN	Start: 1706	End: 1717
+    Token: "."            	Type: TERM_PUNCT_P	Start: 1717	End: 1718
+
+Paragraph Start: 1722
+Paragraph End: 2246
+  Text Unit Start: 1722
+  Text Unit End: 1905
+    Token: "With"         	Type: TOKEN	Start: 1722	End: 1726
+    Token: "rare"         	Type: TOKEN	Start: 1727	End: 1731
+    Token: "insight"      	Type: TOKEN	Start: 1732	End: 1739
+    Token: ","            	Type: PUNCTUATION	Start: 1739	End: 1740
+    Token: "Mark"         	Type: TOKEN	Start: 1741	End: 1745
+    Token: "Hertsgaard"   	Type: TOKEN	Start: 1746	End: 1756
+    Token: "unlocks"      	Type: TOKEN	Start: 1757	End: 1764
+    Token: "the"          	Type: TOKEN	Start: 1765	End: 1768
+    Token: "mystery"      	Type: TOKEN	Start: 1769	End: 1776
+    Token: "of"           	Type: TOKEN	Start: 1777	End: 1779
+    Token: "the"          	Type: TOKEN	Start: 1780	End: 1783
+    Token: "century"      	Type: TOKEN	Start: 1784	End: 1791
+    Token: "'s"           	Type: RIGHTSPLIT	Start: 1791	End: 1793
+    Token: "most"         	Type: TOKEN	Start: 1794	End: 1798
+    Token: "dynamic"      	Type: TOKEN	Start: 1799	End: 1806
+    Token: "musical"      	Type: TOKEN	Start: 1807	End: 1814
+    Token: "collaboration"	Type: TOKEN	Start: 1815	End: 1828
+    Token: ":"            	Type: PUNCTUATION	Start: 1828	End: 1829
+    Token: "the"          	Type: TOKEN	Start: 1830	End: 1833
+    Token: "competitive"  	Type: TOKEN	Start: 1834	End: 1845
+    Token: "and"          	Type: TOKEN	Start: 1846	End: 1849
+    Token: "creative"     	Type: TOKEN	Start: 1850	End: 1858
+    Token: "partnership"  	Type: TOKEN	Start: 1859	End: 1870
+    Token: "of"           	Type: TOKEN	Start: 1871	End: 1873
+    Token: "John"         	Type: TOKEN	Start: 1874	End: 1878
+    Token: "Lennon"       	Type: TOKEN	Start: 1879	End: 1885
+    Token: "and"          	Type: TOKEN	Start: 1886	End: 1889
+    Token: "Paul"         	Type: TOKEN	Start: 1890	End: 1894
+    Token: "McCartney"    	Type: TOKEN	Start: 1895	End: 1904
+    Token: "."            	Type: TERM_PUNCT_P	Start: 1904	End: 1905
+  Text Unit Start: 1906
+  Text Unit End: 2128
+    Token: "A"            	Type: TOKEN	Start: 1906	End: 1907
+    Token: "Day"          	Type: TOKEN	Start: 1908	End: 1911
+    Token: "in"           	Type: TOKEN	Start: 1912	End: 1914
+    Token: "the"          	Type: TOKEN	Start: 1915	End: 1918
+    Token: "Life"         	Type: TOKEN	Start: 1919	End: 1923
+    Token: "traces"       	Type: TOKEN	Start: 1924	End: 1930
+    Token: "the"          	Type: TOKEN	Start: 1931	End: 1934
+    Token: "way"          	Type: TOKEN	Start: 1935	End: 1938
+    Token: "Lennon"       	Type: TOKEN	Start: 1939	End: 1945
+    Token: "and"          	Type: TOKEN	Start: 1946	End: 1949
+    Token: "McCartney"    	Type: TOKEN	Start: 1950	End: 1959
+    Token: "worked"       	Type: TOKEN	Start: 1960	End: 1966
+    Token: "together"     	Type: TOKEN	Start: 1967	End: 1975
+    Token: "and"          	Type: TOKEN	Start: 1976	End: 1979
+    Token: "paints"       	Type: TOKEN	Start: 1980	End: 1986
+    Token: "an"           	Type: TOKEN	Start: 1987	End: 1989
+    Token: "intricate"    	Type: TOKEN	Start: 1990	End: 1999
+    Token: "picture"      	Type: TOKEN	Start: 2000	End: 2007
+    Token: "of"           	Type: TOKEN	Start: 2008	End: 2010
+    Token: "the"          	Type: TOKEN	Start: 2011	End: 2014
+    Token: "composers"    	Type: TOKEN	Start: 2015	End: 2024
+    Token: "as"           	Type: TOKEN	Start: 2025	End: 2027
+    Token: "we"           	Type: TOKEN	Start: 2028	End: 2030
+    Token: "have"         	Type: TOKEN	Start: 2031	End: 2035
+    Token: "never"        	Type: TOKEN	Start: 2036	End: 2041
+    Token: "seen"         	Type: TOKEN	Start: 2042	End: 2046
+    Token: "them"         	Type: TOKEN	Start: 2047	End: 2051
+    Token: "before"       	Type: TOKEN	Start: 2052	End: 2058
+    Token: ":"            	Type: PUNCTUATION	Start: 2058	End: 2059
+    Token: "Paul"         	Type: TOKEN	Start: 2060	End: 2064
+    Token: ","            	Type: PUNCTUATION	Start: 2064	End: 2065
+    Token: "the"          	Type: TOKEN	Start: 2066	End: 2069
+    Token: "optimistic"   	Type: TOKEN	Start: 2070	End: 2080
+    Token: "foil"         	Type: TOKEN	Start: 2081	End: 2085
+    Token: "who"          	Type: TOKEN	Start: 2086	End: 2089
+    Token: "made"         	Type: TOKEN	Start: 2090	End: 2094
+    Token: "John"         	Type: TOKEN	Start: 2095	End: 2099
+    Token: "'s"           	Type: RIGHTSPLIT	Start: 2099	End: 2101
+    Token: "ominous"      	Type: TOKEN	Start: 2102	End: 2109
+    Token: "fragments"    	Type: TOKEN	Start: 2110	End: 2119
+    Token: "whole"        	Type: TOKEN	Start: 2120	End: 2125
+    Token: "."            	Type: TERM_PUNCT_P	Start: 2125	End: 2126
+    Token: "."            	Type: TERM_PUNCT_P	Start: 2126	End: 2127
+    Token: "."            	Type: TERM_PUNCT_P	Start: 2127	End: 2128
+  Text Unit Start: 2128
+  Text Unit End: 2246
+    Token: "John"         	Type: TOKEN	Start: 2128	End: 2132
+    Token: ","            	Type: PUNCTUATION	Start: 2132	End: 2133
+    Token: "the"          	Type: TOKEN	Start: 2134	End: 2137
+    Token: "natural"      	Type: TOKEN	Start: 2138	End: 2145
+    Token: "poet"         	Type: TOKEN	Start: 2146	End: 2150
+    Token: "who"          	Type: TOKEN	Start: 2151	End: 2154
+    Token: "injected"     	Type: TOKEN	Start: 2155	End: 2163
+    Token: "raw"          	Type: TOKEN	Start: 2164	End: 2167
+    Token: "sexuality"    	Type: TOKEN	Start: 2168	End: 2177
+    Token: "into"         	Type: TOKEN	Start: 2178	End: 2182
+    Token: """            	Type: OPEN_PUNCT	Start: 2183	End: 2184	PTB: "``"
+    Token: "I"            	Type: TOKEN	Start: 2184	End: 2185
+    Token: "Saw"          	Type: TOKEN	Start: 2186	End: 2189
+    Token: "Her"          	Type: TOKEN	Start: 2190	End: 2193
+    Token: "Standing"     	Type: TOKEN	Start: 2194	End: 2202
+    Token: "There"        	Type: TOKEN	Start: 2203	End: 2208
+    Token: """            	Type: CLOSE_PUNCT	Start: 2208	End: 2209	PTB: "''"
+    Token: "by"           	Type: TOKEN	Start: 2210	End: 2212
+    Token: "making"       	Type: TOKEN	Start: 2213	End: 2219
+    Token: "a"            	Type: TOKEN	Start: 2220	End: 2221
+    Token: "simple"       	Type: TOKEN	Start: 2222	End: 2228
+    Token: "five"         	Type: TOKEN	Start: 2229	End: 2233
+    Token: "word"         	Type: TOKEN	Start: 2234	End: 2238
+    Token: "change"       	Type: TOKEN	Start: 2239	End: 2245
+    Token: "."            	Type: TERM_PUNCT_P	Start: 2245	End: 2246
+
+Paragraph Start: 2250
+Paragraph End: 2486
+  Text Unit Start: 2250
+  Text Unit End: 2486
+    Token: "Smart"        	Type: TOKEN	Start: 2250	End: 2255
+    Token: ","            	Type: PUNCTUATION	Start: 2255	End: 2256
+    Token: "fresh"        	Type: TOKEN	Start: 2257	End: 2262
+    Token: ","            	Type: PUNCTUATION	Start: 2262	End: 2263
+    Token: "compulsively" 	Type: TOKEN	Start: 2264	End: 2276
+    Token: "readable"     	Type: TOKEN	Start: 2277	End: 2285
+    Token: ","            	Type: PUNCTUATION	Start: 2285	End: 2286
+    Token: "A"            	Type: TOKEN	Start: 2287	End: 2288
+    Token: "Day"          	Type: TOKEN	Start: 2289	End: 2292
+    Token: "in"           	Type: TOKEN	Start: 2293	End: 2295
+    Token: "the"          	Type: TOKEN	Start: 2296	End: 2299
+    Token: "Life"         	Type: TOKEN	Start: 2300	End: 2304
+    Token: "reveals"      	Type: TOKEN	Start: 2305	End: 2312
+    Token: "John"         	Type: TOKEN	Start: 2313	End: 2317
+    Token: ","            	Type: PUNCTUATION	Start: 2317	End: 2318
+    Token: "Paul"         	Type: TOKEN	Start: 2319	End: 2323
+    Token: ","            	Type: PUNCTUATION	Start: 2323	End: 2324
+    Token: "George"       	Type: TOKEN	Start: 2325	End: 2331
+    Token: ","            	Type: PUNCTUATION	Start: 2331	End: 2332
+    Token: "and"          	Type: TOKEN	Start: 2333	End: 2336
+    Token: "Ringo"        	Type: TOKEN	Start: 2337	End: 2342
+    Token: "not"          	Type: TOKEN	Start: 2343	End: 2346
+    Token: "as"           	Type: TOKEN	Start: 2347	End: 2349
+    Token: "celebrities"  	Type: TOKEN	Start: 2350	End: 2361
+    Token: "or"           	Type: TOKEN	Start: 2362	End: 2364
+    Token: "cultural"     	Type: TOKEN	Start: 2365	End: 2373
+    Token: "icons"        	Type: TOKEN	Start: 2374	End: 2379
+    Token: "but"          	Type: TOKEN	Start: 2380	End: 2383
+    Token: "as"           	Type: TOKEN	Start: 2384	End: 2386
+    Token: "musicians"    	Type: TOKEN	Start: 2387	End: 2396
+    Token: "whose"        	Type: TOKEN	Start: 2397	End: 2402
+    Token: "work"         	Type: TOKEN	Start: 2403	End: 2407
+    Token: "will"         	Type: TOKEN	Start: 2408	End: 2412
+    Token: "be"           	Type: TOKEN	Start: 2413	End: 2415
+    Token: "remembered"   	Type: TOKEN	Start: 2416	End: 2426
+    Token: "as"           	Type: TOKEN	Start: 2427	End: 2429
+    Token: "some"         	Type: TOKEN	Start: 2430	End: 2434
+    Token: "of"           	Type: TOKEN	Start: 2435	End: 2437
+    Token: "the"          	Type: TOKEN	Start: 2438	End: 2441
+    Token: "most"         	Type: TOKEN	Start: 2442	End: 2446
+    Token: "important"    	Type: TOKEN	Start: 2447	End: 2456
+    Token: "art"          	Type: TOKEN	Start: 2457	End: 2460
+    Token: "of"           	Type: TOKEN	Start: 2461	End: 2463
+    Token: "the"          	Type: TOKEN	Start: 2464	End: 2467
+    Token: "twentieth"    	Type: TOKEN	Start: 2468	End: 2477
+    Token: "century"      	Type: TOKEN	Start: 2478	End: 2485
+    Token: "."            	Type: TERM_PUNCT_P	Start: 2485	End: 2486
+

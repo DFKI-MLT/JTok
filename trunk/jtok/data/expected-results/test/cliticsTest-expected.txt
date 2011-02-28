@@ -1,0 +1,204 @@
+Paragraph Start: 0
+Paragraph End: 11
+  Text Unit Start: 0
+  Text Unit End: 11
+    Token: "Rock"         	Type: TOKEN	Start: 0	End: 4
+    Token: "'n"           	Type: RIGHTSPLIT	Start: 4	End: 6
+    Token: "Roll"         	Type: TOKEN	Start: 7	End: 11
+
+Paragraph Start: 15
+Paragraph End: 20
+  Text Unit Start: 15
+  Text Unit End: 20
+    Token: "abc"          	Type: TOKEN	Start: 15	End: 18
+    Token: "'n"           	Type: RIGHTSPLIT	Start: 18	End: 20
+
+Paragraph Start: 24
+Paragraph End: 31
+  Text Unit Start: 24
+  Text Unit End: 31
+    Token: "Peter"        	Type: TOKEN	Start: 24	End: 29
+    Token: "'s"           	Type: RIGHTSPLIT	Start: 29	End: 31
+
+Paragraph Start: 35
+Paragraph End: 42
+  Text Unit Start: 35
+  Text Unit End: 42
+    Token: "O'Brain"      	Type: TOKEN	Start: 35	End: 42
+
+Paragraph Start: 46
+Paragraph End: 54
+  Text Unit Start: 46
+  Text Unit End: 54
+    Token: "D'Angelo"     	Type: TOKEN	Start: 46	End: 54
+
+Paragraph Start: 58
+Paragraph End: 61
+  Text Unit Start: 58
+  Text Unit End: 61
+    Token: "I"            	Type: TOKEN	Start: 58	End: 59
+    Token: "'m"           	Type: RIGHTSPLIT	Start: 59	End: 61
+
+Paragraph Start: 65
+Paragraph End: 71
+  Text Unit Start: 65
+  Text Unit End: 71
+    Token: "you"          	Type: TOKEN	Start: 65	End: 68
+    Token: "'re"          	Type: RIGHTSPLIT	Start: 68	End: 71
+
+Paragraph Start: 75
+Paragraph End: 80
+  Text Unit Start: 75
+  Text Unit End: 80
+    Token: "we"           	Type: TOKEN	Start: 75	End: 77
+    Token: "'ll"          	Type: RIGHTSPLIT	Start: 77	End: 80
+
+Paragraph Start: 84
+Paragraph End: 88
+  Text Unit Start: 84
+  Text Unit End: 88
+    Token: "i"            	Type: TOKEN	Start: 84	End: 85
+    Token: "'ve"          	Type: RIGHTSPLIT	Start: 85	End: 88
+
+Paragraph Start: 92
+Paragraph End: 98
+  Text Unit Start: 92
+  Text Unit End: 98
+    Token: "rock"         	Type: TOKEN	Start: 92	End: 96
+    Token: "'n"           	Type: RIGHTSPLIT	Start: 96	End: 98
+
+Paragraph Start: 102
+Paragraph End: 107
+  Text Unit Start: 102
+  Text Unit End: 107
+    Token: "do"           	Type: TOKEN	Start: 102	End: 104
+    Token: "n't"          	Type: RIGHTSPLIT	Start: 104	End: 107
+
+Paragraph Start: 111
+Paragraph End: 115
+  Text Unit Start: 111
+  Text Unit End: 115
+    Token: "he"           	Type: TOKEN	Start: 111	End: 113
+    Token: "'s"           	Type: RIGHTSPLIT	Start: 113	End: 115
+
+Paragraph Start: 119
+Paragraph End: 134
+  Text Unit Start: 119
+  Text Unit End: 134
+    Token: "O'O'O'abc"    	Type: TOKEN	Start: 119	End: 128
+    Token: "'s"           	Type: RIGHTSPLIT	Start: 128	End: 130
+    Token: "'s"           	Type: RIGHTSPLIT	Start: 130	End: 132
+    Token: "'s"           	Type: RIGHTSPLIT	Start: 132	End: 134
+
+Paragraph Start: 138
+Paragraph End: 151
+  Text Unit Start: 138
+  Text Unit End: 151
+    Token: "@O'Brain"     	Type: TOKEN	Start: 138	End: 146
+    Token: "'s"           	Type: RIGHTSPLIT	Start: 146	End: 148
+    Token: "."            	Type: TERM_PUNCT_P	Start: 148	End: 149
+    Token: "."            	Type: TERM_PUNCT_P	Start: 149	End: 150
+    Token: "."            	Type: TERM_PUNCT_P	Start: 150	End: 151
+
+Paragraph Start: 155
+Paragraph End: 164
+  Text Unit Start: 155
+  Text Unit End: 164
+    Token: "Quest'abc"    	Type: TOKEN	Start: 155	End: 164
+
+Paragraph Start: 168
+Paragraph End: 177
+  Text Unit Start: 168
+  Text Unit End: 177
+    Token: "quest'abc"    	Type: TOKEN	Start: 168	End: 177
+
+Paragraph Start: 181
+Paragraph End: 187
+  Text Unit Start: 181
+  Text Unit End: 187
+    Token: "L.A."         	Type: B_ABBREVIATION	Start: 181	End: 185
+    Token: "'s"           	Type: RIGHTSPLIT	Start: 185	End: 187
+
+Paragraph Start: 191
+Paragraph End: 212
+  Text Unit Start: 191
+  Text Unit End: 212
+    Token: "Rock'n'Roll.Genial"	Type: TOKEN	Start: 191	End: 209
+    Token: "."            	Type: TERM_PUNCT_P	Start: 209	End: 210
+    Token: "."            	Type: TERM_PUNCT_P	Start: 210	End: 211
+    Token: "."            	Type: TERM_PUNCT_P	Start: 211	End: 212
+
+Paragraph Start: 216
+Paragraph End: 228
+  Text Unit Start: 216
+  Text Unit End: 228
+    Token: "Rock'n'Roll"  	Type: TOKEN	Start: 216	End: 227
+    Token: "."            	Type: TERM_PUNCT_P	Start: 227	End: 228
+
+Paragraph Start: 232
+Paragraph End: 249
+  Text Unit Start: 232
+  Text Unit End: 249
+    Token: "sull'avvenimento"	Type: TOKEN	Start: 232	End: 248
+    Token: "."            	Type: TERM_PUNCT_P	Start: 248	End: 249
+
+Paragraph Start: 253
+Paragraph End: 275
+  Text Unit Start: 253
+  Text Unit End: 275
+    Token: "@Rock'n'Roll.Genial"	Type: TOKEN	Start: 253	End: 272
+    Token: "."            	Type: TERM_PUNCT_P	Start: 272	End: 273
+    Token: "."            	Type: TERM_PUNCT_P	Start: 273	End: 274
+    Token: "."            	Type: TERM_PUNCT_P	Start: 274	End: 275
+
+Paragraph Start: 279
+Paragraph End: 292
+  Text Unit Start: 279
+  Text Unit End: 292
+    Token: "@Rock'n'Roll" 	Type: TOKEN	Start: 279	End: 291
+    Token: "."            	Type: TERM_PUNCT_P	Start: 291	End: 292
+
+Paragraph Start: 296
+Paragraph End: 314
+  Text Unit Start: 296
+  Text Unit End: 314
+    Token: "@sull'avvenimento"	Type: TOKEN	Start: 296	End: 313
+    Token: "."            	Type: TERM_PUNCT_P	Start: 313	End: 314
+
+Paragraph Start: 318
+Paragraph End: 421
+  Text Unit Start: 318
+  Text Unit End: 349
+    Token: "Informazioni" 	Type: TOKEN	Start: 318	End: 330
+    Token: "su"           	Type: TOKEN	Start: 331	End: 333
+    Token: "Police"       	Type: TOKEN	Start: 334	End: 340
+    Token: "-"            	Type: PUNCTUATION	Start: 341	End: 342
+    Token: "Sting"        	Type: TOKEN	Start: 343	End: 348
+    Token: "."            	Type: TERM_PUNCT_P	Start: 348	End: 349
+  Text Unit Start: 350
+  Text Unit End: 421
+    Token: "Testi"        	Type: TOKEN	Start: 350	End: 355
+    Token: "da"           	Type: TOKEN	Start: 356	End: 358
+    Token: "'"            	Type: OPEN_PUNCT	Start: 359	End: 360	PTB: "``"
+    Token: "Outlandos"    	Type: TOKEN	Start: 360	End: 369
+    Token: "d'amour"      	Type: TOKEN	Start: 370	End: 377
+    Token: "'"            	Type: CLOSE_PUNCT	Start: 377	End: 378	PTB: "''"
+    Token: "a"            	Type: TOKEN	Start: 379	End: 380
+    Token: "'"            	Type: OPEN_PUNCT	Start: 381	End: 382	PTB: "``"
+    Token: "The"          	Type: TOKEN	Start: 382	End: 385
+    Token: "soul"         	Type: TOKEN	Start: 386	End: 390
+    Token: "cages"        	Type: TOKEN	Start: 391	End: 396
+    Token: "'"            	Type: CLOSE_PUNCT	Start: 396	End: 397	PTB: "''"
+    Token: "con"          	Type: TOKEN	Start: 398	End: 401
+    Token: "traduzione"   	Type: TOKEN	Start: 402	End: 412
+    Token: "a"            	Type: TOKEN	Start: 413	End: 414
+    Token: "fronte"       	Type: TOKEN	Start: 415	End: 421
+
+Paragraph Start: 425
+Paragraph End: 435
+  Text Unit Start: 425
+  Text Unit End: 435
+    Token: "d'amour"      	Type: TOKEN	Start: 425	End: 432
+    Token: "'"            	Type: CLOSE_PUNCT	Start: 432	End: 433	PTB: "''"
+    Token: "a"            	Type: TOKEN	Start: 434	End: 435
+

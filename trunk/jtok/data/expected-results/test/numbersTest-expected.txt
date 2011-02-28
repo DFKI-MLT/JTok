@@ -1,0 +1,468 @@
+Paragraph Start: 0
+Paragraph End: 21
+  Text Unit Start: 0
+  Text Unit End: 2
+    Token: "5"            	Type: DIGITAL	Start: 0	End: 1
+    Token: "."            	Type: TERM_PUNCT_P	Start: 1	End: 2
+  Text Unit Start: 3
+  Text Unit End: 8
+    Token: "Aufl"         	Type: TOKEN	Start: 3	End: 7
+    Token: "."            	Type: TERM_PUNCT_P	Start: 7	End: 8
+  Text Unit Start: 9
+  Text Unit End: 14
+    Token: "2000"         	Type: DIGITAL	Start: 9	End: 13
+    Token: "."            	Type: TERM_PUNCT_P	Start: 13	End: 14
+  Text Unit Start: 15
+  Text Unit End: 21
+    Token: "920"          	Type: DIGITAL	Start: 15	End: 18
+    Token: "S."           	Type: INITIAL	Start: 19	End: 21
+
+Paragraph Start: 25
+Paragraph End: 40
+  Text Unit Start: 25
+  Text Unit End: 40
+    Token: "849x543x124"  	Type: DIGITAL	Start: 25	End: 36
+    Token: "147"          	Type: DIGITAL	Start: 37	End: 40
+
+Paragraph Start: 44
+Paragraph End: 51
+  Text Unit Start: 44
+  Text Unit End: 46
+    Token: "3"            	Type: DIGITAL	Start: 44	End: 45
+    Token: "."            	Type: TERM_PUNCT_P	Start: 45	End: 46
+  Text Unit Start: 47
+  Text Unit End: 51
+    Token: "Abl"          	Type: TOKEN	Start: 47	End: 50
+    Token: "."            	Type: TERM_PUNCT_P	Start: 50	End: 51
+
+Paragraph Start: 55
+Paragraph End: 68
+  Text Unit Start: 55
+  Text Unit End: 68
+    Token: "hardcover.135"	Type: TOKEN	Start: 55	End: 68
+
+Paragraph Start: 72
+Paragraph End: 89
+  Text Unit Start: 72
+  Text Unit End: 89
+    Token: "3-8025-2224-9"	Type: DIGITAL	Start: 72	End: 85
+    Token: ","            	Type: PUNCTUATION	Start: 85	End: 86
+    Token: "ean"          	Type: TOKEN	Start: 86	End: 89
+
+Paragraph Start: 93
+Paragraph End: 104
+  Text Unit Start: 93
+  Text Unit End: 104
+    Token: "1990"         	Type: DIGITAL	Start: 93	End: 97
+    Token: "-"            	Type: PUNCTUATION	Start: 98	End: 99
+    Token: "2000"         	Type: DIGITAL	Start: 100	End: 104
+
+Paragraph Start: 108
+Paragraph End: 122
+  Text Unit Start: 108
+  Text Unit End: 122
+    Token: "10.01x7.00x.66"	Type: DIGITAL	Start: 108	End: 122
+
+Paragraph Start: 126
+Paragraph End: 136
+  Text Unit Start: 126
+  Text Unit End: 136
+    Token: "088188541x"   	Type: DIGITAL	Start: 126	End: 136
+
+Paragraph Start: 140
+Paragraph End: 148
+  Text Unit Start: 140
+  Text Unit End: 148
+    Token: "#034964x"     	Type: DIGITAL	Start: 140	End: 148
+
+Paragraph Start: 152
+Paragraph End: 154
+  Text Unit Start: 152
+  Text Unit End: 154
+    Token: "+3"           	Type: DIGITAL	Start: 152	End: 154
+
+Paragraph Start: 158
+Paragraph End: 171
+  Text Unit Start: 158
+  Text Unit End: 171
+    Token: "0-517-59448-x"	Type: DIGITAL	Start: 158	End: 171
+
+Paragraph Start: 175
+Paragraph End: 184
+  Text Unit Start: 175
+  Text Unit End: 184
+    Token: "06028126x"    	Type: DIGITAL	Start: 175	End: 184
+
+Paragraph Start: 188
+Paragraph End: 194
+  Text Unit Start: 188
+  Text Unit End: 194
+    Token: "1,000+"       	Type: DIGITAL	Start: 188	End: 194
+
+Paragraph Start: 198
+Paragraph End: 204
+  Text Unit Start: 198
+  Text Unit End: 204
+    Token: "1072pp"       	Type: DIGITAL	Start: 198	End: 204
+
+Paragraph Start: 208
+Paragraph End: 215
+  Text Unit Start: 208
+  Text Unit End: 215
+    Token: "00089gr"      	Type: DIGITAL	Start: 208	End: 215
+
+Paragraph Start: 219
+Paragraph End: 227
+  Text Unit Start: 219
+  Text Unit End: 227
+    Token: "118,00dm"     	Type: DIGITAL	Start: 219	End: 227
+
+Paragraph Start: 231
+Paragraph End: 238
+  Text Unit Start: 231
+  Text Unit End: 238
+    Token: "12x18cm"      	Type: DIGITAL	Start: 231	End: 238
+
+Paragraph Start: 242
+Paragraph End: 251
+  Text Unit Start: 242
+  Text Unit End: 251
+    Token: "10am-10pm"    	Type: DIGITAL	Start: 242	End: 251
+
+Paragraph Start: 255
+Paragraph End: 258
+  Text Unit Start: 255
+  Text Unit End: 258
+    Token: "10¼"          	Type: FRACTION	Start: 255	End: 258
+
+Paragraph Start: 262
+Paragraph End: 265
+  Text Unit Start: 262
+  Text Unit End: 265
+    Token: "10½"          	Type: FRACTION	Start: 262	End: 265
+
+Paragraph Start: 269
+Paragraph End: 272
+  Text Unit Start: 269
+  Text Unit End: 272
+    Token: "10¾"          	Type: FRACTION	Start: 269	End: 272
+
+Paragraph Start: 276
+Paragraph End: 277
+  Text Unit Start: 276
+  Text Unit End: 277
+    Token: "¼"            	Type: FRACTION	Start: 276	End: 277
+
+Paragraph Start: 281
+Paragraph End: 282
+  Text Unit Start: 281
+  Text Unit End: 282
+    Token: "½"            	Type: FRACTION	Start: 281	End: 282
+
+Paragraph Start: 286
+Paragraph End: 287
+  Text Unit Start: 286
+  Text Unit End: 287
+    Token: "¾"            	Type: FRACTION	Start: 286	End: 287
+
+Paragraph Start: 291
+Paragraph End: 305
+  Text Unit Start: 291
+  Text Unit End: 305
+    Token: "11.02x9.01x.56"	Type: DIGITAL	Start: 291	End: 305
+
+Paragraph Start: 309
+Paragraph End: 317
+  Text Unit Start: 309
+  Text Unit End: 317
+    Token: "ZardoZ70"     	Type: TOKEN	Start: 309	End: 317
+
+Paragraph Start: 321
+Paragraph End: 334
+  Text Unit Start: 321
+  Text Unit End: 334
+    Token: "35-Tage-Woche"	Type: TOKEN	Start: 321	End: 334
+
+Paragraph Start: 338
+Paragraph End: 431
+  Text Unit Start: 338
+  Text Unit End: 431
+    Token: "("            	Type: OPEN_BRACKET	Start: 338	End: 339	PTB: "-LRB-"
+    Token: "SffFontStart1"	Type: TOKEN	Start: 339	End: 352
+    Token: ")"            	Type: CLOSE_BRACKET	Start: 352	End: 353	PTB: "-RRB-"
+    Token: "364/419.01,419.07,419.1,419.11,419.12,419.05,419.08,419.3,419.19"	Type: TOKEN	Start: 353	End: 417	PTB: "364\/419.01,419.07,419.1,419.11,419.12,419.05,419.08,419.3,419.19"
+    Token: "("            	Type: OPEN_BRACKET	Start: 417	End: 418	PTB: "-LRB-"
+    Token: "SffFontClose" 	Type: TOKEN	Start: 418	End: 430
+    Token: ")"            	Type: CLOSE_BRACKET	Start: 430	End: 431	PTB: "-RRB-"
+
+Paragraph Start: 435
+Paragraph End: 455
+  Text Unit Start: 435
+  Text Unit End: 455
+    Token: "1.000.000,000.000.22"	Type: DIGITAL	Start: 435	End: 455
+
+Paragraph Start: 459
+Paragraph End: 468
+  Text Unit Start: 459
+  Text Unit End: 468
+    Token: "1.000.000"    	Type: DIGITAL	Start: 459	End: 468
+
+Paragraph Start: 472
+Paragraph End: 482
+  Text Unit Start: 472
+  Text Unit End: 482
+    Token: "000.000.22"   	Type: DIGITAL	Start: 472	End: 482
+
+Paragraph Start: 486
+Paragraph End: 502
+  Text Unit Start: 486
+  Text Unit End: 502
+    Token: "1000000,00000022"	Type: DIGITAL	Start: 486	End: 502
+
+Paragraph Start: 506
+Paragraph End: 513
+  Text Unit Start: 506
+  Text Unit End: 513
+    Token: "1000000"      	Type: DIGITAL	Start: 506	End: 513
+
+Paragraph Start: 517
+Paragraph End: 537
+  Text Unit Start: 517
+  Text Unit End: 537
+    Token: "1"            	Type: DIGITAL	Start: 517	End: 518
+    Token: "000"          	Type: DIGITAL	Start: 519	End: 522
+    Token: "000,000"      	Type: DIGITAL	Start: 523	End: 530
+    Token: "000"          	Type: DIGITAL	Start: 531	End: 534
+    Token: "22"           	Type: DIGITAL	Start: 535	End: 537
+
+Paragraph Start: 541
+Paragraph End: 550
+  Text Unit Start: 541
+  Text Unit End: 550
+    Token: "1"            	Type: DIGITAL	Start: 541	End: 542
+    Token: "000"          	Type: DIGITAL	Start: 543	End: 546
+    Token: "000"          	Type: DIGITAL	Start: 547	End: 550
+
+Paragraph Start: 554
+Paragraph End: 565
+  Text Unit Start: 554
+  Text Unit End: 565
+    Token: "123x123x123"  	Type: DIGITAL	Start: 554	End: 565
+
+Paragraph Start: 569
+Paragraph End: 588
+  Text Unit Start: 569
+  Text Unit End: 588
+    Token: "123.04x123.06x123.5"	Type: DIGITAL	Start: 569	End: 588
+
+Paragraph Start: 593
+Paragraph End: 604
+  Text Unit Start: 593
+  Text Unit End: 604
+    Token: "123-1223-34"  	Type: DIGITAL	Start: 593	End: 604
+
+Paragraph Start: 608
+Paragraph End: 617
+  Text Unit Start: 608
+  Text Unit End: 617
+    Token: "1970-1975"    	Type: DIGITAL	Start: 608	End: 617
+
+Paragraph Start: 621
+Paragraph End: 626
+  Text Unit Start: 621
+  Text Unit End: 626
+    Token: "98/99"        	Type: TOKEN	Start: 621	End: 626	PTB: "98\/99"
+
+Paragraph Start: 630
+Paragraph End: 639
+  Text Unit Start: 630
+  Text Unit End: 639
+    Token: "2001"         	Type: DIGITAL	Start: 630	End: 634
+    Token: "\"            	Type: PUNCTUATION	Start: 634	End: 635
+    Token: "2002"         	Type: DIGITAL	Start: 635	End: 639
+
+Paragraph Start: 643
+Paragraph End: 654
+  Text Unit Start: 643
+  Text Unit End: 654
+    Token: "xyz122344,6"  	Type: TOKEN	Start: 643	End: 654
+
+Paragraph Start: 658
+Paragraph End: 673
+  Text Unit Start: 658
+  Text Unit End: 673
+    Token: "dfg45646.6767dm"	Type: TOKEN	Start: 658	End: 673
+
+Paragraph Start: 677
+Paragraph End: 685
+  Text Unit Start: 677
+  Text Unit End: 685
+    Token: "1234euro"     	Type: TOKEN	Start: 677	End: 685
+
+Paragraph Start: 689
+Paragraph End: 693
+  Text Unit Start: 689
+  Text Unit End: 693
+    Token: "100"          	Type: DIGITAL	Start: 689	End: 692
+    Token: "%"            	Type: PUNCTUATION	Start: 692	End: 693
+
+Paragraph Start: 697
+Paragraph End: 704
+  Text Unit Start: 697
+  Text Unit End: 704
+    Token: "#004740"      	Type: DIGITAL	Start: 697	End: 704
+
+Paragraph Start: 708
+Paragraph End: 713
+  Text Unit Start: 708
+  Text Unit End: 713
+    Token: "$"            	Type: LEFTSPLIT	Start: 708	End: 709
+    Token: "0.13"         	Type: DIGITAL	Start: 709	End: 713
+
+Paragraph Start: 717
+Paragraph End: 721
+  Text Unit Start: 717
+  Text Unit End: 721
+    Token: "$"            	Type: LEFTSPLIT	Start: 717	End: 718
+    Token: "500"          	Type: DIGITAL	Start: 718	End: 721
+
+Paragraph Start: 725
+Paragraph End: 730
+  Text Unit Start: 725
+  Text Unit End: 730
+    Token: "£"            	Type: LEFTSPLIT	Start: 725	End: 726
+    Token: "9.89"         	Type: DIGITAL	Start: 726	End: 730
+
+Paragraph Start: 734
+Paragraph End: 738
+  Text Unit Start: 734
+  Text Unit End: 738
+    Token: "£"            	Type: LEFTSPLIT	Start: 734	End: 735
+    Token: "900"          	Type: DIGITAL	Start: 735	End: 738
+
+Paragraph Start: 742
+Paragraph End: 747
+  Text Unit Start: 742
+  Text Unit End: 747
+    Token: "©"            	Type: PUNCTUATION	Start: 742	End: 743
+    Token: "1992"         	Type: DIGITAL	Start: 743	End: 747
+
+Paragraph Start: 751
+Paragraph End: 756
+  Text Unit Start: 751
+  Text Unit End: 756
+    Token: "23:45"        	Type: TOKEN	Start: 751	End: 756
+
+Paragraph Start: 760
+Paragraph End: 770
+  Text Unit Start: 760
+  Text Unit End: 770
+    Token: "1940-1990"    	Type: DIGITAL	Start: 760	End: 769
+    Token: "|"            	Type: PUNCTUATION	Start: 769	End: 770
+
+Paragraph Start: 782
+Paragraph End: 784
+  Text Unit Start: 782
+  Text Unit End: 784
+    Token: "<"            	Type: PUNCTUATION	Start: 782	End: 783
+    Token: "1"            	Type: DIGITAL	Start: 783	End: 784
+
+Paragraph Start: 788
+Paragraph End: 797
+  Text Unit Start: 788
+  Text Unit End: 797
+    Token: "3,5"          	Type: DIGITAL	Start: 788	End: 791
+    Token: ","            	Type: PUNCTUATION	Start: 791	End: 792
+    Token: "1991"         	Type: DIGITAL	Start: 793	End: 797
+
+Paragraph Start: 801
+Paragraph End: 803
+  Text Unit Start: 801
+  Text Unit End: 803
+    Token: "1"            	Type: DIGITAL	Start: 801	End: 802
+    Token: "."            	Type: TERM_PUNCT_P	Start: 802	End: 803
+
+Paragraph Start: 807
+Paragraph End: 809
+  Text Unit Start: 807
+  Text Unit End: 809
+    Token: "2"            	Type: DIGITAL	Start: 807	End: 808
+    Token: "."            	Type: TERM_PUNCT_P	Start: 808	End: 809
+
+Paragraph Start: 814
+Paragraph End: 817
+  Text Unit Start: 814
+  Text Unit End: 817
+    Token: "99"           	Type: DIGITAL	Start: 814	End: 816
+    Token: "."            	Type: TERM_PUNCT_P	Start: 816	End: 817
+
+Paragraph Start: 821
+Paragraph End: 825
+  Text Unit Start: 821
+  Text Unit End: 825
+    Token: "100"          	Type: DIGITAL	Start: 821	End: 824
+    Token: "."            	Type: TERM_PUNCT_P	Start: 824	End: 825
+
+Paragraph Start: 829
+Paragraph End: 835
+  Text Unit Start: 829
+  Text Unit End: 835
+    Token: "ab100"        	Type: TOKEN	Start: 829	End: 834
+    Token: "."            	Type: TERM_PUNCT_P	Start: 834	End: 835
+
+Paragraph Start: 839
+Paragraph End: 844
+  Text Unit Start: 839
+  Text Unit End: 844
+    Token: "$"            	Type: LEFTSPLIT	Start: 839	End: 840
+    Token: "500"          	Type: DIGITAL	Start: 840	End: 843
+    Token: "."            	Type: TERM_PUNCT_P	Start: 843	End: 844
+
+Paragraph Start: 848
+Paragraph End: 852
+  Text Unit Start: 848
+  Text Unit End: 852
+    Token: "10½"          	Type: FRACTION	Start: 848	End: 851
+    Token: "."            	Type: TERM_PUNCT_P	Start: 851	End: 852
+
+Paragraph Start: 856
+Paragraph End: 868
+  Text Unit Start: 856
+  Text Unit End: 868
+    Token: "Dec.25.1954"  	Type: TOKEN	Start: 856	End: 867
+    Token: "."            	Type: TERM_PUNCT_P	Start: 867	End: 868
+
+Paragraph Start: 872
+Paragraph End: 875
+  Text Unit Start: 872
+  Text Unit End: 875
+    Token: "1,0"          	Type: DIGITAL	Start: 872	End: 875
+
+Paragraph Start: 879
+Paragraph End: 881
+  Text Unit Start: 879
+  Text Unit End: 881
+    Token: "-1"           	Type: DIGITAL	Start: 879	End: 881
+
+Paragraph Start: 885
+Paragraph End: 889
+  Text Unit Start: 885
+  Text Unit End: 889
+    Token: "-1,8"         	Type: DIGITAL	Start: 885	End: 889
+
+Paragraph Start: 893
+Paragraph End: 902
+  Text Unit Start: 893
+  Text Unit End: 902
+    Token: "$"            	Type: LEFTSPLIT	Start: 893	End: 894
+    Token: "1"            	Type: DIGITAL	Start: 894	End: 895
+    Token: "="            	Type: PUNCTUATION	Start: 895	End: 896
+    Token: "4.6615"       	Type: DIGITAL	Start: 896	End: 902
+
+Paragraph Start: 907
+Paragraph End: 918
+  Text Unit Start: 907
+  Text Unit End: 918
+    Token: "$"            	Type: LEFTSPLIT	Start: 907	End: 908
+    Token: "0.30-$0.40"   	Type: TOKEN	Start: 908	End: 918
+

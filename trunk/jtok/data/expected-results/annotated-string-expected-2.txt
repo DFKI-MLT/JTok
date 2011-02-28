@@ -1,0 +1,3 @@
+kdfl	5-9	tok
+sdf	9-12	mid
+sld	12-15	tok

@@ -1,0 +1,587 @@
+Paragraph Start: 0
+Paragraph End: 109
+  Text Unit Start: 0
+  Text Unit End: 67
+    Token: "Amazon.de"    	Type: TOKEN	Start: 0	End: 9
+    Token: ","            	Type: PUNCTUATION	Start: 9	End: 10
+    Token: "auf"          	Type: TOKEN	Start: 11	End: 14
+    Token: "einen"        	Type: TOKEN	Start: 15	End: 20
+    Token: "Blick"        	Type: TOKEN	Start: 21	End: 26
+    Token: ":"            	Type: PUNCTUATION	Start: 26	End: 27
+    Token: "Hard"         	Type: TOKEN	Start: 28	End: 32
+    Token: "Rock"         	Type: TOKEN	Start: 33	End: 37
+    Token: "und"          	Type: TOKEN	Start: 38	End: 41
+    Token: "Heavy"        	Type: TOKEN	Start: 42	End: 47
+    Token: "Metal"        	Type: TOKEN	Start: 48	End: 53
+    Token: "Enzyklopädie" 	Type: TOKEN	Start: 54	End: 66
+    Token: "."            	Type: TERM_PUNCT_P	Start: 66	End: 67
+  Text Unit Start: 67
+  Text Unit End: 109
+    Token: "("            	Type: OPEN_BRACKET	Start: 67	End: 68	PTB: "-LRB-"
+    Token: "Audio-Compilation-CD"	Type: TOKEN	Start: 68	End: 88
+    Token: """            	Type: OPEN_PUNCT	Start: 89	End: 90	PTB: "``"
+    Token: "Rock"         	Type: TOKEN	Start: 90	End: 94
+    Token: "Hard"         	Type: TOKEN	Start: 95	End: 99
+    Token: "Classix"      	Type: TOKEN	Start: 100	End: 107
+    Token: """            	Type: CLOSE_PUNCT	Start: 107	End: 108	PTB: "''"
+    Token: ")"            	Type: CLOSE_BRACKET	Start: 108	End: 109	PTB: "-RRB-"
+
+Paragraph Start: 113
+Paragraph End: 194
+  Text Unit Start: 113
+  Text Unit End: 152
+    Token: "Hard"         	Type: TOKEN	Start: 113	End: 117
+    Token: "Rock"         	Type: TOKEN	Start: 118	End: 122
+    Token: "und"          	Type: TOKEN	Start: 123	End: 126
+    Token: "Heavy"        	Type: TOKEN	Start: 127	End: 132
+    Token: "Metal"        	Type: TOKEN	Start: 133	End: 138
+    Token: "Enzyklopädie" 	Type: TOKEN	Start: 139	End: 151
+    Token: "."            	Type: TERM_PUNCT_P	Start: 151	End: 152
+  Text Unit Start: 152
+  Text Unit End: 194
+    Token: "("            	Type: OPEN_BRACKET	Start: 152	End: 153	PTB: "-LRB-"
+    Token: "Audio-Compilation-CD"	Type: TOKEN	Start: 153	End: 173
+    Token: """            	Type: OPEN_PUNCT	Start: 174	End: 175	PTB: "``"
+    Token: "Rock"         	Type: TOKEN	Start: 175	End: 179
+    Token: "Hard"         	Type: TOKEN	Start: 180	End: 184
+    Token: "Classix"      	Type: TOKEN	Start: 185	End: 192
+    Token: """            	Type: CLOSE_PUNCT	Start: 192	End: 193	PTB: "''"
+    Token: ")"            	Type: CLOSE_BRACKET	Start: 193	End: 194	PTB: "-RRB-"
+
+Paragraph Start: 199
+Paragraph End: 321
+  Text Unit Start: 199
+  Text Unit End: 247
+    Token: "Taschenbuch"  	Type: TOKEN	Start: 199	End: 210
+    Token: "-"            	Type: PUNCTUATION	Start: 211	End: 212
+    Token: "504"          	Type: DIGITAL	Start: 213	End: 216
+    Token: "Seiten"       	Type: TOKEN	Start: 217	End: 223
+    Token: "-"            	Type: PUNCTUATION	Start: 224	End: 225
+    Token: "Heel-Vlg."    	Type: B_ABBREVIATION	Start: 226	End: 235
+    Token: ","            	Type: PUNCTUATION	Start: 235	End: 236
+    Token: "Königswin"    	Type: TOKEN	Start: 237	End: 246
+    Token: "."            	Type: TERM_PUNCT_P	Start: 246	End: 247
+  Text Unit Start: 249
+  Text Unit End: 321
+    Token: "Erscheinungsdatum"	Type: TOKEN	Start: 249	End: 266
+    Token: ":"            	Type: PUNCTUATION	Start: 266	End: 267
+    Token: "1998"         	Type: DIGITAL	Start: 268	End: 272
+    Token: "ISBN"         	Type: TOKEN	Start: 274	End: 278
+    Token: ":"            	Type: PUNCTUATION	Start: 278	End: 279
+    Token: "3980517101"   	Type: DIGITAL	Start: 280	End: 290
+    Token: "Amazon.de"    	Type: TOKEN	Start: 292	End: 301
+    Token: "Verkaufsrang" 	Type: TOKEN	Start: 302	End: 314
+    Token: "26.472"       	Type: DIGITAL	Start: 315	End: 321
+
+Paragraph Start: 326
+Paragraph End: 337
+  Text Unit Start: 326
+  Text Unit End: 337
+    Token: "Rezensionen"  	Type: TOKEN	Start: 326	End: 337
+
+Paragraph Start: 341
+Paragraph End: 896
+  Text Unit Start: 341
+  Text Unit End: 487
+    Token: "Kurzbeschreibung"	Type: TOKEN	Start: 341	End: 357
+    Token: "Die"          	Type: TOKEN	Start: 360	End: 363
+    Token: """            	Type: OPEN_PUNCT	Start: 364	End: 365	PTB: "``"
+    Token: "Rock"         	Type: TOKEN	Start: 365	End: 369
+    Token: "Hard-Enzyklopädie"	Type: TOKEN	Start: 370	End: 387
+    Token: """            	Type: CLOSE_PUNCT	Start: 387	End: 388	PTB: "''"
+    Token: "wird"         	Type: TOKEN	Start: 389	End: 393
+    Token: "von"          	Type: TOKEN	Start: 394	End: 397
+    Token: "Rock"         	Type: TOKEN	Start: 398	End: 402
+    Token: "Hard"         	Type: TOKEN	Start: 403	End: 407
+    Token: "herausgegeben"	Type: TOKEN	Start: 408	End: 421
+    Token: ","            	Type: PUNCTUATION	Start: 421	End: 422
+    Token: "dem"          	Type: TOKEN	Start: 423	End: 426
+    Token: "erfolgreichsten"	Type: TOKEN	Start: 427	End: 442
+    Token: "Hard-Rock-Magazin"	Type: TOKEN	Start: 443	End: 460
+    Token: "im"           	Type: TOKEN	Start: 461	End: 463
+    Token: "deutschsprachigen"	Type: TOKEN	Start: 464	End: 481
+    Token: "Raum"         	Type: TOKEN	Start: 482	End: 486
+    Token: "."            	Type: TERM_PUNCT_P	Start: 486	End: 487
+  Text Unit Start: 488
+  Text Unit End: 565
+    Token: "Das"          	Type: TOKEN	Start: 488	End: 491
+    Token: "Buch"         	Type: TOKEN	Start: 492	End: 496
+    Token: "stellt"       	Type: TOKEN	Start: 497	End: 503
+    Token: "über"         	Type: TOKEN	Start: 504	End: 508
+    Token: "700"          	Type: DIGITAL	Start: 509	End: 512
+    Token: "Bands"        	Type: TOKEN	Start: 513	End: 518
+    Token: "aus"          	Type: TOKEN	Start: 519	End: 522
+    Token: "drei"         	Type: TOKEN	Start: 523	End: 527
+    Token: "Jahrzehnten"  	Type: TOKEN	Start: 528	End: 539
+    Token: "Hard-Rock-Geschichte"	Type: TOKEN	Start: 540	End: 560
+    Token: "vor"          	Type: TOKEN	Start: 561	End: 564
+    Token: "."            	Type: TERM_PUNCT_P	Start: 564	End: 565
+  Text Unit Start: 566
+  Text Unit End: 640
+    Token: "Die"          	Type: TOKEN	Start: 566	End: 569
+    Token: "Facts"        	Type: TOKEN	Start: 570	End: 575
+    Token: "wurden"       	Type: TOKEN	Start: 576	End: 582
+    Token: "dabei"        	Type: TOKEN	Start: 583	End: 588
+    Token: "ebenso"       	Type: TOKEN	Start: 589	End: 595
+    Token: "kompetent"    	Type: TOKEN	Start: 596	End: 605
+    Token: "wie"          	Type: TOKEN	Start: 606	End: 609
+    Token: "unterhaltsam" 	Type: TOKEN	Start: 610	End: 622
+    Token: "zusammengestellt"	Type: TOKEN	Start: 623	End: 639
+    Token: "."            	Type: TERM_PUNCT_P	Start: 639	End: 640
+  Text Unit Start: 641
+  Text Unit End: 814
+    Token: "Ein"          	Type: TOKEN	Start: 641	End: 644
+    Token: "vergleichbares"	Type: TOKEN	Start: 645	End: 659
+    Token: "Referenzbuch" 	Type: TOKEN	Start: 660	End: 672
+    Token: "über"         	Type: TOKEN	Start: 673	End: 677
+    Token: "die"          	Type: TOKEN	Start: 678	End: 681
+    Token: "Hard-Rock-Szene"	Type: TOKEN	Start: 682	End: 697
+    Token: "ist"          	Type: TOKEN	Start: 698	End: 701
+    Token: "auf"          	Type: TOKEN	Start: 702	End: 705
+    Token: "dem"          	Type: TOKEN	Start: 706	End: 709
+    Token: "deutschen"    	Type: TOKEN	Start: 710	End: 719
+    Token: "Markt"        	Type: TOKEN	Start: 720	End: 725
+    Token: "bislang"      	Type: TOKEN	Start: 726	End: 733
+    Token: "nicht"        	Type: TOKEN	Start: 734	End: 739
+    Token: "erschienen"   	Type: TOKEN	Start: 740	End: 750
+    Token: "und"          	Type: TOKEN	Start: 751	End: 754
+    Token: "wird"         	Type: TOKEN	Start: 755	End: 759
+    Token: "von"          	Type: TOKEN	Start: 760	End: 763
+    Token: "den"          	Type: TOKEN	Start: 764	End: 767
+    Token: "vielen"       	Type: TOKEN	Start: 768	End: 774
+    Token: "Fans"         	Type: TOKEN	Start: 775	End: 779
+    Token: "bereits"      	Type: TOKEN	Start: 780	End: 787
+    Token: "lange"        	Type: TOKEN	Start: 788	End: 793
+    Token: "sehnlichst"   	Type: TOKEN	Start: 794	End: 804
+    Token: "erwartet"     	Type: TOKEN	Start: 805	End: 813
+    Token: "."            	Type: TERM_PUNCT_P	Start: 813	End: 814
+  Text Unit Start: 815
+  Text Unit End: 896
+    Token: "Als"          	Type: TOKEN	Start: 815	End: 818
+    Token: "besondere"    	Type: TOKEN	Start: 819	End: 828
+    Token: "Zugabe"       	Type: TOKEN	Start: 829	End: 835
+    Token: "enthält"      	Type: TOKEN	Start: 836	End: 843
+    Token: "das"          	Type: TOKEN	Start: 844	End: 847
+    Token: "Buch"         	Type: TOKEN	Start: 848	End: 852
+    Token: "eine"         	Type: TOKEN	Start: 853	End: 857
+    Token: "Compilation-CD"	Type: TOKEN	Start: 858	End: 872
+    Token: "mit"          	Type: TOKEN	Start: 873	End: 876
+    Token: "17"           	Type: DIGITAL	Start: 877	End: 879
+    Token: "Hard-Rock-Songs"	Type: TOKEN	Start: 880	End: 895
+    Token: "."            	Type: TERM_PUNCT_P	Start: 895	End: 896
+
+Paragraph Start: 900
+Paragraph End: 3098
+  Text Unit Start: 900
+  Text Unit End: 1193
+    Token: "Durchschnittliche"	Type: TOKEN	Start: 900	End: 917
+    Token: "Kundenbewertung"	Type: TOKEN	Start: 918	End: 933
+    Token: ":"            	Type: PUNCTUATION	Start: 933	End: 934
+    Token: "Zahl"         	Type: TOKEN	Start: 936	End: 940
+    Token: "der"          	Type: TOKEN	Start: 941	End: 944
+    Token: "Rezensionen"  	Type: TOKEN	Start: 945	End: 956
+    Token: ":"            	Type: PUNCTUATION	Start: 956	End: 957
+    Token: "2"            	Type: DIGITAL	Start: 958	End: 959
+    Token: "kuedi@gmx.net"	Type: TOKEN	Start: 962	End: 975
+    Token: "aus"          	Type: TOKEN	Start: 976	End: 979
+    Token: "Zürich"       	Type: TOKEN	Start: 980	End: 986
+    Token: ","            	Type: PUNCTUATION	Start: 987	End: 988
+    Token: "12."          	Type: ORDINAL	Start: 989	End: 992
+    Token: "Mai"          	Type: TOKEN	Start: 993	End: 996
+    Token: "2000"         	Type: DIGITAL	Start: 997	End: 1001
+    Token: "Die"          	Type: TOKEN	Start: 1005	End: 1008
+    Token: "koplette"     	Type: TOKEN	Start: 1009	End: 1017
+    Token: "Welt"         	Type: TOKEN	Start: 1018	End: 1022
+    Token: "des"          	Type: TOKEN	Start: 1023	End: 1026
+    Token: "Metal"        	Type: TOKEN	Start: 1027	End: 1032
+    Token: "in"           	Type: TOKEN	Start: 1033	End: 1035
+    Token: "einem"        	Type: TOKEN	Start: 1036	End: 1041
+    Token: "Buch"         	Type: TOKEN	Start: 1042	End: 1046
+    Token: "Man"          	Type: TOKEN	Start: 1048	End: 1051
+    Token: "findet"       	Type: TOKEN	Start: 1052	End: 1058
+    Token: "in"           	Type: TOKEN	Start: 1059	End: 1061
+    Token: "diesem"       	Type: TOKEN	Start: 1062	End: 1068
+    Token: "Buch"         	Type: TOKEN	Start: 1069	End: 1073
+    Token: "praktisch"    	Type: TOKEN	Start: 1074	End: 1083
+    Token: "jede"         	Type: TOKEN	Start: 1084	End: 1088
+    Token: "Band"         	Type: TOKEN	Start: 1089	End: 1093
+    Token: "der"          	Type: TOKEN	Start: 1094	End: 1097
+    Token: "Sparten"      	Type: TOKEN	Start: 1098	End: 1105
+    Token: "HardRock"     	Type: TOKEN	Start: 1106	End: 1114
+    Token: "und"          	Type: TOKEN	Start: 1115	End: 1118
+    Token: "Metal"        	Type: TOKEN	Start: 1119	End: 1124
+    Token: ","            	Type: PUNCTUATION	Start: 1124	End: 1125
+    Token: "die"          	Type: TOKEN	Start: 1126	End: 1129
+    Token: "mal"          	Type: TOKEN	Start: 1130	End: 1133
+    Token: "eine"         	Type: TOKEN	Start: 1134	End: 1138
+    Token: "einigermassen"	Type: TOKEN	Start: 1139	End: 1152
+    Token: "seriöse"      	Type: TOKEN	Start: 1153	End: 1160
+    Token: "CD"           	Type: TOKEN	Start: 1161	End: 1163
+    Token: "auf"          	Type: TOKEN	Start: 1164	End: 1167
+    Token: "den"          	Type: TOKEN	Start: 1168	End: 1171
+    Token: "Markt"        	Type: TOKEN	Start: 1172	End: 1177
+    Token: "gebracht"     	Type: TOKEN	Start: 1178	End: 1186
+    Token: "haben"        	Type: TOKEN	Start: 1187	End: 1192
+    Token: "."            	Type: TERM_PUNCT_P	Start: 1192	End: 1193
+  Text Unit Start: 1194
+  Text Unit End: 1339
+    Token: "Je"           	Type: TOKEN	Start: 1194	End: 1196
+    Token: "nach"         	Type: TOKEN	Start: 1197	End: 1201
+    Token: "Bekanntheitsgrad"	Type: TOKEN	Start: 1202	End: 1218
+    Token: "und"          	Type: TOKEN	Start: 1219	End: 1222
+    Token: "verdienst"    	Type: TOKEN	Start: 1223	End: 1232
+    Token: "gegenüber"    	Type: TOKEN	Start: 1233	End: 1242
+    Token: "der"          	Type: TOKEN	Start: 1243	End: 1246
+    Token: "Musik"        	Type: TOKEN	Start: 1247	End: 1252
+    Token: "werden"       	Type: TOKEN	Start: 1253	End: 1259
+    Token: "die"          	Type: TOKEN	Start: 1260	End: 1263
+    Token: "Bands"        	Type: TOKEN	Start: 1264	End: 1269
+    Token: "in"           	Type: TOKEN	Start: 1270	End: 1272
+    Token: "kürzeren"     	Type: TOKEN	Start: 1273	End: 1281
+    Token: "Abschnitten"  	Type: TOKEN	Start: 1282	End: 1293
+    Token: "oder"         	Type: TOKEN	Start: 1294	End: 1298
+    Token: "in"           	Type: TOKEN	Start: 1299	End: 1301
+    Token: "mehrseitigen" 	Type: TOKEN	Start: 1302	End: 1314
+    Token: "Biographien"  	Type: TOKEN	Start: 1315	End: 1326
+    Token: "vorgestellt"  	Type: TOKEN	Start: 1327	End: 1338
+    Token: "."            	Type: TERM_PUNCT_P	Start: 1338	End: 1339
+  Text Unit Start: 1340
+  Text Unit End: 1434
+    Token: "Interessant"  	Type: TOKEN	Start: 1340	End: 1351
+    Token: "ist"          	Type: TOKEN	Start: 1352	End: 1355
+    Token: "immer"        	Type: TOKEN	Start: 1356	End: 1361
+    Token: "wieder"       	Type: TOKEN	Start: 1362	End: 1368
+    Token: "das"          	Type: TOKEN	Start: 1369	End: 1372
+    Token: "Aha-Erlebnis" 	Type: TOKEN	Start: 1373	End: 1385
+    Token: "in"           	Type: TOKEN	Start: 1386	End: 1388
+    Token: "Stile"        	Type: TOKEN	Start: 1389	End: 1394
+    Token: ":"            	Type: PUNCTUATION	Start: 1394	End: 1395
+    Token: "Ahh"          	Type: TOKEN	Start: 1396	End: 1399
+    Token: ","            	Type: PUNCTUATION	Start: 1399	End: 1400
+    Token: "dort"         	Type: TOKEN	Start: 1401	End: 1405
+    Token: "hat"          	Type: TOKEN	Start: 1406	End: 1409
+    Token: "der"          	Type: TOKEN	Start: 1410	End: 1413
+    Token: "auch"         	Type: TOKEN	Start: 1414	End: 1418
+    Token: "noch"         	Type: TOKEN	Start: 1419	End: 1423
+    Token: "gespielt"     	Type: TOKEN	Start: 1424	End: 1432
+    Token: "!"            	Type: TERM_PUNCT	Start: 1432	End: 1433
+    Token: "!"            	Type: TERM_PUNCT	Start: 1433	End: 1434
+  Text Unit Start: 1435
+  Text Unit End: 1530
+    Token: "Die"          	Type: TOKEN	Start: 1435	End: 1438
+    Token: "Beiträge"     	Type: TOKEN	Start: 1439	End: 1447
+    Token: "sind"         	Type: TOKEN	Start: 1448	End: 1452
+    Token: "kompetent"    	Type: TOKEN	Start: 1453	End: 1462
+    Token: "recherchiert" 	Type: TOKEN	Start: 1463	End: 1475
+    Token: "und"          	Type: TOKEN	Start: 1476	End: 1479
+    Token: "in"           	Type: TOKEN	Start: 1480	End: 1482
+    Token: "einer"        	Type: TOKEN	Start: 1483	End: 1488
+    Token: "humorvollen"  	Type: TOKEN	Start: 1489	End: 1500
+    Token: "Art"          	Type: TOKEN	Start: 1501	End: 1504
+    Token: "zu"           	Type: TOKEN	Start: 1505	End: 1507
+    Token: "Buche"        	Type: TOKEN	Start: 1508	End: 1513
+    Token: "getragen"     	Type: TOKEN	Start: 1514	End: 1522
+    Token: "worden"       	Type: TOKEN	Start: 1523	End: 1529
+    Token: "."            	Type: TERM_PUNCT_P	Start: 1529	End: 1530
+  Text Unit Start: 1531
+  Text Unit End: 1643
+    Token: "Ein"          	Type: TOKEN	Start: 1531	End: 1534
+    Token: "MUSS"         	Type: TOKEN	Start: 1535	End: 1539
+    Token: "für"          	Type: TOKEN	Start: 1540	End: 1543
+    Token: "jeden"        	Type: TOKEN	Start: 1544	End: 1549
+    Token: "MetalFan"     	Type: TOKEN	Start: 1550	End: 1558
+    Token: "und"          	Type: TOKEN	Start: 1559	End: 1562
+    Token: "ein"          	Type: TOKEN	Start: 1563	End: 1566
+    Token: "Dank"         	Type: TOKEN	Start: 1567	End: 1571
+    Token: "an"           	Type: TOKEN	Start: 1572	End: 1574
+    Token: "die"          	Type: TOKEN	Start: 1575	End: 1578
+    Token: "Rockhard"     	Type: TOKEN	Start: 1579	End: 1587
+    Token: "-"            	Type: PUNCTUATION	Start: 1587	End: 1588
+    Token: "Schreiberlinge"	Type: TOKEN	Start: 1589	End: 1603
+    Token: ","            	Type: PUNCTUATION	Start: 1603	End: 1604
+    Token: "die"          	Type: TOKEN	Start: 1605	End: 1608
+    Token: "das"          	Type: TOKEN	Start: 1609	End: 1612
+    Token: "Ganze"        	Type: TOKEN	Start: 1613	End: 1618
+    Token: "möglich"      	Type: TOKEN	Start: 1619	End: 1626
+    Token: "gemacht"      	Type: TOKEN	Start: 1627	End: 1634
+    Token: "haben"        	Type: TOKEN	Start: 1635	End: 1640
+    Token: "."            	Type: TERM_PUNCT_P	Start: 1640	End: 1641
+    Token: "."            	Type: TERM_PUNCT_P	Start: 1641	End: 1642
+    Token: "."            	Type: TERM_PUNCT_P	Start: 1642	End: 1643
+  Text Unit Start: 1646
+  Text Unit End: 1908
+    Token: "Emrah"        	Type: TOKEN	Start: 1646	End: 1651
+    Token: "Kilic"        	Type: TOKEN	Start: 1652	End: 1657
+    Token: ","            	Type: PUNCTUATION	Start: 1657	End: 1658
+    Token: "Sportwissenschaft"	Type: TOKEN	Start: 1659	End: 1676
+    Token: ","            	Type: PUNCTUATION	Start: 1676	End: 1677
+    Token: "s080100@stud.uni-goettingen.de"	Type: TOKEN	Start: 1678	End: 1708
+    Token: "aus"          	Type: TOKEN	Start: 1709	End: 1712
+    Token: "Göttingen"    	Type: TOKEN	Start: 1713	End: 1722
+    Token: ","            	Type: PUNCTUATION	Start: 1723	End: 1724
+    Token: "4."           	Type: ORDINAL	Start: 1725	End: 1727
+    Token: "Januar"       	Type: TOKEN	Start: 1728	End: 1734
+    Token: "2000"         	Type: DIGITAL	Start: 1735	End: 1739
+    Token: "Alle"         	Type: TOKEN	Start: 1743	End: 1747
+    Token: "Bands"        	Type: TOKEN	Start: 1748	End: 1753
+    Token: "in"           	Type: TOKEN	Start: 1754	End: 1756
+    Token: "einem"        	Type: TOKEN	Start: 1757	End: 1762
+    Token: "Buch"         	Type: TOKEN	Start: 1763	End: 1767
+    Token: "Das"          	Type: TOKEN	Start: 1769	End: 1772
+    Token: "kompetenteste"	Type: TOKEN	Start: 1773	End: 1786
+    Token: "Musik"        	Type: TOKEN	Start: 1787	End: 1792
+    Token: "-"            	Type: PUNCTUATION	Start: 1793	End: 1794
+    Token: "Magazin"      	Type: TOKEN	Start: 1795	End: 1802
+    Token: "Deutschlands" 	Type: TOKEN	Start: 1803	End: 1815
+    Token: "veröffentlichte"	Type: TOKEN	Start: 1816	End: 1831
+    Token: "1998"         	Type: DIGITAL	Start: 1832	End: 1836
+    Token: "diese"        	Type: TOKEN	Start: 1837	End: 1842
+    Token: "Enzyklopädie" 	Type: TOKEN	Start: 1843	End: 1855
+    Token: ","            	Type: PUNCTUATION	Start: 1855	End: 1856
+    Token: "die"          	Type: TOKEN	Start: 1857	End: 1860
+    Token: "jeder"        	Type: TOKEN	Start: 1861	End: 1866
+    Token: "Metal"        	Type: TOKEN	Start: 1867	End: 1872
+    Token: "-"            	Type: PUNCTUATION	Start: 1873	End: 1874
+    Token: "Fan"          	Type: TOKEN	Start: 1875	End: 1878
+    Token: "im"           	Type: TOKEN	Start: 1879	End: 1881
+    Token: "Regal"        	Type: TOKEN	Start: 1882	End: 1887
+    Token: "stehen"       	Type: TOKEN	Start: 1888	End: 1894
+    Token: "haben"        	Type: TOKEN	Start: 1895	End: 1900
+    Token: "sollte"       	Type: TOKEN	Start: 1901	End: 1907
+    Token: "."            	Type: TERM_PUNCT_P	Start: 1907	End: 1908
+  Text Unit Start: 1909
+  Text Unit End: 2024
+    Token: "Auf"          	Type: TOKEN	Start: 1909	End: 1912
+    Token: "500"          	Type: DIGITAL	Start: 1913	End: 1916
+    Token: "Seiten"       	Type: TOKEN	Start: 1917	End: 1923
+    Token: "werden"       	Type: TOKEN	Start: 1924	End: 1930
+    Token: "die"          	Type: TOKEN	Start: 1931	End: 1934
+    Token: "wichtigsten"  	Type: TOKEN	Start: 1935	End: 1946
+    Token: "Bands"        	Type: TOKEN	Start: 1947	End: 1952
+    Token: "aus"          	Type: TOKEN	Start: 1953	End: 1956
+    Token: "dem"          	Type: TOKEN	Start: 1957	End: 1960
+    Token: "Rock"         	Type: TOKEN	Start: 1961	End: 1965
+    Token: "-"            	Type: PUNCTUATION	Start: 1965	End: 1966
+    Token: "und"          	Type: TOKEN	Start: 1967	End: 1970
+    Token: "Metalsektor"  	Type: TOKEN	Start: 1971	End: 1982
+    Token: "mal"          	Type: TOKEN	Start: 1983	End: 1986
+    Token: "knapp"        	Type: TOKEN	Start: 1987	End: 1992
+    Token: ","            	Type: PUNCTUATION	Start: 1992	End: 1993
+    Token: "mal"          	Type: TOKEN	Start: 1994	End: 1997
+    Token: "ausführlicher"	Type: TOKEN	Start: 1998	End: 2011
+    Token: "vorgestellt"  	Type: TOKEN	Start: 2012	End: 2023
+    Token: "."            	Type: TERM_PUNCT_P	Start: 2023	End: 2024
+  Text Unit Start: 2025
+  Text Unit End: 2145
+    Token: "Ob"           	Type: TOKEN	Start: 2025	End: 2027
+    Token: "es"           	Type: TOKEN	Start: 2028	End: 2030
+    Token: "nun"          	Type: TOKEN	Start: 2031	End: 2034
+    Token: "die"          	Type: TOKEN	Start: 2035	End: 2038
+    Token: "Urväter"      	Type: TOKEN	Start: 2039	End: 2046
+    Token: "des"          	Type: TOKEN	Start: 2047	End: 2050
+    Token: "Metal"        	Type: TOKEN	Start: 2051	End: 2056
+    Token: ","            	Type: PUNCTUATION	Start: 2056	End: 2057
+    Token: "Black"        	Type: TOKEN	Start: 2058	End: 2063
+    Token: "Sabbath"      	Type: TOKEN	Start: 2064	End: 2071
+    Token: "oder"         	Type: TOKEN	Start: 2072	End: 2076
+    Token: "neuere"       	Type: TOKEN	Start: 2077	End: 2083
+    Token: "Bands"        	Type: TOKEN	Start: 2084	End: 2089
+    Token: "wie"          	Type: TOKEN	Start: 2090	End: 2093
+    Token: "Bush"         	Type: TOKEN	Start: 2094	End: 2098
+    Token: "oder"         	Type: TOKEN	Start: 2099	End: 2103
+    Token: "Skunk"        	Type: TOKEN	Start: 2104	End: 2109
+    Token: "Anansie"      	Type: TOKEN	Start: 2110	End: 2117
+    Token: "sind"         	Type: TOKEN	Start: 2118	End: 2122
+    Token: "-"            	Type: PUNCTUATION	Start: 2123	End: 2124
+    Token: "alle"         	Type: TOKEN	Start: 2125	End: 2129
+    Token: "sind"         	Type: TOKEN	Start: 2130	End: 2134
+    Token: "vertreten"    	Type: TOKEN	Start: 2135	End: 2144
+    Token: "."            	Type: TERM_PUNCT_P	Start: 2144	End: 2145
+  Text Unit Start: 2146
+  Text Unit End: 2303
+    Token: "Natürlich"    	Type: TOKEN	Start: 2146	End: 2155
+    Token: "wird"         	Type: TOKEN	Start: 2156	End: 2160
+    Token: "dies"         	Type: TOKEN	Start: 2161	End: 2165
+    Token: "alles"        	Type: TOKEN	Start: 2166	End: 2171
+    Token: "im"           	Type: TOKEN	Start: 2172	End: 2174
+    Token: "gewohnt"      	Type: TOKEN	Start: 2175	End: 2182
+    Token: "witzigen"     	Type: TOKEN	Start: 2183	End: 2191
+    Token: "Schreibstil"  	Type: TOKEN	Start: 2192	End: 2203
+    Token: "verpackt"     	Type: TOKEN	Start: 2204	End: 2212
+    Token: ","            	Type: PUNCTUATION	Start: 2212	End: 2213
+    Token: "was"          	Type: TOKEN	Start: 2214	End: 2217
+    Token: "die"          	Type: TOKEN	Start: 2218	End: 2221
+    Token: "ganze"        	Type: TOKEN	Start: 2222	End: 2227
+    Token: "Sache"        	Type: TOKEN	Start: 2228	End: 2233
+    Token: "sehr"         	Type: TOKEN	Start: 2234	End: 2238
+    Token: "unterhaltsam" 	Type: TOKEN	Start: 2239	End: 2251
+    Token: "macht"        	Type: TOKEN	Start: 2252	End: 2257
+    Token: ","            	Type: PUNCTUATION	Start: 2257	End: 2258
+    Token: "was"          	Type: TOKEN	Start: 2259	End: 2262
+    Token: "man"          	Type: TOKEN	Start: 2263	End: 2266
+    Token: "von"          	Type: TOKEN	Start: 2267	End: 2270
+    Token: "Enzyklopädien"	Type: TOKEN	Start: 2271	End: 2284
+    Token: "sonst"        	Type: TOKEN	Start: 2285	End: 2290
+    Token: "nicht"        	Type: TOKEN	Start: 2291	End: 2296
+    Token: "kennt"        	Type: TOKEN	Start: 2297	End: 2302
+    Token: "."            	Type: TERM_PUNCT_P	Start: 2302	End: 2303
+  Text Unit Start: 2304
+  Text Unit End: 2405
+    Token: "Dazu"         	Type: TOKEN	Start: 2304	End: 2308
+    Token: "tragen"       	Type: TOKEN	Start: 2309	End: 2315
+    Token: "auch"         	Type: TOKEN	Start: 2316	End: 2320
+    Token: "die"          	Type: TOKEN	Start: 2321	End: 2324
+    Token: "vielen"       	Type: TOKEN	Start: 2325	End: 2331
+    Token: "Anekdoten"    	Type: TOKEN	Start: 2332	End: 2341
+    Token: "bei"          	Type: TOKEN	Start: 2342	End: 2345
+    Token: ","            	Type: PUNCTUATION	Start: 2345	End: 2346
+    Token: "die"          	Type: TOKEN	Start: 2347	End: 2350
+    Token: "mich"         	Type: TOKEN	Start: 2351	End: 2355
+    Token: "ein"          	Type: TOKEN	Start: 2356	End: 2359
+    Token: "ums"          	Type: TOKEN	Start: 2360	End: 2363
+    Token: "andere"       	Type: TOKEN	Start: 2364	End: 2370
+    Token: "Mal"          	Type: TOKEN	Start: 2371	End: 2374
+    Token: "zum"          	Type: TOKEN	Start: 2375	End: 2378
+    Token: "Schmunzeln"   	Type: TOKEN	Start: 2379	End: 2389
+    Token: "gebracht"     	Type: TOKEN	Start: 2390	End: 2398
+    Token: "haben"        	Type: TOKEN	Start: 2399	End: 2404
+    Token: "."            	Type: TERM_PUNCT_P	Start: 2404	End: 2405
+  Text Unit Start: 2406
+  Text Unit End: 2541
+    Token: "Man"          	Type: TOKEN	Start: 2406	End: 2409
+    Token: "hätte"        	Type: TOKEN	Start: 2410	End: 2415
+    Token: "es"           	Type: TOKEN	Start: 2416	End: 2418
+    Token: "sich"         	Type: TOKEN	Start: 2419	End: 2423
+    Token: "jedoch"       	Type: TOKEN	Start: 2424	End: 2430
+    Token: "sparen"       	Type: TOKEN	Start: 2431	End: 2437
+    Token: "können"       	Type: TOKEN	Start: 2438	End: 2444
+    Token: ","            	Type: PUNCTUATION	Start: 2444	End: 2445
+    Token: "über"         	Type: TOKEN	Start: 2446	End: 2450
+    Token: "einige"       	Type: TOKEN	Start: 2451	End: 2457
+    Token: "Platten"      	Type: TOKEN	Start: 2458	End: 2465
+    Token: "herzuziehen"  	Type: TOKEN	Start: 2466	End: 2477
+    Token: "und"          	Type: TOKEN	Start: 2478	End: 2481
+    Token: "einigen"      	Type: TOKEN	Start: 2482	End: 2489
+    Token: "Bands"        	Type: TOKEN	Start: 2490	End: 2495
+    Token: "mehr"         	Type: TOKEN	Start: 2496	End: 2500
+    Token: "Platz"        	Type: TOKEN	Start: 2501	End: 2506
+    Token: "gebühren"     	Type: TOKEN	Start: 2507	End: 2515
+    Token: "sollen"       	Type: TOKEN	Start: 2516	End: 2522
+    Token: "("            	Type: OPEN_BRACKET	Start: 2523	End: 2524	PTB: "-LRB-"
+    Token: "z.B."         	Type: B_ABBREVIATION	Start: 2524	End: 2528
+    Token: "Iced"         	Type: TOKEN	Start: 2529	End: 2533
+    Token: "Earth"        	Type: TOKEN	Start: 2534	End: 2539
+    Token: ")"            	Type: CLOSE_BRACKET	Start: 2539	End: 2540	PTB: "-RRB-"
+    Token: "."            	Type: TERM_PUNCT_P	Start: 2540	End: 2541
+  Text Unit Start: 2542
+  Text Unit End: 2702
+    Token: "Auch"         	Type: TOKEN	Start: 2542	End: 2546
+    Token: "sind"         	Type: TOKEN	Start: 2547	End: 2551
+    Token: "die"          	Type: TOKEN	Start: 2552	End: 2555
+    Token: "abgedruckten" 	Type: TOKEN	Start: 2556	End: 2568
+    Token: "Line"         	Type: TOKEN	Start: 2569	End: 2573
+    Token: "-"            	Type: PUNCTUATION	Start: 2574	End: 2575
+    Token: "Ups"          	Type: TOKEN	Start: 2576	End: 2579
+    Token: "für"          	Type: TOKEN	Start: 2580	End: 2583
+    Token: "die"          	Type: TOKEN	Start: 2584	End: 2587
+    Token: "Katz"         	Type: TOKEN	Start: 2588	End: 2592
+    Token: ","            	Type: PUNCTUATION	Start: 2592	End: 2593
+    Token: "da"           	Type: TOKEN	Start: 2594	End: 2596
+    Token: "sie"          	Type: TOKEN	Start: 2597	End: 2600
+    Token: "sich"         	Type: TOKEN	Start: 2601	End: 2605
+    Token: "bei"          	Type: TOKEN	Start: 2606	End: 2609
+    Token: "den"          	Type: TOKEN	Start: 2610	End: 2613
+    Token: "meisten"      	Type: TOKEN	Start: 2614	End: 2621
+    Token: "Bands"        	Type: TOKEN	Start: 2622	End: 2627
+    Token: "eh"           	Type: TOKEN	Start: 2628	End: 2630
+    Token: "ständig"      	Type: TOKEN	Start: 2631	End: 2638
+    Token: "ändern"       	Type: TOKEN	Start: 2639	End: 2645
+    Token: "("            	Type: OPEN_BRACKET	Start: 2646	End: 2647	PTB: "-LRB-"
+    Token: "z.B"          	Type: TOKEN	Start: 2647	End: 2650
+    Token: "Testament"    	Type: TOKEN	Start: 2651	End: 2660
+    Token: ")"            	Type: CLOSE_BRACKET	Start: 2660	End: 2661	PTB: "-RRB-"
+    Token: "und"          	Type: TOKEN	Start: 2662	End: 2665
+    Token: "so"           	Type: TOKEN	Start: 2666	End: 2668
+    Token: "das"          	Type: TOKEN	Start: 2669	End: 2672
+    Token: "Buch"         	Type: TOKEN	Start: 2673	End: 2677
+    Token: "an"           	Type: TOKEN	Start: 2678	End: 2680
+    Token: "Stellenwert"  	Type: TOKEN	Start: 2681	End: 2692
+    Token: "verliert"     	Type: TOKEN	Start: 2693	End: 2701
+    Token: "."            	Type: TERM_PUNCT_P	Start: 2701	End: 2702
+  Text Unit Start: 2703
+  Text Unit End: 2801
+    Token: "Dem"          	Type: TOKEN	Start: 2703	End: 2706
+    Token: "Buch"         	Type: TOKEN	Start: 2707	End: 2711
+    Token: "ist"          	Type: TOKEN	Start: 2712	End: 2715
+    Token: "übrigens"     	Type: TOKEN	Start: 2716	End: 2724
+    Token: "auch"         	Type: TOKEN	Start: 2725	End: 2729
+    Token: "eine"         	Type: TOKEN	Start: 2730	End: 2734
+    Token: "CD"           	Type: TOKEN	Start: 2735	End: 2737
+    Token: "beigelegt"    	Type: TOKEN	Start: 2738	End: 2747
+    Token: "über"         	Type: TOKEN	Start: 2748	End: 2752
+    Token: "deren"        	Type: TOKEN	Start: 2753	End: 2758
+    Token: "Songauswahl"  	Type: TOKEN	Start: 2759	End: 2770
+    Token: "man"          	Type: TOKEN	Start: 2771	End: 2774
+    Token: "sich"         	Type: TOKEN	Start: 2775	End: 2779
+    Token: "jedoch"       	Type: TOKEN	Start: 2780	End: 2786
+    Token: "streiten"     	Type: TOKEN	Start: 2787	End: 2795
+    Token: "kann"         	Type: TOKEN	Start: 2796	End: 2800
+    Token: "."            	Type: TERM_PUNCT_P	Start: 2800	End: 2801
+  Text Unit Start: 2802
+  Text Unit End: 2867
+    Token: "Hörenswert"   	Type: TOKEN	Start: 2802	End: 2812
+    Token: "sind"         	Type: TOKEN	Start: 2813	End: 2817
+    Token: "die"          	Type: TOKEN	Start: 2818	End: 2821
+    Token: "Beiträge"     	Type: TOKEN	Start: 2822	End: 2830
+    Token: "von"          	Type: TOKEN	Start: 2831	End: 2834
+    Token: "Mercyful"     	Type: TOKEN	Start: 2835	End: 2843
+    Token: "Fate"         	Type: TOKEN	Start: 2844	End: 2848
+    Token: "und"          	Type: TOKEN	Start: 2849	End: 2852
+    Token: "Fates"        	Type: TOKEN	Start: 2853	End: 2858
+    Token: "Warning"      	Type: TOKEN	Start: 2859	End: 2866
+    Token: "."            	Type: TERM_PUNCT_P	Start: 2866	End: 2867
+  Text Unit Start: 2868
+  Text Unit End: 3028
+    Token: "In"           	Type: TOKEN	Start: 2868	End: 2870
+    Token: "diesem"       	Type: TOKEN	Start: 2871	End: 2877
+    Token: "Buch"         	Type: TOKEN	Start: 2878	End: 2882
+    Token: "steckt"       	Type: TOKEN	Start: 2883	End: 2889
+    Token: "jedenfalls"   	Type: TOKEN	Start: 2890	End: 2900
+    Token: "eine"         	Type: TOKEN	Start: 2901	End: 2905
+    Token: "Menge"        	Type: TOKEN	Start: 2906	End: 2911
+    Token: "Kompetenz"    	Type: TOKEN	Start: 2912	End: 2921
+    Token: "und"          	Type: TOKEN	Start: 2922	End: 2925
+    Token: "Fleiß"        	Type: TOKEN	Start: 2926	End: 2931
+    Token: "und"          	Type: TOKEN	Start: 2932	End: 2935
+    Token: "deswegen"     	Type: TOKEN	Start: 2936	End: 2944
+    Token: "gilt"         	Type: TOKEN	Start: 2945	End: 2949
+    Token: "mein"         	Type: TOKEN	Start: 2950	End: 2954
+    Token: "Respekt"      	Type: TOKEN	Start: 2955	End: 2962
+    Token: "an"           	Type: TOKEN	Start: 2963	End: 2965
+    Token: "die"          	Type: TOKEN	Start: 2966	End: 2969
+    Token: "Redakteure"   	Type: TOKEN	Start: 2970	End: 2980
+    Token: "aus"          	Type: TOKEN	Start: 2981	End: 2984
+    Token: "Dortmund"     	Type: TOKEN	Start: 2985	End: 2993
+    Token: ","            	Type: PUNCTUATION	Start: 2993	End: 2994
+    Token: "die"          	Type: TOKEN	Start: 2995	End: 2998
+    Token: "jahrelang"    	Type: TOKEN	Start: 2999	End: 3008
+    Token: "recherchiert" 	Type: TOKEN	Start: 3009	End: 3021
+    Token: "haben"        	Type: TOKEN	Start: 3022	End: 3027
+    Token: "."            	Type: TERM_PUNCT_P	Start: 3027	End: 3028
+  Text Unit Start: 3029
+  Text Unit End: 3041
+    Token: "Glückwunsch"  	Type: TOKEN	Start: 3029	End: 3040
+    Token: "!"            	Type: TERM_PUNCT	Start: 3040	End: 3041
+  Text Unit Start: 3042
+  Text Unit End: 3098
+    Token: "("            	Type: OPEN_BRACKET	Start: 3042	End: 3043	PTB: "-LRB-"
+    Token: "Dies"         	Type: TOKEN	Start: 3043	End: 3047
+    Token: "ist"          	Type: TOKEN	Start: 3048	End: 3051
+    Token: "eine"         	Type: TOKEN	Start: 3052	End: 3056
+    Token: "Amazon.de"    	Type: TOKEN	Start: 3057	End: 3066
+    Token: "an"           	Type: TOKEN	Start: 3067	End: 3069
+    Token: "der"          	Type: TOKEN	Start: 3070	End: 3073
+    Token: "Uni-Studentenrezension"	Type: TOKEN	Start: 3074	End: 3096
+    Token: "."            	Type: TERM_PUNCT_P	Start: 3096	End: 3097
+    Token: ")"            	Type: CLOSE_BRACKET	Start: 3097	End: 3098	PTB: "-RRB-"
+

@@ -1,0 +1,309 @@
+Paragraph Start: 0
+Paragraph End: 3
+  Text Unit Start: 0
+  Text Unit End: 3
+    Token: "xx"           	Type: TOKEN	Start: 0	End: 2
+    Token: ";"            	Type: PUNCTUATION	Start: 2	End: 3
+
+Paragraph Start: 7
+Paragraph End: 10
+  Text Unit Start: 7
+  Text Unit End: 10
+    Token: "xx"           	Type: TOKEN	Start: 7	End: 9
+    Token: ":"            	Type: PUNCTUATION	Start: 9	End: 10
+
+Paragraph Start: 14
+Paragraph End: 17
+  Text Unit Start: 14
+  Text Unit End: 17
+    Token: "xx"           	Type: TOKEN	Start: 14	End: 16
+    Token: ","            	Type: PUNCTUATION	Start: 16	End: 17
+
+Paragraph Start: 21
+Paragraph End: 24
+  Text Unit Start: 21
+  Text Unit End: 24
+    Token: "xx"           	Type: TOKEN	Start: 21	End: 23
+    Token: "/"            	Type: PUNCTUATION	Start: 23	End: 24	PTB: "\/"
+
+Paragraph Start: 28
+Paragraph End: 31
+  Text Unit Start: 28
+  Text Unit End: 31
+    Token: "xx"           	Type: TOKEN	Start: 28	End: 30
+    Token: "\"            	Type: PUNCTUATION	Start: 30	End: 31
+
+Paragraph Start: 35
+Paragraph End: 38
+  Text Unit Start: 35
+  Text Unit End: 38
+    Token: "\"            	Type: PUNCTUATION	Start: 35	End: 36
+    Token: "xx"           	Type: TOKEN	Start: 36	End: 38
+
+Paragraph Start: 42
+Paragraph End: 45
+  Text Unit Start: 42
+  Text Unit End: 45
+    Token: "xx"           	Type: TOKEN	Start: 42	End: 44
+    Token: "|"            	Type: PUNCTUATION	Start: 44	End: 45
+
+Paragraph Start: 49
+Paragraph End: 52
+  Text Unit Start: 49
+  Text Unit End: 52
+    Token: "xx"           	Type: TOKEN	Start: 49	End: 51
+    Token: "*"            	Type: PUNCTUATION	Start: 51	End: 52	PTB: "\*"
+
+Paragraph Start: 56
+Paragraph End: 59
+  Text Unit Start: 56
+  Text Unit End: 59
+    Token: "xx"           	Type: TOKEN	Start: 56	End: 58
+    Token: "~"            	Type: PUNCTUATION	Start: 58	End: 59
+
+Paragraph Start: 63
+Paragraph End: 66
+  Text Unit Start: 63
+  Text Unit End: 66
+    Token: "xx"           	Type: TOKEN	Start: 63	End: 65
+    Token: "&"            	Type: PUNCTUATION	Start: 65	End: 66
+
+Paragraph Start: 70
+Paragraph End: 73
+  Text Unit Start: 70
+  Text Unit End: 73
+    Token: "xx"           	Type: TOKEN	Start: 70	End: 72
+    Token: "<"            	Type: PUNCTUATION	Start: 72	End: 73
+
+Paragraph Start: 77
+Paragraph End: 80
+  Text Unit Start: 77
+  Text Unit End: 80
+    Token: "xx"           	Type: TOKEN	Start: 77	End: 79
+    Token: ">"            	Type: PUNCTUATION	Start: 79	End: 80
+
+Paragraph Start: 84
+Paragraph End: 87
+  Text Unit Start: 84
+  Text Unit End: 87
+    Token: "xx"           	Type: TOKEN	Start: 84	End: 86
+    Token: "-"            	Type: PUNCTUATION	Start: 86	End: 87
+
+Paragraph Start: 91
+Paragraph End: 97
+  Text Unit Start: 91
+  Text Unit End: 97
+    Token: "xx"           	Type: TOKEN	Start: 91	End: 93
+    Token: "----"         	Type: PUNCTUATION	Start: 93	End: 97
+
+Paragraph Start: 101
+Paragraph End: 104
+  Text Unit Start: 101
+  Text Unit End: 104
+    Token: "xx."          	Type: B_ABBREVIATION	Start: 101	End: 104
+
+Paragraph Start: 108
+Paragraph End: 112
+  Text Unit Start: 108
+  Text Unit End: 112
+    Token: "xx."          	Type: B_ABBREVIATION	Start: 108	End: 111
+    Token: "."            	Type: TERM_PUNCT_P	Start: 111	End: 112
+
+Paragraph Start: 116
+Paragraph End: 121
+  Text Unit Start: 116
+  Text Unit End: 121
+    Token: "xx."          	Type: B_ABBREVIATION	Start: 116	End: 119
+    Token: "."            	Type: TERM_PUNCT_P	Start: 119	End: 120
+    Token: "."            	Type: TERM_PUNCT_P	Start: 120	End: 121
+
+Paragraph Start: 125
+Paragraph End: 128
+  Text Unit Start: 125
+  Text Unit End: 128
+    Token: "xx"           	Type: TOKEN	Start: 125	End: 127
+    Token: "!"            	Type: TERM_PUNCT	Start: 127	End: 128
+
+Paragraph Start: 132
+Paragraph End: 135
+  Text Unit Start: 132
+  Text Unit End: 135
+    Token: "xx"           	Type: TOKEN	Start: 132	End: 134
+    Token: "?"            	Type: TERM_PUNCT	Start: 134	End: 135
+
+Paragraph Start: 139
+Paragraph End: 142
+  Text Unit Start: 139
+  Text Unit End: 142
+    Token: "xx"           	Type: TOKEN	Start: 139	End: 141
+    Token: "`"            	Type: OPEN_PUNCT	Start: 141	End: 142	PTB: "``"
+
+Paragraph Start: 146
+Paragraph End: 149
+  Text Unit Start: 146
+  Text Unit End: 149
+    Token: "xx"           	Type: TOKEN	Start: 146	End: 148
+    Token: "«"            	Type: OPEN_PUNCT	Start: 148	End: 149	PTB: "``"
+
+Paragraph Start: 153
+Paragraph End: 156
+  Text Unit Start: 153
+  Text Unit End: 156
+    Token: "xx"           	Type: TOKEN	Start: 153	End: 155
+    Token: "("            	Type: OPEN_BRACKET	Start: 155	End: 156	PTB: "-LRB-"
+
+Paragraph Start: 160
+Paragraph End: 163
+  Text Unit Start: 160
+  Text Unit End: 163
+    Token: "xx"           	Type: TOKEN	Start: 160	End: 162
+    Token: "{"            	Type: OPEN_BRACKET	Start: 162	End: 163	PTB: "-LCB-"
+
+Paragraph Start: 167
+Paragraph End: 170
+  Text Unit Start: 167
+  Text Unit End: 170
+    Token: "xx"           	Type: TOKEN	Start: 167	End: 169
+    Token: "["            	Type: OPEN_BRACKET	Start: 169	End: 170	PTB: "-LSB-"
+
+Paragraph Start: 174
+Paragraph End: 179
+  Text Unit Start: 174
+  Text Unit End: 179
+    Token: "xx"           	Type: TOKEN	Start: 174	End: 176
+    Token: "<<<"          	Type: OPEN_PUNCT	Start: 176	End: 179	PTB: "``"
+
+Paragraph Start: 183
+Paragraph End: 186
+  Text Unit Start: 183
+  Text Unit End: 186
+    Token: "xx"           	Type: TOKEN	Start: 183	End: 185
+    Token: "'"            	Type: CLOSE_PUNCT	Start: 185	End: 186	PTB: "''"
+
+Paragraph Start: 190
+Paragraph End: 193
+  Text Unit Start: 190
+  Text Unit End: 193
+    Token: "xx"           	Type: TOKEN	Start: 190	End: 192
+    Token: "»"            	Type: CLOSE_PUNCT	Start: 192	End: 193	PTB: "''"
+
+Paragraph Start: 197
+Paragraph End: 200
+  Text Unit Start: 197
+  Text Unit End: 200
+    Token: "xx"           	Type: TOKEN	Start: 197	End: 199
+    Token: ")"            	Type: CLOSE_BRACKET	Start: 199	End: 200	PTB: "-RRB-"
+
+Paragraph Start: 204
+Paragraph End: 207
+  Text Unit Start: 204
+  Text Unit End: 207
+    Token: "xx"           	Type: TOKEN	Start: 204	End: 206
+    Token: "}"            	Type: CLOSE_BRACKET	Start: 206	End: 207	PTB: "-RCB-"
+
+Paragraph Start: 211
+Paragraph End: 214
+  Text Unit Start: 211
+  Text Unit End: 214
+    Token: "xx"           	Type: TOKEN	Start: 211	End: 213
+    Token: "]"            	Type: CLOSE_BRACKET	Start: 213	End: 214	PTB: "-RSB-"
+
+Paragraph Start: 218
+Paragraph End: 223
+  Text Unit Start: 218
+  Text Unit End: 223
+    Token: "xx"           	Type: TOKEN	Start: 218	End: 220
+    Token: ">>>"          	Type: CLOSE_PUNCT	Start: 220	End: 223	PTB: "''"
+
+Paragraph Start: 227
+Paragraph End: 231
+  Text Unit Start: 227
+  Text Unit End: 231
+    Token: """            	Type: OPEN_PUNCT	Start: 227	End: 228	PTB: "``"
+    Token: "xx"           	Type: TOKEN	Start: 228	End: 230
+    Token: """            	Type: CLOSE_PUNCT	Start: 230	End: 231	PTB: "''"
+
+Paragraph Start: 235
+Paragraph End: 238
+  Text Unit Start: 235
+  Text Unit End: 238
+    Token: "xx"           	Type: TOKEN	Start: 235	End: 237
+    Token: "@"            	Type: PUNCTUATION	Start: 237	End: 238
+
+Paragraph Start: 242
+Paragraph End: 248
+  Text Unit Start: 242
+  Text Unit End: 248
+    Token: "abc"          	Type: TOKEN	Start: 242	End: 245
+    Token: "."            	Type: TERM_PUNCT_P	Start: 245	End: 246
+    Token: "."            	Type: TERM_PUNCT_P	Start: 246	End: 247
+    Token: "."            	Type: TERM_PUNCT_P	Start: 247	End: 248
+
+Paragraph Start: 252
+Paragraph End: 255
+  Text Unit Start: 252
+  Text Unit End: 255
+    Token: "."            	Type: TERM_PUNCT_P	Start: 252	End: 253
+    Token: "."            	Type: TERM_PUNCT_P	Start: 253	End: 254
+    Token: "."            	Type: TERM_PUNCT_P	Start: 254	End: 255
+
+Paragraph Start: 259
+Paragraph End: 275
+  Text Unit Start: 259
+  Text Unit End: 275
+    Token: "."            	Type: TERM_PUNCT_P	Start: 259	End: 260
+    Token: "."            	Type: TERM_PUNCT_P	Start: 260	End: 261
+    Token: "."            	Type: TERM_PUNCT_P	Start: 261	End: 262
+    Token: "."            	Type: TERM_PUNCT_P	Start: 262	End: 263
+    Token: "."            	Type: TERM_PUNCT_P	Start: 263	End: 264
+    Token: "."            	Type: TERM_PUNCT_P	Start: 264	End: 265
+    Token: "."            	Type: TERM_PUNCT_P	Start: 265	End: 266
+    Token: ";"            	Type: PUNCTUATION	Start: 266	End: 267
+    Token: ","            	Type: PUNCTUATION	Start: 267	End: 268
+    Token: "---"          	Type: PUNCTUATION	Start: 268	End: 271
+    Token: ";"            	Type: PUNCTUATION	Start: 271	End: 272
+    Token: ">>>"          	Type: CLOSE_PUNCT	Start: 272	End: 275	PTB: "''"
+
+Paragraph Start: 279
+Paragraph End: 285
+  Text Unit Start: 279
+  Text Unit End: 285
+    Token: "<<"           	Type: OPEN_PUNCT	Start: 279	End: 281	PTB: "``"
+    Token: "xx"           	Type: TOKEN	Start: 281	End: 283
+    Token: ">>"           	Type: CLOSE_PUNCT	Start: 283	End: 285	PTB: "''"
+
+Paragraph Start: 289
+Paragraph End: 300
+  Text Unit Start: 289
+  Text Unit End: 300
+    Token: "zbc.xyz.123"  	Type: TOKEN	Start: 289	End: 300
+
+Paragraph Start: 304
+Paragraph End: 311
+  Text Unit Start: 304
+  Text Unit End: 311
+    Token: "@sdfsdf"      	Type: TOKEN	Start: 304	End: 311
+
+Paragraph Start: 315
+Paragraph End: 332
+  Text Unit Start: 315
+  Text Unit End: 332
+    Token: "@sdf.sdfsdf.sdfsf"	Type: TOKEN	Start: 315	End: 332
+
+Paragraph Start: 336
+Paragraph End: 357
+  Text Unit Start: 336
+  Text Unit End: 357
+    Token: "@sdf.sdfsdf.sdfsf"	Type: TOKEN	Start: 336	End: 353
+    Token: "!"            	Type: TERM_PUNCT	Start: 353	End: 354
+    Token: "abc"          	Type: TOKEN	Start: 354	End: 357
+
+Paragraph Start: 361
+Paragraph End: 377
+  Text Unit Start: 361
+  Text Unit End: 377
+    Token: "abc.xyz.123"  	Type: TOKEN	Start: 361	End: 372
+    Token: "!"            	Type: TERM_PUNCT	Start: 372	End: 373
+    Token: "abc"          	Type: TOKEN	Start: 373	End: 376
+    Token: "."            	Type: TERM_PUNCT_P	Start: 376	End: 377
+
