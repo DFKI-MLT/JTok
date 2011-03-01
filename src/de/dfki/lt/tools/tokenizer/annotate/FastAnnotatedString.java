@@ -1,4 +1,4 @@
-/* 
+/*
  * JTok
  * A configurable tokenizer implemented in Java
  *
@@ -34,7 +34,7 @@ import java.util.HashMap;
  * @author Joerg Steffen, DFKI
  * @version $Id: FastAnnotatedString.java,v 1.4 2005-04-12 08:47:37 steffen Exp $ */
 
-public class FastAnnotatedString 
+public class FastAnnotatedString
   implements AnnotatedString {
 
   /**
@@ -51,7 +51,7 @@ public class FastAnnotatedString
 
   /**
    * This contains a <code>HashMap</code> that maps annotation keys to
-   * arrays of <code>Object</code>s holding the annotation values. 
+   * arrays of <code>Object</code>s holding the annotation values.
    * The object at a certain index in the array is the annotation
    * value of the corresponding character in the annotated string. */
   private HashMap annotations;
@@ -75,7 +75,7 @@ public class FastAnnotatedString
 
 
   /**
-   * This creates a new instance of <code>FastAnnotatedString</code>. 
+   * This creates a new instance of <code>FastAnnotatedString</code>.
    * Not to be used outside this class */
   private FastAnnotatedString() {}
 
@@ -112,13 +112,13 @@ public class FastAnnotatedString
     return current();
   }
 
-  
+
   /**
    * This sets the position to getEndIndex()-1 (getEndIndex() if the
    * text is empty) and returns the character at that position
    *
    * @return the last character in the text, or DONE if the text is
-   * empty */ 
+   * empty */
   public char last() {
     if (0 != endIndex)
       index = endIndex - 1;
@@ -130,12 +130,12 @@ public class FastAnnotatedString
 
   /**
    * This gets the character at the current position (as returned by
-   * getIndex()). 
+   * getIndex()).
    *
    * @return the character at the current position or DONE if the current
    * position is off the end of the text */
   public char current() {
-    if (index >= 0 && index < endIndex) { 
+    if (index >= 0 && index < endIndex) {
       return content[index];
     }
     return DONE;
@@ -159,7 +159,7 @@ public class FastAnnotatedString
     return DONE;
   }
 
-  
+
   /**
    * This decrements the index by one and returns the character
    * at the new index. If the current index is getBeginIndex(), the index
@@ -175,7 +175,7 @@ public class FastAnnotatedString
     return DONE;
   }
 
-  
+
   /**
    * This returns the start index of the text.
    *
@@ -185,7 +185,7 @@ public class FastAnnotatedString
     return 0;
   }
 
-  
+
   /**
    * This returns the end index of the text. This index is the index
    * following the last character of the text.
@@ -195,7 +195,7 @@ public class FastAnnotatedString
     return endIndex;
   }
 
-  
+
   /**
    * This returns the current index.
    *
@@ -203,7 +203,7 @@ public class FastAnnotatedString
   public int getIndex() {
     return index;
   }
-  
+
 
   /**
    * This sets the position to the specified position in the text and
@@ -221,7 +221,7 @@ public class FastAnnotatedString
     return current();
   }
 
-  
+
   /**
    * This create a copy of this object.
    *
@@ -290,14 +290,14 @@ public class FastAnnotatedString
    * anEndIndex is greater than the length of the string, or aBeginIndex
    * and anEndIndex together don't define a non-empty subrange of the
    * string  */
-  public void annotate(String key, Object value, 
+  public void annotate(String key, Object value,
                        int aBeginIndex, int anEndIndex) {
     // check if range is legal
     if (aBeginIndex < 0 ||
         anEndIndex > endIndex ||
         aBeginIndex >= anEndIndex)
       throw new IllegalArgumentException("Invalid substring range");
-    
+
     if (!key.equals(currentKey)) {
       // update currents
       Object probe = annotations.get(key);
@@ -306,7 +306,7 @@ public class FastAnnotatedString
         currentValues = new Object[endIndex];
         currentBorders = new boolean[endIndex];
         currentKey = key;
-        // if string is not empty, the first character is already a border 
+        // if string is not empty, the first character is already a border
         if (endIndex > 0)
           currentBorders[0] = true;
         // store arrays
@@ -332,7 +332,7 @@ public class FastAnnotatedString
       currentBorders[anEndIndex] = true;
   }
 
-  
+
   /**
    * This returns the annotation value of the string at the current
    * index for a given key.
@@ -340,21 +340,21 @@ public class FastAnnotatedString
    * @param key a <code>String</code> with the annotation key
    * @return an <code>Object</code> with the annotation value or
    * <code>null</code> if there is no annotation with the given key at
-   * that position */ 
+   * that position */
   public Object getAnnotation(String key) {
     if (index >= 0 && index < endIndex) {
       if (!key.equals(currentKey)) {
         // update currents
         Object probe = annotations.get(key);
-        if (null != probe) { 
+        if (null != probe) {
           currentKey = key;
           currentValues = (Object[])probe;
           currentBorders = (boolean[])borders.get(key);
         }
-        else 
+        else
           return null;
       }
-      
+
       // get annotation value
       return currentValues[index];
     }
@@ -366,7 +366,7 @@ public class FastAnnotatedString
   /**
    * This returns the index of the first character of the run
    * with respect to the given annotation key containing the current
-   * character. 
+   * character.
    *
    * @param key <code>String</code> with an annotation key
    * @return an <code>int</code> with the index */
@@ -394,7 +394,7 @@ public class FastAnnotatedString
   /**
    * This returns the index of the first character following the run
    * with respect to the given annotation key containing the current
-   * character. 
+   * character.
    *
    * @param key <code>String</code> with an attribute key
    * @return an <code>int</code> with the index */
@@ -418,7 +418,7 @@ public class FastAnnotatedString
     return endIndex;
   }
 
-  
+
   /**
    * This returns the index of the first character annotated with the
    * given annotation key following the run containing the current
@@ -438,7 +438,7 @@ public class FastAnnotatedString
       else
         return endIndex;
     }
-        
+
     // search next annotation
     int i;
     for (i = index + 1; i < endIndex; i++) {
@@ -452,8 +452,8 @@ public class FastAnnotatedString
     }
     return endIndex;
   }
-  
-  
+
+
   /**
    * This returns a string representation of the annotated string with the
    * annotation for the given attribute key.
@@ -469,10 +469,10 @@ public class FastAnnotatedString
     index = 0;
     while (index < endIndex) {
       int endAnno = this.getRunLimit(key);
-      if (null != getAnnotation(key)) 
+      if (null != getAnnotation(key))
         result.append(substring(index, endAnno) + "\t" +
                       index + "-" + endAnno + "\t" +
-                      getAnnotation(key) + 
+                      getAnnotation(key) +
                       System.getProperty("line.separator"));
       index = endAnno;
     }

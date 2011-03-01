@@ -1,4 +1,4 @@
-/* 
+/*
  * JTok
  * A configurable tokenizer implemented in Java
  *
@@ -24,26 +24,26 @@ package de.dfki.lt.tools.tokenizer.exceptions;
 
 /**
  * <code>ProcessingException</code> is thrown when the
- * processing of input data causes an error. 
+ * processing of input data causes an error.
  *
  * @author Joerg Steffen, DFKI
  * @version $Id: ProcessingException.java,v 1.3 2005-04-12 08:47:38 steffen Exp $ */
 
 public class ProcessingException extends RuntimeException {
-  
+
   /**
    * This creates a new instance of
    * <code>ProcessingException</code>. */
   public ProcessingException() {
     super();
   }
-  
+
 
   /**
    * This creates a new instance of <code>ProcessingException</code>
    * with an error message <code>aMessage</code>
-   * 
-   * @param aMessage a <code>String</code> with the error message */ 
+   *
+   * @param aMessage a <code>String</code> with the error message */
   public ProcessingException(String aMessage) {
     super(aMessage);
   }

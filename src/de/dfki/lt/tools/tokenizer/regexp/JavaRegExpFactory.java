@@ -1,4 +1,4 @@
-/* 
+/*
  * JTok
  * A configurable tokenizer implemented in Java
  *
@@ -26,12 +26,12 @@ import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 
 /**
  * <code>JavaRegExpFactory</code> extends {@link RegExpFactory} for
- * regular expressions of the java.util.regex package. 
- * 
+ * regular expressions of the java.util.regex package.
+ *
  * @author Joerg Steffen, DFKI
  * @version $Id: JavaRegExpFactory.java,v 1.4 2005-04-12 08:47:37 steffen Exp $ */
 
-public class JavaRegExpFactory 
+public class JavaRegExpFactory
   extends RegExpFactory {
 
   /**
@@ -49,9 +49,9 @@ public class JavaRegExpFactory
    * @return a {@link RegExp} build from the input string
    * @exception InitializationException if regular expression is not
    * well formed */
-  public RegExp createRegExp(String regExpString) 
+  public RegExp createRegExp(String regExpString)
     throws InitializationException {
-    
+
     return new JavaRegExp(regExpString);
   }
 }

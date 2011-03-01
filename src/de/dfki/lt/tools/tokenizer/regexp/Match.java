@@ -1,4 +1,4 @@
-/* 
+/*
  * JTok
  * A configurable tokenizer implemented in Java
  *
@@ -30,7 +30,7 @@ package de.dfki.lt.tools.tokenizer.regexp;
  * @version $Id: Match.java,v 1.3 2005-04-12 08:47:37 steffen Exp $ */
 
 public class Match {
-  
+
   /**
    * This contains the index within the input text where the match in
    * its entirety began. */
@@ -41,7 +41,7 @@ public class Match {
    * in its entirety ends. The return value is the next position after
    * the end of the string.  */
   private int endIndex;
-  
+
 
   /**
    * This contains the <code>String</code> matching the regular
@@ -57,7 +57,7 @@ public class Match {
 
   /**
    * This creates a new instance of <code>Match</code> using the given
-   * parameters. 
+   * parameters.
    *
    * @param aStart an <code>int</code> with the start index
    * @param anEnd an <code>int</code> with the end index
@@ -77,7 +77,7 @@ public class Match {
   public int getStartIndex() {
     return this.startIndex;
   }
-  
+
   /**
    * This sets the field {@link #startIndex} to
    * <code>aStartIndex</code>.
@@ -86,7 +86,7 @@ public class Match {
   private void setStartIndex(int aStartIndex){
     this.startIndex = aStartIndex;
   }
-  
+
 
   /**
    * This returns the index within the input string where the match in
@@ -97,7 +97,7 @@ public class Match {
   public int getEndIndex() {
     return this.endIndex;
   }
-  
+
   /**
    * This sets the field {@link #endIndex} to
    * <code>aEndIndex</code>.
@@ -106,7 +106,7 @@ public class Match {
   private void setEndIndex(int aEndIndex){
     this.endIndex = aEndIndex;
   }
-  
+
 
   /**
    * This returns the field {@link #image}.
@@ -115,7 +115,7 @@ public class Match {
   private String getImage() {
     return this.image;
   }
-  
+
   /**
    * This sets the field {@link #image} to
    * <code>aImage</code>.
@@ -124,12 +124,12 @@ public class Match {
   private void setImage(String aImage){
     this.image = aImage;
   }
-  
+
 
   /**
    * This returns the <code>String</code> matching the regular
-   * expression pattern. 
-   * 
+   * expression pattern.
+   *
    * @return the matching  <code>String</code> */
   public String toString() {
     return this.getImage();

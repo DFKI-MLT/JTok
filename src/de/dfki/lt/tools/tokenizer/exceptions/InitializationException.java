@@ -1,4 +1,4 @@
-/* 
+/*
  * JTok
  * A configurable tokenizer implemented in Java
  *
@@ -30,21 +30,21 @@ package de.dfki.lt.tools.tokenizer.exceptions;
  * @version $Id: InitializationException.java,v 1.3 2005-04-12 08:47:38 steffen Exp $ */
 
 public class InitializationException extends RuntimeException {
-  
+
   /**
    * This creates a new instance of
    * <code>InitializationException</code>. */
   public InitializationException() {
     super();
   }
-  
+
 
   /**
    * This creates a new instance of
    * <code>InitializationException</code> with an error message
-   * <code>aMessage</code> 
-   * 
-   * @param aMessage a <code>String</code> with the error message */ 
+   * <code>aMessage</code>
+   *
+   * @param aMessage a <code>String</code> with the error message */
   public InitializationException(String aMessage) {
     super(aMessage);
   }
