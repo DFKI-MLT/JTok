@@ -1,4 +1,4 @@
-/* 
+/*
  * JTok
  * A configurable tokenizer implemented in Java
  *
@@ -36,17 +36,17 @@ import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
  * @author Joerg Steffen, DFKI
  * @version $Id: CliticsDescription.java,v 1.5 2005-04-12 08:47:37 steffen Exp $ */
 
-public class CliticsDescription 
+public class CliticsDescription
   extends Description {
 
   /**
    * This is the name of the proclitic rule. */
-  protected static final String PROCLITIC_RULE = 
+  protected static final String PROCLITIC_RULE =
     "PROCLITIC_RULE";
 
   /**
    * This is the name of the enclitic rule. */
-  protected static final String ENCLITIC_RULE = 
+  protected static final String ENCLITIC_RULE =
     "ENCLITIC_RULE";
 
 
@@ -58,7 +58,7 @@ public class CliticsDescription
     super.setRulesMap(new HashMap());
     super.setRegExpMap(new HashMap());
   }
-  
+
 
   /**
    * This creates a new instance of <code>CliticsDescription</code> for
@@ -66,13 +66,13 @@ public class CliticsDescription
    * <code>Document clitDescr</code>.
    *
    * @param clitDescr a dom <code>Document</code> with the
-   * clitics description 
+   * clitics description
    * @param classes a <code>Set</code> with the defined classes, used
-   * for validation   
+   * for validation
    * @exception InitializationException if an error occurs */
   public CliticsDescription(Document clitDescr,
                             Set classes) {
-    
+
     this();
     // build the classes matcher map
     super.loadDefinitions(clitDescr, classes);

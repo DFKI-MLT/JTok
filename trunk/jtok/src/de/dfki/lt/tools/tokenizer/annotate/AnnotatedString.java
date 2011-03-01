@@ -1,4 +1,4 @@
-/* 
+/*
  * JTok
  * A configurable tokenizer implemented in Java
  *
@@ -33,10 +33,10 @@ import java.text.CharacterIterator;
  * An <code>AnnotatedString</code> allows iteration through both text
  * and related annotation information. An annotation is a key/value
  * pair, identified by the key. No two annotations on a given character
- * can have the same key. 
+ * can have the same key.
  *
  * A run with respect to an annotation is a maximum text range for
- * which: 
+ * which:
  * - the annotation is undefined or null for the entire range, or
  * - the annotation value is defined and has the same non-null value
  *   for the entire range
@@ -50,7 +50,7 @@ public interface AnnotatedString
   /**
    * Returns the index of the first character of the run
    * with respect to the given annotation key containing the current
-   * character. 
+   * character.
    *
    * @param key <code>String</code> with an annotation key
    * @return an <code>int</code> with the index */
@@ -59,7 +59,7 @@ public interface AnnotatedString
   /**
    * Returns the index of the first character following the run
    * with respect to the given annotation key containing the current
-   * character. 
+   * character.
    *
    * @param key <code>String</code> with an attribute key
    * @return an <code>int</code> with the index */
@@ -78,7 +78,7 @@ public interface AnnotatedString
    * endIndex is greater than the length of the string, or beginIndex
    * and endIndex together don't define a non-empty subrange of the
    * string */
-  public void annotate(String key, Object value, 
+  public void annotate(String key, Object value,
                        int beginIndex, int endIndex);
 
   /**
@@ -88,7 +88,7 @@ public interface AnnotatedString
    * @param key a <code>String</code> with the annotation key
    * @return an <code>Object</code> with the annotation value or
    * <code>null</code> if there is no annotation with the given key at
-   * that position */ 
+   * that position */
   public Object getAnnotation(String key);
 
   /**
@@ -139,4 +139,4 @@ public interface AnnotatedString
    * @return a <code>String</code> */
   public String toString();
 }
-    
+

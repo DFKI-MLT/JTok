@@ -1,4 +1,4 @@
-/* 
+/*
  * JTok
  * A configurable tokenizer implemented in Java
  *
@@ -36,7 +36,7 @@ import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
  * @author Joerg Steffen, DFKI
  * @version $Id: NumbersDescription.java,v 1.5 2005-04-12 08:47:37 steffen Exp $ */
 
-public class NumbersDescription 
+public class NumbersDescription
   extends Description {
 
   /**
@@ -46,12 +46,12 @@ public class NumbersDescription
 
   /**
    * This is the name of the ordinal number rule. */
-  protected static final String ORDINAL_RULE = 
+  protected static final String ORDINAL_RULE =
     "ORDINAL_RULE";
-  
+
   /**
    * This is the name of the digits rule. */
-  protected static final String DIGITS_RULE = 
+  protected static final String DIGITS_RULE =
     "DIGITS_RULE";
 
 
@@ -63,7 +63,7 @@ public class NumbersDescription
     super.setRulesMap(new HashMap());
     super.setRegExpMap(new HashMap());
   }
-  
+
 
   /**
    * This creates a new instance of <code>NumbersDescription</code> for
@@ -71,13 +71,13 @@ public class NumbersDescription
    * <code>Document numbDescr</code>.
    *
    * @param numbDescr a dom <code>Document</code> with the
-   * numbers description 
+   * numbers description
    * @param classes a <code>Set</code> with the defined classes, used
-   * for validation   
+   * for validation
    * @exception InitializationException if an error occurs */
   public NumbersDescription(Document numbDescr,
                             Set classes) {
-    
+
     this();
     // build the classes matcher map
     super.loadDefinitions(numbDescr, classes);

@@ -1,4 +1,4 @@
-/* 
+/*
  * JTok
  * A configurable tokenizer implemented in Java
  *
@@ -24,28 +24,28 @@ package de.dfki.lt.tools.tokenizer.exceptions;
 
 /**
  * <code>LanguageNotSupportedException</code> is thrown when the
- * necessary language resources are not available. 
+ * necessary language resources are not available.
  *
  * @author Joerg Steffen, DFKI
  * @version $Id: LanguageNotSupportedException.java,v 1.3 2005-04-12 08:47:38 steffen Exp $ */
 
-public class LanguageNotSupportedException 
+public class LanguageNotSupportedException
   extends ProcessingException {
-  
+
   /**
    * This creates a new instance of
    * <code>LanguageNotSupportedException</code>. */
   public LanguageNotSupportedException() {
     super();
   }
-  
+
 
   /**
    * This creates a new instance of
    * <code>LanguageNotSupportedException</code> with an error message
-   * <code>aMessage</code> 
-   * 
-   * @param aMessage a <code>String</code> with the error message */ 
+   * <code>aMessage</code>
+   *
+   * @param aMessage a <code>String</code> with the error message */
   public LanguageNotSupportedException(String aMessage) {
     super(aMessage);
   }

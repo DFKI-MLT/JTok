@@ -1,4 +1,4 @@
-/* 
+/*
  * JTok
  * A configurable tokenizer implemented in Java
  *
@@ -50,7 +50,7 @@ public class JavaRegExp implements RegExp {
    * used outside this class. */
   private JavaRegExp() {}
 
-  
+
   /**
    * This creates a new instance of <code>JavaRegExp</code> for a
    * <code>String</code> containing a regular expression.
@@ -58,7 +58,7 @@ public class JavaRegExp implements RegExp {
    * @param regExpString a <code>String</code> with a regular expression
    * @exception InitializationException if regular expression is not
    * well formed */
-  public JavaRegExp(String regExpString) 
+  public JavaRegExp(String regExpString)
     throws InitializationException {
     try {
       this.setJavaRE(Pattern.compile(regExpString));
@@ -67,7 +67,7 @@ public class JavaRegExp implements RegExp {
     }
   }
 
-  
+
   /**
    * This returns the field {@link #javaRE}.
    *
@@ -75,7 +75,7 @@ public class JavaRegExp implements RegExp {
   private Pattern getJavaRE() {
     return this.javaRE;
   }
-  
+
   /**
    * This sets the field {@link #javaRE} to
    * <code>aJavaRE</code>.
@@ -84,16 +84,16 @@ public class JavaRegExp implements RegExp {
   private void setJavaRE(Pattern aJavaRE){
     this.javaRE = aJavaRE;
   }
-  
+
 
   /**
    * This returns an array of all {@link Match}es for the regular
-   * expression in <code>input</code>. 
+   * expression in <code>input</code>.
    *
-   * @param input the <code>String</code> where to look for matches 
+   * @param input the <code>String</code> where to look for matches
    * @return a <code>List</code> of {@link Match}es */
   public List getAllMatches(String input) {
-    
+
     // create Matcher for input
     Matcher javaMatch = this.getJavaRE().matcher(input);
     // convert matches to JavaMatches and collect them in a list
@@ -106,16 +106,16 @@ public class JavaRegExp implements RegExp {
     //return result
     return matches;
   }
-  
-  
+
+
   /**
    * This checks if the regular expression matches the input in its
-   * entirety.  
-   * 
+   * entirety.
+   *
    * @param input the <code>String</code> to check
    * @return a <code>boolean</code> */
   public boolean matches(String input) {
-  
+
     // create Matcher for input
     Matcher javaMatch = this.getJavaRE().matcher(input);
     return javaMatch.matches();
@@ -126,7 +126,7 @@ public class JavaRegExp implements RegExp {
    * This checks if the input contains a match for the regular
    * expression. If yes, a {@link Match} is returned,
    * <code>null</code> otherwise.
-   * 
+   *
    * @param input the <code>String</code> to check
    * @return a {@link Match} or <code>null</code> */
   public Match contains(String input) {
@@ -138,7 +138,7 @@ public class JavaRegExp implements RegExp {
                        javaMatch.end(),
                        javaMatch.group());
     }
-    
+
     return null;
   }
 }

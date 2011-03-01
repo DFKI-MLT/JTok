@@ -1,4 +1,4 @@
-/* 
+/*
  * JTok
  * A configurable tokenizer implemented in Java
  *
@@ -26,7 +26,7 @@ import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 
 /**
  * <code>RegExpFactory</code> is an abstract class for creating
- * objects that fit the {@link RegExp} interface. 
+ * objects that fit the {@link RegExp} interface.
  *
  * @author Joerg Steffen, DFKI
  * @version $Id: RegExpFactory.java,v 1.4 2005-04-12 08:47:37 steffen Exp $ */
@@ -42,6 +42,6 @@ public abstract class RegExpFactory {
    * @return a {@link RegExp} build from the input string
    * @exception InitializationException if regular expression is not
    * well formed */
-  public abstract RegExp createRegExp(String regExpString) 
+  public abstract RegExp createRegExp(String regExpString)
     throws InitializationException;
 }

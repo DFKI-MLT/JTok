@@ -1,4 +1,4 @@
-/* 
+/*
  * JTok
  * A configurable tokenizer implemented in Java
  *
@@ -26,7 +26,7 @@ import java.util.List;
 
 /**
  * <code>RegExp</code> defines an interface for regular expression
- * patterns. 
+ * patterns.
  *
  * @author Joerg Steffen, DFKI
  * @version $Id: RegExp.java,v 1.4 2005-04-12 08:47:37 steffen Exp $ */
@@ -35,16 +35,16 @@ public interface RegExp {
   /**
    * This specifies a method signature that returns a
    * <code>List</code> with all {@link Match}es for the regular
-   * expression in  <code>input</code>. 
+   * expression in  <code>input</code>.
    *
-   * @param input the <code>String</code> where to look for matches 
+   * @param input the <code>String</code> where to look for matches
    * @return a <code>List</code> of {@link Match}es */
   public List getAllMatches(String input);
-  
+
   /**
    * This specifies a method signature that checks if the regular
-   * expression matches the input in its entirety. 
-   * 
+   * expression matches the input in its entirety.
+   *
    * @param input the <code>String</code> to check
    * @return a <code>boolean</code> */
   public boolean matches(String input);
@@ -53,8 +53,8 @@ public interface RegExp {
    * This specifies a method signature that checks if the input
    * contains a match for the regular expression. If yes, a {@link
    * Match} is returned, <code>null</code> otherwise.
-   * 
+   *
    * @param input the <code>String</code> to check
    * @return a {@link Match} or <code>null</code> */
-  public Match contains(String input); 
+  public Match contains(String input);
 }
