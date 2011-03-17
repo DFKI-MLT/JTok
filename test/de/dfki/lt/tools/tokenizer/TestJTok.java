@@ -63,7 +63,7 @@ public class TestJTok {
       throws IOException {
 
     Properties tokProps = new Properties();
-    InputStream in = FileTools.openResourceFileAsStream("jtok.cfg");
+    InputStream in = FileTools.openResourceFileAsStream("jtok/jtok.cfg");
     tokProps.load(in);
     in.close();
     // create new instance of JTok

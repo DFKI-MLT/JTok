@@ -45,7 +45,7 @@ Content:
      Make sure you runs this script in the "bin" folder to make sure that
      the JVM classpath is set correctly.
 
-/conf 
+/conf/jtok 
      This contains the JTok configuration files, especially the language 
      descriptions. For each supported language there is a subdirectory
      that contains several language description files in the XML format.
