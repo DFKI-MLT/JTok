@@ -104,7 +104,7 @@ public class JTok {
 
     // load tokenizer configuration
     Properties props = new Properties();
-    props.load(FileTools.openResourceFileAsStream("jtok.cfg"));
+    props.load(FileTools.openResourceFileAsStream("jtok/jtok.cfg"));
     this.init(props);
   }
 
