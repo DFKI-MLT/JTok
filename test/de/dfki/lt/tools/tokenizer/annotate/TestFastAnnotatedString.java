@@ -32,6 +32,9 @@ import java.io.StringReader;
 
 import org.junit.Test;
 
+import de.dfki.lt.tools.tokenizer.annotate.AnnotatedString;
+import de.dfki.lt.tools.tokenizer.annotate.FastAnnotatedString;
+
 /**
  * <code>TestFastAnnotatedString</code> is a test class for {@link
  * FastAnnotatedString}.

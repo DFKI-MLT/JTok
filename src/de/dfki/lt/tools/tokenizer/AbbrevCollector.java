@@ -38,6 +38,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 
 /**
@@ -48,6 +51,13 @@ import de.dfki.lt.tools.tokenizer.regexp.RegExp;
  * @version $Id: AbbrevCollector.java,v 1.1 2010-04-30 10:05:47 steffen Exp $
  */
 public class AbbrevCollector {
+
+  /**
+   * Contains the logger.
+   */
+  private static final Logger LOG =
+    LoggerFactory.getLogger(AbbrevCollector.class);
+
 
   /**
    * This scans the given directory recursively for files with the given suffix.
@@ -99,7 +109,7 @@ public class AbbrevCollector {
 
     // iterate over corpus files
     for (String oneFileName : trainingFiles) {
-      System.out.println("processing " + oneFileName + " ...");
+      LOG.info("processing " + oneFileName + " ...");
 
       // init reader
       BufferedReader in =
