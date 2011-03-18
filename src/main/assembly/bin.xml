@@ -1,0 +1,44 @@
+<assembly
+  xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+  <id>bin</id>
+  <formats>
+    <format>zip</format>
+  </formats>
+  <dependencySets>
+    <dependencySet>
+      <outputDirectory>/lib</outputDirectory>
+      <includes />
+    </dependencySet>
+  </dependencySets>
+  <fileSets>
+    <fileSet>
+      <outputDirectory>/bin</outputDirectory>
+      <directory>${project.build.directory}/appassembler/bin</directory>
+      <includes />
+    </fileSet>
+    <fileSet>
+      <outputDirectory>/docs</outputDirectory>
+      <directory>${project.build.directory}/apidocs</directory>
+      <includes />
+    </fileSet>
+    <fileSet>
+      <outputDirectory>/conf</outputDirectory>
+      <directory>${project.basedir}/src/main/resources</directory>
+      <includes />
+    </fileSet>
+  </fileSets>
+  <files>
+  <file>
+      <source>${project.basedir}/LICENSE.txt</source>
+    </file>
+    <file>
+      <source>${project.basedir}/NOTICE.txt</source>
+    </file>
+    <file>
+      <source>${project.basedir}/src/main/assembly/README-bin.txt</source>
+      <destName>README.txt</destName>
+    </file>
+  </files>
+</assembly>

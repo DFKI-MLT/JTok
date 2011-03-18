@@ -1,0 +1,11 @@
+JTok V1.9
+written by Joerg Steffen
+Email: steffen@dfki.de
+(c) DFKI, 2003-2011
+
+This product is licensed to you under the GNU Lesser General Public License, Version 2.1.
+You may not use this product except in compliance with the License.
+
+This product includes a number of subcomponents with separate copyright notices and
+license terms. Your use of the source code for the these subcomponents is subject to
+the terms and conditions of the subcomponent's license, as noted in the LICENSE file.
