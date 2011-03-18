@@ -1,0 +1,14 @@
+if [ "$3" ];
+then
+mvn exec:java -Dexec.mainClass=de.dfki.lt.tools.tokenizer.JTok -Dexec.args="$1 $2 $3";
+exit 0;
+fi
+
+if [ "$2" ];
+then
+mvn exec:java -Dexec.mainClass=de.dfki.lt.tools.tokenizer.JTok -Dexec.args="$1 $2";
+exit 0;
+fi
+
+echo "usage: tokenize <filename> <language> [encoding]";
+
