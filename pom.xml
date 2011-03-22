@@ -12,9 +12,9 @@
   <description>Tokenizer and sentence splitter</description>
 
   <scm>
-  	<url>http://heartofgold.opendfki.de/browser/trunk/jtok</url>
+    <url>http://heartofgold.opendfki.de/browser/trunk/jtok</url>
   </scm>
-  
+
   <organization>
     <name>German Research Center for Artificial Intelligence (DFKI)</name>
     <url>http://www.dfki.de/</url>
@@ -29,10 +29,10 @@
   </licenses>
 
   <issueManagement>
-  	<system>Trac</system>
-  	<url>http://heartofgold.opendfki.de/wiki/TracSupport</url>
+    <system>Trac</system>
+    <url>http://heartofgold.opendfki.de/wiki/TracSupport</url>
   </issueManagement>
-  
+
   <developers>
     <developer>
       <id>steffen</id>
@@ -49,8 +49,22 @@
     </developer>
   </developers>
 
+  <distributionManagement>
+    <repository>
+      <id>dfki.lt.releases</id>
+      <name>DFKI LT Lab Release Distribution Repository</name>
+      <url>dav:${lt.repositories.base}releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>dfki.lt.snapshots</id>
+      <name>DFKI LT Lab Snapshot Distribution Repository</name>
+      <url>dav:${lt.repositories.base}snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <lt.repositories.base>http://attila.dfki.uni-sb.de:8081/nexus/content/repositories/</lt.repositories.base>
   </properties>
 
   <dependencies>
@@ -183,5 +197,12 @@
         </configuration>
       </plugin>
     </plugins>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-webdav</artifactId>
+        <version>1.0-beta-2</version>
+      </extension>
+    </extensions>
   </build>
 </project>
