@@ -23,7 +23,7 @@ Installation:
 =============
 JTok uses the Maven build tool (http://maven.apache.org/).
 
-Executing "mvn install" to create target/jtok-core-1.9.jar that contains the
+Execute "mvn install" to create target/jtok-core-1.9.jar that contains the
 core tokenizer classes with all required resources. This includes a default
 configuration as found in src/main/resources. It is used when no configuration
 is found elsewhere on the classpath. To use your own configuration, make sure

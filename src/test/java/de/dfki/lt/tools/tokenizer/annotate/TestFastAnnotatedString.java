@@ -32,9 +32,6 @@ import java.io.StringReader;
 
 import org.junit.Test;
 
-import de.dfki.lt.tools.tokenizer.annotate.AnnotatedString;
-import de.dfki.lt.tools.tokenizer.annotate.FastAnnotatedString;
-
 /**
  * <code>TestFastAnnotatedString</code> is a test class for {@link
  * FastAnnotatedString}.
@@ -62,14 +59,14 @@ public class TestFastAnnotatedString {
     input1.annotate("type", "tok", 8, 9);
     input1.annotate("type", "tok", 10, 14);
     input1.annotate("type", "punct", 14, 15);
-    compareResults(input1, "expected-results/annotated-String-expected-1.txt");
+    compareResults(input1, "expected-results/annotated-string-expected-1.txt");
 
     AnnotatedString input2 = new FastAnnotatedString("sdfslkdflsdfsldfksdf");
     input2.annotate("type", "tok", 5, 15);
     assertEquals("kdflsdfsld\t5-15\ttok", input2.toString("type").trim());
 
     input2.annotate("type", "mid", 9, 12);
-    compareResults(input2, "expected-results/annotated-String-expected-2.txt");
+    compareResults(input2, "expected-results/annotated-string-expected-2.txt");
   }
 
 
