@@ -103,7 +103,7 @@
         <directory>src/main/resources</directory>
       </resource>
       <resource>
-        <directory />
+        <directory>${basedir}</directory>
         <includes>
           <include>LICENSE.txt</include>
           <include>NOTICE.txt</include>
