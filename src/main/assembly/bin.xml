@@ -30,7 +30,7 @@
     </fileSet>
   </fileSets>
   <files>
-  <file>
+    <file>
       <source>${project.basedir}/LICENSE.txt</source>
     </file>
     <file>
