@@ -188,6 +188,44 @@
         </executions>
       </plugin>
       <plugin>
+        <groupId>com.google.code.maven-replacer-plugin</groupId>
+        <artifactId>maven-replacer-plugin</artifactId>
+        <version>1.3.9</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>replace</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <!-- fix appassembler scripts to use shorter classpaths -->
+          <includes>
+            <include>target/appassembler/bin/*</include>
+          </includes>
+          <regex>false</regex>
+          <replacements>
+            <replacement>
+              <token>"%REPO%"\</token>
+              <value>..\lib\</value>
+            </replacement>
+            <replacement>
+              <token>"%BASEDIR%"\</token>
+              <value>..\</value>
+            </replacement>
+            <replacement>
+              <token>"$REPO"/</token>
+              <value>../lib/</value>
+            </replacement>
+            <replacement>
+              <token>"$BASEDIR"/</token>
+              <value>../</value>
+            </replacement>
+          </replacements>
+        </configuration>
+      </plugin>
+      <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
         <configuration>
           <descriptors>
