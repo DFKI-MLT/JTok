@@ -8,7 +8,7 @@
   <packaging>jar</packaging>
 
   <name>JTok</name>
-  <description>Tokenizer and sentence splitter</description>
+  <description>tokenizer and sentence splitter</description>
 
   <scm>
     <url>http://heartofgold.opendfki.de/browser/trunk/jtok</url>
