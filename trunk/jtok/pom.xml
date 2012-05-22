@@ -63,7 +63,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <lt.repositories.base>http://attila.dfki.uni-sb.de:8081/nexus/content/repositories/</lt.repositories.base>
+    <lt.repositories.base>http://www.dfki.de/intern/lt/maven/content/repositories/</lt.repositories.base>
   </properties>
 
   <dependencies>
