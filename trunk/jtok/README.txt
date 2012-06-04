@@ -1,7 +1,7 @@
-JTok V1.9
+JTok V1.10
 written by Joerg Steffen
 Email: steffen@dfki.de
-(c) DFKI, 2003-2011
+(c) DFKI, 2003-2012
 
 This product is licensed to you under the GNU Lesser General Public License, Version 2.1.
 You may not use this product except in compliance with the license.
@@ -23,16 +23,16 @@ Installation:
 =============
 JTok uses the Maven build tool (http://maven.apache.org/).
 
-Execute "mvn install" to create target/jtok-core-1.9.jar that contains the
+Execute "mvn install" to create target/jtok-core-1.10.jar that contains the
 core tokenizer classes with all required resources. This includes a default
 configuration as found in src/main/resources. It is used when no configuration
 is found elsewhere on the classpath. To use your own configuration, make sure
-to add your configuration folder in front of jtok-core-1.9.jar in the classpath.
+to add your configuration folder in front of jtok-core-1.10.jar in the classpath.
 
 Additionally, the API documentation of JTok can be found in target/apidocs. 
 
 Execute "mvn package assembly:single" to create a binary distribution of JTok
-in target/jtok-core-1.9-bin.zip that also contains all 3rd party libraries.
+in target/jtok-core-1.10-bin.zip that also contains all 3rd party libraries.
 
 
 Testing:
@@ -57,7 +57,12 @@ src/main/resources
      XML files.
      After modifying configuration files, execute "mvn compile" to make
      them available to the runtime system or add src/main/resources to
-     the JVM classpath in front of jtok-core-1.9.jar.
+     the JVM classpath in front of jtok-core-1.10.jar.
+     Another option for user specific JTok configuration is to put it
+     into a folder 'jtok-user' in the classpath. This location is
+     searched first for any JTok configuration. The expected folder
+     structure in 'jtok-user' is the same as in 'conf', so don't forget
+     the 'jtok' directly under 'jtok-user'.
 
 src/main/scripts
      tokenize: a simple script for playing around with JTok. It takes

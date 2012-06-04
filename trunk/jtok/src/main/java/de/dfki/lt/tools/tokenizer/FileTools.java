@@ -325,18 +325,23 @@ public class FileTools {
   public static InputStream openResourceFileAsStream(String resourceFileName)
     throws FileNotFoundException {
 
-    InputStream is = ClassLoader.getSystemResourceAsStream(resourceFileName);
+    // first check for any user specific configuration in 'jtok-user'
+    InputStream is = ClassLoader.getSystemResourceAsStream(
+      "jtok-user/" + resourceFileName);
     if (null == is) {
-      // try local loader with absolute path
-      is = FileTools.class.getResourceAsStream("/" + resourceFileName);
+      is = ClassLoader.getSystemResourceAsStream(resourceFileName);
       if (null == is) {
-        // try local loader, relative, just in case
-        is = FileTools.class.getResourceAsStream(resourceFileName);
+        // try local loader with absolute path
+        is = FileTools.class.getResourceAsStream("/" + resourceFileName);
         if (null == is) {
-          // can't find it on classpath, so try relative to current directory
-          // this will throw security exception under and applet but there's
-          // no other choice left
-          is = new FileInputStream(resourceFileName);
+          // try local loader, relative, just in case
+          is = FileTools.class.getResourceAsStream(resourceFileName);
+          if (null == is) {
+            // can't find it on classpath, so try relative to current directory
+            // this will throw security exception under and applet but there's
+            // no other choice left
+            is = new FileInputStream(resourceFileName);
+          }
         }
       }
     }
