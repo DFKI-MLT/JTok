@@ -1,7 +1,7 @@
-JTok V1.9
+JTok V1.10
 written by Joerg Steffen
 Email: steffen@dfki.de
-(c) DFKI, 2003-2011
+(c) DFKI, 2003-2012
 
 This product is licensed to you under the GNU Lesser General Public License, Version 2.1.
 You may not use this product except in compliance with the license.
@@ -36,8 +36,13 @@ conf
      the token type hierarchy and definition and rules for matching the
      different token types. For further details, see commments in the
      XML files. Make sure to include this directory in front of
-     jtok-core-1.9.jar in the JVM classpath, otherwise the default
+     jtok-core-1.10.jar in the JVM classpath, otherwise the default
      configuration included in the jar will be used.
+     Another option for user specific JTok configuration is to put it
+     into a folder 'jtok-user' in the classpath. This location is
+     searched first for any JTok configuration. The expected folder
+     structure in 'jtok-user' is the same as in 'conf', so don't forget
+     the 'jtok' directly under 'jtok-user'.
 
 docs
      The API documentation of JTok as created by Javadoc. 
