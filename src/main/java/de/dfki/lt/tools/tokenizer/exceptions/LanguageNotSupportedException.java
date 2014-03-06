@@ -2,7 +2,7 @@
  * JTok
  * A configurable tokenizer implemented in Java
  *
- * (C) 2003 - 2005  DFKI Language Technology Lab http://www.dfki.de/lt
+ * (C) 2003 - 2014  DFKI Language Technology Lab http://www.dfki.de/lt
  *   Author: Joerg Steffen, steffen@dfki.de
  *
  *   This program is free software; you can redistribute it and/or
@@ -23,30 +23,69 @@
 package de.dfki.lt.tools.tokenizer.exceptions;
 
 /**
- * <code>LanguageNotSupportedException</code> is thrown when the
- * necessary language resources are not available.
+ * {@link LanguageNotSupportedException} is thrown when the necessary language
+ * resources are not available.
  *
  * @author Joerg Steffen, DFKI
- * @version $Id: LanguageNotSupportedException.java,v 1.3 2005-04-12 08:47:38 steffen Exp $ */
-
+ */
 public class LanguageNotSupportedException
-  extends ProcessingException {
+    extends ProcessingException {
 
   /**
-   * This creates a new instance of
-   * <code>LanguageNotSupportedException</code>. */
+   * Creates a new instance of {@link LanguageNotSupportedException} with null
+   * as its detail message. The cause is not initialized.
+   */
   public LanguageNotSupportedException() {
+
     super();
   }
 
 
   /**
-   * This creates a new instance of
-   * <code>LanguageNotSupportedException</code> with an error message
-   * <code>aMessage</code>
+   * Creates a new instance of {@link LanguageNotSupportedException} with the
+   * given detail message. The cause is not initialized.
    *
-   * @param aMessage a <code>String</code> with the error message */
-  public LanguageNotSupportedException(String aMessage) {
-    super(aMessage);
+   * @param message
+   *          the detail message
+   */
+  public LanguageNotSupportedException(String message) {
+
+    super(message);
+  }
+
+
+  /**
+   * Creates a new instance of {@link LanguageNotSupportedException} with the
+   * specified cause and a detail message of (cause==null ? null :
+   * cause.toString()) (which typically contains the class and detail message of
+   * cause).
+   *
+   * @param cause
+   *          a throwable with the cause of the exception (which is saved for
+   *          later retrieval by the {@link #getCause()} method). (A
+   *          {@code null} value is permitted, and indicates that the cause is
+   *          nonexistent or unknown.)
+   */
+  public LanguageNotSupportedException(Throwable cause) {
+
+    super(cause);
+  }
+
+
+  /**
+   * Creates a new instance of {@link LanguageNotSupportedException} with the
+   * given detail message and the given cause.
+   *
+   * @param message
+   *          the detail message
+   * @param cause
+   *          a throwable with the cause of the exception (which is saved for
+   *          later retrieval by the {@link #getCause()} method). (A
+   *          {@code null} value is permitted, and indicates that the cause is
+   *          nonexistent or unknown.)
+   */
+  public LanguageNotSupportedException(String message, Throwable cause) {
+
+    super(message, cause);
   }
 }

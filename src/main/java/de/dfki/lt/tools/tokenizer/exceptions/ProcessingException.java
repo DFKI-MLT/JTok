@@ -2,7 +2,7 @@
  * JTok
  * A configurable tokenizer implemented in Java
  *
- * (C) 2003 - 2005  DFKI Language Technology Lab http://www.dfki.de/lt
+ * (C) 2003 - 2014  DFKI Language Technology Lab http://www.dfki.de/lt
  *   Author: Joerg Steffen, steffen@dfki.de
  *
  *   This program is free software; you can redistribute it and/or
@@ -23,28 +23,67 @@
 package de.dfki.lt.tools.tokenizer.exceptions;
 
 /**
- * <code>ProcessingException</code> is thrown when the
- * processing of input data causes an error.
+ * {@link ProcessingException} is thrown when the processing of input data
+ * causes an error.
  *
  * @author Joerg Steffen, DFKI
- * @version $Id: ProcessingException.java,v 1.3 2005-04-12 08:47:38 steffen Exp $ */
-
+ */
 public class ProcessingException extends RuntimeException {
 
   /**
-   * This creates a new instance of
-   * <code>ProcessingException</code>. */
+   * Creates a new instance of {@link ProcessingException} with null as its
+   * detail message. The cause is not initialized.
+   */
   public ProcessingException() {
+
     super();
   }
 
 
   /**
-   * This creates a new instance of <code>ProcessingException</code>
-   * with an error message <code>aMessage</code>
+   * Creates a new instance of {@link ProcessingException} with the given detail
+   * message. The cause is not initialized.
    *
-   * @param aMessage a <code>String</code> with the error message */
-  public ProcessingException(String aMessage) {
-    super(aMessage);
+   * @param message
+   *          the detail message
+   */
+  public ProcessingException(String message) {
+
+    super(message);
+  }
+
+
+  /**
+   * Creates a new instance of {@link ProcessingException} with the specified
+   * cause and a detail message of (cause==null ? null : cause.toString())
+   * (which typically contains the class and detail message of cause).
+   *
+   * @param cause
+   *          a throwable with the cause of the exception (which is saved for
+   *          later retrieval by the {@link #getCause()} method). (A
+   *          {@code null} value is permitted, and indicates that the cause is
+   *          nonexistent or unknown.)
+   */
+  public ProcessingException(Throwable cause) {
+
+    super(cause);
+  }
+
+
+  /**
+   * Creates a new instance of {@link ProcessingException} with the given detail
+   * message and the given cause.
+   *
+   * @param message
+   *          the detail message
+   * @param cause
+   *          a throwable with the cause of the exception (which is saved for
+   *          later retrieval by the {@link #getCause()} method). (A
+   *          {@code null} value is permitted, and indicates that the cause is
+   *          nonexistent or unknown.)
+   */
+  public ProcessingException(String message, Throwable cause) {
+
+    super(message, cause);
   }
 }

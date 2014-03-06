@@ -2,7 +2,7 @@
  * JTok
  * A configurable tokenizer implemented in Java
  *
- * (C) 2003 - 2005  DFKI Language Technology Lab http://www.dfki.de/lt
+ * (C) 2003 - 2014  DFKI Language Technology Lab http://www.dfki.de/lt
  *   Author: Joerg Steffen, steffen@dfki.de
  *
  *   This program is free software; you can redistribute it and/or
@@ -25,7 +25,6 @@ package de.dfki.lt.tools.tokenizer;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -34,42 +33,47 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
-import java.nio.charset.UnsupportedCharsetException;
 import java.util.ArrayList;
 import java.util.List;
 
-
 /**
- * <code>FileTools</code> provides static methods to work on files and
- * stream.
+ * Provides static methods to work on files and stream.
  *
  * @author Joerg Steffen, DFKI
- * @version $Id: FileTools.java,v 1.7 2010-01-22 16:33:23 steffen Exp $ */
-
+ */
 public class FileTools {
 
   /**
-   * <code>FileTools</code> cannot be instantiated. */
-  private FileTools() {}
+   * Creates a new instance of {@link FileTools}. Not to be used.
+   */
+  private FileTools() {
+
+    // private constructor to enforce noninstantiability
+  }
 
 
   /**
-   * Write an input stream to a file. Fail, if filename already exists.
+   * Writes an input stream to a file. Fails if filename already exists.
    *
-   * @param inputStream some stream to be saved
-   * @param file the target file
-   * @exception IOException when file can't be saved */
+   * @param inputStream
+   *          some stream to be saved
+   * @param file
+   *          the target file
+   * @exception IOException
+   *              when file can't be saved
+   */
   public static void saveStream(InputStream inputStream, File file)
-    throws IOException {
+      throws IOException {
 
     int i;
     byte ab[] = new byte[4096];
     FileOutputStream fos = null;
     try {
       fos = new FileOutputStream(file);
-      while ((i = inputStream.read(ab)) > 0)
+      while ((i = inputStream.read(ab)) > 0) {
         fos.write(ab, 0, i);
-    } finally { //always close
+      }
+    } finally { // always close
       if (null != fos) {
         fos.close();
       }
@@ -78,14 +82,17 @@ public class FileTools {
 
 
   /**
-   * Read a url content to a string.
+   * Reads a URL content to a string.
    *
-   * @param url some url
-   * @return the content as a string
-   * @exception IOException thrown when ressource cannot
-   * be opened for reading */
+   * @param url
+   *          some URL
+   * @return the content as a string or {@code null} if content could not be
+   *         read
+   * @exception IOException
+   *              thrown when resource cannot be opened for reading
+   */
   public static String readUrlToString(URL url)
-    throws IOException {
+      throws IOException {
 
     URLConnection con = url.openConnection();
     con.connect();
@@ -110,19 +117,25 @@ public class FileTools {
         bos.close();
       }
     }
-    return bos.toString();
+    if (null != bos) {
+      return bos.toString();
+    }
+    return null;
   }
 
 
   /**
-   * Read a url content to a byte array.
+   * Reads a URL content to a byte array.
    *
-   * @param url some url
-   * @return the content as a byte array
-   * @exception IOException thrown when ressource cannot
-   * be opened for reading */
+   * @param url
+   *          some URL
+   * @return the content as a byte array or {@code null} if content could not be
+   *         read
+   * @exception IOException
+   *              thrown when resource cannot be opened for reading
+   */
   public static byte[] readUrlToByteArray(URL url)
-    throws IOException {
+      throws IOException {
 
     URLConnection con = url.openConnection();
     con.connect();
@@ -147,130 +160,165 @@ public class FileTools {
         bos.close();
       }
     }
-    return bos.toByteArray();
+
+    if (null != bos) {
+      return bos.toByteArray();
+    }
+    return null;
   }
 
 
   /**
-   * Reads some input stream and writes it into an output stream. The
-   * method applies some efficient buffering in byte arrays and is the
-   * basis for all read...-methods in this class.
+   * Reads some input stream and writes it into an output stream. The method
+   * applies some efficient buffering in byte arrays and is the basis for all
+   * read...-methods in this class.
    *
-   * @param os some output stream.
-   * @param is some input stream.
-   * @exception java.io.IOException thrown when reading or
-   * writing fails */
+   * @param os
+   *          some output stream.
+   * @param is
+   *          some input stream.
+   * @exception IOException
+   *              thrown when reading or writing fails
+   */
   public static void readInputStream(OutputStream os, InputStream is)
-    throws java.io.IOException {
+      throws IOException {
 
     byte[] buffer = new byte[4096];
     int readb;
     while (true) {
       readb = is.read(buffer);
-      if (readb == -1) break;
-      os.write(buffer,0,readb);
+      if (readb == -1) {
+        break;
+      }
+      os.write(buffer, 0, readb);
     }
   }
 
 
   /**
-   * Read some input stream and return its content as a string.
+   * Reads some input stream and return its content as a string.
    *
-   * @param is the input stream
-   * @return the content of the stream as string
-   * @exception java.io.IOException */
-  public static String readInputStream(InputStream is)
-    throws java.io.IOException {
+   * @param is
+   *          the input stream
+   * @param encoding
+   *          the encoding to use
+   * @return the content of the stream as string or {@code null} if content
+   *         could not be read
+   * @exception IOException
+   *              if there is an error when reading the stream
+   */
+  public static String readInputStream(InputStream is, String encoding)
+      throws IOException {
 
     ByteArrayOutputStream bos = null;
     try {
       bos = new ByteArrayOutputStream();
-      readInputStream(bos,is);
+      readInputStream(bos, is);
     } finally { // always close
       if (null != bos) {
         bos.close();
       }
     }
-    return bos.toString();
+
+    if (null != bos) {
+      return bos.toString(encoding);
+    }
+    return null;
   }
 
 
   /**
-   * Read some input stream and return its content as byte array.
+   * Reads some input stream and return its content as byte array.
    *
-   * @param is the input stream
-   * @return the content of the stream as byte array
-   * @exception java.io.IOException */
+   * @param is
+   *          the input stream
+   * @return the content of the stream as byte array or {@code null} if content
+   *         could not be read
+   * @exception IOException
+   *              if there is an error when reading the stream
+   */
   public static byte[] readInputStreamToByteArray(InputStream is)
-    throws java.io.IOException {
+      throws IOException {
 
     ByteArrayOutputStream bos = null;
     try {
       bos = new ByteArrayOutputStream();
-      readInputStream(bos,is);
+      readInputStream(bos, is);
     } finally { // always close
       if (null != bos) {
         bos.close();
       }
     }
-    return bos.toByteArray();
+
+    if (null != bos) {
+      return bos.toByteArray();
+    }
+    return null;
   }
 
 
   /**
-   * This recursivly collects all filenames in the directory
-   * <code>aDirectory</code> with suffix <code>aSuffix</code> and
-   * returns them in a <code>List</code>.
+   * Recursively collects all filenames in the given directory with the given
+   * suffix and returns them in a list.
    *
-   * @param aDirectory a <code>String</code> with the directory name
-   * @param aSuffix a <code>String</code> with a filename suffix
-   * @return a <code>List</code> with the filenames */
-  public static List getFilesFromDir(String aDirectory,
-				     String aSuffix) {
+   * @param directory
+   *          the directory name
+   * @param suffix
+   *          the filename suffix
+   * @return a list with the filenames
+   */
+  public static List<String> getFilesFromDir(String directory, String suffix) {
 
     // initialize result list
-    List fileNames = new ArrayList();
+    List<String> fileNames = new ArrayList<>();
 
     // add file separator to directory if necessary
-    if (!aDirectory.endsWith(File.separator)) {
-      aDirectory = aDirectory + File.separator;
+    if (!directory.endsWith(File.separator)) {
+      directory = directory + File.separator;
     }
 
     // check if input is an directory
-    File directory = new File(aDirectory);
-    if (!directory.isDirectory()) {
+    File dirFile = new File(directory);
+    if (!dirFile.isDirectory()) {
       return fileNames;
     }
 
     // iterate over files in directory
-    File[] filesInDir = directory.listFiles();
+    File[] filesInDir = dirFile.listFiles();
     for (int i = 0; i < filesInDir.length; i++) {
       // if file is a directory, collect recursivly
       if (filesInDir[i].isDirectory()) {
         fileNames.addAll(getFilesFromDir
-                         (filesInDir[i].getAbsolutePath(), aSuffix));
+          (filesInDir[i].getAbsolutePath(), suffix));
       }
       else if (filesInDir[i].getName()
-               .endsWith(aSuffix))
+        .endsWith(suffix)) {
         // otherwise, add filename with matching suffix to result list
         fileNames.add(filesInDir[i].getAbsolutePath());
+      }
     }
     return fileNames;
   }
 
 
   /**
-   * This simply copies a source file to a target file.
+   * Copies a source file to a target file.
    *
-   * @param source the source <code>File</code> to copy
-   * @param target the target <code>File</code> */
+   * @param source
+   *          the source file to copy
+   * @param target
+   *          the target file
+   * @throws IOException
+   *           if copying fails
+   */
   public static void copyFile(File source, File target)
-    throws java.io.IOException {
-    FileInputStream fis  = new FileInputStream(source);
+      throws IOException {
+
+    FileInputStream fis = new FileInputStream(source);
     FileOutputStream fos = new FileOutputStream(target);
     byte[] buf = new byte[1024];
     int i = 0;
-    while((i = fis.read(buf)) != -1) {
+    while ((i = fis.read(buf)) != -1) {
       fos.write(buf, 0, i);
     }
     fis.close();
@@ -279,14 +327,20 @@ public class FileTools {
 
 
   /**
-   * New NIO based method to read the contents of a file as byte[] array.
-   * Only files up to size Integer.MAX_INT can be read.
-   * The ByteBuffer is rewinded when returned.
+   * New NIO based method to read the contents of a file as byte array. Only
+   * files up to size Integer.MAX_INT can be read. The byte buffer is rewinded
+   * when returned.
+   *
+   * @param file
+   *          the file to read
+   * @return the file content as byte array
+   * @throws IOException
+   *           if reading the content fails
    */
-  public static ByteBuffer readFile(File aFile)
-    throws FileNotFoundException, IOException {
+  public static ByteBuffer readFile(File file)
+      throws IOException {
 
-    FileInputStream fis = new FileInputStream(aFile);
+    FileInputStream fis = new FileInputStream(file);
     FileChannel fc = fis.getChannel();
     // for some reason, the buffer must be 1 byte bigger than the file
     ByteBuffer readBuffer = ByteBuffer.allocate((int)fc.size());
@@ -298,32 +352,39 @@ public class FileTools {
 
 
   /**
-   * New NIO based method to read a file as a String with the given
-   * charset encoding.
-   * @param aCharSet the charset to use for conversion, if null
-   * ISO-8859-15 is used */
-  public static String readFileAsString(File aFile, String aCharSet)
-    throws FileNotFoundException, IOException, UnsupportedCharsetException {
-    ByteBuffer buffer = readFile(aFile);
-     if (null == aCharSet) {
-       aCharSet = "ISO-8859-15";
-     }
-     String converted = new String(buffer.array(), aCharSet);
-     return converted;
+   * New NIO based method to read a file as a String with the given encoding.
+   *
+   * @param file
+   *          the file to read
+   * @param encoding
+   *          the encoding to use for conversion, if {@code null} UTF-8 is used
+   * @return the file content as string
+   * @throws IOException
+   *           if there is an error when reading the file
+   */
+  public static String readFileAsString(File file, String encoding)
+      throws IOException {
+
+    ByteBuffer buffer = readFile(file);
+    if (null == encoding) {
+      encoding = "UTF-8";
+    }
+    String converted = new String(buffer.array(), encoding);
+    return converted;
   }
 
 
   /**
-   * This returns an input stream for the given resource file.
+   * Returns an input stream for the given resource file.
    *
-   * @param resourceFileName a <code>String with the resource name
-   * @return an <code>InputStream</code> where to read from the content of the
-   * resource file
-   * @throws FileNotFoundException if there is an error when reading the
-   * resource
+   * @param resourceFileName
+   *          the resource name
+   * @return an input stream where to read from the content of the resource file
+   * @throws IOException
+   *           if there is an error when reading the resource
    */
   public static InputStream openResourceFileAsStream(String resourceFileName)
-    throws FileNotFoundException {
+      throws IOException {
 
     // first check for any user specific configuration in 'jtok-user'
     InputStream is = ClassLoader.getSystemResourceAsStream(
@@ -349,5 +410,3 @@ public class FileTools {
     return is;
   }
 }
-
-

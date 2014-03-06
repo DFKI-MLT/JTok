@@ -2,7 +2,7 @@
  * JTok
  * A configurable tokenizer implemented in Java
  *
- * (C) 2003 - 2005  DFKI Language Technology Lab http://www.dfki.de/lt
+ * (C) 2003 - 2014  DFKI Language Technology Lab http://www.dfki.de/lt
  *   Author: Joerg Steffen, steffen@dfki.de
  *
  *   This program is free software; you can redistribute it and/or
@@ -25,118 +25,138 @@ package de.dfki.lt.tools.tokenizer.annotate;
 import java.text.CharacterIterator;
 
 /**
- * <code>AnnotatedString</code> is an interface for annotating strings
- * and working on them. It merges the functionality of
- * java.text.AttributedCharacterIterator and
- * java.text.AttributedString.
- *
- * An <code>AnnotatedString</code> allows iteration through both text
- * and related annotation information. An annotation is a key/value
- * pair, identified by the key. No two annotations on a given character
- * can have the same key.
- *
- * A run with respect to an annotation is a maximum text range for
- * which:
- * - the annotation is undefined or null for the entire range, or
- * - the annotation value is defined and has the same non-null value
- *   for the entire range
+ * {@link AnnotatedString} is an interface for annotating strings and working on
+ * them. It merges the functionality of
+ * {@link java.text.AttributedCharacterIterator} and
+ * {@link java.text.AttributedString}.
+ * <p>
+ * An annotated string allows iteration through both text and related annotation
+ * information. An annotation is a key/value pair, identified by the key. No two
+ * annotations on a given character can have the same key.
+ * <p>
+ * A run with respect to an annotation is a maximum text range for which:
+ * <ul>
+ * <li>the annotation is undefined or null for the entire range, or
+ * <li>the annotation value is defined and has the same non-null value for the
+ * entire range
+ * </ul>
  *
  * @author Joerg Steffen, DFKI
- * @version $Id: AnnotatedString.java,v 1.4 2005-04-12 08:47:37 steffen Exp $ */
-
-public interface AnnotatedString
-  extends CharacterIterator {
+ */
+public interface AnnotatedString extends CharacterIterator {
 
   /**
-   * Returns the index of the first character of the run
-   * with respect to the given annotation key containing the current
-   * character.
+   * Returns the index of the first character of the run with respect to the
+   * given annotation key containing the current character.
    *
-   * @param key <code>String</code> with an annotation key
-   * @return an <code>int</code> with the index */
-  public int getRunStart(String key);
+   * @param key
+   *          the annotation key
+   * @return the index
+   */
+  int getRunStart(String key);
+
 
   /**
-   * Returns the index of the first character following the run
-   * with respect to the given annotation key containing the current
-   * character.
+   * Returns the index of the first character following the run with respect to
+   * the given annotation key containing the current character.
    *
-   * @param key <code>String</code> with an attribute key
-   * @return an <code>int</code> with the index */
-  public int getRunLimit(String key);
+   * @param key
+   *          the annotation key
+   * @return the index
+   */
+  int getRunLimit(String key);
+
 
   /**
    * Adds an annotation to a subrange of the string.
    *
-   * @param key a <code>String</code> with the annotation key
-   * @param value a <code>Object</code> with the annotation value
-   * @param beginIndex an <code>int</code> with the index of the first
-   * character of the range
-   * @param endIndex an <code>int</code> with the index of the
-   * character following the last character of the range
-   * @exception IllegalArgumentException if beginIndex is less then 0,
-   * endIndex is greater than the length of the string, or beginIndex
-   * and endIndex together don't define a non-empty subrange of the
-   * string */
-  public void annotate(String key, Object value,
-                       int beginIndex, int endIndex);
+   * @param key
+   *          the annotation key
+   * @param value
+   *          the annotation value
+   * @param beginIndex
+   *          the index of the first character of the range
+   * @param endIndex
+   *          the index of the character following the last character of the
+   *          range
+   * @exception IllegalArgumentException
+   *              if beginIndex is less then 0, endIndex is greater than the
+   *              length of the string, or beginIndex and endIndex together
+   *              don't define a non-empty subrange of the string
+   */
+  void annotate(String key, Object value, int beginIndex, int endIndex);
+
 
   /**
-   * Returns the annotation value of the string at the current index
-   * for a given annotation key.
+   * Returns the annotation value of the string at the current index for the
+   * given annotation key.
    *
-   * @param key a <code>String</code> with the annotation key
-   * @return an <code>Object</code> with the annotation value or
-   * <code>null</code> if there is no annotation with the given key at
-   * that position */
+   * @param key
+   *          the annotation key
+   * @return the annotation value or {@code null} if there is no annotation with
+   *         the given key at that position
+   */
   public Object getAnnotation(String key);
+
 
   /**
    * Returns the index of the first character annotated with the given
-   * annotation key following the run containing the current character
-   * with respect to the given annotation key.
+   * annotation key following the run containing the current character with
+   * respect to the given annotation key.
    *
-   * @param key a <code>String</code> with the annotation key
-   * @return an <code>int</code> with the index */
+   * @param key
+   *          the annotation key
+   * @return the index
+   */
   public int findNextAnnotation(String key);
 
-  /**
-   * Returns the substring between the specified indices.
-   *
-   * @param beginIndex an <code>int</code> with the index of the first
-   * character of the range
-   * @param endIndex an <code>int</code> with the index of the
-   * character following the last character of the range
-   * @return a <code>String</code> with the substring
-   * @exception IllegalArgumentException if beginIndex is less then 0,
-   * endIndex is greater than the length of the string, or beginIndex
-   * and endIndex together don't define a non-empty subrange of the
-   * string */
-  public String substring(int beginIndex, int endIndex);
 
   /**
-   * Returns the character from the specified position without
-   * changing the index.
+   * Returns the substring between the given indices.
    *
-   * @param charIndex the index within the text; valid values range from
-   * getBeginIndex() to getEndIndex(); an IllegalArgumentException is thrown
-   * if an invalid value is supplied
-   * @return the character at the specified position or DONE if the
-   * specified position is equal to getEndIndex() */
-  public char charAt(int charIndex);
+   * @param startIndex
+   *          the index of the first character of the range
+   * @param endIndex
+   *          the index of the character following the last character of the
+   *          range
+   * @return the substring
+   * @exception IllegalArgumentException
+   *              if beginIndex is less then 0, endIndex is greater than the
+   *              length of the string, or beginIndex and endIndex together
+   *              don't define a non-empty subrange of the string
+   */
+  String substring(int startIndex, int endIndex);
+
 
   /**
-   * Returns a string representation of the annotated string with the
-   * annotation for the given attribute key.
+   * Returns the character from the given position without changing the index.
    *
-   * @param key <code>String</code> with an attribute key
-   * @return a <code>String</code> */
+   * @param charIndex
+   *          the index within the text; valid values range from
+   *          {@link #getBeginIndex()} to {@link #getEndIndex()}; an
+   *          IllegalArgumentException is thrown if an invalid value is supplied
+   * @return the character at the specified position or {@link #DONE} if the
+   *         specified position is equal to {@link #getEndIndex()}
+   */
+  char charAt(int charIndex);
+
+
+  /**
+   * Returns a string representation of the annotated string with the annotation
+   * for the given annotation key.
+   *
+   * @param key
+   *          the annotation key
+   * @return the string representation
+   */
   public String toString(String key);
+
 
   /**
    * Returns the surface string of the annotated string.
    *
-   * @return a <code>String</code> */
+   * @return the surface string
+   */
+  @Override
   public String toString();
 }
-

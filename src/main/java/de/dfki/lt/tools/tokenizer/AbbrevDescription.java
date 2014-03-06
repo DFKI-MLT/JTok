@@ -2,7 +2,7 @@
  * JTok
  * A configurable tokenizer implemented in Java
  *
- * (C) 2003 - 2005  DFKI Language Technology Lab http://www.dfki.de/lt
+ * (C) 2003 - 2014  DFKI Language Technology Lab http://www.dfki.de/lt
  *   Author: Joerg Steffen, steffen@dfki.de
  *
  *   This program is free software; you can redistribute it and/or
@@ -23,7 +23,6 @@
 package de.dfki.lt.tools.tokenizer;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
@@ -33,63 +32,56 @@ import java.util.Set;
 import org.w3c.dom.Document;
 
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
+import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 
 /**
- * <code>AbbrevDescription</code> extends {@link Description}. It
- * manages the content of a abbreviation description file.
+ * Manages the content of a abbreviation description file.
  *
  * @author Joerg Steffen, DFKI
- * @version $Id: AbbrevDescription.java,v 1.6 2010-04-30 09:26:46 steffen Exp $ */
-
+ */
 public class AbbrevDescription
-  extends Description {
+    extends Description {
 
   /**
-   * This is the name of the abbreviation rule. */
-  protected static final String ABBREV_RULE =
-    "ABBREV_RULE";
+   * The name of the abbreviation rule.
+   */
+  protected static final String ABBREV_RULE = "ABBREV_RULE";
 
   /**
-   * This is the name of the mid name initial rule. */
-  protected static final String INITIAL_RULE =
-    "INITIAL_RULE";
+   * The name of the mid name initial rule.
+   */
+  protected static final String INITIAL_RULE = "INITIAL_RULE";
 
   /**
-   * This contains the most common terms that only start with a capital letter
-   * when they are at the beginning of a sentence.
+   * Contains the most common terms that only start with a capital letter when
+   * they are at the beginning of a sentence.
    */
   private Set<String> nonCapTerms;
 
-  /**
-   * This creates a new instance of <code>AbbrevDescription</code>. Not
-   * to be used outside this class. */
-  private AbbrevDescription() {
-    super.setDefinitionsMap(new HashMap());
-    super.setRulesMap(new HashMap());
-    super.setRegExpMap(new HashMap());
-    super.setListsMap(new HashMap());
-  }
-
 
   /**
-   * This creates a new instance of <code>AbbrevDescription</code> for
-   * the abbreviation description contained in the dom
-   * <code>Document abbrDescr</code>.
+   * Creates a new instance of {@link AbbrevDescription} for the abbreviation
+   * description contained in the given DOM document.
    *
-   * @param abbrDescr a dom <code>Document</code> with the
-   * abbreviation description
-   * @param classes a <code>Set</code> with the defined classes, used
-   * for validation
-   * @param aResourceDir a <code>String</code> with the name of the
-   * resource directory
-   * @exception InitializationException if an error occurs */
-  public AbbrevDescription(Document abbrDescr,
-                           Set classes,
-                           String aResourceDir) {
+   * @param abbrDescr
+   *          a DOM document with the abbreviation description
+   * @param classes
+   *          a set with the defined classes, used for validation
+   * @param resourceDir
+   *          the name of the resource directory
+   * @exception InitializationException
+   *              if an error occurs
+   */
+  public AbbrevDescription(
+      Document abbrDescr, Set<String> classes, String resourceDir) {
 
-    this();
+    super.setDefinitionsMap(new HashMap<String, RegExp>());
+    super.setRulesMap(new HashMap<String, RegExp>());
+    super.setRegExpMap(new HashMap<RegExp, String>());
+    super.setClassMembersMap(new HashMap<String, Set<String>>());
+
     // build the lists map
-    super.loadLists(abbrDescr, classes, aResourceDir);
+    super.loadLists(abbrDescr, classes, resourceDir);
     // build the classes matcher map
     super.loadDefinitions(abbrDescr, classes);
     // build the rules matcher map
@@ -100,49 +92,50 @@ public class AbbrevDescription
     try {
       BufferedReader in =
         new BufferedReader(
-            new InputStreamReader(
-                FileTools.openResourceFileAsStream(
-                    aResourceDir + "/nonCapTerms.txt"),
-                "utf-8"));
+          new InputStreamReader(
+            FileTools.openResourceFileAsStream(
+              resourceDir + "/nonCapTerms.txt"),
+            "utf-8"));
       // init set where to store the terms
       this.nonCapTerms = new HashSet<String>();
 
-      String str;
-      while ((str = in.readLine()) != null) {
-        str = str.trim();
-        if (str.startsWith("#")) {
+      String line;
+      while ((line = in.readLine()) != null) {
+        line = line.trim();
+        // ignore lines starting with #
+        if (line.startsWith("#") || (line.length() == 0)) {
           continue;
         }
         // extract the term and add it to the set
-        int end = str.indexOf('#');
+        int end = line.indexOf('#');
         if (-1 != end) {
-          str = str.substring(0, end);
+          line = line.substring(0, end).trim();
+          if (line.length() == 0) {
+            continue;
+          }
         }
-        str = str.trim();
-        if (str.length() == 0) {
-          continue;
-        }
+
         // convert first letter to upper case to make runtime comparison more
         // efficient
-        char firstChar = str.charAt(0);
+        char firstChar = line.charAt(0);
         firstChar = Character.toUpperCase(firstChar);
-        this.nonCapTerms.add(firstChar + str.substring(1));
+        this.nonCapTerms.add(firstChar + line.substring(1));
         // also add a version completely in upper case letters
-        this.nonCapTerms.add(str.toUpperCase());
+        this.nonCapTerms.add(line.toUpperCase());
       }
 
       in.close();
     } catch (IOException ioe) {
-      throw new InitializationException(ioe.toString());
+      throw new InitializationException(ioe.getLocalizedMessage(), ioe);
     }
   }
 
 
   /**
-   * This returns the set of the most common terms that only start with a
-   * capital letter when they are at the beginning of a sentence.
+   * Returns the set of the most common terms that only start with a capital
+   * letter when they are at the beginning of a sentence.
    *
-   * @return a <code>Set</code> of <code>String</code>s with the terms
+   * @return a set with the terms
    */
   protected Set<String> getNonCapTerms() {
 

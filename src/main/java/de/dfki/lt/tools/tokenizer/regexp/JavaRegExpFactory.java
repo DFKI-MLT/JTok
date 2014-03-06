@@ -2,7 +2,7 @@
  * JTok
  * A configurable tokenizer implemented in Java
  *
- * (C) 2003 - 2005  DFKI Language Technology Lab http://www.dfki.de/lt
+ * (C) 2003 - 2014  DFKI Language Technology Lab http://www.dfki.de/lt
  *   Author: Joerg Steffen, steffen@dfki.de
  *
  *   This program is free software; you can redistribute it and/or
@@ -25,32 +25,28 @@ package de.dfki.lt.tools.tokenizer.regexp;
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 
 /**
- * <code>JavaRegExpFactory</code> extends {@link RegExpFactory} for
- * regular expressions of the java.util.regex package.
- *
+ * Extends {@link RegExpFactory} for regular expressions of the java.util.regex
+ * package.
+ * 
  * @author Joerg Steffen, DFKI
- * @version $Id: JavaRegExpFactory.java,v 1.4 2005-04-12 08:47:37 steffen Exp $ */
-
-public class JavaRegExpFactory
-  extends RegExpFactory {
+ */
+public class JavaRegExpFactory extends RegExpFactory {
 
   /**
-   * This creates a new instance of <code>JavaRegExpFactory</code>. */
+   * Creates a new instance of {@link JavaRegExpFactory}.
+   */
   public JavaRegExpFactory() {
+
     // nothing to do
   }
 
 
   /**
-   * This creates a regular expression object from an input string.
-   *
-   * @param regExpString a <code>String</code> with a regular
-   * expression
-   * @return a {@link RegExp} build from the input string
-   * @exception InitializationException if regular expression is not
-   * well formed */
+   * {@inheritDoc}
+   */
+  @Override
   public RegExp createRegExp(String regExpString)
-    throws InitializationException {
+      throws InitializationException {
 
     return new JavaRegExp(regExpString);
   }
