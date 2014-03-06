@@ -2,7 +2,7 @@
  * JTok
  * A configurable tokenizer implemented in Java
  *
- * (C) 2003 - 2005  DFKI Language Technology Lab http://www.dfki.de/lt
+ * (C) 2003 - 2014  DFKI Language Technology Lab http://www.dfki.de/lt
  *   Author: Joerg Steffen, steffen@dfki.de
  *
  *   This program is free software; you can redistribute it and/or
@@ -23,115 +23,79 @@
 package de.dfki.lt.tools.tokenizer.regexp;
 
 /**
- * <code>Match</code> holds the result of matching an input string
- * with a regular expression.
- *
+ * Holds the result of matching an input string with a regular expression.
+ * 
  * @author Joerg Steffen, DFKI
- * @version $Id: Match.java,v 1.3 2005-04-12 08:47:37 steffen Exp $ */
-
+ */
 public class Match {
 
   /**
-   * This contains the index within the input text where the match in
-   * its entirety began. */
+   * Contains the index within the input text where the match in its entirety
+   * began.
+   */
   private int startIndex;
 
   /**
-   * This contains the index within the input string where the match
-   * in its entirety ends. The return value is the next position after
-   * the end of the string.  */
+   * Contains the index within the input string where the match in its entirety
+   * ends. The return value is the next position after the end of the string.
+   */
   private int endIndex;
 
-
   /**
-   * This contains the <code>String</code> matching the regular
-   * expression pattern. */
+   * Contains the string matching the regular expression pattern.
+   */
   private String image;
 
 
   /**
-   * This creates a new instance of <code>Match</code>. Not to be used
-   * outside this class. */
-  private Match() {}
+   * Creates a new instance of {@link Match} using the given parameters.
+   * 
+   * @param startIndex
+   *          the start index
+   * @param endIndex
+   *          the end index
+   * @param image
+   *          the match
+   */
+  public Match(int startIndex, int endIndex, String image) {
 
-
-  /**
-   * This creates a new instance of <code>Match</code> using the given
-   * parameters.
-   *
-   * @param aStart an <code>int</code> with the start index
-   * @param anEnd an <code>int</code> with the end index
-   * @param anImage a <code>String</code> with the match */
-  public Match(int aStart, int anEnd, String anImage) {
-    this.setStartIndex(aStart);
-    this.setEndIndex(anEnd);
-    this.setImage(anImage);
+    this.startIndex = startIndex;
+    this.endIndex = endIndex;
+    this.image = image;
   }
 
 
   /**
-   * This returns the index within the input text where the match in
-   * its entirety began.
-   *
-   * @return a <code>int</code> */
+   * Returns the index within the input text where the match in its entirety
+   * began.
+   * 
+   * @return the start index
+   */
   public int getStartIndex() {
+
     return this.startIndex;
   }
 
-  /**
-   * This sets the field {@link #startIndex} to
-   * <code>aStartIndex</code>.
-   *
-   * @param aStartIndex a <code>int</code> */
-  private void setStartIndex(int aStartIndex){
-    this.startIndex = aStartIndex;
-  }
-
 
   /**
-   * This returns the index within the input string where the match in
-   * its entirety ends. The return value is the next position after
-   * the end of the string.
-   *
-   * @return an <code>int</code> with the index */
+   * Returns the index within the input string where the match in its entirety
+   * ends. The return value is the next position after the end of the string.
+   * 
+   * @return the end index
+   */
   public int getEndIndex() {
+
     return this.endIndex;
   }
 
-  /**
-   * This sets the field {@link #endIndex} to
-   * <code>aEndIndex</code>.
-   *
-   * @param aEndIndex an <code>int</code> with the index */
-  private void setEndIndex(int aEndIndex){
-    this.endIndex = aEndIndex;
-  }
-
 
   /**
-   * This returns the field {@link #image}.
-   *
-   * @return a <code>String</code> */
-  private String getImage() {
+   * Returns the string matching the regular expression pattern.
+   * 
+   * @return the matching string
+   */
+  public String getImage() {
+
     return this.image;
-  }
-
-  /**
-   * This sets the field {@link #image} to
-   * <code>aImage</code>.
-   *
-   * @param aImage a <code>String</code> */
-  private void setImage(String aImage){
-    this.image = aImage;
-  }
-
-
-  /**
-   * This returns the <code>String</code> matching the regular
-   * expression pattern.
-   *
-   * @return the matching  <code>String</code> */
-  public String toString() {
-    return this.getImage();
   }
 }

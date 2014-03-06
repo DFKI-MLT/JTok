@@ -1,7 +1,7 @@
 JTok V1.10
 written by Joerg Steffen
 Email: steffen@dfki.de
-(c) DFKI, 2003-2012
+(c) DFKI, 2003-2014
 
 This product is licensed to you under the GNU Lesser General Public License, Version 2.1.
 You may not use this product except in compliance with the license.

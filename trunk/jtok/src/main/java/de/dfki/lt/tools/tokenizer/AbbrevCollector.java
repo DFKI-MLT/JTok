@@ -2,7 +2,7 @@
  * JTok
  * A configurable tokenizer implemented in Java
  *
- * (C) 2003 - 2005  DFKI Language Technology Lab http://www.dfki.de/lt
+ * (C) 2003 - 2014  DFKI Language Technology Lab http://www.dfki.de/lt
  *   Author: Joerg Steffen, steffen@dfki.de
  *
  *   This program is free software; you can redistribute it and/or
@@ -32,10 +32,9 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import org.slf4j.Logger;
@@ -44,11 +43,10 @@ import org.slf4j.LoggerFactory;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 
 /**
- * {@link AbbrevCollector} provides methods to collect abbreviations from
- * corpora containing a single sentence per line.
+ * Provides methods to collect abbreviations from corpora containing a single
+ * sentence per line.
  *
  * @author Joerg Steffen, DFKI
- * @version $Id: AbbrevCollector.java,v 1.1 2010-04-30 10:05:47 steffen Exp $
  */
 public class AbbrevCollector {
 
@@ -60,21 +58,21 @@ public class AbbrevCollector {
 
 
   /**
-   * This scans the given directory recursively for files with the given suffix.
-   * It is assumed that each of these files contains one sentence per line. It
+   * Scans the given directory recursively for files with the given suffix. It
+   * is assumed that each of these files contains one sentence per line. It
    * extracts all abbreviations from these files and stores them under the given
    * result file name using UTF-8 encoding.
    *
    * @param dir
-   *          a <code>String</code> with the directory to scan
+   *          the directory to scan
    * @param suffix
-   *          a <code>String</code> with the file name suffix
+   *          the file name suffix
    * @param encoding
-   *          a <code>String</code> with the encoding of the files
+   *          the encoding of the files
    * @param resultFileName
-   *          a <code>String</code> with the result file name
+   *          the result file name
    * @param lang
-   *          a <code>String</code> with the language of the files
+   *          the language of the files
    * @throws IOException
    *           if there is a problem when reading or writing the files
    */
@@ -90,7 +88,7 @@ public class AbbrevCollector {
     // get matchers and lists used to filter the abbreviations
 
     // the lists contains known abbreviations and titles
-    HashMap abbrevLists = langRes.getAbbrevLists();
+    Map<String, Set<String>> abbrevLists = langRes.getAbbrevLists();
 
     // this contains the word that only start with a capital letter at
     // the beginning of a sentence; we want to avoid to extract abbreviations
@@ -114,8 +112,8 @@ public class AbbrevCollector {
       // init reader
       BufferedReader in =
         new BufferedReader(
-        new InputStreamReader(
-        new FileInputStream(oneFileName), encoding));
+          new InputStreamReader(
+            new FileInputStream(oneFileName), encoding));
       String sent;
       // read lines from file
       while ((sent = in.readLine()) != null) {
@@ -124,10 +122,10 @@ public class AbbrevCollector {
         // ... .. ' ` \ \\ |
         String[] tokens = sent.split(" |\\.\\.\\.|\\.\\.|'|`|\\(|\\)|[|]");
 
-        for (int i = 0; i < tokens.length - 1; i++) {
+        for (int i = 0; i < (tokens.length - 1); i++) {
           // we skip the last token with the final sentence punctuation
           String oneTok = tokens[i];
-          if (oneTok.length() > 1 && oneTok.endsWith(".")) {
+          if ((oneTok.length() > 1) && oneTok.endsWith(".")) {
 
             // if the abbreviation contains a hyphen, it's sufficient to check
             // the part after the hyphen
@@ -144,10 +142,9 @@ public class AbbrevCollector {
 
             // check with lists
             boolean found = false;
-            Iterator it = abbrevLists.keySet().iterator();
-            while (it.hasNext()) {
-              String abbrevClass = (String)it.next();
-              Set oneList = (Set)abbrevLists.get(abbrevClass);
+            for (Map.Entry<String, Set<String>> oneEntry
+                : abbrevLists.entrySet()) {
+              Set<String> oneList = oneEntry.getValue();
               if (oneList.contains(oneTok)) {
                 found = true;
                 break;
@@ -185,8 +182,8 @@ public class AbbrevCollector {
     try {
       out = new PrintWriter(
         new BufferedWriter(
-        new OutputStreamWriter(
-        new FileOutputStream(resultFileName), "utf-8")));
+          new OutputStreamWriter(
+            new FileOutputStream(resultFileName), "utf-8")));
       for (String oneAbbrev : sortedAbbrevs) {
         out.println(oneAbbrev);
       }

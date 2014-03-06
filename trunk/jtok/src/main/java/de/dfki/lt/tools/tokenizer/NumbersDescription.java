@@ -2,7 +2,7 @@
  * JTok
  * A configurable tokenizer implemented in Java
  *
- * (C) 2003 - 2005  DFKI Language Technology Lab http://www.dfki.de/lt
+ * (C) 2003 - 2014  DFKI Language Technology Lab http://www.dfki.de/lt
  *   Author: Joerg Steffen, steffen@dfki.de
  *
  *   This program is free software; you can redistribute it and/or
@@ -28,57 +28,52 @@ import java.util.Set;
 import org.w3c.dom.Document;
 
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
+import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 
 /**
- * <code>NumbersDescription</code> extends {@link Description}. It
- * manages the content of a numbers description file.
+ * Manages the content of a numbers description file.
  *
  * @author Joerg Steffen, DFKI
- * @version $Id: NumbersDescription.java,v 1.5 2005-04-12 08:47:37 steffen Exp $ */
-
+ */
 public class NumbersDescription
-  extends Description {
+    extends Description {
 
   /**
-   * This is the name of the digits probe rule. */
+   * Name of the digits probe rule.
+   */
   protected static final String SIMPLE_DIGITS_RULE =
     "SIMPLE_DIGITS_RULE";
 
   /**
-   * This is the name of the ordinal number rule. */
+   * Name of the ordinal number rule.
+   */
   protected static final String ORDINAL_RULE =
     "ORDINAL_RULE";
 
   /**
-   * This is the name of the digits rule. */
+   * Name of the digits rule.
+   */
   protected static final String DIGITS_RULE =
     "DIGITS_RULE";
 
 
   /**
-   * This creates a new instance of <code>NumbersDescription</code>. Not
-   * to be used outside this class. */
-  private NumbersDescription() {
-    super.setDefinitionsMap(new HashMap());
-    super.setRulesMap(new HashMap());
-    super.setRegExpMap(new HashMap());
-  }
-
-
-  /**
-   * This creates a new instance of <code>NumbersDescription</code> for
-   * the numbers description contained in the dom
-   * <code>Document numbDescr</code>.
+   * Creates a new instance of {@link NumbersDescription}for the numbers
+   * description contained in the given DOM document.
    *
-   * @param numbDescr a dom <code>Document</code> with the
-   * numbers description
-   * @param classes a <code>Set</code> with the defined classes, used
-   * for validation
-   * @exception InitializationException if an error occurs */
-  public NumbersDescription(Document numbDescr,
-                            Set classes) {
+   * @param numbDescr
+   *          a DOM document with the numbers description
+   * @param classes
+   *          a set with the defined classes, used for validation
+   * @exception InitializationException
+   *              if an error occurs
+   */
+  public NumbersDescription(Document numbDescr, Set<String> classes) {
 
-    this();
+    super.setDefinitionsMap(new HashMap<String, RegExp>());
+    super.setRulesMap(new HashMap<String, RegExp>());
+    super.setRegExpMap(new HashMap<RegExp, String>());
+
     // build the classes matcher map
     super.loadDefinitions(numbDescr, classes);
     // build the rules matcher map

@@ -2,7 +2,7 @@
  * JTok
  * A configurable tokenizer implemented in Java
  *
- * (C) 2003 - 2005  DFKI Language Technology Lab http://www.dfki.de/lt
+ * (C) 2003 - 2014  DFKI Language Technology Lab http://www.dfki.de/lt
  *   Author: Joerg Steffen, steffen@dfki.de
  *
  *   This program is free software; you can redistribute it and/or
@@ -30,7 +30,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.StringReader;
-import java.util.Iterator;
 import java.util.Properties;
 
 import org.junit.BeforeClass;
@@ -40,23 +39,23 @@ import de.dfki.lt.tools.tokenizer.output.Paragraph;
 import de.dfki.lt.tools.tokenizer.output.ParagraphOutputter;
 
 /**
- * This is a test class for {@link JTok}.
+ * Test class for {@link JTok}.
  *
  * @author Joerg Steffen, DFKI
- * @version $Id: TestJTok.java,v 1.8 2010-08-31 09:56:50 steffen Exp $ */
-
+ */
 public class TestJTok {
 
   /**
-   * This contains the tokenizer.
+   * Contains the tokenizer.
    */
   private static JTok tokenizer;
 
 
   /**
-   * This initializes the tokenizer.
+   * Initializes the tokenizer.
    *
-   * @throws IOException if there is an error during initialization
+   * @throws IOException
+   *           if there is an error during initialization
    */
   @BeforeClass
   public static void oneTimeSetUp()
@@ -72,13 +71,13 @@ public class TestJTok {
 
 
   /**
-   * This tests the {@link JTok#tokenize(String, String)} method.
+   * Tests the method {@link JTok#tokenize(String, String)}.
    *
    * @throws IOException
    *           if there is an error when reading files
    */
   @Test
-  public void testTokenize()
+  public void testGerman()
       throws IOException {
 
     // German
@@ -88,6 +87,18 @@ public class TestJTok {
     this.compareResults(
       "german/german.txt", "de",
       "expected-results/german/german-expected.txt");
+  }
+
+
+  /**
+   * Tests the method {@link JTok#tokenize(String, String)}.
+   *
+   * @throws IOException
+   *           if there is an error when reading files
+   */
+  @Test
+  public void testEnglish()
+      throws IOException {
 
     // English
     this.compareResults(
@@ -99,26 +110,115 @@ public class TestJTok {
     this.compareResults(
       "english/randomhouse-hertsgaard.txt", "en",
       "expected-results/english/randomhouse-hertsgaard-expected.txt");
+  }
+
+
+  /**
+   * Tests the method {@link JTok#tokenize(String, String)}.
+   *
+   * @throws IOException
+   *           if there is an error when reading files
+   */
+  @Test
+  public void testClitics()
+      throws IOException {
 
     // Other
     this.compareResults(
       "test/cliticsTest.txt", "en",
       "expected-results/test/cliticsTest-expected.txt");
+  }
+
+
+  /**
+   * Tests the method {@link JTok#tokenize(String, String)}.
+   *
+   * @throws IOException
+   *           if there is an error when reading files
+   */
+  @Test
+  public void testMisc()
+      throws IOException {
+
     this.compareResults(
       "test/misc.txt", "en",
       "expected-results/test/misc-expected.txt");
+  }
+
+
+  /**
+   * Tests the method {@link JTok#tokenize(String, String)}.
+   *
+   * @throws IOException
+   *           if there is an error when reading files
+   */
+  @Test
+  public void testNumbers()
+      throws IOException {
+
     this.compareResults(
       "test/numbersTest.txt", "en",
       "expected-results/test/numbersTest-expected.txt");
+  }
+
+
+  /**
+   * Tests the method {@link JTok#tokenize(String, String)}.
+   *
+   * @throws IOException
+   *           if there is an error when reading files
+   */
+  @Test
+  public void testParagraphs()
+      throws IOException {
+
     this.compareResults(
       "test/paragraphTest.txt", "en",
       "expected-results/test/paragraphTest-expected.txt");
+  }
+
+
+  /**
+   * Tests the method {@link JTok#tokenize(String, String)}.
+   *
+   * @throws IOException
+   *           if there is an error when reading files
+   */
+  @Test
+  public void testPunctuation()
+      throws IOException {
+
     this.compareResults(
       "test/punctuationTest.txt", "en",
       "expected-results/test/punctuationTest-expected.txt");
+  }
+
+
+  /**
+   * Tests the method {@link JTok#tokenize(String, String)}.
+   *
+   * @throws IOException
+   *           if there is an error when reading files
+   */
+  @Test
+  public void testSpecialCharacters()
+      throws IOException {
+
     this.compareResults(
       "test/specialCharactersTest.txt", "en",
       "expected-results/test/specialCharactersTest-expected.txt");
+  }
+
+  /**
+   * Tests the method {@link JTok#tokenize(String, String)}.
+   *
+   * @throws IOException
+   *           if there is an error when reading files
+   */
+  @Test
+  public void testTextUnits()
+      throws IOException {
+
     this.compareResults(
       "test/tuTest.txt", "de",
       "expected-results/test/tuTest-expected.txt");
@@ -142,6 +242,7 @@ public class TestJTok {
       String inputFileName, String lang, String resFileName)
       throws IOException {
 
+    System.out.println(inputFileName);
     // tokenize input file
     InputStream in =
       getClass().getClassLoader().getResourceAsStream(inputFileName);
@@ -150,21 +251,11 @@ public class TestJTok {
     StringBuilder result = new StringBuilder();
     String newline = System.getProperty("line.separator");
     // print result as paragraphs with text units and tokens
-    Iterator<Paragraph> it = ParagraphOutputter.createParagraphs
-      (tokenizer.tokenize(input, lang)).iterator();
-    while (it.hasNext()) {
-      result.append(it.next().toString());
+    for (Paragraph onePara : ParagraphOutputter.createParagraphs
+      (tokenizer.tokenize(input, lang))) {
+      result.append(onePara.toString());
       result.append(newline);
     }
-
-    /*
-    PrintWriter out = new PrintWriter(
-      new BufferedWriter(
-        new OutputStreamWriter(
-          new FileOutputStream("data/" + resFileName), "utf-8")));
-    out.print(result.toString());
-    out.close();
-    */
 
     // compare line by line with expected result
     BufferedReader resReader = new BufferedReader(
@@ -184,5 +275,3 @@ public class TestJTok {
     }
   }
 }
-
-

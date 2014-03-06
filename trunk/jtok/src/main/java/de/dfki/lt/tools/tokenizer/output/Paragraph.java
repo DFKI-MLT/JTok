@@ -2,7 +2,7 @@
  * JTok
  * A configurable tokenizer implemented in Java
  *
- * (C) 2003 - 2005  DFKI Language Technology Lab http://www.dfki.de/lt
+ * (C) 2003 - 2014  DFKI Language Technology Lab http://www.dfki.de/lt
  *   Author: Joerg Steffen, steffen@dfki.de
  *
  *   This program is free software; you can redistribute it and/or
@@ -26,30 +26,33 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This represents a paragraph with its text units.
+ * Represents a paragraph with its text units.
  *
  * @author Joerg Steffen, DFKI
- * @version $Id: Paragraph.java,v 1.5 2010-06-07 13:41:28 steffen Exp $ */
-
+ */
 public class Paragraph {
 
   /**
-   * This contains the start index of the paragraph. */
+   * Contains the start index of the paragraph.
+   */
   private int startIndex;
 
   /**
-   * This contains the end index of the paragraph. */
+   * Contains the end index of the paragraph.
+   */
   private int endIndex;
 
   /**
-   * This contains a <code>List</code> with the {@link TextUnit}s of
-   * the paragraph. */
+   * Contains a list with the text units of the paragraph.
+   */
   private List<TextUnit> textUnits;
 
 
   /**
-   * This creates a new instance of <code>Paragraph</code>. */
+   * Creates a new instance of {@link Paragraph}.
+   */
   public Paragraph() {
+
     this.setStartIndex(0);
     this.setEndIndex(0);
     this.setTextUnits(new ArrayList<TextUnit>());
@@ -57,74 +60,92 @@ public class Paragraph {
 
 
   /**
-   * This creates a new instance of <code>Paragraph</code> that
-   * contains the given text units.
+   * Creates a new instance of {@link Paragraph} that contains the given text
+   * units.
    *
-   * @param someTextUnits a <code>List</code> with {@link TextUnit}s */
-  public Paragraph(List<TextUnit> someTextUnits) {
-    this.setTextUnits(someTextUnits);
+   * @param textUnits
+   *          a list of text units
+   */
+  public Paragraph(List<TextUnit> textUnits) {
+
+    this.setTextUnits(textUnits);
   }
 
 
   /**
-   * This returns the start index of the paragraph.
+   * Returns the start index of the paragraph.
    *
-   * @return an <code>int</code> */
+   * @return the start index
+   */
   public int getStartIndex() {
+
     return this.startIndex;
   }
 
+
   /**
-   * This sets the start index of the paragraph to
-   * <code>aStartIndex</code>.
+   * Sets the start index of the paragraph to the given parameter.
    *
-   * @param aStartIndex an <code>int</code> */
-  public void setStartIndex(int aStartIndex) {
-    this.startIndex = aStartIndex;
+   * @param startIndex
+   *          the start index
+   */
+  public void setStartIndex(int startIndex) {
+
+    this.startIndex = startIndex;
   }
 
 
   /**
-   * This returns the end index of the paragraph.
+   * Returns the end index of the paragraph.
    *
-   * @return an <code>int</code> */
+   * @return the end index
+   */
   public int getEndIndex() {
+
     return this.endIndex;
   }
 
+
   /**
-   * This sets the end index of the paragraph to
-   * <code>anEndIndex</code>.
+   * Sets the end index of the paragraph to the given parameter.
    *
-   * @param anEndIndex an <code>int</code> */
-  public void setEndIndex(int anEndIndex) {
-    this.endIndex = anEndIndex;
+   * @param endIndex
+   *          the end index
+   */
+  public void setEndIndex(int endIndex) {
+
+    this.endIndex = endIndex;
   }
 
 
   /**
-   * This returns the list with the text units of the paragraph.
+   * Returns the list with the text units of the paragraph.
    *
-   * @return a <code>List</code> */
+   * @return the list with the text units
+   */
   public List<TextUnit> getTextUnits() {
+
     return this.textUnits;
   }
 
+
   /**
-   * This sets the text units of the paragraph to
-   * <code>someTextUnits</code>. As a side effect, it adjusts the start
-   * index and end index of the paragraph to the start index of the
-   * first text unit and the end index of the last text unit.
+   * Sets the text units of the paragraph to the given parameter. As a side
+   * effect, it adjusts the start index and end index of the paragraph to the
+   * start index of the first text unit and the end index of the last text unit.
    *
-   * @param someTextUnits a <code>List</code> */
-  public void setTextUnits(List<TextUnit> someTextUnits) {
-    this.textUnits = someTextUnits;
-    if (someTextUnits.size() > 0) {
+   * @param textUnits
+   *          a list of text units
+   */
+  public void setTextUnits(List<TextUnit> textUnits) {
+
+    this.textUnits = textUnits;
+    if (textUnits.size() > 0) {
       this.setStartIndex
-        (someTextUnits.get(0).getStartIndex());
+        (textUnits.get(0).getStartIndex());
       this.setEndIndex
-        (someTextUnits.get(someTextUnits.size() - 1)
-         .getEndIndex());
+        (textUnits.get(textUnits.size() - 1)
+          .getEndIndex());
     }
     else {
       this.setStartIndex(0);
@@ -134,20 +155,17 @@ public class Paragraph {
 
 
   /**
-   * This returns a string representation of the paragraph.
+   * Returns a string representation of the paragraph.
    *
-   * @return a <code>String</code> */
+   * @return the string representation
+   */
+  @Override
   public String toString() {
 
-    StringBuffer result = new StringBuffer();
-    String newline = System.getProperty("line.separator");
-
-    result.append("Paragraph Start: ")
-      .append(this.getStartIndex())
-      .append(newline)
-      .append("Paragraph End: ")
-      .append(this.getEndIndex())
-      .append(newline);
+    StringBuilder result = new StringBuilder(
+      String.format("Paragraph Start: %d%nParagraph End: %d%n",
+        this.getStartIndex(),
+        this.getEndIndex()));
 
     // add text units
     for (TextUnit oneTU : this.getTextUnits()) {
@@ -157,4 +175,3 @@ public class Paragraph {
     return result.toString();
   }
 }
-

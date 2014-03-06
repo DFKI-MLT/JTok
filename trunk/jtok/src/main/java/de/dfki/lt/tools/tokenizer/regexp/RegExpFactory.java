@@ -2,7 +2,7 @@
  * JTok
  * A configurable tokenizer implemented in Java
  *
- * (C) 2003 - 2005  DFKI Language Technology Lab http://www.dfki.de/lt
+ * (C) 2003 - 2014  DFKI Language Technology Lab http://www.dfki.de/lt
  *   Author: Joerg Steffen, steffen@dfki.de
  *
  *   This program is free software; you can redistribute it and/or
@@ -25,23 +25,22 @@ package de.dfki.lt.tools.tokenizer.regexp;
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 
 /**
- * <code>RegExpFactory</code> is an abstract class for creating
- * objects that fit the {@link RegExp} interface.
- *
+ * Abstract class for creating objects that fit the {@link RegExp} interface.
+ * 
  * @author Joerg Steffen, DFKI
- * @version $Id: RegExpFactory.java,v 1.4 2005-04-12 08:47:37 steffen Exp $ */
-
+ */
 public abstract class RegExpFactory {
 
   /**
-   * This specifies a method signature that creates a regular
-   * expression object from an input string.
-   *
-   * @param regExpString a <code>String</code> with a regular
-   * expression
-   * @return a {@link RegExp} build from the input string
-   * @exception InitializationException if regular expression is not
-   * well formed */
+   * Creates a regular expression object from the given regular expression
+   * string.
+   * 
+   * @param regExpString
+   *          a regular expression string
+   * @return a regular expression build from the regular expression string
+   * @exception InitializationException
+   *              if regular expression is not well formed
+   */
   public abstract RegExp createRegExp(String regExpString)
-    throws InitializationException;
+      throws InitializationException;
 }

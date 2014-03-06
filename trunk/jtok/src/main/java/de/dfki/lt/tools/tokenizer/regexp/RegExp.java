@@ -2,7 +2,7 @@
  * JTok
  * A configurable tokenizer implemented in Java
  *
- * (C) 2003 - 2005  DFKI Language Technology Lab http://www.dfki.de/lt
+ * (C) 2003 - 2014  DFKI Language Technology Lab http://www.dfki.de/lt
  *   Author: Joerg Steffen, steffen@dfki.de
  *
  *   This program is free software; you can redistribute it and/or
@@ -25,36 +25,40 @@ package de.dfki.lt.tools.tokenizer.regexp;
 import java.util.List;
 
 /**
- * <code>RegExp</code> defines an interface for regular expression
- * patterns.
- *
+ * Interface for regular expression patterns.
+ * 
  * @author Joerg Steffen, DFKI
- * @version $Id: RegExp.java,v 1.4 2005-04-12 08:47:37 steffen Exp $ */
+ */
 public interface RegExp {
 
   /**
-   * This specifies a method signature that returns a
-   * <code>List</code> with all {@link Match}es for the regular
-   * expression in  <code>input</code>.
-   *
-   * @param input the <code>String</code> where to look for matches
-   * @return a <code>List</code> of {@link Match}es */
-  public List getAllMatches(String input);
+   * Returns a list with all matches for the regular expression in the given
+   * input.
+   * 
+   * @param input
+   *          the string where to look for matches
+   * @return a list of matches
+   */
+  public List<Match> getAllMatches(String input);
+
 
   /**
-   * This specifies a method signature that checks if the regular
-   * expression matches the input in its entirety.
-   *
-   * @param input the <code>String</code> to check
-   * @return a <code>boolean</code> */
+   * Checks if the regular expression matches the given input in its entirety.
+   * 
+   * @param input
+   *          the string to check
+   * @return a flag indicating the match
+   */
   public boolean matches(String input);
 
+
   /**
-   * This specifies a method signature that checks if the input
-   * contains a match for the regular expression. If yes, a {@link
-   * Match} is returned, <code>null</code> otherwise.
-   *
-   * @param input the <code>String</code> to check
-   * @return a {@link Match} or <code>null</code> */
+   * Checks if the given input contains a match for the regular expression. If
+   * yes, a match is returned, {@code null} otherwise.
+   * 
+   * @param input
+   *          the string to check
+   * @return a match or {@code null}
+   */
   public Match contains(String input);
 }

@@ -2,7 +2,7 @@
  * JTok
  * A configurable tokenizer implemented in Java
  *
- * (C) 2003 - 2005  DFKI Language Technology Lab http://www.dfki.de/lt
+ * (C) 2003 - 2014  DFKI Language Technology Lab http://www.dfki.de/lt
  *   Author: Joerg Steffen, steffen@dfki.de
  *
  *   This program is free software; you can redistribute it and/or
@@ -28,52 +28,46 @@ import java.util.Set;
 import org.w3c.dom.Document;
 
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
+import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 
 /**
- * <code>CliticsDescription</code> extends {@link Description}. It
- * manages the content of a clitics description file.
+ * Manages the content of a clitics description file.
  *
  * @author Joerg Steffen, DFKI
- * @version $Id: CliticsDescription.java,v 1.5 2005-04-12 08:47:37 steffen Exp $ */
-
+ */
 public class CliticsDescription
-  extends Description {
+    extends Description {
 
   /**
-   * This is the name of the proclitic rule. */
+   * Name of the proclitic rule.
+   */
   protected static final String PROCLITIC_RULE =
     "PROCLITIC_RULE";
 
   /**
-   * This is the name of the enclitic rule. */
+   * Name of the enclitic rule.
+   */
   protected static final String ENCLITIC_RULE =
     "ENCLITIC_RULE";
 
 
   /**
-   * This creates a new instance of <code>CliticsDescription</code>. Not
-   * to be used outside this class. */
-  private CliticsDescription() {
-    super.setDefinitionsMap(new HashMap());
-    super.setRulesMap(new HashMap());
-    super.setRegExpMap(new HashMap());
-  }
-
-
-  /**
-   * This creates a new instance of <code>CliticsDescription</code> for
-   * the clitics description contained in the dom
-   * <code>Document clitDescr</code>.
+   * Creates a new instance of {@link CliticsDescription} for the clitics
+   * description contained in the given DOM document.
    *
-   * @param clitDescr a dom <code>Document</code> with the
-   * clitics description
-   * @param classes a <code>Set</code> with the defined classes, used
-   * for validation
-   * @exception InitializationException if an error occurs */
-  public CliticsDescription(Document clitDescr,
-                            Set classes) {
+   * @param clitDescr
+   *          a DOM document with the clitics description
+   * @param classes
+   *          a set with the defined classes, used for validation
+   * @exception InitializationException
+   *              if an error occurs
+   */
+  public CliticsDescription(Document clitDescr, Set<String> classes) {
 
-    this();
+    super.setDefinitionsMap(new HashMap<String, RegExp>());
+    super.setRulesMap(new HashMap<String, RegExp>());
+    super.setRegExpMap(new HashMap<RegExp, String>());
+
     // build the classes matcher map
     super.loadDefinitions(clitDescr, classes);
     // build the rules matcher map

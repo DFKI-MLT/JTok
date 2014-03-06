@@ -2,7 +2,7 @@
  * JTok
  * A configurable tokenizer implemented in Java
  *
- * (C) 2003 - 2005  DFKI Language Technology Lab http://www.dfki.de/lt
+ * (C) 2003 - 2014  DFKI Language Technology Lab http://www.dfki.de/lt
  *   Author: Joerg Steffen, steffen@dfki.de
  *
  *   This program is free software; you can redistribute it and/or
@@ -28,97 +28,100 @@ import java.util.Set;
 import org.w3c.dom.Document;
 
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
+import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 
 /**
- * <code>PunctDescription</code> extends {@link Description}. It
- * manages the content of a punctuation description file.
+ * Manages the content of a punctuation description file.
  *
  * @author Joerg Steffen, DFKI
- * @version $Id: PunctDescription.java,v 1.7 2010-08-18 13:20:39 steffen Exp $ */
-
+ */
 public class PunctDescription
-  extends Description {
+    extends Description {
 
   /**
-   * This is the name of the all punctuation rule. */
+   * Name of the all punctuation rule.
+   */
   protected static final String ALL_RULE =
     "ALL_PUNCT_RULE";
 
   /**
-   * This is the name of the clitic punctuation rule. */
+   * Name of the clitic punctuation rule.
+   */
   protected static final String CLITIC_RULE =
     "CLITIC_PUNCT_RULE";
 
   /**
-   * This is the name of the internal punctuation rule. */
+   * Name of the internal punctuation rule.
+   */
   protected static final String INTERNAL_RULE =
     "INTERNAL_PUNCT_RULE";
 
   /**
-   * This is the name of the non-breaking left punctuation rule. */
+   * Name of the non-breaking left punctuation rule.
+   */
   protected static final String NON_BREAK_LEFT_RULE =
     "NON_BREAKING_LEFT_PUNCT_RULE";
 
   /**
-   * This is the name of the non-breaking right punctuation rule. */
+   * Name of the non-breaking right punctuation rule.
+   */
   protected static final String NON_BREAK_RIGHT_RULE =
     "NON_BREAKING_RIGHT_PUNCT_RULE";
 
   /**
-   * This is the name of the sentence internal punctuation rule. */
+   * Name of the sentence internal punctuation rule.
+   */
   protected static final String INTERNAL_TU_RULE =
     "INTERNAL_TU_PUNCT_RULE";
 
   /**
-   * This is the class name for ambiguous open/close punctuation. */
+   * Class name for ambiguous open/close punctuation.
+   */
   protected static final String OPEN_CLOSE_PUNCT =
     "OPENCLOSE_PUNCT";
 
   /**
-   * This is the class name for opening punctuation. */
+   * Class name for opening punctuation.
+   */
   public static final String OPEN_PUNCT =
     "OPEN_PUNCT";
 
   /**
-   * This is the class name for closing punctuation. */
+   * Class name for closing punctuation.
+   */
   public static final String CLOSE_PUNCT =
     "CLOSE_PUNCT";
 
   /**
-   * This is the class name for opening brackets. */
+   * Class name for opening brackets.
+   */
   public static final String OPEN_BRACKET =
     "OPEN_BRACKET";
 
   /**
-   * This is the class name for closing brackets. */
+   * Class name for closing brackets.
+   */
   public static final String CLOSE_BRACKET =
     "CLOSE_BRACKET";
 
 
   /**
-   * This creates a new instance of <code>PunctDescription</code>. Not
-   * to be used outside this class. */
-  private PunctDescription() {
-    super.setDefinitionsMap(new HashMap());
-    super.setRulesMap(new HashMap());
-    super.setRegExpMap(new HashMap());
-  }
-
-
-  /**
-   * This creates a new instance of <code>PunctDescription</code> for
-   * the punctuation description contained in the dom
-   * <code>Document punctDescr</code>.
+   * Creates a new instance of {@link PunctDescription} for the punctuation
+   * description contained in the given DOM document.
    *
-   * @param punctDescr a dom <code>Document</code> with the
-   * punctuation description
-   * @param classes a <code>Set</code> with the defined classes, used
-   * for validation
-   * @exception InitializationException if an error occurs */
-  public PunctDescription(Document punctDescr,
-                          Set classes) {
+   * @param punctDescr
+   *          a DOM document with the punctuation description
+   * @param classes
+   *          a set with the defined classes, used for validation
+   * @exception InitializationException
+   *              if an error occurs
+   */
+  public PunctDescription(Document punctDescr, Set<String> classes) {
 
-    this();
+    super.setDefinitionsMap(new HashMap<String, RegExp>());
+    super.setRulesMap(new HashMap<String, RegExp>());
+    super.setRegExpMap(new HashMap<RegExp, String>());
+
     // build the classes matcher map
     super.loadDefinitions(punctDescr, classes);
     // build the rules matcher map

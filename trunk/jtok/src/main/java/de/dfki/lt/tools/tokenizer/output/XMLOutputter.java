@@ -2,7 +2,7 @@
  * JTok
  * A configurable tokenizer implemented in Java
  *
- * (C) 2003 - 2005  DFKI Language Technology Lab http://www.dfki.de/lt
+ * (C) 2003 - 2014  DFKI Language Technology Lab http://www.dfki.de/lt
  *   Author: Joerg Steffen, steffen@dfki.de
  *
  *   This program is free software; you can redistribute it and/or
@@ -50,81 +50,88 @@ import de.dfki.lt.tools.tokenizer.JTok;
 import de.dfki.lt.tools.tokenizer.annotate.AnnotatedString;
 import de.dfki.lt.tools.tokenizer.exceptions.ProcessingException;
 
-
 /**
- * <code>XMLOutputter</code> provides static methods that return an
- * XML presentation of a {@link
- * de.dfki.lt.tools.tokenizer.annotate.AnnotatedString}.
+ * {@link XMLOutputter} provides static methods that return an XML presentation
+ * of an {@link AnnotatedString}.
  *
  * @author Joerg Steffen, DFKI
- * @version $Id: XMLOutputter.java,v 1.12 2010-09-02 07:42:10 steffen Exp $ */
-
+ */
 public class XMLOutputter {
 
   /**
-   * This contains the logger object for logging. */
+   * Contains the logger object for logging.
+   */
   private static final Logger LOG = LoggerFactory.getLogger(XMLOutputter.class);
 
   /**
-   * This is the name of XML elements in the result that describe a
-   * document. */
+   * Name of XML elements in the result that describe a document.
+   */
   public static final String XML_DOCUMENT = "Document";
 
   /**
-   * This is the name of XML elements in the result that describe a
-   * paragraph. */
+   * Name of XML elements in the result that describe a paragraph.
+   */
   public static final String XML_PARAGRAPH = "p";
 
   /**
-   * This is the name of XML elements in the result that describe a
-   * text unit. Text units are contained in paragraphs. */
+   * Name of XML elements in the result that describe a text unit. Text units
+   * are contained in paragraphs.
+   */
   public static final String XML_TEXT_UNIT = "tu";
 
   /**
-   * This is the name of the XML attribute in
-   * <code>XML_TEXT_UNIT</code> that contains the text unit id. */
+   * Name of the XML attribute in {@code XML_TEXT_UNIT} that contains the text
+   * unit id.
+   */
   public static final String ID_ATT = "id";
 
   /**
-   * This is the name of XML elements in the result that describe a
-   * token. Tokens are contained in text units. */
+   * Name of XML elements in the result that describe a token. Tokens are
+   * contained in text units.
+   */
   public static final String XML_TOKEN = "Token";
 
   /**
-   * This is the name of the XML attribute in <code>XML_TOKEN</code>
-   * that contains the token image. */
+   * Name of the XML attribute in {@code XML_TOKEN} that contains the token
+   * image.
+   */
   public static final String IMAGE_ATT = "string";
 
   /**
-   * This the name of the XML attribute in <code>XML_TOKEN</code>
-   * that contains the Penn Treebank token image if it is any different
-   * than the regular surface string. */
+   * Name of the XML attribute in {@code XML_TOKEN} that contains the Penn
+   * Treebank token image if it is any different than the regular surface
+   * string.
+   */
   public static final String PTB_ATT = "ptb";
 
   /**
-   * This is the name of the XML attribute in <code>XML_TOKEN</code>
-   * that contains the token type. */
+   * Name of the XML attribute in {@code XML_TOKEN} that contains the token
+   * type.
+   */
   public static final String TOK_TYPE_ATT = "type";
 
   /**
-   * This is the name of the XML attribute in <code>XML_TOKEN</code>
-   * that contains the token offset. */
+   * The name of the XML attribute in {@code XML_TOKEN} that contains the token
+   * offset.
+   */
   public static final String OFFSET_ATT = "offset";
 
   /**
-   * This is the name of the XML attribute in <code>XML_TOKEN</code>
-   * that contains the token length. */
+   * Name of the XML attribute in {@code XML_TOKEN} that contains the token
+   * length.
+   */
   public static final String LENGTH_ATT = "length";
 
 
   /**
-   * This creates an XML document from an annotated
-   * <code>input</code>.
+   * Creates an XML document from the given annotated string.
    *
-   * @param input an {@link
-   * de.dfki.lt.tools.tokenizer.annotate.AnnotatedString}
-   * @return  a <code>Document</code>
-   * @exception ProcessingException if an error occurs */
+   * @param input
+   *          the annotated string
+   * @return the XML document
+   * @exception ProcessingException
+   *              if an error occurs
+   */
   public static Document createXMLDocument(AnnotatedString input) {
 
     // create result document
@@ -135,7 +142,7 @@ public class XMLOutputter {
       DocumentBuilder builder = factory.newDocumentBuilder();
       doc = builder.newDocument();
     } catch (ParserConfigurationException pce) {
-      throw new ProcessingException(pce.getMessage());
+      throw new ProcessingException(pce.getLocalizedMessage(), pce);
     }
 
     // create root element
@@ -162,9 +169,11 @@ public class XMLOutputter {
         // get tag
         String type =
           (String)input.getAnnotation(JTok.CLASS_ANNO);
-        if (null == type)
-          throw new ProcessingException
-            ("undefined class " + input.getAnnotation(JTok.CLASS_ANNO));
+        if (null == type) {
+          throw new ProcessingException(
+            String.format("undefined class %s",
+              input.getAnnotation(JTok.CLASS_ANNO)));
+        }
         // create new element
         Element xmlToken = doc.createElement(XML_TOKEN);
         // set attributes
@@ -219,50 +228,55 @@ public class XMLOutputter {
 
 
   /**
-   * This creates an XML file from an annotated <code>input</code>.
+   * Creates an XML file from the given annotated string.
    *
-   * @param input an {@link
-   * de.dfki.lt.tools.tokenizer.annotate.AnnotatedString}
-   * @param anEncoding a <code>String</code> with the encoding to use
-   * @param aFileName a <code>String</code> with the name of the XML file
-   * @exception ProcessingException if an error occurs
+   * @param input
+   *          the annotated string
+   * @param encoding
+   *          the encoding to use
+   * @param fileName
+   *          the name of the XML file
+   * @exception ProcessingException
+   *              if an error occurs
    */
-  public static void createXMLFile(AnnotatedString input,
-                                   String anEncoding,
-                                   String aFileName) {
+  public static void createXMLFile(
+      AnnotatedString input, String encoding, String fileName) {
+
     // tokenize text
     Document doc = createXMLDocument(input);
 
     try {
       // init writer for result
       Writer out = new OutputStreamWriter(
-          new FileOutputStream(aFileName), anEncoding);
+        new FileOutputStream(fileName), encoding);
       // use a transformer for output
       Transformer transformer =
         TransformerFactory.newInstance().newTransformer();
       transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-      transformer.setOutputProperty(OutputKeys.ENCODING, anEncoding);
+      transformer.setOutputProperty(OutputKeys.ENCODING, encoding);
       DOMSource source = new DOMSource(doc);
       StreamResult result = new StreamResult(out);
       transformer.transform(source, result);
       out.close();
     } catch (TransformerException te) {
-      throw new ProcessingException(te.getMessage());
+      throw new ProcessingException(te.getLocalizedMessage(), te);
     } catch (IOException ioe) {
-      throw new ProcessingException(ioe.getMessage());
+      throw new ProcessingException(ioe.getLocalizedMessage(), ioe);
     }
   }
 
 
   /**
-   * This creates an XML string from an annotated
-   * <code>input</code>. Correctly works with Unicode
-   * (uschaefer 2006-06-09).
-   * @param input an {@link
-   * de.dfki.lt.tools.tokenizer.annotate.AnnotatedString}
-   * @return  an XML String
-   * @exception ProcessingException if an error occurs */
+   * Creates an XML string from the given annotated string.
+   *
+   * @param input
+   *          the annotated string
+   * @return an XML String
+   * @exception ProcessingException
+   *              if an error occurs
+   */
   public static String createXMLString(AnnotatedString input) {
+
     // tokenize text
     Document doc =
       createXMLDocument(input);
@@ -279,7 +293,7 @@ public class XMLOutputter {
       StreamResult result = new StreamResult(out);
       transformer.transform(source, result);
     } catch (TransformerException te) {
-      throw new ProcessingException(te.getMessage());
+      throw new ProcessingException(te.getLocalizedMessage(), te);
     }
 
     // return result
@@ -289,23 +303,27 @@ public class XMLOutputter {
 
   /**
    * This main method must be used with two or three arguments:
-   * - a file name for the document to tokenize
-   * - the language of the document
-   * - an optional encoding to use (default is ISO-8859-1)
+   * <ul>
+   * <li>a file name for the document to tokenize
+   * <li>the language of the document
+   * <li>an optional encoding to use (default is ISO-8859-1)
+   * </ul>
    * Supported languages are: de, en, it
    *
-   * @param args an array of <code>String</code>s with the arguments */
+   * @param args
+   *          the arguments
+   */
   public static void main(String[] args) {
 
     // check for correct arguments
-    if (args.length != 2 &&
-        args.length != 3) {
+    if ((args.length != 2)
+        && (args.length != 3)) {
       System.out.println
         ("This method needs two arguments:\n" +
-         "- a file name for the document to tokenize\n" +
-         "- the language of the document\n" +
-         "- an optional encoding to use (default is ISO-8859-1)\n" +
-         "Supported languages are: de, en, it");
+          "- a file name for the document to tokenize\n" +
+          "- the language of the document\n" +
+          "- an optional encoding to use (default is ISO-8859-1)\n" +
+          "Supported languages are: de, en, it");
       System.exit(1);
     }
 
@@ -320,7 +338,7 @@ public class XMLOutputter {
       // get text from file
       text = FileTools.readFileAsString(new File(args[0]), encoding);
     } catch (IOException ioe) {
-      System.err.println(ioe.toString());
+      ioe.printStackTrace();
       System.exit(1);
     }
 
@@ -338,5 +356,4 @@ public class XMLOutputter {
       LOG.error(e.getLocalizedMessage(), e);
     }
   }
-
 }

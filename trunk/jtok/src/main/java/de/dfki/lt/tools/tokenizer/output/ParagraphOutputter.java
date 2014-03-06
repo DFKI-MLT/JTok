@@ -2,7 +2,7 @@
  * JTok
  * A configurable tokenizer implemented in Java
  *
- * (C) 2003 - 2005  DFKI Language Technology Lab http://www.dfki.de/lt
+ * (C) 2003 - 2014  DFKI Language Technology Lab http://www.dfki.de/lt
  *   Author: Joerg Steffen, steffen@dfki.de
  *
  *   This program is free software; you can redistribute it and/or
@@ -30,24 +30,22 @@ import de.dfki.lt.tools.tokenizer.JTok;
 import de.dfki.lt.tools.tokenizer.annotate.AnnotatedString;
 
 /**
- * <code>ParagraphOutputter</code> provides static methods that
- * convert a {@link de.dfki.lt.tools.tokenizer.annotate.AnnotatedString}
- * into a list of nested representation of {@link Paragraph}s with {@link
- * TextUnit}s and {@link Token}s.
- *
+ * {@link ParagraphOutputter} provides static methods that convert an
+ * {@link AnnotatedString} into a list of nested representation of
+ * {@link Paragraph}s with {@link TextUnit}s and {@link Token}s.
+ * 
  * @author Joerg Steffen, DFKI
- * @version $Id: ParagraphOutputter.java,v 1.6 2010-08-18 21:56:57 steffen Exp $ */
-
+ */
 public class ParagraphOutputter {
 
   /**
-   * This creates a <code>List</code> of {@link Paragraph}s with
-   * {@link TextUnit} and {@link Token} from an annotated
-   * <code>input</code>.
-   *
-   * @param input an {@link
-   * de.dfki.lt.tools.tokenizer.annotate.AnnotatedString}
-   * @return  a <code>List</code> with {@link Paragraph}s */
+   * Creates a list of {@link Paragraph}s with {@link TextUnit}s and
+   * {@link Token}s from the given annotated string.
+   * 
+   * @param input
+   *          the annotated string
+   * @return a list of paragraphs
+   */
   public static List<Paragraph> createParagraphs(AnnotatedString input) {
 
     // init lists for paragraphs, text units and tokens
@@ -67,9 +65,9 @@ public class ParagraphOutputter {
         // create new token instance
         Token tok =
           new Token(tokenStart,
-                    tokenEnd,
-                    type,
-                    input.substring(tokenStart, tokenEnd));
+            tokenEnd,
+            type,
+            input.substring(tokenStart, tokenEnd));
 
         // check if token is first token of a paragraph or text unit
         if (null != input.getAnnotation(JTok.BORDER_ANNO)) {

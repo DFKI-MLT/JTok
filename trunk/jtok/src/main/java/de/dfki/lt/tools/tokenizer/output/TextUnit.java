@@ -2,7 +2,7 @@
  * JTok
  * A configurable tokenizer implemented in Java
  *
- * (C) 2003 - 2005  DFKI Language Technology Lab http://www.dfki.de/lt
+ * (C) 2003 - 2014  DFKI Language Technology Lab http://www.dfki.de/lt
  *   Author: Joerg Steffen, steffen@dfki.de
  *
  *   This program is free software; you can redistribute it and/or
@@ -26,30 +26,33 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This represents a text unit with its tokens.
+ * Represents a text unit with its tokens.
  *
  * @author Joerg Steffen, DFKI
- * @version $Id: TextUnit.java,v 1.5 2010-06-07 13:41:28 steffen Exp $ */
-
+ */
 public class TextUnit {
 
   /**
-   * This contains the start index of the text unit. */
+   * Contains the start index of the text unit.
+   */
   private int startIndex;
 
   /**
-   * This contains the end index of the text unit. */
+   * Contains the end index of the text unit.
+   */
   private int endIndex;
 
   /**
-   * This contains a <code>List</code> with the {@link Token}s of the
-   * text unit. */
+   * Contains a list with the tokens of the text unit.
+   */
   private List<Token> tokens;
 
 
   /**
-   * This creates a new instance of <code>TextUnit</code>. */
+   * Creates a new instance of {@link TextUnit}.
+   */
   public TextUnit() {
+
     this.setStartIndex(0);
     this.setEndIndex(0);
     this.setTokens(new ArrayList<Token>());
@@ -57,73 +60,90 @@ public class TextUnit {
 
 
   /**
-   * This creates a new instance of <code>TextUnit</code> that
-   * contains the given tokens.
+   * Creates a new instance of {@link TextUnit} containing the given tokens.
    *
-   * @param someTokens a <code>List</code> with {@link Token}s */
-  public TextUnit(List<Token> someTokens) {
-    this.setTokens(someTokens);
+   * @param tokens
+   *          a list of tokens
+   */
+  public TextUnit(List<Token> tokens) {
+
+    this.setTokens(tokens);
   }
 
 
   /**
-   * This returns the start index of the text unit.
+   * Returns the start index of the text unit.
    *
-   * @return an <code>int</code> */
+   * @return the start index
+   */
   public int getStartIndex() {
+
     return this.startIndex;
   }
 
+
   /**
-   * This sets the start index of the text unit to
-   * <code>aStartIndex</code>.
+   * Sets the start index of the text unit to the given parameter.
    *
-   * @param aStartIndex an <code>int</code> */
-  public void setStartIndex(int aStartIndex) {
-    this.startIndex = aStartIndex;
+   * @param startIndex
+   *          an <code>int</code>
+   */
+  public void setStartIndex(int startIndex) {
+
+    this.startIndex = startIndex;
   }
 
 
   /**
-   * This returns the end index of the text unit.
+   * Returns the end index of the text unit.
    *
-   * @return an <code>int</code> */
+   * @return the end index
+   */
   public int getEndIndex() {
+
     return this.endIndex;
   }
 
+
   /**
-   * This sets the end index of the text unit to
-   * <code>anEndIndex</code>.
+   * Sets the end index of the text unit to the given parameter.
    *
-   * @param anEndIndex an <code>int</code> */
-  public void setEndIndex(int anEndIndex) {
-    this.endIndex = anEndIndex;
+   * @param endIndex
+   *          the end index
+   */
+  public void setEndIndex(int endIndex) {
+
+    this.endIndex = endIndex;
   }
 
 
   /**
-   * This returns the list with the tokens of the text unit.
+   * Returns the list with the tokens of the text unit.
    *
-   * @return a <code>List</code> */
+   * @return the token list
+   */
   public List<Token> getTokens() {
+
     return this.tokens;
   }
 
+
   /**
-   * This sets the tokens of the text unit to
-   * <code>someTokens</code>. As a side effect, it adjusts the start
-   * index and end index of the text unit to the start index of the
-   * first token and the end index of the last token.
+   * Sets the tokens of the text unit to the given parameter. As a side effect,
+   * it adjusts the start index and end index of the text unit to the start
+   * index of the first token and the end index of the last token.
    *
-   * @param someTokens a <code>List</code> */
-  public void setTokens(List<Token> someTokens) {
-    this.tokens = someTokens;
-    if (someTokens.size() > 0) {
+   * @param tokens
+   *          a list of tokens
+   */
+  public void setTokens(List<Token> tokens) {
+
+    this.tokens = tokens;
+    if (tokens.size() > 0) {
       this.setStartIndex
-        (someTokens.get(0).getStartIndex());
+        (tokens.get(0).getStartIndex());
       this.setEndIndex
-        (someTokens.get(someTokens.size() - 1).getEndIndex());
+        (tokens.get(tokens.size() - 1).getEndIndex());
     }
     else {
       this.setStartIndex(0);
@@ -133,20 +153,17 @@ public class TextUnit {
 
 
   /**
-   * This returns a string representation of the text unit.
+   * Returns a string representation of the text unit.
    *
-   * @return a <code>String</code> */
+   * @return the string representation
+   */
+  @Override
   public String toString() {
 
-    StringBuffer result = new StringBuffer();
-    String newline = System.getProperty("line.separator");
-
-    result.append("  Text Unit Start: ")
-      .append(this.getStartIndex())
-      .append(newline)
-      .append("  Text Unit End: ")
-      .append(this.getEndIndex())
-      .append(newline);
+    StringBuilder result = new StringBuilder(
+      String.format("  Text Unit Start: %d%n  Text Unit End: %d%n",
+        this.getStartIndex(),
+        this.getEndIndex()));
 
     // add tokens
     for (Token oneToken : this.getTokens()) {
@@ -156,4 +173,3 @@ public class TextUnit {
     return result.toString();
   }
 }
-
