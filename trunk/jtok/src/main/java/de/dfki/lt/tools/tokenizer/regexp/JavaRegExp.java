@@ -34,7 +34,7 @@ import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
  * Implements the {@link RegExp} interface for regular expressions of the
  * java.util.regex package.
  *
- * @author Joerg Steffen
+ * @author Joerg Steffen, DFKI
  */
 public class JavaRegExp implements RegExp {
 
@@ -42,7 +42,7 @@ public class JavaRegExp implements RegExp {
    * Contains an instance of a regular expression in the java.util.regex
    * package.
    */
-  private Pattern javaRE;
+  private Pattern re;
 
 
   /**
@@ -58,7 +58,7 @@ public class JavaRegExp implements RegExp {
       throws InitializationException {
 
     try {
-      this.javaRE = Pattern.compile(regExpString);
+      this.re = Pattern.compile(regExpString);
     } catch (PatternSyntaxException pse) {
       throw new InitializationException(pse.getLocalizedMessage(), pse);
     }
@@ -72,13 +72,11 @@ public class JavaRegExp implements RegExp {
   public List<Match> getAllMatches(String input) {
 
     // create Matcher for input
-    Matcher javaMatch = this.javaRE.matcher(input);
-    // convert matches to JavaMatches and collect them in a list
+    Matcher matcher = this.re.matcher(input);
+    // convert matches and collect them in a list
     List<Match> matches = new ArrayList<>();
-    while (javaMatch.find()) {
-      matches.add(new Match(javaMatch.start(),
-        javaMatch.end(),
-        javaMatch.group()));
+    while (matcher.find()) {
+      matches.add(new Match(matcher.start(), matcher.end(), matcher.group()));
     }
     // return result
     return matches;
@@ -92,7 +90,7 @@ public class JavaRegExp implements RegExp {
   public boolean matches(String input) {
 
     // create Matcher for input
-    Matcher javaMatch = this.javaRE.matcher(input);
+    Matcher javaMatch = this.re.matcher(input);
     return javaMatch.matches();
   }
 
@@ -104,11 +102,9 @@ public class JavaRegExp implements RegExp {
   public Match contains(String input) {
 
     // create Matcher for input
-    Matcher javaMatch = this.javaRE.matcher(input);
+    Matcher javaMatch = this.re.matcher(input);
     if (javaMatch.find()) {
-      return new Match(javaMatch.start(),
-        javaMatch.end(),
-        javaMatch.group());
+      return new Match(javaMatch.start(), javaMatch.end(), javaMatch.group());
     }
 
     return null;

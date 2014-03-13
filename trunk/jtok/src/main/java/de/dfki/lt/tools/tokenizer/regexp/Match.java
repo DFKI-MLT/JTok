@@ -98,4 +98,15 @@ public class Match {
 
     return this.image;
   }
+  
+  
+  /**
+   * {@inheritDoc}
+   */
+  @Override
+  public String toString() {
+    
+    return String.format(
+      "%d - %d: %s", this.startIndex, this.endIndex, this.image);
+  }
 }
