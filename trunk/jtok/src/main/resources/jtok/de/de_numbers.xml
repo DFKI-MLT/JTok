@@ -16,18 +16,18 @@
     <!-- simple digits -->
     <!-- this definition doesn't need a class because -->
     <!-- identification is done via the other definitions -->
-    <SIMPLE_DIGITS regexp="\d|[¼½¾]"/>    
+    <SIMPLE_DIGITS regexp="[0-9]|[¼½¾]"/>    
 
     <!-- fraction numbers -->
-    <FRACT regexp="\A(\d+)?[¼½¾]\Z" class="FRACTION"/>
+    <FRACT regexp="([0-9]+)?[¼½¾]" class="FRACTION"/>
 
     <!-- ordinal numbers, restricted to a range below 100 -->
-    <ORD regexp="\A\d{1,2}\.\Z" class="ORDINAL"/>
+    <ORD regexp="[0-9]{1,2}\." class="ORDINAL"/>
 
     <!-- digit numbers -->
     <!-- this matches digits that may start or end with -->
     <!-- non-digits or that might be interrupted by non-digits -->
-    <DIGIT regexp="\A[A-Za-z#+\-]?\d+([A-Za-z\-\.,]{1,3}\d+)*([A-Za-z#\-+]{1,2})?\Z" class="DIGITAL"/>
+    <DIGIT regexp="[A-Za-z#+\-]?[0-9]+([A-Za-z\-\.,]{1,3}[0-9]+)*([A-Za-z#\-+]{1,2})?" class="DIGITAL"/>
 
   </DEFINITIONS>
 

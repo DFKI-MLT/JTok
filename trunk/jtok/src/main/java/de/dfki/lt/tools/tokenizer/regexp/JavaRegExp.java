@@ -140,7 +140,19 @@ public class JavaRegExp implements RegExp {
     while (matcher.find()) {
       match = new Match(matcher.start(), matcher.end(), matcher.group());
     }
-    // return result
-    return match;
+    if (match != null && match.getEndIndex() == input.length()) {
+      return match;
+    }
+    return null;
+  }
+
+
+  /**
+   * {@inheritDoc}
+   */
+  @Override
+  public String toString() {
+
+    return this.re.toString();
   }
 }

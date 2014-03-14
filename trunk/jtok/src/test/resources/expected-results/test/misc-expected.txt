@@ -46,8 +46,7 @@ Paragraph End: 86
   Text Unit Start: 74
   Text Unit End: 86
     Token: "I"            	Type: TOKEN	Start: 74	End: 75
-    Token: "can"          	Type: TOKEN	Start: 76	End: 79
-    Token: "not"          	Type: RIGHTSPLIT	Start: 79	End: 82
+    Token: "cannot"       	Type: TOKEN	Start: 76	End: 82
     Token: "go"           	Type: TOKEN	Start: 83	End: 85
     Token: "."            	Type: TERM_PUNCT_P	Start: 85	End: 86
 
@@ -56,8 +55,7 @@ Paragraph End: 102
   Text Unit Start: 90
   Text Unit End: 102
     Token: "I"            	Type: TOKEN	Start: 90	End: 91
-    Token: "CAN"          	Type: TOKEN	Start: 92	End: 95
-    Token: "NOT"          	Type: RIGHTSPLIT	Start: 95	End: 98
+    Token: "CANNOT"       	Type: TOKEN	Start: 92	End: 98
     Token: "GO"           	Type: TOKEN	Start: 99	End: 101
     Token: "!"            	Type: TERM_PUNCT	Start: 101	End: 102
 
@@ -262,4 +260,3 @@ Paragraph End: 722
     Token: "one"          	Type: TOKEN	Start: 717	End: 720
     Token: "."            	Type: TERM_PUNCT_P	Start: 720	End: 721
     Token: """            	Type: CLOSE_PUNCT	Start: 721	End: 722	PTB: "''"
-
