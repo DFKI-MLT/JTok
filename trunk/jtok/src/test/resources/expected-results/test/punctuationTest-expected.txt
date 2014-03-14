@@ -330,9 +330,12 @@ Paragraph End: 415
 Paragraph Start: 419
 Paragraph End: 425
   Text Unit Start: 419
-  Text Unit End: 425
+  Text Unit End: 423
     Token: "L.A."         	Type: B_ABBREVIATION	Start: 419	End: 423
-    Token: "'s"           	Type: RIGHTSPLIT	Start: 423	End: 425
+  Text Unit Start: 423
+  Text Unit End: 425
+    Token: "'"            	Type: OPEN_PUNCT	Start: 423	End: 424	PTB: "``"
+    Token: "s"            	Type: TOKEN	Start: 424	End: 425
 
 Paragraph Start: 429
 Paragraph End: 432

@@ -115,9 +115,12 @@ Paragraph End: 177
 Paragraph Start: 181
 Paragraph End: 187
   Text Unit Start: 181
-  Text Unit End: 187
+  Text Unit End: 185
     Token: "L.A."         	Type: B_ABBREVIATION	Start: 181	End: 185
-    Token: "'s"           	Type: RIGHTSPLIT	Start: 185	End: 187
+  Text Unit Start: 185
+  Text Unit End: 187
+    Token: "'"            	Type: OPEN_PUNCT	Start: 185	End: 186	PTB: "``"
+    Token: "s"            	Type: TOKEN	Start: 186	End: 187
 
 Paragraph Start: 191
 Paragraph End: 212
