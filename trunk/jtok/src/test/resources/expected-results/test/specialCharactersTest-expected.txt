@@ -78,9 +78,7 @@ Paragraph Start: 151
 Paragraph End: 168
   Text Unit Start: 151
   Text Unit End: 168
-    Token: "3-8025-2224-9"	Type: DIGITAL	Start: 151	End: 164
-    Token: ","            	Type: PUNCTUATION	Start: 164	End: 165
-    Token: "ean"          	Type: TOKEN	Start: 165	End: 168
+    Token: "3-8025-2224-9,ean"	Type: TOKEN	Start: 151	End: 168
 
 Paragraph Start: 172
 Paragraph End: 182
