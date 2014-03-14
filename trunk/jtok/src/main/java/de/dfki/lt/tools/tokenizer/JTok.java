@@ -685,6 +685,13 @@ public class JTok {
         if (digitsMatcher.matches(image)) {
           String numbClass =
             this.identifyClass(image, digitsMatcher, langRes.getNumbDescr());
+          // if image is preceded by a '+' or '-', consider it part of the
+          // digit
+          if (tokenStart > 0
+              && (input.charAt(tokenStart - 1) == '-'
+                  || input.charAt(tokenStart - 1) == '+')) {
+            tokenStart--;
+          }
           input.annotate(CLASS_ANNO, numbClass, tokenStart, tokenEnd);
           // if period was cut off, annotate it now
           if (periodFlag) {

@@ -71,9 +71,7 @@
     <TM regexp="©|®|™" class="PUNCTUATION"/>
     <SECTION regexp="§" class="PUNCTUATION"/>
 
-    <!-- only match a hyphen when it's not followed by a digit -->
-    <!-- because it's part of a signed digit then, like in -1 -->
-    <HYPHEN regexp="-(?!\d)" class="PUNCTUATION"/>
+    <HYPHEN regexp="-" class="PUNCTUATION"/>
     <SCOLON regexp=";" class="PUNCTUATION"/>
     <COLON regexp=":" class="PUNCTUATION"/>
     <COMMA regexp="," class="PUNCTUATION"/>
