@@ -26,7 +26,7 @@ import java.util.List;
 
 /**
  * Interface for regular expression patterns.
- * 
+ *
  * @author Joerg Steffen, DFKI
  */
 public interface RegExp {
@@ -34,7 +34,7 @@ public interface RegExp {
   /**
    * Returns a list with all matches for the regular expression in the given
    * input.
-   * 
+   *
    * @param input
    *          the string where to look for matches
    * @return a list of matches
@@ -44,7 +44,7 @@ public interface RegExp {
 
   /**
    * Checks if the regular expression matches the given input in its entirety.
-   * 
+   *
    * @param input
    *          the string to check
    * @return a flag indicating the match
@@ -54,11 +54,34 @@ public interface RegExp {
 
   /**
    * Checks if the given input contains a match for the regular expression. If
-   * yes, a match is returned, {@code null} otherwise.
-   * 
+   * yes, the first match is returned, {@code null} otherwise.
+   *
    * @param input
    *          the string to check
    * @return a match or {@code null}
    */
   public Match contains(String input);
+
+  /**
+   * Checks if the given input contains a match for the regular expression at
+   * the start of the input. If yes, the match is returned, {@code null}
+   * otherwise.
+   *
+   * @param input
+   *          the string to check
+   * @return a match or {@code null}
+   */
+  public Match starts(String input);
+
+
+  /**
+   * Checks if the given input contains a match for the regular expression at
+   * the end of the input. If yes, the match is returned, {@code null}
+   * otherwise.
+   *
+   * @param input
+   *          the string to check
+   * @return a match or {@code null}
+   */
+  public Match ends(String input);
 }

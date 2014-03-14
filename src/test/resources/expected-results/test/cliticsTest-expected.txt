@@ -202,3 +202,16 @@ Paragraph End: 435
     Token: "'"            	Type: CLOSE_PUNCT	Start: 432	End: 433	PTB: "''"
     Token: "a"            	Type: TOKEN	Start: 434	End: 435
 
+Paragraph Start: 439
+Paragraph End: 442
+  Text Unit Start: 439
+  Text Unit End: 442
+    Token: "50"           	Type: DIGITAL	Start: 439	End: 441
+    Token: "$"            	Type: RIGHTSPLIT	Start: 441	End: 442
+
+Paragraph Start: 446
+Paragraph End: 449
+  Text Unit Start: 446
+  Text Unit End: 449
+    Token: "$"            	Type: LEFTSPLIT	Start: 446	End: 447
+    Token: "50"           	Type: DIGITAL	Start: 447	End: 449

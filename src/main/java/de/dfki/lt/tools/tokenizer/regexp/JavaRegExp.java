@@ -90,8 +90,8 @@ public class JavaRegExp implements RegExp {
   public boolean matches(String input) {
 
     // create Matcher for input
-    Matcher javaMatch = this.re.matcher(input);
-    return javaMatch.matches();
+    Matcher matcher = this.re.matcher(input);
+    return matcher.matches();
   }
 
 
@@ -102,11 +102,45 @@ public class JavaRegExp implements RegExp {
   public Match contains(String input) {
 
     // create Matcher for input
-    Matcher javaMatch = this.re.matcher(input);
-    if (javaMatch.find()) {
-      return new Match(javaMatch.start(), javaMatch.end(), javaMatch.group());
+    Matcher matcher = this.re.matcher(input);
+    if (matcher.find()) {
+      return new Match(matcher.start(), matcher.end(), matcher.group());
     }
 
     return null;
+  }
+
+
+  /**
+   * {@inheritDoc}
+   */
+  @Override
+  public Match starts(String input) {
+
+    // create Matcher for input
+    Matcher matcher = this.re.matcher(input);
+    if (matcher.find() && matcher.start() == 0) {
+      return new Match(matcher.start(), matcher.end(), matcher.group());
+    }
+
+    return null;
+  }
+
+
+  /**
+   * {@inheritDoc}
+   */
+  @Override
+  public Match ends(String input) {
+
+    // create Matcher for input
+    Matcher matcher = this.re.matcher(input);
+    // get the last match
+    Match match = null;
+    while (matcher.find()) {
+      match = new Match(matcher.start(), matcher.end(), matcher.group());
+    }
+    // return result
+    return match;
   }
 }
