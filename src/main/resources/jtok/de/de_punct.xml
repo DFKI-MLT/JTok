@@ -76,9 +76,7 @@
     <HYPHEN regexp="-(?!\d)" class="PUNCTUATION"/>
     <SCOLON regexp=";" class="PUNCTUATION"/>
     <COLON regexp=":" class="PUNCTUATION"/>
-    <!-- only match a comma when it's not followed by a digit -->
-    <!-- because it's then digit internal, like in 3,5 -->
-    <COMMA regexp=",(?!\d)" class="PUNCTUATION"/>
+    <COMMA regexp="," class="PUNCTUATION"/>
     <SLASH regexp="\/" class="PUNCTUATION"/>
     <BSLASH regexp="\\" class="PUNCTUATION"/>
     <PIPE regexp="\|" class="PUNCTUATION"/>
@@ -123,7 +121,7 @@
 
     <!-- punctuation which can be found in compounds -->
     <INTERNAL_PUNCT_RULE>
-      <SPECIAL_INT/>|<RSQUOTE_R/>|<HYPHEN/>|<PERIOD/>|<AMP/>|<SLASH/>|<COLON/>|<NBL/>
+      <SPECIAL_INT/>|<RSQUOTE_R/>|<HYPHEN/>|<PERIOD/>|<COMMA/>|<AMP/>|<SLASH/>|<COLON/>|<NBL/>
     </INTERNAL_PUNCT_RULE>
 
     <!-- non-breaking punctuation on the left side of a token -->

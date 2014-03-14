@@ -1095,14 +1095,8 @@ Paragraph End: 4130
   Text Unit End: 4049
     Token: "From"         	Type: TOKEN	Start: 3907	End: 3911
     Token: "love"         	Type: TOKEN	Start: 3912	End: 3916
-    Token: "triangles"    	Type: TOKEN	Start: 3917	End: 3926
-    Token: ","            	Type: PUNCTUATION	Start: 3926	End: 3927
-    Token: "addictions"   	Type: TOKEN	Start: 3927	End: 3937
-    Token: ","            	Type: PUNCTUATION	Start: 3937	End: 3938
-    Token: "career"       	Type: TOKEN	Start: 3938	End: 3944
-    Token: "struggles"    	Type: TOKEN	Start: 3945	End: 3954
-    Token: ","            	Type: PUNCTUATION	Start: 3954	End: 3955
-    Token: "freindships"  	Type: TOKEN	Start: 3955	End: 3966
+    Token: "triangles,addictions,career"	Type: TOKEN	Start: 3917	End: 3944
+    Token: "struggles,freindships"	Type: TOKEN	Start: 3945	End: 3966
     Token: "and"          	Type: TOKEN	Start: 3967	End: 3970
     Token: "loyalties"    	Type: TOKEN	Start: 3971	End: 3980
     Token: ","            	Type: PUNCTUATION	Start: 3980	End: 3981

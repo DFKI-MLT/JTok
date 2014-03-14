@@ -344,9 +344,7 @@ Paragraph Start: 436
 Paragraph End: 439
   Text Unit Start: 436
   Text Unit End: 439
-    Token: "a"            	Type: TOKEN	Start: 436	End: 437
-    Token: ","            	Type: PUNCTUATION	Start: 437	End: 438
-    Token: "b"            	Type: TOKEN	Start: 438	End: 439
+    Token: "a,b"          	Type: TOKEN	Start: 436	End: 439
 
 Paragraph Start: 443
 Paragraph End: 445
