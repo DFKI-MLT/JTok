@@ -665,25 +665,22 @@ public class JTok {
 
       // check if token contains digits
       if (null != simpleDigitsMatcher.contains(image)) {
+        // check if token is ordinal number
+        if (ordinalMatcher.matches(image)) {
+          String ordClass =
+            this.identifyClass(image, ordinalMatcher, langRes.getNumbDescr());
+          input.annotate(CLASS_ANNO, ordClass, tokenStart, tokenEnd);
+          continue;
+        }
         // initialize flag that indicates if a period was found at the
         // end of the image
         boolean periodFlag = false;
-        // check if token is candidate for an ordinal number
+        // cut period from token and check if the rest is a number
         if ('.' == image.charAt(image.length() - 1)) {
           periodFlag = true;
-          // check if token is ordinal number
-          if (ordinalMatcher.matches(image)) {
-            String ordClass =
-              this.identifyClass(image, ordinalMatcher, langRes.getNumbDescr());
-            input.annotate(CLASS_ANNO, ordClass, tokenStart, tokenEnd);
-            continue;
-          }
-
-          // cut period from image
           image = image.substring(0, image.length() - 1);
           tokenEnd--;
         }
-
         // check if token is a digit
         if (digitsMatcher.matches(image)) {
           String numbClass =
