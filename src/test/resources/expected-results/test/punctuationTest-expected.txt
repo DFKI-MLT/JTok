@@ -307,3 +307,72 @@ Paragraph End: 377
     Token: "abc"          	Type: TOKEN	Start: 373	End: 376
     Token: "."            	Type: TERM_PUNCT_P	Start: 376	End: 377
 
+Paragraph Start: 381
+Paragraph End: 397
+  Text Unit Start: 381
+  Text Unit End: 397
+    Token: "Homer"        	Type: TOKEN	Start: 381	End: 386
+    Token: "J."           	Type: INITIAL	Start: 387	End: 389
+    Token: "Simpson"      	Type: TOKEN	Start: 390	End: 397
+
+Paragraph Start: 401
+Paragraph End: 407
+  Text Unit Start: 401
+  Text Unit End: 407
+    Token: "u.s.w."       	Type: B_ABBREVIATION	Start: 401	End: 407
+
+Paragraph Start: 411
+Paragraph End: 415
+  Text Unit Start: 411
+  Text Unit End: 415
+    Token: "Vkz."         	Type: B_ABBREVIATION	Start: 411	End: 415
+
+Paragraph Start: 419
+Paragraph End: 425
+  Text Unit Start: 419
+  Text Unit End: 425
+    Token: "L.A."         	Type: B_ABBREVIATION	Start: 419	End: 423
+    Token: "'s"           	Type: RIGHTSPLIT	Start: 423	End: 425
+
+Paragraph Start: 429
+Paragraph End: 432
+  Text Unit Start: 429
+  Text Unit End: 432
+    Token: "3,5"          	Type: DIGITAL	Start: 429	End: 432
+
+Paragraph Start: 436
+Paragraph End: 439
+  Text Unit Start: 436
+  Text Unit End: 439
+    Token: "a"            	Type: TOKEN	Start: 436	End: 437
+    Token: ","            	Type: PUNCTUATION	Start: 437	End: 438
+    Token: "b"            	Type: TOKEN	Start: 438	End: 439
+
+Paragraph Start: 443
+Paragraph End: 445
+  Text Unit Start: 443
+  Text Unit End: 445
+    Token: "-1"           	Type: DIGITAL	Start: 443	End: 445
+
+Paragraph Start: 449
+Paragraph End: 451
+  Text Unit Start: 449
+  Text Unit End: 451
+    Token: "-"            	Type: PUNCTUATION	Start: 449	End: 450
+    Token: "a"            	Type: TOKEN	Start: 450	End: 451
+
+Paragraph Start: 455
+Paragraph End: 475
+  Text Unit Start: 455
+  Text Unit End: 475
+    Token: "Fischer-TB.-Vlg."	Type: B_ABBREVIATION	Start: 455	End: 471
+    Token: ","            	Type: PUNCTUATION	Start: 471	End: 472
+    Token: "Ffm"          	Type: TOKEN	Start: 472	End: 475
+
+Paragraph Start: 479
+Paragraph End: 500
+  Text Unit Start: 479
+  Text Unit End: 500
+    Token: "Fischer-TB.-Vlg."	Type: B_ABBREVIATION	Start: 479	End: 495
+    Token: ","            	Type: PUNCTUATION	Start: 495	End: 496
+    Token: "Ffm"          	Type: TOKEN	Start: 497	End: 500

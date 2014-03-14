@@ -215,3 +215,17 @@ Paragraph End: 449
   Text Unit End: 449
     Token: "$"            	Type: LEFTSPLIT	Start: 446	End: 447
     Token: "50"           	Type: DIGITAL	Start: 447	End: 449
+
+Paragraph Start: 453
+Paragraph End: 456
+  Text Unit Start: 453
+  Text Unit End: 456
+    Token: "AA"           	Type: TOKEN	Start: 453	End: 455
+    Token: "$"            	Type: RIGHTSPLIT	Start: 455	End: 456
+
+Paragraph Start: 460
+Paragraph End: 463
+  Text Unit Start: 460
+  Text Unit End: 463
+    Token: "$"            	Type: LEFTSPLIT	Start: 460	End: 461
+    Token: "AA"           	Type: TOKEN	Start: 461	End: 463

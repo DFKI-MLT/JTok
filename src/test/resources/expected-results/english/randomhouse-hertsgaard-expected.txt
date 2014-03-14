@@ -52,7 +52,7 @@ Paragraph Start: 132
 Paragraph End: 155
   Text Unit Start: 132
   Text Unit End: 155
-    Token: "$"            	Type: TOKEN	Start: 132	End: 133
+    Token: "$"            	Type: LEFTSPLIT	Start: 132	End: 133
     Token: "15.95"        	Type: DIGITAL	Start: 134	End: 139
     Token: "|"            	Type: PUNCTUATION	Start: 140	End: 141
     Token: "0-385-31517-1"	Type: DIGITAL	Start: 142	End: 155
@@ -2085,4 +2085,3 @@ Paragraph End: 9471
     Token: "the"          	Type: TOKEN	Start: 9457	End: 9460
     Token: "publisher"    	Type: TOKEN	Start: 9461	End: 9470
     Token: "."            	Type: TERM_PUNCT_P	Start: 9470	End: 9471
-

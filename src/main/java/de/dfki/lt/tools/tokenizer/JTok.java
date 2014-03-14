@@ -533,14 +533,14 @@ public class JTok {
       // proclitics:
       // check for non-breaking left punctuation; these
       // have to be cut before proclitics check
-      Match nbl = nblMatcher.contains(image);
+      Match nbl = nblMatcher.starts(image);
       Match proclit = null;
       if (null != nbl) {
-        proclit = proclitMatcher.contains(
+        proclit = proclitMatcher.starts(
           image.substring(nbl.getEndIndex(), endIndex));
       }
       else {
-        proclit = proclitMatcher.contains(image);
+        proclit = proclitMatcher.starts(image);
       }
 
       // if there is a proclitic, create a token for possible
@@ -564,21 +564,21 @@ public class JTok {
           tokenStart + startIndex + proclit.getEndIndex());
         startIndex = startIndex + proclit.getEndIndex();
         proclit =
-          proclitMatcher.contains(image.substring(
+          proclitMatcher.starts(image.substring(
             startIndex, image.length()));
       }
 
       // enclitics:
       // check for non-breaking right punctuation; these
       // have to be cut before enclitics check
-      Match nbr = nbrMatcher.contains(image);
+      Match nbr = nbrMatcher.ends(image);
       Match enclit = null;
       if (null != nbr) {
-        enclit = enclitMatcher.contains(
+        enclit = enclitMatcher.ends(
           image.substring(startIndex, nbr.getStartIndex()));
       }
       else {
-        enclit = enclitMatcher.contains(
+        enclit = enclitMatcher.ends(
           image.substring(startIndex, endIndex));
       }
 
@@ -601,7 +601,7 @@ public class JTok {
           tokenStart + startIndex + enclit.getEndIndex());
         endIndex = startIndex + enclit.getStartIndex();
         enclit =
-          enclitMatcher.contains(image.substring(startIndex, endIndex));
+          enclitMatcher.ends(image.substring(startIndex, endIndex));
       }
 
       // create token for remaining stuff between pro- and enclitics
@@ -633,7 +633,7 @@ public class JTok {
     RegExp digitsMatcher = langRes.getDigitsMatcher();
 
     // get the class of the root element of the class hierarchy;
-    // only tokens with this class are further examinated
+    // only tokens with this class are further examined
     String rootClass =
       langRes.getClassesRoot().getTagName();
 
@@ -685,14 +685,10 @@ public class JTok {
         }
 
         // check if token is a digit
-        Match digit = digitsMatcher.contains(image);
-        if (null != digit) {
+        if (digitsMatcher.matches(image)) {
           String numbClass =
-            this.identifyClass(
-              digit.getImage(), digitsMatcher, langRes.getNumbDescr());
-          input.annotate(CLASS_ANNO, numbClass,
-            tokenStart + digit.getStartIndex(),
-            tokenStart + digit.getEndIndex());
+            this.identifyClass(image, digitsMatcher, langRes.getNumbDescr());
+          input.annotate(CLASS_ANNO, numbClass, tokenStart, tokenEnd);
           // if period was cut off, annotate it now
           if (periodFlag) {
             String punctClass =
@@ -763,7 +759,7 @@ public class JTok {
       String image = input.substring(tokenStart, tokenEnd);
       // check if token contains a non-breaking right punctuation that
       // consists of a single period
-      Match nbr = nbrMatcher.contains(image);
+      Match nbr = nbrMatcher.ends(image);
       if ((null != nbr)
           && ((nbr.getEndIndex() - nbr.getStartIndex()) == 1)
           && (input.charAt(tokenStart + nbr.getStartIndex()) == '.')) {
@@ -823,8 +819,7 @@ public class JTok {
         // if token is no abbreviation, split non-breaking right
         // punctuation
         String punctClass =
-          this.identifyPunctClass
-            (nbr, nbrMatcher, image, langRes);
+          this.identifyPunctClass(nbr, nbrMatcher, image, langRes);
         // annotate
         input.annotate(CLASS_ANNO, punctClass,
           tokenStart + nbr.getStartIndex(),

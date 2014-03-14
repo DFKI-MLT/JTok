@@ -8,12 +8,12 @@
 
     <!-- This defines the proclitics/prefixes that are -->
     <!-- splitted from a token, e.g. '$50' to '$' '50' . -->
-    <PROCLITICS regexp="[$€£¥](?=\d)"
+    <PROCLITICS regexp="[$€£¥]"
                 class="LEFTSPLIT"/>
 
     <!-- This defines the enclitics/suffixes that are -->
     <!-- splitted from a token, e.g. '50$' to '50' '$' . -->
-    <ENCLITICS regexp=":|'re|'RE|'ll|'LL|'ve|'VE|n't|N'T|'[Dd]|'[Mm]|'[Ss]|'[Nn]|(?&lt;=can)not|(?&lt;=CAN)NOT|(?&lt;=\d)[$€£¥]"
+    <ENCLITICS regexp=":|'re|'RE|'ll|'LL|'ve|'VE|n't|N'T|'[Dd]|'[Mm]|'[Ss]|'[Nn]|[$€£¥]"
                class="RIGHTSPLIT"/>
 
   </DEFINITIONS>
@@ -23,18 +23,14 @@
   <!-- Rule names may not be altered! -->
   <RULES>
 
-    <!-- rule for proclitics; -->
-    <!-- use the beginning-of-input matcher \A to easily -->
-    <!-- identify this punctuation -->
+    <!-- rule for proclitics -->
     <PROCLITIC_RULE class="LEFTSPLIT">
-      \A(<PROCLITICS/>)
+      <PROCLITICS/>
     </PROCLITIC_RULE>
 
-    <!-- rule for enclitics; -->
-    <!-- use the end-of-input matcher \Z to easily -->
-    <!-- identify this punctuation -->
+    <!-- rule for enclitics -->
     <ENCLITIC_RULE class="RIGHTSPLIT">
-      (<ENCLITICS/>)\Z
+      <ENCLITICS/>
     </ENCLITIC_RULE>
 
   </RULES>
