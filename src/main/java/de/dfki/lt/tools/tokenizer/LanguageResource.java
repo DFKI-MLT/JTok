@@ -96,6 +96,11 @@ public class LanguageResource {
   private Element classesRoot;
 
   /**
+   * Contains the name of the root element of the classes hierarchy.
+   */
+  private String classesRootName;
+
+  /**
    * Contains a map from class names to a lists of class names that are
    * ancestors of this class.
    */
@@ -149,7 +154,6 @@ public class LanguageResource {
   public LanguageResource(String lang, String resourceDir) {
 
     // init stuff
-    this.setClassesRoot(null);
     this.setAncestorsMap(new HashMap<String, List<String>>());
     this.setTagsMap(new HashMap<String, String>());
     this.setClassesMap(new HashMap<String, String>());
@@ -245,6 +249,7 @@ public class LanguageResource {
   void setClassesRoot(Element classesRoot) {
 
     this.classesRoot = classesRoot;
+    this.classesRootName = classesRoot.getNodeName();
   }
 
 
@@ -455,10 +460,10 @@ public class LanguageResource {
     this.getClassesMap().put(tag, key);
     // collect ancestors of element
     List<String> ancestors = new ArrayList<>();
-    // each element is also its own ancestor
-    ancestors.add(ele.getTagName());
     Node directAncestor = ele.getParentNode();
-    while ((null != directAncestor) && (directAncestor instanceof Element)) {
+    while ((null != directAncestor)
+        && (directAncestor instanceof Element)
+        && (directAncestor != this.classesRoot)) {
       ancestors.add(((Element)directAncestor).getTagName());
       directAncestor = directAncestor.getParentNode();
     }
@@ -481,6 +486,10 @@ public class LanguageResource {
    */
   boolean isAncestor(String class1, String class2)
       throws ProcessingException {
+
+    if (class2.equals(this.classesRootName) || class1.equals(class2)) {
+      return true;
+    }
 
     List<String> ancestors = this.getAncestorsMap().get(class2);
     if (null == ancestors) {
