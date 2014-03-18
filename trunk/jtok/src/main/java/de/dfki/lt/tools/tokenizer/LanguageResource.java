@@ -249,7 +249,7 @@ public class LanguageResource {
   void setClassesRoot(Element classesRoot) {
 
     this.classesRoot = classesRoot;
-    this.classesRootName = classesRoot.getNodeName();
+    this.classesRootName = classesRoot.getTagName();
   }
 
 
@@ -487,7 +487,7 @@ public class LanguageResource {
   boolean isAncestor(String class1, String class2)
       throws ProcessingException {
 
-    if (class2.equals(this.classesRootName) || class1.equals(class2)) {
+    if (class1.equals(this.classesRootName) || class1.equals(class2)) {
       return true;
     }
 
