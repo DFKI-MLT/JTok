@@ -866,7 +866,7 @@ public class JTok {
       if (null != input.getAnnotation(CLASS_ANNO)) {
         // check if we are in end-of-sentence mode
         if (eosMode) {
-          // if we find terminal punctuation or closing bracets,
+          // if we find terminal punctuation or closing brackets,
           // continue with the current sentence
           if (langRes.isAncestor(
               "TERM_PUNCT", (String)input.getAnnotation(CLASS_ANNO))
