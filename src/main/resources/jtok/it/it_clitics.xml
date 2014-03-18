@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- This contains the clitics description for Italian. -->
+<!-- The regular expressions processing is based on the -->
+<!-- dk.brics.automaton package. -->
+<!-- See http://www.brics.dk/automaton/doc/index.html -->
+<!-- for the abstract syntax -->
 <!-- If you modify this file, be sure to check if the -->
 <!-- CLITIC_PUNCT_RULE rule in de_punct.xml is still correct. -->
 <CLITICS_DESCRIPTION>

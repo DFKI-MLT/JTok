@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- This contains the abbreviation description for German. -->
+<!-- The regular expressions processing is based on the -->
+<!-- dk.brics.automaton package. -->
+<!-- See http://www.brics.dk/automaton/doc/index.html -->
+<!-- for the abstract syntax -->
 <ABBREVIATION_DESCRIPTION>
 
   <!-- This defines the abbreviation class for different lists -->
@@ -17,7 +21,7 @@
     <ONE_LETTER_SEQ regexp="([a-zA-Z]\.)+" class="B_ABBREVIATION"/>
     <!-- tokens that contain only consonants -->
     <!-- don't match tokens that consist only of capitals, like CD -->
-    <NO_VOCALS regexp="[a-zA-Z&amp;&amp;[^aeiouyAEIOUäöüÄÖÜY]][a-z&amp;&amp;[^aeiouyäöü]]+\." class="B_ABBREVIATION"/>
+    <NO_VOCALS regexp="([a-zA-Z]&amp;[^aeiouyAEIOUäöüÄÖÜY])([a-z]&amp;[^aeiouyäöü])+\." class="B_ABBREVIATION"/>
     <!-- suffixes that only stand at the end of abbreviations: -->
     <!-- -tr. like in `Hauptstr.' or `Stadtztr.' -->
     <!-- -pl. like in `Marktpl.' -->

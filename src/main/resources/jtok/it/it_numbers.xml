@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- This contains the number description for Italian. -->
+<!-- The regular expressions processing is based on the -->
+<!-- dk.brics.automaton package. -->
+<!-- See http://www.brics.dk/automaton/doc/index.html -->
+<!-- for the abstract syntax -->
 <NUMBER_DESCRIPTION>
 
   <!-- This defines the specific number elements. The regexp -->
@@ -27,7 +31,7 @@
     <!-- digit numbers -->
     <!-- this matches digits that may start or end with -->
     <!-- non-digits or that might be interrupted by non-digits -->
-    <DIGIT regexp="[A-Za-z#+\-]?[0-9]+([A-Za-z\-\.,]{1,3}[0-9]+)*([A-Za-z#\-+]{1,2})?" class="DIGITAL"/>
+    <DIGIT regexp="[A-Za-z\#+\-]?[0-9]+([A-Za-z\-\.,]{1,3}[0-9]+)*([A-Za-z\#\-+]{1,2})?" class="DIGITAL"/>
 
   </DEFINITIONS>
 
