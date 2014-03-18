@@ -57,9 +57,7 @@ public class DkBricsRegExp implements RegExp {
       throws InitializationException {
 
     this.re = new RunAutomaton(
-      new dk.brics.automaton.RegExp(
-        regExpString, dk.brics.automaton.RegExp.NONE)
-      .toAutomaton(true), true);
+      new dk.brics.automaton.RegExp(regExpString).toAutomaton(true), true);
   }
 
 

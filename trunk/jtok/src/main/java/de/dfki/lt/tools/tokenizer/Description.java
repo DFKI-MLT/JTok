@@ -38,7 +38,7 @@ import org.w3c.dom.NodeList;
 import org.w3c.dom.Text;
 
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
-import de.dfki.lt.tools.tokenizer.regexp.JavaRegExpFactory;
+import de.dfki.lt.tools.tokenizer.regexp.DkBricsRegExpFactory;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 import de.dfki.lt.tools.tokenizer.regexp.RegExpFactory;
 
@@ -88,7 +88,7 @@ public abstract class Description {
   /**
    * Factory for creating regular expressions.
    */
-  protected static RegExpFactory FACTORY = new JavaRegExpFactory();
+  protected static RegExpFactory FACTORY = new DkBricsRegExpFactory();
 
   /**
    * Maps a class name to a regular expression that matches all tokens of this

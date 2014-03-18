@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- This contains the punctuation description for English. -->
+<!-- The regular expressions processing is based on the -->
+<!-- dk.brics.automaton package. -->
+<!-- See http://www.brics.dk/automaton/doc/index.html -->
+<!-- for the abstract syntax -->
 <PUNCTUATION_DESCRIPTION>
 
   <!-- This defines the specific punctuation elements. The regexp -->
@@ -81,7 +85,7 @@
     <TILDE regexp="\~" class="PUNCTUATION"/>
     <AMP regexp="\&amp;" class="PUNCTUATION"/>
 
-    <NBL regexp="@" class="PUNCTUATION"/>
+    <NBL regexp="\@" class="PUNCTUATION"/>
 
   </DEFINITIONS>
 
