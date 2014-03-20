@@ -64,6 +64,14 @@
       <INITIAL tag="INIT"/>
     </NB_ABBREVIATION>
   </ABBREVIATION>
+  
+  <!-- words -->
+  <WORD>
+    <EMAIL tag="e_mail_adress"/>
+    <ALL_LOWER_CASE tag="all_lower_case"/>
+    <ALL_UPPER_CASE tag="all_upper_case"/>
+    <FIRST_UPPER_CASE tag="first_upper_case"/>
+  </WORD>
 
 </TOKEN>
   

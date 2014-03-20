@@ -7,128 +7,128 @@ Paragraph Start: 4
 Paragraph End: 27
   Text Unit Start: 4
   Text Unit End: 27
-    Token: "Books"        	Type: TOKEN	Start: 4	End: 9
-    Token: "All"          	Type: TOKEN	Start: 11	End: 14
-    Token: "Products"     	Type: TOKEN	Start: 15	End: 23
-    Token: "Go"           	Type: TOKEN	Start: 25	End: 27
+    Token: "Books"        	Type: FIRST_UPPER_CASE	Start: 4	End: 9
+    Token: "All"          	Type: FIRST_UPPER_CASE	Start: 11	End: 14
+    Token: "Products"     	Type: FIRST_UPPER_CASE	Start: 15	End: 23
+    Token: "Go"           	Type: FIRST_UPPER_CASE	Start: 25	End: 27
 
 Paragraph Start: 31
 Paragraph End: 48
   Text Unit Start: 31
   Text Unit End: 48
-    Token: "Explore"      	Type: TOKEN	Start: 31	End: 38
-    Token: "this"         	Type: TOKEN	Start: 39	End: 43
-    Token: "book"         	Type: TOKEN	Start: 44	End: 48
+    Token: "Explore"      	Type: FIRST_UPPER_CASE	Start: 31	End: 38
+    Token: "this"         	Type: ALL_LOWER_CASE	Start: 39	End: 43
+    Token: "book"         	Type: ALL_LOWER_CASE	Start: 44	End: 48
 
 Paragraph Start: 52
 Paragraph End: 68
   Text Unit Start: 52
   Text Unit End: 68
-    Token: "customer"     	Type: TOKEN	Start: 52	End: 60
-    Token: "reviews"      	Type: TOKEN	Start: 61	End: 68
+    Token: "customer"     	Type: ALL_LOWER_CASE	Start: 52	End: 60
+    Token: "reviews"      	Type: ALL_LOWER_CASE	Start: 61	End: 68
 
 Paragraph Start: 72
 Paragraph End: 86
   Text Unit Start: 72
   Text Unit End: 86
-    Token: "rate"         	Type: TOKEN	Start: 72	End: 76
-    Token: "this"         	Type: TOKEN	Start: 77	End: 81
-    Token: "item"         	Type: TOKEN	Start: 82	End: 86
+    Token: "rate"         	Type: ALL_LOWER_CASE	Start: 72	End: 76
+    Token: "this"         	Type: ALL_LOWER_CASE	Start: 77	End: 81
+    Token: "item"         	Type: ALL_LOWER_CASE	Start: 82	End: 86
 
 Paragraph Start: 90
 Paragraph End: 113
   Text Unit Start: 90
   Text Unit End: 113
-    Token: "See"          	Type: TOKEN	Start: 90	End: 93
-    Token: "more"         	Type: TOKEN	Start: 94	End: 98
-    Token: "by"           	Type: TOKEN	Start: 99	End: 101
-    Token: "this"         	Type: TOKEN	Start: 102	End: 106
-    Token: "author"       	Type: TOKEN	Start: 107	End: 113
+    Token: "See"          	Type: FIRST_UPPER_CASE	Start: 90	End: 93
+    Token: "more"         	Type: ALL_LOWER_CASE	Start: 94	End: 98
+    Token: "by"           	Type: ALL_LOWER_CASE	Start: 99	End: 101
+    Token: "this"         	Type: ALL_LOWER_CASE	Start: 102	End: 106
+    Token: "author"       	Type: ALL_LOWER_CASE	Start: 107	End: 113
 
 Paragraph Start: 117
 Paragraph End: 141
   Text Unit Start: 117
   Text Unit End: 141
-    Token: "all"          	Type: TOKEN	Start: 117	End: 120
-    Token: "books"        	Type: TOKEN	Start: 121	End: 126
-    Token: "by"           	Type: TOKEN	Start: 127	End: 129
-    Token: "Ray"          	Type: TOKEN	Start: 130	End: 133
-    Token: "Coleman"      	Type: TOKEN	Start: 134	End: 141
+    Token: "all"          	Type: ALL_LOWER_CASE	Start: 117	End: 120
+    Token: "books"        	Type: ALL_LOWER_CASE	Start: 121	End: 126
+    Token: "by"           	Type: ALL_LOWER_CASE	Start: 127	End: 129
+    Token: "Ray"          	Type: FIRST_UPPER_CASE	Start: 130	End: 133
+    Token: "Coleman"      	Type: FIRST_UPPER_CASE	Start: 134	End: 141
 
 Paragraph Start: 145
 Paragraph End: 166
   Text Unit Start: 145
   Text Unit End: 166
-    Token: "Customers"    	Type: TOKEN	Start: 145	End: 154
-    Token: "also"         	Type: TOKEN	Start: 155	End: 159
-    Token: "bought"       	Type: TOKEN	Start: 160	End: 166
+    Token: "Customers"    	Type: FIRST_UPPER_CASE	Start: 145	End: 154
+    Token: "also"         	Type: ALL_LOWER_CASE	Start: 155	End: 159
+    Token: "bought"       	Type: ALL_LOWER_CASE	Start: 160	End: 166
 
 Paragraph Start: 170
 Paragraph End: 181
   Text Unit Start: 170
   Text Unit End: 181
-    Token: "these"        	Type: TOKEN	Start: 170	End: 175
-    Token: "books"        	Type: TOKEN	Start: 176	End: 181
+    Token: "these"        	Type: ALL_LOWER_CASE	Start: 170	End: 175
+    Token: "books"        	Type: ALL_LOWER_CASE	Start: 176	End: 181
 
 Paragraph Start: 185
 Paragraph End: 202
   Text Unit Start: 185
   Text Unit End: 202
-    Token: "these"        	Type: TOKEN	Start: 185	End: 190
-    Token: "other"        	Type: TOKEN	Start: 191	End: 196
-    Token: "items"        	Type: TOKEN	Start: 197	End: 202
+    Token: "these"        	Type: ALL_LOWER_CASE	Start: 185	End: 190
+    Token: "other"        	Type: ALL_LOWER_CASE	Start: 191	End: 196
+    Token: "items"        	Type: ALL_LOWER_CASE	Start: 197	End: 202
 
 Paragraph Start: 206
 Paragraph End: 225
   Text Unit Start: 206
   Text Unit End: 225
-    Token: "Share"        	Type: TOKEN	Start: 206	End: 211
-    Token: "your"         	Type: TOKEN	Start: 212	End: 216
-    Token: "thoughts"     	Type: TOKEN	Start: 217	End: 225
+    Token: "Share"        	Type: FIRST_UPPER_CASE	Start: 206	End: 211
+    Token: "your"         	Type: ALL_LOWER_CASE	Start: 212	End: 216
+    Token: "thoughts"     	Type: ALL_LOWER_CASE	Start: 217	End: 225
 
 Paragraph Start: 229
 Paragraph End: 243
   Text Unit Start: 229
   Text Unit End: 243
-    Token: "write"        	Type: TOKEN	Start: 229	End: 234
-    Token: "a"            	Type: TOKEN	Start: 235	End: 236
-    Token: "review"       	Type: TOKEN	Start: 237	End: 243
+    Token: "write"        	Type: ALL_LOWER_CASE	Start: 229	End: 234
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 235	End: 236
+    Token: "review"       	Type: ALL_LOWER_CASE	Start: 237	End: 243
 
 Paragraph Start: 247
 Paragraph End: 278
   Text Unit Start: 247
   Text Unit End: 278
     Token: "e-mail"       	Type: TOKEN	Start: 247	End: 253
-    Token: "a"            	Type: TOKEN	Start: 254	End: 255
-    Token: "friend"       	Type: TOKEN	Start: 256	End: 262
-    Token: "about"        	Type: TOKEN	Start: 263	End: 268
-    Token: "this"         	Type: TOKEN	Start: 269	End: 273
-    Token: "item"         	Type: TOKEN	Start: 274	End: 278
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 254	End: 255
+    Token: "friend"       	Type: ALL_LOWER_CASE	Start: 256	End: 262
+    Token: "about"        	Type: ALL_LOWER_CASE	Start: 263	End: 268
+    Token: "this"         	Type: ALL_LOWER_CASE	Start: 269	End: 273
+    Token: "item"         	Type: ALL_LOWER_CASE	Start: 274	End: 278
 
 Paragraph Start: 282
 Paragraph End: 302
   Text Unit Start: 282
   Text Unit End: 302
-    Token: "Add"          	Type: TOKEN	Start: 282	End: 285
-    Token: "to"           	Type: TOKEN	Start: 286	End: 288
-    Token: "Shopping"     	Type: TOKEN	Start: 289	End: 297
-    Token: "Cart"         	Type: TOKEN	Start: 298	End: 302
+    Token: "Add"          	Type: FIRST_UPPER_CASE	Start: 282	End: 285
+    Token: "to"           	Type: ALL_LOWER_CASE	Start: 286	End: 288
+    Token: "Shopping"     	Type: FIRST_UPPER_CASE	Start: 289	End: 297
+    Token: "Cart"         	Type: FIRST_UPPER_CASE	Start: 298	End: 302
 
 Paragraph Start: 306
 Paragraph End: 368
   Text Unit Start: 306
   Text Unit End: 368
     Token: "("            	Type: OPEN_BRACKET	Start: 306	End: 307	PTB: "-LRB-"
-    Token: "Use"          	Type: TOKEN	Start: 307	End: 310
-    Token: "if"           	Type: TOKEN	Start: 311	End: 313
-    Token: "you"          	Type: TOKEN	Start: 314	End: 317
+    Token: "Use"          	Type: FIRST_UPPER_CASE	Start: 307	End: 310
+    Token: "if"           	Type: ALL_LOWER_CASE	Start: 311	End: 313
+    Token: "you"          	Type: ALL_LOWER_CASE	Start: 314	End: 317
     Token: "'re"          	Type: RIGHTSPLIT	Start: 317	End: 320
-    Token: "redeeming"    	Type: TOKEN	Start: 321	End: 330
-    Token: "a"            	Type: TOKEN	Start: 331	End: 332
-    Token: "promotional"  	Type: TOKEN	Start: 333	End: 344
-    Token: "certificate"  	Type: TOKEN	Start: 345	End: 356
-    Token: "or"           	Type: TOKEN	Start: 357	End: 359
-    Token: "coupon"       	Type: TOKEN	Start: 360	End: 366
+    Token: "redeeming"    	Type: ALL_LOWER_CASE	Start: 321	End: 330
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 331	End: 332
+    Token: "promotional"  	Type: ALL_LOWER_CASE	Start: 333	End: 344
+    Token: "certificate"  	Type: ALL_LOWER_CASE	Start: 345	End: 356
+    Token: "or"           	Type: ALL_LOWER_CASE	Start: 357	End: 359
+    Token: "coupon"       	Type: ALL_LOWER_CASE	Start: 360	End: 366
     Token: "."            	Type: TERM_PUNCT_P	Start: 366	End: 367
     Token: ")"            	Type: CLOSE_BRACKET	Start: 367	End: 368	PTB: "-RRB-"
 
@@ -136,21 +136,21 @@ Paragraph Start: 372
 Paragraph End: 391
   Text Unit Start: 372
   Text Unit End: 391
-    Token: "Returning"    	Type: TOKEN	Start: 372	End: 381
-    Token: "customer"     	Type: TOKEN	Start: 382	End: 390
+    Token: "Returning"    	Type: FIRST_UPPER_CASE	Start: 372	End: 381
+    Token: "customer"     	Type: ALL_LOWER_CASE	Start: 382	End: 390
     Token: "?"            	Type: TERM_PUNCT	Start: 390	End: 391
 
 Paragraph Start: 395
 Paragraph End: 431
   Text Unit Start: 395
   Text Unit End: 431
-    Token: "Sign"         	Type: TOKEN	Start: 395	End: 399
-    Token: "in"           	Type: TOKEN	Start: 400	End: 402
-    Token: "to"           	Type: TOKEN	Start: 403	End: 405
-    Token: "turn"         	Type: TOKEN	Start: 406	End: 410
-    Token: "on"           	Type: TOKEN	Start: 411	End: 413
+    Token: "Sign"         	Type: FIRST_UPPER_CASE	Start: 395	End: 399
+    Token: "in"           	Type: ALL_LOWER_CASE	Start: 400	End: 402
+    Token: "to"           	Type: ALL_LOWER_CASE	Start: 403	End: 405
+    Token: "turn"         	Type: ALL_LOWER_CASE	Start: 406	End: 410
+    Token: "on"           	Type: ALL_LOWER_CASE	Start: 411	End: 413
     Token: "1-Click"      	Type: TOKEN	Start: 414	End: 421
-    Token: "ordering"     	Type: TOKEN	Start: 422	End: 430
+    Token: "ordering"     	Type: ALL_LOWER_CASE	Start: 422	End: 430
     Token: "."            	Type: TERM_PUNCT_P	Start: 430	End: 431
 
 Paragraph Start: 435
@@ -158,49 +158,49 @@ Paragraph End: 461
   Text Unit Start: 435
   Text Unit End: 461
     Token: "("            	Type: OPEN_BRACKET	Start: 435	End: 436	PTB: "-LRB-"
-    Token: "We"           	Type: TOKEN	Start: 436	End: 438
+    Token: "We"           	Type: FIRST_UPPER_CASE	Start: 436	End: 438
     Token: "'ll"          	Type: RIGHTSPLIT	Start: 438	End: 441
-    Token: "set"          	Type: TOKEN	Start: 442	End: 445
-    Token: "one"          	Type: TOKEN	Start: 446	End: 449
-    Token: "up"           	Type: TOKEN	Start: 450	End: 452
-    Token: "for"          	Type: TOKEN	Start: 453	End: 456
-    Token: "you"          	Type: TOKEN	Start: 457	End: 460
+    Token: "set"          	Type: ALL_LOWER_CASE	Start: 442	End: 445
+    Token: "one"          	Type: ALL_LOWER_CASE	Start: 446	End: 449
+    Token: "up"           	Type: ALL_LOWER_CASE	Start: 450	End: 452
+    Token: "for"          	Type: ALL_LOWER_CASE	Start: 453	End: 456
+    Token: "you"          	Type: ALL_LOWER_CASE	Start: 457	End: 460
     Token: ")"            	Type: CLOSE_BRACKET	Start: 460	End: 461	PTB: "-RRB-"
 
 Paragraph Start: 465
 Paragraph End: 482
   Text Unit Start: 465
   Text Unit End: 482
-    Token: "View"         	Type: TOKEN	Start: 465	End: 469
-    Token: "my"           	Type: TOKEN	Start: 470	End: 472
-    Token: "Wish"         	Type: TOKEN	Start: 473	End: 477
-    Token: "List"         	Type: TOKEN	Start: 478	End: 482
+    Token: "View"         	Type: FIRST_UPPER_CASE	Start: 465	End: 469
+    Token: "my"           	Type: ALL_LOWER_CASE	Start: 470	End: 472
+    Token: "Wish"         	Type: FIRST_UPPER_CASE	Start: 473	End: 477
+    Token: "List"         	Type: FIRST_UPPER_CASE	Start: 478	End: 482
 
 Paragraph Start: 486
 Paragraph End: 520
   Text Unit Start: 486
   Text Unit End: 520
-    Token: "Clapton"      	Type: TOKEN	Start: 486	End: 493
+    Token: "Clapton"      	Type: FIRST_UPPER_CASE	Start: 486	End: 493
     Token: "!"            	Type: TERM_PUNCT	Start: 493	End: 494
     Token: ":"            	Type: PUNCTUATION	Start: 495	End: 496
-    Token: "An"           	Type: TOKEN	Start: 497	End: 499
-    Token: "Authorized"   	Type: TOKEN	Start: 500	End: 510
-    Token: "Biography"    	Type: TOKEN	Start: 511	End: 520
+    Token: "An"           	Type: FIRST_UPPER_CASE	Start: 497	End: 499
+    Token: "Authorized"   	Type: FIRST_UPPER_CASE	Start: 500	End: 510
+    Token: "Biography"    	Type: FIRST_UPPER_CASE	Start: 511	End: 520
 
 Paragraph Start: 524
 Paragraph End: 538
   Text Unit Start: 524
   Text Unit End: 538
-    Token: "by"           	Type: TOKEN	Start: 524	End: 526
-    Token: "Ray"          	Type: TOKEN	Start: 527	End: 530
-    Token: "Coleman"      	Type: TOKEN	Start: 531	End: 538
+    Token: "by"           	Type: ALL_LOWER_CASE	Start: 524	End: 526
+    Token: "Ray"          	Type: FIRST_UPPER_CASE	Start: 527	End: 530
+    Token: "Coleman"      	Type: FIRST_UPPER_CASE	Start: 531	End: 538
 
 Paragraph Start: 542
 Paragraph End: 560
   Text Unit Start: 542
   Text Unit End: 560
-    Token: "List"         	Type: TOKEN	Start: 542	End: 546
-    Token: "Price"        	Type: TOKEN	Start: 547	End: 552
+    Token: "List"         	Type: FIRST_UPPER_CASE	Start: 542	End: 546
+    Token: "Price"        	Type: FIRST_UPPER_CASE	Start: 547	End: 552
     Token: ":"            	Type: PUNCTUATION	Start: 552	End: 553
     Token: "$"            	Type: LEFTSPLIT	Start: 554	End: 555
     Token: "14.95"        	Type: DIGITAL	Start: 555	End: 560
@@ -209,8 +209,8 @@ Paragraph Start: 564
 Paragraph End: 581
   Text Unit Start: 564
   Text Unit End: 581
-    Token: "Our"          	Type: TOKEN	Start: 564	End: 567
-    Token: "Price"        	Type: TOKEN	Start: 568	End: 573
+    Token: "Our"          	Type: FIRST_UPPER_CASE	Start: 564	End: 567
+    Token: "Price"        	Type: FIRST_UPPER_CASE	Start: 568	End: 573
     Token: ":"            	Type: PUNCTUATION	Start: 573	End: 574
     Token: "$"            	Type: LEFTSPLIT	Start: 575	End: 576
     Token: "11.96"        	Type: DIGITAL	Start: 576	End: 581
@@ -219,8 +219,8 @@ Paragraph Start: 585
 Paragraph End: 606
   Text Unit Start: 585
   Text Unit End: 606
-    Token: "You"          	Type: TOKEN	Start: 585	End: 588
-    Token: "Save"         	Type: TOKEN	Start: 589	End: 593
+    Token: "You"          	Type: FIRST_UPPER_CASE	Start: 585	End: 588
+    Token: "Save"         	Type: FIRST_UPPER_CASE	Start: 589	End: 593
     Token: ":"            	Type: PUNCTUATION	Start: 593	End: 594
     Token: "$"            	Type: LEFTSPLIT	Start: 595	End: 596
     Token: "2.99"         	Type: DIGITAL	Start: 596	End: 600
@@ -233,8 +233,8 @@ Paragraph Start: 610
 Paragraph End: 627
   Text Unit Start: 610
   Text Unit End: 627
-    Token: "Used"         	Type: TOKEN	Start: 610	End: 614
-    Token: "Price"        	Type: TOKEN	Start: 615	End: 620
+    Token: "Used"         	Type: FIRST_UPPER_CASE	Start: 610	End: 614
+    Token: "Price"        	Type: FIRST_UPPER_CASE	Start: 615	End: 620
     Token: ":"            	Type: PUNCTUATION	Start: 620	End: 621
     Token: "$"            	Type: LEFTSPLIT	Start: 622	End: 623
     Token: "9.57"         	Type: DIGITAL	Start: 623	End: 627
@@ -243,32 +243,32 @@ Paragraph Start: 631
 Paragraph End: 675
   Text Unit Start: 631
   Text Unit End: 675
-    Token: "Availability" 	Type: TOKEN	Start: 631	End: 643
+    Token: "Availability" 	Type: FIRST_UPPER_CASE	Start: 631	End: 643
     Token: ":"            	Type: PUNCTUATION	Start: 643	End: 644
-    Token: "Usually"      	Type: TOKEN	Start: 645	End: 652
-    Token: "ships"        	Type: TOKEN	Start: 653	End: 658
-    Token: "within"       	Type: TOKEN	Start: 659	End: 665
+    Token: "Usually"      	Type: FIRST_UPPER_CASE	Start: 645	End: 652
+    Token: "ships"        	Type: ALL_LOWER_CASE	Start: 653	End: 658
+    Token: "within"       	Type: ALL_LOWER_CASE	Start: 659	End: 665
     Token: "24"           	Type: DIGITAL	Start: 666	End: 668
-    Token: "hours"        	Type: TOKEN	Start: 669	End: 674
+    Token: "hours"        	Type: ALL_LOWER_CASE	Start: 669	End: 674
     Token: "."            	Type: TERM_PUNCT_P	Start: 674	End: 675
 
 Paragraph Start: 679
 Paragraph End: 695
   Text Unit Start: 679
   Text Unit End: 695
-    Token: "See"          	Type: TOKEN	Start: 679	End: 682
-    Token: "larger"       	Type: TOKEN	Start: 683	End: 689
-    Token: "photo"        	Type: TOKEN	Start: 690	End: 695
+    Token: "See"          	Type: FIRST_UPPER_CASE	Start: 679	End: 682
+    Token: "larger"       	Type: ALL_LOWER_CASE	Start: 683	End: 689
+    Token: "photo"        	Type: ALL_LOWER_CASE	Start: 690	End: 695
 
 Paragraph Start: 699
 Paragraph End: 739
   Text Unit Start: 699
   Text Unit End: 739
-    Token: "Paperback"    	Type: TOKEN	Start: 699	End: 708
-    Token: "Reissue"      	Type: TOKEN	Start: 709	End: 716
-    Token: "edition"      	Type: TOKEN	Start: 717	End: 724
+    Token: "Paperback"    	Type: FIRST_UPPER_CASE	Start: 699	End: 708
+    Token: "Reissue"      	Type: FIRST_UPPER_CASE	Start: 709	End: 716
+    Token: "edition"      	Type: ALL_LOWER_CASE	Start: 717	End: 724
     Token: "("            	Type: OPEN_BRACKET	Start: 725	End: 726	PTB: "-LRB-"
-    Token: "October"      	Type: TOKEN	Start: 726	End: 733
+    Token: "October"      	Type: FIRST_UPPER_CASE	Start: 726	End: 733
     Token: "1988"         	Type: DIGITAL	Start: 734	End: 738
     Token: ")"            	Type: CLOSE_BRACKET	Start: 738	End: 739	PTB: "-RRB-"
 
@@ -276,23 +276,23 @@ Paragraph Start: 743
 Paragraph End: 818
   Text Unit Start: 743
   Text Unit End: 818
-    Token: "Warner"       	Type: TOKEN	Start: 743	End: 749
-    Token: "Books"        	Type: TOKEN	Start: 750	End: 755
+    Token: "Warner"       	Type: FIRST_UPPER_CASE	Start: 743	End: 749
+    Token: "Books"        	Type: FIRST_UPPER_CASE	Start: 750	End: 755
     Token: ";"            	Type: PUNCTUATION	Start: 755	End: 756
-    Token: "ISBN"         	Type: TOKEN	Start: 757	End: 761
+    Token: "ISBN"         	Type: ALL_UPPER_CASE	Start: 757	End: 761
     Token: ":"            	Type: PUNCTUATION	Start: 761	End: 762
     Token: "0446386308"   	Type: DIGITAL	Start: 763	End: 773
     Token: ";"            	Type: PUNCTUATION	Start: 774	End: 775
-    Token: "Dimensions"   	Type: TOKEN	Start: 776	End: 786
+    Token: "Dimensions"   	Type: FIRST_UPPER_CASE	Start: 776	End: 786
     Token: "("            	Type: OPEN_BRACKET	Start: 787	End: 788	PTB: "-LRB-"
-    Token: "in"           	Type: TOKEN	Start: 788	End: 790
-    Token: "inches"       	Type: TOKEN	Start: 791	End: 797
+    Token: "in"           	Type: ALL_LOWER_CASE	Start: 788	End: 790
+    Token: "inches"       	Type: ALL_LOWER_CASE	Start: 791	End: 797
     Token: ")"            	Type: CLOSE_BRACKET	Start: 797	End: 798	PTB: "-RRB-"
     Token: ":"            	Type: PUNCTUATION	Start: 798	End: 799
     Token: "0.99"         	Type: DIGITAL	Start: 800	End: 804
-    Token: "x"            	Type: TOKEN	Start: 805	End: 806
+    Token: "x"            	Type: ALL_LOWER_CASE	Start: 805	End: 806
     Token: "8.03"         	Type: DIGITAL	Start: 807	End: 811
-    Token: "x"            	Type: TOKEN	Start: 812	End: 813
+    Token: "x"            	Type: ALL_LOWER_CASE	Start: 812	End: 813
     Token: "5.28"         	Type: DIGITAL	Start: 814	End: 818
 
 Paragraph Start: 822
@@ -300,8 +300,8 @@ Paragraph End: 851
   Text Unit Start: 822
   Text Unit End: 851
     Token: "Amazon.com"   	Type: TOKEN	Start: 822	End: 832
-    Token: "Sales"        	Type: TOKEN	Start: 833	End: 838
-    Token: "Rank"         	Type: TOKEN	Start: 839	End: 843
+    Token: "Sales"        	Type: FIRST_UPPER_CASE	Start: 833	End: 838
+    Token: "Rank"         	Type: FIRST_UPPER_CASE	Start: 839	End: 843
     Token: ":"            	Type: PUNCTUATION	Start: 843	End: 844
     Token: "97,543"       	Type: DIGITAL	Start: 845	End: 851
 
@@ -309,81 +309,81 @@ Paragraph Start: 855
 Paragraph End: 915
   Text Unit Start: 855
   Text Unit End: 899
-    Token: "Average"      	Type: TOKEN	Start: 855	End: 862
-    Token: "Customer"     	Type: TOKEN	Start: 863	End: 871
-    Token: "Rating"       	Type: TOKEN	Start: 872	End: 878
+    Token: "Average"      	Type: FIRST_UPPER_CASE	Start: 855	End: 862
+    Token: "Customer"     	Type: FIRST_UPPER_CASE	Start: 863	End: 871
+    Token: "Rating"       	Type: FIRST_UPPER_CASE	Start: 872	End: 878
     Token: ":"            	Type: PUNCTUATION	Start: 878	End: 879
-    Token: "Based"        	Type: TOKEN	Start: 880	End: 885
-    Token: "on"           	Type: TOKEN	Start: 886	End: 888
+    Token: "Based"        	Type: FIRST_UPPER_CASE	Start: 880	End: 885
+    Token: "on"           	Type: ALL_LOWER_CASE	Start: 886	End: 888
     Token: "5"            	Type: DIGITAL	Start: 889	End: 890
-    Token: "reviews"      	Type: TOKEN	Start: 891	End: 898
+    Token: "reviews"      	Type: ALL_LOWER_CASE	Start: 891	End: 898
     Token: "."            	Type: TERM_PUNCT_P	Start: 898	End: 899
   Text Unit Start: 900
   Text Unit End: 915
-    Token: "Write"        	Type: TOKEN	Start: 900	End: 905
-    Token: "a"            	Type: TOKEN	Start: 906	End: 907
-    Token: "review"       	Type: TOKEN	Start: 908	End: 914
+    Token: "Write"        	Type: FIRST_UPPER_CASE	Start: 900	End: 905
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 906	End: 907
+    Token: "review"       	Type: ALL_LOWER_CASE	Start: 908	End: 914
     Token: "."            	Type: TERM_PUNCT_P	Start: 914	End: 915
 
 Paragraph Start: 919
 Paragraph End: 966
   Text Unit Start: 919
   Text Unit End: 966
-    Token: "Rate"         	Type: TOKEN	Start: 919	End: 923
-    Token: "this"         	Type: TOKEN	Start: 924	End: 928
-    Token: "item"         	Type: TOKEN	Start: 929	End: 933
-    Token: "to"           	Type: TOKEN	Start: 934	End: 936
-    Token: "get"          	Type: TOKEN	Start: 937	End: 940
-    Token: "personal"     	Type: TOKEN	Start: 941	End: 949
-    Token: "recommendations"	Type: TOKEN	Start: 950	End: 965
+    Token: "Rate"         	Type: FIRST_UPPER_CASE	Start: 919	End: 923
+    Token: "this"         	Type: ALL_LOWER_CASE	Start: 924	End: 928
+    Token: "item"         	Type: ALL_LOWER_CASE	Start: 929	End: 933
+    Token: "to"           	Type: ALL_LOWER_CASE	Start: 934	End: 936
+    Token: "get"          	Type: ALL_LOWER_CASE	Start: 937	End: 940
+    Token: "personal"     	Type: ALL_LOWER_CASE	Start: 941	End: 949
+    Token: "recommendations"	Type: ALL_LOWER_CASE	Start: 950	End: 965
     Token: "."            	Type: TERM_PUNCT_P	Start: 965	End: 966
 
 Paragraph Start: 970
 Paragraph End: 1013
   Text Unit Start: 970
   Text Unit End: 1013
-    Token: "Customers"    	Type: TOKEN	Start: 970	End: 979
-    Token: "who"          	Type: TOKEN	Start: 980	End: 983
-    Token: "bought"       	Type: TOKEN	Start: 984	End: 990
-    Token: "this"         	Type: TOKEN	Start: 991	End: 995
-    Token: "book"         	Type: TOKEN	Start: 996	End: 1000
-    Token: "also"         	Type: TOKEN	Start: 1001	End: 1005
-    Token: "bought"       	Type: TOKEN	Start: 1006	End: 1012
+    Token: "Customers"    	Type: FIRST_UPPER_CASE	Start: 970	End: 979
+    Token: "who"          	Type: ALL_LOWER_CASE	Start: 980	End: 983
+    Token: "bought"       	Type: ALL_LOWER_CASE	Start: 984	End: 990
+    Token: "this"         	Type: ALL_LOWER_CASE	Start: 991	End: 995
+    Token: "book"         	Type: ALL_LOWER_CASE	Start: 996	End: 1000
+    Token: "also"         	Type: ALL_LOWER_CASE	Start: 1001	End: 1005
+    Token: "bought"       	Type: ALL_LOWER_CASE	Start: 1006	End: 1012
     Token: ":"            	Type: PUNCTUATION	Start: 1012	End: 1013
 
 Paragraph Start: 1017
 Paragraph End: 1067
   Text Unit Start: 1017
   Text Unit End: 1067
-    Token: "Clapton"      	Type: TOKEN	Start: 1017	End: 1024
+    Token: "Clapton"      	Type: FIRST_UPPER_CASE	Start: 1017	End: 1024
     Token: ":"            	Type: PUNCTUATION	Start: 1025	End: 1026
-    Token: "Edge"         	Type: TOKEN	Start: 1027	End: 1031
-    Token: "of"           	Type: TOKEN	Start: 1032	End: 1034
-    Token: "Darkness"     	Type: TOKEN	Start: 1035	End: 1043
-    Token: "by"           	Type: TOKEN	Start: 1044	End: 1046
-    Token: "Christopher"  	Type: TOKEN	Start: 1047	End: 1058
-    Token: "Sandford"     	Type: TOKEN	Start: 1059	End: 1067
+    Token: "Edge"         	Type: FIRST_UPPER_CASE	Start: 1027	End: 1031
+    Token: "of"           	Type: ALL_LOWER_CASE	Start: 1032	End: 1034
+    Token: "Darkness"     	Type: FIRST_UPPER_CASE	Start: 1035	End: 1043
+    Token: "by"           	Type: ALL_LOWER_CASE	Start: 1044	End: 1046
+    Token: "Christopher"  	Type: FIRST_UPPER_CASE	Start: 1047	End: 1058
+    Token: "Sandford"     	Type: FIRST_UPPER_CASE	Start: 1059	End: 1067
 
 Paragraph Start: 1071
 Paragraph End: 1143
   Text Unit Start: 1071
   Text Unit End: 1143
-    Token: "Eric"         	Type: TOKEN	Start: 1071	End: 1075
-    Token: "Clapton"      	Type: TOKEN	Start: 1076	End: 1083
+    Token: "Eric"         	Type: FIRST_UPPER_CASE	Start: 1071	End: 1075
+    Token: "Clapton"      	Type: FIRST_UPPER_CASE	Start: 1076	End: 1083
     Token: ":"            	Type: PUNCTUATION	Start: 1084	End: 1085
-    Token: "In"           	Type: TOKEN	Start: 1086	End: 1088
-    Token: "His"          	Type: TOKEN	Start: 1089	End: 1092
-    Token: "Own"          	Type: TOKEN	Start: 1093	End: 1096
-    Token: "Words"        	Type: TOKEN	Start: 1097	End: 1102
-    Token: "by"           	Type: TOKEN	Start: 1103	End: 1105
-    Token: "Eric"         	Type: TOKEN	Start: 1106	End: 1110
-    Token: "Clapton"      	Type: TOKEN	Start: 1111	End: 1118
+    Token: "In"           	Type: FIRST_UPPER_CASE	Start: 1086	End: 1088
+    Token: "His"          	Type: FIRST_UPPER_CASE	Start: 1089	End: 1092
+    Token: "Own"          	Type: FIRST_UPPER_CASE	Start: 1093	End: 1096
+    Token: "Words"        	Type: FIRST_UPPER_CASE	Start: 1097	End: 1102
+    Token: "by"           	Type: ALL_LOWER_CASE	Start: 1103	End: 1105
+    Token: "Eric"         	Type: FIRST_UPPER_CASE	Start: 1106	End: 1110
+    Token: "Clapton"      	Type: FIRST_UPPER_CASE	Start: 1111	End: 1118
     Token: ","            	Type: PUNCTUATION	Start: 1118	End: 1119
-    Token: "et"           	Type: TOKEN	Start: 1120	End: 1122
-    Token: "al"           	Type: TOKEN	Start: 1123	End: 1125
+    Token: "et"           	Type: ALL_LOWER_CASE	Start: 1120	End: 1122
+    Token: "al"           	Type: ALL_LOWER_CASE	Start: 1123	End: 1125
     Token: "--"           	Type: PUNCTUATION	Start: 1126	End: 1128
-    Token: "available"    	Type: TOKEN	Start: 1129	End: 1138
-    Token: "used"         	Type: TOKEN	Start: 1139	End: 1143
+    Token: "available"    	Type: ALL_LOWER_CASE	Start: 1129	End: 1138
+    Token: "used"         	Type: ALL_LOWER_CASE	Start: 1139	End: 1143
 
 Paragraph Start: 1147
 Paragraph End: 1176
@@ -392,76 +392,76 @@ Paragraph End: 1176
     Token: "E.C."         	Type: B_ABBREVIATION	Start: 1147	End: 1151
   Text Unit Start: 1152
   Text Unit End: 1176
-    Token: "Was"          	Type: TOKEN	Start: 1152	End: 1155
-    Token: "Here"         	Type: TOKEN	Start: 1156	End: 1160
-    Token: "by"           	Type: TOKEN	Start: 1161	End: 1163
-    Token: "Eric"         	Type: TOKEN	Start: 1164	End: 1168
-    Token: "Clapton"      	Type: TOKEN	Start: 1169	End: 1176
+    Token: "Was"          	Type: FIRST_UPPER_CASE	Start: 1152	End: 1155
+    Token: "Here"         	Type: FIRST_UPPER_CASE	Start: 1156	End: 1160
+    Token: "by"           	Type: ALL_LOWER_CASE	Start: 1161	End: 1163
+    Token: "Eric"         	Type: FIRST_UPPER_CASE	Start: 1164	End: 1168
+    Token: "Clapton"      	Type: FIRST_UPPER_CASE	Start: 1169	End: 1176
 
 Paragraph Start: 1180
 Paragraph End: 1270
   Text Unit Start: 1180
   Text Unit End: 1270
-    Token: "Midnight"     	Type: TOKEN	Start: 1180	End: 1188
-    Token: "Riders"       	Type: TOKEN	Start: 1189	End: 1195
+    Token: "Midnight"     	Type: FIRST_UPPER_CASE	Start: 1180	End: 1188
+    Token: "Riders"       	Type: FIRST_UPPER_CASE	Start: 1189	End: 1195
     Token: ":"            	Type: PUNCTUATION	Start: 1196	End: 1197
-    Token: "The"          	Type: TOKEN	Start: 1198	End: 1201
-    Token: "Story"        	Type: TOKEN	Start: 1202	End: 1207
-    Token: "of"           	Type: TOKEN	Start: 1208	End: 1210
-    Token: "the"          	Type: TOKEN	Start: 1211	End: 1214
-    Token: "Allman"       	Type: TOKEN	Start: 1215	End: 1221
-    Token: "Brothers"     	Type: TOKEN	Start: 1222	End: 1230
-    Token: "Band"         	Type: TOKEN	Start: 1231	End: 1235
-    Token: "by"           	Type: TOKEN	Start: 1236	End: 1238
-    Token: "Scott"        	Type: TOKEN	Start: 1239	End: 1244
-    Token: "Freeman"      	Type: TOKEN	Start: 1245	End: 1252
+    Token: "The"          	Type: FIRST_UPPER_CASE	Start: 1198	End: 1201
+    Token: "Story"        	Type: FIRST_UPPER_CASE	Start: 1202	End: 1207
+    Token: "of"           	Type: ALL_LOWER_CASE	Start: 1208	End: 1210
+    Token: "the"          	Type: ALL_LOWER_CASE	Start: 1211	End: 1214
+    Token: "Allman"       	Type: FIRST_UPPER_CASE	Start: 1215	End: 1221
+    Token: "Brothers"     	Type: FIRST_UPPER_CASE	Start: 1222	End: 1230
+    Token: "Band"         	Type: FIRST_UPPER_CASE	Start: 1231	End: 1235
+    Token: "by"           	Type: ALL_LOWER_CASE	Start: 1236	End: 1238
+    Token: "Scott"        	Type: FIRST_UPPER_CASE	Start: 1239	End: 1244
+    Token: "Freeman"      	Type: FIRST_UPPER_CASE	Start: 1245	End: 1252
     Token: "--"           	Type: PUNCTUATION	Start: 1253	End: 1255
-    Token: "available"    	Type: TOKEN	Start: 1256	End: 1265
-    Token: "used"         	Type: TOKEN	Start: 1266	End: 1270
+    Token: "available"    	Type: ALL_LOWER_CASE	Start: 1256	End: 1265
+    Token: "used"         	Type: ALL_LOWER_CASE	Start: 1266	End: 1270
 
 Paragraph Start: 1274
 Paragraph End: 1295
   Text Unit Start: 1274
   Text Unit End: 1295
-    Token: "Explore"      	Type: TOKEN	Start: 1274	End: 1281
-    Token: "similar"      	Type: TOKEN	Start: 1282	End: 1289
-    Token: "items"        	Type: TOKEN	Start: 1290	End: 1295
+    Token: "Explore"      	Type: FIRST_UPPER_CASE	Start: 1274	End: 1281
+    Token: "similar"      	Type: ALL_LOWER_CASE	Start: 1282	End: 1289
+    Token: "items"        	Type: ALL_LOWER_CASE	Start: 1290	End: 1295
 
 Paragraph Start: 1299
 Paragraph End: 1319
   Text Unit Start: 1299
   Text Unit End: 1319
-    Token: "All"          	Type: TOKEN	Start: 1299	End: 1302
-    Token: "Customer"     	Type: TOKEN	Start: 1303	End: 1311
-    Token: "Reviews"      	Type: TOKEN	Start: 1312	End: 1319
+    Token: "All"          	Type: FIRST_UPPER_CASE	Start: 1299	End: 1302
+    Token: "Customer"     	Type: FIRST_UPPER_CASE	Start: 1303	End: 1311
+    Token: "Reviews"      	Type: FIRST_UPPER_CASE	Start: 1312	End: 1319
 
 Paragraph Start: 1323
 Paragraph End: 1344
   Text Unit Start: 1323
   Text Unit End: 1327
-    Token: "Avg"          	Type: TOKEN	Start: 1323	End: 1326
+    Token: "Avg"          	Type: FIRST_UPPER_CASE	Start: 1323	End: 1326
     Token: "."            	Type: TERM_PUNCT_P	Start: 1326	End: 1327
   Text Unit Start: 1328
   Text Unit End: 1344
-    Token: "Customer"     	Type: TOKEN	Start: 1328	End: 1336
-    Token: "Rating"       	Type: TOKEN	Start: 1337	End: 1343
+    Token: "Customer"     	Type: FIRST_UPPER_CASE	Start: 1328	End: 1336
+    Token: "Rating"       	Type: FIRST_UPPER_CASE	Start: 1337	End: 1343
     Token: ":"            	Type: PUNCTUATION	Start: 1343	End: 1344
 
 Paragraph Start: 1348
 Paragraph End: 1416
   Text Unit Start: 1348
   Text Unit End: 1416
-    Token: "Write"        	Type: TOKEN	Start: 1348	End: 1353
-    Token: "an"           	Type: TOKEN	Start: 1354	End: 1356
-    Token: "online"       	Type: TOKEN	Start: 1357	End: 1363
-    Token: "review"       	Type: TOKEN	Start: 1364	End: 1370
-    Token: "and"          	Type: TOKEN	Start: 1371	End: 1374
-    Token: "share"        	Type: TOKEN	Start: 1375	End: 1380
-    Token: "your"         	Type: TOKEN	Start: 1381	End: 1385
-    Token: "thoughts"     	Type: TOKEN	Start: 1386	End: 1394
-    Token: "with"         	Type: TOKEN	Start: 1395	End: 1399
-    Token: "other"        	Type: TOKEN	Start: 1400	End: 1405
-    Token: "customers"    	Type: TOKEN	Start: 1406	End: 1415
+    Token: "Write"        	Type: FIRST_UPPER_CASE	Start: 1348	End: 1353
+    Token: "an"           	Type: ALL_LOWER_CASE	Start: 1354	End: 1356
+    Token: "online"       	Type: ALL_LOWER_CASE	Start: 1357	End: 1363
+    Token: "review"       	Type: ALL_LOWER_CASE	Start: 1364	End: 1370
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 1371	End: 1374
+    Token: "share"        	Type: ALL_LOWER_CASE	Start: 1375	End: 1380
+    Token: "your"         	Type: ALL_LOWER_CASE	Start: 1381	End: 1385
+    Token: "thoughts"     	Type: ALL_LOWER_CASE	Start: 1386	End: 1394
+    Token: "with"         	Type: ALL_LOWER_CASE	Start: 1395	End: 1399
+    Token: "other"        	Type: ALL_LOWER_CASE	Start: 1400	End: 1405
+    Token: "customers"    	Type: ALL_LOWER_CASE	Start: 1406	End: 1415
     Token: "!"            	Type: TERM_PUNCT	Start: 1415	End: 1416
 
 Paragraph Start: 1420
@@ -469,26 +469,26 @@ Paragraph End: 1469
   Text Unit Start: 1420
   Text Unit End: 1469
     Token: "3"            	Type: DIGITAL	Start: 1420	End: 1421
-    Token: "of"           	Type: TOKEN	Start: 1422	End: 1424
+    Token: "of"           	Type: ALL_LOWER_CASE	Start: 1422	End: 1424
     Token: "4"            	Type: DIGITAL	Start: 1425	End: 1426
-    Token: "people"       	Type: TOKEN	Start: 1427	End: 1433
-    Token: "found"        	Type: TOKEN	Start: 1434	End: 1439
-    Token: "the"          	Type: TOKEN	Start: 1440	End: 1443
-    Token: "following"    	Type: TOKEN	Start: 1444	End: 1453
-    Token: "review"       	Type: TOKEN	Start: 1454	End: 1460
-    Token: "helpful"      	Type: TOKEN	Start: 1461	End: 1468
+    Token: "people"       	Type: ALL_LOWER_CASE	Start: 1427	End: 1433
+    Token: "found"        	Type: ALL_LOWER_CASE	Start: 1434	End: 1439
+    Token: "the"          	Type: ALL_LOWER_CASE	Start: 1440	End: 1443
+    Token: "following"    	Type: ALL_LOWER_CASE	Start: 1444	End: 1453
+    Token: "review"       	Type: ALL_LOWER_CASE	Start: 1454	End: 1460
+    Token: "helpful"      	Type: ALL_LOWER_CASE	Start: 1461	End: 1468
     Token: ":"            	Type: PUNCTUATION	Start: 1468	End: 1469
 
 Paragraph Start: 1473
 Paragraph End: 1520
   Text Unit Start: 1473
   Text Unit End: 1520
-    Token: "Hagiography"  	Type: TOKEN	Start: 1473	End: 1484
-    Token: "Taken"        	Type: TOKEN	Start: 1485	End: 1490
-    Token: "to"           	Type: TOKEN	Start: 1491	End: 1493
-    Token: "Extremes"     	Type: TOKEN	Start: 1494	End: 1502
+    Token: "Hagiography"  	Type: FIRST_UPPER_CASE	Start: 1473	End: 1484
+    Token: "Taken"        	Type: FIRST_UPPER_CASE	Start: 1485	End: 1490
+    Token: "to"           	Type: ALL_LOWER_CASE	Start: 1491	End: 1493
+    Token: "Extremes"     	Type: FIRST_UPPER_CASE	Start: 1494	End: 1502
     Token: ","            	Type: PUNCTUATION	Start: 1502	End: 1503
-    Token: "October"      	Type: TOKEN	Start: 1504	End: 1511
+    Token: "October"      	Type: FIRST_UPPER_CASE	Start: 1504	End: 1511
     Token: "27"           	Type: DIGITAL	Start: 1512	End: 1514
     Token: ","            	Type: PUNCTUATION	Start: 1514	End: 1515
     Token: "2000"         	Type: DIGITAL	Start: 1516	End: 1520
@@ -497,135 +497,135 @@ Paragraph Start: 1524
 Paragraph End: 1558
   Text Unit Start: 1524
   Text Unit End: 1558
-    Token: "Reviewer"     	Type: TOKEN	Start: 1524	End: 1532
+    Token: "Reviewer"     	Type: FIRST_UPPER_CASE	Start: 1524	End: 1532
     Token: ":"            	Type: PUNCTUATION	Start: 1532	End: 1533
-    Token: "A"            	Type: TOKEN	Start: 1534	End: 1535
-    Token: "reader"       	Type: TOKEN	Start: 1536	End: 1542
-    Token: "from"         	Type: TOKEN	Start: 1543	End: 1547
-    Token: "London"       	Type: TOKEN	Start: 1548	End: 1554
+    Token: "A"            	Type: ALL_UPPER_CASE	Start: 1534	End: 1535
+    Token: "reader"       	Type: ALL_LOWER_CASE	Start: 1536	End: 1542
+    Token: "from"         	Type: ALL_LOWER_CASE	Start: 1543	End: 1547
+    Token: "London"       	Type: FIRST_UPPER_CASE	Start: 1548	End: 1554
     Token: ","            	Type: PUNCTUATION	Start: 1554	End: 1555
-    Token: "UK"           	Type: TOKEN	Start: 1556	End: 1558
+    Token: "UK"           	Type: ALL_UPPER_CASE	Start: 1556	End: 1558
 
 Paragraph Start: 1562
 Paragraph End: 1838
   Text Unit Start: 1562
   Text Unit End: 1705
-    Token: "If"           	Type: TOKEN	Start: 1562	End: 1564
-    Token: "you"          	Type: TOKEN	Start: 1565	End: 1568
-    Token: "are"          	Type: TOKEN	Start: 1569	End: 1572
-    Token: "a"            	Type: TOKEN	Start: 1573	End: 1574
-    Token: "Clapton"      	Type: TOKEN	Start: 1575	End: 1582
-    Token: "fan"          	Type: TOKEN	Start: 1583	End: 1586
-    Token: "and"          	Type: TOKEN	Start: 1587	End: 1590
-    Token: "need"         	Type: TOKEN	Start: 1591	End: 1595
+    Token: "If"           	Type: FIRST_UPPER_CASE	Start: 1562	End: 1564
+    Token: "you"          	Type: ALL_LOWER_CASE	Start: 1565	End: 1568
+    Token: "are"          	Type: ALL_LOWER_CASE	Start: 1569	End: 1572
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 1573	End: 1574
+    Token: "Clapton"      	Type: FIRST_UPPER_CASE	Start: 1575	End: 1582
+    Token: "fan"          	Type: ALL_LOWER_CASE	Start: 1583	End: 1586
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 1587	End: 1590
+    Token: "need"         	Type: ALL_LOWER_CASE	Start: 1591	End: 1595
     Token: "300"          	Type: DIGITAL	Start: 1596	End: 1599
-    Token: "pages"        	Type: TOKEN	Start: 1600	End: 1605
-    Token: "of"           	Type: TOKEN	Start: 1606	End: 1608
-    Token: "reassurance"  	Type: TOKEN	Start: 1609	End: 1620
-    Token: "that"         	Type: TOKEN	Start: 1621	End: 1625
-    Token: "he"           	Type: TOKEN	Start: 1626	End: 1628
-    Token: "is"           	Type: TOKEN	Start: 1629	End: 1631
-    Token: "a"            	Type: TOKEN	Start: 1632	End: 1633
-    Token: "a"            	Type: TOKEN	Start: 1634	End: 1635
-    Token: "gifted"       	Type: TOKEN	Start: 1636	End: 1642
-    Token: "musician"     	Type: TOKEN	Start: 1643	End: 1651
+    Token: "pages"        	Type: ALL_LOWER_CASE	Start: 1600	End: 1605
+    Token: "of"           	Type: ALL_LOWER_CASE	Start: 1606	End: 1608
+    Token: "reassurance"  	Type: ALL_LOWER_CASE	Start: 1609	End: 1620
+    Token: "that"         	Type: ALL_LOWER_CASE	Start: 1621	End: 1625
+    Token: "he"           	Type: ALL_LOWER_CASE	Start: 1626	End: 1628
+    Token: "is"           	Type: ALL_LOWER_CASE	Start: 1629	End: 1631
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 1632	End: 1633
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 1634	End: 1635
+    Token: "gifted"       	Type: ALL_LOWER_CASE	Start: 1636	End: 1642
+    Token: "musician"     	Type: ALL_LOWER_CASE	Start: 1643	End: 1651
     Token: ","            	Type: PUNCTUATION	Start: 1651	End: 1652
-    Token: "then"         	Type: TOKEN	Start: 1653	End: 1657
-    Token: "put"          	Type: TOKEN	Start: 1658	End: 1661
-    Token: "this"         	Type: TOKEN	Start: 1662	End: 1666
-    Token: "book"         	Type: TOKEN	Start: 1667	End: 1671
-    Token: "at"           	Type: TOKEN	Start: 1672	End: 1674
-    Token: "the"          	Type: TOKEN	Start: 1675	End: 1678
-    Token: "top"          	Type: TOKEN	Start: 1679	End: 1682
-    Token: "of"           	Type: TOKEN	Start: 1683	End: 1685
-    Token: "your"         	Type: TOKEN	Start: 1686	End: 1690
-    Token: "shopping"     	Type: TOKEN	Start: 1691	End: 1699
-    Token: "list"         	Type: TOKEN	Start: 1700	End: 1704
+    Token: "then"         	Type: ALL_LOWER_CASE	Start: 1653	End: 1657
+    Token: "put"          	Type: ALL_LOWER_CASE	Start: 1658	End: 1661
+    Token: "this"         	Type: ALL_LOWER_CASE	Start: 1662	End: 1666
+    Token: "book"         	Type: ALL_LOWER_CASE	Start: 1667	End: 1671
+    Token: "at"           	Type: ALL_LOWER_CASE	Start: 1672	End: 1674
+    Token: "the"          	Type: ALL_LOWER_CASE	Start: 1675	End: 1678
+    Token: "top"          	Type: ALL_LOWER_CASE	Start: 1679	End: 1682
+    Token: "of"           	Type: ALL_LOWER_CASE	Start: 1683	End: 1685
+    Token: "your"         	Type: ALL_LOWER_CASE	Start: 1686	End: 1690
+    Token: "shopping"     	Type: ALL_LOWER_CASE	Start: 1691	End: 1699
+    Token: "list"         	Type: ALL_LOWER_CASE	Start: 1700	End: 1704
     Token: "."            	Type: TERM_PUNCT_P	Start: 1704	End: 1705
   Text Unit Start: 1706
   Text Unit End: 1838
-    Token: "If"           	Type: TOKEN	Start: 1706	End: 1708
+    Token: "If"           	Type: FIRST_UPPER_CASE	Start: 1706	End: 1708
     Token: ","            	Type: PUNCTUATION	Start: 1708	End: 1709
-    Token: "however"      	Type: TOKEN	Start: 1710	End: 1717
+    Token: "however"      	Type: ALL_LOWER_CASE	Start: 1710	End: 1717
     Token: ","            	Type: PUNCTUATION	Start: 1717	End: 1718
-    Token: "you"          	Type: TOKEN	Start: 1719	End: 1722
-    Token: "are"          	Type: TOKEN	Start: 1723	End: 1726
-    Token: "looking"      	Type: TOKEN	Start: 1727	End: 1734
-    Token: "for"          	Type: TOKEN	Start: 1735	End: 1738
-    Token: "an"           	Type: TOKEN	Start: 1739	End: 1741
-    Token: "objective"    	Type: TOKEN	Start: 1742	End: 1751
-    Token: "assessment"   	Type: TOKEN	Start: 1752	End: 1762
-    Token: "of"           	Type: TOKEN	Start: 1763	End: 1765
-    Token: "his"          	Type: TOKEN	Start: 1766	End: 1769
-    Token: "life"         	Type: TOKEN	Start: 1770	End: 1774
+    Token: "you"          	Type: ALL_LOWER_CASE	Start: 1719	End: 1722
+    Token: "are"          	Type: ALL_LOWER_CASE	Start: 1723	End: 1726
+    Token: "looking"      	Type: ALL_LOWER_CASE	Start: 1727	End: 1734
+    Token: "for"          	Type: ALL_LOWER_CASE	Start: 1735	End: 1738
+    Token: "an"           	Type: ALL_LOWER_CASE	Start: 1739	End: 1741
+    Token: "objective"    	Type: ALL_LOWER_CASE	Start: 1742	End: 1751
+    Token: "assessment"   	Type: ALL_LOWER_CASE	Start: 1752	End: 1762
+    Token: "of"           	Type: ALL_LOWER_CASE	Start: 1763	End: 1765
+    Token: "his"          	Type: ALL_LOWER_CASE	Start: 1766	End: 1769
+    Token: "life"         	Type: ALL_LOWER_CASE	Start: 1770	End: 1774
     Token: ","            	Type: PUNCTUATION	Start: 1774	End: 1775
-    Token: "career"       	Type: TOKEN	Start: 1776	End: 1782
-    Token: "and"          	Type: TOKEN	Start: 1783	End: 1786
-    Token: "impact"       	Type: TOKEN	Start: 1787	End: 1793
-    Token: "as"           	Type: TOKEN	Start: 1794	End: 1796
-    Token: "a"            	Type: TOKEN	Start: 1797	End: 1798
-    Token: "musician"     	Type: TOKEN	Start: 1799	End: 1807
-    Token: "you"          	Type: TOKEN	Start: 1808	End: 1811
+    Token: "career"       	Type: ALL_LOWER_CASE	Start: 1776	End: 1782
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 1783	End: 1786
+    Token: "impact"       	Type: ALL_LOWER_CASE	Start: 1787	End: 1793
+    Token: "as"           	Type: ALL_LOWER_CASE	Start: 1794	End: 1796
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 1797	End: 1798
+    Token: "musician"     	Type: ALL_LOWER_CASE	Start: 1799	End: 1807
+    Token: "you"          	Type: ALL_LOWER_CASE	Start: 1808	End: 1811
     Token: "'ll"          	Type: RIGHTSPLIT	Start: 1811	End: 1814
-    Token: "need"         	Type: TOKEN	Start: 1815	End: 1819
-    Token: "to"           	Type: TOKEN	Start: 1820	End: 1822
-    Token: "look"         	Type: TOKEN	Start: 1823	End: 1827
-    Token: "elsewhere"    	Type: TOKEN	Start: 1828	End: 1837
+    Token: "need"         	Type: ALL_LOWER_CASE	Start: 1815	End: 1819
+    Token: "to"           	Type: ALL_LOWER_CASE	Start: 1820	End: 1822
+    Token: "look"         	Type: ALL_LOWER_CASE	Start: 1823	End: 1827
+    Token: "elsewhere"    	Type: ALL_LOWER_CASE	Start: 1828	End: 1837
     Token: "."            	Type: TERM_PUNCT_P	Start: 1837	End: 1838
 
 Paragraph Start: 1842
 Paragraph End: 2103
   Text Unit Start: 1842
   Text Unit End: 1983
-    Token: "Clapton"      	Type: TOKEN	Start: 1842	End: 1849
-    Token: "and"          	Type: TOKEN	Start: 1850	End: 1853
-    Token: "Coleman"      	Type: TOKEN	Start: 1854	End: 1861
-    Token: "were"         	Type: TOKEN	Start: 1862	End: 1866
-    Token: "close"        	Type: TOKEN	Start: 1867	End: 1872
-    Token: "friends"      	Type: TOKEN	Start: 1873	End: 1880
-    Token: "and"          	Type: TOKEN	Start: 1881	End: 1884
-    Token: "this"         	Type: TOKEN	Start: 1885	End: 1889
-    Token: "book"         	Type: TOKEN	Start: 1890	End: 1894
-    Token: "is"           	Type: TOKEN	Start: 1895	End: 1897
-    Token: "essentially"  	Type: TOKEN	Start: 1898	End: 1909
-    Token: "a"            	Type: TOKEN	Start: 1910	End: 1911
+    Token: "Clapton"      	Type: FIRST_UPPER_CASE	Start: 1842	End: 1849
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 1850	End: 1853
+    Token: "Coleman"      	Type: FIRST_UPPER_CASE	Start: 1854	End: 1861
+    Token: "were"         	Type: ALL_LOWER_CASE	Start: 1862	End: 1866
+    Token: "close"        	Type: ALL_LOWER_CASE	Start: 1867	End: 1872
+    Token: "friends"      	Type: ALL_LOWER_CASE	Start: 1873	End: 1880
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 1881	End: 1884
+    Token: "this"         	Type: ALL_LOWER_CASE	Start: 1885	End: 1889
+    Token: "book"         	Type: ALL_LOWER_CASE	Start: 1890	End: 1894
+    Token: "is"           	Type: ALL_LOWER_CASE	Start: 1895	End: 1897
+    Token: "essentially"  	Type: ALL_LOWER_CASE	Start: 1898	End: 1909
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 1910	End: 1911
     Token: "300-page"     	Type: TOKEN	Start: 1912	End: 1920
-    Token: "french"       	Type: TOKEN	Start: 1921	End: 1927
-    Token: "kiss"         	Type: TOKEN	Start: 1928	End: 1932
+    Token: "french"       	Type: ALL_LOWER_CASE	Start: 1921	End: 1927
+    Token: "kiss"         	Type: ALL_LOWER_CASE	Start: 1928	End: 1932
     Token: ","            	Type: PUNCTUATION	Start: 1932	End: 1933
-    Token: "as"           	Type: TOKEN	Start: 1934	End: 1936
-    Token: "most"         	Type: TOKEN	Start: 1937	End: 1941
+    Token: "as"           	Type: ALL_LOWER_CASE	Start: 1934	End: 1936
+    Token: "most"         	Type: ALL_LOWER_CASE	Start: 1937	End: 1941
     Token: "third-party"  	Type: TOKEN	Start: 1942	End: 1953
     Token: """            	Type: OPEN_PUNCT	Start: 1954	End: 1955	PTB: "``"
-    Token: "authorized"   	Type: TOKEN	Start: 1955	End: 1965
-    Token: "biographies"  	Type: TOKEN	Start: 1966	End: 1977
+    Token: "authorized"   	Type: ALL_LOWER_CASE	Start: 1955	End: 1965
+    Token: "biographies"  	Type: ALL_LOWER_CASE	Start: 1966	End: 1977
     Token: """            	Type: CLOSE_PUNCT	Start: 1977	End: 1978	PTB: "''"
-    Token: "are"          	Type: TOKEN	Start: 1979	End: 1982
+    Token: "are"          	Type: ALL_LOWER_CASE	Start: 1979	End: 1982
     Token: "."            	Type: TERM_PUNCT_P	Start: 1982	End: 1983
   Text Unit Start: 1984
   Text Unit End: 2103
-    Token: "It"           	Type: TOKEN	Start: 1984	End: 1986
+    Token: "It"           	Type: FIRST_UPPER_CASE	Start: 1984	End: 1986
     Token: "'s"           	Type: RIGHTSPLIT	Start: 1986	End: 1988
-    Token: "hard"         	Type: TOKEN	Start: 1989	End: 1993
-    Token: "to"           	Type: TOKEN	Start: 1994	End: 1996
-    Token: "imagine"      	Type: TOKEN	Start: 1997	End: 2004
-    Token: "a"            	Type: TOKEN	Start: 2005	End: 2006
-    Token: "book"         	Type: TOKEN	Start: 2007	End: 2011
-    Token: "with"         	Type: TOKEN	Start: 2012	End: 2016
-    Token: "more"         	Type: TOKEN	Start: 2017	End: 2021
-    Token: "postive"      	Type: TOKEN	Start: 2022	End: 2029
-    Token: "editorializing"	Type: TOKEN	Start: 2030	End: 2044
-    Token: "adjectives"   	Type: TOKEN	Start: 2045	End: 2055
-    Token: "per"          	Type: TOKEN	Start: 2056	End: 2059
-    Token: "page"         	Type: TOKEN	Start: 2060	End: 2064
+    Token: "hard"         	Type: ALL_LOWER_CASE	Start: 1989	End: 1993
+    Token: "to"           	Type: ALL_LOWER_CASE	Start: 1994	End: 1996
+    Token: "imagine"      	Type: ALL_LOWER_CASE	Start: 1997	End: 2004
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 2005	End: 2006
+    Token: "book"         	Type: ALL_LOWER_CASE	Start: 2007	End: 2011
+    Token: "with"         	Type: ALL_LOWER_CASE	Start: 2012	End: 2016
+    Token: "more"         	Type: ALL_LOWER_CASE	Start: 2017	End: 2021
+    Token: "postive"      	Type: ALL_LOWER_CASE	Start: 2022	End: 2029
+    Token: "editorializing"	Type: ALL_LOWER_CASE	Start: 2030	End: 2044
+    Token: "adjectives"   	Type: ALL_LOWER_CASE	Start: 2045	End: 2055
+    Token: "per"          	Type: ALL_LOWER_CASE	Start: 2056	End: 2059
+    Token: "page"         	Type: ALL_LOWER_CASE	Start: 2060	End: 2064
     Token: "("            	Type: OPEN_BRACKET	Start: 2065	End: 2066	PTB: "-LRB-"
-    Token: "briliant"     	Type: TOKEN	Start: 2066	End: 2074
+    Token: "briliant"     	Type: ALL_LOWER_CASE	Start: 2066	End: 2074
     Token: ","            	Type: PUNCTUATION	Start: 2074	End: 2075
-    Token: "superb"       	Type: TOKEN	Start: 2076	End: 2082
+    Token: "superb"       	Type: ALL_LOWER_CASE	Start: 2076	End: 2082
     Token: ","            	Type: PUNCTUATION	Start: 2082	End: 2083
-    Token: "amazing"      	Type: TOKEN	Start: 2084	End: 2091
+    Token: "amazing"      	Type: ALL_LOWER_CASE	Start: 2084	End: 2091
     Token: ","            	Type: PUNCTUATION	Start: 2091	End: 2092
-    Token: "stunning"     	Type: TOKEN	Start: 2093	End: 2101
+    Token: "stunning"     	Type: ALL_LOWER_CASE	Start: 2093	End: 2101
     Token: "."            	Type: TERM_PUNCT_P	Start: 2101	End: 2102
     Token: ")"            	Type: CLOSE_BRACKET	Start: 2102	End: 2103	PTB: "-RRB-"
 
@@ -633,141 +633,141 @@ Paragraph Start: 2107
 Paragraph End: 2342
   Text Unit Start: 2107
   Text Unit End: 2259
-    Token: "Clapton"      	Type: TOKEN	Start: 2107	End: 2114
+    Token: "Clapton"      	Type: FIRST_UPPER_CASE	Start: 2107	End: 2114
     Token: "'s"           	Type: RIGHTSPLIT	Start: 2114	End: 2116
-    Token: "failed"       	Type: TOKEN	Start: 2117	End: 2123
-    Token: "marriages"    	Type: TOKEN	Start: 2124	End: 2133
-    Token: "are"          	Type: TOKEN	Start: 2134	End: 2137
-    Token: "glossed"      	Type: TOKEN	Start: 2138	End: 2145
-    Token: "over"         	Type: TOKEN	Start: 2146	End: 2150
-    Token: "in"           	Type: TOKEN	Start: 2151	End: 2153
-    Token: "a"            	Type: TOKEN	Start: 2154	End: 2155
-    Token: "paragraph"    	Type: TOKEN	Start: 2156	End: 2165
-    Token: "or"           	Type: TOKEN	Start: 2166	End: 2168
-    Token: "so"           	Type: TOKEN	Start: 2169	End: 2171
-    Token: "and"          	Type: TOKEN	Start: 2172	End: 2175
-    Token: "his"          	Type: TOKEN	Start: 2176	End: 2179
-    Token: "heroin"       	Type: TOKEN	Start: 2180	End: 2186
-    Token: "addiction"    	Type: TOKEN	Start: 2187	End: 2196
-    Token: "is"           	Type: TOKEN	Start: 2197	End: 2199
-    Token: "treated"      	Type: TOKEN	Start: 2200	End: 2207
-    Token: "like"         	Type: TOKEN	Start: 2208	End: 2212
-    Token: "a"            	Type: TOKEN	Start: 2213	End: 2214
-    Token: "valiant"      	Type: TOKEN	Start: 2215	End: 2222
-    Token: "and"          	Type: TOKEN	Start: 2223	End: 2226
-    Token: "ultimately"   	Type: TOKEN	Start: 2227	End: 2237
-    Token: "positive"     	Type: TOKEN	Start: 2238	End: 2246
+    Token: "failed"       	Type: ALL_LOWER_CASE	Start: 2117	End: 2123
+    Token: "marriages"    	Type: ALL_LOWER_CASE	Start: 2124	End: 2133
+    Token: "are"          	Type: ALL_LOWER_CASE	Start: 2134	End: 2137
+    Token: "glossed"      	Type: ALL_LOWER_CASE	Start: 2138	End: 2145
+    Token: "over"         	Type: ALL_LOWER_CASE	Start: 2146	End: 2150
+    Token: "in"           	Type: ALL_LOWER_CASE	Start: 2151	End: 2153
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 2154	End: 2155
+    Token: "paragraph"    	Type: ALL_LOWER_CASE	Start: 2156	End: 2165
+    Token: "or"           	Type: ALL_LOWER_CASE	Start: 2166	End: 2168
+    Token: "so"           	Type: ALL_LOWER_CASE	Start: 2169	End: 2171
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 2172	End: 2175
+    Token: "his"          	Type: ALL_LOWER_CASE	Start: 2176	End: 2179
+    Token: "heroin"       	Type: ALL_LOWER_CASE	Start: 2180	End: 2186
+    Token: "addiction"    	Type: ALL_LOWER_CASE	Start: 2187	End: 2196
+    Token: "is"           	Type: ALL_LOWER_CASE	Start: 2197	End: 2199
+    Token: "treated"      	Type: ALL_LOWER_CASE	Start: 2200	End: 2207
+    Token: "like"         	Type: ALL_LOWER_CASE	Start: 2208	End: 2212
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 2213	End: 2214
+    Token: "valiant"      	Type: ALL_LOWER_CASE	Start: 2215	End: 2222
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 2223	End: 2226
+    Token: "ultimately"   	Type: ALL_LOWER_CASE	Start: 2227	End: 2237
+    Token: "positive"     	Type: ALL_LOWER_CASE	Start: 2238	End: 2246
     Token: """            	Type: OPEN_PUNCT	Start: 2247	End: 2248	PTB: "``"
-    Token: "adventure"    	Type: TOKEN	Start: 2248	End: 2257
+    Token: "adventure"    	Type: ALL_LOWER_CASE	Start: 2248	End: 2257
     Token: "."            	Type: TERM_PUNCT_P	Start: 2257	End: 2258
     Token: """            	Type: CLOSE_PUNCT	Start: 2258	End: 2259	PTB: "''"
   Text Unit Start: 2260
   Text Unit End: 2342
-    Token: "The"          	Type: TOKEN	Start: 2260	End: 2263
-    Token: "author"       	Type: TOKEN	Start: 2264	End: 2270
-    Token: "throws"       	Type: TOKEN	Start: 2271	End: 2277
-    Token: "out"          	Type: TOKEN	Start: 2278	End: 2281
-    Token: "all"          	Type: TOKEN	Start: 2282	End: 2285
-    Token: "prentense"    	Type: TOKEN	Start: 2286	End: 2295
-    Token: "of"           	Type: TOKEN	Start: 2296	End: 2298
-    Token: "neutrality"   	Type: TOKEN	Start: 2299	End: 2309
-    Token: "by"           	Type: TOKEN	Start: 2310	End: 2312
-    Token: "the"          	Type: TOKEN	Start: 2313	End: 2316
-    Token: "end"          	Type: TOKEN	Start: 2317	End: 2320
-    Token: "of"           	Type: TOKEN	Start: 2321	End: 2323
-    Token: "the"          	Type: TOKEN	Start: 2324	End: 2327
-    Token: "first"        	Type: TOKEN	Start: 2328	End: 2333
-    Token: "chapter"      	Type: TOKEN	Start: 2334	End: 2341
+    Token: "The"          	Type: FIRST_UPPER_CASE	Start: 2260	End: 2263
+    Token: "author"       	Type: ALL_LOWER_CASE	Start: 2264	End: 2270
+    Token: "throws"       	Type: ALL_LOWER_CASE	Start: 2271	End: 2277
+    Token: "out"          	Type: ALL_LOWER_CASE	Start: 2278	End: 2281
+    Token: "all"          	Type: ALL_LOWER_CASE	Start: 2282	End: 2285
+    Token: "prentense"    	Type: ALL_LOWER_CASE	Start: 2286	End: 2295
+    Token: "of"           	Type: ALL_LOWER_CASE	Start: 2296	End: 2298
+    Token: "neutrality"   	Type: ALL_LOWER_CASE	Start: 2299	End: 2309
+    Token: "by"           	Type: ALL_LOWER_CASE	Start: 2310	End: 2312
+    Token: "the"          	Type: ALL_LOWER_CASE	Start: 2313	End: 2316
+    Token: "end"          	Type: ALL_LOWER_CASE	Start: 2317	End: 2320
+    Token: "of"           	Type: ALL_LOWER_CASE	Start: 2321	End: 2323
+    Token: "the"          	Type: ALL_LOWER_CASE	Start: 2324	End: 2327
+    Token: "first"        	Type: ALL_LOWER_CASE	Start: 2328	End: 2333
+    Token: "chapter"      	Type: ALL_LOWER_CASE	Start: 2334	End: 2341
     Token: "."            	Type: TERM_PUNCT_P	Start: 2341	End: 2342
 
 Paragraph Start: 2346
 Paragraph End: 2549
   Text Unit Start: 2346
   Text Unit End: 2430
-    Token: "Coleman"      	Type: TOKEN	Start: 2346	End: 2353
-    Token: "is"           	Type: TOKEN	Start: 2354	End: 2356
-    Token: "capable"      	Type: TOKEN	Start: 2357	End: 2364
-    Token: "of"           	Type: TOKEN	Start: 2365	End: 2367
-    Token: "superb"       	Type: TOKEN	Start: 2368	End: 2374
-    Token: "work"         	Type: TOKEN	Start: 2375	End: 2379
+    Token: "Coleman"      	Type: FIRST_UPPER_CASE	Start: 2346	End: 2353
+    Token: "is"           	Type: ALL_LOWER_CASE	Start: 2354	End: 2356
+    Token: "capable"      	Type: ALL_LOWER_CASE	Start: 2357	End: 2364
+    Token: "of"           	Type: ALL_LOWER_CASE	Start: 2365	End: 2367
+    Token: "superb"       	Type: ALL_LOWER_CASE	Start: 2368	End: 2374
+    Token: "work"         	Type: ALL_LOWER_CASE	Start: 2375	End: 2379
     Token: ","            	Type: PUNCTUATION	Start: 2379	End: 2380
-    Token: "as"           	Type: TOKEN	Start: 2381	End: 2383
-    Token: "his"          	Type: TOKEN	Start: 2384	End: 2387
-    Token: "definitive"   	Type: TOKEN	Start: 2388	End: 2398
-    Token: "biography"    	Type: TOKEN	Start: 2399	End: 2408
-    Token: "of"           	Type: TOKEN	Start: 2409	End: 2411
-    Token: "John"         	Type: TOKEN	Start: 2412	End: 2416
-    Token: "Lennon"       	Type: TOKEN	Start: 2417	End: 2423
-    Token: "shows"        	Type: TOKEN	Start: 2424	End: 2429
+    Token: "as"           	Type: ALL_LOWER_CASE	Start: 2381	End: 2383
+    Token: "his"          	Type: ALL_LOWER_CASE	Start: 2384	End: 2387
+    Token: "definitive"   	Type: ALL_LOWER_CASE	Start: 2388	End: 2398
+    Token: "biography"    	Type: ALL_LOWER_CASE	Start: 2399	End: 2408
+    Token: "of"           	Type: ALL_LOWER_CASE	Start: 2409	End: 2411
+    Token: "John"         	Type: FIRST_UPPER_CASE	Start: 2412	End: 2416
+    Token: "Lennon"       	Type: FIRST_UPPER_CASE	Start: 2417	End: 2423
+    Token: "shows"        	Type: ALL_LOWER_CASE	Start: 2424	End: 2429
     Token: "."            	Type: TERM_PUNCT_P	Start: 2429	End: 2430
   Text Unit Start: 2431
   Text Unit End: 2516
-    Token: "One"          	Type: TOKEN	Start: 2431	End: 2434
-    Token: "can"          	Type: TOKEN	Start: 2435	End: 2438
-    Token: "only"         	Type: TOKEN	Start: 2439	End: 2443
-    Token: "hope"         	Type: TOKEN	Start: 2444	End: 2448
-    Token: "that"         	Type: TOKEN	Start: 2449	End: 2453
-    Token: "someday"      	Type: TOKEN	Start: 2454	End: 2461
-    Token: "someone"      	Type: TOKEN	Start: 2462	End: 2469
-    Token: "will"         	Type: TOKEN	Start: 2470	End: 2474
-    Token: "do"           	Type: TOKEN	Start: 2475	End: 2477
-    Token: "a"            	Type: TOKEN	Start: 2478	End: 2479
-    Token: "similar"      	Type: TOKEN	Start: 2480	End: 2487
-    Token: "treatment"    	Type: TOKEN	Start: 2488	End: 2497
-    Token: "of"           	Type: TOKEN	Start: 2498	End: 2500
-    Token: "Clapton"      	Type: TOKEN	Start: 2501	End: 2508
+    Token: "One"          	Type: FIRST_UPPER_CASE	Start: 2431	End: 2434
+    Token: "can"          	Type: ALL_LOWER_CASE	Start: 2435	End: 2438
+    Token: "only"         	Type: ALL_LOWER_CASE	Start: 2439	End: 2443
+    Token: "hope"         	Type: ALL_LOWER_CASE	Start: 2444	End: 2448
+    Token: "that"         	Type: ALL_LOWER_CASE	Start: 2449	End: 2453
+    Token: "someday"      	Type: ALL_LOWER_CASE	Start: 2454	End: 2461
+    Token: "someone"      	Type: ALL_LOWER_CASE	Start: 2462	End: 2469
+    Token: "will"         	Type: ALL_LOWER_CASE	Start: 2470	End: 2474
+    Token: "do"           	Type: ALL_LOWER_CASE	Start: 2475	End: 2477
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 2478	End: 2479
+    Token: "similar"      	Type: ALL_LOWER_CASE	Start: 2480	End: 2487
+    Token: "treatment"    	Type: ALL_LOWER_CASE	Start: 2488	End: 2497
+    Token: "of"           	Type: ALL_LOWER_CASE	Start: 2498	End: 2500
+    Token: "Clapton"      	Type: FIRST_UPPER_CASE	Start: 2501	End: 2508
     Token: "'s"           	Type: RIGHTSPLIT	Start: 2508	End: 2510
-    Token: "life"         	Type: TOKEN	Start: 2511	End: 2515
+    Token: "life"         	Type: ALL_LOWER_CASE	Start: 2511	End: 2515
     Token: "."            	Type: TERM_PUNCT_P	Start: 2515	End: 2516
   Text Unit Start: 2517
   Text Unit End: 2549
-    Token: "This"         	Type: TOKEN	Start: 2517	End: 2521
-    Token: "is"           	Type: TOKEN	Start: 2522	End: 2524
+    Token: "This"         	Type: FIRST_UPPER_CASE	Start: 2517	End: 2521
+    Token: "is"           	Type: ALL_LOWER_CASE	Start: 2522	End: 2524
     Token: "n't"          	Type: RIGHTSPLIT	Start: 2524	End: 2527
-    Token: "it"           	Type: TOKEN	Start: 2528	End: 2530
-    Token: "by"           	Type: TOKEN	Start: 2531	End: 2533
-    Token: "a"            	Type: TOKEN	Start: 2534	End: 2535
-    Token: "long"         	Type: TOKEN	Start: 2536	End: 2540
-    Token: "stretch"      	Type: TOKEN	Start: 2541	End: 2548
+    Token: "it"           	Type: ALL_LOWER_CASE	Start: 2528	End: 2530
+    Token: "by"           	Type: ALL_LOWER_CASE	Start: 2531	End: 2533
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 2534	End: 2535
+    Token: "long"         	Type: ALL_LOWER_CASE	Start: 2536	End: 2540
+    Token: "stretch"      	Type: ALL_LOWER_CASE	Start: 2541	End: 2548
     Token: "."            	Type: TERM_PUNCT_P	Start: 2548	End: 2549
 
 Paragraph Start: 2553
 Paragraph End: 2665
   Text Unit Start: 2553
   Text Unit End: 2665
-    Token: "If"           	Type: TOKEN	Start: 2553	End: 2555
-    Token: "you"          	Type: TOKEN	Start: 2556	End: 2559
-    Token: "are"          	Type: TOKEN	Start: 2560	End: 2563
-    Token: "in"           	Type: TOKEN	Start: 2564	End: 2566
-    Token: "the"          	Type: TOKEN	Start: 2567	End: 2570
-    Token: "market"       	Type: TOKEN	Start: 2571	End: 2577
-    Token: "for"          	Type: TOKEN	Start: 2578	End: 2581
-    Token: "a"            	Type: TOKEN	Start: 2582	End: 2583
+    Token: "If"           	Type: FIRST_UPPER_CASE	Start: 2553	End: 2555
+    Token: "you"          	Type: ALL_LOWER_CASE	Start: 2556	End: 2559
+    Token: "are"          	Type: ALL_LOWER_CASE	Start: 2560	End: 2563
+    Token: "in"           	Type: ALL_LOWER_CASE	Start: 2564	End: 2566
+    Token: "the"          	Type: ALL_LOWER_CASE	Start: 2567	End: 2570
+    Token: "market"       	Type: ALL_LOWER_CASE	Start: 2571	End: 2577
+    Token: "for"          	Type: ALL_LOWER_CASE	Start: 2578	End: 2581
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 2582	End: 2583
     Token: "first-rate"   	Type: TOKEN	Start: 2584	End: 2594
-    Token: "biography"    	Type: TOKEN	Start: 2595	End: 2604
-    Token: "of"           	Type: TOKEN	Start: 2605	End: 2607
-    Token: "a"            	Type: TOKEN	Start: 2608	End: 2609
-    Token: "great"        	Type: TOKEN	Start: 2610	End: 2615
-    Token: "guitarist"    	Type: TOKEN	Start: 2616	End: 2625
+    Token: "biography"    	Type: ALL_LOWER_CASE	Start: 2595	End: 2604
+    Token: "of"           	Type: ALL_LOWER_CASE	Start: 2605	End: 2607
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 2608	End: 2609
+    Token: "great"        	Type: ALL_LOWER_CASE	Start: 2610	End: 2615
+    Token: "guitarist"    	Type: ALL_LOWER_CASE	Start: 2616	End: 2625
     Token: ","            	Type: PUNCTUATION	Start: 2625	End: 2626
-    Token: "consider"     	Type: TOKEN	Start: 2627	End: 2635
-    Token: "Jimi"         	Type: TOKEN	Start: 2636	End: 2640
-    Token: "Hendrix"      	Type: TOKEN	Start: 2641	End: 2648
+    Token: "consider"     	Type: ALL_LOWER_CASE	Start: 2627	End: 2635
+    Token: "Jimi"         	Type: FIRST_UPPER_CASE	Start: 2636	End: 2640
+    Token: "Hendrix"      	Type: FIRST_UPPER_CASE	Start: 2641	End: 2648
     Token: ":"            	Type: PUNCTUATION	Start: 2648	End: 2649
-    Token: "Electric"     	Type: TOKEN	Start: 2650	End: 2658
-    Token: "Gypsy"        	Type: TOKEN	Start: 2659	End: 2664
+    Token: "Electric"     	Type: FIRST_UPPER_CASE	Start: 2650	End: 2658
+    Token: "Gypsy"        	Type: FIRST_UPPER_CASE	Start: 2659	End: 2664
     Token: "."            	Type: TERM_PUNCT_P	Start: 2664	End: 2665
 
 Paragraph Start: 2669
 Paragraph End: 2700
   Text Unit Start: 2669
   Text Unit End: 2700
-    Token: "Was"          	Type: TOKEN	Start: 2669	End: 2672
-    Token: "this"         	Type: TOKEN	Start: 2673	End: 2677
-    Token: "review"       	Type: TOKEN	Start: 2678	End: 2684
-    Token: "helpful"      	Type: TOKEN	Start: 2685	End: 2692
-    Token: "to"           	Type: TOKEN	Start: 2693	End: 2695
-    Token: "you"          	Type: TOKEN	Start: 2696	End: 2699
+    Token: "Was"          	Type: FIRST_UPPER_CASE	Start: 2669	End: 2672
+    Token: "this"         	Type: ALL_LOWER_CASE	Start: 2673	End: 2677
+    Token: "review"       	Type: ALL_LOWER_CASE	Start: 2678	End: 2684
+    Token: "helpful"      	Type: ALL_LOWER_CASE	Start: 2685	End: 2692
+    Token: "to"           	Type: ALL_LOWER_CASE	Start: 2693	End: 2695
+    Token: "you"          	Type: ALL_LOWER_CASE	Start: 2696	End: 2699
     Token: "?"            	Type: TERM_PUNCT	Start: 2699	End: 2700
 
 Paragraph Start: 2704
@@ -775,25 +775,25 @@ Paragraph End: 2753
   Text Unit Start: 2704
   Text Unit End: 2753
     Token: "5"            	Type: DIGITAL	Start: 2704	End: 2705
-    Token: "of"           	Type: TOKEN	Start: 2706	End: 2708
+    Token: "of"           	Type: ALL_LOWER_CASE	Start: 2706	End: 2708
     Token: "5"            	Type: DIGITAL	Start: 2709	End: 2710
-    Token: "people"       	Type: TOKEN	Start: 2711	End: 2717
-    Token: "found"        	Type: TOKEN	Start: 2718	End: 2723
-    Token: "the"          	Type: TOKEN	Start: 2724	End: 2727
-    Token: "following"    	Type: TOKEN	Start: 2728	End: 2737
-    Token: "review"       	Type: TOKEN	Start: 2738	End: 2744
-    Token: "helpful"      	Type: TOKEN	Start: 2745	End: 2752
+    Token: "people"       	Type: ALL_LOWER_CASE	Start: 2711	End: 2717
+    Token: "found"        	Type: ALL_LOWER_CASE	Start: 2718	End: 2723
+    Token: "the"          	Type: ALL_LOWER_CASE	Start: 2724	End: 2727
+    Token: "following"    	Type: ALL_LOWER_CASE	Start: 2728	End: 2737
+    Token: "review"       	Type: ALL_LOWER_CASE	Start: 2738	End: 2744
+    Token: "helpful"      	Type: ALL_LOWER_CASE	Start: 2745	End: 2752
     Token: ":"            	Type: PUNCTUATION	Start: 2752	End: 2753
 
 Paragraph Start: 2757
 Paragraph End: 2789
   Text Unit Start: 2757
   Text Unit End: 2789
-    Token: "one"          	Type: TOKEN	Start: 2757	End: 2760
-    Token: "great"        	Type: TOKEN	Start: 2761	End: 2766
-    Token: "book"         	Type: TOKEN	Start: 2767	End: 2771
+    Token: "one"          	Type: ALL_LOWER_CASE	Start: 2757	End: 2760
+    Token: "great"        	Type: ALL_LOWER_CASE	Start: 2761	End: 2766
+    Token: "book"         	Type: ALL_LOWER_CASE	Start: 2767	End: 2771
     Token: ","            	Type: PUNCTUATION	Start: 2771	End: 2772
-    Token: "November"     	Type: TOKEN	Start: 2773	End: 2781
+    Token: "November"     	Type: FIRST_UPPER_CASE	Start: 2773	End: 2781
     Token: "1"            	Type: DIGITAL	Start: 2782	End: 2783
     Token: ","            	Type: PUNCTUATION	Start: 2783	End: 2784
     Token: "1999"         	Type: DIGITAL	Start: 2785	End: 2789
@@ -802,104 +802,104 @@ Paragraph Start: 2793
 Paragraph End: 2828
   Text Unit Start: 2793
   Text Unit End: 2828
-    Token: "Reviewer"     	Type: TOKEN	Start: 2793	End: 2801
+    Token: "Reviewer"     	Type: FIRST_UPPER_CASE	Start: 2793	End: 2801
     Token: ":"            	Type: PUNCTUATION	Start: 2801	End: 2802
-    Token: "Sonia"        	Type: TOKEN	Start: 2803	End: 2808
-    Token: "from"         	Type: TOKEN	Start: 2809	End: 2813
-    Token: "Northern"     	Type: TOKEN	Start: 2814	End: 2822
-    Token: "Idaho"        	Type: TOKEN	Start: 2823	End: 2828
+    Token: "Sonia"        	Type: FIRST_UPPER_CASE	Start: 2803	End: 2808
+    Token: "from"         	Type: ALL_LOWER_CASE	Start: 2809	End: 2813
+    Token: "Northern"     	Type: FIRST_UPPER_CASE	Start: 2814	End: 2822
+    Token: "Idaho"        	Type: FIRST_UPPER_CASE	Start: 2823	End: 2828
 
 Paragraph Start: 2832
 Paragraph End: 3072
   Text Unit Start: 2832
   Text Unit End: 2887
-    Token: "This"         	Type: TOKEN	Start: 2832	End: 2836
-    Token: "book"         	Type: TOKEN	Start: 2837	End: 2841
-    Token: "has"          	Type: TOKEN	Start: 2842	End: 2845
-    Token: "it"           	Type: TOKEN	Start: 2846	End: 2848
-    Token: "all"          	Type: TOKEN	Start: 2849	End: 2852
-    Token: "from"         	Type: TOKEN	Start: 2853	End: 2857
-    Token: "pictures"     	Type: TOKEN	Start: 2858	End: 2866
-    Token: "to"           	Type: TOKEN	Start: 2867	End: 2869
-    Token: "journal"      	Type: TOKEN	Start: 2870	End: 2877
-    Token: "writings"     	Type: TOKEN	Start: 2878	End: 2886
+    Token: "This"         	Type: FIRST_UPPER_CASE	Start: 2832	End: 2836
+    Token: "book"         	Type: ALL_LOWER_CASE	Start: 2837	End: 2841
+    Token: "has"          	Type: ALL_LOWER_CASE	Start: 2842	End: 2845
+    Token: "it"           	Type: ALL_LOWER_CASE	Start: 2846	End: 2848
+    Token: "all"          	Type: ALL_LOWER_CASE	Start: 2849	End: 2852
+    Token: "from"         	Type: ALL_LOWER_CASE	Start: 2853	End: 2857
+    Token: "pictures"     	Type: ALL_LOWER_CASE	Start: 2858	End: 2866
+    Token: "to"           	Type: ALL_LOWER_CASE	Start: 2867	End: 2869
+    Token: "journal"      	Type: ALL_LOWER_CASE	Start: 2870	End: 2877
+    Token: "writings"     	Type: ALL_LOWER_CASE	Start: 2878	End: 2886
     Token: "."            	Type: TERM_PUNCT_P	Start: 2886	End: 2887
   Text Unit Start: 2888
   Text Unit End: 3001
-    Token: "This"         	Type: TOKEN	Start: 2888	End: 2892
-    Token: "book"         	Type: TOKEN	Start: 2893	End: 2897
-    Token: "tells"        	Type: TOKEN	Start: 2898	End: 2903
-    Token: "about"        	Type: TOKEN	Start: 2904	End: 2909
-    Token: "EC"           	Type: TOKEN	Start: 2910	End: 2912
+    Token: "This"         	Type: FIRST_UPPER_CASE	Start: 2888	End: 2892
+    Token: "book"         	Type: ALL_LOWER_CASE	Start: 2893	End: 2897
+    Token: "tells"        	Type: ALL_LOWER_CASE	Start: 2898	End: 2903
+    Token: "about"        	Type: ALL_LOWER_CASE	Start: 2904	End: 2909
+    Token: "EC"           	Type: ALL_UPPER_CASE	Start: 2910	End: 2912
     Token: "'s"           	Type: RIGHTSPLIT	Start: 2912	End: 2914
-    Token: "struggles"    	Type: TOKEN	Start: 2915	End: 2924
-    Token: "as"           	Type: TOKEN	Start: 2925	End: 2927
-    Token: "a"            	Type: TOKEN	Start: 2928	End: 2929
-    Token: "young"        	Type: TOKEN	Start: 2930	End: 2935
-    Token: "boy"          	Type: TOKEN	Start: 2936	End: 2939
-    Token: "in"           	Type: TOKEN	Start: 2940	End: 2942
-    Token: "art"          	Type: TOKEN	Start: 2943	End: 2946
-    Token: "school"       	Type: TOKEN	Start: 2947	End: 2953
-    Token: "to"           	Type: TOKEN	Start: 2954	End: 2956
-    Token: "his"          	Type: TOKEN	Start: 2957	End: 2960
-    Token: "marriage"     	Type: TOKEN	Start: 2961	End: 2969
-    Token: "and"          	Type: TOKEN	Start: 2970	End: 2973
-    Token: "even"         	Type: TOKEN	Start: 2974	End: 2978
-    Token: "about"        	Type: TOKEN	Start: 2979	End: 2984
-    Token: "his"          	Type: TOKEN	Start: 2985	End: 2988
-    Token: "drug"         	Type: TOKEN	Start: 2989	End: 2993
-    Token: "habits"       	Type: TOKEN	Start: 2994	End: 3000
+    Token: "struggles"    	Type: ALL_LOWER_CASE	Start: 2915	End: 2924
+    Token: "as"           	Type: ALL_LOWER_CASE	Start: 2925	End: 2927
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 2928	End: 2929
+    Token: "young"        	Type: ALL_LOWER_CASE	Start: 2930	End: 2935
+    Token: "boy"          	Type: ALL_LOWER_CASE	Start: 2936	End: 2939
+    Token: "in"           	Type: ALL_LOWER_CASE	Start: 2940	End: 2942
+    Token: "art"          	Type: ALL_LOWER_CASE	Start: 2943	End: 2946
+    Token: "school"       	Type: ALL_LOWER_CASE	Start: 2947	End: 2953
+    Token: "to"           	Type: ALL_LOWER_CASE	Start: 2954	End: 2956
+    Token: "his"          	Type: ALL_LOWER_CASE	Start: 2957	End: 2960
+    Token: "marriage"     	Type: ALL_LOWER_CASE	Start: 2961	End: 2969
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 2970	End: 2973
+    Token: "even"         	Type: ALL_LOWER_CASE	Start: 2974	End: 2978
+    Token: "about"        	Type: ALL_LOWER_CASE	Start: 2979	End: 2984
+    Token: "his"          	Type: ALL_LOWER_CASE	Start: 2985	End: 2988
+    Token: "drug"         	Type: ALL_LOWER_CASE	Start: 2989	End: 2993
+    Token: "habits"       	Type: ALL_LOWER_CASE	Start: 2994	End: 3000
     Token: "."            	Type: TERM_PUNCT_P	Start: 3000	End: 3001
   Text Unit Start: 3002
   Text Unit End: 3053
-    Token: "This"         	Type: TOKEN	Start: 3002	End: 3006
-    Token: "book"         	Type: TOKEN	Start: 3007	End: 3011
-    Token: "is"           	Type: TOKEN	Start: 3012	End: 3014
-    Token: "number"       	Type: TOKEN	Start: 3015	End: 3021
-    Token: "one"          	Type: TOKEN	Start: 3022	End: 3025
-    Token: "in"           	Type: TOKEN	Start: 3026	End: 3028
-    Token: "my"           	Type: TOKEN	Start: 3029	End: 3031
-    Token: "book"         	Type: TOKEN	Start: 3032	End: 3036
-    Token: "and"          	Type: TOKEN	Start: 3037	End: 3040
-    Token: "always"       	Type: TOKEN	Start: 3041	End: 3047
-    Token: "will"         	Type: TOKEN	Start: 3048	End: 3052
+    Token: "This"         	Type: FIRST_UPPER_CASE	Start: 3002	End: 3006
+    Token: "book"         	Type: ALL_LOWER_CASE	Start: 3007	End: 3011
+    Token: "is"           	Type: ALL_LOWER_CASE	Start: 3012	End: 3014
+    Token: "number"       	Type: ALL_LOWER_CASE	Start: 3015	End: 3021
+    Token: "one"          	Type: ALL_LOWER_CASE	Start: 3022	End: 3025
+    Token: "in"           	Type: ALL_LOWER_CASE	Start: 3026	End: 3028
+    Token: "my"           	Type: ALL_LOWER_CASE	Start: 3029	End: 3031
+    Token: "book"         	Type: ALL_LOWER_CASE	Start: 3032	End: 3036
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 3037	End: 3040
+    Token: "always"       	Type: ALL_LOWER_CASE	Start: 3041	End: 3047
+    Token: "will"         	Type: ALL_LOWER_CASE	Start: 3048	End: 3052
     Token: "."            	Type: TERM_PUNCT_P	Start: 3052	End: 3053
   Text Unit Start: 3054
   Text Unit End: 3072
-    Token: "It"           	Type: TOKEN	Start: 3054	End: 3056
-    Token: "is"           	Type: TOKEN	Start: 3057	End: 3059
-    Token: "a"            	Type: TOKEN	Start: 3060	End: 3061
-    Token: "must"         	Type: TOKEN	Start: 3062	End: 3066
-    Token: "read"         	Type: TOKEN	Start: 3067	End: 3071
+    Token: "It"           	Type: FIRST_UPPER_CASE	Start: 3054	End: 3056
+    Token: "is"           	Type: ALL_LOWER_CASE	Start: 3057	End: 3059
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 3060	End: 3061
+    Token: "must"         	Type: ALL_LOWER_CASE	Start: 3062	End: 3066
+    Token: "read"         	Type: ALL_LOWER_CASE	Start: 3067	End: 3071
     Token: "."            	Type: TERM_PUNCT_P	Start: 3071	End: 3072
 
 Paragraph Start: 3076
 Paragraph End: 3107
   Text Unit Start: 3076
   Text Unit End: 3107
-    Token: "Was"          	Type: TOKEN	Start: 3076	End: 3079
-    Token: "this"         	Type: TOKEN	Start: 3080	End: 3084
-    Token: "review"       	Type: TOKEN	Start: 3085	End: 3091
-    Token: "helpful"      	Type: TOKEN	Start: 3092	End: 3099
-    Token: "to"           	Type: TOKEN	Start: 3100	End: 3102
-    Token: "you"          	Type: TOKEN	Start: 3103	End: 3106
+    Token: "Was"          	Type: FIRST_UPPER_CASE	Start: 3076	End: 3079
+    Token: "this"         	Type: ALL_LOWER_CASE	Start: 3080	End: 3084
+    Token: "review"       	Type: ALL_LOWER_CASE	Start: 3085	End: 3091
+    Token: "helpful"      	Type: ALL_LOWER_CASE	Start: 3092	End: 3099
+    Token: "to"           	Type: ALL_LOWER_CASE	Start: 3100	End: 3102
+    Token: "you"          	Type: ALL_LOWER_CASE	Start: 3103	End: 3106
     Token: "?"            	Type: TERM_PUNCT	Start: 3106	End: 3107
 
 Paragraph Start: 3111
 Paragraph End: 3168
   Text Unit Start: 3111
   Text Unit End: 3168
-    Token: "The"          	Type: TOKEN	Start: 3111	End: 3114
-    Token: "definitive"   	Type: TOKEN	Start: 3115	End: 3125
-    Token: "biography"    	Type: TOKEN	Start: 3126	End: 3135
-    Token: "of"           	Type: TOKEN	Start: 3136	End: 3138
-    Token: "EC"           	Type: TOKEN	Start: 3139	End: 3141
-    Token: "as"           	Type: TOKEN	Start: 3142	End: 3144
-    Token: "a"            	Type: TOKEN	Start: 3145	End: 3146
-    Token: "man"          	Type: TOKEN	Start: 3147	End: 3150
+    Token: "The"          	Type: FIRST_UPPER_CASE	Start: 3111	End: 3114
+    Token: "definitive"   	Type: ALL_LOWER_CASE	Start: 3115	End: 3125
+    Token: "biography"    	Type: ALL_LOWER_CASE	Start: 3126	End: 3135
+    Token: "of"           	Type: ALL_LOWER_CASE	Start: 3136	End: 3138
+    Token: "EC"           	Type: ALL_UPPER_CASE	Start: 3139	End: 3141
+    Token: "as"           	Type: ALL_LOWER_CASE	Start: 3142	End: 3144
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 3145	End: 3146
+    Token: "man"          	Type: ALL_LOWER_CASE	Start: 3147	End: 3150
     Token: "."            	Type: TERM_PUNCT_P	Start: 3150	End: 3151
     Token: ","            	Type: PUNCTUATION	Start: 3151	End: 3152
-    Token: "October"      	Type: TOKEN	Start: 3153	End: 3160
+    Token: "October"      	Type: FIRST_UPPER_CASE	Start: 3153	End: 3160
     Token: "7"            	Type: DIGITAL	Start: 3161	End: 3162
     Token: ","            	Type: PUNCTUATION	Start: 3162	End: 3163
     Token: "1999"         	Type: DIGITAL	Start: 3164	End: 3168
@@ -908,95 +908,95 @@ Paragraph Start: 3172
 Paragraph End: 3215
   Text Unit Start: 3172
   Text Unit End: 3215
-    Token: "Reviewer"     	Type: TOKEN	Start: 3172	End: 3180
+    Token: "Reviewer"     	Type: FIRST_UPPER_CASE	Start: 3172	End: 3180
     Token: ":"            	Type: PUNCTUATION	Start: 3180	End: 3181
-    Token: "Virginia"     	Type: TOKEN	Start: 3182	End: 3190
-    Token: "Lohle"        	Type: TOKEN	Start: 3191	End: 3196
-    Token: "from"         	Type: TOKEN	Start: 3197	End: 3201
-    Token: "New"          	Type: TOKEN	Start: 3202	End: 3205
-    Token: "York"         	Type: TOKEN	Start: 3206	End: 3210
-    Token: "City"         	Type: TOKEN	Start: 3211	End: 3215
+    Token: "Virginia"     	Type: FIRST_UPPER_CASE	Start: 3182	End: 3190
+    Token: "Lohle"        	Type: FIRST_UPPER_CASE	Start: 3191	End: 3196
+    Token: "from"         	Type: ALL_LOWER_CASE	Start: 3197	End: 3201
+    Token: "New"          	Type: FIRST_UPPER_CASE	Start: 3202	End: 3205
+    Token: "York"         	Type: FIRST_UPPER_CASE	Start: 3206	End: 3210
+    Token: "City"         	Type: FIRST_UPPER_CASE	Start: 3211	End: 3215
 
 Paragraph Start: 3219
 Paragraph End: 3516
   Text Unit Start: 3219
   Text Unit End: 3290
-    Token: "Ray"          	Type: TOKEN	Start: 3219	End: 3222
-    Token: "Coleman"      	Type: TOKEN	Start: 3223	End: 3230
-    Token: "was"          	Type: TOKEN	Start: 3231	End: 3234
-    Token: "granted"      	Type: TOKEN	Start: 3235	End: 3242
-    Token: "amazing"      	Type: TOKEN	Start: 3243	End: 3250
-    Token: "access"       	Type: TOKEN	Start: 3251	End: 3257
-    Token: "to"           	Type: TOKEN	Start: 3258	End: 3260
-    Token: "Eric"         	Type: TOKEN	Start: 3261	End: 3265
+    Token: "Ray"          	Type: FIRST_UPPER_CASE	Start: 3219	End: 3222
+    Token: "Coleman"      	Type: FIRST_UPPER_CASE	Start: 3223	End: 3230
+    Token: "was"          	Type: ALL_LOWER_CASE	Start: 3231	End: 3234
+    Token: "granted"      	Type: ALL_LOWER_CASE	Start: 3235	End: 3242
+    Token: "amazing"      	Type: ALL_LOWER_CASE	Start: 3243	End: 3250
+    Token: "access"       	Type: ALL_LOWER_CASE	Start: 3251	End: 3257
+    Token: "to"           	Type: ALL_LOWER_CASE	Start: 3258	End: 3260
+    Token: "Eric"         	Type: FIRST_UPPER_CASE	Start: 3261	End: 3265
     Token: ","            	Type: PUNCTUATION	Start: 3265	End: 3266
-    Token: "his"          	Type: TOKEN	Start: 3267	End: 3270
-    Token: "family"       	Type: TOKEN	Start: 3271	End: 3277
-    Token: "and"          	Type: TOKEN	Start: 3278	End: 3281
-    Token: "friends"      	Type: TOKEN	Start: 3282	End: 3289
+    Token: "his"          	Type: ALL_LOWER_CASE	Start: 3267	End: 3270
+    Token: "family"       	Type: ALL_LOWER_CASE	Start: 3271	End: 3277
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 3278	End: 3281
+    Token: "friends"      	Type: ALL_LOWER_CASE	Start: 3282	End: 3289
     Token: "."            	Type: TERM_PUNCT_P	Start: 3289	End: 3290
   Text Unit Start: 3291
   Text Unit End: 3350
-    Token: "This"         	Type: TOKEN	Start: 3291	End: 3295
-    Token: "is"           	Type: TOKEN	Start: 3296	End: 3298
-    Token: "the"          	Type: TOKEN	Start: 3299	End: 3302
-    Token: "best"         	Type: TOKEN	Start: 3303	End: 3307
-    Token: "book"         	Type: TOKEN	Start: 3308	End: 3312
-    Token: "on"           	Type: TOKEN	Start: 3313	End: 3315
-    Token: "the"          	Type: TOKEN	Start: 3316	End: 3319
-    Token: "market"       	Type: TOKEN	Start: 3320	End: 3326
-    Token: "about"        	Type: TOKEN	Start: 3327	End: 3332
-    Token: "Eric"         	Type: TOKEN	Start: 3333	End: 3337
-    Token: "as"           	Type: TOKEN	Start: 3338	End: 3340
-    Token: "a"            	Type: TOKEN	Start: 3341	End: 3342
-    Token: "person"       	Type: TOKEN	Start: 3343	End: 3349
+    Token: "This"         	Type: FIRST_UPPER_CASE	Start: 3291	End: 3295
+    Token: "is"           	Type: ALL_LOWER_CASE	Start: 3296	End: 3298
+    Token: "the"          	Type: ALL_LOWER_CASE	Start: 3299	End: 3302
+    Token: "best"         	Type: ALL_LOWER_CASE	Start: 3303	End: 3307
+    Token: "book"         	Type: ALL_LOWER_CASE	Start: 3308	End: 3312
+    Token: "on"           	Type: ALL_LOWER_CASE	Start: 3313	End: 3315
+    Token: "the"          	Type: ALL_LOWER_CASE	Start: 3316	End: 3319
+    Token: "market"       	Type: ALL_LOWER_CASE	Start: 3320	End: 3326
+    Token: "about"        	Type: ALL_LOWER_CASE	Start: 3327	End: 3332
+    Token: "Eric"         	Type: FIRST_UPPER_CASE	Start: 3333	End: 3337
+    Token: "as"           	Type: ALL_LOWER_CASE	Start: 3338	End: 3340
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 3341	End: 3342
+    Token: "person"       	Type: ALL_LOWER_CASE	Start: 3343	End: 3349
     Token: "."            	Type: TERM_PUNCT_P	Start: 3349	End: 3350
   Text Unit Start: 3351
   Text Unit End: 3516
-    Token: "Roberty"      	Type: TOKEN	Start: 3351	End: 3358
+    Token: "Roberty"      	Type: FIRST_UPPER_CASE	Start: 3351	End: 3358
     Token: "'s"           	Type: RIGHTSPLIT	Start: 3358	End: 3360
-    Token: "books"        	Type: TOKEN	Start: 3361	End: 3366
-    Token: "are"          	Type: TOKEN	Start: 3367	End: 3370
-    Token: "more"         	Type: TOKEN	Start: 3371	End: 3375
-    Token: "comprehensive"	Type: TOKEN	Start: 3376	End: 3389
-    Token: "about"        	Type: TOKEN	Start: 3390	End: 3395
-    Token: "his"          	Type: TOKEN	Start: 3396	End: 3399
-    Token: "music"        	Type: TOKEN	Start: 3400	End: 3405
+    Token: "books"        	Type: ALL_LOWER_CASE	Start: 3361	End: 3366
+    Token: "are"          	Type: ALL_LOWER_CASE	Start: 3367	End: 3370
+    Token: "more"         	Type: ALL_LOWER_CASE	Start: 3371	End: 3375
+    Token: "comprehensive"	Type: ALL_LOWER_CASE	Start: 3376	End: 3389
+    Token: "about"        	Type: ALL_LOWER_CASE	Start: 3390	End: 3395
+    Token: "his"          	Type: ALL_LOWER_CASE	Start: 3396	End: 3399
+    Token: "music"        	Type: ALL_LOWER_CASE	Start: 3400	End: 3405
     Token: ","            	Type: PUNCTUATION	Start: 3405	End: 3406
-    Token: "but"          	Type: TOKEN	Start: 3407	End: 3410
-    Token: "the"          	Type: TOKEN	Start: 3411	End: 3414
-    Token: "late"         	Type: TOKEN	Start: 3415	End: 3419
+    Token: "but"          	Type: ALL_LOWER_CASE	Start: 3407	End: 3410
+    Token: "the"          	Type: ALL_LOWER_CASE	Start: 3411	End: 3414
+    Token: "late"         	Type: ALL_LOWER_CASE	Start: 3415	End: 3419
     Token: ","            	Type: PUNCTUATION	Start: 3419	End: 3420
-    Token: "great"        	Type: TOKEN	Start: 3421	End: 3426
-    Token: "Melody"       	Type: TOKEN	Start: 3427	End: 3433
-    Token: "Maker"        	Type: TOKEN	Start: 3434	End: 3439
-    Token: "editor"       	Type: TOKEN	Start: 3440	End: 3446
-    Token: "Ray"          	Type: TOKEN	Start: 3447	End: 3450
-    Token: "Coleman"      	Type: TOKEN	Start: 3451	End: 3458
-    Token: "knew"         	Type: TOKEN	Start: 3459	End: 3463
-    Token: "and"          	Type: TOKEN	Start: 3464	End: 3467
-    Token: "loved"        	Type: TOKEN	Start: 3468	End: 3473
-    Token: "Eric"         	Type: TOKEN	Start: 3474	End: 3478
-    Token: "for"          	Type: TOKEN	Start: 3479	End: 3482
-    Token: "many"         	Type: TOKEN	Start: 3483	End: 3487
-    Token: "years"        	Type: TOKEN	Start: 3488	End: 3493
+    Token: "great"        	Type: ALL_LOWER_CASE	Start: 3421	End: 3426
+    Token: "Melody"       	Type: FIRST_UPPER_CASE	Start: 3427	End: 3433
+    Token: "Maker"        	Type: FIRST_UPPER_CASE	Start: 3434	End: 3439
+    Token: "editor"       	Type: ALL_LOWER_CASE	Start: 3440	End: 3446
+    Token: "Ray"          	Type: FIRST_UPPER_CASE	Start: 3447	End: 3450
+    Token: "Coleman"      	Type: FIRST_UPPER_CASE	Start: 3451	End: 3458
+    Token: "knew"         	Type: ALL_LOWER_CASE	Start: 3459	End: 3463
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 3464	End: 3467
+    Token: "loved"        	Type: ALL_LOWER_CASE	Start: 3468	End: 3473
+    Token: "Eric"         	Type: FIRST_UPPER_CASE	Start: 3474	End: 3478
+    Token: "for"          	Type: ALL_LOWER_CASE	Start: 3479	End: 3482
+    Token: "many"         	Type: ALL_LOWER_CASE	Start: 3483	End: 3487
+    Token: "years"        	Type: ALL_LOWER_CASE	Start: 3488	End: 3493
     Token: ","            	Type: PUNCTUATION	Start: 3493	End: 3494
-    Token: "and"          	Type: TOKEN	Start: 3495	End: 3498
-    Token: "has"          	Type: TOKEN	Start: 3499	End: 3502
-    Token: "rare"         	Type: TOKEN	Start: 3503	End: 3507
-    Token: "insight"      	Type: TOKEN	Start: 3508	End: 3515
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 3495	End: 3498
+    Token: "has"          	Type: ALL_LOWER_CASE	Start: 3499	End: 3502
+    Token: "rare"         	Type: ALL_LOWER_CASE	Start: 3503	End: 3507
+    Token: "insight"      	Type: ALL_LOWER_CASE	Start: 3508	End: 3515
     Token: "."            	Type: TERM_PUNCT_P	Start: 3515	End: 3516
 
 Paragraph Start: 3520
 Paragraph End: 3551
   Text Unit Start: 3520
   Text Unit End: 3551
-    Token: "Was"          	Type: TOKEN	Start: 3520	End: 3523
-    Token: "this"         	Type: TOKEN	Start: 3524	End: 3528
-    Token: "review"       	Type: TOKEN	Start: 3529	End: 3535
-    Token: "helpful"      	Type: TOKEN	Start: 3536	End: 3543
-    Token: "to"           	Type: TOKEN	Start: 3544	End: 3546
-    Token: "you"          	Type: TOKEN	Start: 3547	End: 3550
+    Token: "Was"          	Type: FIRST_UPPER_CASE	Start: 3520	End: 3523
+    Token: "this"         	Type: ALL_LOWER_CASE	Start: 3524	End: 3528
+    Token: "review"       	Type: ALL_LOWER_CASE	Start: 3529	End: 3535
+    Token: "helpful"      	Type: ALL_LOWER_CASE	Start: 3536	End: 3543
+    Token: "to"           	Type: ALL_LOWER_CASE	Start: 3544	End: 3546
+    Token: "you"          	Type: ALL_LOWER_CASE	Start: 3547	End: 3550
     Token: "?"            	Type: TERM_PUNCT	Start: 3550	End: 3551
 
 Paragraph Start: 3555
@@ -1004,38 +1004,38 @@ Paragraph End: 3604
   Text Unit Start: 3555
   Text Unit End: 3604
     Token: "2"            	Type: DIGITAL	Start: 3555	End: 3556
-    Token: "of"           	Type: TOKEN	Start: 3557	End: 3559
+    Token: "of"           	Type: ALL_LOWER_CASE	Start: 3557	End: 3559
     Token: "2"            	Type: DIGITAL	Start: 3560	End: 3561
-    Token: "people"       	Type: TOKEN	Start: 3562	End: 3568
-    Token: "found"        	Type: TOKEN	Start: 3569	End: 3574
-    Token: "the"          	Type: TOKEN	Start: 3575	End: 3578
-    Token: "following"    	Type: TOKEN	Start: 3579	End: 3588
-    Token: "review"       	Type: TOKEN	Start: 3589	End: 3595
-    Token: "helpful"      	Type: TOKEN	Start: 3596	End: 3603
+    Token: "people"       	Type: ALL_LOWER_CASE	Start: 3562	End: 3568
+    Token: "found"        	Type: ALL_LOWER_CASE	Start: 3569	End: 3574
+    Token: "the"          	Type: ALL_LOWER_CASE	Start: 3575	End: 3578
+    Token: "following"    	Type: ALL_LOWER_CASE	Start: 3579	End: 3588
+    Token: "review"       	Type: ALL_LOWER_CASE	Start: 3589	End: 3595
+    Token: "helpful"      	Type: ALL_LOWER_CASE	Start: 3596	End: 3603
     Token: ":"            	Type: PUNCTUATION	Start: 3603	End: 3604
 
 Paragraph Start: 3608
 Paragraph End: 3686
   Text Unit Start: 3608
   Text Unit End: 3686
-    Token: "As"           	Type: TOKEN	Start: 3608	End: 3610
-    Token: "Good"         	Type: TOKEN	Start: 3611	End: 3615
-    Token: "As"           	Type: TOKEN	Start: 3616	End: 3618
-    Token: "It"           	Type: TOKEN	Start: 3619	End: 3621
-    Token: "Gets"         	Type: TOKEN	Start: 3622	End: 3626
+    Token: "As"           	Type: FIRST_UPPER_CASE	Start: 3608	End: 3610
+    Token: "Good"         	Type: FIRST_UPPER_CASE	Start: 3611	End: 3615
+    Token: "As"           	Type: FIRST_UPPER_CASE	Start: 3616	End: 3618
+    Token: "It"           	Type: FIRST_UPPER_CASE	Start: 3619	End: 3621
+    Token: "Gets"         	Type: FIRST_UPPER_CASE	Start: 3622	End: 3626
     Token: "--"           	Type: PUNCTUATION	Start: 3626	End: 3628
-    Token: "This"         	Type: TOKEN	Start: 3629	End: 3633
-    Token: "book"         	Type: TOKEN	Start: 3634	End: 3638
-    Token: "is"           	Type: TOKEN	Start: 3639	End: 3641
-    Token: "a"            	Type: TOKEN	Start: 3642	End: 3643
-    Token: "Bible"        	Type: TOKEN	Start: 3644	End: 3649
-    Token: "of"           	Type: TOKEN	Start: 3650	End: 3652
-    Token: "this"         	Type: TOKEN	Start: 3653	End: 3657
-    Token: "God"          	Type: TOKEN	Start: 3658	End: 3661
+    Token: "This"         	Type: FIRST_UPPER_CASE	Start: 3629	End: 3633
+    Token: "book"         	Type: ALL_LOWER_CASE	Start: 3634	End: 3638
+    Token: "is"           	Type: ALL_LOWER_CASE	Start: 3639	End: 3641
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 3642	End: 3643
+    Token: "Bible"        	Type: FIRST_UPPER_CASE	Start: 3644	End: 3649
+    Token: "of"           	Type: ALL_LOWER_CASE	Start: 3650	End: 3652
+    Token: "this"         	Type: ALL_LOWER_CASE	Start: 3653	End: 3657
+    Token: "God"          	Type: FIRST_UPPER_CASE	Start: 3658	End: 3661
     Token: "'s"           	Type: RIGHTSPLIT	Start: 3661	End: 3663
-    Token: "life"         	Type: TOKEN	Start: 3664	End: 3668
+    Token: "life"         	Type: ALL_LOWER_CASE	Start: 3664	End: 3668
     Token: ","            	Type: PUNCTUATION	Start: 3668	End: 3669
-    Token: "November"     	Type: TOKEN	Start: 3670	End: 3678
+    Token: "November"     	Type: FIRST_UPPER_CASE	Start: 3670	End: 3678
     Token: "5"            	Type: DIGITAL	Start: 3679	End: 3680
     Token: ","            	Type: PUNCTUATION	Start: 3680	End: 3681
     Token: "1998"         	Type: DIGITAL	Start: 3682	End: 3686
@@ -1044,96 +1044,96 @@ Paragraph Start: 3690
 Paragraph End: 3735
   Text Unit Start: 3690
   Text Unit End: 3735
-    Token: "Reviewer"     	Type: TOKEN	Start: 3690	End: 3698
+    Token: "Reviewer"     	Type: FIRST_UPPER_CASE	Start: 3690	End: 3698
     Token: ":"            	Type: PUNCTUATION	Start: 3698	End: 3699
-    Token: "debslogan@email.msn.com"	Type: TOKEN	Start: 3700	End: 3723
-    Token: "from"         	Type: TOKEN	Start: 3724	End: 3728
+    Token: "debslogan@email.msn.com"	Type: EMAIL	Start: 3700	End: 3723
+    Token: "from"         	Type: ALL_LOWER_CASE	Start: 3724	End: 3728
     Token: "U.S.A."       	Type: B_ABBREVIATION	Start: 3729	End: 3735
 
 Paragraph Start: 3739
 Paragraph End: 4130
   Text Unit Start: 3739
   Text Unit End: 3838
-    Token: "This"         	Type: TOKEN	Start: 3739	End: 3743
-    Token: "book"         	Type: TOKEN	Start: 3744	End: 3748
-    Token: "will"         	Type: TOKEN	Start: 3749	End: 3753
-    Token: "truly"        	Type: TOKEN	Start: 3754	End: 3759
-    Token: "make"         	Type: TOKEN	Start: 3760	End: 3764
-    Token: "any"          	Type: TOKEN	Start: 3765	End: 3768
-    Token: "reader"       	Type: TOKEN	Start: 3769	End: 3775
-    Token: "a"            	Type: TOKEN	Start: 3776	End: 3777
-    Token: "devoted"      	Type: TOKEN	Start: 3778	End: 3785
-    Token: "fan"          	Type: TOKEN	Start: 3786	End: 3789
-    Token: "to"           	Type: TOKEN	Start: 3790	End: 3792
-    Token: "the"          	Type: TOKEN	Start: 3793	End: 3796
-    Token: "Rock"         	Type: TOKEN	Start: 3797	End: 3801
-    Token: "world"        	Type: TOKEN	Start: 3802	End: 3807
+    Token: "This"         	Type: FIRST_UPPER_CASE	Start: 3739	End: 3743
+    Token: "book"         	Type: ALL_LOWER_CASE	Start: 3744	End: 3748
+    Token: "will"         	Type: ALL_LOWER_CASE	Start: 3749	End: 3753
+    Token: "truly"        	Type: ALL_LOWER_CASE	Start: 3754	End: 3759
+    Token: "make"         	Type: ALL_LOWER_CASE	Start: 3760	End: 3764
+    Token: "any"          	Type: ALL_LOWER_CASE	Start: 3765	End: 3768
+    Token: "reader"       	Type: ALL_LOWER_CASE	Start: 3769	End: 3775
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 3776	End: 3777
+    Token: "devoted"      	Type: ALL_LOWER_CASE	Start: 3778	End: 3785
+    Token: "fan"          	Type: ALL_LOWER_CASE	Start: 3786	End: 3789
+    Token: "to"           	Type: ALL_LOWER_CASE	Start: 3790	End: 3792
+    Token: "the"          	Type: ALL_LOWER_CASE	Start: 3793	End: 3796
+    Token: "Rock"         	Type: FIRST_UPPER_CASE	Start: 3797	End: 3801
+    Token: "world"        	Type: ALL_LOWER_CASE	Start: 3802	End: 3807
     Token: "'s"           	Type: RIGHTSPLIT	Start: 3807	End: 3809
-    Token: "answer"       	Type: TOKEN	Start: 3810	End: 3816
-    Token: "to"           	Type: TOKEN	Start: 3817	End: 3819
-    Token: "the"          	Type: TOKEN	Start: 3820	End: 3823
-    Token: "Guitar"       	Type: TOKEN	Start: 3824	End: 3830
-    Token: "Master"       	Type: TOKEN	Start: 3831	End: 3837
+    Token: "answer"       	Type: ALL_LOWER_CASE	Start: 3810	End: 3816
+    Token: "to"           	Type: ALL_LOWER_CASE	Start: 3817	End: 3819
+    Token: "the"          	Type: ALL_LOWER_CASE	Start: 3820	End: 3823
+    Token: "Guitar"       	Type: FIRST_UPPER_CASE	Start: 3824	End: 3830
+    Token: "Master"       	Type: FIRST_UPPER_CASE	Start: 3831	End: 3837
     Token: "."            	Type: TERM_PUNCT_P	Start: 3837	End: 3838
   Text Unit Start: 3839
   Text Unit End: 3906
-    Token: "His"          	Type: TOKEN	Start: 3839	End: 3842
-    Token: "life"         	Type: TOKEN	Start: 3843	End: 3847
-    Token: "was"          	Type: TOKEN	Start: 3848	End: 3851
-    Token: "more"         	Type: TOKEN	Start: 3852	End: 3856
-    Token: "complex"      	Type: TOKEN	Start: 3857	End: 3864
-    Token: "than"         	Type: TOKEN	Start: 3865	End: 3869
-    Token: "the"          	Type: TOKEN	Start: 3870	End: 3873
-    Token: "Blues"        	Type: TOKEN	Start: 3874	End: 3879
-    Token: "stars"        	Type: TOKEN	Start: 3880	End: 3885
-    Token: "he"           	Type: TOKEN	Start: 3886	End: 3888
-    Token: "tried"        	Type: TOKEN	Start: 3889	End: 3894
-    Token: "to"           	Type: TOKEN	Start: 3895	End: 3897
-    Token: "imitate"      	Type: TOKEN	Start: 3898	End: 3905
+    Token: "His"          	Type: FIRST_UPPER_CASE	Start: 3839	End: 3842
+    Token: "life"         	Type: ALL_LOWER_CASE	Start: 3843	End: 3847
+    Token: "was"          	Type: ALL_LOWER_CASE	Start: 3848	End: 3851
+    Token: "more"         	Type: ALL_LOWER_CASE	Start: 3852	End: 3856
+    Token: "complex"      	Type: ALL_LOWER_CASE	Start: 3857	End: 3864
+    Token: "than"         	Type: ALL_LOWER_CASE	Start: 3865	End: 3869
+    Token: "the"          	Type: ALL_LOWER_CASE	Start: 3870	End: 3873
+    Token: "Blues"        	Type: FIRST_UPPER_CASE	Start: 3874	End: 3879
+    Token: "stars"        	Type: ALL_LOWER_CASE	Start: 3880	End: 3885
+    Token: "he"           	Type: ALL_LOWER_CASE	Start: 3886	End: 3888
+    Token: "tried"        	Type: ALL_LOWER_CASE	Start: 3889	End: 3894
+    Token: "to"           	Type: ALL_LOWER_CASE	Start: 3895	End: 3897
+    Token: "imitate"      	Type: ALL_LOWER_CASE	Start: 3898	End: 3905
     Token: "."            	Type: TERM_PUNCT_P	Start: 3905	End: 3906
   Text Unit Start: 3907
   Text Unit End: 4049
-    Token: "From"         	Type: TOKEN	Start: 3907	End: 3911
-    Token: "love"         	Type: TOKEN	Start: 3912	End: 3916
+    Token: "From"         	Type: FIRST_UPPER_CASE	Start: 3907	End: 3911
+    Token: "love"         	Type: ALL_LOWER_CASE	Start: 3912	End: 3916
     Token: "triangles,addictions,career"	Type: TOKEN	Start: 3917	End: 3944
     Token: "struggles,freindships"	Type: TOKEN	Start: 3945	End: 3966
-    Token: "and"          	Type: TOKEN	Start: 3967	End: 3970
-    Token: "loyalties"    	Type: TOKEN	Start: 3971	End: 3980
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 3967	End: 3970
+    Token: "loyalties"    	Type: ALL_LOWER_CASE	Start: 3971	End: 3980
     Token: ","            	Type: PUNCTUATION	Start: 3980	End: 3981
-    Token: "Eric"         	Type: TOKEN	Start: 3982	End: 3986
-    Token: "has"          	Type: TOKEN	Start: 3987	End: 3990
-    Token: "gone"         	Type: TOKEN	Start: 3991	End: 3995
-    Token: "through"      	Type: TOKEN	Start: 3996	End: 4003
-    Token: "it"           	Type: TOKEN	Start: 4004	End: 4006
-    Token: "all"          	Type: TOKEN	Start: 4007	End: 4010
+    Token: "Eric"         	Type: FIRST_UPPER_CASE	Start: 3982	End: 3986
+    Token: "has"          	Type: ALL_LOWER_CASE	Start: 3987	End: 3990
+    Token: "gone"         	Type: ALL_LOWER_CASE	Start: 3991	End: 3995
+    Token: "through"      	Type: ALL_LOWER_CASE	Start: 3996	End: 4003
+    Token: "it"           	Type: ALL_LOWER_CASE	Start: 4004	End: 4006
+    Token: "all"          	Type: ALL_LOWER_CASE	Start: 4007	End: 4010
     Token: ","            	Type: PUNCTUATION	Start: 4010	End: 4011
-    Token: "and"          	Type: TOKEN	Start: 4012	End: 4015
-    Token: "now"          	Type: TOKEN	Start: 4016	End: 4019
-    Token: "he"           	Type: TOKEN	Start: 4020	End: 4022
-    Token: "has"          	Type: TOKEN	Start: 4023	End: 4026
-    Token: "finally"      	Type: TOKEN	Start: 4027	End: 4034
-    Token: "been"         	Type: TOKEN	Start: 4035	End: 4039
-    Token: "rewarded"     	Type: TOKEN	Start: 4040	End: 4048
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 4012	End: 4015
+    Token: "now"          	Type: ALL_LOWER_CASE	Start: 4016	End: 4019
+    Token: "he"           	Type: ALL_LOWER_CASE	Start: 4020	End: 4022
+    Token: "has"          	Type: ALL_LOWER_CASE	Start: 4023	End: 4026
+    Token: "finally"      	Type: ALL_LOWER_CASE	Start: 4027	End: 4034
+    Token: "been"         	Type: ALL_LOWER_CASE	Start: 4035	End: 4039
+    Token: "rewarded"     	Type: ALL_LOWER_CASE	Start: 4040	End: 4048
     Token: "."            	Type: TERM_PUNCT_P	Start: 4048	End: 4049
   Text Unit Start: 4050
   Text Unit End: 4130
-    Token: "After"        	Type: TOKEN	Start: 4050	End: 4055
-    Token: "reading"      	Type: TOKEN	Start: 4056	End: 4063
-    Token: "this"         	Type: TOKEN	Start: 4064	End: 4068
-    Token: "book"         	Type: TOKEN	Start: 4069	End: 4073
+    Token: "After"        	Type: FIRST_UPPER_CASE	Start: 4050	End: 4055
+    Token: "reading"      	Type: ALL_LOWER_CASE	Start: 4056	End: 4063
+    Token: "this"         	Type: ALL_LOWER_CASE	Start: 4064	End: 4068
+    Token: "book"         	Type: ALL_LOWER_CASE	Start: 4069	End: 4073
     Token: ","            	Type: PUNCTUATION	Start: 4073	End: 4074
-    Token: "you"          	Type: TOKEN	Start: 4075	End: 4078
+    Token: "you"          	Type: ALL_LOWER_CASE	Start: 4075	End: 4078
     Token: "'ll"          	Type: RIGHTSPLIT	Start: 4078	End: 4081
-    Token: "feel"         	Type: TOKEN	Start: 4082	End: 4086
-    Token: "you"          	Type: TOKEN	Start: 4087	End: 4090
+    Token: "feel"         	Type: ALL_LOWER_CASE	Start: 4082	End: 4086
+    Token: "you"          	Type: ALL_LOWER_CASE	Start: 4087	End: 4090
     Token: "'ve"          	Type: RIGHTSPLIT	Start: 4090	End: 4093
-    Token: "known"        	Type: TOKEN	Start: 4094	End: 4099
-    Token: "him"          	Type: TOKEN	Start: 4100	End: 4103
-    Token: "and"          	Type: TOKEN	Start: 4104	End: 4107
-    Token: "want"         	Type: TOKEN	Start: 4108	End: 4112
-    Token: "to"           	Type: TOKEN	Start: 4113	End: 4115
-    Token: "know"         	Type: TOKEN	Start: 4116	End: 4120
-    Token: "more"         	Type: TOKEN	Start: 4121	End: 4125
+    Token: "known"        	Type: ALL_LOWER_CASE	Start: 4094	End: 4099
+    Token: "him"          	Type: ALL_LOWER_CASE	Start: 4100	End: 4103
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 4104	End: 4107
+    Token: "want"         	Type: ALL_LOWER_CASE	Start: 4108	End: 4112
+    Token: "to"           	Type: ALL_LOWER_CASE	Start: 4113	End: 4115
+    Token: "know"         	Type: ALL_LOWER_CASE	Start: 4116	End: 4120
+    Token: "more"         	Type: ALL_LOWER_CASE	Start: 4121	End: 4125
     Token: "!"            	Type: TERM_PUNCT	Start: 4125	End: 4126
     Token: "!"            	Type: TERM_PUNCT	Start: 4126	End: 4127
     Token: "!"            	Type: TERM_PUNCT	Start: 4127	End: 4128
@@ -1144,116 +1144,116 @@ Paragraph Start: 4134
 Paragraph End: 4165
   Text Unit Start: 4134
   Text Unit End: 4165
-    Token: "Was"          	Type: TOKEN	Start: 4134	End: 4137
-    Token: "this"         	Type: TOKEN	Start: 4138	End: 4142
-    Token: "review"       	Type: TOKEN	Start: 4143	End: 4149
-    Token: "helpful"      	Type: TOKEN	Start: 4150	End: 4157
-    Token: "to"           	Type: TOKEN	Start: 4158	End: 4160
-    Token: "you"          	Type: TOKEN	Start: 4161	End: 4164
+    Token: "Was"          	Type: FIRST_UPPER_CASE	Start: 4134	End: 4137
+    Token: "this"         	Type: ALL_LOWER_CASE	Start: 4138	End: 4142
+    Token: "review"       	Type: ALL_LOWER_CASE	Start: 4143	End: 4149
+    Token: "helpful"      	Type: ALL_LOWER_CASE	Start: 4150	End: 4157
+    Token: "to"           	Type: ALL_LOWER_CASE	Start: 4158	End: 4160
+    Token: "you"          	Type: ALL_LOWER_CASE	Start: 4161	End: 4164
     Token: "?"            	Type: TERM_PUNCT	Start: 4164	End: 4165
 
 Paragraph Start: 4169
 Paragraph End: 4279
   Text Unit Start: 4169
   Text Unit End: 4198
-    Token: "See"          	Type: TOKEN	Start: 4169	End: 4172
-    Token: "all"          	Type: TOKEN	Start: 4173	End: 4176
+    Token: "See"          	Type: FIRST_UPPER_CASE	Start: 4169	End: 4172
+    Token: "all"          	Type: ALL_LOWER_CASE	Start: 4173	End: 4176
     Token: "5"            	Type: DIGITAL	Start: 4177	End: 4178
-    Token: "customer"     	Type: TOKEN	Start: 4179	End: 4187
-    Token: "reviews"      	Type: TOKEN	Start: 4188	End: 4195
+    Token: "customer"     	Type: ALL_LOWER_CASE	Start: 4179	End: 4187
+    Token: "reviews"      	Type: ALL_LOWER_CASE	Start: 4188	End: 4195
     Token: "."            	Type: TERM_PUNCT_P	Start: 4195	End: 4196
     Token: "."            	Type: TERM_PUNCT_P	Start: 4196	End: 4197
     Token: "."            	Type: TERM_PUNCT_P	Start: 4197	End: 4198
   Text Unit Start: 4200
   Text Unit End: 4279
-    Token: "Customers"    	Type: TOKEN	Start: 4200	End: 4209
-    Token: "who"          	Type: TOKEN	Start: 4210	End: 4213
-    Token: "bought"       	Type: TOKEN	Start: 4214	End: 4220
-    Token: "titles"       	Type: TOKEN	Start: 4221	End: 4227
-    Token: "by"           	Type: TOKEN	Start: 4228	End: 4230
-    Token: "Ray"          	Type: TOKEN	Start: 4231	End: 4234
-    Token: "Coleman"      	Type: TOKEN	Start: 4235	End: 4242
-    Token: "also"         	Type: TOKEN	Start: 4243	End: 4247
-    Token: "bought"       	Type: TOKEN	Start: 4248	End: 4254
-    Token: "titles"       	Type: TOKEN	Start: 4255	End: 4261
-    Token: "by"           	Type: TOKEN	Start: 4262	End: 4264
-    Token: "these"        	Type: TOKEN	Start: 4265	End: 4270
-    Token: "authors"      	Type: TOKEN	Start: 4271	End: 4278
+    Token: "Customers"    	Type: FIRST_UPPER_CASE	Start: 4200	End: 4209
+    Token: "who"          	Type: ALL_LOWER_CASE	Start: 4210	End: 4213
+    Token: "bought"       	Type: ALL_LOWER_CASE	Start: 4214	End: 4220
+    Token: "titles"       	Type: ALL_LOWER_CASE	Start: 4221	End: 4227
+    Token: "by"           	Type: ALL_LOWER_CASE	Start: 4228	End: 4230
+    Token: "Ray"          	Type: FIRST_UPPER_CASE	Start: 4231	End: 4234
+    Token: "Coleman"      	Type: FIRST_UPPER_CASE	Start: 4235	End: 4242
+    Token: "also"         	Type: ALL_LOWER_CASE	Start: 4243	End: 4247
+    Token: "bought"       	Type: ALL_LOWER_CASE	Start: 4248	End: 4254
+    Token: "titles"       	Type: ALL_LOWER_CASE	Start: 4255	End: 4261
+    Token: "by"           	Type: ALL_LOWER_CASE	Start: 4262	End: 4264
+    Token: "these"        	Type: ALL_LOWER_CASE	Start: 4265	End: 4270
+    Token: "authors"      	Type: ALL_LOWER_CASE	Start: 4271	End: 4278
     Token: ":"            	Type: PUNCTUATION	Start: 4278	End: 4279
 
 Paragraph Start: 4283
 Paragraph End: 4370
   Text Unit Start: 4283
   Text Unit End: 4370
-    Token: "John"         	Type: TOKEN	Start: 4283	End: 4287
-    Token: "Lennon"       	Type: TOKEN	Start: 4288	End: 4294
-    Token: "Percy"        	Type: TOKEN	Start: 4296	End: 4301
+    Token: "John"         	Type: FIRST_UPPER_CASE	Start: 4283	End: 4287
+    Token: "Lennon"       	Type: FIRST_UPPER_CASE	Start: 4288	End: 4294
+    Token: "Percy"        	Type: FIRST_UPPER_CASE	Start: 4296	End: 4301
     Token: "'"            	Type: OPEN_PUNCT	Start: 4302	End: 4303	PTB: "``"
-    Token: "thrills"      	Type: TOKEN	Start: 4303	End: 4310
-    Token: "Thrillington" 	Type: TOKEN	Start: 4311	End: 4323
-    Token: "Eric"         	Type: TOKEN	Start: 4325	End: 4329
-    Token: "Clapton"      	Type: TOKEN	Start: 4330	End: 4337
-    Token: "Robert"       	Type: TOKEN	Start: 4339	End: 4345
-    Token: "Rosen"        	Type: TOKEN	Start: 4346	End: 4351
-    Token: "Geoffrey"     	Type: TOKEN	Start: 4353	End: 4361
-    Token: "Giuliano"     	Type: TOKEN	Start: 4362	End: 4370
+    Token: "thrills"      	Type: ALL_LOWER_CASE	Start: 4303	End: 4310
+    Token: "Thrillington" 	Type: FIRST_UPPER_CASE	Start: 4311	End: 4323
+    Token: "Eric"         	Type: FIRST_UPPER_CASE	Start: 4325	End: 4329
+    Token: "Clapton"      	Type: FIRST_UPPER_CASE	Start: 4330	End: 4337
+    Token: "Robert"       	Type: FIRST_UPPER_CASE	Start: 4339	End: 4345
+    Token: "Rosen"        	Type: FIRST_UPPER_CASE	Start: 4346	End: 4351
+    Token: "Geoffrey"     	Type: FIRST_UPPER_CASE	Start: 4353	End: 4361
+    Token: "Giuliano"     	Type: FIRST_UPPER_CASE	Start: 4362	End: 4370
 
 Paragraph Start: 4374
 Paragraph End: 4397
   Text Unit Start: 4374
   Text Unit End: 4397
-    Token: "Explore"      	Type: TOKEN	Start: 4374	End: 4381
-    Token: "similar"      	Type: TOKEN	Start: 4382	End: 4389
-    Token: "authors"      	Type: TOKEN	Start: 4390	End: 4397
+    Token: "Explore"      	Type: FIRST_UPPER_CASE	Start: 4374	End: 4381
+    Token: "similar"      	Type: ALL_LOWER_CASE	Start: 4382	End: 4389
+    Token: "authors"      	Type: ALL_LOWER_CASE	Start: 4390	End: 4397
 
 Paragraph Start: 4401
 Paragraph End: 4460
   Text Unit Start: 4401
   Text Unit End: 4460
-    Token: "Auctions"     	Type: TOKEN	Start: 4401	End: 4409
-    Token: "and"          	Type: TOKEN	Start: 4410	End: 4413
+    Token: "Auctions"     	Type: FIRST_UPPER_CASE	Start: 4401	End: 4409
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 4410	End: 4413
     Token: "zShops"       	Type: TOKEN	Start: 4414	End: 4420
-    Token: "sellers"      	Type: TOKEN	Start: 4421	End: 4428
-    Token: "and"          	Type: TOKEN	Start: 4429	End: 4432
-    Token: "our"          	Type: TOKEN	Start: 4433	End: 4436
-    Token: "other"        	Type: TOKEN	Start: 4437	End: 4442
-    Token: "stores"       	Type: TOKEN	Start: 4443	End: 4449
-    Token: "recommend"    	Type: TOKEN	Start: 4450	End: 4459
+    Token: "sellers"      	Type: ALL_LOWER_CASE	Start: 4421	End: 4428
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 4429	End: 4432
+    Token: "our"          	Type: ALL_LOWER_CASE	Start: 4433	End: 4436
+    Token: "other"        	Type: ALL_LOWER_CASE	Start: 4437	End: 4442
+    Token: "stores"       	Type: ALL_LOWER_CASE	Start: 4443	End: 4449
+    Token: "recommend"    	Type: ALL_LOWER_CASE	Start: 4450	End: 4459
     Token: ":"            	Type: PUNCTUATION	Start: 4459	End: 4460
 
 Paragraph Start: 4464
 Paragraph End: 4613
   Text Unit Start: 4464
   Text Unit End: 4613
-    Token: "ERIC"         	Type: TOKEN	Start: 4464	End: 4468
-    Token: "CLAPTON"      	Type: TOKEN	Start: 4469	End: 4476
+    Token: "ERIC"         	Type: ALL_UPPER_CASE	Start: 4464	End: 4468
+    Token: "CLAPTON"      	Type: ALL_UPPER_CASE	Start: 4469	End: 4476
     Token: "12x18"        	Type: DIGITAL	Start: 4477	End: 4482
-    Token: "LAMINATE"     	Type: TOKEN	Start: 4483	End: 4491
+    Token: "LAMINATE"     	Type: ALL_UPPER_CASE	Start: 4483	End: 4491
     Token: "1988"         	Type: DIGITAL	Start: 4492	End: 4496
-    Token: "BLACK"        	Type: TOKEN	Start: 4497	End: 4502
-    Token: "AND"          	Type: TOKEN	Start: 4503	End: 4506
-    Token: "WHITE"        	Type: TOKEN	Start: 4507	End: 4512
-    Token: "ARTIST"       	Type: TOKEN	Start: 4513	End: 4519
-    Token: "SKETCH"       	Type: TOKEN	Start: 4520	End: 4526
-    Token: "Eric"         	Type: TOKEN	Start: 4527	End: 4531
-    Token: "and"          	Type: TOKEN	Start: 4532	End: 4535
-    Token: "Guitar"       	Type: TOKEN	Start: 4536	End: 4542
+    Token: "BLACK"        	Type: ALL_UPPER_CASE	Start: 4497	End: 4502
+    Token: "AND"          	Type: ALL_UPPER_CASE	Start: 4503	End: 4506
+    Token: "WHITE"        	Type: ALL_UPPER_CASE	Start: 4507	End: 4512
+    Token: "ARTIST"       	Type: ALL_UPPER_CASE	Start: 4513	End: 4519
+    Token: "SKETCH"       	Type: ALL_UPPER_CASE	Start: 4520	End: 4526
+    Token: "Eric"         	Type: FIRST_UPPER_CASE	Start: 4527	End: 4531
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 4532	End: 4535
+    Token: "Guitar"       	Type: FIRST_UPPER_CASE	Start: 4536	End: 4542
     Token: "("            	Type: OPEN_BRACKET	Start: 4543	End: 4544	PTB: "-LRB-"
-    Token: "Current"      	Type: TOKEN	Start: 4544	End: 4551
-    Token: "bid"          	Type: TOKEN	Start: 4552	End: 4555
+    Token: "Current"      	Type: FIRST_UPPER_CASE	Start: 4544	End: 4551
+    Token: "bid"          	Type: ALL_LOWER_CASE	Start: 4552	End: 4555
     Token: ":"            	Type: PUNCTUATION	Start: 4555	End: 4556
     Token: "$"            	Type: LEFTSPLIT	Start: 4557	End: 4558
     Token: "10.00"        	Type: DIGITAL	Start: 4558	End: 4563
     Token: ")"            	Type: CLOSE_BRACKET	Start: 4563	End: 4564	PTB: "-RRB-"
-    Token: "ERIC"         	Type: TOKEN	Start: 4566	End: 4570
-    Token: "CLAPTON"      	Type: TOKEN	Start: 4571	End: 4578
+    Token: "ERIC"         	Type: ALL_UPPER_CASE	Start: 4566	End: 4570
+    Token: "CLAPTON"      	Type: ALL_UPPER_CASE	Start: 4571	End: 4578
     Token: "~"            	Type: PUNCTUATION	Start: 4579	End: 4580
-    Token: "by"           	Type: TOKEN	Start: 4581	End: 4583
-    Token: "Marc"         	Type: TOKEN	Start: 4584	End: 4588
-    Token: "Roberty"      	Type: TOKEN	Start: 4589	End: 4596
+    Token: "by"           	Type: ALL_LOWER_CASE	Start: 4581	End: 4583
+    Token: "Marc"         	Type: FIRST_UPPER_CASE	Start: 4584	End: 4588
+    Token: "Roberty"      	Type: FIRST_UPPER_CASE	Start: 4589	End: 4596
     Token: "~"            	Type: PUNCTUATION	Start: 4597	End: 4598
     Token: "("            	Type: OPEN_BRACKET	Start: 4599	End: 4600	PTB: "-LRB-"
-    Token: "Price"        	Type: TOKEN	Start: 4600	End: 4605
+    Token: "Price"        	Type: FIRST_UPPER_CASE	Start: 4600	End: 4605
     Token: ":"            	Type: PUNCTUATION	Start: 4605	End: 4606
     Token: "$"            	Type: LEFTSPLIT	Start: 4607	End: 4608
     Token: "7.95"         	Type: DIGITAL	Start: 4608	End: 4612
@@ -1263,45 +1263,45 @@ Paragraph Start: 4617
 Paragraph End: 4627
   Text Unit Start: 4617
   Text Unit End: 4627
-    Token: "Listmania"    	Type: TOKEN	Start: 4617	End: 4626
+    Token: "Listmania"    	Type: FIRST_UPPER_CASE	Start: 4617	End: 4626
     Token: "!"            	Type: TERM_PUNCT	Start: 4626	End: 4627
 
 Paragraph Start: 4631
 Paragraph End: 4853
   Text Unit Start: 4631
   Text Unit End: 4853
-    Token: "The"          	Type: TOKEN	Start: 4631	End: 4634
-    Token: "Best"         	Type: TOKEN	Start: 4635	End: 4639
-    Token: "CD"           	Type: TOKEN	Start: 4640	End: 4642
+    Token: "The"          	Type: FIRST_UPPER_CASE	Start: 4631	End: 4634
+    Token: "Best"         	Type: FIRST_UPPER_CASE	Start: 4635	End: 4639
+    Token: "CD"           	Type: ALL_UPPER_CASE	Start: 4640	End: 4642
     Token: "'s"           	Type: RIGHTSPLIT	Start: 4642	End: 4644
-    Token: "of"           	Type: TOKEN	Start: 4645	End: 4647
+    Token: "of"           	Type: ALL_LOWER_CASE	Start: 4645	End: 4647
     Token: "2001"         	Type: DIGITAL	Start: 4648	End: 4652
     Token: ":"            	Type: PUNCTUATION	Start: 4652	End: 4653
-    Token: "A"            	Type: TOKEN	Start: 4654	End: 4655
-    Token: "list"         	Type: TOKEN	Start: 4656	End: 4660
-    Token: "by"           	Type: TOKEN	Start: 4661	End: 4663
-    Token: "jonnylangnews"	Type: TOKEN	Start: 4664	End: 4677
+    Token: "A"            	Type: ALL_UPPER_CASE	Start: 4654	End: 4655
+    Token: "list"         	Type: ALL_LOWER_CASE	Start: 4656	End: 4660
+    Token: "by"           	Type: ALL_LOWER_CASE	Start: 4661	End: 4663
+    Token: "jonnylangnews"	Type: ALL_LOWER_CASE	Start: 4664	End: 4677
     Token: ","            	Type: PUNCTUATION	Start: 4677	End: 4678
-    Token: "Music"        	Type: TOKEN	Start: 4679	End: 4684
-    Token: "Fan"          	Type: TOKEN	Start: 4685	End: 4688
-    Token: "The"          	Type: TOKEN	Start: 4690	End: 4693
-    Token: "Most"         	Type: TOKEN	Start: 4694	End: 4698
-    Token: "Requested"    	Type: TOKEN	Start: 4699	End: 4708
-    Token: "Music"        	Type: TOKEN	Start: 4709	End: 4714
-    Token: "on"           	Type: TOKEN	Start: 4715	End: 4717
-    Token: "the"          	Type: TOKEN	Start: 4718	End: 4721
-    Token: "Radio"        	Type: TOKEN	Start: 4722	End: 4727
+    Token: "Music"        	Type: FIRST_UPPER_CASE	Start: 4679	End: 4684
+    Token: "Fan"          	Type: FIRST_UPPER_CASE	Start: 4685	End: 4688
+    Token: "The"          	Type: FIRST_UPPER_CASE	Start: 4690	End: 4693
+    Token: "Most"         	Type: FIRST_UPPER_CASE	Start: 4694	End: 4698
+    Token: "Requested"    	Type: FIRST_UPPER_CASE	Start: 4699	End: 4708
+    Token: "Music"        	Type: FIRST_UPPER_CASE	Start: 4709	End: 4714
+    Token: "on"           	Type: ALL_LOWER_CASE	Start: 4715	End: 4717
+    Token: "the"          	Type: ALL_LOWER_CASE	Start: 4718	End: 4721
+    Token: "Radio"        	Type: FIRST_UPPER_CASE	Start: 4722	End: 4727
     Token: ":"            	Type: PUNCTUATION	Start: 4727	End: 4728
-    Token: "A"            	Type: TOKEN	Start: 4729	End: 4730
-    Token: "list"         	Type: TOKEN	Start: 4731	End: 4735
-    Token: "by"           	Type: TOKEN	Start: 4736	End: 4738
-    Token: "Michael"      	Type: TOKEN	Start: 4739	End: 4746
-    Token: "Barbieri"     	Type: TOKEN	Start: 4747	End: 4755
+    Token: "A"            	Type: ALL_UPPER_CASE	Start: 4729	End: 4730
+    Token: "list"         	Type: ALL_LOWER_CASE	Start: 4731	End: 4735
+    Token: "by"           	Type: ALL_LOWER_CASE	Start: 4736	End: 4738
+    Token: "Michael"      	Type: FIRST_UPPER_CASE	Start: 4739	End: 4746
+    Token: "Barbieri"     	Type: FIRST_UPPER_CASE	Start: 4747	End: 4755
     Token: ","            	Type: PUNCTUATION	Start: 4755	End: 4756
-    Token: "National"     	Type: TOKEN	Start: 4757	End: 4765
-    Token: "Radio"        	Type: TOKEN	Start: 4766	End: 4771
-    Token: "Programmer"   	Type: TOKEN	Start: 4772	End: 4782
-    Token: "GUITAR"       	Type: TOKEN	Start: 4784	End: 4790
+    Token: "National"     	Type: FIRST_UPPER_CASE	Start: 4757	End: 4765
+    Token: "Radio"        	Type: FIRST_UPPER_CASE	Start: 4766	End: 4771
+    Token: "Programmer"   	Type: FIRST_UPPER_CASE	Start: 4772	End: 4782
+    Token: "GUITAR"       	Type: ALL_UPPER_CASE	Start: 4784	End: 4790
     Token: "!"            	Type: TERM_PUNCT	Start: 4791	End: 4792
     Token: "!"            	Type: TERM_PUNCT	Start: 4792	End: 4793
     Token: "!"            	Type: TERM_PUNCT	Start: 4793	End: 4794
@@ -1309,12 +1309,12 @@ Paragraph End: 4853
     Token: "!"            	Type: TERM_PUNCT	Start: 4795	End: 4796
     Token: "!"            	Type: TERM_PUNCT	Start: 4796	End: 4797
     Token: ":"            	Type: PUNCTUATION	Start: 4797	End: 4798
-    Token: "A"            	Type: TOKEN	Start: 4799	End: 4800
-    Token: "list"         	Type: TOKEN	Start: 4801	End: 4805
-    Token: "by"           	Type: TOKEN	Start: 4806	End: 4808
-    Token: "Todd"         	Type: TOKEN	Start: 4809	End: 4813
-    Token: "Tamanend"     	Type: TOKEN	Start: 4814	End: 4822
-    Token: "Clark"        	Type: TOKEN	Start: 4823	End: 4828
+    Token: "A"            	Type: ALL_UPPER_CASE	Start: 4799	End: 4800
+    Token: "list"         	Type: ALL_LOWER_CASE	Start: 4801	End: 4805
+    Token: "by"           	Type: ALL_LOWER_CASE	Start: 4806	End: 4808
+    Token: "Todd"         	Type: FIRST_UPPER_CASE	Start: 4809	End: 4813
+    Token: "Tamanend"     	Type: FIRST_UPPER_CASE	Start: 4814	End: 4822
+    Token: "Clark"        	Type: FIRST_UPPER_CASE	Start: 4823	End: 4828
     Token: ","            	Type: PUNCTUATION	Start: 4828	End: 4829
     Token: "Poet/Composer/Guitarist"	Type: TOKEN	Start: 4830	End: 4853	PTB: "Poet\/Composer\/Guitarist"
 
@@ -1322,120 +1322,120 @@ Paragraph Start: 4857
 Paragraph End: 4891
   Text Unit Start: 4857
   Text Unit End: 4891
-    Token: "Look"         	Type: TOKEN	Start: 4857	End: 4861
-    Token: "for"          	Type: TOKEN	Start: 4862	End: 4865
-    Token: "similar"      	Type: TOKEN	Start: 4866	End: 4873
-    Token: "books"        	Type: TOKEN	Start: 4874	End: 4879
-    Token: "by"           	Type: TOKEN	Start: 4880	End: 4882
-    Token: "subject"      	Type: TOKEN	Start: 4883	End: 4890
+    Token: "Look"         	Type: FIRST_UPPER_CASE	Start: 4857	End: 4861
+    Token: "for"          	Type: ALL_LOWER_CASE	Start: 4862	End: 4865
+    Token: "similar"      	Type: ALL_LOWER_CASE	Start: 4866	End: 4873
+    Token: "books"        	Type: ALL_LOWER_CASE	Start: 4874	End: 4879
+    Token: "by"           	Type: ALL_LOWER_CASE	Start: 4880	End: 4882
+    Token: "subject"      	Type: ALL_LOWER_CASE	Start: 4883	End: 4890
     Token: ":"            	Type: PUNCTUATION	Start: 4890	End: 4891
 
 Paragraph Start: 4895
 Paragraph End: 4915
   Text Unit Start: 4895
   Text Unit End: 4915
-    Token: "Browse"       	Type: TOKEN	Start: 4895	End: 4901
-    Token: "for"          	Type: TOKEN	Start: 4902	End: 4905
-    Token: "books"        	Type: TOKEN	Start: 4906	End: 4911
-    Token: "in"           	Type: TOKEN	Start: 4912	End: 4914
+    Token: "Browse"       	Type: FIRST_UPPER_CASE	Start: 4895	End: 4901
+    Token: "for"          	Type: ALL_LOWER_CASE	Start: 4902	End: 4905
+    Token: "books"        	Type: ALL_LOWER_CASE	Start: 4906	End: 4911
+    Token: "in"           	Type: ALL_LOWER_CASE	Start: 4912	End: 4914
     Token: ":"            	Type: PUNCTUATION	Start: 4914	End: 4915
 
 Paragraph Start: 4919
 Paragraph End: 4961
   Text Unit Start: 4919
   Text Unit End: 4961
-    Token: "Subjects"     	Type: TOKEN	Start: 4919	End: 4927
+    Token: "Subjects"     	Type: FIRST_UPPER_CASE	Start: 4919	End: 4927
     Token: ">"            	Type: PUNCTUATION	Start: 4928	End: 4929
-    Token: "Biographies"  	Type: TOKEN	Start: 4930	End: 4941
+    Token: "Biographies"  	Type: FIRST_UPPER_CASE	Start: 4930	End: 4941
     Token: "&"            	Type: PUNCTUATION	Start: 4942	End: 4943
-    Token: "Memoirs"      	Type: TOKEN	Start: 4944	End: 4951
+    Token: "Memoirs"      	Type: FIRST_UPPER_CASE	Start: 4944	End: 4951
     Token: ">"            	Type: PUNCTUATION	Start: 4952	End: 4953
-    Token: "General"      	Type: TOKEN	Start: 4954	End: 4961
+    Token: "General"      	Type: FIRST_UPPER_CASE	Start: 4954	End: 4961
 
 Paragraph Start: 4965
 Paragraph End: 5021
   Text Unit Start: 4965
   Text Unit End: 5021
-    Token: "Subjects"     	Type: TOKEN	Start: 4965	End: 4973
+    Token: "Subjects"     	Type: FIRST_UPPER_CASE	Start: 4965	End: 4973
     Token: ">"            	Type: PUNCTUATION	Start: 4974	End: 4975
-    Token: "Entertainment"	Type: TOKEN	Start: 4976	End: 4989
+    Token: "Entertainment"	Type: FIRST_UPPER_CASE	Start: 4976	End: 4989
     Token: ">"            	Type: PUNCTUATION	Start: 4990	End: 4991
-    Token: "Music"        	Type: TOKEN	Start: 4992	End: 4997
+    Token: "Music"        	Type: FIRST_UPPER_CASE	Start: 4992	End: 4997
     Token: ">"            	Type: PUNCTUATION	Start: 4998	End: 4999
-    Token: "Musical"      	Type: TOKEN	Start: 5000	End: 5007
-    Token: "Genres"       	Type: TOKEN	Start: 5008	End: 5014
+    Token: "Musical"      	Type: FIRST_UPPER_CASE	Start: 5000	End: 5007
+    Token: "Genres"       	Type: FIRST_UPPER_CASE	Start: 5008	End: 5014
     Token: ">"            	Type: PUNCTUATION	Start: 5015	End: 5016
-    Token: "Rock"         	Type: TOKEN	Start: 5017	End: 5021
+    Token: "Rock"         	Type: FIRST_UPPER_CASE	Start: 5017	End: 5021
 
 Paragraph Start: 5025
 Paragraph End: 5053
   Text Unit Start: 5025
   Text Unit End: 5053
-    Token: "Search"       	Type: TOKEN	Start: 5025	End: 5031
-    Token: "for"          	Type: TOKEN	Start: 5032	End: 5035
-    Token: "books"        	Type: TOKEN	Start: 5036	End: 5041
-    Token: "by"           	Type: TOKEN	Start: 5042	End: 5044
-    Token: "subject"      	Type: TOKEN	Start: 5045	End: 5052
+    Token: "Search"       	Type: FIRST_UPPER_CASE	Start: 5025	End: 5031
+    Token: "for"          	Type: ALL_LOWER_CASE	Start: 5032	End: 5035
+    Token: "books"        	Type: ALL_LOWER_CASE	Start: 5036	End: 5041
+    Token: "by"           	Type: ALL_LOWER_CASE	Start: 5042	End: 5044
+    Token: "subject"      	Type: ALL_LOWER_CASE	Start: 5045	End: 5052
     Token: ":"            	Type: PUNCTUATION	Start: 5052	End: 5053
 
 Paragraph Start: 5057
 Paragraph End: 5070
   Text Unit Start: 5057
   Text Unit End: 5070
-    Token: "Clapton"      	Type: TOKEN	Start: 5057	End: 5064
+    Token: "Clapton"      	Type: FIRST_UPPER_CASE	Start: 5057	End: 5064
     Token: ","            	Type: PUNCTUATION	Start: 5064	End: 5065
-    Token: "Eric"         	Type: TOKEN	Start: 5066	End: 5070
+    Token: "Eric"         	Type: FIRST_UPPER_CASE	Start: 5066	End: 5070
 
 Paragraph Start: 5074
 Paragraph End: 5088
   Text Unit Start: 5074
   Text Unit End: 5088
-    Token: "Rock"         	Type: TOKEN	Start: 5074	End: 5078
-    Token: "musicians"    	Type: TOKEN	Start: 5079	End: 5088
+    Token: "Rock"         	Type: FIRST_UPPER_CASE	Start: 5074	End: 5078
+    Token: "musicians"    	Type: ALL_LOWER_CASE	Start: 5079	End: 5088
 
 Paragraph Start: 5092
 Paragraph End: 5101
   Text Unit Start: 5092
   Text Unit End: 5101
-    Token: "Biography"    	Type: TOKEN	Start: 5092	End: 5101
+    Token: "Biography"    	Type: FIRST_UPPER_CASE	Start: 5092	End: 5101
 
 Paragraph Start: 5105
 Paragraph End: 5115
   Text Unit Start: 5105
   Text Unit End: 5115
-    Token: "Rock"         	Type: TOKEN	Start: 5105	End: 5109
-    Token: "music"        	Type: TOKEN	Start: 5110	End: 5115
+    Token: "Rock"         	Type: FIRST_UPPER_CASE	Start: 5105	End: 5109
+    Token: "music"        	Type: ALL_LOWER_CASE	Start: 5110	End: 5115
 
 Paragraph Start: 5119
 Paragraph End: 5144
   Text Unit Start: 5119
   Text Unit End: 5144
-    Token: "Biography"    	Type: TOKEN	Start: 5119	End: 5128
+    Token: "Biography"    	Type: FIRST_UPPER_CASE	Start: 5119	End: 5128
     Token: "/"            	Type: PUNCTUATION	Start: 5129	End: 5130	PTB: "\/"
-    Token: "Autobiography"	Type: TOKEN	Start: 5131	End: 5144
+    Token: "Autobiography"	Type: FIRST_UPPER_CASE	Start: 5131	End: 5144
 
 Paragraph Start: 5148
 Paragraph End: 5153
   Text Unit Start: 5148
   Text Unit End: 5153
-    Token: "Music"        	Type: TOKEN	Start: 5148	End: 5153
+    Token: "Music"        	Type: FIRST_UPPER_CASE	Start: 5148	End: 5153
 
 Paragraph Start: 5157
 Paragraph End: 5161
   Text Unit Start: 5157
   Text Unit End: 5161
-    Token: "Rock"         	Type: TOKEN	Start: 5157	End: 5161
+    Token: "Rock"         	Type: FIRST_UPPER_CASE	Start: 5157	End: 5161
 
 Paragraph Start: 5165
 Paragraph End: 5205
   Text Unit Start: 5165
   Text Unit End: 5205
-    Token: "Find"         	Type: TOKEN	Start: 5165	End: 5169
-    Token: "books"        	Type: TOKEN	Start: 5170	End: 5175
-    Token: "matching"     	Type: TOKEN	Start: 5176	End: 5184
-    Token: "ALL"          	Type: TOKEN	Start: 5185	End: 5188
-    Token: "checked"      	Type: TOKEN	Start: 5189	End: 5196
-    Token: "subjects"     	Type: TOKEN	Start: 5197	End: 5205
+    Token: "Find"         	Type: FIRST_UPPER_CASE	Start: 5165	End: 5169
+    Token: "books"        	Type: ALL_LOWER_CASE	Start: 5170	End: 5175
+    Token: "matching"     	Type: ALL_LOWER_CASE	Start: 5176	End: 5184
+    Token: "ALL"          	Type: ALL_UPPER_CASE	Start: 5185	End: 5188
+    Token: "checked"      	Type: ALL_LOWER_CASE	Start: 5189	End: 5196
+    Token: "subjects"     	Type: ALL_LOWER_CASE	Start: 5197	End: 5205
 
 Paragraph Start: 5209
 Paragraph End: 5267
@@ -1443,17 +1443,17 @@ Paragraph End: 5267
   Text Unit End: 5267
     Token: "i.e."         	Type: B_ABBREVIATION	Start: 5209	End: 5213
     Token: ","            	Type: PUNCTUATION	Start: 5213	End: 5214
-    Token: "each"         	Type: TOKEN	Start: 5215	End: 5219
-    Token: "book"         	Type: TOKEN	Start: 5220	End: 5224
-    Token: "must"         	Type: TOKEN	Start: 5225	End: 5229
-    Token: "be"           	Type: TOKEN	Start: 5230	End: 5232
-    Token: "in"           	Type: TOKEN	Start: 5233	End: 5235
-    Token: "subject"      	Type: TOKEN	Start: 5236	End: 5243
+    Token: "each"         	Type: ALL_LOWER_CASE	Start: 5215	End: 5219
+    Token: "book"         	Type: ALL_LOWER_CASE	Start: 5220	End: 5224
+    Token: "must"         	Type: ALL_LOWER_CASE	Start: 5225	End: 5229
+    Token: "be"           	Type: ALL_LOWER_CASE	Start: 5230	End: 5232
+    Token: "in"           	Type: ALL_LOWER_CASE	Start: 5233	End: 5235
+    Token: "subject"      	Type: ALL_LOWER_CASE	Start: 5236	End: 5243
     Token: "1"            	Type: DIGITAL	Start: 5244	End: 5245
-    Token: "AND"          	Type: TOKEN	Start: 5246	End: 5249
-    Token: "subject"      	Type: TOKEN	Start: 5250	End: 5257
+    Token: "AND"          	Type: ALL_UPPER_CASE	Start: 5246	End: 5249
+    Token: "subject"      	Type: ALL_LOWER_CASE	Start: 5250	End: 5257
     Token: "2"            	Type: DIGITAL	Start: 5258	End: 5259
-    Token: "AND"          	Type: TOKEN	Start: 5260	End: 5263
+    Token: "AND"          	Type: ALL_UPPER_CASE	Start: 5260	End: 5263
     Token: "."            	Type: TERM_PUNCT_P	Start: 5264	End: 5265
     Token: "."            	Type: TERM_PUNCT_P	Start: 5265	End: 5266
     Token: "."            	Type: TERM_PUNCT_P	Start: 5266	End: 5267
@@ -1462,76 +1462,76 @@ Paragraph Start: 5271
 Paragraph End: 5365
   Text Unit Start: 5271
   Text Unit End: 5318
-    Token: "I"            	Type: TOKEN	Start: 5271	End: 5272
-    Token: "have"         	Type: TOKEN	Start: 5273	End: 5277
-    Token: "read"         	Type: TOKEN	Start: 5278	End: 5282
-    Token: "this"         	Type: TOKEN	Start: 5283	End: 5287
-    Token: "book"         	Type: TOKEN	Start: 5288	End: 5292
+    Token: "I"            	Type: ALL_UPPER_CASE	Start: 5271	End: 5272
+    Token: "have"         	Type: ALL_LOWER_CASE	Start: 5273	End: 5277
+    Token: "read"         	Type: ALL_LOWER_CASE	Start: 5278	End: 5282
+    Token: "this"         	Type: ALL_LOWER_CASE	Start: 5283	End: 5287
+    Token: "book"         	Type: ALL_LOWER_CASE	Start: 5288	End: 5292
     Token: ","            	Type: PUNCTUATION	Start: 5292	End: 5293
-    Token: "and"          	Type: TOKEN	Start: 5294	End: 5297
-    Token: "I"            	Type: TOKEN	Start: 5298	End: 5299
-    Token: "want"         	Type: TOKEN	Start: 5300	End: 5304
-    Token: "to"           	Type: TOKEN	Start: 5305	End: 5307
-    Token: "review"       	Type: TOKEN	Start: 5308	End: 5314
-    Token: "it"           	Type: TOKEN	Start: 5315	End: 5317
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 5294	End: 5297
+    Token: "I"            	Type: ALL_UPPER_CASE	Start: 5298	End: 5299
+    Token: "want"         	Type: ALL_LOWER_CASE	Start: 5300	End: 5304
+    Token: "to"           	Type: ALL_LOWER_CASE	Start: 5305	End: 5307
+    Token: "review"       	Type: ALL_LOWER_CASE	Start: 5308	End: 5314
+    Token: "it"           	Type: ALL_LOWER_CASE	Start: 5315	End: 5317
     Token: "."            	Type: TERM_PUNCT_P	Start: 5317	End: 5318
   Text Unit Start: 5320
   Text Unit End: 5365
-    Token: "Correct"      	Type: TOKEN	Start: 5320	End: 5327
-    Token: "errors"       	Type: TOKEN	Start: 5328	End: 5334
-    Token: "and"          	Type: TOKEN	Start: 5335	End: 5338
-    Token: "omissions"    	Type: TOKEN	Start: 5339	End: 5348
-    Token: "in"           	Type: TOKEN	Start: 5349	End: 5351
-    Token: "this"         	Type: TOKEN	Start: 5352	End: 5356
-    Token: "listing"      	Type: TOKEN	Start: 5357	End: 5364
+    Token: "Correct"      	Type: FIRST_UPPER_CASE	Start: 5320	End: 5327
+    Token: "errors"       	Type: ALL_LOWER_CASE	Start: 5328	End: 5334
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 5335	End: 5338
+    Token: "omissions"    	Type: ALL_LOWER_CASE	Start: 5339	End: 5348
+    Token: "in"           	Type: ALL_LOWER_CASE	Start: 5349	End: 5351
+    Token: "this"         	Type: ALL_LOWER_CASE	Start: 5352	End: 5356
+    Token: "listing"      	Type: ALL_LOWER_CASE	Start: 5357	End: 5364
     Token: "."            	Type: TERM_PUNCT_P	Start: 5364	End: 5365
 
 Paragraph Start: 5369
 Paragraph End: 5404
   Text Unit Start: 5369
   Text Unit End: 5404
-    Token: "Search"       	Type: TOKEN	Start: 5369	End: 5375
-    Token: "Books"        	Type: TOKEN	Start: 5377	End: 5382
-    Token: "All"          	Type: TOKEN	Start: 5384	End: 5387
-    Token: "Products"     	Type: TOKEN	Start: 5388	End: 5396
-    Token: "for"          	Type: TOKEN	Start: 5398	End: 5401
-    Token: "Go"           	Type: TOKEN	Start: 5402	End: 5404
+    Token: "Search"       	Type: FIRST_UPPER_CASE	Start: 5369	End: 5375
+    Token: "Books"        	Type: FIRST_UPPER_CASE	Start: 5377	End: 5382
+    Token: "All"          	Type: FIRST_UPPER_CASE	Start: 5384	End: 5387
+    Token: "Products"     	Type: FIRST_UPPER_CASE	Start: 5388	End: 5396
+    Token: "for"          	Type: ALL_LOWER_CASE	Start: 5398	End: 5401
+    Token: "Go"           	Type: FIRST_UPPER_CASE	Start: 5402	End: 5404
 
 Paragraph Start: 5408
 Paragraph End: 5417
   Text Unit Start: 5408
   Text Unit End: 5417
-    Token: "Text"         	Type: TOKEN	Start: 5408	End: 5412
-    Token: "Only"         	Type: TOKEN	Start: 5413	End: 5417
+    Token: "Text"         	Type: FIRST_UPPER_CASE	Start: 5408	End: 5412
+    Token: "Only"         	Type: FIRST_UPPER_CASE	Start: 5413	End: 5417
 
 Paragraph Start: 5421
 Paragraph End: 5432
   Text Unit Start: 5421
   Text Unit End: 5432
-    Token: "Top"          	Type: TOKEN	Start: 5421	End: 5424
-    Token: "of"           	Type: TOKEN	Start: 5425	End: 5427
-    Token: "Page"         	Type: TOKEN	Start: 5428	End: 5432
+    Token: "Top"          	Type: FIRST_UPPER_CASE	Start: 5421	End: 5424
+    Token: "of"           	Type: ALL_LOWER_CASE	Start: 5425	End: 5427
+    Token: "Page"         	Type: FIRST_UPPER_CASE	Start: 5428	End: 5432
 
 Paragraph Start: 5436
 Paragraph End: 5527
   Text Unit Start: 5436
   Text Unit End: 5527
-    Token: "Book"         	Type: TOKEN	Start: 5436	End: 5440
-    Token: "Search"       	Type: TOKEN	Start: 5441	End: 5447
+    Token: "Book"         	Type: FIRST_UPPER_CASE	Start: 5436	End: 5440
+    Token: "Search"       	Type: FIRST_UPPER_CASE	Start: 5441	End: 5447
     Token: "|"            	Type: PUNCTUATION	Start: 5448	End: 5449
-    Token: "Browse"       	Type: TOKEN	Start: 5450	End: 5456
-    Token: "Subjects"     	Type: TOKEN	Start: 5457	End: 5465
+    Token: "Browse"       	Type: FIRST_UPPER_CASE	Start: 5450	End: 5456
+    Token: "Subjects"     	Type: FIRST_UPPER_CASE	Start: 5457	End: 5465
     Token: "|"            	Type: PUNCTUATION	Start: 5466	End: 5467
-    Token: "Bestsellers"  	Type: TOKEN	Start: 5468	End: 5479
+    Token: "Bestsellers"  	Type: FIRST_UPPER_CASE	Start: 5468	End: 5479
     Token: "|"            	Type: PUNCTUATION	Start: 5480	End: 5481
-    Token: "New"          	Type: TOKEN	Start: 5482	End: 5485
-    Token: "and"          	Type: TOKEN	Start: 5486	End: 5489
-    Token: "Future"       	Type: TOKEN	Start: 5490	End: 5496
-    Token: "Releases"     	Type: TOKEN	Start: 5497	End: 5505
+    Token: "New"          	Type: FIRST_UPPER_CASE	Start: 5482	End: 5485
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 5486	End: 5489
+    Token: "Future"       	Type: FIRST_UPPER_CASE	Start: 5490	End: 5496
+    Token: "Releases"     	Type: FIRST_UPPER_CASE	Start: 5497	End: 5505
     Token: "|"            	Type: PUNCTUATION	Start: 5506	End: 5507
-    Token: "Bargain"      	Type: TOKEN	Start: 5508	End: 5515
-    Token: "Book"         	Type: TOKEN	Start: 5516	End: 5520
-    Token: "Outlet"       	Type: TOKEN	Start: 5521	End: 5527
+    Token: "Bargain"      	Type: FIRST_UPPER_CASE	Start: 5508	End: 5515
+    Token: "Book"         	Type: FIRST_UPPER_CASE	Start: 5516	End: 5520
+    Token: "Outlet"       	Type: FIRST_UPPER_CASE	Start: 5521	End: 5527
 
 Paragraph Start: 5531
 Paragraph End: 5554
@@ -1539,85 +1539,85 @@ Paragraph End: 5554
   Text Unit End: 5554
     Token: "e-Books"      	Type: TOKEN	Start: 5531	End: 5538
     Token: "|"            	Type: PUNCTUATION	Start: 5539	End: 5540
-    Token: "Rare"         	Type: TOKEN	Start: 5541	End: 5545
-    Token: "and"          	Type: TOKEN	Start: 5546	End: 5549
-    Token: "Used"         	Type: TOKEN	Start: 5550	End: 5554
+    Token: "Rare"         	Type: FIRST_UPPER_CASE	Start: 5541	End: 5545
+    Token: "and"          	Type: ALL_LOWER_CASE	Start: 5546	End: 5549
+    Token: "Used"         	Type: FIRST_UPPER_CASE	Start: 5550	End: 5554
 
 Paragraph Start: 5558
 Paragraph End: 5599
   Text Unit Start: 5558
   Text Unit End: 5599
     Token: "Amazon.com"   	Type: TOKEN	Start: 5558	End: 5568
-    Token: "Home"         	Type: TOKEN	Start: 5569	End: 5573
+    Token: "Home"         	Type: FIRST_UPPER_CASE	Start: 5569	End: 5573
     Token: "|"            	Type: PUNCTUATION	Start: 5574	End: 5575
-    Token: "Directory"    	Type: TOKEN	Start: 5576	End: 5585
-    Token: "of"           	Type: TOKEN	Start: 5586	End: 5588
-    Token: "All"          	Type: TOKEN	Start: 5589	End: 5592
-    Token: "Stores"       	Type: TOKEN	Start: 5593	End: 5599
+    Token: "Directory"    	Type: FIRST_UPPER_CASE	Start: 5576	End: 5585
+    Token: "of"           	Type: ALL_LOWER_CASE	Start: 5586	End: 5588
+    Token: "All"          	Type: FIRST_UPPER_CASE	Start: 5589	End: 5592
+    Token: "Stores"       	Type: FIRST_UPPER_CASE	Start: 5593	End: 5599
 
 Paragraph Start: 5603
 Paragraph End: 5669
   Text Unit Start: 5603
   Text Unit End: 5669
-    Token: "Our"          	Type: TOKEN	Start: 5603	End: 5606
-    Token: "International"	Type: TOKEN	Start: 5607	End: 5620
-    Token: "Sites"        	Type: TOKEN	Start: 5621	End: 5626
+    Token: "Our"          	Type: FIRST_UPPER_CASE	Start: 5603	End: 5606
+    Token: "International"	Type: FIRST_UPPER_CASE	Start: 5607	End: 5620
+    Token: "Sites"        	Type: FIRST_UPPER_CASE	Start: 5621	End: 5626
     Token: ":"            	Type: PUNCTUATION	Start: 5626	End: 5627
-    Token: "United"       	Type: TOKEN	Start: 5628	End: 5634
-    Token: "Kingdom"      	Type: TOKEN	Start: 5635	End: 5642
+    Token: "United"       	Type: FIRST_UPPER_CASE	Start: 5628	End: 5634
+    Token: "Kingdom"      	Type: FIRST_UPPER_CASE	Start: 5635	End: 5642
     Token: "|"            	Type: PUNCTUATION	Start: 5643	End: 5644
-    Token: "Germany"      	Type: TOKEN	Start: 5645	End: 5652
+    Token: "Germany"      	Type: FIRST_UPPER_CASE	Start: 5645	End: 5652
     Token: "|"            	Type: PUNCTUATION	Start: 5653	End: 5654
-    Token: "Japan"        	Type: TOKEN	Start: 5655	End: 5660
+    Token: "Japan"        	Type: FIRST_UPPER_CASE	Start: 5655	End: 5660
     Token: "|"            	Type: PUNCTUATION	Start: 5661	End: 5662
-    Token: "France"       	Type: TOKEN	Start: 5663	End: 5669
+    Token: "France"       	Type: FIRST_UPPER_CASE	Start: 5663	End: 5669
 
 Paragraph Start: 5673
 Paragraph End: 5740
   Text Unit Start: 5673
   Text Unit End: 5740
-    Token: "Help"         	Type: TOKEN	Start: 5673	End: 5677
+    Token: "Help"         	Type: FIRST_UPPER_CASE	Start: 5673	End: 5677
     Token: "|"            	Type: PUNCTUATION	Start: 5678	End: 5679
-    Token: "Shopping"     	Type: TOKEN	Start: 5680	End: 5688
-    Token: "Cart"         	Type: TOKEN	Start: 5689	End: 5693
+    Token: "Shopping"     	Type: FIRST_UPPER_CASE	Start: 5680	End: 5688
+    Token: "Cart"         	Type: FIRST_UPPER_CASE	Start: 5689	End: 5693
     Token: "|"            	Type: PUNCTUATION	Start: 5694	End: 5695
-    Token: "Your"         	Type: TOKEN	Start: 5696	End: 5700
-    Token: "Account"      	Type: TOKEN	Start: 5701	End: 5708
+    Token: "Your"         	Type: FIRST_UPPER_CASE	Start: 5696	End: 5700
+    Token: "Account"      	Type: FIRST_UPPER_CASE	Start: 5701	End: 5708
     Token: "|"            	Type: PUNCTUATION	Start: 5709	End: 5710
-    Token: "Sell"         	Type: TOKEN	Start: 5711	End: 5715
-    Token: "Items"        	Type: TOKEN	Start: 5716	End: 5721
+    Token: "Sell"         	Type: FIRST_UPPER_CASE	Start: 5711	End: 5715
+    Token: "Items"        	Type: FIRST_UPPER_CASE	Start: 5716	End: 5721
     Token: "|"            	Type: PUNCTUATION	Start: 5722	End: 5723
     Token: "1-Click"      	Type: TOKEN	Start: 5724	End: 5731
-    Token: "Settings"     	Type: TOKEN	Start: 5732	End: 5740
+    Token: "Settings"     	Type: FIRST_UPPER_CASE	Start: 5732	End: 5740
 
 Paragraph Start: 5744
 Paragraph End: 5777
   Text Unit Start: 5744
   Text Unit End: 5777
-    Token: "About"        	Type: TOKEN	Start: 5744	End: 5749
+    Token: "About"        	Type: FIRST_UPPER_CASE	Start: 5744	End: 5749
     Token: "Amazon.com"   	Type: TOKEN	Start: 5750	End: 5760
     Token: "|"            	Type: PUNCTUATION	Start: 5761	End: 5762
-    Token: "Join"         	Type: TOKEN	Start: 5763	End: 5767
-    Token: "Our"          	Type: TOKEN	Start: 5768	End: 5771
-    Token: "Staff"        	Type: TOKEN	Start: 5772	End: 5777
+    Token: "Join"         	Type: FIRST_UPPER_CASE	Start: 5763	End: 5767
+    Token: "Our"          	Type: FIRST_UPPER_CASE	Start: 5768	End: 5771
+    Token: "Staff"        	Type: FIRST_UPPER_CASE	Start: 5772	End: 5777
 
 Paragraph Start: 5781
 Paragraph End: 5863
   Text Unit Start: 5781
   Text Unit End: 5863
-    Token: "Conditions"   	Type: TOKEN	Start: 5781	End: 5791
-    Token: "of"           	Type: TOKEN	Start: 5792	End: 5794
-    Token: "Use"          	Type: TOKEN	Start: 5795	End: 5798
+    Token: "Conditions"   	Type: FIRST_UPPER_CASE	Start: 5781	End: 5791
+    Token: "of"           	Type: ALL_LOWER_CASE	Start: 5792	End: 5794
+    Token: "Use"          	Type: FIRST_UPPER_CASE	Start: 5795	End: 5798
     Token: "|"            	Type: PUNCTUATION	Start: 5799	End: 5800
-    Token: "Privacy"      	Type: TOKEN	Start: 5801	End: 5808
-    Token: "Notice"       	Type: TOKEN	Start: 5809	End: 5815
+    Token: "Privacy"      	Type: FIRST_UPPER_CASE	Start: 5801	End: 5808
+    Token: "Notice"       	Type: FIRST_UPPER_CASE	Start: 5809	End: 5815
     Token: "©"            	Type: PUNCTUATION	Start: 5816	End: 5817
     Token: "1996-2001"    	Type: DIGITAL	Start: 5818	End: 5827
     Token: ","            	Type: PUNCTUATION	Start: 5827	End: 5828
     Token: "Amazon.com"   	Type: TOKEN	Start: 5829	End: 5839
     Token: ","            	Type: PUNCTUATION	Start: 5839	End: 5840
     Token: "Inc."         	Type: B_ABBREVIATION	Start: 5841	End: 5845
-    Token: "or"           	Type: TOKEN	Start: 5846	End: 5848
-    Token: "its"          	Type: TOKEN	Start: 5849	End: 5852
-    Token: "affiliates"   	Type: TOKEN	Start: 5853	End: 5863
+    Token: "or"           	Type: ALL_LOWER_CASE	Start: 5846	End: 5848
+    Token: "its"          	Type: ALL_LOWER_CASE	Start: 5849	End: 5852
+    Token: "affiliates"   	Type: ALL_LOWER_CASE	Start: 5853	End: 5863
 

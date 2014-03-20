@@ -4,8 +4,8 @@ Paragraph End: 17
   Text Unit End: 17
     Token: "("            	Type: OPEN_BRACKET	Start: 0	End: 1	PTB: "-LRB-"
     Token: "z.B."         	Type: B_ABBREVIATION	Start: 1	End: 5
-    Token: "Iced"         	Type: TOKEN	Start: 6	End: 10
-    Token: "Earth"        	Type: TOKEN	Start: 11	End: 16
+    Token: "Iced"         	Type: FIRST_UPPER_CASE	Start: 6	End: 10
+    Token: "Earth"        	Type: FIRST_UPPER_CASE	Start: 11	End: 16
     Token: ")"            	Type: CLOSE_BRACKET	Start: 16	End: 17	PTB: "-RRB-"
 
 Paragraph Start: 21
@@ -14,7 +14,7 @@ Paragraph End: 40
   Text Unit End: 40
     Token: "("            	Type: OPEN_BRACKET	Start: 21	End: 22	PTB: "-LRB-"
     Token: "Best.-Nr."    	Type: B_ABBREVIATION	Start: 22	End: 31
-    Token: "asdasda"      	Type: TOKEN	Start: 32	End: 39
+    Token: "asdasda"      	Type: ALL_LOWER_CASE	Start: 32	End: 39
     Token: ")"            	Type: CLOSE_BRACKET	Start: 39	End: 40	PTB: "-RRB-"
 
 Paragraph Start: 44
@@ -25,7 +25,7 @@ Paragraph End: 65
     Token: "."            	Type: TERM_PUNCT_P	Start: 45	End: 46
   Text Unit Start: 47
   Text Unit End: 52
-    Token: "Aufl"         	Type: TOKEN	Start: 47	End: 51
+    Token: "Aufl"         	Type: FIRST_UPPER_CASE	Start: 47	End: 51
     Token: "."            	Type: TERM_PUNCT_P	Start: 51	End: 52
   Text Unit Start: 53
   Text Unit End: 58
@@ -47,9 +47,9 @@ Paragraph Start: 88
 Paragraph End: 101
   Text Unit Start: 88
   Text Unit End: 101
-    Token: "matter"       	Type: TOKEN	Start: 88	End: 94
+    Token: "matter"       	Type: ALL_LOWER_CASE	Start: 88	End: 94
     Token: "--"           	Type: PUNCTUATION	Start: 94	End: 96
-    Token: "keeps"        	Type: TOKEN	Start: 96	End: 101
+    Token: "keeps"        	Type: ALL_LOWER_CASE	Start: 96	End: 101
 
 Paragraph Start: 105
 Paragraph End: 119
@@ -65,7 +65,7 @@ Paragraph End: 130
     Token: "."            	Type: TERM_PUNCT_P	Start: 124	End: 125
   Text Unit Start: 126
   Text Unit End: 130
-    Token: "Abl"          	Type: TOKEN	Start: 126	End: 129
+    Token: "Abl"          	Type: FIRST_UPPER_CASE	Start: 126	End: 129
     Token: "."            	Type: TERM_PUNCT_P	Start: 129	End: 130
 
 Paragraph Start: 134
@@ -84,20 +84,20 @@ Paragraph Start: 172
 Paragraph End: 182
   Text Unit Start: 172
   Text Unit End: 182
-    Token: "ert"          	Type: TOKEN	Start: 172	End: 175
+    Token: "ert"          	Type: ALL_LOWER_CASE	Start: 172	End: 175
     Token: "."            	Type: TERM_PUNCT_P	Start: 175	End: 176
     Token: "."            	Type: TERM_PUNCT_P	Start: 176	End: 177
     Token: "."            	Type: TERM_PUNCT_P	Start: 177	End: 178
-    Token: "erer"         	Type: TOKEN	Start: 178	End: 182
+    Token: "erer"         	Type: ALL_LOWER_CASE	Start: 178	End: 182
 
 Paragraph Start: 186
 Paragraph End: 193
   Text Unit Start: 186
   Text Unit End: 193
-    Token: "ab"           	Type: TOKEN	Start: 186	End: 188
+    Token: "ab"           	Type: ALL_LOWER_CASE	Start: 186	End: 188
     Token: "."            	Type: TERM_PUNCT_P	Start: 188	End: 189
     Token: "."            	Type: TERM_PUNCT_P	Start: 189	End: 190
-    Token: "asd"          	Type: TOKEN	Start: 190	End: 193
+    Token: "asd"          	Type: ALL_LOWER_CASE	Start: 190	End: 193
 
 Paragraph Start: 197
 Paragraph End: 206
@@ -410,7 +410,7 @@ Paragraph End: 876
   Text Unit Start: 868
   Text Unit End: 876
     Token: "{"            	Type: OPEN_BRACKET	Start: 868	End: 869	PTB: "-LCB-"
-    Token: "harris"       	Type: TOKEN	Start: 869	End: 875
+    Token: "harris"       	Type: ALL_LOWER_CASE	Start: 869	End: 875
     Token: "}"            	Type: CLOSE_BRACKET	Start: 875	End: 876	PTB: "-RCB-"
 
 Paragraph Start: 880
@@ -418,13 +418,13 @@ Paragraph End: 889
   Text Unit Start: 880
   Text Unit End: 889
     Token: "{"            	Type: OPEN_BRACKET	Start: 880	End: 881	PTB: "-LCB-"
-    Token: "arranged"     	Type: TOKEN	Start: 881	End: 889
+    Token: "arranged"     	Type: ALL_LOWER_CASE	Start: 881	End: 889
 
 Paragraph Start: 893
 Paragraph End: 898
   Text Unit Start: 893
   Text Unit End: 898
-    Token: "book"         	Type: TOKEN	Start: 893	End: 897
+    Token: "book"         	Type: ALL_LOWER_CASE	Start: 893	End: 897
     Token: "}"            	Type: CLOSE_BRACKET	Start: 897	End: 898	PTB: "-RCB-"
 
 Paragraph Start: 902
@@ -432,7 +432,7 @@ Paragraph End: 908
   Text Unit Start: 902
   Text Unit End: 908
     Token: "}"            	Type: CLOSE_BRACKET	Start: 902	End: 903	PTB: "-RCB-"
-    Token: "ever"         	Type: TOKEN	Start: 903	End: 907
+    Token: "ever"         	Type: ALL_LOWER_CASE	Start: 903	End: 907
     Token: "{"            	Type: OPEN_BRACKET	Start: 907	End: 908	PTB: "-LCB-"
 
 Paragraph Start: 912
@@ -440,13 +440,13 @@ Paragraph End: 920
   Text Unit Start: 912
   Text Unit End: 920
     Token: "}"            	Type: CLOSE_BRACKET	Start: 912	End: 913	PTB: "-RCB-"
-    Token: "imagine"      	Type: TOKEN	Start: 913	End: 920
+    Token: "imagine"      	Type: ALL_LOWER_CASE	Start: 913	End: 920
 
 Paragraph Start: 924
 Paragraph End: 931
   Text Unit Start: 924
   Text Unit End: 931
-    Token: "sunday"       	Type: TOKEN	Start: 924	End: 930
+    Token: "sunday"       	Type: ALL_LOWER_CASE	Start: 924	End: 930
     Token: "{"            	Type: OPEN_BRACKET	Start: 930	End: 931	PTB: "-LCB-"
 
 Paragraph Start: 935
@@ -454,7 +454,7 @@ Paragraph End: 944
   Text Unit Start: 935
   Text Unit End: 944
     Token: "~"            	Type: PUNCTUATION	Start: 935	End: 936
-    Token: "awesome"      	Type: TOKEN	Start: 936	End: 943
+    Token: "awesome"      	Type: ALL_LOWER_CASE	Start: 936	End: 943
     Token: "~"            	Type: PUNCTUATION	Start: 943	End: 944
 
 Paragraph Start: 948
@@ -462,13 +462,13 @@ Paragraph End: 953
   Text Unit Start: 948
   Text Unit End: 953
     Token: "~"            	Type: PUNCTUATION	Start: 948	End: 949
-    Token: "iron"         	Type: TOKEN	Start: 949	End: 953
+    Token: "iron"         	Type: ALL_LOWER_CASE	Start: 949	End: 953
 
 Paragraph Start: 957
 Paragraph End: 964
   Text Unit Start: 957
   Text Unit End: 964
-    Token: "sealed"       	Type: TOKEN	Start: 957	End: 963
+    Token: "sealed"       	Type: ALL_LOWER_CASE	Start: 957	End: 963
     Token: "~"            	Type: PUNCTUATION	Start: 963	End: 964
 
 Paragraph Start: 968
@@ -476,21 +476,21 @@ Paragraph End: 977
   Text Unit Start: 968
   Text Unit End: 977
     Token: "&"            	Type: PUNCTUATION	Start: 968	End: 969
-    Token: "quotyeah"     	Type: TOKEN	Start: 969	End: 977
+    Token: "quotyeah"     	Type: ALL_LOWER_CASE	Start: 969	End: 977
 
 Paragraph Start: 981
 Paragraph End: 986
   Text Unit Start: 981
   Text Unit End: 986
     Token: "*"            	Type: PUNCTUATION	Start: 981	End: 982	PTB: "\*"
-    Token: "ace"          	Type: TOKEN	Start: 982	End: 985
+    Token: "ace"          	Type: ALL_LOWER_CASE	Start: 982	End: 985
     Token: "*"            	Type: PUNCTUATION	Start: 985	End: 986	PTB: "\*"
 
 Paragraph Start: 990
 Paragraph End: 993
   Text Unit Start: 990
   Text Unit End: 993
-    Token: "am"           	Type: TOKEN	Start: 990	End: 992
+    Token: "am"           	Type: ALL_LOWER_CASE	Start: 990	End: 992
     Token: "*"            	Type: PUNCTUATION	Start: 992	End: 993	PTB: "\*"
 
 Paragraph Start: 998
@@ -498,110 +498,110 @@ Paragraph End: 1002
   Text Unit Start: 998
   Text Unit End: 1002
     Token: "*"            	Type: PUNCTUATION	Start: 998	End: 999	PTB: "\*"
-    Token: "any"          	Type: TOKEN	Start: 999	End: 1002
+    Token: "any"          	Type: ALL_LOWER_CASE	Start: 999	End: 1002
 
 Paragraph Start: 1006
 Paragraph End: 1231
   Text Unit Start: 1006
   Text Unit End: 1231
-    Token: "Die"          	Type: TOKEN	Start: 1006	End: 1009
-    Token: "frohe"        	Type: TOKEN	Start: 1010	End: 1015
-    Token: "Kunde"        	Type: TOKEN	Start: 1016	End: 1021
+    Token: "Die"          	Type: FIRST_UPPER_CASE	Start: 1006	End: 1009
+    Token: "frohe"        	Type: ALL_LOWER_CASE	Start: 1010	End: 1015
+    Token: "Kunde"        	Type: FIRST_UPPER_CASE	Start: 1016	End: 1021
     Token: ","            	Type: PUNCTUATION	Start: 1021	End: 1022
-    Token: "wonach"       	Type: TOKEN	Start: 1023	End: 1029
-    Token: "das"          	Type: TOKEN	Start: 1030	End: 1033
-    Token: "Bruttoinlandsprodukt"	Type: TOKEN	Start: 1034	End: 1054
-    Token: "im"           	Type: TOKEN	Start: 1055	End: 1057
-    Token: "dritten"      	Type: TOKEN	Start: 1058	End: 1065
-    Token: "Quartal"      	Type: TOKEN	Start: 1066	End: 1073
-    Token: "nicht"        	Type: TOKEN	Start: 1075	End: 1080
-    Token: "um"           	Type: TOKEN	Start: 1081	End: 1083
-    Token: "geschaetzte"  	Type: TOKEN	Start: 1084	End: 1095
+    Token: "wonach"       	Type: ALL_LOWER_CASE	Start: 1023	End: 1029
+    Token: "das"          	Type: ALL_LOWER_CASE	Start: 1030	End: 1033
+    Token: "Bruttoinlandsprodukt"	Type: FIRST_UPPER_CASE	Start: 1034	End: 1054
+    Token: "im"           	Type: ALL_LOWER_CASE	Start: 1055	End: 1057
+    Token: "dritten"      	Type: ALL_LOWER_CASE	Start: 1058	End: 1065
+    Token: "Quartal"      	Type: FIRST_UPPER_CASE	Start: 1066	End: 1073
+    Token: "nicht"        	Type: ALL_LOWER_CASE	Start: 1075	End: 1080
+    Token: "um"           	Type: ALL_LOWER_CASE	Start: 1081	End: 1083
+    Token: "geschaetzte"  	Type: ALL_LOWER_CASE	Start: 1084	End: 1095
     Token: "2,7"          	Type: DIGITAL	Start: 1096	End: 1099
     Token: ","            	Type: PUNCTUATION	Start: 1099	End: 1100
-    Token: "sondern"      	Type: TOKEN	Start: 1101	End: 1108
-    Token: "tatsaechlich" 	Type: TOKEN	Start: 1109	End: 1121
-    Token: "um"           	Type: TOKEN	Start: 1122	End: 1124
+    Token: "sondern"      	Type: ALL_LOWER_CASE	Start: 1101	End: 1108
+    Token: "tatsaechlich" 	Type: ALL_LOWER_CASE	Start: 1109	End: 1121
+    Token: "um"           	Type: ALL_LOWER_CASE	Start: 1122	End: 1124
     Token: "3,9"          	Type: DIGITAL	Start: 1125	End: 1128
-    Token: "Prozent"      	Type: TOKEN	Start: 1129	End: 1136
-    Token: "gewachsen"    	Type: TOKEN	Start: 1138	End: 1147
-    Token: "ist"          	Type: TOKEN	Start: 1148	End: 1151
+    Token: "Prozent"      	Type: FIRST_UPPER_CASE	Start: 1129	End: 1136
+    Token: "gewachsen"    	Type: ALL_LOWER_CASE	Start: 1138	End: 1147
+    Token: "ist"          	Type: ALL_LOWER_CASE	Start: 1148	End: 1151
     Token: ","            	Type: PUNCTUATION	Start: 1151	End: 1152
-    Token: "betoerte"     	Type: TOKEN	Start: 1153	End: 1161
-    Token: "in"           	Type: TOKEN	Start: 1162	End: 1164
-    Token: "Banken"       	Type: TOKEN	Start: 1165	End: 1171
-    Token: "und"          	Type: TOKEN	Start: 1172	End: 1175
-    Token: "Grossbetrieben"	Type: TOKEN	Start: 1176	End: 1190
-    Token: "ganze"        	Type: TOKEN	Start: 1191	End: 1196
-    Token: "volkswirtschaftliche"	Type: TOKEN	Start: 1198	End: 1218
-    Token: "Abteilungen"  	Type: TOKEN	Start: 1219	End: 1230
+    Token: "betoerte"     	Type: ALL_LOWER_CASE	Start: 1153	End: 1161
+    Token: "in"           	Type: ALL_LOWER_CASE	Start: 1162	End: 1164
+    Token: "Banken"       	Type: FIRST_UPPER_CASE	Start: 1165	End: 1171
+    Token: "und"          	Type: ALL_LOWER_CASE	Start: 1172	End: 1175
+    Token: "Grossbetrieben"	Type: FIRST_UPPER_CASE	Start: 1176	End: 1190
+    Token: "ganze"        	Type: ALL_LOWER_CASE	Start: 1191	End: 1196
+    Token: "volkswirtschaftliche"	Type: ALL_LOWER_CASE	Start: 1198	End: 1218
+    Token: "Abteilungen"  	Type: FIRST_UPPER_CASE	Start: 1219	End: 1230
     Token: "."            	Type: TERM_PUNCT_P	Start: 1230	End: 1231
 
 Paragraph Start: 1235
 Paragraph End: 1278
   Text Unit Start: 1235
   Text Unit End: 1278
-    Token: "John"         	Type: TOKEN	Start: 1235	End: 1239
-    Token: "kennt"        	Type: TOKEN	Start: 1240	End: 1245
+    Token: "John"         	Type: FIRST_UPPER_CASE	Start: 1235	End: 1239
+    Token: "kennt"        	Type: ALL_LOWER_CASE	Start: 1240	End: 1245
     Token: "Sgt.Pepper"   	Type: TOKEN	Start: 1246	End: 1256
-    Token: "als"          	Type: TOKEN	Start: 1257	End: 1260
-    Token: "eine"         	Type: TOKEN	Start: 1261	End: 1265
-    Token: "gute"         	Type: TOKEN	Start: 1266	End: 1270
-    Token: "Platte"       	Type: TOKEN	Start: 1271	End: 1277
+    Token: "als"          	Type: ALL_LOWER_CASE	Start: 1257	End: 1260
+    Token: "eine"         	Type: ALL_LOWER_CASE	Start: 1261	End: 1265
+    Token: "gute"         	Type: ALL_LOWER_CASE	Start: 1266	End: 1270
+    Token: "Platte"       	Type: FIRST_UPPER_CASE	Start: 1271	End: 1277
     Token: "."            	Type: TERM_PUNCT_P	Start: 1277	End: 1278
 
 Paragraph Start: 1282
 Paragraph End: 1326
   Text Unit Start: 1282
   Text Unit End: 1326
-    Token: "John"         	Type: TOKEN	Start: 1282	End: 1286
-    Token: "kennt"        	Type: TOKEN	Start: 1287	End: 1292
+    Token: "John"         	Type: FIRST_UPPER_CASE	Start: 1282	End: 1286
+    Token: "kennt"        	Type: ALL_LOWER_CASE	Start: 1287	End: 1292
     Token: "Sgt."         	Type: TITLE	Start: 1293	End: 1297
-    Token: "Pepper"       	Type: TOKEN	Start: 1298	End: 1304
-    Token: "als"          	Type: TOKEN	Start: 1305	End: 1308
-    Token: "eine"         	Type: TOKEN	Start: 1309	End: 1313
-    Token: "gute"         	Type: TOKEN	Start: 1314	End: 1318
-    Token: "Platte"       	Type: TOKEN	Start: 1319	End: 1325
+    Token: "Pepper"       	Type: FIRST_UPPER_CASE	Start: 1298	End: 1304
+    Token: "als"          	Type: ALL_LOWER_CASE	Start: 1305	End: 1308
+    Token: "eine"         	Type: ALL_LOWER_CASE	Start: 1309	End: 1313
+    Token: "gute"         	Type: ALL_LOWER_CASE	Start: 1314	End: 1318
+    Token: "Platte"       	Type: FIRST_UPPER_CASE	Start: 1319	End: 1325
     Token: "."            	Type: TERM_PUNCT_P	Start: 1325	End: 1326
 
 Paragraph Start: 1330
 Paragraph End: 1347
   Text Unit Start: 1330
   Text Unit End: 1347
-    Token: "Das"          	Type: TOKEN	Start: 1330	End: 1333
-    Token: "ist"          	Type: TOKEN	Start: 1334	End: 1337
-    Token: "ein"          	Type: TOKEN	Start: 1338	End: 1341
-    Token: "Test"         	Type: TOKEN	Start: 1342	End: 1346
+    Token: "Das"          	Type: FIRST_UPPER_CASE	Start: 1330	End: 1333
+    Token: "ist"          	Type: ALL_LOWER_CASE	Start: 1334	End: 1337
+    Token: "ein"          	Type: ALL_LOWER_CASE	Start: 1338	End: 1341
+    Token: "Test"         	Type: FIRST_UPPER_CASE	Start: 1342	End: 1346
     Token: "."            	Type: TERM_PUNCT_P	Start: 1346	End: 1347
 
 Paragraph Start: 1351
 Paragraph End: 1368
   Text Unit Start: 1351
   Text Unit End: 1368
-    Token: "Das"          	Type: TOKEN	Start: 1351	End: 1354
-    Token: "ist"          	Type: TOKEN	Start: 1355	End: 1358
-    Token: "ein"          	Type: TOKEN	Start: 1359	End: 1362
-    Token: "Test"         	Type: TOKEN	Start: 1363	End: 1367
+    Token: "Das"          	Type: FIRST_UPPER_CASE	Start: 1351	End: 1354
+    Token: "ist"          	Type: ALL_LOWER_CASE	Start: 1355	End: 1358
+    Token: "ein"          	Type: ALL_LOWER_CASE	Start: 1359	End: 1362
+    Token: "Test"         	Type: FIRST_UPPER_CASE	Start: 1363	End: 1367
     Token: "?"            	Type: TERM_PUNCT	Start: 1367	End: 1368
 
 Paragraph Start: 1372
 Paragraph End: 1389
   Text Unit Start: 1372
   Text Unit End: 1389
-    Token: "Das"          	Type: TOKEN	Start: 1372	End: 1375
-    Token: "ist"          	Type: TOKEN	Start: 1376	End: 1379
-    Token: "ein"          	Type: TOKEN	Start: 1380	End: 1383
-    Token: "Test"         	Type: TOKEN	Start: 1384	End: 1388
+    Token: "Das"          	Type: FIRST_UPPER_CASE	Start: 1372	End: 1375
+    Token: "ist"          	Type: ALL_LOWER_CASE	Start: 1376	End: 1379
+    Token: "ein"          	Type: ALL_LOWER_CASE	Start: 1380	End: 1383
+    Token: "Test"         	Type: FIRST_UPPER_CASE	Start: 1384	End: 1388
     Token: "!"            	Type: TERM_PUNCT	Start: 1388	End: 1389
 
 Paragraph Start: 1393
 Paragraph End: 1411
   Text Unit Start: 1393
   Text Unit End: 1411
-    Token: "Das"          	Type: TOKEN	Start: 1393	End: 1396
-    Token: "ist"          	Type: TOKEN	Start: 1397	End: 1400
-    Token: "ein"          	Type: TOKEN	Start: 1401	End: 1404
-    Token: "Test"         	Type: TOKEN	Start: 1405	End: 1409
+    Token: "Das"          	Type: FIRST_UPPER_CASE	Start: 1393	End: 1396
+    Token: "ist"          	Type: ALL_LOWER_CASE	Start: 1397	End: 1400
+    Token: "ein"          	Type: ALL_LOWER_CASE	Start: 1401	End: 1404
+    Token: "Test"         	Type: FIRST_UPPER_CASE	Start: 1405	End: 1409
     Token: "!"            	Type: TERM_PUNCT	Start: 1409	End: 1410
     Token: "!"            	Type: TERM_PUNCT	Start: 1410	End: 1411
 
@@ -609,10 +609,10 @@ Paragraph Start: 1415
 Paragraph End: 1432
   Text Unit Start: 1415
   Text Unit End: 1432
-    Token: "Das"          	Type: TOKEN	Start: 1415	End: 1418
-    Token: "ist"          	Type: TOKEN	Start: 1419	End: 1422
-    Token: "ein"          	Type: TOKEN	Start: 1423	End: 1426
-    Token: "Test"         	Type: TOKEN	Start: 1427	End: 1431
+    Token: "Das"          	Type: FIRST_UPPER_CASE	Start: 1415	End: 1418
+    Token: "ist"          	Type: ALL_LOWER_CASE	Start: 1419	End: 1422
+    Token: "ein"          	Type: ALL_LOWER_CASE	Start: 1423	End: 1426
+    Token: "Test"         	Type: FIRST_UPPER_CASE	Start: 1427	End: 1431
     Token: ":"            	Type: PUNCTUATION	Start: 1431	End: 1432
 
 Paragraph Start: 1436
@@ -631,11 +631,11 @@ Paragraph Start: 1450
 Paragraph End: 1471
   Text Unit Start: 1450
   Text Unit End: 1471
-    Token: "sdfsdf"       	Type: TOKEN	Start: 1450	End: 1456
+    Token: "sdfsdf"       	Type: ALL_LOWER_CASE	Start: 1450	End: 1456
     Token: "|"            	Type: PUNCTUATION	Start: 1456	End: 1457
-    Token: "sdfsdf"       	Type: TOKEN	Start: 1457	End: 1463
+    Token: "sdfsdf"       	Type: ALL_LOWER_CASE	Start: 1457	End: 1463
     Token: "|"            	Type: PUNCTUATION	Start: 1463	End: 1464
-    Token: "Sdfsdfs"      	Type: TOKEN	Start: 1464	End: 1471
+    Token: "Sdfsdfs"      	Type: FIRST_UPPER_CASE	Start: 1464	End: 1471
 
 Paragraph Start: 1475
 Paragraph End: 1485
@@ -656,7 +656,7 @@ Paragraph End: 1509
   Text Unit Start: 1503
   Text Unit End: 1509
     Token: "<"            	Type: PUNCTUATION	Start: 1503	End: 1504
-    Token: "maus"         	Type: TOKEN	Start: 1504	End: 1508
+    Token: "maus"         	Type: ALL_LOWER_CASE	Start: 1504	End: 1508
     Token: ">"            	Type: PUNCTUATION	Start: 1508	End: 1509
 
 Paragraph Start: 1513
@@ -664,21 +664,21 @@ Paragraph End: 1520
   Text Unit Start: 1513
   Text Unit End: 1520
     Token: "/"            	Type: PUNCTUATION	Start: 1513	End: 1514	PTB: "\/"
-    Token: "lyrics"       	Type: TOKEN	Start: 1514	End: 1520
+    Token: "lyrics"       	Type: ALL_LOWER_CASE	Start: 1514	End: 1520
 
 Paragraph Start: 1524
 Paragraph End: 1531
   Text Unit Start: 1524
   Text Unit End: 1531
     Token: "/"            	Type: PUNCTUATION	Start: 1524	End: 1525	PTB: "\/"
-    Token: "maiden"       	Type: TOKEN	Start: 1525	End: 1531
+    Token: "maiden"       	Type: ALL_LOWER_CASE	Start: 1525	End: 1531
 
 Paragraph Start: 1535
 Paragraph End: 1540
   Text Unit Start: 1535
   Text Unit End: 1540
     Token: "/"            	Type: PUNCTUATION	Start: 1535	End: 1536	PTB: "\/"
-    Token: "near"         	Type: TOKEN	Start: 1536	End: 1540
+    Token: "near"         	Type: ALL_LOWER_CASE	Start: 1536	End: 1540
 
 Paragraph Start: 1544
 Paragraph End: 1574

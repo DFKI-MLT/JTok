@@ -207,6 +207,9 @@ public class JTok {
     // identify abbreviations
     this.identifyAbbrev(input, langRes);
 
+    // identify words
+    this.identifyWords(input, langRes);
+
     // identify sentences and paragraphs
     this.identifyTus(input, langRes);
 
@@ -828,6 +831,66 @@ public class JTok {
         input.annotate(CLASS_ANNO, punctClass,
           tokenStart + nbr.getStartIndex(),
           tokenStart + nbr.getEndIndex());
+      }
+    }
+  }
+
+
+  /**
+   * Identifies words in the annotated token of the given annotated string.
+   *
+   * @param input
+   *          an annotated string
+   * @param langRes
+   *          the language resource to use
+   * @exception ProcessingException
+   *              if an error occurs
+   */
+  private void identifyWords(
+      AnnotatedString input, LanguageResource langRes) {
+
+    // get matcher needed for words recognition
+    RegExp allWordsMatcher = langRes.getAllWordsMatcher();
+
+    // get the class of the root element of the class hierarchy;
+    // only tokens with this class are further examined
+    String rootClass =
+      langRes.getClassesRoot().getTagName();
+
+    // iterate over tokens
+    char c = input.setIndex(0);
+    // move to first non-whitespace
+    if (null == input.getAnnotation(CLASS_ANNO)) {
+      c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
+    }
+    while (c != CharacterIterator.DONE) {
+
+      // get the end index of the token c belongs to
+      int tokenEnd = input.getRunLimit(CLASS_ANNO);
+      // get class of token
+      String tokClass = (String)input.getAnnotation(CLASS_ANNO);
+      // only check tokens with the most general class
+      if (tokClass != rootClass) {
+        c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
+        continue;
+      }
+
+      // get the start index of the token
+      int tokenStart = input.getIndex();
+      // set iterator to next non-whitespace token
+      c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
+
+      // get the token content
+      String image = input.substring(tokenStart, tokenEnd);
+
+      // check if token is a word
+      if (allWordsMatcher.matches(image)) {
+        String wordClass =
+          this.identifyClass(image,
+            allWordsMatcher,
+            langRes.getWordsDescr());
+        input.annotate(CLASS_ANNO, wordClass,
+          tokenStart, tokenEnd);
       }
     }
   }

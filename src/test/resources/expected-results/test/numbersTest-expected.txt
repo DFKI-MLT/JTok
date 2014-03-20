@@ -6,7 +6,7 @@ Paragraph End: 21
     Token: "."            	Type: TERM_PUNCT_P	Start: 1	End: 2
   Text Unit Start: 3
   Text Unit End: 8
-    Token: "Aufl"         	Type: TOKEN	Start: 3	End: 7
+    Token: "Aufl"         	Type: FIRST_UPPER_CASE	Start: 3	End: 7
     Token: "."            	Type: TERM_PUNCT_P	Start: 7	End: 8
   Text Unit Start: 9
   Text Unit End: 14
@@ -32,7 +32,7 @@ Paragraph End: 51
     Token: "."            	Type: TERM_PUNCT_P	Start: 45	End: 46
   Text Unit Start: 47
   Text Unit End: 51
-    Token: "Abl"          	Type: TOKEN	Start: 47	End: 50
+    Token: "Abl"          	Type: FIRST_UPPER_CASE	Start: 47	End: 50
     Token: "."            	Type: TERM_PUNCT_P	Start: 50	End: 51
 
 Paragraph Start: 55
