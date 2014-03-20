@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This contains the word description for English. -->
+<!-- The regular expressions processing is based on the -->
+<!-- dk.brics.automaton package. -->
+<!-- See http://www.brics.dk/automaton/doc/index.html -->
+<!-- for the abstract syntax -->
+<WORD_DESCRIPTION>
+
+  <!-- This defines the specific number elements. The regexp -->
+  <!-- attribute is the regular expression used to match -->
+  <!-- the number. -->
+  <!-- ATTENTION! Because the regex package we use always -->
+  <!-- stops at the first disjunct that could be matched, the -->
+  <!-- order of the definition with a class is critical! So make -->
+  <!-- sure that punctuations with the potentially longer match -->
+  <!-- stand BEFORE others, e.g. use the order `abc|ab|a' -->
+  <!-- instead of `a|ab|abc' -->
+  <DEFINITIONS>  
+
+    <!-- email -->
+    <EMAIL regexp="[A-Za-z0-9._%+\-]+\@[A-Za-z0-9.\-]+\.[A-Za-z]{2,4}" class="EMAIL"/>    
+    <!-- all upper case -->
+    <ALL_UPPER_CASE regexp="[A-Z]+" class="ALL_UPPER_CASE"/>
+    <!-- all lower case -->
+    <ALL_LOWER_CASE regexp="[a-z]+" class="ALL_LOWER_CASE"/>
+    <!-- first upper case -->
+    <FIRST_UPPER_CASE regexp="[A-Z][a-z]+" class="FIRST_UPPER_CASE"/>
+
+  </DEFINITIONS>
+
+  <!-- These are the mandatory rules defined as -->
+  <!-- regular expressions with the definitions above. -->
+  <!-- Rule names may not be altered! -->
+  <!-- ATTENTION! Because the regex package we use always -->
+  <!-- stops at the first disjunct that could be matched, the -->
+  <!-- order of the disjuncts in the rule is critical! So make -->
+  <!-- sure that punctuations with the potentially longer match -->
+  <!-- stand BEFORE others, e.g. use the order `abc|ab|a' -->
+  <!-- instead of `a|ab|abc' -->
+  <RULES>
+    
+    <!-- The all-rule is used classifying tokens not are no -->
+    <!-- punctuation, digits, etc. -->
+    <!-- It's basically a disjunction of the words classes -->
+    <!-- defined above. -->
+    <!-- ATTENTION! Because the regex package we use always -->
+    <!-- stops at the first disjunct that could be matched, the -->
+    <!-- order of the disjuncts in the rule is critical! So make -->
+    <!-- sure that punctuations with the potentially longer match -->
+    <!-- stand BEFORE others, e.g. use the order `abc|ab|a' -->
+    <!-- instead of `a|ab|abc' -->
+    <ALL_WORDS_RULE>
+      <EMAIL/>|<ALL_UPPER_CASE/>|<ALL_LOWER_CASE/>|<FIRST_UPPER_CASE/>
+    </ALL_WORDS_RULE>
+
+  </RULES>
+    
+</WORD_DESCRIPTION>

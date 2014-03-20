@@ -2,22 +2,22 @@ Paragraph Start: 0
 Paragraph End: 11
   Text Unit Start: 0
   Text Unit End: 11
-    Token: "Rock"         	Type: TOKEN	Start: 0	End: 4
+    Token: "Rock"         	Type: FIRST_UPPER_CASE	Start: 0	End: 4
     Token: "'n"           	Type: RIGHTSPLIT	Start: 4	End: 6
-    Token: "Roll"         	Type: TOKEN	Start: 7	End: 11
+    Token: "Roll"         	Type: FIRST_UPPER_CASE	Start: 7	End: 11
 
 Paragraph Start: 15
 Paragraph End: 20
   Text Unit Start: 15
   Text Unit End: 20
-    Token: "abc"          	Type: TOKEN	Start: 15	End: 18
+    Token: "abc"          	Type: ALL_LOWER_CASE	Start: 15	End: 18
     Token: "'n"           	Type: RIGHTSPLIT	Start: 18	End: 20
 
 Paragraph Start: 24
 Paragraph End: 31
   Text Unit Start: 24
   Text Unit End: 31
-    Token: "Peter"        	Type: TOKEN	Start: 24	End: 29
+    Token: "Peter"        	Type: FIRST_UPPER_CASE	Start: 24	End: 29
     Token: "'s"           	Type: RIGHTSPLIT	Start: 29	End: 31
 
 Paragraph Start: 35
@@ -36,49 +36,49 @@ Paragraph Start: 58
 Paragraph End: 61
   Text Unit Start: 58
   Text Unit End: 61
-    Token: "I"            	Type: TOKEN	Start: 58	End: 59
+    Token: "I"            	Type: ALL_UPPER_CASE	Start: 58	End: 59
     Token: "'m"           	Type: RIGHTSPLIT	Start: 59	End: 61
 
 Paragraph Start: 65
 Paragraph End: 71
   Text Unit Start: 65
   Text Unit End: 71
-    Token: "you"          	Type: TOKEN	Start: 65	End: 68
+    Token: "you"          	Type: ALL_LOWER_CASE	Start: 65	End: 68
     Token: "'re"          	Type: RIGHTSPLIT	Start: 68	End: 71
 
 Paragraph Start: 75
 Paragraph End: 80
   Text Unit Start: 75
   Text Unit End: 80
-    Token: "we"           	Type: TOKEN	Start: 75	End: 77
+    Token: "we"           	Type: ALL_LOWER_CASE	Start: 75	End: 77
     Token: "'ll"          	Type: RIGHTSPLIT	Start: 77	End: 80
 
 Paragraph Start: 84
 Paragraph End: 88
   Text Unit Start: 84
   Text Unit End: 88
-    Token: "i"            	Type: TOKEN	Start: 84	End: 85
+    Token: "i"            	Type: ALL_LOWER_CASE	Start: 84	End: 85
     Token: "'ve"          	Type: RIGHTSPLIT	Start: 85	End: 88
 
 Paragraph Start: 92
 Paragraph End: 98
   Text Unit Start: 92
   Text Unit End: 98
-    Token: "rock"         	Type: TOKEN	Start: 92	End: 96
+    Token: "rock"         	Type: ALL_LOWER_CASE	Start: 92	End: 96
     Token: "'n"           	Type: RIGHTSPLIT	Start: 96	End: 98
 
 Paragraph Start: 102
 Paragraph End: 107
   Text Unit Start: 102
   Text Unit End: 107
-    Token: "do"           	Type: TOKEN	Start: 102	End: 104
+    Token: "do"           	Type: ALL_LOWER_CASE	Start: 102	End: 104
     Token: "n't"          	Type: RIGHTSPLIT	Start: 104	End: 107
 
 Paragraph Start: 111
 Paragraph End: 115
   Text Unit Start: 111
   Text Unit End: 115
-    Token: "he"           	Type: TOKEN	Start: 111	End: 113
+    Token: "he"           	Type: ALL_LOWER_CASE	Start: 111	End: 113
     Token: "'s"           	Type: RIGHTSPLIT	Start: 113	End: 115
 
 Paragraph Start: 119
@@ -120,7 +120,7 @@ Paragraph End: 187
   Text Unit Start: 185
   Text Unit End: 187
     Token: "'"            	Type: OPEN_PUNCT	Start: 185	End: 186	PTB: "``"
-    Token: "s"            	Type: TOKEN	Start: 186	End: 187
+    Token: "s"            	Type: ALL_LOWER_CASE	Start: 186	End: 187
 
 Paragraph Start: 191
 Paragraph End: 212
@@ -172,30 +172,30 @@ Paragraph Start: 318
 Paragraph End: 421
   Text Unit Start: 318
   Text Unit End: 349
-    Token: "Informazioni" 	Type: TOKEN	Start: 318	End: 330
-    Token: "su"           	Type: TOKEN	Start: 331	End: 333
-    Token: "Police"       	Type: TOKEN	Start: 334	End: 340
+    Token: "Informazioni" 	Type: FIRST_UPPER_CASE	Start: 318	End: 330
+    Token: "su"           	Type: ALL_LOWER_CASE	Start: 331	End: 333
+    Token: "Police"       	Type: FIRST_UPPER_CASE	Start: 334	End: 340
     Token: "-"            	Type: PUNCTUATION	Start: 341	End: 342
-    Token: "Sting"        	Type: TOKEN	Start: 343	End: 348
+    Token: "Sting"        	Type: FIRST_UPPER_CASE	Start: 343	End: 348
     Token: "."            	Type: TERM_PUNCT_P	Start: 348	End: 349
   Text Unit Start: 350
   Text Unit End: 421
-    Token: "Testi"        	Type: TOKEN	Start: 350	End: 355
-    Token: "da"           	Type: TOKEN	Start: 356	End: 358
+    Token: "Testi"        	Type: FIRST_UPPER_CASE	Start: 350	End: 355
+    Token: "da"           	Type: ALL_LOWER_CASE	Start: 356	End: 358
     Token: "'"            	Type: OPEN_PUNCT	Start: 359	End: 360	PTB: "``"
-    Token: "Outlandos"    	Type: TOKEN	Start: 360	End: 369
+    Token: "Outlandos"    	Type: FIRST_UPPER_CASE	Start: 360	End: 369
     Token: "d'amour"      	Type: TOKEN	Start: 370	End: 377
     Token: "'"            	Type: CLOSE_PUNCT	Start: 377	End: 378	PTB: "''"
-    Token: "a"            	Type: TOKEN	Start: 379	End: 380
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 379	End: 380
     Token: "'"            	Type: OPEN_PUNCT	Start: 381	End: 382	PTB: "``"
-    Token: "The"          	Type: TOKEN	Start: 382	End: 385
-    Token: "soul"         	Type: TOKEN	Start: 386	End: 390
-    Token: "cages"        	Type: TOKEN	Start: 391	End: 396
+    Token: "The"          	Type: FIRST_UPPER_CASE	Start: 382	End: 385
+    Token: "soul"         	Type: ALL_LOWER_CASE	Start: 386	End: 390
+    Token: "cages"        	Type: ALL_LOWER_CASE	Start: 391	End: 396
     Token: "'"            	Type: CLOSE_PUNCT	Start: 396	End: 397	PTB: "''"
-    Token: "con"          	Type: TOKEN	Start: 398	End: 401
-    Token: "traduzione"   	Type: TOKEN	Start: 402	End: 412
-    Token: "a"            	Type: TOKEN	Start: 413	End: 414
-    Token: "fronte"       	Type: TOKEN	Start: 415	End: 421
+    Token: "con"          	Type: ALL_LOWER_CASE	Start: 398	End: 401
+    Token: "traduzione"   	Type: ALL_LOWER_CASE	Start: 402	End: 412
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 413	End: 414
+    Token: "fronte"       	Type: ALL_LOWER_CASE	Start: 415	End: 421
 
 Paragraph Start: 425
 Paragraph End: 435
@@ -203,7 +203,7 @@ Paragraph End: 435
   Text Unit End: 435
     Token: "d'amour"      	Type: TOKEN	Start: 425	End: 432
     Token: "'"            	Type: CLOSE_PUNCT	Start: 432	End: 433	PTB: "''"
-    Token: "a"            	Type: TOKEN	Start: 434	End: 435
+    Token: "a"            	Type: ALL_LOWER_CASE	Start: 434	End: 435
 
 Paragraph Start: 439
 Paragraph End: 442
@@ -223,7 +223,7 @@ Paragraph Start: 453
 Paragraph End: 456
   Text Unit Start: 453
   Text Unit End: 456
-    Token: "AA"           	Type: TOKEN	Start: 453	End: 455
+    Token: "AA"           	Type: ALL_UPPER_CASE	Start: 453	End: 455
     Token: "$"            	Type: RIGHTSPLIT	Start: 455	End: 456
 
 Paragraph Start: 460
@@ -231,4 +231,5 @@ Paragraph End: 463
   Text Unit Start: 460
   Text Unit End: 463
     Token: "$"            	Type: LEFTSPLIT	Start: 460	End: 461
-    Token: "AA"           	Type: TOKEN	Start: 461	End: 463
+    Token: "AA"           	Type: ALL_UPPER_CASE	Start: 461	End: 463
+

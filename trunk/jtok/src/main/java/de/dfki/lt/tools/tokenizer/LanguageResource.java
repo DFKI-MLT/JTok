@@ -80,6 +80,11 @@ public class LanguageResource {
   private static final String NUMB_DESCR = "_numbers.xml";
 
   /**
+   * Contains the name suffix of the resource file with the words description.
+   */
+  private static final String WORDS_DESCR = "_words.xml";
+
+  /**
    * The name of the tag attribute in the class definition.
    */
   private static final String CLASS_TAG = "tag";
@@ -138,6 +143,11 @@ public class LanguageResource {
    */
   private NumbersDescription numbDescr;
 
+  /**
+   * Contains the words description.
+   */
+  private WordsDescription wordsDescr;
+
 
   /**
    * Creates a new instance of {@link LanguageResource} for teh given language
@@ -161,6 +171,7 @@ public class LanguageResource {
     this.setClitDescr(null);
     this.setAbbrevDescr(null);
     this.setNumbDescr(null);
+    this.setWordsDescr(null);
     this.language = lang;
     DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 
@@ -206,6 +217,14 @@ public class LanguageResource {
           Paths.get(resourceDir).resolve(lang + NUMB_DESCR).toString()));
       this.setNumbDescr
         (new NumbersDescription(doc,
+          this.getTagsMap().keySet()));
+
+      // load words description document
+      doc = builder.parse(
+        FileTools.openResourceFileAsStream(
+          Paths.get(resourceDir).resolve(lang + WORDS_DESCR).toString()));
+      this.setWordsDescr
+        (new WordsDescription(doc,
           this.getTagsMap().keySet()));
 
     } catch (SAXException spe) {
@@ -414,6 +433,29 @@ public class LanguageResource {
   void setNumbDescr(NumbersDescription numbDescr) {
 
     this.numbDescr = numbDescr;
+  }
+
+
+  /**
+   * Returns the words description.
+   *
+   * @return the words description
+   */
+  WordsDescription getWordsDescr() {
+
+    return this.wordsDescr;
+  }
+
+
+  /**
+   * Sets the words description to the given parameter.
+   *
+   * @param wordsDescr
+   *          a words description
+   */
+  void setWordsDescr(WordsDescription wordsDescr) {
+
+    this.wordsDescr = wordsDescr;
   }
 
 
@@ -681,5 +723,17 @@ public class LanguageResource {
 
     return this.getNumbDescr().getRulesMap()
       .get(NumbersDescription.DIGITS_RULE);
+  }
+
+
+  /**
+   * Returns the matcher for all words from the words description.
+   *
+   * @return a regular expression
+   */
+  RegExp getAllWordsMatcher() {
+
+    return this.getWordsDescr().getRulesMap()
+      .get(WordsDescription.ALL_RULE);
   }
 }

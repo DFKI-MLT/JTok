@@ -2,37 +2,37 @@ Paragraph Start: 0
 Paragraph End: 24
   Text Unit Start: 0
   Text Unit End: 24
-    Token: "Windows"      	Type: TOKEN	Start: 0	End: 7
-    Token: "paragraph"    	Type: TOKEN	Start: 8	End: 17
-    Token: "change"       	Type: TOKEN	Start: 18	End: 24
+    Token: "Windows"      	Type: FIRST_UPPER_CASE	Start: 0	End: 7
+    Token: "paragraph"    	Type: ALL_LOWER_CASE	Start: 8	End: 17
+    Token: "change"       	Type: ALL_LOWER_CASE	Start: 18	End: 24
 
 Paragraph Start: 28
 Paragraph End: 48
   Text Unit Start: 28
   Text Unit End: 48
-    Token: "Unix"         	Type: TOKEN	Start: 28	End: 32
-    Token: "paragaph"     	Type: TOKEN	Start: 33	End: 41
-    Token: "change"       	Type: TOKEN	Start: 42	End: 48
+    Token: "Unix"         	Type: FIRST_UPPER_CASE	Start: 28	End: 32
+    Token: "paragaph"     	Type: ALL_LOWER_CASE	Start: 33	End: 41
+    Token: "change"       	Type: ALL_LOWER_CASE	Start: 42	End: 48
 
 Paragraph Start: 50
 Paragraph End: 70
   Text Unit Start: 50
   Text Unit End: 70
-    Token: "Mac"          	Type: TOKEN	Start: 50	End: 53
-    Token: "paragraph"    	Type: TOKEN	Start: 54	End: 63
-    Token: "change"       	Type: TOKEN	Start: 64	End: 70
+    Token: "Mac"          	Type: FIRST_UPPER_CASE	Start: 50	End: 53
+    Token: "paragraph"    	Type: ALL_LOWER_CASE	Start: 54	End: 63
+    Token: "change"       	Type: ALL_LOWER_CASE	Start: 64	End: 70
 
 Paragraph Start: 72
 Paragraph End: 96
   Text Unit Start: 72
   Text Unit End: 96
-    Token: "Windows"      	Type: TOKEN	Start: 72	End: 79
-    Token: "paragraph"    	Type: TOKEN	Start: 80	End: 89
-    Token: "change"       	Type: TOKEN	Start: 90	End: 96
+    Token: "Windows"      	Type: FIRST_UPPER_CASE	Start: 72	End: 79
+    Token: "paragraph"    	Type: ALL_LOWER_CASE	Start: 80	End: 89
+    Token: "change"       	Type: ALL_LOWER_CASE	Start: 90	End: 96
 
 Paragraph Start: 100
 Paragraph End: 103
   Text Unit Start: 100
   Text Unit End: 103
-    Token: "eof"          	Type: TOKEN	Start: 100	End: 103
+    Token: "eof"          	Type: ALL_LOWER_CASE	Start: 100	End: 103
 
