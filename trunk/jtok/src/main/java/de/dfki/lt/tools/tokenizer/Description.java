@@ -220,7 +220,7 @@ public abstract class Description {
    * @return the first child element with the specified name or {@code null} if
    *         no such child exists
    */
-  private Element getChild(Element ele, String childName) {
+  protected Element getChild(Element ele, String childName) {
 
     NodeList children = ele.getChildNodes();
     for (int i = 0, iMax = children.getLength(); i < iMax; i++) {
