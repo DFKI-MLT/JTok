@@ -6,9 +6,9 @@
 <!-- for the abstract syntax -->
 <WORD_DESCRIPTION>
 
-  <!-- This defines the specific number elements. The regexp -->
+  <!-- This defines the specific word types. The regexp -->
   <!-- attribute is the regular expression used to match -->
-  <!-- the number. -->
+  <!-- the word. -->
   <!-- ATTENTION! Because the regex package we use always -->
   <!-- stops at the first disjunct that could be matched, the -->
   <!-- order of the definition with a class is critical! So make -->
@@ -27,32 +27,5 @@
     <FIRST_UPPER_CASE regexp="[A-Z][a-z]+" class="FIRST_UPPER_CASE"/>
 
   </DEFINITIONS>
-
-  <!-- These are the mandatory rules defined as -->
-  <!-- regular expressions with the definitions above. -->
-  <!-- Rule names may not be altered! -->
-  <!-- ATTENTION! Because the regex package we use always -->
-  <!-- stops at the first disjunct that could be matched, the -->
-  <!-- order of the disjuncts in the rule is critical! So make -->
-  <!-- sure that punctuations with the potentially longer match -->
-  <!-- stand BEFORE others, e.g. use the order `abc|ab|a' -->
-  <!-- instead of `a|ab|abc' -->
-  <RULES>
-    
-    <!-- The all-rule is used classifying tokens not are no -->
-    <!-- punctuation, digits, etc. -->
-    <!-- It's basically a disjunction of the words classes -->
-    <!-- defined above. -->
-    <!-- ATTENTION! Because the regex package we use always -->
-    <!-- stops at the first disjunct that could be matched, the -->
-    <!-- order of the disjuncts in the rule is critical! So make -->
-    <!-- sure that punctuations with the potentially longer match -->
-    <!-- stand BEFORE others, e.g. use the order `abc|ab|a' -->
-    <!-- instead of `a|ab|abc' -->
-    <ALL_WORDS_RULE>
-      <EMAIL/>|<ALL_UPPER_CASE/>|<ALL_LOWER_CASE/>|<FIRST_UPPER_CASE/>
-    </ALL_WORDS_RULE>
-
-  </RULES>
     
 </WORD_DESCRIPTION>

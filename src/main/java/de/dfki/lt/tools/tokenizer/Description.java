@@ -318,8 +318,12 @@ public abstract class Description {
     Element defRoot = this.getChild(descrDoc.getDocumentElement(), DEFS);
 
     // get list of rules
-    NodeList rules =
-      this.getChild(descrDoc.getDocumentElement(), RULES).getChildNodes();
+    Element rulesRoot = this.getChild(descrDoc.getDocumentElement(), RULES);
+    if (null == rulesRoot) {
+      // no rules defined in this configuration
+      return;
+    }
+    NodeList rules = rulesRoot.getChildNodes();
 
     // iterate over rules
     for (int i = 0, iMax = rules.getLength(); i < iMax; i++) {
