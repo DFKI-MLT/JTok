@@ -17,11 +17,6 @@
   <!-- instead of `a|ab|abc' -->
   <DEFINITIONS>  
 
-    <!-- simple digits -->
-    <!-- this definition doesn't need a class because -->
-    <!-- identification is done via the other definitions -->
-    <SIMPLE_DIGITS regexp="[0-9]|[¼½¾]"/>    
-
     <!-- fraction numbers -->
     <FRACT regexp="([0-9]+)?[¼½¾]" class="FRACTION"/>
 
@@ -45,11 +40,6 @@
   <!-- stand BEFORE others, e.g. use the order `abc|ab|a' -->
   <!-- instead of `a|ab|abc' -->
   <RULES>
-    
-    <!-- this rule checks if closer digits examination is needed -->
-    <SIMPLE_DIGITS_RULE>
-      <SIMPLE_DIGITS/>
-    </SIMPLE_DIGITS_RULE>
 
     <!-- this rule matches ordinal numbers -->
     <ORDINAL_RULE class="ORDINAL">
