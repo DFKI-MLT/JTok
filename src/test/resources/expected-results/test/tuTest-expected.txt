@@ -135,7 +135,7 @@ Paragraph End: 390
     Token: "Ullstein"     	Type: FIRST_UPPER_CASE	Start: 370	End: 378
     Token: "TB-Vlg."      	Type: B_ABBREVIATION	Start: 379	End: 386
     Token: ","            	Type: PUNCTUATION	Start: 386	End: 387
-    Token: "B."           	Type: INITIAL	Start: 388	End: 390
+    Token: "B."           	Type: B_ABBREVIATION	Start: 388	End: 390
 
 Paragraph Start: 394
 Paragraph End: 441

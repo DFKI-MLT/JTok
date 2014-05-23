@@ -728,7 +728,6 @@ public class JTok {
     // get matchers needed for abbreviation recognition
     RegExp nbrMatcher = langRes.getNbrMatcher();
     RegExp abbrevMatcher = langRes.getAbbrevMatcher();
-    RegExp initialMatcher = langRes.getInitialMatcher();
 
     // get map with abbreviation lists
     Map<String, Set<String>> abbrevLists =
@@ -798,16 +797,6 @@ public class JTok {
           }
         }
         if (found) {
-          continue;
-        }
-
-        // check if token is matched by mid name initial matcher
-        if ((initialMatcher != null) && initialMatcher.matches(image)) {
-          String initialClass =
-            this.identifyClass(image, initialMatcher, langRes.getAbbrevDescr());
-          input.annotate(CLASS_ANNO, initialClass,
-            tokenStart,
-            tokenStart + nbr.getEndIndex());
           continue;
         }
 

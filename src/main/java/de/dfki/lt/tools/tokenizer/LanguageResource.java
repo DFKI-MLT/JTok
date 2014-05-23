@@ -654,18 +654,6 @@ public class LanguageResource {
 
 
   /**
-   * Returns the matcher for the mid name initials.
-   *
-   * @return a regular expression
-   */
-  RegExp getInitialMatcher() {
-
-    return this.getAbbrevDescr().getRulesMap()
-      .get(AbbrevDescription.INITIAL_RULE);
-  }
-
-
-  /**
    * Returns the set of the most common terms that only start with a capital
    * letter when they are at the beginning of a sentence.
    *

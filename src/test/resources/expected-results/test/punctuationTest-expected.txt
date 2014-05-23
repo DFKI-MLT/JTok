@@ -312,7 +312,7 @@ Paragraph End: 397
   Text Unit Start: 381
   Text Unit End: 397
     Token: "Homer"        	Type: FIRST_UPPER_CASE	Start: 381	End: 386
-    Token: "J."           	Type: INITIAL	Start: 387	End: 389
+    Token: "J."           	Type: B_ABBREVIATION	Start: 387	End: 389
     Token: "Simpson"      	Type: FIRST_UPPER_CASE	Start: 390	End: 397
 
 Paragraph Start: 401
