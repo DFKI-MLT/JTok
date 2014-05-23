@@ -9,14 +9,13 @@
   <!-- This defines the abbreviation class for different lists -->
   <!-- of abbreviations. The file attribute points to a file in -->
   <!-- the same directory with the list. -->
-  <!-- List names may not be altered. -->
   <LISTS>  
     <B_ABBREV_LIST file="en_b-abbrev.txt" class="B_ABBREVIATION" encoding="utf-8"/>
     <TITLE_LIST file="en_titles.txt" class="TITLE" encoding="utf-8"/>
   </LISTS>
  
   <DEFINITIONS>
-    <!-- mid name initiales -->
+    <!-- mid name initials -->
     <INITIAL regexp="[A-Z]\." class="INITIAL"/>
     <!-- sequences of single letters, separated by periods -->
     <ONE_LETTER_SEQ regexp="([a-zA-Z]\.)+" class="B_ABBREVIATION"/>
