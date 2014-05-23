@@ -2,74 +2,74 @@
 <!-- This defines the class hierarchy for English -->
 
 <!-- hierarchy root token -->
-<TOKEN tag="TOK">
+<TOKEN>
 
   <!-- clitics -->
-  <SPLIT tag="SPLIT">
+  <SPLIT>
     <!-- proclitics, items appearing at the beginning of the string -->
-    <LEFTSPLIT tag="LSPLIT"/>
+    <LEFTSPLIT/>
     <!-- enclitics, items appearing at the end of the string -->
-    <RIGHTSPLIT tag="RSPLIT"/>
+    <RIGHTSPLIT/>
   </SPLIT>  
 
   <!-- numbers -->
-  <NUMBER tag="NUM">
+  <NUMBER>
     <!-- roman numbers -->
-    <ROMAN tag="ROM"/>
+    <ROMAN/>
     <!-- literal numbers -->
-    <LITERAL tag="LIT"/>
+    <LITERAL/>
     <!-- digital numbers -->
-    <DIGITAL tag="DIG">
+    <DIGITAL>
       <!-- fraction numbers -->
-      <FRACTION tag="FRAC"/>
+      <FRACTION/>
       <!-- ordinal numbers -->
-      <ORDINAL tag="ORD"/>
+      <ORDINAL/>
     </DIGITAL>  
   </NUMBER>
 
   <!-- punctuation -->
-  <PUNCTUATION tag="PUNCT">
+  <PUNCTUATION>
     <!-- terminal punctuation -->
-    <TERM_PUNCT tag="PTERM"/>
+    <TERM_PUNCT/>
     <!-- possible terminal punctuation -->
-    <TERM_PUNCT_P tag="PTERM_P"/>
+    <TERM_PUNCT_P/>
     <!-- opening punctuation -->
-    <OPEN_PUNCT tag="OPUNCT"/>
+    <OPEN_PUNCT/>
     <!-- closing punctuation -->
-    <CLOSE_PUNCT tag="CPUNCT"/>
+    <CLOSE_PUNCT/>
     <!-- opening and closing punctuation -->
-    <OPENCLOSE_PUNCT tag="OCPUNCT"/>
+    <OPENCLOSE_PUNCT/>
     <!-- opening bracket -->
-    <OPEN_BRACKET tag="OBRACKET"/>
+    <OPEN_BRACKET/>
     <!-- closing bracket -->
-    <CLOSE_BRACKET tag="CBRACKET"/>
+    <CLOSE_BRACKET/>
   </PUNCTUATION>
 
   <!-- abbreviations with a final period -->
-  <ABBREVIATION tag="ABBR">
+  <ABBREVIATION>
     <!-- breaking abbreviation, words which are -->
     <!-- abbreviated when they appear at the end of a sentence, --> 
     <!-- thus the period is ambiguous -->
-    <B_ABBREVIATION tag="BABBR"/>
+    <B_ABBREVIATION/>
     <!-- non-breaking abbreviation, words which are never -->
     <!-- abbreviated when they appear at the end of a sentence, --> 
     <!-- thus the period is unambiguous -->
-    <NB_ABBREVIATION tag="NBABBR">
+    <NB_ABBREVIATION>
       <!-- an abbreviation which is a title, thus followed by -->
       <!-- a proper name -->
-      <TITLE tag="TTL"/>
+      <TITLE/>
       <!-- an abbreviation which is composed with only one -->
       <!-- upper-case letter -->
-      <INITIAL tag="INIT"/>
+      <INITIAL/>
     </NB_ABBREVIATION>
   </ABBREVIATION>
   
   <!-- words -->
   <WORD>
-    <EMAIL tag="e_mail_adress"/>
-    <ALL_LOWER_CASE tag="all_lower_case"/>
-    <ALL_UPPER_CASE tag="all_upper_case"/>
-    <FIRST_UPPER_CASE tag="first_upper_case"/>
+    <EMAIL/>
+    <ALL_LOWER_CASE/>
+    <ALL_UPPER_CASE/>
+    <FIRST_UPPER_CASE/>
   </WORD>
 
 </TOKEN>

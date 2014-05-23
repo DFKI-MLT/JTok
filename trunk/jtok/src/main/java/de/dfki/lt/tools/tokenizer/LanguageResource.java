@@ -84,10 +84,6 @@ public class LanguageResource {
    */
   private static final String WORDS_DESCR = "_words.xml";
 
-  /**
-   * The name of the tag attribute in the class definition.
-   */
-  private static final String CLASS_TAG = "tag";
 
   /**
    * Contains the name of the language for which this class contains the
@@ -110,18 +106,6 @@ public class LanguageResource {
    * ancestors of this class.
    */
   private Map<String, List<String>> ancestorsMap;
-
-  /**
-   * Contains a map from class names to their tags as defined in the class
-   * definition file.
-   */
-  private Map<String, String> tagsMap;
-
-  /**
-   * Contains a map from tags to their class names as defined in the class
-   * definition file.
-   */
-  private Map<String, String> classesMap;
 
   /**
    * Contains the punctuation description.
@@ -165,8 +149,6 @@ public class LanguageResource {
 
     // init stuff
     this.setAncestorsMap(new HashMap<String, List<String>>());
-    this.setTagsMap(new HashMap<String, String>());
-    this.setClassesMap(new HashMap<String, String>());
     this.setPunctDescr(null);
     this.setClitDescr(null);
     this.setAbbrevDescr(null);
@@ -184,7 +166,7 @@ public class LanguageResource {
           Paths.get(resourceDir).resolve(lang + CLASSES_HIERARCHY).toString()));
       // set hierarchy root
       this.setClassesRoot(doc.getDocumentElement());
-      // map class names to dom elements and tag
+      // map class names to dom elements
       this.mapSingleClass(this.getClassesRoot());
       this.mapClasses(this.getClassesRoot().getChildNodes());
 
@@ -193,22 +175,21 @@ public class LanguageResource {
         FileTools.openResourceFileAsStream(
           Paths.get(resourceDir).resolve(lang + PUNCT_DESCR).toString()));
       this.setPunctDescr
-        (new PunctDescription(doc, this.getTagsMap().keySet()));
+        (new PunctDescription(doc, this.getAncestorsMap().keySet()));
 
       // load clitics description document
       doc = builder.parse(
         FileTools.openResourceFileAsStream(
           Paths.get(resourceDir).resolve(lang + CLITIC_DESCR).toString()));
       this.setClitDescr
-        (new CliticsDescription(doc, this.getTagsMap().keySet()));
+        (new CliticsDescription(doc, this.getAncestorsMap().keySet()));
 
       // load abbreviation description document
       doc = builder.parse(
         FileTools.openResourceFileAsStream(
           Paths.get(resourceDir).resolve(lang + ABBREV_DESCR).toString()));
       this.setAbbrevDescr
-        (new AbbrevDescription(doc,
-          this.getTagsMap().keySet(),
+        (new AbbrevDescription(doc, this.getAncestorsMap().keySet(),
           resourceDir));
 
       // load numbers description document
@@ -216,16 +197,14 @@ public class LanguageResource {
         FileTools.openResourceFileAsStream(
           Paths.get(resourceDir).resolve(lang + NUMB_DESCR).toString()));
       this.setNumbDescr
-        (new NumbersDescription(doc,
-          this.getTagsMap().keySet()));
+        (new NumbersDescription(doc, this.getAncestorsMap().keySet()));
 
       // load words description document
       doc = builder.parse(
         FileTools.openResourceFileAsStream(
           Paths.get(resourceDir).resolve(lang + WORDS_DESCR).toString()));
       this.setWordsDescr
-        (new WordsDescription(doc,
-          this.getTagsMap().keySet()));
+        (new WordsDescription(doc, this.getAncestorsMap().keySet()));
 
     } catch (SAXException spe) {
       throw new InitializationException(spe.getLocalizedMessage(), spe);
@@ -292,55 +271,6 @@ public class LanguageResource {
   void setAncestorsMap(Map<String, List<String>> ancestorMap) {
 
     this.ancestorsMap = ancestorMap;
-  }
-
-
-  /**
-   * Returns the map from class names to their tags as defined in the class
-   * definition file. The class names are used as annotations in the annotated
-   * string. The tags could be used as XML tags when creating an XML structure
-   * from the annotated string.
-   *
-   * @return the tags map
-   */
-  public Map<String, String> getTagsMap() {
-
-    return this.tagsMap;
-  }
-
-
-  /**
-   * Sets the tags map to the given parameter.
-   *
-   * @param tagsMap
-   *          the tags map
-   */
-  void setTagsMap(Map<String, String> tagsMap) {
-
-    this.tagsMap = tagsMap;
-  }
-
-
-  /**
-   * Returns the classes map.
-   *
-   * @return the classes map
-   */
-  Map<String, String> getClassesMap() {
-
-    return this.classesMap;
-  }
-
-
-  /**
-   * Sets the the classes map to the given parameter.
-   *
-   * @param classesMap
-   *          the classes map
-   */
-  void setClassesMap(Map<String, String> classesMap) {
-
-    this.classesMap = classesMap;
   }
 
 
@@ -461,8 +391,7 @@ public class LanguageResource {
 
   /**
    * Iterates recursively over a list of class elements and adds each elements
-   * ancestors to ancestors map using the name of the element as key. It also
-   * adds each class tag to the tags map.
+   * ancestors to ancestors map using the name of the element as key.
    *
    * @param elementList
    *          node list of class elements
@@ -486,8 +415,7 @@ public class LanguageResource {
 
 
   /**
-   * Creates mappings for the given class in the tags, classes and ancestor
-   * maps.
+   * Creates mappings for the given class in the ancestor maps.
    *
    * @param ele
    *          a class element
@@ -495,11 +423,6 @@ public class LanguageResource {
   private void mapSingleClass(Element ele) {
 
     String key = ele.getTagName();
-    // add tag to tags map
-    String tag = ele.getAttribute(CLASS_TAG);
-    this.getTagsMap().put(key, tag);
-    // add class to classes map
-    this.getClassesMap().put(tag, key);
     // collect ancestors of element
     List<String> ancestors = new ArrayList<>();
     Node directAncestor = ele.getParentNode();
