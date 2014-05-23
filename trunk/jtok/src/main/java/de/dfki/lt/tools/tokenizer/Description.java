@@ -441,6 +441,13 @@ public abstract class Description {
           items.add(line);
           // also add the upper case version
           items.add(line.toUpperCase());
+          // also add a version with the first letter in
+          // upper case (if required)
+          char firstChar = line.charAt(0);
+          if (Character.isLowerCase(firstChar)) {
+            firstChar = Character.toUpperCase(firstChar);
+            items.add(firstChar + line.substring(1));
+          }
         }
         in.close();
         // add set to lists map
