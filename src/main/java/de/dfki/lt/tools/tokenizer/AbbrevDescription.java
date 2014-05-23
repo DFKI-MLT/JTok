@@ -30,6 +30,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
 
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
@@ -43,9 +45,9 @@ public class AbbrevDescription
     extends Description {
 
   /**
-   * The name of the abbreviation rule.
+   * The name of the all abbreviation rule.
    */
-  protected static final String ABBREV_RULE = "ABBREV_RULE";
+  protected static final String ALL_RULE = "ALL_RULE";
 
 
   /**
@@ -82,6 +84,7 @@ public class AbbrevDescription
     super.loadDefinitions(abbrDescr, classes);
     // build the rules matcher map
     super.loadRules(abbrDescr);
+    this.createAllAbbreviationsRule(abbrDescr);
 
     // load list of terms that only start with a capital letter when they are
     // at the beginning of a sentence.
@@ -136,5 +139,39 @@ public class AbbrevDescription
   protected Set<String> getNonCapTerms() {
 
     return this.nonCapTerms;
+  }
+
+
+  /**
+   * Create a rule that matches ALL abbreviations for which there are
+   * definitions.
+   */
+  private void createAllAbbreviationsRule(Document abbrDescr) {
+
+    // get list of definitions
+    NodeList defs =
+      this.getChild(abbrDescr.getDocumentElement(), DEFS).getChildNodes();
+
+    StringBuilder ruleRegExpr = new StringBuilder();
+
+    // iterate over definitions
+    for (int i = 0, iMax = defs.getLength(); i < iMax; i++) {
+      // get definition element
+      Object oneObj = defs.item(i);
+      if (!(oneObj instanceof Element)) {
+        continue;
+      }
+      Element oneDef = (Element)oneObj;
+      // get regular expression string
+      String regExpr = oneDef.getAttribute(DEF_REGEXP);
+      // extend regular expression with another disjunct
+      ruleRegExpr.append(regExpr);
+      if (i < iMax - 2) {
+        ruleRegExpr.append("|");
+      }
+    }
+    // add rule to map
+    RegExp regExp = FACTORY.createRegExp(ruleRegExpr.toString());
+    getRulesMap().put(ALL_RULE, regExp);
   }
 }

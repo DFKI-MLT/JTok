@@ -14,8 +14,6 @@
   </LISTS>
 
   <DEFINITIONS>  
-    <!-- mid name initials -->
-    <INITIAL regexp="[A-Z]\." class="INITIAL"/>
     <!-- sequences of single letters, separated by periods -->
     <ONE_LETTER_SEQ regexp="([a-zA-Z]\.)+" class="B_ABBREVIATION"/>
     <!-- tokens that contain only consonants -->
@@ -28,15 +26,6 @@
     <!-- -br. like in `Fabr.' -->
     <SUFFIXES regexp=".*(tr\.|pl\.|tl\.|br\.)" class="NB_ABBREVIATION"/>
   </DEFINITIONS>
-    
-  <RULES>
-    <ABBREV_RULE class="B_ABBREVIATION">
-      <ONE_LETTER_SEQ/>|<NO_VOCALS/>|<SUFFIXES/>
-    </ABBREV_RULE>
-    <INITIAL_RULE class="INITIAL">
-      <INITIAL/>
-    </INITIAL_RULE>
-  </RULES>
     
 </ABBREVIATION_DESCRIPTION>
 
