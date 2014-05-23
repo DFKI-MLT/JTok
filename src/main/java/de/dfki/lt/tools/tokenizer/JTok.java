@@ -1096,46 +1096,6 @@ public class JTok {
 
 
   /**
-   * Checks if the class of a token with the first given tag is ancestor in the
-   * class hierarchy of the class of a token with the second given tag or if the
-   * token classes are equal in the token class hierarchy for the given
-   * language.
-   *
-   * @param tag1
-   *          the first token class tag
-   * @param tag2
-   *          the second token class tag
-   * @param lang
-   *          the language
-   * @return a flag indicating the ancestor relationship
-   * @exception ProcessingException
-   *              if tags cannot be mapped to a token class
-   */
-  public boolean isAncestor(String tag1, String tag2, String lang)
-      throws ProcessingException {
-
-    // get language resource for language
-    LanguageResource langRes = this.getLanguageResource(lang);
-
-    // get class for tag 1
-    String class1 = langRes.getClassesMap().get(tag1);
-    if (null == class1) {
-      throw new ProcessingException(
-        String.format("undefined token class tag %s", tag1));
-    }
-    // get class for tag 2
-    String class2 = langRes.getClassesMap().get(tag2);
-    if (null == class2) {
-      throw new ProcessingException(
-        String.format("undefined token class tag %s", tag2));
-    }
-
-    // return result for token class hierarchy
-    return langRes.isAncestor(class1, class2);
-  }
-
-
-  /**
    * This main method must be used with two or three arguments:
    * <ul>
    * <li>a file name for the document to tokenize
