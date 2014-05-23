@@ -98,20 +98,6 @@
   <!-- and never as part of clitics or abbreviation. -->
   <RULES>
 
-    <!-- The all-rule is used for basic splitting of strings -->
-    <!-- into punctuation and non-punctuation parts. -->
-    <!-- It's basically a disjunction of the punctuations -->
-    <!-- defined above. -->
-    <!-- ATTENTION! Because the regex package we use always -->
-    <!-- stops at the first disjunct that could be matched, the -->
-    <!-- order of the disjuncts in the rule is critical! So make -->
-    <!-- sure that punctuations with the potentially longer match -->
-    <!-- stand BEFORE others, e.g. use the order `abc|ab|a' -->
-    <!-- instead of `a|ab|abc' -->
-    <ALL_PUNCT_RULE>
-      <SPECIAL_INT/>|<PERIOD/>|<OINF/>|<LT/>|<CSUP/>|<GT/>|<EQ/>|<OCHYPHEN/>|<HYPHEN/>|<RSQUOTE_L/>|<RSQUOTE_R/>|<OGUILLEMET/>|<CGUILLEMET/>|<CDQUO/>|<CSAQUO/>|<CSQUO/>|<ODQUO1/>|<ODQUO2/>|<ODQUO3/>|<OSAQUO/>|<OSQUO1/>|<OSQUO2/>|<OSQUO3/>|<OPAR/>|<CPAR/>|<OPAR2/>|<CPAR2/>|<OCROCHE/>|<CCROCHE/>|<OCQUOTE/>|<EXCLAM/>|<QUEST/>|<SCOLON/>|<COLON/>|<COMMA/>|<SLASH/>|<BSLASH/>|<PIPE/>|<STAR/>|<TILDE/>|<AMP/>|<NBL/>|<FIGDASH/>|<ENDASH/>|<EMDASH/>|<HBAR/>|<BULLET/>|<PERCENT/>|<TM/>|<SECTION/>
-    </ALL_PUNCT_RULE>
-
     <!-- punctuation which can be found in compounds -->
     <INTERNAL_PUNCT_RULE>
       <SPECIAL_INT/>|<RSQUOTE_R/>|<HYPHEN/>|<PERIOD/>|<COMMA/>|<AMP/>|<SLASH/>|<COLON/>|<NBL/>
