@@ -642,14 +642,15 @@ public class LanguageResource {
 
 
   /**
-   * Returns the matcher for the abbreviations.
+   * Returns the matcher for the all abbreviations from the abbreviations
+   * description.
    *
    * @return a regular expression
    */
-  RegExp getAbbrevMatcher() {
+  RegExp getAllAbbrevMatcher() {
 
     return this.getAbbrevDescr().getRulesMap()
-      .get(AbbrevDescription.ABBREV_RULE);
+      .get(AbbrevDescription.ALL_RULE);
   }
 
 

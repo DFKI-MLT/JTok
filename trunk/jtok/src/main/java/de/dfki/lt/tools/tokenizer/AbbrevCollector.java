@@ -96,7 +96,7 @@ public class AbbrevCollector {
     Set<String> nonCapTerms = langRes.getNonCapTerms();
 
     // this are the matcher for abbreviations
-    RegExp abbrevMatcher = langRes.getAbbrevMatcher();
+    RegExp abbrevMatcher = langRes.getAllAbbrevMatcher();
 
     Set<String> abbrevs = new HashSet<String>();
 
