@@ -34,7 +34,7 @@ Paragraph End: 65
   Text Unit Start: 59
   Text Unit End: 65
     Token: "920"          	Type: DIGITAL	Start: 59	End: 62
-    Token: "S."           	Type: INITIAL	Start: 63	End: 65
+    Token: "S."           	Type: B_ABBREVIATION	Start: 63	End: 65
 
 Paragraph Start: 69
 Paragraph End: 84

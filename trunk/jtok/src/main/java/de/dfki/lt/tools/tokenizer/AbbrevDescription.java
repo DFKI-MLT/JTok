@@ -47,10 +47,6 @@ public class AbbrevDescription
    */
   protected static final String ABBREV_RULE = "ABBREV_RULE";
 
-  /**
-   * The name of the mid name initial rule.
-   */
-  protected static final String INITIAL_RULE = "INITIAL_RULE";
 
   /**
    * Contains the most common terms that only start with a capital letter when

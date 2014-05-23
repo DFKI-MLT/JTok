@@ -97,7 +97,6 @@ public class AbbrevCollector {
 
     // this are the matcher for abbreviations
     RegExp abbrevMatcher = langRes.getAbbrevMatcher();
-    RegExp initialMatcher = langRes.getInitialMatcher();
 
     Set<String> abbrevs = new HashSet<String>();
 
@@ -135,8 +134,7 @@ public class AbbrevCollector {
             }
 
             // check with matchers
-            if (abbrevMatcher.matches(oneTok)
-              || initialMatcher.matches(oneTok)) {
+            if (abbrevMatcher.matches(oneTok)) {
               continue;
             }
 

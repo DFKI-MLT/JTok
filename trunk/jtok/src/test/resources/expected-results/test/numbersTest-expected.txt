@@ -15,7 +15,7 @@ Paragraph End: 21
   Text Unit Start: 15
   Text Unit End: 21
     Token: "920"          	Type: DIGITAL	Start: 15	End: 18
-    Token: "S."           	Type: INITIAL	Start: 19	End: 21
+    Token: "S."           	Type: B_ABBREVIATION	Start: 19	End: 21
 
 Paragraph Start: 25
 Paragraph End: 40
