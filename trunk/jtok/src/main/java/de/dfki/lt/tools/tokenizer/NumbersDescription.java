@@ -78,5 +78,9 @@ public class NumbersDescription
     super.loadDefinitions(numbDescr, classes);
     // build the rules matcher map
     super.loadRules(numbDescr);
+
+    // create rule for digits check
+    RegExp regExp = FACTORY.createRegExp("[0-9]|[\u00BC\u00BD\u00BE]");
+    getRulesMap().put(SIMPLE_DIGITS_RULE, regExp);
   }
 }
