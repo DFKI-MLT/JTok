@@ -1,7 +1,7 @@
 Paragraph Start: 0
 Paragraph End: 109
   Text Unit Start: 0
-  Text Unit End: 67
+  Text Unit End: 109
     Token: "Amazon.de"    	Type: TOKEN	Start: 0	End: 9
     Token: ","            	Type: PUNCTUATION	Start: 9	End: 10
     Token: "auf"          	Type: ALL_LOWER_CASE	Start: 11	End: 14
@@ -15,8 +15,6 @@ Paragraph End: 109
     Token: "Metal"        	Type: FIRST_UPPER_CASE	Start: 48	End: 53
     Token: "Enzyklopädie" 	Type: FIRST_UPPER_CASE	Start: 54	End: 66
     Token: "."            	Type: TERM_PUNCT_P	Start: 66	End: 67
-  Text Unit Start: 67
-  Text Unit End: 109
     Token: "("            	Type: OPEN_BRACKET	Start: 67	End: 68	PTB: "-LRB-"
     Token: "Audio-Compilation-CD"	Type: TOKEN	Start: 68	End: 88
     Token: """            	Type: OPEN_PUNCT	Start: 89	End: 90	PTB: "``"
@@ -29,7 +27,7 @@ Paragraph End: 109
 Paragraph Start: 113
 Paragraph End: 194
   Text Unit Start: 113
-  Text Unit End: 152
+  Text Unit End: 194
     Token: "Hard"         	Type: FIRST_UPPER_CASE	Start: 113	End: 117
     Token: "Rock"         	Type: FIRST_UPPER_CASE	Start: 118	End: 122
     Token: "und"          	Type: ALL_LOWER_CASE	Start: 123	End: 126
@@ -37,8 +35,6 @@ Paragraph End: 194
     Token: "Metal"        	Type: FIRST_UPPER_CASE	Start: 133	End: 138
     Token: "Enzyklopädie" 	Type: FIRST_UPPER_CASE	Start: 139	End: 151
     Token: "."            	Type: TERM_PUNCT_P	Start: 151	End: 152
-  Text Unit Start: 152
-  Text Unit End: 194
     Token: "("            	Type: OPEN_BRACKET	Start: 152	End: 153	PTB: "-LRB-"
     Token: "Audio-Compilation-CD"	Type: TOKEN	Start: 153	End: 173
     Token: """            	Type: OPEN_PUNCT	Start: 174	End: 175	PTB: "``"

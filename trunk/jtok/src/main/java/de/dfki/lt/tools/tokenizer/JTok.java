@@ -968,7 +968,20 @@ public class JTok {
               ("TERM_PUNCT", (String)input.getAnnotation(CLASS_ANNO))
               || langRes.isAncestor(
                 "TERM_PUNCT_P", (String)input.getAnnotation(CLASS_ANNO))) {
-            eosMode = true;
+            // check if next token is a whitespace or a sentence
+            // continuing token
+            input.setIndex(tokenEnd);
+            if (null == input.getAnnotation(CLASS_ANNO)
+              || langRes.isAncestor(
+              "TERM_PUNCT", (String)input.getAnnotation(CLASS_ANNO))
+              || langRes.isAncestor(
+                "TERM_PUNCT_P", (String)input.getAnnotation(CLASS_ANNO))
+              || langRes.isAncestor(
+                "CLOSE_PUNCT", (String)input.getAnnotation(CLASS_ANNO))
+              || langRes.isAncestor(
+                "CLOSE_BRACKET", (String)input.getAnnotation(CLASS_ANNO))) {
+              eosMode = true;
+            }
           }
           // check if token is a breaking abbreviation
           else if (langRes.isAncestor
