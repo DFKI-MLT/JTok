@@ -45,12 +45,6 @@ public class PunctDescription
     "ALL_PUNCT_RULE";
 
   /**
-   * Name of the clitic punctuation rule.
-   */
-  protected static final String CLITIC_RULE =
-    "CLITIC_PUNCT_RULE";
-
-  /**
    * Name of the internal punctuation rule.
    */
   protected static final String INTERNAL_RULE =

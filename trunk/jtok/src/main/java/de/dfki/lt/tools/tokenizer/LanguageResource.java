@@ -607,19 +607,6 @@ public class LanguageResource {
 
 
   /**
-   * Returns the matcher for clitic punctuation from the punctuation
-   * description.
-   *
-   * @return a regular expression
-   */
-  RegExp getCliticsMatcher() {
-
-    return this.getPunctDescr().getRulesMap()
-      .get(PunctDescription.CLITIC_RULE);
-  }
-
-
-  /**
    * Returns the matcher for proclitics from the clitics description.
    *
    * @return a regular expression
