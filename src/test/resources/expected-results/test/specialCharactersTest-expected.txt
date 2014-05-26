@@ -20,15 +20,9 @@ Paragraph End: 40
 Paragraph Start: 44
 Paragraph End: 65
   Text Unit Start: 44
-  Text Unit End: 46
-    Token: "5"            	Type: DIGITAL	Start: 44	End: 45
-    Token: "."            	Type: TERM_PUNCT_P	Start: 45	End: 46
-  Text Unit Start: 47
-  Text Unit End: 52
-    Token: "Aufl"         	Type: FIRST_UPPER_CASE	Start: 47	End: 51
-    Token: "."            	Type: TERM_PUNCT_P	Start: 51	End: 52
-  Text Unit Start: 53
   Text Unit End: 58
+    Token: "5."           	Type: ORDINAL	Start: 44	End: 46
+    Token: "Aufl."        	Type: B_ABBREVIATION	Start: 47	End: 52
     Token: "2000"         	Type: DIGITAL	Start: 53	End: 57
     Token: "."            	Type: TERM_PUNCT_P	Start: 57	End: 58
   Text Unit Start: 59
@@ -60,13 +54,9 @@ Paragraph End: 119
 Paragraph Start: 123
 Paragraph End: 130
   Text Unit Start: 123
-  Text Unit End: 125
-    Token: "3"            	Type: DIGITAL	Start: 123	End: 124
-    Token: "."            	Type: TERM_PUNCT_P	Start: 124	End: 125
-  Text Unit Start: 126
   Text Unit End: 130
-    Token: "Abl"          	Type: FIRST_UPPER_CASE	Start: 126	End: 129
-    Token: "."            	Type: TERM_PUNCT_P	Start: 129	End: 130
+    Token: "3."           	Type: ORDINAL	Start: 123	End: 125
+    Token: "Abl."         	Type: B_ABBREVIATION	Start: 126	End: 130
 
 Paragraph Start: 134
 Paragraph End: 147
@@ -556,7 +546,7 @@ Paragraph End: 1326
   Text Unit End: 1326
     Token: "John"         	Type: FIRST_UPPER_CASE	Start: 1282	End: 1286
     Token: "kennt"        	Type: ALL_LOWER_CASE	Start: 1287	End: 1292
-    Token: "Sgt."         	Type: TITLE	Start: 1293	End: 1297
+    Token: "Sgt."         	Type: B_ABBREVIATION	Start: 1293	End: 1297
     Token: "Pepper"       	Type: FIRST_UPPER_CASE	Start: 1298	End: 1304
     Token: "als"          	Type: ALL_LOWER_CASE	Start: 1305	End: 1308
     Token: "eine"         	Type: ALL_LOWER_CASE	Start: 1309	End: 1313

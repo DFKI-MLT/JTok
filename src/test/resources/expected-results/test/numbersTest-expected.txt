@@ -1,15 +1,9 @@
 Paragraph Start: 0
 Paragraph End: 21
   Text Unit Start: 0
-  Text Unit End: 2
-    Token: "5"            	Type: DIGITAL	Start: 0	End: 1
-    Token: "."            	Type: TERM_PUNCT_P	Start: 1	End: 2
-  Text Unit Start: 3
-  Text Unit End: 8
-    Token: "Aufl"         	Type: FIRST_UPPER_CASE	Start: 3	End: 7
-    Token: "."            	Type: TERM_PUNCT_P	Start: 7	End: 8
-  Text Unit Start: 9
   Text Unit End: 14
+    Token: "5."           	Type: ORDINAL	Start: 0	End: 2
+    Token: "Aufl."        	Type: B_ABBREVIATION	Start: 3	End: 8
     Token: "2000"         	Type: DIGITAL	Start: 9	End: 13
     Token: "."            	Type: TERM_PUNCT_P	Start: 13	End: 14
   Text Unit Start: 15
@@ -27,13 +21,9 @@ Paragraph End: 40
 Paragraph Start: 44
 Paragraph End: 51
   Text Unit Start: 44
-  Text Unit End: 46
-    Token: "3"            	Type: DIGITAL	Start: 44	End: 45
-    Token: "."            	Type: TERM_PUNCT_P	Start: 45	End: 46
-  Text Unit Start: 47
   Text Unit End: 51
-    Token: "Abl"          	Type: FIRST_UPPER_CASE	Start: 47	End: 50
-    Token: "."            	Type: TERM_PUNCT_P	Start: 50	End: 51
+    Token: "3."           	Type: ORDINAL	Start: 44	End: 46
+    Token: "Abl."         	Type: B_ABBREVIATION	Start: 47	End: 51
 
 Paragraph Start: 55
 Paragraph End: 68
@@ -377,22 +367,19 @@ Paragraph Start: 801
 Paragraph End: 803
   Text Unit Start: 801
   Text Unit End: 803
-    Token: "1"            	Type: DIGITAL	Start: 801	End: 802
-    Token: "."            	Type: TERM_PUNCT_P	Start: 802	End: 803
+    Token: "1."           	Type: ORDINAL	Start: 801	End: 803
 
 Paragraph Start: 807
 Paragraph End: 809
   Text Unit Start: 807
   Text Unit End: 809
-    Token: "2"            	Type: DIGITAL	Start: 807	End: 808
-    Token: "."            	Type: TERM_PUNCT_P	Start: 808	End: 809
+    Token: "2."           	Type: ORDINAL	Start: 807	End: 809
 
 Paragraph Start: 814
 Paragraph End: 817
   Text Unit Start: 814
   Text Unit End: 817
-    Token: "99"           	Type: DIGITAL	Start: 814	End: 816
-    Token: "."            	Type: TERM_PUNCT_P	Start: 816	End: 817
+    Token: "99."          	Type: ORDINAL	Start: 814	End: 817
 
 Paragraph Start: 821
 Paragraph End: 825
