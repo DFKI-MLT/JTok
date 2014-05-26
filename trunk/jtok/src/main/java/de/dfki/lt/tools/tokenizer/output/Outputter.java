@@ -33,7 +33,7 @@ import de.dfki.lt.tools.tokenizer.annotate.AnnotatedString;
  * {@link Outputter} provides static methods that convert an
  * {@link AnnotatedString} into a list of nested representation of
  * {@link Paragraph}s with {@link TextUnit}s and {@link Token}s.
- * 
+ *
  * @author Joerg Steffen, DFKI
  */
 public class Outputter {
@@ -41,7 +41,7 @@ public class Outputter {
   /**
    * Creates a list of {@link Paragraph}s with {@link TextUnit}s and
    * {@link Token}s from the given annotated string.
-   * 
+   *
    * @param input
    *          the annotated string
    * @return a list of paragraphs
@@ -97,5 +97,46 @@ public class Outputter {
 
     // return paragraph list
     return paraList;
+  }
+
+
+  /**
+   * Creates a list of {@link Token}s from the given annotated string. Text
+   * units and paragraphs are ignored.
+   *
+   * @param input
+   *          the annotated string
+   * @return a list of tokens
+   */
+  public static List<Token> createTokens(AnnotatedString input) {
+
+    // init list for tokens
+    List<Token> tokenList = new ArrayList<Token>();
+
+    // iterate over tokens and create token instances
+    char c = input.setIndex(0);
+    while (c != CharacterIterator.DONE) {
+
+      int tokenStart = input.getRunStart(JTok.CLASS_ANNO);
+      int tokenEnd = input.getRunLimit(JTok.CLASS_ANNO);
+      // check if c belongs to a token
+      String type = (String)input.getAnnotation(JTok.CLASS_ANNO);
+      if (null != type) {
+        // create new token instance
+        Token tok =
+          new Token(tokenStart,
+            tokenEnd,
+            type,
+            input.substring(tokenStart, tokenEnd));
+
+        // add token to token list
+        tokenList.add(tok);
+      }
+      // set iterator to next token
+      c = input.setIndex(tokenEnd);
+    }
+
+    // return paragraph list
+    return tokenList;
   }
 }
