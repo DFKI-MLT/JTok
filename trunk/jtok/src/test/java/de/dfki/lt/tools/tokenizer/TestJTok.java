@@ -157,7 +157,7 @@ public class TestJTok {
       throws IOException {
 
     this.compareResults(
-      "test/numbersTest.txt", "en",
+      "test/numbersTest.txt", "de",
       "expected-results/test/numbersTest-expected.txt");
   }
 
@@ -205,7 +205,7 @@ public class TestJTok {
       throws IOException {
 
     this.compareResults(
-      "test/specialCharactersTest.txt", "en",
+      "test/specialCharactersTest.txt", "de",
       "expected-results/test/specialCharactersTest-expected.txt");
   }
 
