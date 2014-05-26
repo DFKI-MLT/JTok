@@ -36,7 +36,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import de.dfki.lt.tools.tokenizer.output.Paragraph;
-import de.dfki.lt.tools.tokenizer.output.ParagraphOutputter;
+import de.dfki.lt.tools.tokenizer.output.Outputter;
 
 /**
  * Test class for {@link JTok}.
@@ -251,7 +251,7 @@ public class TestJTok {
     StringBuilder result = new StringBuilder();
     String newline = System.getProperty("line.separator");
     // print result as paragraphs with text units and tokens
-    for (Paragraph onePara : ParagraphOutputter.createParagraphs
+    for (Paragraph onePara : Outputter.createParagraphs
       (tokenizer.tokenize(input, lang))) {
       result.append(onePara.toString());
       result.append(newline);

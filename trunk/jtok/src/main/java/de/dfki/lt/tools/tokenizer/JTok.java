@@ -41,7 +41,7 @@ import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.exceptions.LanguageNotSupportedException;
 import de.dfki.lt.tools.tokenizer.exceptions.ProcessingException;
 import de.dfki.lt.tools.tokenizer.output.Paragraph;
-import de.dfki.lt.tools.tokenizer.output.ParagraphOutputter;
+import de.dfki.lt.tools.tokenizer.output.Outputter;
 import de.dfki.lt.tools.tokenizer.regexp.Match;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 
@@ -1143,7 +1143,7 @@ public class JTok {
       AnnotatedString result = testTok.tokenize(text, args[1]);
 
       // print result
-      for (Paragraph onePara : ParagraphOutputter.createParagraphs(result)) {
+      for (Paragraph onePara : Outputter.createParagraphs(result)) {
         System.out.println(onePara);
       }
     } catch (IOException e) {
