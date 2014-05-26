@@ -30,13 +30,13 @@ import de.dfki.lt.tools.tokenizer.JTok;
 import de.dfki.lt.tools.tokenizer.annotate.AnnotatedString;
 
 /**
- * {@link ParagraphOutputter} provides static methods that convert an
+ * {@link Outputter} provides static methods that convert an
  * {@link AnnotatedString} into a list of nested representation of
  * {@link Paragraph}s with {@link TextUnit}s and {@link Token}s.
  * 
  * @author Joerg Steffen, DFKI
  */
-public class ParagraphOutputter {
+public class Outputter {
 
   /**
    * Creates a list of {@link Paragraph}s with {@link TextUnit}s and
