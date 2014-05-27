@@ -33,53 +33,53 @@ import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 
 /**
- * Manages the content of a words description file.
+ * Manages the content of a token classes description file.
  *
  * @author Joerg Steffen, DFKI
  */
-public class WordsDescription
+public class TokenClassesDescription
     extends Description {
 
   /**
-   * Name of the all words rule.
+   * Name of the all classes rule.
    */
-  protected static final String ALL_RULE =
-    "ALL_WORDS_RULE";
+  protected static final String ALL_RULE = "ALL_CLASSES_RULE";
 
 
   /**
-   * Creates a new instance of {@link WordsDescription} for the words
-   * description contained in the given DOM document.
+   * Creates a new instance of {@link TokenClassesDescription} for the token
+   * classes description contained in the given DOM document.
    *
-   * @param wordsDescr
-   *          a DOM document with the words description
+   * @param tokClassesDescr
+   *          a DOM document with the token classes description
    * @param classes
    *          a set with the defined classes, used for validation
    * @exception InitializationException
    *              if an error occurs
    */
-  public WordsDescription(Document wordsDescr, Set<String> classes) {
+  public TokenClassesDescription(Document tokClassesDescr, Set<String> classes) {
 
     super.setDefinitionsMap(new HashMap<String, RegExp>());
     super.setRulesMap(new HashMap<String, RegExp>());
     super.setRegExpMap(new HashMap<RegExp, String>());
 
     // build the classes matcher map
-    super.loadDefinitions(wordsDescr, classes);
+    super.loadDefinitions(tokClassesDescr, classes);
     // build the rules matcher map
-    super.loadRules(wordsDescr);
-    this.createAllWordsRule(wordsDescr);
+    super.loadRules(tokClassesDescr);
+    this.createAllClassesRule(tokClassesDescr);
   }
 
 
   /**
-   * Create a rule that matches ALL words for which there are definitions.
+   * Create a rule that matches ALL token classes for which there are
+   * definitions.
    */
-  private void createAllWordsRule(Document wordsDescr) {
+  private void createAllClassesRule(Document classesDescr) {
 
     // get list of definitions
     NodeList defs =
-      this.getChild(wordsDescr.getDocumentElement(), DEFS).getChildNodes();
+      this.getChild(classesDescr.getDocumentElement(), DEFS).getChildNodes();
 
     StringBuilder ruleRegExpr = new StringBuilder();
 
