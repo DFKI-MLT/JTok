@@ -55,7 +55,7 @@ public class LanguageResource {
   /**
    * Contains the name suffix of the resource file with the classes hierarchy.
    */
-  private static final String CLASSES_HIERARCHY = "_classes.xml";
+  private static final String CLASSES_HIERARCHY = "_class_hierarchy.xml";
 
   /**
    * Contains the name suffix of the resource file with the punctuation
