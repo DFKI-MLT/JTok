@@ -158,8 +158,7 @@ Paragraph End: 506
     Token: "2"            	Type: DIGITAL	Start: 451	End: 452
     Token: "CDs"          	Type: TOKEN	Start: 453	End: 456
     Token: "und"          	Type: ALL_LOWER_CASE	Start: 457	End: 460
-    Token: "60"           	Type: DIGITAL	Start: 461	End: 463
-    Token: "-"            	Type: PUNCTUATION	Start: 463	End: 464
+    Token: "60-"          	Type: DIGITAL	Start: 461	End: 464
     Token: "Wochen"       	Type: FIRST_UPPER_CASE	Start: 465	End: 471
     Token: "-"            	Type: PUNCTUATION	Start: 471	End: 472
     Token: "Programm"     	Type: FIRST_UPPER_CASE	Start: 473	End: 481
