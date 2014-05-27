@@ -207,8 +207,8 @@ public class JTok {
     // identify abbreviations
     this.identifyAbbrev(input, langRes);
 
-    // identify words
-    this.identifyWords(input, langRes);
+    // identify token classes
+    this.identifyTokenClasses(input, langRes);
 
     // identify sentences and paragraphs
     this.identifyTus(input, langRes);
@@ -267,8 +267,8 @@ public class JTok {
 
   /**
    * Annotates the given input with the given key value pair at the given range.
-   * Also checks if a more specific annotation can be found using the words
-   * matcher.
+   * Also checks if a more specific annotation can be found using the token
+   * classes matcher.
    *
    * @param input
    *          the annotated string
@@ -290,15 +290,15 @@ public class JTok {
       AnnotatedString input, String key, Object value,
       int beginIndex, int endIndex, String image, LanguageResource langRes) {
 
-    // get matcher needed for words recognition
-    RegExp allWordsMatcher = langRes.getAllWordsMatcher();
+    // get matcher needed for token classes recognition
+    RegExp allClassesMatcher = langRes.getAllClassesMatcher();
 
-    if (allWordsMatcher.matches(image)) {
-      String wordClass =
+    if (allClassesMatcher.matches(image)) {
+      String tokenClass =
         this.identifyClass(image,
-          allWordsMatcher,
-          langRes.getWordsDescr());
-      input.annotate(key, wordClass, beginIndex, endIndex);
+          allClassesMatcher,
+          langRes.getClassesDescr());
+      input.annotate(key, tokenClass, beginIndex, endIndex);
     }
     else {
       input.annotate(key, value, beginIndex, endIndex);
@@ -787,7 +787,8 @@ public class JTok {
 
 
   /**
-   * Identifies words in the annotated token of the given annotated string.
+   * Identifies token classes in the annotated token of the given annotated
+   * string.
    *
    * @param input
    *          an annotated string
@@ -796,11 +797,11 @@ public class JTok {
    * @exception ProcessingException
    *              if an error occurs
    */
-  private void identifyWords(
+  private void identifyTokenClasses(
       AnnotatedString input, LanguageResource langRes) {
 
-    // get matcher needed for words recognition
-    RegExp allWordsMatcher = langRes.getAllWordsMatcher();
+    // get matcher needed for token classes recognition
+    RegExp allClassesMatcher = langRes.getAllClassesMatcher();
 
     // get the class of the root element of the class hierarchy;
     // only tokens with this class are further examined
@@ -833,14 +834,13 @@ public class JTok {
       // get the token content
       String image = input.substring(tokenStart, tokenEnd);
 
-      // check if token is a word
-      if (allWordsMatcher.matches(image)) {
-        String wordClass =
+      // check if token can be assigned a more specific class
+      if (allClassesMatcher.matches(image)) {
+        String tokenClass =
           this.identifyClass(image,
-            allWordsMatcher,
-            langRes.getWordsDescr());
-        input.annotate(CLASS_ANNO, wordClass,
-          tokenStart, tokenEnd);
+            allClassesMatcher,
+            langRes.getClassesDescr());
+        input.annotate(CLASS_ANNO, tokenClass, tokenStart, tokenEnd);
       }
     }
   }

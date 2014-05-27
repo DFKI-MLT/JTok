@@ -75,9 +75,10 @@ public class LanguageResource {
   private static final String ABBREV_DESCR = "_abbrev.xml";
 
   /**
-   * Contains the name suffix of the resource file with the words description.
+   * Contains the name suffix of the resource file with the token classes
+   * description.
    */
-  private static final String WORDS_DESCR = "_words.xml";
+  private static final String CLASS_DESCR = "_classes.xml";
 
 
   /**
@@ -118,9 +119,9 @@ public class LanguageResource {
   private AbbrevDescription abbrevDescr;
 
   /**
-   * Contains the words description.
+   * Contains the token classes description.
    */
-  private WordsDescription wordsDescr;
+  private TokenClassesDescription classesDescr;
 
 
   /**
@@ -142,7 +143,7 @@ public class LanguageResource {
     this.setPunctDescr(null);
     this.setClitDescr(null);
     this.setAbbrevDescr(null);
-    this.setWordsDescr(null);
+    this.setClassseDescr(null);
     this.language = lang;
     DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 
@@ -181,12 +182,12 @@ public class LanguageResource {
         (new AbbrevDescription(doc, this.getAncestorsMap().keySet(),
           resourceDir));
 
-      // load words description document
+      // load token classes description document
       doc = builder.parse(
         FileTools.openResourceFileAsStream(
-          Paths.get(resourceDir).resolve(lang + WORDS_DESCR).toString()));
-      this.setWordsDescr
-        (new WordsDescription(doc, this.getAncestorsMap().keySet()));
+          Paths.get(resourceDir).resolve(lang + CLASS_DESCR).toString()));
+      this.setClassseDescr
+        (new TokenClassesDescription(doc, this.getAncestorsMap().keySet()));
 
     } catch (SAXException spe) {
       throw new InitializationException(spe.getLocalizedMessage(), spe);
@@ -326,25 +327,25 @@ public class LanguageResource {
 
 
   /**
-   * Returns the words description.
+   * Returns the token classes description.
    *
-   * @return the words description
+   * @return the token classes description
    */
-  WordsDescription getWordsDescr() {
+  TokenClassesDescription getClassesDescr() {
 
-    return this.wordsDescr;
+    return this.classesDescr;
   }
 
 
   /**
-   * Sets the words description to the given parameter.
+   * Sets the token classes description to the given parameter.
    *
-   * @param wordsDescr
-   *          a words description
+   * @param classesDescr
+   *          a token classes description
    */
-  void setWordsDescr(WordsDescription wordsDescr) {
+  void setClassseDescr(TokenClassesDescription classesDescr) {
 
-    this.wordsDescr = wordsDescr;
+    this.classesDescr = classesDescr;
   }
 
 
@@ -549,13 +550,14 @@ public class LanguageResource {
 
 
   /**
-   * Returns the matcher for all words from the words description.
+   * Returns the matcher for all token classes from the token classes
+   * description.
    *
    * @return a regular expression
    */
-  RegExp getAllWordsMatcher() {
+  RegExp getAllClassesMatcher() {
 
-    return this.getWordsDescr().getRulesMap()
-      .get(WordsDescription.ALL_RULE);
+    return this.getClassesDescr().getRulesMap()
+      .get(TokenClassesDescription.ALL_RULE);
   }
 }
