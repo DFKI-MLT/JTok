@@ -75,11 +75,6 @@ public class LanguageResource {
   private static final String ABBREV_DESCR = "_abbrev.xml";
 
   /**
-   * Contains the name suffix of the resource file with the numbers description.
-   */
-  private static final String NUMB_DESCR = "_numbers.xml";
-
-  /**
    * Contains the name suffix of the resource file with the words description.
    */
   private static final String WORDS_DESCR = "_words.xml";
@@ -123,11 +118,6 @@ public class LanguageResource {
   private AbbrevDescription abbrevDescr;
 
   /**
-   * Contains the numbers description.
-   */
-  private NumbersDescription numbDescr;
-
-  /**
    * Contains the words description.
    */
   private WordsDescription wordsDescr;
@@ -152,7 +142,6 @@ public class LanguageResource {
     this.setPunctDescr(null);
     this.setClitDescr(null);
     this.setAbbrevDescr(null);
-    this.setNumbDescr(null);
     this.setWordsDescr(null);
     this.language = lang;
     DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -191,13 +180,6 @@ public class LanguageResource {
       this.setAbbrevDescr
         (new AbbrevDescription(doc, this.getAncestorsMap().keySet(),
           resourceDir));
-
-      // load numbers description document
-      doc = builder.parse(
-        FileTools.openResourceFileAsStream(
-          Paths.get(resourceDir).resolve(lang + NUMB_DESCR).toString()));
-      this.setNumbDescr
-        (new NumbersDescription(doc, this.getAncestorsMap().keySet()));
 
       // load words description document
       doc = builder.parse(
@@ -340,29 +322,6 @@ public class LanguageResource {
   void setAbbrevDescr(AbbrevDescription abbrevDescr) {
 
     this.abbrevDescr = abbrevDescr;
-  }
-
-
-  /**
-   * Returns the numbers description.
-   *
-   * @return the numbers description
-   */
-  NumbersDescription getNumbDescr() {
-
-    return this.numbDescr;
-  }
-
-
-  /**
-   * Sets the numbers description to the given parameter.
-   *
-   * @param numbDescr
-   *          a numbers description
-   */
-  void setNumbDescr(NumbersDescription numbDescr) {
-
-    this.numbDescr = numbDescr;
   }
 
 
@@ -586,42 +545,6 @@ public class LanguageResource {
   Set<String> getNonCapTerms() {
 
     return this.getAbbrevDescr().getNonCapTerms();
-  }
-
-
-  /**
-   * Returns the matcher for simple digits.
-   *
-   * @return a regular expression
-   */
-  RegExp getSimpleDigitsMatcher() {
-
-    return this.getNumbDescr().getRulesMap()
-      .get(NumbersDescription.SIMPLE_DIGITS_RULE);
-  }
-
-
-  /**
-   * Returns the matcher for ordinal numbers.
-   *
-   * @return a regular expression
-   */
-  RegExp getOrdinalMatcher() {
-
-    return this.getNumbDescr().getRulesMap()
-      .get(NumbersDescription.ORDINAL_RULE);
-  }
-
-
-  /**
-   * Returns the matcher for the digits.
-   *
-   * @return a regular expression
-   */
-  RegExp getDigitsMatcher() {
-
-    return this.getNumbDescr().getRulesMap()
-      .get(NumbersDescription.DIGITS_RULE);
   }
 
 

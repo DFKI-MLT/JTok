@@ -202,7 +202,7 @@ public class JTok {
     this.identifyClitics(input, langRes);
 
     // identify numbers
-    this.identifyNumbers(input, langRes);
+//    this.identifyNumbers(input, langRes);
 
     // identify abbreviations
     this.identifyAbbrev(input, langRes);
@@ -244,8 +244,9 @@ public class JTok {
       if (Character.isWhitespace(c) || (c == '\u00a0')) {
         if (tokenFound) {
           // annotate newly identified token
-          input.annotate(CLASS_ANNO, rootClass,
-            tokenStart, input.getIndex());
+          this.annotate(
+            input, CLASS_ANNO, rootClass, tokenStart, input.getIndex(),
+            input.substring(tokenStart, input.getIndex()), langRes);
           tokenFound = false;
         }
       }
@@ -257,8 +258,50 @@ public class JTok {
     }
     // annotate last token
     if (tokenFound) {
-      input.annotate(CLASS_ANNO, rootClass,
-        tokenStart, input.getIndex());
+      this.annotate(
+        input, CLASS_ANNO, rootClass, tokenStart, input.getIndex(),
+        input.substring(tokenStart, input.getIndex()), langRes);
+    }
+  }
+
+
+  /**
+   * Annotates the given input with the given key value pair at the given range.
+   * Also checks if a more specific annotation can be found using the words
+   * matcher.
+   *
+   * @param input
+   *          the annotated string
+   * @param key
+   *          the annotation key
+   * @param value
+   *          the annotation value
+   * @param beginIndex
+   *          the index of the first character of the range
+   * @param endIndex
+   *          the index of the character following the last character of the
+   *          range
+   * @param image
+   *          the surface image
+   * @param langRes
+   *          the language resource to use
+   */
+  private void annotate(
+      AnnotatedString input, String key, Object value,
+      int beginIndex, int endIndex, String image, LanguageResource langRes) {
+
+    // get matcher needed for words recognition
+    RegExp allWordsMatcher = langRes.getAllWordsMatcher();
+
+    if (allWordsMatcher.matches(image)) {
+      String wordClass =
+        this.identifyClass(image,
+          allWordsMatcher,
+          langRes.getWordsDescr());
+      input.annotate(key, wordClass, beginIndex, endIndex);
+    }
+    else {
+      input.annotate(key, value, beginIndex, endIndex);
     }
   }
 
@@ -283,6 +326,11 @@ public class JTok {
     RegExp nbrMatcher = langRes.getNbrMatcher();
     RegExp nblMatcher = langRes.getNblMatcher();
 
+    // get the class of the root element of the class hierarchy;
+    // only tokens with this type are further examined
+    String rootClass =
+      langRes.getClassesRoot().getTagName();
+
     // iterate over tokens
     char c = input.setIndex(0);
     // move to first non-whitespace
@@ -302,6 +350,12 @@ public class JTok {
 
       // get class of token
       String tokClass = (String)input.getAnnotation(CLASS_ANNO);
+      // only check tokens with the most general class
+      if (tokClass != rootClass) {
+        c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
+        continue;
+      }
+
       // get the start index of the token
       int tokenStart = input.getIndex();
       // set iterator to next non-whitespace token
@@ -328,7 +382,6 @@ public class JTok {
         // check if we have some non-punctuation before the current
         // punctuation
         if (index != oneMatch.getStartIndex()) {
-
           // check for internal punctuation:
           if (internalMatcher.matches(oneMatch.getImage())) {
             // punctuation is internal;
@@ -612,98 +665,6 @@ public class JTok {
         input.annotate(CLASS_ANNO, rootClass,
           tokenStart + startIndex,
           tokenStart + endIndex);
-      }
-    }
-  }
-
-
-  /**
-   * Identifies numbers in the annotated token of the given annotated string.
-   *
-   * @param input
-   *          an annotated string
-   * @param langRes
-   *          the language resource to use
-   * @exception ProcessingException
-   *              if an error occurs
-   */
-  private void identifyNumbers(
-      AnnotatedString input, LanguageResource langRes) {
-
-    // get matcher needed for number recognition
-    RegExp simpleDigitsMatcher = langRes.getSimpleDigitsMatcher();
-    RegExp ordinalMatcher = langRes.getOrdinalMatcher();
-    RegExp digitsMatcher = langRes.getDigitsMatcher();
-
-    // get the class of the root element of the class hierarchy;
-    // only tokens with this class are further examined
-    String rootClass =
-      langRes.getClassesRoot().getTagName();
-
-    // iterate over tokens
-    char c = input.setIndex(0);
-    // move to first non-whitespace
-    if (null == input.getAnnotation(CLASS_ANNO)) {
-      c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
-    }
-    while (c != CharacterIterator.DONE) {
-
-      // get the end index of the token c belongs to
-      int tokenEnd = input.getRunLimit(CLASS_ANNO);
-      // get class of token
-      String tokClass = (String)input.getAnnotation(CLASS_ANNO);
-      // only check tokens with the most general class
-      if (tokClass != rootClass) {
-        c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
-        continue;
-      }
-
-      // get the start index of the token
-      int tokenStart = input.getIndex();
-      // set iterator to next non-whitespace token
-      c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
-
-      // get the token content
-      String image = input.substring(tokenStart, tokenEnd);
-
-      // check if token contains digits
-      if (null != simpleDigitsMatcher.contains(image)) {
-        // check if token is ordinal number
-        if (ordinalMatcher.matches(image)) {
-          String ordClass =
-            this.identifyClass(image, ordinalMatcher, langRes.getNumbDescr());
-          input.annotate(CLASS_ANNO, ordClass, tokenStart, tokenEnd);
-          continue;
-        }
-        // initialize flag that indicates if a period was found at the
-        // end of the image
-        boolean periodFlag = false;
-        // cut period from token and check if the rest is a number
-        if ('.' == image.charAt(image.length() - 1)) {
-          periodFlag = true;
-          image = image.substring(0, image.length() - 1);
-          tokenEnd--;
-        }
-        // check if token is a digit
-        if (digitsMatcher.matches(image)) {
-          String numbClass =
-            this.identifyClass(image, digitsMatcher, langRes.getNumbDescr());
-          // if image is preceded by a '+' or '-', consider it part of the
-          // digit
-          if (tokenStart > 0
-              && (input.charAt(tokenStart - 1) == '-'
-                  || input.charAt(tokenStart - 1) == '+')) {
-            tokenStart--;
-          }
-          input.annotate(CLASS_ANNO, numbClass, tokenStart, tokenEnd);
-          // if period was cut off, annotate it now
-          if (periodFlag) {
-            String punctClass =
-              this.identifyClass(".", null, langRes.getPunctDescr());
-            input.annotate(CLASS_ANNO, punctClass,
-              tokenEnd, tokenEnd + 1);
-          }
-        }
       }
     }
   }
