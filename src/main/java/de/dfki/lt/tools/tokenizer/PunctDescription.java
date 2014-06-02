@@ -42,50 +42,52 @@ public class PunctDescription
   /**
    * Name of the all punctuation rule.
    */
-  protected static final String ALL_RULE =
-    "ALL_PUNCT_RULE";
+  protected static final String ALL_RULE = "ALL_PUNCT_RULE";
 
   /**
    * Name of the internal punctuation rule.
    */
-  protected static final String INTERNAL_RULE =
-    "INTERNAL_PUNCT_RULE";
+  protected static final String INTERNAL_RULE = "INTERNAL_PUNCT_RULE";
 
   /**
    * Name of the sentence internal punctuation rule.
    */
-  protected static final String INTERNAL_TU_RULE =
-    "INTERNAL_TU_PUNCT_RULE";
+  protected static final String INTERNAL_TU_RULE = "INTERNAL_TU_PUNCT_RULE";
 
   /**
    * Class name for ambiguous open/close punctuation.
    */
-  protected static final String OPEN_CLOSE_PUNCT =
-    "OPENCLOSE_PUNCT";
+  protected static final String OPEN_CLOSE_PUNCT = "OPENCLOSE_PUNCT";
 
   /**
    * Class name for opening punctuation.
    */
-  public static final String OPEN_PUNCT =
-    "OPEN_PUNCT";
+  public static final String OPEN_PUNCT = "OPEN_PUNCT";
 
   /**
    * Class name for closing punctuation.
    */
-  public static final String CLOSE_PUNCT =
-    "CLOSE_PUNCT";
+  public static final String CLOSE_PUNCT = "CLOSE_PUNCT";
 
   /**
    * Class name for opening brackets.
    */
-  public static final String OPEN_BRACKET =
-    "OPEN_BRACKET";
+  public static final String OPEN_BRACKET = "OPEN_BRACKET";
 
   /**
    * Class name for closing brackets.
    */
-  public static final String CLOSE_BRACKET =
-    "CLOSE_BRACKET";
+  public static final String CLOSE_BRACKET = "CLOSE_BRACKET";
+
+  /**
+   * Class name for terminal punctuation.
+   */
+  public static final String TERM_PUNCT = "TERM_PUNCT";
+
+  /**
+   * Class name for possible terminal punctuation.
+   */
+  public static final String TERM_PUNCT_P = "TERM_PUNCT_P";
 
 
   /**

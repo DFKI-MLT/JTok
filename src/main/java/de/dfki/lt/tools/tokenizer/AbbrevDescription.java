@@ -49,6 +49,10 @@ public class AbbrevDescription
    */
   protected static final String ALL_RULE = "ALL_RULE";
 
+  /**
+   * Class name for breaking abbreviation.
+   */
+  public static final String B_ABBREVIATION = "B_ABBREVIATION";
 
   /**
    * Contains the most common terms that only start with a capital letter when

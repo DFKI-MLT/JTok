@@ -672,7 +672,7 @@ public class JTok {
       this.identifyClass(punct.getImage(), regExp, langRes.getPunctDescr());
     // check if we have an ambiguous open/close punctuation; if
     // yes, resolve it
-    if (oneClass.equals(PunctDescription.OPEN_CLOSE_PUNCT)) {
+    if (langRes.isAncestor(PunctDescription.OPEN_CLOSE_PUNCT, oneClass)) {
 
       int nextIndex = punct.getEndIndex();
       if ((nextIndex >= image.length())
@@ -813,13 +813,17 @@ public class JTok {
           // if we find terminal punctuation or closing brackets,
           // continue with the current sentence
           if (langRes.isAncestor(
-              "TERM_PUNCT", (String)input.getAnnotation(CLASS_ANNO))
+              PunctDescription.TERM_PUNCT,
+              (String)input.getAnnotation(CLASS_ANNO))
               || langRes.isAncestor(
-                "TERM_PUNCT_P", (String)input.getAnnotation(CLASS_ANNO))
+                PunctDescription.TERM_PUNCT_P,
+                (String)input.getAnnotation(CLASS_ANNO))
               || langRes.isAncestor(
-                "CLOSE_PUNCT", (String)input.getAnnotation(CLASS_ANNO))
+                PunctDescription.CLOSE_PUNCT,
+                (String)input.getAnnotation(CLASS_ANNO))
               || langRes.isAncestor(
-                "CLOSE_BRACKET", (String)input.getAnnotation(CLASS_ANNO))) {
+                PunctDescription.CLOSE_BRACKET,
+                (String)input.getAnnotation(CLASS_ANNO))) {
             // do nothing
           }
           // if we find a lower case letter or a punctuation that can
@@ -841,7 +845,8 @@ public class JTok {
           String image = input.substring(tokenStart, tokenEnd);
           if (langRes.getNonCapTerms().contains(image)
             || langRes.isAncestor(
-              "OPEN_PUNCT", (String)input.getAnnotation(CLASS_ANNO))) {
+              PunctDescription.OPEN_PUNCT,
+              (String)input.getAnnotation(CLASS_ANNO))) {
             // there is a term that only starts with a capital letter at the
             // beginning of a sentence OR
             // an opening punctuation;
@@ -856,28 +861,34 @@ public class JTok {
         }
         else {
           // check if token is a end-of-sentence marker
-          if (langRes.isAncestor
-              ("TERM_PUNCT", (String)input.getAnnotation(CLASS_ANNO))
+          if (langRes.isAncestor(
+              PunctDescription.TERM_PUNCT,
+              (String)input.getAnnotation(CLASS_ANNO))
               || langRes.isAncestor(
-                "TERM_PUNCT_P", (String)input.getAnnotation(CLASS_ANNO))) {
+                PunctDescription.TERM_PUNCT_P,
+                (String)input.getAnnotation(CLASS_ANNO))) {
             // check if next token is a whitespace or a sentence
             // continuing token
             input.setIndex(tokenEnd);
             if (null == input.getAnnotation(CLASS_ANNO)
               || langRes.isAncestor(
-              "TERM_PUNCT", (String)input.getAnnotation(CLASS_ANNO))
+              PunctDescription.TERM_PUNCT,
+              (String)input.getAnnotation(CLASS_ANNO))
               || langRes.isAncestor(
-                "TERM_PUNCT_P", (String)input.getAnnotation(CLASS_ANNO))
+                PunctDescription.TERM_PUNCT_P,
+                (String)input.getAnnotation(CLASS_ANNO))
               || langRes.isAncestor(
-                "CLOSE_PUNCT", (String)input.getAnnotation(CLASS_ANNO))
+                PunctDescription.CLOSE_PUNCT,
+                (String)input.getAnnotation(CLASS_ANNO))
               || langRes.isAncestor(
-                "CLOSE_BRACKET", (String)input.getAnnotation(CLASS_ANNO))) {
+                PunctDescription.CLOSE_BRACKET,
+                (String)input.getAnnotation(CLASS_ANNO))) {
               eosMode = true;
             }
           }
           // check if token is a breaking abbreviation
           else if (langRes.isAncestor
-            ("B_ABBREVIATION",
+            (AbbrevDescription.B_ABBREVIATION,
               (String)input.getAnnotation(CLASS_ANNO))) {
             abbrevMode = true;
           }
