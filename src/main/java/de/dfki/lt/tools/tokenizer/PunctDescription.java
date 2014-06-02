@@ -53,18 +53,6 @@ public class PunctDescription
     "INTERNAL_PUNCT_RULE";
 
   /**
-   * Name of the non-breaking left punctuation rule.
-   */
-  protected static final String NON_BREAK_LEFT_RULE =
-    "NON_BREAKING_LEFT_PUNCT_RULE";
-
-  /**
-   * Name of the non-breaking right punctuation rule.
-   */
-  protected static final String NON_BREAK_RIGHT_RULE =
-    "NON_BREAKING_RIGHT_PUNCT_RULE";
-
-  /**
    * Name of the sentence internal punctuation rule.
    */
   protected static final String INTERNAL_TU_RULE =
