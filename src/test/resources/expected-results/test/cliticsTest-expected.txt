@@ -94,12 +94,12 @@ Paragraph Start: 138
 Paragraph End: 151
   Text Unit Start: 138
   Text Unit End: 151
-    Token: "@"            	Type: PUNCTUATION	Start: 138	End: 139
+    Token: "@"            	Type: AT	Start: 138	End: 139
     Token: "O'Brain"      	Type: TOKEN	Start: 139	End: 146
     Token: "'s"           	Type: RIGHTSPLIT	Start: 146	End: 148
-    Token: "."            	Type: TERM_PUNCT_P	Start: 148	End: 149
-    Token: "."            	Type: TERM_PUNCT_P	Start: 149	End: 150
-    Token: "."            	Type: TERM_PUNCT_P	Start: 150	End: 151
+    Token: "."            	Type: PERIOD	Start: 148	End: 149
+    Token: "."            	Type: PERIOD	Start: 149	End: 150
+    Token: "."            	Type: PERIOD	Start: 150	End: 151
 
 Paragraph Start: 155
 Paragraph End: 164
@@ -125,49 +125,49 @@ Paragraph End: 212
   Text Unit Start: 191
   Text Unit End: 212
     Token: "Rock'n'Roll.Genial"	Type: TOKEN	Start: 191	End: 209
-    Token: "."            	Type: TERM_PUNCT_P	Start: 209	End: 210
-    Token: "."            	Type: TERM_PUNCT_P	Start: 210	End: 211
-    Token: "."            	Type: TERM_PUNCT_P	Start: 211	End: 212
+    Token: "."            	Type: PERIOD	Start: 209	End: 210
+    Token: "."            	Type: PERIOD	Start: 210	End: 211
+    Token: "."            	Type: PERIOD	Start: 211	End: 212
 
 Paragraph Start: 216
 Paragraph End: 228
   Text Unit Start: 216
   Text Unit End: 228
     Token: "Rock'n'Roll"  	Type: TOKEN	Start: 216	End: 227
-    Token: "."            	Type: TERM_PUNCT_P	Start: 227	End: 228
+    Token: "."            	Type: PERIOD	Start: 227	End: 228
 
 Paragraph Start: 232
 Paragraph End: 249
   Text Unit Start: 232
   Text Unit End: 249
     Token: "sull'avvenimento"	Type: TOKEN	Start: 232	End: 248
-    Token: "."            	Type: TERM_PUNCT_P	Start: 248	End: 249
+    Token: "."            	Type: PERIOD	Start: 248	End: 249
 
 Paragraph Start: 253
 Paragraph End: 275
   Text Unit Start: 253
   Text Unit End: 275
-    Token: "@"            	Type: PUNCTUATION	Start: 253	End: 254
+    Token: "@"            	Type: AT	Start: 253	End: 254
     Token: "Rock'n'Roll.Genial"	Type: TOKEN	Start: 254	End: 272
-    Token: "."            	Type: TERM_PUNCT_P	Start: 272	End: 273
-    Token: "."            	Type: TERM_PUNCT_P	Start: 273	End: 274
-    Token: "."            	Type: TERM_PUNCT_P	Start: 274	End: 275
+    Token: "."            	Type: PERIOD	Start: 272	End: 273
+    Token: "."            	Type: PERIOD	Start: 273	End: 274
+    Token: "."            	Type: PERIOD	Start: 274	End: 275
 
 Paragraph Start: 279
 Paragraph End: 292
   Text Unit Start: 279
   Text Unit End: 292
-    Token: "@"            	Type: PUNCTUATION	Start: 279	End: 280
+    Token: "@"            	Type: AT	Start: 279	End: 280
     Token: "Rock'n'Roll"  	Type: TOKEN	Start: 280	End: 291
-    Token: "."            	Type: TERM_PUNCT_P	Start: 291	End: 292
+    Token: "."            	Type: PERIOD	Start: 291	End: 292
 
 Paragraph Start: 296
 Paragraph End: 314
   Text Unit Start: 296
   Text Unit End: 314
-    Token: "@"            	Type: PUNCTUATION	Start: 296	End: 297
+    Token: "@"            	Type: AT	Start: 296	End: 297
     Token: "sull'avvenimento"	Type: TOKEN	Start: 297	End: 313
-    Token: "."            	Type: TERM_PUNCT_P	Start: 313	End: 314
+    Token: "."            	Type: PERIOD	Start: 313	End: 314
 
 Paragraph Start: 318
 Paragraph End: 421
@@ -176,9 +176,9 @@ Paragraph End: 421
     Token: "Informazioni" 	Type: FIRST_UPPER_CASE	Start: 318	End: 330
     Token: "su"           	Type: ALL_LOWER_CASE	Start: 331	End: 333
     Token: "Police"       	Type: FIRST_UPPER_CASE	Start: 334	End: 340
-    Token: "-"            	Type: PUNCTUATION	Start: 341	End: 342
+    Token: "-"            	Type: HYPHEN	Start: 341	End: 342
     Token: "Sting"        	Type: FIRST_UPPER_CASE	Start: 343	End: 348
-    Token: "."            	Type: TERM_PUNCT_P	Start: 348	End: 349
+    Token: "."            	Type: PERIOD	Start: 348	End: 349
   Text Unit Start: 350
   Text Unit End: 421
     Token: "Testi"        	Type: FIRST_UPPER_CASE	Start: 350	End: 355

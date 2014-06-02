@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This defines the class hierarchy for English -->
+<!-- This defines the class hierarchy for English. -->
+<!-- Token classes not listed here are assumed to be -->
+<!-- direct children of the root token class. -->
 
 <!-- hierarchy root token -->
 <TOKEN>
@@ -30,22 +32,88 @@
   <!-- punctuation -->
   <PUNCTUATION>
     <!-- terminal punctuation -->
-    <TERM_PUNCT/>
+    <TERM_PUNCT>
+      <EXCLAM/>
+      <QUEST/>
+    </TERM_PUNCT>
+    
     <!-- possible terminal punctuation -->
-    <TERM_PUNCT_P/>
+    <TERM_PUNCT_P>
+      <PERIOD/>
+    </TERM_PUNCT_P>
+    
     <!-- opening punctuation -->
-    <OPEN_PUNCT/>
+    <OPEN_PUNCT>
+      <OINF/>
+      <RSQUOTE_L/>
+      <OGUILLEMET/>
+      <ODQUO1/>
+      <ODQUO2/>
+      <ODQUO3/>
+      <OSQUO1/>
+      <OSQUO2/>
+      <OSQUO3/>
+      <OSAQUO/>
+    </OPEN_PUNCT>
+    
     <!-- closing punctuation -->
-    <CLOSE_PUNCT/>
-    <!-- opening and closing punctuation -->
-    <OPENCLOSE_PUNCT/>
+    <CLOSE_PUNCT>
+      <CSUP/>
+      <CGUILLEMET/>
+      <CDQUO/>
+      <CSQUO/>
+      <CSAQUO/>
+    </CLOSE_PUNCT>
+    
+    <!-- ambigue opening and closing punctuation -->
+    <OPENCLOSE_PUNCT>
+      <OCQUOTE/>
+      <RSQUOTE_R/>
+    </OPENCLOSE_PUNCT>
+    
     <!-- opening bracket -->
-    <OPEN_BRACKET/>
+    <OPEN_BRACKET>
+      <OPAR/>
+      <OPAR2/>
+      <OCROCHE/>
+    </OPEN_BRACKET>
+    
     <!-- closing bracket -->
-    <CLOSE_BRACKET/>
+    <CLOSE_BRACKET>
+      <CPAR/>
+      <CPAR2/>
+      <CCROCHE/>
+    </CLOSE_BRACKET>
+    
+    <!-- other punctuation -->
+    <SPECIAL_INT/>
+    <LT/>
+    <GT/>
+    <EQ/>
+    <OCHYPHEN/>
+    <FIGDASH/>
+    <ENDASH/>
+    <EMDASH/>
+    <HBAR/>
+    <BULLET/>
+    <PERCENT/>
+    <TM/>
+    <SECTION/>
+    <HYPHEN/>
+    <SCOLON/>
+    <COLON/>
+    <COMMA/>
+    <SLASH/>
+    <BSLASH/>
+    <PIPE/>
+    <STAR/>
+    <TILDE/>
+    <AMP/>
+    <AT/>
   </PUNCTUATION>
 
-  <!-- abbreviations with a final period -->
+  <!-- abbreviations in which the final period could also -->
+  <!-- function as end-of-sentence -->
   <ABBREVIATION>
     <!-- breaking abbreviation, words which are -->
     <!-- abbreviated when they appear at the end of a sentence, --> 
@@ -58,19 +126,8 @@
       <!-- an abbreviation which is a title, thus followed by -->
       <!-- a proper name -->
       <TITLE/>
-      <!-- an abbreviation which is composed with only one -->
-      <!-- upper-case letter -->
-      <INITIAL/>
     </NB_ABBREVIATION>
   </ABBREVIATION>
-  
-  <!-- words -->
-  <WORD>
-    <EMAIL/>
-    <ALL_LOWER_CASE/>
-    <ALL_UPPER_CASE/>
-    <FIRST_UPPER_CASE/>
-  </WORD>
 
 </TOKEN>
   
