@@ -164,30 +164,25 @@ public class LanguageResource {
       doc = builder.parse(
         FileTools.openResourceFileAsStream(
           Paths.get(resourceDir).resolve(lang + PUNCT_DESCR).toString()));
-      this.setPunctDescr
-        (new PunctDescription(doc, this.getAncestorsMap().keySet()));
+      this.setPunctDescr(new PunctDescription(doc));
 
       // load clitics description document
       doc = builder.parse(
         FileTools.openResourceFileAsStream(
           Paths.get(resourceDir).resolve(lang + CLITIC_DESCR).toString()));
-      this.setClitDescr
-        (new CliticsDescription(doc, this.getAncestorsMap().keySet()));
+      this.setClitDescr(new CliticsDescription(doc));
 
       // load abbreviation description document
       doc = builder.parse(
         FileTools.openResourceFileAsStream(
           Paths.get(resourceDir).resolve(lang + ABBREV_DESCR).toString()));
-      this.setAbbrevDescr
-        (new AbbrevDescription(doc, this.getAncestorsMap().keySet(),
-          resourceDir));
+      this.setAbbrevDescr(new AbbrevDescription(doc, resourceDir));
 
       // load token classes description document
       doc = builder.parse(
         FileTools.openResourceFileAsStream(
           Paths.get(resourceDir).resolve(lang + CLASS_DESCR).toString()));
-      this.setClassseDescr
-        (new TokenClassesDescription(doc, this.getAncestorsMap().keySet()));
+      this.setClassseDescr(new TokenClassesDescription(doc));
 
     } catch (SAXException spe) {
       throw new InitializationException(spe.getLocalizedMessage(), spe);
@@ -418,8 +413,9 @@ public class LanguageResource {
 
     List<String> ancestors = this.getAncestorsMap().get(class2);
     if (null == ancestors) {
-      throw new ProcessingException(
-        String.format("undefined token class %s", class2));
+      // if there is explicit entry in the classes hierarchy, it is assumed
+      // that the token is a direct child of the root
+      return class1.equals(this.classesRootName);
     }
     return ancestors.contains(class1);
   }

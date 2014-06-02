@@ -63,15 +63,13 @@ public class AbbrevDescription
    *
    * @param abbrDescr
    *          a DOM document with the abbreviation description
-   * @param classes
-   *          a set with the defined classes, used for validation
    * @param resourceDir
    *          the name of the resource directory
    * @exception InitializationException
    *              if an error occurs
    */
   public AbbrevDescription(
-      Document abbrDescr, Set<String> classes, String resourceDir) {
+      Document abbrDescr, String resourceDir) {
 
     super.setDefinitionsMap(new HashMap<String, RegExp>());
     super.setRulesMap(new HashMap<String, RegExp>());
@@ -79,9 +77,9 @@ public class AbbrevDescription
     super.setClassMembersMap(new HashMap<String, Set<String>>());
 
     // build the lists map
-    super.loadLists(abbrDescr, classes, resourceDir);
+    super.loadLists(abbrDescr, resourceDir);
     // build the classes matcher map
-    super.loadDefinitions(abbrDescr, classes);
+    super.loadDefinitions(abbrDescr);
     // build the rules matcher map
     super.loadRules(abbrDescr);
     this.createAllAbbreviationsRule(abbrDescr);

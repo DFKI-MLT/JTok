@@ -23,7 +23,6 @@
 package de.dfki.lt.tools.tokenizer;
 
 import java.util.HashMap;
-import java.util.Set;
 
 import org.w3c.dom.Document;
 
@@ -57,19 +56,17 @@ public class CliticsDescription
    *
    * @param clitDescr
    *          a DOM document with the clitics description
-   * @param classes
-   *          a set with the defined classes, used for validation
    * @exception InitializationException
    *              if an error occurs
    */
-  public CliticsDescription(Document clitDescr, Set<String> classes) {
+  public CliticsDescription(Document clitDescr) {
 
     super.setDefinitionsMap(new HashMap<String, RegExp>());
     super.setRulesMap(new HashMap<String, RegExp>());
     super.setRegExpMap(new HashMap<RegExp, String>());
 
     // build the classes matcher map
-    super.loadDefinitions(clitDescr, classes);
+    super.loadDefinitions(clitDescr);
     // build the rules matcher map
     super.loadRules(clitDescr);
   }

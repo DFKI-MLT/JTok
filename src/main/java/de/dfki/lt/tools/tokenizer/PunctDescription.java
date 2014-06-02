@@ -23,7 +23,6 @@
 package de.dfki.lt.tools.tokenizer;
 
 import java.util.HashMap;
-import java.util.Set;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -95,19 +94,17 @@ public class PunctDescription
    *
    * @param punctDescr
    *          a DOM document with the punctuation description
-   * @param classes
-   *          a set with the defined classes, used for validation
    * @exception InitializationException
    *              if an error occurs
    */
-  public PunctDescription(Document punctDescr, Set<String> classes) {
+  public PunctDescription(Document punctDescr) {
 
     super.setDefinitionsMap(new HashMap<String, RegExp>());
     super.setRulesMap(new HashMap<String, RegExp>());
     super.setRegExpMap(new HashMap<RegExp, String>());
 
     // build the classes matcher map
-    super.loadDefinitions(punctDescr, classes);
+    super.loadDefinitions(punctDescr);
     // build the rules matcher map
     super.loadRules(punctDescr);
     this.createAllPunctuationRule(punctDescr);

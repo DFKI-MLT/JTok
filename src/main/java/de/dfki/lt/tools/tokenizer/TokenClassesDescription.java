@@ -23,7 +23,6 @@
 package de.dfki.lt.tools.tokenizer;
 
 import java.util.HashMap;
-import java.util.Set;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -52,19 +51,17 @@ public class TokenClassesDescription
    *
    * @param tokClassesDescr
    *          a DOM document with the token classes description
-   * @param classes
-   *          a set with the defined classes, used for validation
    * @exception InitializationException
    *              if an error occurs
    */
-  public TokenClassesDescription(Document tokClassesDescr, Set<String> classes) {
+  public TokenClassesDescription(Document tokClassesDescr) {
 
     super.setDefinitionsMap(new HashMap<String, RegExp>());
     super.setRulesMap(new HashMap<String, RegExp>());
     super.setRegExpMap(new HashMap<RegExp, String>());
 
     // build the classes matcher map
-    super.loadDefinitions(tokClassesDescr, classes);
+    super.loadDefinitions(tokClassesDescr);
     // build the rules matcher map
     super.loadRules(tokClassesDescr);
     this.createAllClassesRule(tokClassesDescr);
