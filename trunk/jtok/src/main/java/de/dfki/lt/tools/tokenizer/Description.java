@@ -241,13 +241,11 @@ public abstract class Description {
    *
    * @param descrDoc
    *          a DOM document with a description
-   * @param classes
-   *          a set with the defined classes, used for validation
    * @exception InitializationException
    *              if definitions description contains illegal regular expression
    *              or undefined classes
    */
-  protected void loadDefinitions(Document descrDoc, Set<String> classes) {
+  protected void loadDefinitions(Document descrDoc) {
 
     // get list of definitions
     NodeList defs =
@@ -271,11 +269,6 @@ public abstract class Description {
       // if there is no class for a definition, ignore it
       if (className.length() == 0) {
         continue;
-      }
-      // throw exception if class is unknown
-      if (!classes.contains(className)) {
-        throw new InitializationException(
-          String.format("undefined class %s in definitions", className));
       }
       // get regular expression string
       String regExpr = oneDef.getAttribute(DEF_REGEXP);
@@ -383,15 +376,13 @@ public abstract class Description {
    *
    * @param descrDoc
    *          a DOM document with a description
-   * @param classes
-   *          a set with the defined classes, used for validation
    * @param resourceDir
    *          the name of the resource directory
    * @exception InitializationException
    *              if lists description contains undefined classes or file
    */
   protected void loadLists(
-      Document descrDoc, Set<String> classes, String resourceDir) {
+      Document descrDoc, String resourceDir) {
 
     // get list of list elements
     NodeList lists =
@@ -407,11 +398,6 @@ public abstract class Description {
       Element oneList = (Element)oneObj;
       // get class
       String className = oneList.getAttribute(DEF_CLASS);
-      // throw exception if class is unknown
-      if (!classes.contains(className)) {
-        throw new InitializationException(
-          String.format("undefined class %s in lists", className));
-      }
       // get file location
       String fileName = oneList.getAttribute(LIST_FILE);
       // get file encoding
