@@ -282,19 +282,22 @@ Paragraph Start: 304
 Paragraph End: 311
   Text Unit Start: 304
   Text Unit End: 311
-    Token: "@sdfsdf"      	Type: TOKEN	Start: 304	End: 311
+    Token: "@"            	Type: PUNCTUATION	Start: 304	End: 305
+    Token: "sdfsdf"       	Type: ALL_LOWER_CASE	Start: 305	End: 311
 
 Paragraph Start: 315
 Paragraph End: 332
   Text Unit Start: 315
   Text Unit End: 332
-    Token: "@sdf.sdfsdf.sdfsf"	Type: TOKEN	Start: 315	End: 332
+    Token: "@"            	Type: PUNCTUATION	Start: 315	End: 316
+    Token: "sdf.sdfsdf.sdfsf"	Type: TOKEN	Start: 316	End: 332
 
 Paragraph Start: 336
 Paragraph End: 357
   Text Unit Start: 336
   Text Unit End: 357
-    Token: "@sdf.sdfsdf.sdfsf"	Type: TOKEN	Start: 336	End: 353
+    Token: "@"            	Type: PUNCTUATION	Start: 336	End: 337
+    Token: "sdf.sdfsdf.sdfsf"	Type: TOKEN	Start: 337	End: 353
     Token: "!"            	Type: TERM_PUNCT	Start: 353	End: 354
     Token: "abc"          	Type: ALL_LOWER_CASE	Start: 354	End: 357
 
@@ -330,12 +333,9 @@ Paragraph End: 415
 Paragraph Start: 419
 Paragraph End: 425
   Text Unit Start: 419
-  Text Unit End: 423
-    Token: "L.A."         	Type: B_ABBREVIATION	Start: 419	End: 423
-  Text Unit Start: 423
   Text Unit End: 425
-    Token: "'"            	Type: OPEN_PUNCT	Start: 423	End: 424	PTB: "``"
-    Token: "s"            	Type: ALL_LOWER_CASE	Start: 424	End: 425
+    Token: "L.A."         	Type: B_ABBREVIATION	Start: 419	End: 423
+    Token: "'s"           	Type: RIGHTSPLIT	Start: 423	End: 425
 
 Paragraph Start: 429
 Paragraph End: 432
