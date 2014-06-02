@@ -198,17 +198,8 @@ public class JTok {
     // identify punctuation
     this.identifyPunct(input, langRes);
 
-    // identify clitics
-    this.identifyClitics(input, langRes);
-
-    // identify numbers
-//    this.identifyNumbers(input, langRes);
-
     // identify abbreviations
     this.identifyAbbrev(input, langRes);
-
-    // identify token classes
-    this.identifyTokenClasses(input, langRes);
 
     // identify sentences and paragraphs
     this.identifyTus(input, langRes);
@@ -266,6 +257,356 @@ public class JTok {
 
 
   /**
+   * Identifies punctuations in the annotated tokens of the given annotated
+   * string
+   *
+   * @param input
+   *          an annotated string
+   * @param langRes
+   *          the language resource to use
+   * @exception ProcessingException
+   *              if an error occurs
+   */
+  private void identifyPunct(
+      AnnotatedString input, LanguageResource langRes) {
+
+    // get the matchers needed
+    RegExp allPunctMatcher = langRes.getAllPunctMatcher();
+    RegExp internalMatcher = langRes.getInternalMatcher();
+
+    // get the class of the root element of the class hierarchy;
+    // only tokens with this type are further examined
+    String rootClass =
+      langRes.getClassesRoot().getTagName();
+
+    // iterate over tokens
+    char c = input.setIndex(0);
+    // move to first non-whitespace
+    if (null == input.getAnnotation(CLASS_ANNO)) {
+      c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
+    }
+    while (c != CharacterIterator.DONE) {
+
+      // only check tokens
+      if (null == input.getAnnotation(CLASS_ANNO)) {
+        c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
+        continue;
+      }
+
+      // get class of token
+      String tokClass = (String)input.getAnnotation(CLASS_ANNO);
+      // only check tokens with the most general class
+      if (tokClass != rootClass) {
+        c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
+        continue;
+      }
+
+      // save the next token start position;
+      // required because the input index might be changed later in this method
+      int nextTokenStart = input.findNextAnnotation(CLASS_ANNO);
+
+      // get the start index of the token
+      int tokenStart = input.getIndex();
+      // get the end index of the token c belongs to
+      int tokenEnd = input.getRunLimit(CLASS_ANNO);
+      // get the token content
+      String image = input.substring(tokenStart, tokenEnd);
+
+      // split punctuation on the left and right side of the token
+      this.splitPunctuation(input, langRes);
+
+      // split clitics from left and right side of the token
+      this.splitClitics(input, langRes);
+
+      // update the start index of the token
+      tokenStart = input.getIndex();
+      // update the end index of the token c belongs to
+      tokenEnd = input.getRunLimit(CLASS_ANNO);
+      // update the token content
+      image = input.substring(tokenStart, tokenEnd);
+      // update current token annotation
+      tokClass = (String)input.getAnnotation(CLASS_ANNO);
+      // only check tokens with the most general class
+      if (tokClass != rootClass) {
+        c = input.setIndex(nextTokenStart);
+        continue;
+      }
+
+      // use the all rule to split image in parts consisting of
+      // punctuation and non-punctuation
+      List<Match> matches = allPunctMatcher.getAllMatches(image);
+      // if there is no punctuation just continue
+      if (0 == matches.size()) {
+        c = input.setIndex(nextTokenStart);
+        continue;
+      }
+
+      // this is the relative start position of current token within
+      // the image
+      int index = 0;
+      // iterator over matches
+      for (int i = 0; i < matches.size(); i++) {
+        // get next match
+        Match oneMatch = matches.get(i);
+
+        // check if we have some non-punctuation before the current
+        // punctuation
+        if (index != oneMatch.getStartIndex()) {
+          // check for internal punctuation:
+          if (internalMatcher.matches(oneMatch.getImage())) {
+            // punctuation is internal;
+            // check for right context
+            if (this.hasRightContextEnd(oneMatch, matches, image, i)) {
+              // token not complete yet
+              continue;
+            }
+          }
+
+          // we have a breaking punctuation; create token for
+          // non-punctuation before the current punctuation
+          this.annotate(input, CLASS_ANNO, tokClass,
+            tokenStart + index,
+            tokenStart + oneMatch.getStartIndex(),
+            image.substring(index, oneMatch.getStartIndex()), langRes);
+          index = oneMatch.getStartIndex();
+        }
+
+        // punctuation is not internal:
+        // get the class of the punctuation and create token for it
+        String punctClass =
+          this.identifyPunctClass(
+            oneMatch, null, image, langRes);
+        input.annotate(CLASS_ANNO, punctClass,
+          tokenStart + index,
+          tokenStart + oneMatch.getEndIndex());
+        index = oneMatch.getEndIndex();
+      }
+
+      // cleanup after all matches have been processed
+      if (index != image.length()) {
+        // create a token from rest of image
+        this.annotate(input, CLASS_ANNO, tokClass,
+          tokenStart + index,
+          tokenStart + image.length(),
+          image.substring(index), langRes);
+      }
+
+      // set iterator to next non-whitespace token
+      c = input.setIndex(nextTokenStart);
+    }
+  }
+
+
+  /**
+   * Splits punctuation from the left and right side of the token if possible.
+   *
+   * @param input
+   *          the annotate string
+   * @param langRes
+   *          the language resource to use
+   */
+  private void splitPunctuation(
+      AnnotatedString input, LanguageResource langRes) {
+
+    // get the matchers needed
+    RegExp allPunctMatcher = langRes.getAllPunctMatcher();
+
+    // get the class of the root element of the class hierarchy;
+    // only tokens with this type are further examined
+    String rootClass = langRes.getClassesRoot().getTagName();
+
+    // get the start index of the token
+    int tokenStart = input.getIndex();
+    // get the end index of the token
+    int tokenEnd = input.getRunLimit(CLASS_ANNO);
+    // get the token content
+    String image = input.substring(tokenStart, tokenEnd);
+    // get current token annotation
+    String tokClass = (String)input.getAnnotation(CLASS_ANNO);
+
+    // check for punctuation at the beginning of the token
+    Match startMatch = allPunctMatcher.starts(image);
+    while (null != startMatch) {
+      // create token for punctuation
+      String punctClass =
+        this.identifyPunctClass(startMatch, null, image, langRes);
+      input.annotate(CLASS_ANNO, punctClass,
+        tokenStart + startMatch.getStartIndex(),
+        tokenStart + startMatch.getEndIndex());
+      tokenStart = tokenStart + startMatch.getEndIndex();
+      image = input.substring(tokenStart, tokenEnd);
+      input.setIndex(tokenStart);
+      if (image.length() > 0) {
+        this.annotate(input, CLASS_ANNO, tokClass,
+          tokenStart, tokenEnd, image, langRes);
+        tokClass = (String)input.getAnnotation(CLASS_ANNO);
+        if (tokClass != rootClass) {
+          // the remaining token could be matched with a non-root class,
+          // so stop splitting punctuation
+          break;
+        }
+        startMatch = allPunctMatcher.starts(image);
+      }
+      else {
+        startMatch = null;
+      }
+    }
+
+    // check for punctuation at the end of the token
+    Match endMatch = allPunctMatcher.ends(image);
+    while (null != endMatch) {
+      // create token for punctuation
+      String punctClass =
+        this.identifyPunctClass(endMatch, null, image, langRes);
+      input.annotate(CLASS_ANNO, punctClass,
+        tokenStart + endMatch.getStartIndex(),
+        tokenStart + endMatch.getEndIndex());
+      tokenEnd = tokenStart + endMatch.getStartIndex();
+      image = input.substring(tokenStart, tokenEnd);
+      if (image.length() > 0) {
+        this.annotate(input, CLASS_ANNO, tokClass,
+          tokenStart, tokenEnd, image, langRes);
+        tokClass = (String)input.getAnnotation(CLASS_ANNO);
+        if (tokClass != rootClass) {
+          // the remaining token could be matched with a non-root class,
+          // so stop splitting punctuation
+          break;
+        }
+        endMatch = allPunctMatcher.ends(image);
+      }
+      else {
+        endMatch = null;
+      }
+    }
+  }
+
+
+  /**
+   * Splits pro- and enclitics from the left and right side of the token if
+   * possible.
+   *
+   * @param input
+   *          the annotate string
+   * @param langRes
+   *          the language resource to use
+   */
+  private void splitClitics(
+      AnnotatedString input, LanguageResource langRes) {
+
+    // get matchers needed for clitics recognition
+    RegExp proclitMatcher = langRes.getProcliticsMatcher();
+    RegExp enclitMatcher = langRes.getEncliticsMatcher();
+
+    // get the class of the root element of the class hierarchy;
+    // only tokens with this type are further examined
+    String rootClass = langRes.getClassesRoot().getTagName();
+
+    // get the start index of the token
+    int tokenStart = input.getIndex();
+    // get the end index of the token c belongs to
+    int tokenEnd = input.getRunLimit(CLASS_ANNO);
+    // get the token content
+    String image = input.substring(tokenStart, tokenEnd);
+    // get current token annotation
+    String tokClass = (String)input.getAnnotation(CLASS_ANNO);
+
+    // check for proclitics
+    Match proclit = proclitMatcher.starts(image);
+    // create token for proclitic
+    while (null != proclit) {
+      String clitClass =
+        this.identifyClass(
+          proclit.getImage(), proclitMatcher, langRes.getClitDescr());
+      input.annotate(CLASS_ANNO, clitClass,
+        tokenStart + proclit.getStartIndex(),
+        tokenStart + proclit.getEndIndex());
+      tokenStart = tokenStart + proclit.getEndIndex();
+      image = input.substring(tokenStart, tokenEnd);
+      input.setIndex(tokenStart);
+      if (image.length() > 0) {
+        this.annotate(input, CLASS_ANNO, tokClass,
+          tokenStart, tokenEnd, image, langRes);
+        tokClass = (String)input.getAnnotation(CLASS_ANNO);
+        if (tokClass != rootClass) {
+          // the remaining token could be matched with a non-root class,
+          // so stop splitting proclitics
+          break;
+        }
+        proclit = proclitMatcher.starts(image);
+      }
+      else {
+        proclit = null;
+      }
+    }
+
+    // check for enclitics
+    Match enclit = enclitMatcher.ends(image);
+    while (null != enclit) {
+      // create tokens for enclitic
+      String clitClass =
+        this.identifyClass(
+          enclit.getImage(), enclitMatcher, langRes.getClitDescr());
+      input.annotate(CLASS_ANNO, clitClass,
+        tokenStart + enclit.getStartIndex(),
+        tokenStart + enclit.getEndIndex());
+      tokenEnd = tokenStart + enclit.getStartIndex();
+      image = input.substring(tokenStart, tokenEnd);
+      if (image.length() > 0) {
+        this.annotate(input, CLASS_ANNO, tokClass,
+          tokenStart, tokenEnd, image, langRes);
+        tokClass = (String)input.getAnnotation(CLASS_ANNO);
+        if (tokClass != rootClass) {
+          // the remaining token could be matched with a non-root class,
+          // so stop splitting enclitics
+          break;
+        }
+        enclit = enclitMatcher.ends(image);
+      }
+      else {
+        enclit = null;
+      }
+    }
+  }
+
+
+  /**
+   * Returns {@code true} if there is a right context after the punctuation
+   * matched by the given match or {@code false} when there is no right context.
+   *
+   * @param oneMatch
+   *          a match matching a punctuation
+   * @param matches
+   *          a list of all punctuation matching matches
+   * @param i
+   *          the index of the match in the matches list
+   * @param image
+   *          the string on which the punctuation matchers have been applied
+   * @return a flag indicating if there is a right context
+   */
+  private boolean hasRightContextEnd(
+      Match oneMatch, List<Match> matches, String image, int i) {
+
+    if (i < (matches.size() - 1)) {
+      // there is another punctuation later in the image
+      Match nextMatch = matches.get(i + 1);
+      if (nextMatch.getStartIndex() != oneMatch.getEndIndex()) {
+        // there is some right context and punctuation
+        // following the internal punctuation
+        return true;
+      }
+      return false;
+    }
+    else if (oneMatch.getEndIndex() != image.length()) {
+      // there is right context after the internal punctuation
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
+
+  /**
    * Annotates the given input with the given key value pair at the given range.
    * Also checks if a more specific annotation can be found using the token
    * classes matcher.
@@ -307,185 +648,6 @@ public class JTok {
 
 
   /**
-   * Identifies punctuations in the annotated tokens of the given annotated
-   * string
-   *
-   * @param input
-   *          an annotated string
-   * @param langRes
-   *          the language resource to use
-   * @exception ProcessingException
-   *              if an error occurs
-   */
-  private void identifyPunct(
-      AnnotatedString input, LanguageResource langRes) {
-
-    // get the matchers needed
-    RegExp allPunctMatcher = langRes.getAllPunctMatcher();
-    RegExp internalMatcher = langRes.getInternalMatcher();
-    RegExp nbrMatcher = langRes.getNbrMatcher();
-    RegExp nblMatcher = langRes.getNblMatcher();
-
-    // get the class of the root element of the class hierarchy;
-    // only tokens with this type are further examined
-    String rootClass =
-      langRes.getClassesRoot().getTagName();
-
-    // iterate over tokens
-    char c = input.setIndex(0);
-    // move to first non-whitespace
-    if (null == input.getAnnotation(CLASS_ANNO)) {
-      c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
-    }
-    while (c != CharacterIterator.DONE) {
-
-      // get the end index of the token c belongs to
-      int tokenEnd = input.getRunLimit(CLASS_ANNO);
-
-      // only check tokens
-      if (null == input.getAnnotation(CLASS_ANNO)) {
-        c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
-        continue;
-      }
-
-      // get class of token
-      String tokClass = (String)input.getAnnotation(CLASS_ANNO);
-      // only check tokens with the most general class
-      if (tokClass != rootClass) {
-        c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
-        continue;
-      }
-
-      // get the start index of the token
-      int tokenStart = input.getIndex();
-      // set iterator to next non-whitespace token
-      c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
-
-      // get the token content
-      String image = input.substring(tokenStart, tokenEnd);
-      // use the all rule to split image in parts consisting of
-      // punctuation and non-punctuation
-      List<Match> matches = allPunctMatcher.getAllMatches(image);
-      // if there is no punctuation just continue
-      if (0 == matches.size()) {
-        continue;
-      }
-
-      // this is the relative start position of current token within
-      // the image
-      int index = 0;
-      // iterator over matches
-      for (int i = 0; i < matches.size(); i++) {
-        // get next match
-        Match oneMatch = matches.get(i);
-
-        // check if we have some non-punctuation before the current
-        // punctuation
-        if (index != oneMatch.getStartIndex()) {
-          // check for internal punctuation:
-          if (internalMatcher.matches(oneMatch.getImage())) {
-            // punctuation is internal;
-            // check for right context
-            if (this.isRightContextEnd(oneMatch, matches, image, i)) {
-              // token not complete yet
-              continue;
-            }
-          }
-
-          // check for non-breaking right punctuation:
-          if (nbrMatcher.matches(oneMatch.getImage())) {
-            // punctuation is non-breaking right, so annotate new
-            // token
-            input.annotate(CLASS_ANNO, tokClass,
-              tokenStart + index,
-              tokenStart + oneMatch.getEndIndex());
-            index = oneMatch.getEndIndex();
-            continue;
-          }
-
-          // we have a breaking punctuation; create token for
-          // non-punctuation before the current punctuation
-          input.annotate(CLASS_ANNO, tokClass,
-            tokenStart + index,
-            tokenStart + oneMatch.getStartIndex());
-          index = oneMatch.getStartIndex();
-        }
-        else {
-          // there is no non-punctuation before this punctuation
-
-          // check for non-breaking left punctuation:
-          if (nblMatcher.matches(oneMatch.getImage())) {
-            // punctuation is non-breaking left
-            // check for right context
-            if (this.isRightContextEnd(oneMatch, matches, image, i)) {
-              // token not complete yet
-              continue;
-            }
-          }
-        }
-
-        // punctuation is not internal and not non-breaking left- or
-        // right: get the class of the punctuation and create token
-        // for it
-        String punctClass =
-          this.identifyPunctClass(
-            oneMatch, null, image, langRes);
-        input.annotate(CLASS_ANNO, punctClass,
-          tokenStart + index,
-          tokenStart + oneMatch.getEndIndex());
-        index = oneMatch.getEndIndex();
-      }
-
-      // cleanup after all matches have been processed
-      if (index != image.length()) {
-        // create a token from rest of image
-        input.annotate(CLASS_ANNO, tokClass,
-          tokenStart + index,
-          tokenStart + image.length());
-      }
-    }
-  }
-
-
-  /**
-   * Returns {@code true} if there is a right context after the punctuation
-   * matched by the given match or {@code false} when there is no right context.
-   *
-   * @param oneMatch
-   *          a match matching a punctuation
-   * @param matches
-   *          a list of all punctuation matching matches
-   * @param i
-   *          the index of the match in the matches list
-   * @param image
-   *          the string on which the punctuation matchers have been applied
-   * @return a flag indicating if there is a right context
-   */
-  private boolean isRightContextEnd(
-      Match oneMatch, List<Match> matches, String image, int i) {
-
-    if (i < (matches.size() - 1)) {
-      // there is another punctuation later in the image
-      Match nextMatch = matches.get(i + 1);
-      if (nextMatch.getStartIndex() != oneMatch.getEndIndex()) {
-        // there is some right context and punctuation
-        // following the internal punctuation
-        return true;
-      }
-      return false;
-    }
-    else if (oneMatch.getEndIndex() != image.length()) {
-      // there is right context after the internal
-      // punctuation
-      return true;
-    }
-    else {
-      return false;
-    }
-  }
-
-
-  /**
    * Checks the class of a punctuation and returns the corresponding class name
    * for annotation.
    *
@@ -495,7 +657,7 @@ public class JTok {
    *          the regular expression that found the punctuation as a match,
    *          {@code null} if punctuation wasn't found via a regular expression
    * @param image
-   *          a string with the input
+   *          a string with the original token containing the punctuation
    * @param langRes
    *          a language resource that contains everything needed for
    *          identifying the class
@@ -531,150 +693,8 @@ public class JTok {
 
 
   /**
-   * Identifies clitics and splits them from the annotated tokens of the given
-   * annotated string.
-   *
-   * @param input
-   *          an annotated string
-   * @param langRes
-   *          the language resource to use
-   * @exception ProcessingException
-   *              if an error occurs
-   */
-  private void identifyClitics(
-      AnnotatedString input, LanguageResource langRes) {
-
-    // get matchers needed for clitics recognition
-    RegExp proclitMatcher = langRes.getProcliticsMatcher();
-    RegExp enclitMatcher = langRes.getEncliticsMatcher();
-    RegExp nbrMatcher = langRes.getNbrMatcher();
-    RegExp nblMatcher = langRes.getNblMatcher();
-
-    // get the class of the root element of the class hierarchy;
-    // only tokens with this type are further examined
-    String rootClass =
-      langRes.getClassesRoot().getTagName();
-
-    // iterate over tokens
-    char c = input.setIndex(0);
-    // move to first non-whitespace
-    if (null == input.getAnnotation(CLASS_ANNO)) {
-      c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
-    }
-    while (c != CharacterIterator.DONE) {
-
-      // get the end index of the token c belongs to
-      int tokenEnd = input.getRunLimit(CLASS_ANNO);
-      // get class of token
-      String tokClass = (String)input.getAnnotation(CLASS_ANNO);
-      // only check tokens with the most general class
-      if (tokClass != rootClass) {
-        c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
-        continue;
-      }
-
-      // get the start index of the token
-      int tokenStart = input.getIndex();
-      // set iterator to next non-whitespace token
-      c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
-
-      // get the token content
-      String image = input.substring(tokenStart, tokenEnd);
-
-      // keep track of the start and end index of the non-clitic part
-      // of the image
-      int startIndex = 0;
-      int endIndex = image.length();
-
-      // proclitics:
-      // check for non-breaking left punctuation; these
-      // have to be cut before proclitics check
-      Match nbl = nblMatcher.starts(image);
-      Match proclit = null;
-      if (null != nbl) {
-        proclit = proclitMatcher.starts(
-          image.substring(nbl.getEndIndex(), endIndex));
-      }
-      else {
-        proclit = proclitMatcher.starts(image);
-      }
-
-      // if there is a proclitic, create a token for possible
-      // non-breaking left punctuation
-      if ((null != nbl) && (null != proclit)) {
-        String punctClass =
-          this.identifyPunctClass(nbl, nblMatcher, image, langRes);
-        input.annotate(CLASS_ANNO, punctClass,
-          tokenStart + nbl.getStartIndex(),
-          tokenStart + nbl.getEndIndex());
-        startIndex = nbl.getEndIndex();
-      }
-
-      // create tokens for proclitics
-      while (null != proclit) {
-        String clitClass =
-          this.identifyClass(
-            proclit.getImage(), proclitMatcher, langRes.getClitDescr());
-        input.annotate(CLASS_ANNO, clitClass,
-          tokenStart + startIndex + proclit.getStartIndex(),
-          tokenStart + startIndex + proclit.getEndIndex());
-        startIndex = startIndex + proclit.getEndIndex();
-        proclit =
-          proclitMatcher.starts(image.substring(
-            startIndex, image.length()));
-      }
-
-      // enclitics:
-      // check for non-breaking right punctuation; these
-      // have to be cut before enclitics check
-      Match nbr = nbrMatcher.ends(image);
-      Match enclit = null;
-      if (null != nbr) {
-        enclit = enclitMatcher.ends(
-          image.substring(startIndex, nbr.getStartIndex()));
-      }
-      else {
-        enclit = enclitMatcher.ends(
-          image.substring(startIndex, endIndex));
-      }
-
-      // if there is an enclitic, create a token for possible
-      // non-breaking right punctuation
-      if ((null != nbr) && (null != enclit)) {
-        String punctClass =
-          this.identifyPunctClass(nbr, nbrMatcher, image, langRes);
-        input.annotate(CLASS_ANNO, punctClass,
-          tokenStart + nbr.getStartIndex(),
-          tokenStart + nbr.getEndIndex());
-      }
-      // create tokens for enclitics
-      while (null != enclit) {
-        String clitClass =
-          this.identifyClass(
-            enclit.getImage(), enclitMatcher, langRes.getClitDescr());
-        input.annotate(CLASS_ANNO, clitClass,
-          tokenStart + startIndex + enclit.getStartIndex(),
-          tokenStart + startIndex + enclit.getEndIndex());
-        endIndex = startIndex + enclit.getStartIndex();
-        enclit =
-          enclitMatcher.ends(image.substring(startIndex, endIndex));
-      }
-
-      // create token for remaining stuff between pro- and enclitics
-      if (startIndex != endIndex) {
-        input.annotate(CLASS_ANNO, rootClass,
-          tokenStart + startIndex,
-          tokenStart + endIndex);
-      }
-    }
-  }
-
-
-  /**
    * Identifies abbreviations in the annotated token of the given annotated
-   * string. Candidates are tokens with a non-breaking right punctuation that
-   * starts with a period. If the token with that period is identified as an
-   * abbreviation, the rest of the punctuation is split of.
+   * string. Candidates are tokens with a followed by a period.
    *
    * @param input
    *          an annotated string
@@ -687,17 +707,11 @@ public class JTok {
       AnnotatedString input, LanguageResource langRes) {
 
     // get matchers needed for abbreviation recognition
-    RegExp nbrMatcher = langRes.getNbrMatcher();
     RegExp allAbbrevMatcher = langRes.getAllAbbrevMatcher();
 
     // get map with abbreviation lists
     Map<String, Set<String>> abbrevLists =
       langRes.getAbbrevLists();
-
-    // get the class of the root element of the class hierarchy;
-    // only tokens with this class are further examined
-    String rootClass =
-      langRes.getClassesRoot().getTagName();
 
     // iterate over tokens
     char c = input.setIndex(0);
@@ -709,28 +723,18 @@ public class JTok {
 
       // get the end index of the token c belongs to
       int tokenEnd = input.getRunLimit(CLASS_ANNO);
-      // get class of token
-      String tokClass = (String)input.getAnnotation(CLASS_ANNO);
-      // only check tokens with the most general class
-      if (tokClass != rootClass) {
-        c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
-        continue;
-      }
 
       // get the start index of the token
       int tokenStart = input.getIndex();
       // set iterator to next non-whitespace token
       c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
 
-      // get the token content
-      String image = input.substring(tokenStart, tokenEnd);
-      // check if token contains a non-breaking right punctuation that
-      // consists of a single period
-      Match nbr = nbrMatcher.ends(image);
-      if ((null != nbr)
-          && ((nbr.getEndIndex() - nbr.getStartIndex()) == 1)
-          && (input.charAt(tokenStart + nbr.getStartIndex()) == '.')) {
-        // found an abbreviation candidate
+      // if the next token is a period immediately following the current token,
+      // we have found a candidate for an abbreviation
+      if (c == '.' && tokenEnd == input.getIndex()) {
+        // get the token content WITH the following period
+        tokenEnd = tokenEnd + 1;
+        String image = input.substring(tokenStart, tokenEnd);
 
         // if the abbreviation contains a hyphen, it's sufficient to check
         // the part after the hyphen
@@ -749,9 +753,7 @@ public class JTok {
           Set<String> oneList = oneEntry.getValue();
           if (oneList.contains(image)) {
             // annotate abbreviation
-            input.annotate(CLASS_ANNO, abbrevClass,
-              tokenStart,
-              tokenStart + nbr.getEndIndex());
+            input.annotate(CLASS_ANNO, abbrevClass, tokenStart, tokenEnd);
             // stop looking for this abbreviation
             found = true;
             break;
@@ -767,80 +769,9 @@ public class JTok {
             this.identifyClass(image,
               allAbbrevMatcher,
               langRes.getAbbrevDescr());
-          input.annotate(CLASS_ANNO, abbrevClass,
-            tokenStart,
-            tokenStart + nbr.getEndIndex());
+          input.annotate(CLASS_ANNO, abbrevClass, tokenStart, tokenEnd);
           continue;
         }
-
-        // if token is no abbreviation, split non-breaking right
-        // punctuation
-        String punctClass =
-          this.identifyPunctClass(nbr, nbrMatcher, image, langRes);
-        // annotate
-        input.annotate(CLASS_ANNO, punctClass,
-          tokenStart + nbr.getStartIndex(),
-          tokenStart + nbr.getEndIndex());
-      }
-    }
-  }
-
-
-  /**
-   * Identifies token classes in the annotated token of the given annotated
-   * string.
-   *
-   * @param input
-   *          an annotated string
-   * @param langRes
-   *          the language resource to use
-   * @exception ProcessingException
-   *              if an error occurs
-   */
-  private void identifyTokenClasses(
-      AnnotatedString input, LanguageResource langRes) {
-
-    // get matcher needed for token classes recognition
-    RegExp allClassesMatcher = langRes.getAllClassesMatcher();
-
-    // get the class of the root element of the class hierarchy;
-    // only tokens with this class are further examined
-    String rootClass =
-      langRes.getClassesRoot().getTagName();
-
-    // iterate over tokens
-    char c = input.setIndex(0);
-    // move to first non-whitespace
-    if (null == input.getAnnotation(CLASS_ANNO)) {
-      c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
-    }
-    while (c != CharacterIterator.DONE) {
-
-      // get the end index of the token c belongs to
-      int tokenEnd = input.getRunLimit(CLASS_ANNO);
-      // get class of token
-      String tokClass = (String)input.getAnnotation(CLASS_ANNO);
-      // only check tokens with the most general class
-      if (tokClass != rootClass) {
-        c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
-        continue;
-      }
-
-      // get the start index of the token
-      int tokenStart = input.getIndex();
-      // set iterator to next non-whitespace token
-      c = input.setIndex(input.findNextAnnotation(CLASS_ANNO));
-
-      // get the token content
-      String image = input.substring(tokenStart, tokenEnd);
-
-      // check if token can be assigned a more specific class
-      if (allClassesMatcher.matches(image)) {
-        String tokenClass =
-          this.identifyClass(image,
-            allClassesMatcher,
-            langRes.getClassesDescr());
-        input.annotate(CLASS_ANNO, tokenClass, tokenStart, tokenEnd);
       }
     }
   }

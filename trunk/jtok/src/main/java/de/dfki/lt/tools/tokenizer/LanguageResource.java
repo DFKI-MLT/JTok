@@ -438,32 +438,6 @@ public class LanguageResource {
 
 
   /**
-   * Returns the matcher for non-breaking right punctuation from the punctuation
-   * description.
-   *
-   * @return a regular expression
-   */
-  RegExp getNbrMatcher() {
-
-    return this.getPunctDescr().getRulesMap()
-      .get(PunctDescription.NON_BREAK_RIGHT_RULE);
-  }
-
-
-  /**
-   * Returns the matcher for non-breaking left punctuation from the punctuation
-   * description.
-   *
-   * @return a regular expression
-   */
-  RegExp getNblMatcher() {
-
-    return this.getPunctDescr().getRulesMap()
-      .get(PunctDescription.NON_BREAK_LEFT_RULE);
-  }
-
-
-  /**
    * Returns the matcher for internal punctuation from the punctuation
    * description.
    *
