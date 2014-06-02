@@ -5,7 +5,7 @@ Paragraph End: 21
     Token: "5."           	Type: ORDINAL	Start: 0	End: 2
     Token: "Aufl."        	Type: B_ABBREVIATION	Start: 3	End: 8
     Token: "2000"         	Type: DIGITAL	Start: 9	End: 13
-    Token: "."            	Type: TERM_PUNCT_P	Start: 13	End: 14
+    Token: "."            	Type: PERIOD	Start: 13	End: 14
   Text Unit Start: 15
   Text Unit End: 21
     Token: "920"          	Type: DIGITAL	Start: 15	End: 18
@@ -42,7 +42,7 @@ Paragraph End: 104
   Text Unit Start: 93
   Text Unit End: 104
     Token: "1990"         	Type: DIGITAL	Start: 93	End: 97
-    Token: "-"            	Type: PUNCTUATION	Start: 98	End: 99
+    Token: "-"            	Type: HYPHEN	Start: 98	End: 99
     Token: "2000"         	Type: DIGITAL	Start: 100	End: 104
 
 Paragraph Start: 108
@@ -175,13 +175,13 @@ Paragraph Start: 338
 Paragraph End: 431
   Text Unit Start: 338
   Text Unit End: 431
-    Token: "("            	Type: OPEN_BRACKET	Start: 338	End: 339	PTB: "-LRB-"
+    Token: "("            	Type: OPAR	Start: 338	End: 339
     Token: "SffFontStart1"	Type: TOKEN	Start: 339	End: 352
-    Token: ")"            	Type: CLOSE_BRACKET	Start: 352	End: 353	PTB: "-RRB-"
+    Token: ")"            	Type: CPAR	Start: 352	End: 353
     Token: "364/419.01,419.07,419.1,419.11,419.12,419.05,419.08,419.3,419.19"	Type: TOKEN	Start: 353	End: 417	PTB: "364\/419.01,419.07,419.1,419.11,419.12,419.05,419.08,419.3,419.19"
-    Token: "("            	Type: OPEN_BRACKET	Start: 417	End: 418	PTB: "-LRB-"
+    Token: "("            	Type: OPAR	Start: 417	End: 418
     Token: "SffFontClose" 	Type: TOKEN	Start: 418	End: 430
-    Token: ")"            	Type: CLOSE_BRACKET	Start: 430	End: 431	PTB: "-RRB-"
+    Token: ")"            	Type: CPAR	Start: 430	End: 431
 
 Paragraph Start: 435
 Paragraph End: 455
@@ -266,7 +266,7 @@ Paragraph End: 639
   Text Unit Start: 630
   Text Unit End: 639
     Token: "2001"         	Type: DIGITAL	Start: 630	End: 634
-    Token: "\"            	Type: PUNCTUATION	Start: 634	End: 635
+    Token: "\"            	Type: BSLASH	Start: 634	End: 635
     Token: "2002"         	Type: DIGITAL	Start: 635	End: 639
 
 Paragraph Start: 643
@@ -292,7 +292,7 @@ Paragraph End: 693
   Text Unit Start: 689
   Text Unit End: 693
     Token: "100"          	Type: DIGITAL	Start: 689	End: 692
-    Token: "%"            	Type: PUNCTUATION	Start: 692	End: 693
+    Token: "%"            	Type: PERCENT	Start: 692	End: 693
 
 Paragraph Start: 697
 Paragraph End: 704
@@ -332,7 +332,7 @@ Paragraph Start: 742
 Paragraph End: 747
   Text Unit Start: 742
   Text Unit End: 747
-    Token: "©"            	Type: PUNCTUATION	Start: 742	End: 743
+    Token: "©"            	Type: TM	Start: 742	End: 743
     Token: "1992"         	Type: DIGITAL	Start: 743	End: 747
 
 Paragraph Start: 751
@@ -346,13 +346,13 @@ Paragraph End: 770
   Text Unit Start: 760
   Text Unit End: 770
     Token: "1940-1990"    	Type: DIGITAL	Start: 760	End: 769
-    Token: "|"            	Type: PUNCTUATION	Start: 769	End: 770
+    Token: "|"            	Type: PIPE	Start: 769	End: 770
 
 Paragraph Start: 782
 Paragraph End: 784
   Text Unit Start: 782
   Text Unit End: 784
-    Token: "<"            	Type: PUNCTUATION	Start: 782	End: 783
+    Token: "<"            	Type: LT	Start: 782	End: 783
     Token: "1"            	Type: DIGITAL	Start: 783	End: 784
 
 Paragraph Start: 788
@@ -360,7 +360,7 @@ Paragraph End: 797
   Text Unit Start: 788
   Text Unit End: 797
     Token: "3,5"          	Type: DIGITAL	Start: 788	End: 791
-    Token: ","            	Type: PUNCTUATION	Start: 791	End: 792
+    Token: ","            	Type: COMMA	Start: 791	End: 792
     Token: "1991"         	Type: DIGITAL	Start: 793	End: 797
 
 Paragraph Start: 801
@@ -386,14 +386,14 @@ Paragraph End: 825
   Text Unit Start: 821
   Text Unit End: 825
     Token: "100"          	Type: DIGITAL	Start: 821	End: 824
-    Token: "."            	Type: TERM_PUNCT_P	Start: 824	End: 825
+    Token: "."            	Type: PERIOD	Start: 824	End: 825
 
 Paragraph Start: 829
 Paragraph End: 835
   Text Unit Start: 829
   Text Unit End: 835
     Token: "ab100"        	Type: TOKEN	Start: 829	End: 834
-    Token: "."            	Type: TERM_PUNCT_P	Start: 834	End: 835
+    Token: "."            	Type: PERIOD	Start: 834	End: 835
 
 Paragraph Start: 839
 Paragraph End: 844
@@ -401,21 +401,21 @@ Paragraph End: 844
   Text Unit End: 844
     Token: "$"            	Type: LEFTSPLIT	Start: 839	End: 840
     Token: "500"          	Type: DIGITAL	Start: 840	End: 843
-    Token: "."            	Type: TERM_PUNCT_P	Start: 843	End: 844
+    Token: "."            	Type: PERIOD	Start: 843	End: 844
 
 Paragraph Start: 848
 Paragraph End: 852
   Text Unit Start: 848
   Text Unit End: 852
     Token: "10½"          	Type: FRACTION	Start: 848	End: 851
-    Token: "."            	Type: TERM_PUNCT_P	Start: 851	End: 852
+    Token: "."            	Type: PERIOD	Start: 851	End: 852
 
 Paragraph Start: 856
 Paragraph End: 868
   Text Unit Start: 856
   Text Unit End: 868
     Token: "Dec.25.1954"  	Type: TOKEN	Start: 856	End: 867
-    Token: "."            	Type: TERM_PUNCT_P	Start: 867	End: 868
+    Token: "."            	Type: PERIOD	Start: 867	End: 868
 
 Paragraph Start: 872
 Paragraph End: 875
@@ -441,7 +441,7 @@ Paragraph End: 902
   Text Unit End: 902
     Token: "$"            	Type: LEFTSPLIT	Start: 893	End: 894
     Token: "1"            	Type: DIGITAL	Start: 894	End: 895
-    Token: "="            	Type: PUNCTUATION	Start: 895	End: 896
+    Token: "="            	Type: EQ	Start: 895	End: 896
     Token: "4.6615"       	Type: DIGITAL	Start: 896	End: 902
 
 Paragraph Start: 907

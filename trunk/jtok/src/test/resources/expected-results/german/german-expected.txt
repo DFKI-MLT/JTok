@@ -18,7 +18,7 @@ Paragraph End: 763
     Token: "als"          	Type: ALL_LOWER_CASE	Start: 86	End: 89
     Token: "bisher"       	Type: ALL_LOWER_CASE	Start: 90	End: 96
     Token: "angenommen"   	Type: ALL_LOWER_CASE	Start: 97	End: 107
-    Token: "."            	Type: TERM_PUNCT_P	Start: 107	End: 108
+    Token: "."            	Type: PERIOD	Start: 107	End: 108
   Text Unit Start: 109
   Text Unit End: 247
     Token: """            	Type: OPEN_PUNCT	Start: 109	End: 110	PTB: "``"
@@ -27,7 +27,7 @@ Paragraph End: 763
     Token: "soeben"       	Type: ALL_LOWER_CASE	Start: 119	End: 125
     Token: "übergeschnappt"	Type: ALL_LOWER_CASE	Start: 126	End: 140
     Token: """            	Type: CLOSE_PUNCT	Start: 140	End: 141	PTB: "''"
-    Token: ","            	Type: PUNCTUATION	Start: 141	End: 142
+    Token: ","            	Type: COMMA	Start: 141	End: 142
     Token: "wirbt"        	Type: ALL_LOWER_CASE	Start: 143	End: 148
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 149	End: 152
     Token: "Herrenausstatter"	Type: FIRST_UPPER_CASE	Start: 153	End: 169
@@ -36,7 +36,7 @@ Paragraph End: 763
     Token: "mit"          	Type: ALL_LOWER_CASE	Start: 182	End: 185
     Token: "großen"       	Type: ALL_LOWER_CASE	Start: 186	End: 192
     Token: "Lettern"      	Type: FIRST_UPPER_CASE	Start: 193	End: 200
-    Token: ","            	Type: PUNCTUATION	Start: 200	End: 201
+    Token: ","            	Type: COMMA	Start: 200	End: 201
     Token: """            	Type: OPEN_PUNCT	Start: 202	End: 203	PTB: "``"
     Token: "wir"          	Type: ALL_LOWER_CASE	Start: 203	End: 206
     Token: "verscherbeln" 	Type: ALL_LOWER_CASE	Start: 207	End: 219
@@ -44,7 +44,7 @@ Paragraph End: 763
     Token: "60"           	Type: DIGITAL	Start: 226	End: 228
     Token: "Prozent"      	Type: FIRST_UPPER_CASE	Start: 229	End: 236
     Token: "billiger"     	Type: ALL_LOWER_CASE	Start: 237	End: 245
-    Token: "."            	Type: TERM_PUNCT_P	Start: 245	End: 246
+    Token: "."            	Type: PERIOD	Start: 245	End: 246
     Token: """            	Type: CLOSE_PUNCT	Start: 246	End: 247	PTB: "''"
   Text Unit Start: 248
   Text Unit End: 363
@@ -64,7 +64,7 @@ Paragraph End: 763
     Token: "buhlen"       	Type: ALL_LOWER_CASE	Start: 346	End: 352
     Token: "um"           	Type: ALL_LOWER_CASE	Start: 353	End: 355
     Token: "Kunden"       	Type: FIRST_UPPER_CASE	Start: 356	End: 362
-    Token: "."            	Type: TERM_PUNCT_P	Start: 362	End: 363
+    Token: "."            	Type: PERIOD	Start: 362	End: 363
   Text Unit Start: 364
   Text Unit End: 490
     Token: "Nichts"       	Type: FIRST_UPPER_CASE	Start: 364	End: 370
@@ -77,7 +77,7 @@ Paragraph End: 763
     Token: "von"          	Type: ALL_LOWER_CASE	Start: 397	End: 400
     Token: "Los"          	Type: FIRST_UPPER_CASE	Start: 401	End: 404
     Token: "Angeles"      	Type: FIRST_UPPER_CASE	Start: 405	End: 412
-    Token: ","            	Type: PUNCTUATION	Start: 412	End: 413
+    Token: ","            	Type: COMMA	Start: 412	End: 413
     Token: "was"          	Type: ALL_LOWER_CASE	Start: 414	End: 417
     Token: "das"          	Type: ALL_LOWER_CASE	Start: 418	End: 421
     Token: "amerikanische"	Type: ALL_LOWER_CASE	Start: 422	End: 435
@@ -87,7 +87,7 @@ Paragraph End: 763
     Token: "Heiligabend"  	Type: FIRST_UPPER_CASE	Start: 461	End: 472
     Token: "vermissen"    	Type: ALL_LOWER_CASE	Start: 473	End: 482
     Token: "könnte"       	Type: ALL_LOWER_CASE	Start: 483	End: 489
-    Token: "."            	Type: TERM_PUNCT_P	Start: 489	End: 490
+    Token: "."            	Type: PERIOD	Start: 489	End: 490
   Text Unit Start: 491
   Text Unit End: 661
     Token: "Es"           	Type: FIRST_UPPER_CASE	Start: 491	End: 493
@@ -95,14 +95,14 @@ Paragraph End: 763
     Token: "zuckrig"      	Type: ALL_LOWER_CASE	Start: 499	End: 506
     Token: "dekorierte"   	Type: ALL_LOWER_CASE	Start: 507	End: 517
     Token: "Christbäume"  	Type: FIRST_UPPER_CASE	Start: 518	End: 529
-    Token: ","            	Type: PUNCTUATION	Start: 529	End: 530
+    Token: ","            	Type: COMMA	Start: 529	End: 530
     Token: "riesenhaft"   	Type: ALL_LOWER_CASE	Start: 531	End: 541
     Token: "aufgeplusterte"	Type: ALL_LOWER_CASE	Start: 542	End: 556
     Token: "Schaumstoff-Weihnachtsmänner"	Type: TOKEN	Start: 557	End: 585
     Token: "und"          	Type: ALL_LOWER_CASE	Start: 586	End: 589
     Token: "mechanische"  	Type: ALL_LOWER_CASE	Start: 590	End: 601
     Token: "Eichhörnchen" 	Type: FIRST_UPPER_CASE	Start: 602	End: 614
-    Token: ","            	Type: PUNCTUATION	Start: 614	End: 615
+    Token: ","            	Type: COMMA	Start: 614	End: 615
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 616	End: 619
     Token: "stundenlang"  	Type: ALL_LOWER_CASE	Start: 620	End: 631
     Token: "fröhlich"     	Type: ALL_LOWER_CASE	Start: 632	End: 640
@@ -110,11 +110,11 @@ Paragraph End: 763
     Token: "dem"          	Type: ALL_LOWER_CASE	Start: 645	End: 648
     Token: "Kopf"         	Type: FIRST_UPPER_CASE	Start: 649	End: 653
     Token: "nicken"       	Type: ALL_LOWER_CASE	Start: 654	End: 660
-    Token: "."            	Type: TERM_PUNCT_P	Start: 660	End: 661
+    Token: "."            	Type: PERIOD	Start: 660	End: 661
   Text Unit Start: 662
   Text Unit End: 739
     Token: "Nur"          	Type: FIRST_UPPER_CASE	Start: 662	End: 665
-    Token: "-"            	Type: PUNCTUATION	Start: 666	End: 667
+    Token: "-"            	Type: HYPHEN	Start: 666	End: 667
     Token: "aus"          	Type: ALL_LOWER_CASE	Start: 668	End: 671
     Token: "den"          	Type: ALL_LOWER_CASE	Start: 672	End: 675
     Token: "Verkäufermienen"	Type: FIRST_UPPER_CASE	Start: 676	End: 691
@@ -124,14 +124,14 @@ Paragraph End: 763
     Token: "Fröhlichkeit" 	Type: FIRST_UPPER_CASE	Start: 705	End: 717
     Token: "längst"       	Type: ALL_LOWER_CASE	Start: 718	End: 724
     Token: "verabschiedet"	Type: ALL_LOWER_CASE	Start: 725	End: 738
-    Token: "."            	Type: TERM_PUNCT_P	Start: 738	End: 739
+    Token: "."            	Type: PERIOD	Start: 738	End: 739
   Text Unit Start: 740
   Text Unit End: 763
     Token: "Die"          	Type: FIRST_UPPER_CASE	Start: 740	End: 743
     Token: "Kunden"       	Type: FIRST_UPPER_CASE	Start: 744	End: 750
     Token: "bleiben"      	Type: ALL_LOWER_CASE	Start: 751	End: 758
     Token: "aus"          	Type: ALL_LOWER_CASE	Start: 759	End: 762
-    Token: "."            	Type: TERM_PUNCT_P	Start: 762	End: 763
+    Token: "."            	Type: PERIOD	Start: 762	End: 763
 
 Paragraph Start: 767
 Paragraph End: 1223
@@ -146,7 +146,7 @@ Paragraph End: 1223
     Token: "Washington"   	Type: FIRST_UPPER_CASE	Start: 819	End: 829
     Token: "im"           	Type: ALL_LOWER_CASE	Start: 830	End: 832
     Token: "Aufschwungstaumel"	Type: FIRST_UPPER_CASE	Start: 833	End: 850
-    Token: ":"            	Type: PUNCTUATION	Start: 850	End: 851
+    Token: ":"            	Type: COLON	Start: 850	End: 851
     Token: "Zum"          	Type: FIRST_UPPER_CASE	Start: 852	End: 855
     Token: "ersten"       	Type: ALL_LOWER_CASE	Start: 856	End: 862
     Token: "Mal"          	Type: FIRST_UPPER_CASE	Start: 863	End: 866
@@ -161,18 +161,18 @@ Paragraph End: 1223
     Token: "nicht"        	Type: ALL_LOWER_CASE	Start: 954	End: 959
     Token: "nach"         	Type: ALL_LOWER_CASE	Start: 960	End: 964
     Token: "unten"        	Type: ALL_LOWER_CASE	Start: 965	End: 970
-    Token: ","            	Type: PUNCTUATION	Start: 970	End: 971
+    Token: ","            	Type: COMMA	Start: 970	End: 971
     Token: "sondern"      	Type: ALL_LOWER_CASE	Start: 972	End: 979
     Token: "nach"         	Type: ALL_LOWER_CASE	Start: 980	End: 984
     Token: "oben"         	Type: ALL_LOWER_CASE	Start: 985	End: 989
     Token: "revidiert"    	Type: ALL_LOWER_CASE	Start: 990	End: 999
-    Token: "."            	Type: TERM_PUNCT_P	Start: 999	End: 1000
+    Token: "."            	Type: PERIOD	Start: 999	End: 1000
   Text Unit Start: 1001
   Text Unit End: 1223
     Token: "Die"          	Type: FIRST_UPPER_CASE	Start: 1001	End: 1004
     Token: "frohe"        	Type: ALL_LOWER_CASE	Start: 1005	End: 1010
     Token: "Kunde"        	Type: FIRST_UPPER_CASE	Start: 1011	End: 1016
-    Token: ","            	Type: PUNCTUATION	Start: 1016	End: 1017
+    Token: ","            	Type: COMMA	Start: 1016	End: 1017
     Token: "wonach"       	Type: ALL_LOWER_CASE	Start: 1018	End: 1024
     Token: "das"          	Type: ALL_LOWER_CASE	Start: 1025	End: 1028
     Token: "Bruttoinlandsprodukt"	Type: FIRST_UPPER_CASE	Start: 1029	End: 1049
@@ -183,7 +183,7 @@ Paragraph End: 1223
     Token: "um"           	Type: ALL_LOWER_CASE	Start: 1075	End: 1077
     Token: "geschaetzte"  	Type: ALL_LOWER_CASE	Start: 1078	End: 1089
     Token: "2,7"          	Type: DIGITAL	Start: 1090	End: 1093
-    Token: ","            	Type: PUNCTUATION	Start: 1093	End: 1094
+    Token: ","            	Type: COMMA	Start: 1093	End: 1094
     Token: "sondern"      	Type: ALL_LOWER_CASE	Start: 1095	End: 1102
     Token: "tatsaechlich" 	Type: ALL_LOWER_CASE	Start: 1103	End: 1115
     Token: "um"           	Type: ALL_LOWER_CASE	Start: 1116	End: 1118
@@ -191,7 +191,7 @@ Paragraph End: 1223
     Token: "Prozent"      	Type: FIRST_UPPER_CASE	Start: 1123	End: 1130
     Token: "gewachsen"    	Type: ALL_LOWER_CASE	Start: 1131	End: 1140
     Token: "ist"          	Type: ALL_LOWER_CASE	Start: 1141	End: 1144
-    Token: ","            	Type: PUNCTUATION	Start: 1144	End: 1145
+    Token: ","            	Type: COMMA	Start: 1144	End: 1145
     Token: "betoerte"     	Type: ALL_LOWER_CASE	Start: 1146	End: 1154
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 1155	End: 1157
     Token: "Banken"       	Type: FIRST_UPPER_CASE	Start: 1158	End: 1164
@@ -200,7 +200,7 @@ Paragraph End: 1223
     Token: "ganze"        	Type: ALL_LOWER_CASE	Start: 1184	End: 1189
     Token: "volkswirtschaftliche"	Type: ALL_LOWER_CASE	Start: 1190	End: 1210
     Token: "Abteilungen"  	Type: FIRST_UPPER_CASE	Start: 1211	End: 1222
-    Token: "."            	Type: TERM_PUNCT_P	Start: 1222	End: 1223
+    Token: "."            	Type: PERIOD	Start: 1222	End: 1223
 
 Paragraph Start: 1227
 Paragraph End: 1553
@@ -209,7 +209,7 @@ Paragraph End: 1553
     Token: "Aus"          	Type: FIRST_UPPER_CASE	Start: 1227	End: 1230
     Token: "den"          	Type: ALL_LOWER_CASE	Start: 1231	End: 1234
     Token: "Augen"        	Type: FIRST_UPPER_CASE	Start: 1235	End: 1240
-    Token: ","            	Type: PUNCTUATION	Start: 1240	End: 1241
+    Token: ","            	Type: COMMA	Start: 1240	End: 1241
     Token: "aus"          	Type: ALL_LOWER_CASE	Start: 1242	End: 1245
     Token: "dem"          	Type: ALL_LOWER_CASE	Start: 1246	End: 1249
     Token: "Sinn"         	Type: FIRST_UPPER_CASE	Start: 1250	End: 1254
@@ -223,7 +223,7 @@ Paragraph End: 1553
     Token: "aus"          	Type: ALL_LOWER_CASE	Start: 1313	End: 1316
     Token: "dem"          	Type: ALL_LOWER_CASE	Start: 1317	End: 1320
     Token: "Vorquartal"   	Type: FIRST_UPPER_CASE	Start: 1321	End: 1331
-    Token: ","            	Type: PUNCTUATION	Start: 1331	End: 1332
+    Token: ","            	Type: COMMA	Start: 1331	End: 1332
     Token: "verflogen"    	Type: ALL_LOWER_CASE	Start: 1333	End: 1342
     Token: "all"          	Type: ALL_LOWER_CASE	Start: 1343	End: 1346
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 1347	End: 1350
@@ -232,11 +232,11 @@ Paragraph End: 1553
     Token: "einem"        	Type: ALL_LOWER_CASE	Start: 1365	End: 1370
     Token: "erneuten"     	Type: ALL_LOWER_CASE	Start: 1371	End: 1379
     Token: "Abschwung"    	Type: FIRST_UPPER_CASE	Start: 1380	End: 1389
-    Token: ","            	Type: PUNCTUATION	Start: 1389	End: 1390
+    Token: ","            	Type: COMMA	Start: 1389	End: 1390
     Token: "ausgeraeumt"  	Type: ALL_LOWER_CASE	Start: 1391	End: 1402
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 1403	End: 1406
     Token: "Verdacht"     	Type: FIRST_UPPER_CASE	Start: 1407	End: 1415
-    Token: ","            	Type: PUNCTUATION	Start: 1415	End: 1416
+    Token: ","            	Type: COMMA	Start: 1415	End: 1416
     Token: """            	Type: OPEN_PUNCT	Start: 1417	End: 1418	PTB: "``"
     Token: "tricky"       	Type: ALL_LOWER_CASE	Start: 1418	End: 1424
     Token: """            	Type: CLOSE_PUNCT	Start: 1424	End: 1425	PTB: "''"
@@ -258,7 +258,7 @@ Paragraph End: 1553
     Token: "2,7-Prozent-Schaetzung"	Type: TOKEN	Start: 1516	End: 1538
     Token: "drehen"       	Type: ALL_LOWER_CASE	Start: 1539	End: 1545
     Token: "lassen"       	Type: ALL_LOWER_CASE	Start: 1546	End: 1552
-    Token: "."            	Type: TERM_PUNCT_P	Start: 1552	End: 1553
+    Token: "."            	Type: PERIOD	Start: 1552	End: 1553
 
 Paragraph Start: 1557
 Paragraph End: 1834
@@ -266,9 +266,9 @@ Paragraph End: 1834
   Text Unit End: 1578
     Token: "Was"          	Type: FIRST_UPPER_CASE	Start: 1557	End: 1560
     Token: "nun"          	Type: ALL_LOWER_CASE	Start: 1561	End: 1564
-    Token: ","            	Type: PUNCTUATION	Start: 1564	End: 1565
+    Token: ","            	Type: COMMA	Start: 1564	End: 1565
     Token: "Deutschland"  	Type: FIRST_UPPER_CASE	Start: 1566	End: 1577
-    Token: "?"            	Type: TERM_PUNCT	Start: 1577	End: 1578
+    Token: "?"            	Type: QUEST	Start: 1577	End: 1578
   Text Unit Start: 1579
   Text Unit End: 1749
     Token: "Kann"         	Type: FIRST_UPPER_CASE	Start: 1579	End: 1583
@@ -287,17 +287,17 @@ Paragraph End: 1834
     Token: """            	Type: OPEN_PUNCT	Start: 1654	End: 1655	PTB: "``"
     Token: "weltweiten"   	Type: ALL_LOWER_CASE	Start: 1655	End: 1665
     Token: "Wirtschafts"  	Type: FIRST_UPPER_CASE	Start: 1666	End: 1677
-    Token: "-"            	Type: PUNCTUATION	Start: 1677	End: 1678
+    Token: "-"            	Type: HYPHEN	Start: 1677	End: 1678
     Token: "und"          	Type: ALL_LOWER_CASE	Start: 1679	End: 1682
     Token: "Arbeitslosigkeitskrise"	Type: FIRST_UPPER_CASE	Start: 1683	End: 1705
     Token: """            	Type: CLOSE_PUNCT	Start: 1705	End: 1706	PTB: "''"
-    Token: "("            	Type: OPEN_BRACKET	Start: 1707	End: 1708	PTB: "-LRB-"
+    Token: "("            	Type: OPAR	Start: 1707	End: 1708
     Token: "Alt-Bundeskanzler"	Type: TOKEN	Start: 1708	End: 1725
     Token: "Helmut"       	Type: FIRST_UPPER_CASE	Start: 1726	End: 1732
     Token: "Schmidt"      	Type: FIRST_UPPER_CASE	Start: 1733	End: 1740
-    Token: ")"            	Type: CLOSE_BRACKET	Start: 1740	End: 1741	PTB: "-RRB-"
+    Token: ")"            	Type: CPAR	Start: 1740	End: 1741
     Token: "retten"       	Type: ALL_LOWER_CASE	Start: 1742	End: 1748
-    Token: "?"            	Type: TERM_PUNCT	Start: 1748	End: 1749
+    Token: "?"            	Type: QUEST	Start: 1748	End: 1749
   Text Unit Start: 1750
   Text Unit End: 1834
     Token: "Ist"          	Type: FIRST_UPPER_CASE	Start: 1750	End: 1753
@@ -311,7 +311,7 @@ Paragraph End: 1834
     Token: "den"          	Type: ALL_LOWER_CASE	Start: 1803	End: 1806
     Token: "Konsummuffeln"	Type: FIRST_UPPER_CASE	Start: 1807	End: 1820
     Token: "Kaliforniens" 	Type: FIRST_UPPER_CASE	Start: 1821	End: 1833
-    Token: "?"            	Type: TERM_PUNCT	Start: 1833	End: 1834
+    Token: "?"            	Type: QUEST	Start: 1833	End: 1834
 
 Paragraph Start: 1838
 Paragraph End: 2240
@@ -338,14 +338,14 @@ Paragraph End: 2240
     Token: "zu"           	Type: ALL_LOWER_CASE	Start: 1980	End: 1982
     Token: "dieser"       	Type: ALL_LOWER_CASE	Start: 1983	End: 1989
     Token: "Jahreswende"  	Type: FIRST_UPPER_CASE	Start: 1990	End: 2001
-    Token: "."            	Type: TERM_PUNCT_P	Start: 2001	End: 2002
+    Token: "."            	Type: PERIOD	Start: 2001	End: 2002
   Text Unit Start: 2003
   Text Unit End: 2172
     Token: "Ohne"         	Type: FIRST_UPPER_CASE	Start: 2003	End: 2007
     Token: "den"          	Type: ALL_LOWER_CASE	Start: 2008	End: 2011
     Token: "ersehnten"    	Type: ALL_LOWER_CASE	Start: 2012	End: 2021
     Token: "US-Boom"      	Type: TOKEN	Start: 2022	End: 2029
-    Token: ","            	Type: PUNCTUATION	Start: 2029	End: 2030
+    Token: ","            	Type: COMMA	Start: 2029	End: 2030
     Token: "da"           	Type: ALL_LOWER_CASE	Start: 2031	End: 2033
     Token: "sind"         	Type: ALL_LOWER_CASE	Start: 2034	End: 2038
     Token: "sich"         	Type: ALL_LOWER_CASE	Start: 2039	End: 2043
@@ -353,7 +353,7 @@ Paragraph End: 2240
     Token: "und"          	Type: ALL_LOWER_CASE	Start: 2056	End: 2059
     Token: "Sachverstaendige"	Type: FIRST_UPPER_CASE	Start: 2060	End: 2076
     Token: "einig"        	Type: ALL_LOWER_CASE	Start: 2077	End: 2082
-    Token: ","            	Type: PUNCTUATION	Start: 2082	End: 2083
+    Token: ","            	Type: COMMA	Start: 2082	End: 2083
     Token: "gibt"         	Type: ALL_LOWER_CASE	Start: 2084	End: 2088
     Token: "es"           	Type: ALL_LOWER_CASE	Start: 2089	End: 2091
     Token: "fuer"         	Type: ALL_LOWER_CASE	Start: 2092	End: 2096
@@ -368,12 +368,12 @@ Paragraph End: 2240
     Token: "Rezession"    	Type: FIRST_UPPER_CASE	Start: 2147	End: 2156
     Token: "kein"         	Type: ALL_LOWER_CASE	Start: 2157	End: 2161
     Token: "Entrinnen"    	Type: FIRST_UPPER_CASE	Start: 2162	End: 2171
-    Token: "."            	Type: TERM_PUNCT_P	Start: 2171	End: 2172
+    Token: "."            	Type: PERIOD	Start: 2171	End: 2172
   Text Unit Start: 2173
   Text Unit End: 2240
     Token: "Im"           	Type: FIRST_UPPER_CASE	Start: 2173	End: 2175
     Token: "Gegenteil"    	Type: FIRST_UPPER_CASE	Start: 2176	End: 2185
-    Token: ":"            	Type: PUNCTUATION	Start: 2185	End: 2186
+    Token: ":"            	Type: COLON	Start: 2185	End: 2186
     Token: "Der"          	Type: FIRST_UPPER_CASE	Start: 2187	End: 2190
     Token: "Abschwung"    	Type: FIRST_UPPER_CASE	Start: 2191	End: 2200
     Token: "wird"         	Type: ALL_LOWER_CASE	Start: 2201	End: 2205
@@ -383,7 +383,7 @@ Paragraph End: 2240
     Token: "ins"          	Type: ALL_LOWER_CASE	Start: 2222	End: 2225
     Token: "Rollen"       	Type: FIRST_UPPER_CASE	Start: 2226	End: 2232
     Token: "kommen"       	Type: ALL_LOWER_CASE	Start: 2233	End: 2239
-    Token: "."            	Type: TERM_PUNCT_P	Start: 2239	End: 2240
+    Token: "."            	Type: PERIOD	Start: 2239	End: 2240
 
 Paragraph Start: 2244
 Paragraph End: 2901
@@ -396,12 +396,12 @@ Paragraph End: 2901
     Token: "nicht"        	Type: ALL_LOWER_CASE	Start: 2271	End: 2276
     Token: "an"           	Type: ALL_LOWER_CASE	Start: 2277	End: 2279
     Token: """            	Type: CLOSE_PUNCT	Start: 2279	End: 2280	PTB: "''"
-    Token: ","            	Type: PUNCTUATION	Start: 2280	End: 2281
+    Token: ","            	Type: COMMA	Start: 2280	End: 2281
     Token: "sagt"         	Type: ALL_LOWER_CASE	Start: 2282	End: 2286
     Token: "BMW-Chefvolkswirt"	Type: TOKEN	Start: 2287	End: 2304
     Token: "Helmut"       	Type: FIRST_UPPER_CASE	Start: 2305	End: 2311
     Token: "Becker"       	Type: FIRST_UPPER_CASE	Start: 2312	End: 2318
-    Token: ","            	Type: PUNCTUATION	Start: 2318	End: 2319
+    Token: ","            	Type: COMMA	Start: 2318	End: 2319
     Token: """            	Type: OPEN_PUNCT	Start: 2320	End: 2321	PTB: "``"
     Token: "sehe"         	Type: ALL_LOWER_CASE	Start: 2321	End: 2325
     Token: "ich"          	Type: ALL_LOWER_CASE	Start: 2326	End: 2329
@@ -414,7 +414,7 @@ Paragraph End: 2901
     Token: "Krise"        	Type: FIRST_UPPER_CASE	Start: 2372	End: 2377
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 2378	End: 2381
     Token: "Nachkriegszeit"	Type: FIRST_UPPER_CASE	Start: 2382	End: 2396
-    Token: "."            	Type: TERM_PUNCT_P	Start: 2396	End: 2397
+    Token: "."            	Type: PERIOD	Start: 2396	End: 2397
     Token: """            	Type: CLOSE_PUNCT	Start: 2397	End: 2398	PTB: "''"
   Text Unit Start: 2399
   Text Unit End: 2688
@@ -423,7 +423,7 @@ Paragraph End: 2901
     Token: "nicht"        	Type: ALL_LOWER_CASE	Start: 2408	End: 2413
     Token: "nur"          	Type: ALL_LOWER_CASE	Start: 2414	End: 2417
     Token: "ungewiss"     	Type: ALL_LOWER_CASE	Start: 2418	End: 2426
-    Token: ","            	Type: PUNCTUATION	Start: 2426	End: 2427
+    Token: ","            	Type: COMMA	Start: 2426	End: 2427
     Token: "ob"           	Type: ALL_LOWER_CASE	Start: 2428	End: 2430
     Token: "sich"         	Type: ALL_LOWER_CASE	Start: 2431	End: 2435
     Token: "1993"         	Type: DIGITAL	Start: 2436	End: 2440
@@ -437,7 +437,7 @@ Paragraph End: 2901
     Token: "deprimierten" 	Type: ALL_LOWER_CASE	Start: 2490	End: 2502
     Token: "Deutschen"    	Type: FIRST_UPPER_CASE	Start: 2503	End: 2512
     Token: "uebertragen"  	Type: ALL_LOWER_CASE	Start: 2513	End: 2524
-    Token: "-"            	Type: PUNCTUATION	Start: 2525	End: 2526
+    Token: "-"            	Type: HYPHEN	Start: 2525	End: 2526
     Token: "nur"          	Type: ALL_LOWER_CASE	Start: 2527	End: 2530
     Token: "knapp"        	Type: ALL_LOWER_CASE	Start: 2531	End: 2536
     Token: "acht"         	Type: ALL_LOWER_CASE	Start: 2537	End: 2541
@@ -461,38 +461,38 @@ Paragraph End: 2901
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 2677	End: 2679
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 2680	End: 2683
     Token: "USA"          	Type: ALL_UPPER_CASE	Start: 2684	End: 2687
-    Token: "."            	Type: TERM_PUNCT_P	Start: 2687	End: 2688
+    Token: "."            	Type: PERIOD	Start: 2687	End: 2688
   Text Unit Start: 2689
   Text Unit End: 2901
     Token: "Auch"         	Type: FIRST_UPPER_CASE	Start: 2689	End: 2693
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 2694	End: 2697
     Token: "Eindruck"     	Type: FIRST_UPPER_CASE	Start: 2698	End: 2706
-    Token: ","            	Type: PUNCTUATION	Start: 2706	End: 2707
+    Token: ","            	Type: COMMA	Start: 2706	End: 2707
     Token: "den"          	Type: ALL_LOWER_CASE	Start: 2708	End: 2711
     Token: "US-Konjunkturindikatoren"	Type: TOKEN	Start: 2712	End: 2736
     Token: "bisher"       	Type: ALL_LOWER_CASE	Start: 2737	End: 2743
     Token: "vermittelt"   	Type: ALL_LOWER_CASE	Start: 2744	End: 2754
     Token: "haben"        	Type: ALL_LOWER_CASE	Start: 2755	End: 2760
-    Token: ","            	Type: PUNCTUATION	Start: 2760	End: 2761
+    Token: ","            	Type: COMMA	Start: 2760	End: 2761
     Token: "gibt"         	Type: ALL_LOWER_CASE	Start: 2762	End: 2766
     Token: "nicht"        	Type: ALL_LOWER_CASE	Start: 2767	End: 2772
     Token: "gerade"       	Type: ALL_LOWER_CASE	Start: 2773	End: 2779
     Token: "zur"          	Type: ALL_LOWER_CASE	Start: 2780	End: 2783
     Token: "Euphorie"     	Type: FIRST_UPPER_CASE	Start: 2784	End: 2792
     Token: "Anlass"       	Type: FIRST_UPPER_CASE	Start: 2793	End: 2799
-    Token: "-"            	Type: PUNCTUATION	Start: 2800	End: 2801
+    Token: "-"            	Type: HYPHEN	Start: 2800	End: 2801
     Token: "von"          	Type: ALL_LOWER_CASE	Start: 2802	End: 2805
     Token: "einem"        	Type: ALL_LOWER_CASE	Start: 2806	End: 2811
     Token: """            	Type: OPEN_PUNCT	Start: 2812	End: 2813	PTB: "``"
     Token: "Schwarzenegger"	Type: FIRST_UPPER_CASE	Start: 2813	End: 2827
     Token: """            	Type: CLOSE_PUNCT	Start: 2827	End: 2828	PTB: "''"
-    Token: ","            	Type: PUNCTUATION	Start: 2828	End: 2829
+    Token: ","            	Type: COMMA	Start: 2828	End: 2829
     Token: "witzelte"     	Type: ALL_LOWER_CASE	Start: 2830	End: 2838
     Token: """            	Type: OPEN_PUNCT	Start: 2839	End: 2840	PTB: "``"
     Token: "Business"     	Type: FIRST_UPPER_CASE	Start: 2840	End: 2848
     Token: "Week"         	Type: FIRST_UPPER_CASE	Start: 2849	End: 2853
     Token: """            	Type: CLOSE_PUNCT	Start: 2853	End: 2854	PTB: "''"
-    Token: ","            	Type: PUNCTUATION	Start: 2854	End: 2855
+    Token: ","            	Type: COMMA	Start: 2854	End: 2855
     Token: "koenne"       	Type: ALL_LOWER_CASE	Start: 2856	End: 2862
     Token: "bei"          	Type: ALL_LOWER_CASE	Start: 2863	End: 2866
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 2867	End: 2870
@@ -500,7 +500,7 @@ Paragraph End: 2901
     Token: "keine"        	Type: ALL_LOWER_CASE	Start: 2885	End: 2890
     Token: "Rede"         	Type: FIRST_UPPER_CASE	Start: 2891	End: 2895
     Token: "sein"         	Type: ALL_LOWER_CASE	Start: 2896	End: 2900
-    Token: "."            	Type: TERM_PUNCT_P	Start: 2900	End: 2901
+    Token: "."            	Type: PERIOD	Start: 2900	End: 2901
 
 Paragraph Start: 2905
 Paragraph End: 3273
@@ -510,7 +510,7 @@ Paragraph End: 3273
     Token: "haelt"        	Type: ALL_LOWER_CASE	Start: 2911	End: 2916
     Token: "Herbert"      	Type: FIRST_UPPER_CASE	Start: 2917	End: 2924
     Token: "Hax"          	Type: FIRST_UPPER_CASE	Start: 2925	End: 2928
-    Token: ","            	Type: PUNCTUATION	Start: 2928	End: 2929
+    Token: ","            	Type: COMMA	Start: 2928	End: 2929
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 2930	End: 2933
     Token: "Vorsitzende"  	Type: FIRST_UPPER_CASE	Start: 2934	End: 2945
     Token: "des"          	Type: ALL_LOWER_CASE	Start: 2946	End: 2949
@@ -521,23 +521,23 @@ Paragraph End: 3273
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 2999	End: 3002
     Token: "gesamtwirtschaftlichen"	Type: ALL_LOWER_CASE	Start: 3003	End: 3025
     Token: "Entwicklung"  	Type: FIRST_UPPER_CASE	Start: 3026	End: 3037
-    Token: ","            	Type: PUNCTUATION	Start: 3037	End: 3038
+    Token: ","            	Type: COMMA	Start: 3037	End: 3038
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 3039	End: 3042
     Token: "Prognose"     	Type: FIRST_UPPER_CASE	Start: 3043	End: 3051
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 3052	End: 3055
     Token: "fuenf"        	Type: ALL_LOWER_CASE	Start: 3056	End: 3061
     Token: "Weisen"       	Type: FIRST_UPPER_CASE	Start: 3062	End: 3068
-    Token: "("            	Type: OPEN_BRACKET	Start: 3069	End: 3070	PTB: "-LRB-"
+    Token: "("            	Type: OPAR	Start: 3069	End: 3070
     Token: "Nullwachstum" 	Type: FIRST_UPPER_CASE	Start: 3070	End: 3082
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 3083	End: 3085
     Token: "Westdeutschland"	Type: FIRST_UPPER_CASE	Start: 3086	End: 3101
-    Token: ")"            	Type: CLOSE_BRACKET	Start: 3101	End: 3102	PTB: "-RRB-"
+    Token: ")"            	Type: CPAR	Start: 3101	End: 3102
     Token: "fuer"         	Type: ALL_LOWER_CASE	Start: 3103	End: 3107
     Token: """            	Type: OPEN_PUNCT	Start: 3108	End: 3109	PTB: "``"
     Token: "eigentlich"   	Type: ALL_LOWER_CASE	Start: 3109	End: 3119
     Token: "optimistisch" 	Type: ALL_LOWER_CASE	Start: 3120	End: 3132
     Token: """            	Type: CLOSE_PUNCT	Start: 3132	End: 3133	PTB: "''"
-    Token: "."            	Type: TERM_PUNCT_P	Start: 3133	End: 3134
+    Token: "."            	Type: PERIOD	Start: 3133	End: 3134
   Text Unit Start: 3135
   Text Unit End: 3273
     Token: "Zweifel"      	Type: FIRST_UPPER_CASE	Start: 3135	End: 3142
@@ -559,7 +559,7 @@ Paragraph End: 3273
     Token: "Wirtschaftsforschung"	Type: FIRST_UPPER_CASE	Start: 3242	End: 3262
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 3263	End: 3265
     Token: "Berlin"       	Type: FIRST_UPPER_CASE	Start: 3266	End: 3272
-    Token: "."            	Type: TERM_PUNCT_P	Start: 3272	End: 3273
+    Token: "."            	Type: PERIOD	Start: 3272	End: 3273
 
 Paragraph Start: 3278
 Paragraph End: 3581
@@ -584,17 +584,17 @@ Paragraph End: 3581
     Token: "0,5"          	Type: DIGITAL	Start: 3406	End: 3409
     Token: "Prozent"      	Type: FIRST_UPPER_CASE	Start: 3410	End: 3417
     Token: "heruntergestrichen"	Type: ALL_LOWER_CASE	Start: 3418	End: 3436
-    Token: "."            	Type: TERM_PUNCT_P	Start: 3436	End: 3437
+    Token: "."            	Type: PERIOD	Start: 3436	End: 3437
   Text Unit Start: 3438
   Text Unit End: 3581
     Token: "Diethard"     	Type: FIRST_UPPER_CASE	Start: 3438	End: 3446
     Token: "Simmert"      	Type: FIRST_UPPER_CASE	Start: 3447	End: 3454
-    Token: ","            	Type: PUNCTUATION	Start: 3454	End: 3455
+    Token: ","            	Type: COMMA	Start: 3454	End: 3455
     Token: "oberster"     	Type: ALL_LOWER_CASE	Start: 3456	End: 3464
     Token: "Vermoegensverwalter"	Type: FIRST_UPPER_CASE	Start: 3465	End: 3484
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 3485	End: 3488
     Token: "Provinzial-Versicherung"	Type: TOKEN	Start: 3489	End: 3512
-    Token: ","            	Type: PUNCTUATION	Start: 3512	End: 3513
+    Token: ","            	Type: COMMA	Start: 3512	End: 3513
     Token: "glaubt"       	Type: ALL_LOWER_CASE	Start: 3514	End: 3520
     Token: "gar"          	Type: ALL_LOWER_CASE	Start: 3521	End: 3524
     Token: "an"           	Type: ALL_LOWER_CASE	Start: 3525	End: 3527
@@ -606,7 +606,7 @@ Paragraph End: 3581
     Token: "zu"           	Type: ALL_LOWER_CASE	Start: 3565	End: 3567
     Token: "zwei"         	Type: ALL_LOWER_CASE	Start: 3568	End: 3572
     Token: "Prozent"      	Type: FIRST_UPPER_CASE	Start: 3573	End: 3580
-    Token: "."            	Type: TERM_PUNCT_P	Start: 3580	End: 3581
+    Token: "."            	Type: PERIOD	Start: 3580	End: 3581
 
 Paragraph Start: 3585
 Paragraph End: 4075
@@ -625,12 +625,12 @@ Paragraph End: 4075
     Token: "Prozent"      	Type: FIRST_UPPER_CASE	Start: 3662	End: 3669
     Token: "hoehere"      	Type: ALL_LOWER_CASE	Start: 3670	End: 3677
     Token: "Auftragseingaenge"	Type: FIRST_UPPER_CASE	Start: 3678	End: 3695
-    Token: ","            	Type: PUNCTUATION	Start: 3695	End: 3696
+    Token: ","            	Type: COMMA	Start: 3695	End: 3696
     Token: "legte"        	Type: ALL_LOWER_CASE	Start: 3697	End: 3702
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 3703	End: 3706
     Token: "private"      	Type: ALL_LOWER_CASE	Start: 3707	End: 3714
     Token: "Verbrauch"    	Type: FIRST_UPPER_CASE	Start: 3715	End: 3724
-    Token: ","            	Type: PUNCTUATION	Start: 3724	End: 3725
+    Token: ","            	Type: COMMA	Start: 3724	End: 3725
     Token: "zu"           	Type: ALL_LOWER_CASE	Start: 3726	End: 3728
     Token: "zwei"         	Type: ALL_LOWER_CASE	Start: 3729	End: 3733
     Token: "Dritteln"     	Type: FIRST_UPPER_CASE	Start: 3734	End: 3742
@@ -638,7 +638,7 @@ Paragraph End: 4075
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 3746	End: 3749
     Token: "Wertschoepfung"	Type: FIRST_UPPER_CASE	Start: 3750	End: 3764
     Token: "beteiligt"    	Type: ALL_LOWER_CASE	Start: 3765	End: 3774
-    Token: ","            	Type: PUNCTUATION	Start: 3774	End: 3775
+    Token: ","            	Type: COMMA	Start: 3774	End: 3775
     Token: "im"           	Type: ALL_LOWER_CASE	Start: 3776	End: 3778
     Token: "dritten"      	Type: ALL_LOWER_CASE	Start: 3779	End: 3786
     Token: "Quartal"      	Type: FIRST_UPPER_CASE	Start: 3787	End: 3794
@@ -647,28 +647,28 @@ Paragraph End: 4075
     Token: "3,7"          	Type: DIGITAL	Start: 3807	End: 3810
     Token: "Prozent"      	Type: FIRST_UPPER_CASE	Start: 3811	End: 3818
     Token: "zu"           	Type: ALL_LOWER_CASE	Start: 3819	End: 3821
-    Token: "."            	Type: TERM_PUNCT_P	Start: 3821	End: 3822
+    Token: "."            	Type: PERIOD	Start: 3821	End: 3822
   Text Unit Start: 3823
   Text Unit End: 4075
     Token: "Doch"         	Type: FIRST_UPPER_CASE	Start: 3823	End: 3827
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 3828	End: 3831
     Token: "Nachfrageschuebe"	Type: FIRST_UPPER_CASE	Start: 3832	End: 3848
-    Token: ","            	Type: PUNCTUATION	Start: 3848	End: 3849
+    Token: ","            	Type: COMMA	Start: 3848	End: 3849
     Token: "ausgeloest"   	Type: ALL_LOWER_CASE	Start: 3850	End: 3860
     Token: "durch"        	Type: ALL_LOWER_CASE	Start: 3861	End: 3866
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 3867	End: 3870
     Token: "Milliardenschaeden"	Type: FIRST_UPPER_CASE	Start: 3871	End: 3889
     Token: "zweier"       	Type: ALL_LOWER_CASE	Start: 3890	End: 3896
     Token: "Hurrikans"    	Type: FIRST_UPPER_CASE	Start: 3897	End: 3906
-    Token: ","            	Type: PUNCTUATION	Start: 3906	End: 3907
+    Token: ","            	Type: COMMA	Start: 3906	End: 3907
     Token: "drohen"       	Type: ALL_LOWER_CASE	Start: 3908	End: 3914
-    Token: ","            	Type: PUNCTUATION	Start: 3914	End: 3915
+    Token: ","            	Type: COMMA	Start: 3914	End: 3915
     Token: "als"          	Type: ALL_LOWER_CASE	Start: 3916	End: 3919
     Token: "blosse"       	Type: ALL_LOWER_CASE	Start: 3920	End: 3926
     Token: "Strohfeuer"   	Type: FIRST_UPPER_CASE	Start: 3927	End: 3937
     Token: "zu"           	Type: ALL_LOWER_CASE	Start: 3938	End: 3940
     Token: "verlodern"    	Type: ALL_LOWER_CASE	Start: 3941	End: 3950
-    Token: ":"            	Type: PUNCTUATION	Start: 3950	End: 3951
+    Token: ":"            	Type: COLON	Start: 3950	End: 3951
     Token: "Waehrend"     	Type: FIRST_UPPER_CASE	Start: 3952	End: 3960
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 3961	End: 3964
     Token: "Ausgaben"     	Type: FIRST_UPPER_CASE	Start: 3965	End: 3973
@@ -678,7 +678,7 @@ Paragraph End: 4075
     Token: "nach"         	Type: ALL_LOWER_CASE	Start: 4001	End: 4005
     Token: "oben"         	Type: ALL_LOWER_CASE	Start: 4006	End: 4010
     Token: "schnellten"   	Type: ALL_LOWER_CASE	Start: 4011	End: 4021
-    Token: ","            	Type: PUNCTUATION	Start: 4021	End: 4022
+    Token: ","            	Type: COMMA	Start: 4021	End: 4022
     Token: "gab"          	Type: ALL_LOWER_CASE	Start: 4023	End: 4026
     Token: "es"           	Type: ALL_LOWER_CASE	Start: 4027	End: 4029
     Token: "bei"          	Type: ALL_LOWER_CASE	Start: 4030	End: 4033
@@ -689,7 +689,7 @@ Paragraph End: 4075
     Token: "wie"          	Type: ALL_LOWER_CASE	Start: 4055	End: 4058
     Token: "keine"        	Type: ALL_LOWER_CASE	Start: 4059	End: 4064
     Token: "Zuwaechse"    	Type: FIRST_UPPER_CASE	Start: 4065	End: 4074
-    Token: "."            	Type: TERM_PUNCT_P	Start: 4074	End: 4075
+    Token: "."            	Type: PERIOD	Start: 4074	End: 4075
 
 Paragraph Start: 4079
 Paragraph End: 4431
@@ -700,10 +700,10 @@ Paragraph End: 4431
     Token: "fuer"         	Type: ALL_LOWER_CASE	Start: 4091	End: 4095
     Token: "Europaeische" 	Type: FIRST_UPPER_CASE	Start: 4096	End: 4108
     Token: "Wirtschaftsforschung"	Type: FIRST_UPPER_CASE	Start: 4109	End: 4129
-    Token: "("            	Type: OPEN_BRACKET	Start: 4130	End: 4131	PTB: "-LRB-"
+    Token: "("            	Type: OPAR	Start: 4130	End: 4131
     Token: "ZEW"          	Type: ALL_UPPER_CASE	Start: 4131	End: 4134
-    Token: ")"            	Type: CLOSE_BRACKET	Start: 4134	End: 4135	PTB: "-RRB-"
-    Token: ","            	Type: PUNCTUATION	Start: 4135	End: 4136
+    Token: ")"            	Type: CPAR	Start: 4134	End: 4135
+    Token: ","            	Type: COMMA	Start: 4135	End: 4136
     Token: "das"          	Type: ALL_LOWER_CASE	Start: 4137	End: 4140
     Token: "monatlich"    	Type: ALL_LOWER_CASE	Start: 4141	End: 4150
     Token: "im"           	Type: ALL_LOWER_CASE	Start: 4151	End: 4153
@@ -717,7 +717,7 @@ Paragraph End: 4431
     Token: "und"          	Type: ALL_LOWER_CASE	Start: 4212	End: 4215
     Token: "Unternehmen"  	Type: FIRST_UPPER_CASE	Start: 4216	End: 4227
     Token: "befragt"      	Type: ALL_LOWER_CASE	Start: 4228	End: 4235
-    Token: ","            	Type: PUNCTUATION	Start: 4235	End: 4236
+    Token: ","            	Type: COMMA	Start: 4235	End: 4236
     Token: "sieht"        	Type: ALL_LOWER_CASE	Start: 4237	End: 4242
     Token: "denn"         	Type: ALL_LOWER_CASE	Start: 4243	End: 4247
     Token: "auch"         	Type: ALL_LOWER_CASE	Start: 4248	End: 4252
@@ -726,26 +726,26 @@ Paragraph End: 4431
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 4263	End: 4266
     Token: "amerikanischen"	Type: ALL_LOWER_CASE	Start: 4267	End: 4281
     Token: "Schuldenkrise"	Type: FIRST_UPPER_CASE	Start: 4282	End: 4295
-    Token: ":"            	Type: PUNCTUATION	Start: 4295	End: 4296
+    Token: ":"            	Type: COLON	Start: 4295	End: 4296
     Token: "Eine"         	Type: FIRST_UPPER_CASE	Start: 4297	End: 4301
     Token: "kraeftige"    	Type: ALL_LOWER_CASE	Start: 4302	End: 4311
     Token: "Ausweitung"   	Type: FIRST_UPPER_CASE	Start: 4312	End: 4322
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 4323	End: 4326
     Token: "Konsumnachfrage"	Type: FIRST_UPPER_CASE	Start: 4327	End: 4342
-    Token: ","            	Type: PUNCTUATION	Start: 4342	End: 4343
+    Token: ","            	Type: COMMA	Start: 4342	End: 4343
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 4344	End: 4347
     Token: "das"          	Type: ALL_LOWER_CASE	Start: 4348	End: 4351
     Token: "Konjunkturruder"	Type: FIRST_UPPER_CASE	Start: 4352	End: 4367
     Token: "endgueltig"   	Type: ALL_LOWER_CASE	Start: 4368	End: 4378
     Token: "herumreissen" 	Type: ALL_LOWER_CASE	Start: 4379	End: 4391
     Token: "koennte"      	Type: ALL_LOWER_CASE	Start: 4392	End: 4399
-    Token: ","            	Type: PUNCTUATION	Start: 4399	End: 4400
+    Token: ","            	Type: COMMA	Start: 4399	End: 4400
     Token: "wird"         	Type: ALL_LOWER_CASE	Start: 4401	End: 4405
     Token: "auch"         	Type: ALL_LOWER_CASE	Start: 4406	End: 4410
     Token: "1993"         	Type: DIGITAL	Start: 4411	End: 4415
     Token: "nicht"        	Type: ALL_LOWER_CASE	Start: 4416	End: 4421
     Token: "erwartet"     	Type: ALL_LOWER_CASE	Start: 4422	End: 4430
-    Token: "."            	Type: TERM_PUNCT_P	Start: 4430	End: 4431
+    Token: "."            	Type: PERIOD	Start: 4430	End: 4431
 
 Paragraph Start: 4435
 Paragraph End: 5166
@@ -757,7 +757,7 @@ Paragraph End: 5166
     Token: "Ratenkredite" 	Type: FIRST_UPPER_CASE	Start: 4450	End: 4462
     Token: "am"           	Type: ALL_LOWER_CASE	Start: 4463	End: 4465
     Token: "Durchschnittseinkommen"	Type: FIRST_UPPER_CASE	Start: 4466	End: 4488
-    Token: ","            	Type: PUNCTUATION	Start: 4488	End: 4489
+    Token: ","            	Type: COMMA	Start: 4488	End: 4489
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 4490	End: 4493
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 4494	End: 4497
     Token: "Schuldenlast" 	Type: FIRST_UPPER_CASE	Start: 4498	End: 4510
@@ -765,7 +765,7 @@ Paragraph End: 5166
     Token: "kreditkartenverwoehnten"	Type: ALL_LOWER_CASE	Start: 4515	End: 4538
     Token: "Verbraucher"  	Type: FIRST_UPPER_CASE	Start: 4539	End: 4550
     Token: "dokumentiert" 	Type: ALL_LOWER_CASE	Start: 4551	End: 4563
-    Token: ","            	Type: PUNCTUATION	Start: 4563	End: 4564
+    Token: ","            	Type: COMMA	Start: 4563	End: 4564
     Token: "liegt"        	Type: ALL_LOWER_CASE	Start: 4565	End: 4570
     Token: "mit"          	Type: ALL_LOWER_CASE	Start: 4571	End: 4574
     Token: "14,4"         	Type: DIGITAL	Start: 4575	End: 4579
@@ -788,7 +788,7 @@ Paragraph End: 5166
     Token: "beiden"       	Type: ALL_LOWER_CASE	Start: 4680	End: 4686
     Token: "Rezessionen"  	Type: FIRST_UPPER_CASE	Start: 4687	End: 4698
     Token: """            	Type: CLOSE_PUNCT	Start: 4698	End: 4699	PTB: "''"
-    Token: "."            	Type: TERM_PUNCT_P	Start: 4699	End: 4700
+    Token: "."            	Type: PERIOD	Start: 4699	End: 4700
   Text Unit Start: 4701
   Text Unit End: 4935
     Token: "Schon"        	Type: FIRST_UPPER_CASE	Start: 4701	End: 4706
@@ -807,7 +807,7 @@ Paragraph End: 5166
     Token: "Ausweitung"   	Type: FIRST_UPPER_CASE	Start: 4778	End: 4788
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 4789	End: 4792
     Token: "Ratenkredite" 	Type: FIRST_UPPER_CASE	Start: 4793	End: 4805
-    Token: ","            	Type: PUNCTUATION	Start: 4805	End: 4806
+    Token: ","            	Type: COMMA	Start: 4805	End: 4806
     Token: "laufen"       	Type: ALL_LOWER_CASE	Start: 4807	End: 4813
     Token: "an"           	Type: ALL_LOWER_CASE	Start: 4814	End: 4816
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 4817	End: 4820
@@ -815,7 +815,7 @@ Paragraph End: 5166
     Token: "Street"       	Type: FIRST_UPPER_CASE	Start: 4826	End: 4832
     Token: "Geruechte"    	Type: FIRST_UPPER_CASE	Start: 4833	End: 4842
     Token: "um"           	Type: ALL_LOWER_CASE	Start: 4843	End: 4845
-    Token: ","            	Type: PUNCTUATION	Start: 4845	End: 4846
+    Token: ","            	Type: COMMA	Start: 4845	End: 4846
     Token: "dass"         	Type: ALL_LOWER_CASE	Start: 4847	End: 4851
     Token: "1500"         	Type: DIGITAL	Start: 4852	End: 4856
     Token: "US-Banken"    	Type: TOKEN	Start: 4857	End: 4866
@@ -823,13 +823,13 @@ Paragraph End: 5166
     Token: "dem"          	Type: ALL_LOWER_CASE	Start: 4871	End: 4874
     Token: "Bankrott"     	Type: FIRST_UPPER_CASE	Start: 4875	End: 4883
     Token: "stehen"       	Type: ALL_LOWER_CASE	Start: 4884	End: 4890
-    Token: ","            	Type: PUNCTUATION	Start: 4890	End: 4891
+    Token: ","            	Type: COMMA	Start: 4890	End: 4891
     Token: "weil"         	Type: ALL_LOWER_CASE	Start: 4892	End: 4896
     Token: "Altforderungen"	Type: FIRST_UPPER_CASE	Start: 4897	End: 4911
     Token: "nicht"        	Type: ALL_LOWER_CASE	Start: 4912	End: 4917
     Token: "beglichen"    	Type: ALL_LOWER_CASE	Start: 4918	End: 4927
     Token: "werden"       	Type: ALL_LOWER_CASE	Start: 4928	End: 4934
-    Token: "."            	Type: TERM_PUNCT_P	Start: 4934	End: 4935
+    Token: "."            	Type: PERIOD	Start: 4934	End: 4935
   Text Unit Start: 4936
   Text Unit End: 5166
     Token: "Die"          	Type: FIRST_UPPER_CASE	Start: 4936	End: 4939
@@ -839,9 +839,9 @@ Paragraph End: 5166
     Token: "Zusammenarbeit"	Type: FIRST_UPPER_CASE	Start: 4974	End: 4988
     Token: "und"          	Type: ALL_LOWER_CASE	Start: 4989	End: 4992
     Token: "Entwicklung"  	Type: FIRST_UPPER_CASE	Start: 4993	End: 5004
-    Token: "("            	Type: OPEN_BRACKET	Start: 5005	End: 5006	PTB: "-LRB-"
+    Token: "("            	Type: OPAR	Start: 5005	End: 5006
     Token: "OECD"         	Type: ALL_UPPER_CASE	Start: 5006	End: 5010
-    Token: ")"            	Type: CLOSE_BRACKET	Start: 5010	End: 5011	PTB: "-RRB-"
+    Token: ")"            	Type: CPAR	Start: 5010	End: 5011
     Token: "hat"          	Type: ALL_LOWER_CASE	Start: 5012	End: 5015
     Token: "allzu"        	Type: ALL_LOWER_CASE	Start: 5016	End: 5021
     Token: "optimistische"	Type: ALL_LOWER_CASE	Start: 5022	End: 5035
@@ -849,9 +849,9 @@ Paragraph End: 5166
     Token: "des"          	Type: ALL_LOWER_CASE	Start: 5058	End: 5061
     Token: "Internationalen"	Type: FIRST_UPPER_CASE	Start: 5062	End: 5077
     Token: "Waehrungsfonds"	Type: FIRST_UPPER_CASE	Start: 5078	End: 5092
-    Token: "("            	Type: OPEN_BRACKET	Start: 5093	End: 5094	PTB: "-LRB-"
+    Token: "("            	Type: OPAR	Start: 5093	End: 5094
     Token: "IWF"          	Type: ALL_UPPER_CASE	Start: 5094	End: 5097
-    Token: ")"            	Type: CLOSE_BRACKET	Start: 5097	End: 5098	PTB: "-RRB-"
+    Token: ")"            	Type: CPAR	Start: 5097	End: 5098
     Token: "zuletzt"      	Type: ALL_LOWER_CASE	Start: 5099	End: 5106
     Token: "um"           	Type: ALL_LOWER_CASE	Start: 5107	End: 5109
     Token: "fast"         	Type: ALL_LOWER_CASE	Start: 5110	End: 5114
@@ -863,7 +863,7 @@ Paragraph End: 5166
     Token: "2,5"          	Type: DIGITAL	Start: 5137	End: 5140
     Token: "Prozent"      	Type: FIRST_UPPER_CASE	Start: 5141	End: 5148
     Token: "heruntergekuerzt"	Type: ALL_LOWER_CASE	Start: 5149	End: 5165
-    Token: "."            	Type: TERM_PUNCT_P	Start: 5165	End: 5166
+    Token: "."            	Type: PERIOD	Start: 5165	End: 5166
 
 Paragraph Start: 5170
 Paragraph End: 5859
@@ -887,7 +887,7 @@ Paragraph End: 5859
     Token: "Belebung"     	Type: FIRST_UPPER_CASE	Start: 5286	End: 5294
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 5295	End: 5298
     Token: "Weltwirtschaft"	Type: FIRST_UPPER_CASE	Start: 5299	End: 5313
-    Token: "."            	Type: TERM_PUNCT_P	Start: 5313	End: 5314
+    Token: "."            	Type: PERIOD	Start: 5313	End: 5314
   Text Unit Start: 5315
   Text Unit End: 5529
     Token: "Zu"           	Type: FIRST_UPPER_CASE	Start: 5315	End: 5317
@@ -900,16 +900,16 @@ Paragraph End: 5859
     Token: "Japan"        	Type: FIRST_UPPER_CASE	Start: 5352	End: 5357
     Token: "zu"           	Type: ALL_LOWER_CASE	Start: 5358	End: 5360
     Token: "Buche"        	Type: FIRST_UPPER_CASE	Start: 5361	End: 5366
-    Token: ","            	Type: PUNCTUATION	Start: 5366	End: 5367
+    Token: ","            	Type: COMMA	Start: 5366	End: 5367
     Token: "das"          	Type: ALL_LOWER_CASE	Start: 5368	End: 5371
     Token: "den"          	Type: ALL_LOWER_CASE	Start: 5372	End: 5375
-    Token: "."            	Type: TERM_PUNCT_P	Start: 5376	End: 5377
+    Token: "."            	Type: PERIOD	Start: 5376	End: 5377
     Token: "ch"           	Type: ALL_LOWER_CASE	Start: 5377	End: 5379
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 5380	End: 5382
     Token: "Japan"        	Type: FIRST_UPPER_CASE	Start: 5383	End: 5388
     Token: "zu"           	Type: ALL_LOWER_CASE	Start: 5389	End: 5391
     Token: "Buche"        	Type: FIRST_UPPER_CASE	Start: 5392	End: 5397
-    Token: ","            	Type: PUNCTUATION	Start: 5397	End: 5398
+    Token: ","            	Type: COMMA	Start: 5397	End: 5398
     Token: "das"          	Type: ALL_LOWER_CASE	Start: 5399	End: 5402
     Token: "den"          	Type: ALL_LOWER_CASE	Start: 5403	End: 5406
     Token: "schlimmsten"  	Type: ALL_LOWER_CASE	Start: 5407	End: 5418
@@ -918,7 +918,7 @@ Paragraph End: 5859
     Token: "18"           	Type: DIGITAL	Start: 5443	End: 5445
     Token: "Jahren"       	Type: FIRST_UPPER_CASE	Start: 5446	End: 5452
     Token: "erlebt"       	Type: ALL_LOWER_CASE	Start: 5453	End: 5459
-    Token: ","            	Type: PUNCTUATION	Start: 5459	End: 5460
+    Token: ","            	Type: COMMA	Start: 5459	End: 5460
     Token: "als"          	Type: ALL_LOWER_CASE	Start: 5461	End: 5464
     Token: "dass"         	Type: ALL_LOWER_CASE	Start: 5465	End: 5469
     Token: "vor"          	Type: ALL_LOWER_CASE	Start: 5470	End: 5473
@@ -930,7 +930,7 @@ Paragraph End: 5859
     Token: "aussen"       	Type: ALL_LOWER_CASE	Start: 5504	End: 5510
     Token: "erwarten"     	Type: ALL_LOWER_CASE	Start: 5511	End: 5519
     Token: "koennten"     	Type: ALL_LOWER_CASE	Start: 5520	End: 5528
-    Token: "."            	Type: TERM_PUNCT_P	Start: 5528	End: 5529
+    Token: "."            	Type: PERIOD	Start: 5528	End: 5529
   Text Unit Start: 5530
   Text Unit End: 5859
     Token: "Allein"       	Type: FIRST_UPPER_CASE	Start: 5530	End: 5536
@@ -940,7 +940,7 @@ Paragraph End: 5859
     Token: "fuer"         	Type: ALL_LOWER_CASE	Start: 5565	End: 5569
     Token: "den"          	Type: ALL_LOWER_CASE	Start: 5570	End: 5573
     Token: "Welthandel"   	Type: FIRST_UPPER_CASE	Start: 5574	End: 5584
-    Token: "-"            	Type: PUNCTUATION	Start: 5585	End: 5586
+    Token: "-"            	Type: HYPHEN	Start: 5585	End: 5586
     Token: "statt"        	Type: ALL_LOWER_CASE	Start: 5587	End: 5592
     Token: "eines"        	Type: ALL_LOWER_CASE	Start: 5593	End: 5598
     Token: "Zuwachses"    	Type: FIRST_UPPER_CASE	Start: 5599	End: 5608
@@ -960,7 +960,7 @@ Paragraph End: 5859
     Token: "Prozent"      	Type: FIRST_UPPER_CASE	Start: 5687	End: 5694
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 5695	End: 5697
     Token: "1993"         	Type: DIGITAL	Start: 5698	End: 5702
-    Token: "-"            	Type: PUNCTUATION	Start: 5703	End: 5704
+    Token: "-"            	Type: HYPHEN	Start: 5703	End: 5704
     Token: "bedeuten"     	Type: ALL_LOWER_CASE	Start: 5705	End: 5713
     Token: "nach"         	Type: ALL_LOWER_CASE	Start: 5714	End: 5718
     Token: "Berechnungen" 	Type: FIRST_UPPER_CASE	Start: 5719	End: 5731
@@ -976,7 +976,7 @@ Paragraph End: 5859
     Token: "um"           	Type: ALL_LOWER_CASE	Start: 5838	End: 5840
     Token: "1,5"          	Type: DIGITAL	Start: 5841	End: 5844
     Token: "Prozentpunkte"	Type: FIRST_UPPER_CASE	Start: 5845	End: 5858
-    Token: "."            	Type: TERM_PUNCT_P	Start: 5858	End: 5859
+    Token: "."            	Type: PERIOD	Start: 5858	End: 5859
 
 Paragraph Start: 5864
 Paragraph End: 6253
@@ -987,15 +987,15 @@ Paragraph End: 6253
     Token: "Konjunktur"   	Type: FIRST_UPPER_CASE	Start: 5877	End: 5887
     Token: "droht"        	Type: ALL_LOWER_CASE	Start: 5888	End: 5893
     Token: "1993"         	Type: DIGITAL	Start: 5894	End: 5898
-    Token: "-"            	Type: PUNCTUATION	Start: 5899	End: 5900
+    Token: "-"            	Type: HYPHEN	Start: 5899	End: 5900
     Token: "im"           	Type: ALL_LOWER_CASE	Start: 5901	End: 5903
     Token: "wahrsten"     	Type: ALL_LOWER_CASE	Start: 5904	End: 5912
     Token: "Sinne"        	Type: FIRST_UPPER_CASE	Start: 5913	End: 5918
     Token: "des"          	Type: ALL_LOWER_CASE	Start: 5919	End: 5922
     Token: "Wortes"       	Type: FIRST_UPPER_CASE	Start: 5923	End: 5929
-    Token: "-"            	Type: PUNCTUATION	Start: 5930	End: 5931
+    Token: "-"            	Type: HYPHEN	Start: 5930	End: 5931
     Token: "abzuschmieren"	Type: ALL_LOWER_CASE	Start: 5932	End: 5945
-    Token: "."            	Type: TERM_PUNCT_P	Start: 5945	End: 5946
+    Token: "."            	Type: PERIOD	Start: 5945	End: 5946
   Text Unit Start: 5947
   Text Unit End: 6146
     Token: "Fuer"         	Type: FIRST_UPPER_CASE	Start: 5947	End: 5951
@@ -1009,34 +1009,34 @@ Paragraph End: 6253
     Token: "auf"          	Type: ALL_LOWER_CASE	Start: 6004	End: 6007
     Token: "Sturm"        	Type: FIRST_UPPER_CASE	Start: 6008	End: 6013
     Token: """            	Type: CLOSE_PUNCT	Start: 6013	End: 6014	PTB: "''"
-    Token: ","            	Type: PUNCTUATION	Start: 6014	End: 6015
+    Token: ","            	Type: COMMA	Start: 6014	End: 6015
     Token: "Deutschland"  	Type: FIRST_UPPER_CASE	Start: 6016	End: 6027
-    Token: ","            	Type: PUNCTUATION	Start: 6027	End: 6028
+    Token: ","            	Type: COMMA	Start: 6027	End: 6028
     Token: "findet"       	Type: ALL_LOWER_CASE	Start: 6029	End: 6035
     Token: "Tyll"         	Type: FIRST_UPPER_CASE	Start: 6036	End: 6040
     Token: "Necker"       	Type: FIRST_UPPER_CASE	Start: 6041	End: 6047
-    Token: ","            	Type: PUNCTUATION	Start: 6047	End: 6048
+    Token: ","            	Type: COMMA	Start: 6047	End: 6048
     Token: "Chef"         	Type: FIRST_UPPER_CASE	Start: 6049	End: 6053
     Token: "des"          	Type: ALL_LOWER_CASE	Start: 6054	End: 6057
     Token: "Bundesverbandes"	Type: FIRST_UPPER_CASE	Start: 6058	End: 6073
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 6074	End: 6077
     Token: "Deutschen"    	Type: FIRST_UPPER_CASE	Start: 6078	End: 6087
     Token: "Industrie"    	Type: FIRST_UPPER_CASE	Start: 6088	End: 6097
-    Token: "("            	Type: OPEN_BRACKET	Start: 6098	End: 6099	PTB: "-LRB-"
+    Token: "("            	Type: OPAR	Start: 6098	End: 6099
     Token: "BDI"          	Type: ALL_UPPER_CASE	Start: 6099	End: 6102
-    Token: ";"            	Type: PUNCTUATION	Start: 6102	End: 6103
+    Token: ";"            	Type: SCOLON	Start: 6102	End: 6103
     Token: "siehe"        	Type: ALL_LOWER_CASE	Start: 6104	End: 6109
     Token: "auch"         	Type: ALL_LOWER_CASE	Start: 6110	End: 6114
     Token: "Seite"        	Type: FIRST_UPPER_CASE	Start: 6115	End: 6120
     Token: "46/47"        	Type: TOKEN	Start: 6121	End: 6126	PTB: "46\/47"
-    Token: ")"            	Type: CLOSE_BRACKET	Start: 6126	End: 6127	PTB: "-RRB-"
-    Token: ","            	Type: PUNCTUATION	Start: 6127	End: 6128
+    Token: ")"            	Type: CPAR	Start: 6126	End: 6127
+    Token: ","            	Type: COMMA	Start: 6127	End: 6128
     Token: """            	Type: OPEN_PUNCT	Start: 6129	End: 6130	PTB: "``"
     Token: "liegt"        	Type: ALL_LOWER_CASE	Start: 6130	End: 6135
     Token: "im"           	Type: ALL_LOWER_CASE	Start: 6136	End: 6138
     Token: "Dreck"        	Type: FIRST_UPPER_CASE	Start: 6139	End: 6144
     Token: """            	Type: CLOSE_PUNCT	Start: 6144	End: 6145	PTB: "''"
-    Token: "."            	Type: TERM_PUNCT_P	Start: 6145	End: 6146
+    Token: "."            	Type: PERIOD	Start: 6145	End: 6146
   Text Unit Start: 6147
   Text Unit End: 6253
     Token: "Wie"          	Type: FIRST_UPPER_CASE	Start: 6147	End: 6150
@@ -1051,12 +1051,12 @@ Paragraph End: 6253
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 6207	End: 6210
     Token: "Abschwung"    	Type: FIRST_UPPER_CASE	Start: 6211	End: 6220
     Token: "nun"          	Type: ALL_LOWER_CASE	Start: 6221	End: 6224
-    Token: ","            	Type: PUNCTUATION	Start: 6224	End: 6225
+    Token: ","            	Type: COMMA	Start: 6224	End: 6225
     Token: "sich"         	Type: ALL_LOWER_CASE	Start: 6226	End: 6230
     Token: "selbst"       	Type: ALL_LOWER_CASE	Start: 6231	End: 6237
     Token: "zu"           	Type: ALL_LOWER_CASE	Start: 6238	End: 6240
     Token: "verstaerken"  	Type: ALL_LOWER_CASE	Start: 6241	End: 6252
-    Token: "."            	Type: TERM_PUNCT_P	Start: 6252	End: 6253
+    Token: "."            	Type: PERIOD	Start: 6252	End: 6253
 
 Paragraph Start: 6257
 Paragraph End: 6855
@@ -1071,35 +1071,35 @@ Paragraph End: 6855
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 6307	End: 6310
     Token: "westdeutschen"	Type: ALL_LOWER_CASE	Start: 6311	End: 6324
     Token: "Industrie"    	Type: FIRST_UPPER_CASE	Start: 6325	End: 6334
-    Token: ","            	Type: PUNCTUATION	Start: 6334	End: 6335
+    Token: ","            	Type: COMMA	Start: 6334	End: 6335
     Token: "im"           	Type: ALL_LOWER_CASE	Start: 6336	End: 6338
     Token: "Oktober"      	Type: FIRST_UPPER_CASE	Start: 6339	End: 6346
     Token: "zuletzt"      	Type: ALL_LOWER_CASE	Start: 6347	End: 6354
     Token: "um"           	Type: ALL_LOWER_CASE	Start: 6355	End: 6357
     Token: "fuenf"        	Type: ALL_LOWER_CASE	Start: 6358	End: 6363
     Token: "Prozent"      	Type: FIRST_UPPER_CASE	Start: 6364	End: 6371
-    Token: "."            	Type: TERM_PUNCT_P	Start: 6371	End: 6372
+    Token: "."            	Type: PERIOD	Start: 6371	End: 6372
   Text Unit Start: 6373
   Text Unit End: 6492
     Token: "Laengst"      	Type: FIRST_UPPER_CASE	Start: 6373	End: 6380
     Token: "abgebaut"     	Type: ALL_LOWER_CASE	Start: 6381	End: 6389
-    Token: "-"            	Type: PUNCTUATION	Start: 6390	End: 6391
+    Token: "-"            	Type: HYPHEN	Start: 6390	End: 6391
     Token: "seit"         	Type: ALL_LOWER_CASE	Start: 6392	End: 6396
     Token: "knapp"        	Type: ALL_LOWER_CASE	Start: 6397	End: 6402
     Token: "einem"        	Type: ALL_LOWER_CASE	Start: 6403	End: 6408
     Token: "halben"       	Type: ALL_LOWER_CASE	Start: 6409	End: 6415
     Token: "Jahr"         	Type: FIRST_UPPER_CASE	Start: 6416	End: 6420
-    Token: "-"            	Type: PUNCTUATION	Start: 6421	End: 6422
+    Token: "-"            	Type: HYPHEN	Start: 6421	End: 6422
     Token: "sind"         	Type: ALL_LOWER_CASE	Start: 6423	End: 6427
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 6428	End: 6431
     Token: "Auftragsbestaende"	Type: FIRST_UPPER_CASE	Start: 6432	End: 6449
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 6450	End: 6452
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 6453	End: 6456
     Token: "Maschinenbau" 	Type: FIRST_UPPER_CASE	Start: 6457	End: 6469
-    Token: "-"            	Type: PUNCTUATION	Start: 6469	End: 6470
+    Token: "-"            	Type: HYPHEN	Start: 6469	End: 6470
     Token: "und"          	Type: ALL_LOWER_CASE	Start: 6471	End: 6474
     Token: "Elektroindustrie"	Type: FIRST_UPPER_CASE	Start: 6475	End: 6491
-    Token: "."            	Type: TERM_PUNCT_P	Start: 6491	End: 6492
+    Token: "."            	Type: PERIOD	Start: 6491	End: 6492
   Text Unit Start: 6493
   Text Unit End: 6855
     Token: "Waehrend"     	Type: FIRST_UPPER_CASE	Start: 6493	End: 6501
@@ -1123,7 +1123,7 @@ Paragraph End: 6855
     Token: "dem"          	Type: ALL_LOWER_CASE	Start: 6639	End: 6642
     Token: "Vorjahr"      	Type: FIRST_UPPER_CASE	Start: 6643	End: 6650
     Token: "zusammenstrich"	Type: ALL_LOWER_CASE	Start: 6651	End: 6665
-    Token: ","            	Type: PUNCTUATION	Start: 6665	End: 6666
+    Token: ","            	Type: COMMA	Start: 6665	End: 6666
     Token: "stieg"        	Type: ALL_LOWER_CASE	Start: 6667	End: 6672
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 6673	End: 6676
     Token: "Zahl"         	Type: FIRST_UPPER_CASE	Start: 6677	End: 6681
@@ -1145,7 +1145,7 @@ Paragraph End: 6855
     Token: "ueber"        	Type: ALL_LOWER_CASE	Start: 6775	End: 6780
     Token: "10"           	Type: DIGITAL	Start: 6781	End: 6783
     Token: "000"          	Type: DIGITAL	Start: 6784	End: 6787
-    Token: ";"            	Type: PUNCTUATION	Start: 6787	End: 6788
+    Token: ";"            	Type: SCOLON	Start: 6787	End: 6788
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 6789	End: 6791
     Token: "Ostdeutschland"	Type: FIRST_UPPER_CASE	Start: 6792	End: 6806
     Token: "hat"          	Type: ALL_LOWER_CASE	Start: 6807	End: 6810
@@ -1156,7 +1156,7 @@ Paragraph End: 6855
     Token: "Konkurse"     	Type: FIRST_UPPER_CASE	Start: 6829	End: 6837
     Token: "gar"          	Type: ALL_LOWER_CASE	Start: 6838	End: 6841
     Token: "verdreifacht" 	Type: ALL_LOWER_CASE	Start: 6842	End: 6854
-    Token: "."            	Type: TERM_PUNCT_P	Start: 6854	End: 6855
+    Token: "."            	Type: PERIOD	Start: 6854	End: 6855
 
 Paragraph Start: 6859
 Paragraph End: 7332
@@ -1169,14 +1169,14 @@ Paragraph End: 7332
     Token: "Amtszeit"     	Type: FIRST_UPPER_CASE	Start: 6889	End: 6897
     Token: "Heinrich"     	Type: FIRST_UPPER_CASE	Start: 6898	End: 6906
     Token: "Frankes"      	Type: FIRST_UPPER_CASE	Start: 6907	End: 6914
-    Token: ","            	Type: PUNCTUATION	Start: 6914	End: 6915
+    Token: ","            	Type: COMMA	Start: 6914	End: 6915
     Token: "des"          	Type: ALL_LOWER_CASE	Start: 6916	End: 6919
     Token: "Praesidenten" 	Type: FIRST_UPPER_CASE	Start: 6920	End: 6932
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 6933	End: 6936
     Token: "Bundesanstalt"	Type: FIRST_UPPER_CASE	Start: 6937	End: 6950
     Token: "fuer"         	Type: ALL_LOWER_CASE	Start: 6951	End: 6955
     Token: "Arbeit"       	Type: FIRST_UPPER_CASE	Start: 6956	End: 6962
-    Token: ","            	Type: PUNCTUATION	Start: 6962	End: 6963
+    Token: ","            	Type: COMMA	Start: 6962	End: 6963
     Token: "naehert"      	Type: ALL_LOWER_CASE	Start: 6964	End: 6971
     Token: "sich"         	Type: ALL_LOWER_CASE	Start: 6972	End: 6976
     Token: "das"          	Type: ALL_LOWER_CASE	Start: 6977	End: 6980
@@ -1184,7 +1184,7 @@ Paragraph End: 7332
     Token: "Arbeitslosenheer"	Type: FIRST_UPPER_CASE	Start: 6990	End: 7006
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 7007	End: 7010
     Token: "Drei-Millionen-Grenze"	Type: TOKEN	Start: 7011	End: 7032
-    Token: "."            	Type: TERM_PUNCT_P	Start: 7032	End: 7033
+    Token: "."            	Type: PERIOD	Start: 7032	End: 7033
   Text Unit Start: 7034
   Text Unit End: 7332
     Token: "Addiert"      	Type: FIRST_UPPER_CASE	Start: 7034	End: 7041
@@ -1195,7 +1195,7 @@ Paragraph End: 7332
     Token: "Millionen"    	Type: FIRST_UPPER_CASE	Start: 7061	End: 7070
     Token: "Menschen"     	Type: FIRST_UPPER_CASE	Start: 7071	End: 7079
     Token: "hinzu"        	Type: ALL_LOWER_CASE	Start: 7080	End: 7085
-    Token: ","            	Type: PUNCTUATION	Start: 7085	End: 7086
+    Token: ","            	Type: COMMA	Start: 7085	End: 7086
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 7087	End: 7090
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 7091	End: 7093
     Token: "Ostdeutschland"	Type: FIRST_UPPER_CASE	Start: 7094	End: 7108
@@ -1210,7 +1210,7 @@ Paragraph End: 7332
     Token: "Brot"         	Type: FIRST_UPPER_CASE	Start: 7156	End: 7160
     Token: "gehalten"     	Type: ALL_LOWER_CASE	Start: 7161	End: 7169
     Token: "werden"       	Type: ALL_LOWER_CASE	Start: 7170	End: 7176
-    Token: ","            	Type: PUNCTUATION	Start: 7176	End: 7177
+    Token: ","            	Type: COMMA	Start: 7176	End: 7177
     Token: "droht"        	Type: ALL_LOWER_CASE	Start: 7178	End: 7183
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 7184	End: 7187
     Token: "Republik"     	Type: FIRST_UPPER_CASE	Start: 7188	End: 7196
@@ -1219,7 +1219,7 @@ Paragraph End: 7332
     Token: "von"          	Type: ALL_LOWER_CASE	Start: 7220	End: 7223
     Token: "15"           	Type: DIGITAL	Start: 7224	End: 7226
     Token: "Prozent"      	Type: FIRST_UPPER_CASE	Start: 7227	End: 7234
-    Token: "-"            	Type: PUNCTUATION	Start: 7235	End: 7236
+    Token: "-"            	Type: HYPHEN	Start: 7235	End: 7236
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 7237	End: 7240
     Token: "gravierendste"	Type: ALL_LOWER_CASE	Start: 7241	End: 7254
     Token: "Beschaeftigungskrise"	Type: FIRST_UPPER_CASE	Start: 7255	End: 7275
@@ -1231,7 +1231,7 @@ Paragraph End: 7332
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 7311	End: 7314
     Token: "dreissiger"   	Type: ALL_LOWER_CASE	Start: 7315	End: 7325
     Token: "Jahre"        	Type: FIRST_UPPER_CASE	Start: 7326	End: 7331
-    Token: "."            	Type: TERM_PUNCT_P	Start: 7331	End: 7332
+    Token: "."            	Type: PERIOD	Start: 7331	End: 7332
 
 Paragraph Start: 7336
 Paragraph End: 7836
@@ -1252,20 +1252,20 @@ Paragraph End: 7836
     Token: "vereinten"    	Type: ALL_LOWER_CASE	Start: 7426	End: 7435
     Token: "Deutschland"  	Type: FIRST_UPPER_CASE	Start: 7436	End: 7447
     Token: "an"           	Type: ALL_LOWER_CASE	Start: 7448	End: 7450
-    Token: ","            	Type: PUNCTUATION	Start: 7450	End: 7451
+    Token: ","            	Type: COMMA	Start: 7450	End: 7451
     Token: "sie"          	Type: ALL_LOWER_CASE	Start: 7452	End: 7455
     Token: "belastet"     	Type: ALL_LOWER_CASE	Start: 7456	End: 7464
     Token: "auch"         	Type: ALL_LOWER_CASE	Start: 7465	End: 7469
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 7470	End: 7473
     Token: "Sozialkassen" 	Type: FIRST_UPPER_CASE	Start: 7474	End: 7486
-    Token: "."            	Type: TERM_PUNCT_P	Start: 7486	End: 7487
+    Token: "."            	Type: PERIOD	Start: 7486	End: 7487
   Text Unit Start: 7488
   Text Unit End: 7533
     Token: "Weitere"      	Type: FIRST_UPPER_CASE	Start: 7488	End: 7495
     Token: "Abgabenerhoehungen"	Type: FIRST_UPPER_CASE	Start: 7496	End: 7514
     Token: "sind"         	Type: ALL_LOWER_CASE	Start: 7515	End: 7519
     Token: "programmiert" 	Type: ALL_LOWER_CASE	Start: 7520	End: 7532
-    Token: "."            	Type: TERM_PUNCT_P	Start: 7532	End: 7533
+    Token: "."            	Type: PERIOD	Start: 7532	End: 7533
   Text Unit Start: 7534
   Text Unit End: 7644
     Token: "Die"          	Type: FIRST_UPPER_CASE	Start: 7534	End: 7537
@@ -1280,7 +1280,7 @@ Paragraph End: 7836
     Token: "Investitionsneigung"	Type: FIRST_UPPER_CASE	Start: 7609	End: 7628
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 7629	End: 7632
     Token: "Wirtschaft"   	Type: FIRST_UPPER_CASE	Start: 7633	End: 7643
-    Token: "."            	Type: TERM_PUNCT_P	Start: 7643	End: 7644
+    Token: "."            	Type: PERIOD	Start: 7643	End: 7644
   Text Unit Start: 7645
   Text Unit End: 7836
     Token: "Staatliche"   	Type: FIRST_UPPER_CASE	Start: 7645	End: 7655
@@ -1299,7 +1299,7 @@ Paragraph End: 7836
     Token: "Abstieg"      	Type: FIRST_UPPER_CASE	Start: 7763	End: 7770
     Token: "vom"          	Type: ALL_LOWER_CASE	Start: 7771	End: 7774
     Token: "Zinsgipfel"   	Type: FIRST_UPPER_CASE	Start: 7775	End: 7785
-    Token: ","            	Type: PUNCTUATION	Start: 7785	End: 7786
+    Token: ","            	Type: COMMA	Start: 7785	End: 7786
     Token: "auf"          	Type: ALL_LOWER_CASE	Start: 7787	End: 7790
     Token: "den"          	Type: ALL_LOWER_CASE	Start: 7791	End: 7794
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 7795	End: 7798
@@ -1307,7 +1307,7 @@ Paragraph End: 7836
     Token: "derzeit"      	Type: ALL_LOWER_CASE	Start: 7810	End: 7817
     Token: "ungeduldig"   	Type: ALL_LOWER_CASE	Start: 7818	End: 7828
     Token: "wartet"       	Type: ALL_LOWER_CASE	Start: 7829	End: 7835
-    Token: "."            	Type: TERM_PUNCT_P	Start: 7835	End: 7836
+    Token: "."            	Type: PERIOD	Start: 7835	End: 7836
 
 Paragraph Start: 7840
 Paragraph End: 8852
@@ -1318,14 +1318,14 @@ Paragraph End: 8852
     Token: """            	Type: OPEN_PUNCT	Start: 7850	End: 7851	PTB: "``"
     Token: "irrsinnigen"  	Type: ALL_LOWER_CASE	Start: 7851	End: 7862
     Token: "Kredit"       	Type: FIRST_UPPER_CASE	Start: 7863	End: 7869
-    Token: "-"            	Type: PUNCTUATION	Start: 7869	End: 7870
+    Token: "-"            	Type: HYPHEN	Start: 7869	End: 7870
     Token: "und"          	Type: ALL_LOWER_CASE	Start: 7871	End: 7874
     Token: "Wirtschaftspolitik"	Type: FIRST_UPPER_CASE	Start: 7875	End: 7893
     Token: """            	Type: CLOSE_PUNCT	Start: 7893	End: 7894	PTB: "''"
-    Token: "("            	Type: OPEN_BRACKET	Start: 7895	End: 7896	PTB: "-LRB-"
+    Token: "("            	Type: OPAR	Start: 7895	End: 7896
     Token: "Alt-Kanzler"  	Type: TOKEN	Start: 7896	End: 7907
     Token: "Schmidt"      	Type: FIRST_UPPER_CASE	Start: 7908	End: 7915
-    Token: ")"            	Type: CLOSE_BRACKET	Start: 7915	End: 7916	PTB: "-RRB-"
+    Token: ")"            	Type: CPAR	Start: 7915	End: 7916
     Token: "hat"          	Type: ALL_LOWER_CASE	Start: 7917	End: 7920
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 7921	End: 7924
     Token: "Bundesregierung"	Type: FIRST_UPPER_CASE	Start: 7925	End: 7940
@@ -1338,7 +1338,7 @@ Paragraph End: 8852
     Token: "allem"        	Type: ALL_LOWER_CASE	Start: 7974	End: 7979
     Token: "selbst"       	Type: ALL_LOWER_CASE	Start: 7980	End: 7986
     Token: "verschuldet"  	Type: ALL_LOWER_CASE	Start: 7987	End: 7998
-    Token: "."            	Type: TERM_PUNCT_P	Start: 7998	End: 7999
+    Token: "."            	Type: PERIOD	Start: 7998	End: 7999
   Text Unit Start: 8000
   Text Unit End: 8606
     Token: "Statt"        	Type: FIRST_UPPER_CASE	Start: 8000	End: 8005
@@ -1360,7 +1360,7 @@ Paragraph End: 8852
     Token: "Gemeinden"    	Type: FIRST_UPPER_CASE	Start: 8129	End: 8138
     Token: "zu"           	Type: ALL_LOWER_CASE	Start: 8139	End: 8141
     Token: "draengen"     	Type: ALL_LOWER_CASE	Start: 8142	End: 8150
-    Token: ","            	Type: PUNCTUATION	Start: 8150	End: 8151
+    Token: ","            	Type: COMMA	Start: 8150	End: 8151
     Token: "den"          	Type: ALL_LOWER_CASE	Start: 8152	End: 8155
     Token: "Solidaritaetszuschlag"	Type: FIRST_UPPER_CASE	Start: 8156	End: 8177
     Token: "weiterzufuehren"	Type: ALL_LOWER_CASE	Start: 8178	End: 8193
@@ -1368,11 +1368,11 @@ Paragraph End: 8852
     Token: "fruehzeitig"  	Type: ALL_LOWER_CASE	Start: 8198	End: 8209
     Token: "Steuererhoehungen"	Type: FIRST_UPPER_CASE	Start: 8210	End: 8227
     Token: "anzukuendigen"	Type: ALL_LOWER_CASE	Start: 8228	End: 8241
-    Token: ","            	Type: PUNCTUATION	Start: 8241	End: 8242
+    Token: ","            	Type: COMMA	Start: 8241	End: 8242
     Token: "herrscht"     	Type: ALL_LOWER_CASE	Start: 8243	End: 8251
     Token: "Bonner"       	Type: FIRST_UPPER_CASE	Start: 8252	End: 8258
     Token: "Ratlosigkeit" 	Type: FIRST_UPPER_CASE	Start: 8259	End: 8271
-    Token: ":"            	Type: PUNCTUATION	Start: 8271	End: 8272
+    Token: ":"            	Type: COLON	Start: 8271	End: 8272
     Token: "Waehrend"     	Type: FIRST_UPPER_CASE	Start: 8273	End: 8281
     Token: "das"          	Type: ALL_LOWER_CASE	Start: 8282	End: 8285
     Token: "Defizit"      	Type: FIRST_UPPER_CASE	Start: 8286	End: 8293
@@ -1386,7 +1386,7 @@ Paragraph End: 8852
     Token: "Milliarden"   	Type: FIRST_UPPER_CASE	Start: 8361	End: 8371
     Token: "Mark"         	Type: FIRST_UPPER_CASE	Start: 8372	End: 8376
     Token: "ansteigt"     	Type: ALL_LOWER_CASE	Start: 8377	End: 8385
-    Token: ","            	Type: PUNCTUATION	Start: 8385	End: 8386
+    Token: ","            	Type: COMMA	Start: 8385	End: 8386
     Token: "ist"          	Type: ALL_LOWER_CASE	Start: 8387	End: 8390
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 8391	End: 8394
     Token: "Finanzierung" 	Type: FIRST_UPPER_CASE	Start: 8395	End: 8407
@@ -1403,31 +1403,31 @@ Paragraph End: 8852
     Token: "Drittel"      	Type: FIRST_UPPER_CASE	Start: 8494	End: 8501
     Token: "ungeklaert"   	Type: ALL_LOWER_CASE	Start: 8502	End: 8512
     Token: """            	Type: CLOSE_PUNCT	Start: 8512	End: 8513	PTB: "''"
-    Token: ","            	Type: PUNCTUATION	Start: 8513	End: 8514
+    Token: ","            	Type: COMMA	Start: 8513	End: 8514
     Token: "so"           	Type: ALL_LOWER_CASE	Start: 8515	End: 8517
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 8518	End: 8521
     Token: "Feststellung" 	Type: FIRST_UPPER_CASE	Start: 8522	End: 8534
     Token: "von"          	Type: ALL_LOWER_CASE	Start: 8535	End: 8538
     Token: "Horst"        	Type: FIRST_UPPER_CASE	Start: 8539	End: 8544
     Token: "Siebert"      	Type: FIRST_UPPER_CASE	Start: 8545	End: 8552
-    Token: ","            	Type: PUNCTUATION	Start: 8552	End: 8553
+    Token: ","            	Type: COMMA	Start: 8552	End: 8553
     Token: "Praesident"   	Type: FIRST_UPPER_CASE	Start: 8554	End: 8564
     Token: "des"          	Type: ALL_LOWER_CASE	Start: 8565	End: 8568
     Token: "Kieler"       	Type: FIRST_UPPER_CASE	Start: 8569	End: 8575
     Token: "Instituts"    	Type: FIRST_UPPER_CASE	Start: 8576	End: 8585
     Token: "fuer"         	Type: ALL_LOWER_CASE	Start: 8586	End: 8590
     Token: "Weltwirtschaft"	Type: FIRST_UPPER_CASE	Start: 8591	End: 8605
-    Token: "."            	Type: TERM_PUNCT_P	Start: 8605	End: 8606
+    Token: "."            	Type: PERIOD	Start: 8605	End: 8606
   Text Unit Start: 8607
   Text Unit End: 8852
     Token: "Am"           	Type: FIRST_UPPER_CASE	Start: 8607	End: 8609
     Token: "Kapitalmarkt" 	Type: FIRST_UPPER_CASE	Start: 8610	End: 8622
-    Token: ","            	Type: PUNCTUATION	Start: 8622	End: 8623
+    Token: ","            	Type: COMMA	Start: 8622	End: 8623
     Token: "so"           	Type: ALL_LOWER_CASE	Start: 8624	End: 8626
     Token: "viel"         	Type: ALL_LOWER_CASE	Start: 8627	End: 8631
     Token: "scheint"      	Type: ALL_LOWER_CASE	Start: 8632	End: 8639
     Token: "klar"         	Type: ALL_LOWER_CASE	Start: 8640	End: 8644
-    Token: ","            	Type: PUNCTUATION	Start: 8644	End: 8645
+    Token: ","            	Type: COMMA	Start: 8644	End: 8645
     Token: "koennen"      	Type: ALL_LOWER_CASE	Start: 8646	End: 8653
     Token: "sich"         	Type: ALL_LOWER_CASE	Start: 8654	End: 8658
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 8659	End: 8662
@@ -1435,7 +1435,7 @@ Paragraph End: 8852
     Token: "kaum"         	Type: ALL_LOWER_CASE	Start: 8670	End: 8674
     Token: "mehr"         	Type: ALL_LOWER_CASE	Start: 8675	End: 8679
     Token: "bedienen"     	Type: ALL_LOWER_CASE	Start: 8680	End: 8688
-    Token: ":"            	Type: PUNCTUATION	Start: 8688	End: 8689
+    Token: ":"            	Type: COLON	Start: 8688	End: 8689
     Token: "Wenn"         	Type: FIRST_UPPER_CASE	Start: 8690	End: 8694
     Token: "1995"         	Type: DIGITAL	Start: 8695	End: 8699
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 8700	End: 8703
@@ -1449,7 +1449,7 @@ Paragraph End: 8852
     Token: "zu"           	Type: ALL_LOWER_CASE	Start: 8755	End: 8757
     Token: "Buche"        	Type: FIRST_UPPER_CASE	Start: 8758	End: 8763
     Token: "schlagen"     	Type: ALL_LOWER_CASE	Start: 8764	End: 8772
-    Token: ","            	Type: PUNCTUATION	Start: 8772	End: 8773
+    Token: ","            	Type: COMMA	Start: 8772	End: 8773
     Token: "wird"         	Type: ALL_LOWER_CASE	Start: 8774	End: 8778
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 8779	End: 8782
     Token: "Zinslastquote"	Type: FIRST_UPPER_CASE	Start: 8783	End: 8796
@@ -1461,7 +1461,7 @@ Paragraph End: 8852
     Token: "des"          	Type: ALL_LOWER_CASE	Start: 8819	End: 8822
     Token: "Gesamthaushalts"	Type: FIRST_UPPER_CASE	Start: 8823	End: 8838
     Token: "katapultiert" 	Type: ALL_LOWER_CASE	Start: 8839	End: 8851
-    Token: "."            	Type: TERM_PUNCT_P	Start: 8851	End: 8852
+    Token: "."            	Type: PERIOD	Start: 8851	End: 8852
 
 Paragraph Start: 8856
 Paragraph End: 9464
@@ -1470,14 +1470,14 @@ Paragraph End: 9464
     Token: "Wen"          	Type: FIRST_UPPER_CASE	Start: 8856	End: 8859
     Token: "wundert"      	Type: ALL_LOWER_CASE	Start: 8860	End: 8867
     Token: "'s"           	Type: RIGHTSPLIT	Start: 8867	End: 8869
-    Token: ","            	Type: PUNCTUATION	Start: 8869	End: 8870
+    Token: ","            	Type: COMMA	Start: 8869	End: 8870
     Token: "wenn"         	Type: ALL_LOWER_CASE	Start: 8871	End: 8875
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 8876	End: 8879
     Token: "Angst"        	Type: FIRST_UPPER_CASE	Start: 8880	End: 8885
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 8886	End: 8889
     Token: "Frankfurter"  	Type: FIRST_UPPER_CASE	Start: 8890	End: 8901
     Token: "Waehrungshueter"	Type: FIRST_UPPER_CASE	Start: 8902	End: 8917
-    Token: ","            	Type: PUNCTUATION	Start: 8917	End: 8918
+    Token: ","            	Type: COMMA	Start: 8917	End: 8918
     Token: "mit"          	Type: ALL_LOWER_CASE	Start: 8919	End: 8922
     Token: "einer"        	Type: ALL_LOWER_CASE	Start: 8923	End: 8928
     Token: "baldigen"     	Type: ALL_LOWER_CASE	Start: 8929	End: 8937
@@ -1487,14 +1487,14 @@ Paragraph End: 9464
     Token: "Glaubwuerdigkeit"	Type: FIRST_UPPER_CASE	Start: 8960	End: 8976
     Token: "zu"           	Type: ALL_LOWER_CASE	Start: 8977	End: 8979
     Token: "verlieren"    	Type: ALL_LOWER_CASE	Start: 8980	End: 8989
-    Token: ","            	Type: PUNCTUATION	Start: 8989	End: 8990
+    Token: ","            	Type: COMMA	Start: 8989	End: 8990
     Token: "so"           	Type: ALL_LOWER_CASE	Start: 8991	End: 8993
     Token: "tief"         	Type: ALL_LOWER_CASE	Start: 8994	End: 8998
     Token: "sitzt"        	Type: ALL_LOWER_CASE	Start: 8999	End: 9004
     Token: "wie"          	Type: ALL_LOWER_CASE	Start: 9005	End: 9008
     Token: "noch"         	Type: ALL_LOWER_CASE	Start: 9009	End: 9013
     Token: "nie"          	Type: ALL_LOWER_CASE	Start: 9014	End: 9017
-    Token: "."            	Type: TERM_PUNCT_P	Start: 9017	End: 9018
+    Token: "."            	Type: PERIOD	Start: 9017	End: 9018
   Text Unit Start: 9019
   Text Unit End: 9464
     Token: "Die"          	Type: FIRST_UPPER_CASE	Start: 9019	End: 9022
@@ -1505,7 +1505,7 @@ Paragraph End: 9464
     Token: "Ende"         	Type: FIRST_UPPER_CASE	Start: 9072	End: 9076
     Token: "vorvergangener"	Type: ALL_LOWER_CASE	Start: 9077	End: 9091
     Token: "Woche"        	Type: FIRST_UPPER_CASE	Start: 9092	End: 9097
-    Token: ","            	Type: PUNCTUATION	Start: 9097	End: 9098
+    Token: ","            	Type: COMMA	Start: 9097	End: 9098
     Token: "aus"          	Type: ALL_LOWER_CASE	Start: 9099	End: 9102
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 9103	End: 9106
     Token: "Anhebung"     	Type: FIRST_UPPER_CASE	Start: 9107	End: 9115
@@ -1525,18 +1525,18 @@ Paragraph End: 9464
     Token: "Frankfurter"  	Type: FIRST_UPPER_CASE	Start: 9202	End: 9213
     Token: "Kurses"       	Type: FIRST_UPPER_CASE	Start: 9214	End: 9220
     Token: "herauszulesen"	Type: ALL_LOWER_CASE	Start: 9221	End: 9234
-    Token: ","            	Type: PUNCTUATION	Start: 9234	End: 9235
+    Token: ","            	Type: COMMA	Start: 9234	End: 9235
     Token: "wirkte"       	Type: ALL_LOWER_CASE	Start: 9236	End: 9242
     Token: "denn"         	Type: ALL_LOWER_CASE	Start: 9243	End: 9247
     Token: "auch"         	Type: ALL_LOWER_CASE	Start: 9248	End: 9252
     Token: "fast"         	Type: ALL_LOWER_CASE	Start: 9253	End: 9257
     Token: "verzweifelt"  	Type: ALL_LOWER_CASE	Start: 9258	End: 9269
-    Token: ":"            	Type: PUNCTUATION	Start: 9269	End: 9270
+    Token: ":"            	Type: COLON	Start: 9269	End: 9270
     Token: "Von"          	Type: FIRST_UPPER_CASE	Start: 9271	End: 9274
     Token: "ihrem"        	Type: ALL_LOWER_CASE	Start: 9275	End: 9280
     Token: "mittelfristigen"	Type: ALL_LOWER_CASE	Start: 9281	End: 9296
     Token: "Ziel"         	Type: FIRST_UPPER_CASE	Start: 9297	End: 9301
-    Token: ","            	Type: PUNCTUATION	Start: 9301	End: 9302
+    Token: ","            	Type: COMMA	Start: 9301	End: 9302
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 9303	End: 9306
     Token: "Inflationsrate"	Type: FIRST_UPPER_CASE	Start: 9307	End: 9321
     Token: "auf"          	Type: ALL_LOWER_CASE	Start: 9322	End: 9325
@@ -1544,7 +1544,7 @@ Paragraph End: 9464
     Token: "Prozent"      	Type: FIRST_UPPER_CASE	Start: 9331	End: 9338
     Token: "zu"           	Type: ALL_LOWER_CASE	Start: 9339	End: 9341
     Token: "beschraenken" 	Type: ALL_LOWER_CASE	Start: 9342	End: 9354
-    Token: ","            	Type: PUNCTUATION	Start: 9354	End: 9355
+    Token: ","            	Type: COMMA	Start: 9354	End: 9355
     Token: "ist"          	Type: ALL_LOWER_CASE	Start: 9356	End: 9359
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 9360	End: 9363
     Token: "Bundesbank"   	Type: FIRST_UPPER_CASE	Start: 9364	End: 9374
@@ -1562,7 +1562,7 @@ Paragraph End: 9464
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 9442	End: 9445
     Token: "deutschen"    	Type: ALL_LOWER_CASE	Start: 9446	End: 9455
     Token: "Einheit"      	Type: FIRST_UPPER_CASE	Start: 9456	End: 9463
-    Token: "."            	Type: TERM_PUNCT_P	Start: 9463	End: 9464
+    Token: "."            	Type: PERIOD	Start: 9463	End: 9464
 
 Paragraph Start: 9468
 Paragraph End: 9993
@@ -1578,12 +1578,12 @@ Paragraph End: 9993
     Token: "das"          	Type: ALL_LOWER_CASE	Start: 9518	End: 9521
     Token: "Europaeische" 	Type: FIRST_UPPER_CASE	Start: 9522	End: 9534
     Token: "Waehrungssystem"	Type: FIRST_UPPER_CASE	Start: 9535	End: 9550
-    Token: "("            	Type: OPEN_BRACKET	Start: 9551	End: 9552	PTB: "-LRB-"
+    Token: "("            	Type: OPAR	Start: 9551	End: 9552
     Token: "EWS"          	Type: ALL_UPPER_CASE	Start: 9552	End: 9555
-    Token: ")"            	Type: CLOSE_BRACKET	Start: 9555	End: 9556	PTB: "-RRB-"
+    Token: ")"            	Type: CPAR	Start: 9555	End: 9556
     Token: "zu"           	Type: ALL_LOWER_CASE	Start: 9557	End: 9559
     Token: "sprengen"     	Type: ALL_LOWER_CASE	Start: 9560	End: 9568
-    Token: "."            	Type: TERM_PUNCT_P	Start: 9568	End: 9569
+    Token: "."            	Type: PERIOD	Start: 9568	End: 9569
   Text Unit Start: 9570
   Text Unit End: 9687
     Token: "Sie"          	Type: FIRST_UPPER_CASE	Start: 9570	End: 9573
@@ -1596,15 +1596,15 @@ Paragraph End: 9993
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 9621	End: 9624
     Token: "Europaeischen"	Type: FIRST_UPPER_CASE	Start: 9625	End: 9638
     Token: "Gemeinschaft" 	Type: FIRST_UPPER_CASE	Start: 9639	End: 9651
-    Token: "("            	Type: OPEN_BRACKET	Start: 9652	End: 9653	PTB: "-LRB-"
+    Token: "("            	Type: OPAR	Start: 9652	End: 9653
     Token: "EG"           	Type: ALL_UPPER_CASE	Start: 9653	End: 9655
-    Token: ")"            	Type: CLOSE_BRACKET	Start: 9655	End: 9656	PTB: "-RRB-"
+    Token: ")"            	Type: CPAR	Start: 9655	End: 9656
     Token: "immer"        	Type: ALL_LOWER_CASE	Start: 9657	End: 9662
     Token: "tiefer"       	Type: ALL_LOWER_CASE	Start: 9663	End: 9669
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 9670	End: 9672
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 9673	End: 9676
     Token: "Rezession"    	Type: FIRST_UPPER_CASE	Start: 9677	End: 9686
-    Token: "."            	Type: TERM_PUNCT_P	Start: 9686	End: 9687
+    Token: "."            	Type: PERIOD	Start: 9686	End: 9687
   Text Unit Start: 9688
   Text Unit End: 9820
     Token: "Unter"        	Type: FIRST_UPPER_CASE	Start: 9688	End: 9693
@@ -1625,12 +1625,12 @@ Paragraph End: 9993
     Token: "1,5"          	Type: DIGITAL	Start: 9798	End: 9801
     Token: "Prozent"      	Type: FIRST_UPPER_CASE	Start: 9802	End: 9809
     Token: "reduziert"    	Type: ALL_LOWER_CASE	Start: 9810	End: 9819
-    Token: "."            	Type: TERM_PUNCT_P	Start: 9819	End: 9820
+    Token: "."            	Type: PERIOD	Start: 9819	End: 9820
   Text Unit Start: 9821
   Text Unit End: 9993
     Token: "Die"          	Type: FIRST_UPPER_CASE	Start: 9821	End: 9824
     Token: "Investitionen"	Type: FIRST_UPPER_CASE	Start: 9825	End: 9838
-    Token: ","            	Type: PUNCTUATION	Start: 9838	End: 9839
+    Token: ","            	Type: COMMA	Start: 9838	End: 9839
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 9840	End: 9843
     Token: "einige"       	Type: ALL_LOWER_CASE	Start: 9844	End: 9850
     Token: "Jahre"        	Type: FIRST_UPPER_CASE	Start: 9851	End: 9856
@@ -1639,7 +1639,7 @@ Paragraph End: 9993
     Token: "dynamischste" 	Type: ALL_LOWER_CASE	Start: 9866	End: 9878
     Token: "Wachstumskomponente"	Type: FIRST_UPPER_CASE	Start: 9879	End: 9898
     Token: "waren"        	Type: ALL_LOWER_CASE	Start: 9899	End: 9904
-    Token: ","            	Type: PUNCTUATION	Start: 9904	End: 9905
+    Token: ","            	Type: COMMA	Start: 9904	End: 9905
     Token: "gingen"       	Type: ALL_LOWER_CASE	Start: 9906	End: 9912
     Token: "bereits"      	Type: ALL_LOWER_CASE	Start: 9913	End: 9920
     Token: "1991"         	Type: DIGITAL	Start: 9921	End: 9925
@@ -1652,7 +1652,7 @@ Paragraph End: 9993
     Token: "1993"         	Type: DIGITAL	Start: 9972	End: 9976
     Token: "schwach"      	Type: ALL_LOWER_CASE	Start: 9977	End: 9984
     Token: "bleiben"      	Type: ALL_LOWER_CASE	Start: 9985	End: 9992
-    Token: "."            	Type: TERM_PUNCT_P	Start: 9992	End: 9993
+    Token: "."            	Type: PERIOD	Start: 9992	End: 9993
 
 Paragraph Start: 9997
 Paragraph End: 10460
@@ -1669,13 +1669,13 @@ Paragraph End: 10460
     Token: "allem"        	Type: ALL_LOWER_CASE	Start: 10064	End: 10069
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 10070	End: 10073
     Token: "Deutschen"    	Type: FIRST_UPPER_CASE	Start: 10074	End: 10083
-    Token: "."            	Type: TERM_PUNCT_P	Start: 10083	End: 10084
+    Token: "."            	Type: PERIOD	Start: 10083	End: 10084
   Text Unit Start: 10085
   Text Unit End: 10235
     Token: "Der"          	Type: FIRST_UPPER_CASE	Start: 10085	End: 10088
     Token: "deutsche"     	Type: ALL_LOWER_CASE	Start: 10089	End: 10097
     Token: "Maschinenbau" 	Type: FIRST_UPPER_CASE	Start: 10098	End: 10110
-    Token: ","            	Type: PUNCTUATION	Start: 10110	End: 10111
+    Token: ","            	Type: COMMA	Start: 10110	End: 10111
     Token: "seit"         	Type: ALL_LOWER_CASE	Start: 10112	End: 10116
     Token: "zwei"         	Type: ALL_LOWER_CASE	Start: 10117	End: 10121
     Token: "Jahren"       	Type: FIRST_UPPER_CASE	Start: 10122	End: 10128
@@ -1684,7 +1684,7 @@ Paragraph End: 10460
     Token: "wie"          	Type: ALL_LOWER_CASE	Start: 10141	End: 10144
     Token: "noch"         	Type: ALL_LOWER_CASE	Start: 10145	End: 10149
     Token: "nie"          	Type: ALL_LOWER_CASE	Start: 10150	End: 10153
-    Token: ","            	Type: PUNCTUATION	Start: 10153	End: 10154
+    Token: ","            	Type: COMMA	Start: 10153	End: 10154
     Token: "erwartet"     	Type: ALL_LOWER_CASE	Start: 10155	End: 10163
     Token: "im"           	Type: ALL_LOWER_CASE	Start: 10164	End: 10166
     Token: "kommenden"    	Type: ALL_LOWER_CASE	Start: 10167	End: 10176
@@ -1696,7 +1696,7 @@ Paragraph End: 10460
     Token: "zu"           	Type: ALL_LOWER_CASE	Start: 10221	End: 10223
     Token: "25"           	Type: DIGITAL	Start: 10224	End: 10226
     Token: "Prozent"      	Type: FIRST_UPPER_CASE	Start: 10227	End: 10234
-    Token: "."            	Type: TERM_PUNCT_P	Start: 10234	End: 10235
+    Token: "."            	Type: PERIOD	Start: 10234	End: 10235
   Text Unit Start: 10236
   Text Unit End: 10460
     Token: "Ging"         	Type: FIRST_UPPER_CASE	Start: 10236	End: 10240
@@ -1705,7 +1705,7 @@ Paragraph End: 10460
     Token: "etwa"         	Type: ALL_LOWER_CASE	Start: 10256	End: 10260
     Token: "im"           	Type: ALL_LOWER_CASE	Start: 10261	End: 10263
     Token: "EDV"          	Type: ALL_UPPER_CASE	Start: 10264	End: 10267
-    Token: "-"            	Type: PUNCTUATION	Start: 10267	End: 10268
+    Token: "-"            	Type: HYPHEN	Start: 10267	End: 10268
     Token: "und"          	Type: ALL_LOWER_CASE	Start: 10269	End: 10272
     Token: "Bueromaschinenbereich"	Type: FIRST_UPPER_CASE	Start: 10273	End: 10294
     Token: "schon"        	Type: ALL_LOWER_CASE	Start: 10295	End: 10300
@@ -1716,7 +1716,7 @@ Paragraph End: 10460
     Token: "25"           	Type: DIGITAL	Start: 10322	End: 10324
     Token: "Prozent"      	Type: FIRST_UPPER_CASE	Start: 10325	End: 10332
     Token: "zurueck"      	Type: ALL_LOWER_CASE	Start: 10333	End: 10340
-    Token: ","            	Type: PUNCTUATION	Start: 10340	End: 10341
+    Token: ","            	Type: COMMA	Start: 10340	End: 10341
     Token: "muss"         	Type: ALL_LOWER_CASE	Start: 10342	End: 10346
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 10347	End: 10350
     Token: "Warenausstoss"	Type: FIRST_UPPER_CASE	Start: 10351	End: 10364
@@ -1732,7 +1732,7 @@ Paragraph End: 10460
     Token: "Prozent"      	Type: FIRST_UPPER_CASE	Start: 10434	End: 10441
     Token: "gedrosselt"   	Type: ALL_LOWER_CASE	Start: 10442	End: 10452
     Token: "werden"       	Type: ALL_LOWER_CASE	Start: 10453	End: 10459
-    Token: "."            	Type: TERM_PUNCT_P	Start: 10459	End: 10460
+    Token: "."            	Type: PERIOD	Start: 10459	End: 10460
 
 Paragraph Start: 10464
 Paragraph End: 10884
@@ -1757,11 +1757,11 @@ Paragraph End: 10884
     Token: "ins"          	Type: ALL_LOWER_CASE	Start: 10596	End: 10599
     Token: "Schlingern"   	Type: FIRST_UPPER_CASE	Start: 10600	End: 10610
     Token: "geraten"      	Type: ALL_LOWER_CASE	Start: 10611	End: 10618
-    Token: "."            	Type: TERM_PUNCT_P	Start: 10618	End: 10619
+    Token: "."            	Type: PERIOD	Start: 10618	End: 10619
   Text Unit Start: 10620
   Text Unit End: 10819
     Token: "Volkswagen"   	Type: FIRST_UPPER_CASE	Start: 10620	End: 10630
-    Token: ","            	Type: PUNCTUATION	Start: 10630	End: 10631
+    Token: ","            	Type: COMMA	Start: 10630	End: 10631
     Token: "Mercedes-Benz"	Type: TOKEN	Start: 10632	End: 10645
     Token: "und"          	Type: ALL_LOWER_CASE	Start: 10646	End: 10649
     Token: "Opel"         	Type: FIRST_UPPER_CASE	Start: 10650	End: 10654
@@ -1774,7 +1774,7 @@ Paragraph End: 10884
     Token: "zu"           	Type: ALL_LOWER_CASE	Start: 10698	End: 10700
     Token: "17"           	Type: DIGITAL	Start: 10701	End: 10703
     Token: "Prozent"      	Type: FIRST_UPPER_CASE	Start: 10704	End: 10711
-    Token: "-"            	Type: PUNCTUATION	Start: 10712	End: 10713
+    Token: "-"            	Type: HYPHEN	Start: 10712	End: 10713
     Token: "allein"       	Type: ALL_LOWER_CASE	Start: 10714	End: 10720
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 10721	End: 10724
     Token: "Wolfsburger"  	Type: FIRST_UPPER_CASE	Start: 10725	End: 10736
@@ -1789,7 +1789,7 @@ Paragraph End: 10884
     Token: "von"          	Type: ALL_LOWER_CASE	Start: 10804	End: 10807
     Token: "40"           	Type: DIGITAL	Start: 10808	End: 10810
     Token: "Prozent"      	Type: FIRST_UPPER_CASE	Start: 10811	End: 10818
-    Token: "."            	Type: TERM_PUNCT_P	Start: 10818	End: 10819
+    Token: "."            	Type: PERIOD	Start: 10818	End: 10819
   Text Unit Start: 10820
   Text Unit End: 10884
     Token: "Ein"          	Type: FIRST_UPPER_CASE	Start: 10820	End: 10823
@@ -1800,7 +1800,7 @@ Paragraph End: 10884
     Token: "ist"          	Type: ALL_LOWER_CASE	Start: 10864	End: 10867
     Token: "nicht"        	Type: ALL_LOWER_CASE	Start: 10868	End: 10873
     Token: "abzusehen"    	Type: ALL_LOWER_CASE	Start: 10874	End: 10883
-    Token: "."            	Type: TERM_PUNCT_P	Start: 10883	End: 10884
+    Token: "."            	Type: PERIOD	Start: 10883	End: 10884
 
 Paragraph Start: 10888
 Paragraph End: 11436
@@ -1826,13 +1826,13 @@ Paragraph End: 11436
     Token: "gekanntes"    	Type: ALL_LOWER_CASE	Start: 11007	End: 11016
     Token: "Tief"         	Type: FIRST_UPPER_CASE	Start: 11017	End: 11021
     Token: "an"           	Type: ALL_LOWER_CASE	Start: 11022	End: 11024
-    Token: "."            	Type: TERM_PUNCT_P	Start: 11024	End: 11025
+    Token: "."            	Type: PERIOD	Start: 11024	End: 11025
   Text Unit Start: 11026
   Text Unit End: 11196
     Token: "Unternehmensberater"	Type: FIRST_UPPER_CASE	Start: 11026	End: 11045
     Token: "Detlef"       	Type: FIRST_UPPER_CASE	Start: 11046	End: 11052
     Token: "Borscheid"    	Type: FIRST_UPPER_CASE	Start: 11053	End: 11062
-    Token: ","            	Type: PUNCTUATION	Start: 11062	End: 11063
+    Token: ","            	Type: COMMA	Start: 11062	End: 11063
     Token: "Managing-Direktor"	Type: TOKEN	Start: 11064	End: 11081
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 11082	End: 11085
     Token: "Marketing"    	Type: FIRST_UPPER_CASE	Start: 11086	End: 11095
@@ -1840,7 +1840,7 @@ Paragraph End: 11436
     Token: "GmbH"         	Type: TOKEN	Start: 11103	End: 11107
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 11108	End: 11110
     Token: "Essen"        	Type: FIRST_UPPER_CASE	Start: 11111	End: 11116
-    Token: ","            	Type: PUNCTUATION	Start: 11116	End: 11117
+    Token: ","            	Type: COMMA	Start: 11116	End: 11117
     Token: "rechnet"      	Type: ALL_LOWER_CASE	Start: 11118	End: 11125
     Token: "europaweit"   	Type: ALL_LOWER_CASE	Start: 11126	End: 11136
     Token: "mit"          	Type: ALL_LOWER_CASE	Start: 11137	End: 11140
@@ -1852,7 +1852,7 @@ Paragraph End: 11436
     Token: "rund"         	Type: ALL_LOWER_CASE	Start: 11183	End: 11187
     Token: "800"          	Type: DIGITAL	Start: 11188	End: 11191
     Token: "000"          	Type: DIGITAL	Start: 11192	End: 11195
-    Token: "."            	Type: TERM_PUNCT_P	Start: 11195	End: 11196
+    Token: "."            	Type: PERIOD	Start: 11195	End: 11196
   Text Unit Start: 11197
   Text Unit End: 11270
     Token: "Niemand"      	Type: FIRST_UPPER_CASE	Start: 11197	End: 11204
@@ -1867,7 +1867,7 @@ Paragraph End: 11436
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 11251	End: 11253
     Token: "den"          	Type: ALL_LOWER_CASE	Start: 11254	End: 11257
     Token: "Folgejahren"  	Type: FIRST_UPPER_CASE	Start: 11258	End: 11269
-    Token: "."            	Type: TERM_PUNCT_P	Start: 11269	End: 11270
+    Token: "."            	Type: PERIOD	Start: 11269	End: 11270
   Text Unit Start: 11271
   Text Unit End: 11436
     Token: """            	Type: OPEN_PUNCT	Start: 11271	End: 11272	PTB: "``"
@@ -1875,7 +1875,7 @@ Paragraph End: 11436
     Token: "dramatische"  	Type: ALL_LOWER_CASE	Start: 11276	End: 11287
     Token: "Abwaertsentwicklung"	Type: FIRST_UPPER_CASE	Start: 11288	End: 11307
     Token: """            	Type: CLOSE_PUNCT	Start: 11307	End: 11308	PTB: "''"
-    Token: ","            	Type: PUNCTUATION	Start: 11308	End: 11309
+    Token: ","            	Type: COMMA	Start: 11308	End: 11309
     Token: "resuemierte"  	Type: ALL_LOWER_CASE	Start: 11310	End: 11321
     Token: "beispielsweise"	Type: ALL_LOWER_CASE	Start: 11322	End: 11336
     Token: "Audi-Vorstandschef"	Type: TOKEN	Start: 11337	End: 11355
@@ -1883,7 +1883,7 @@ Paragraph End: 11436
     Token: "Kortuem"      	Type: FIRST_UPPER_CASE	Start: 11368	End: 11375
     Token: "vorvergangene"	Type: ALL_LOWER_CASE	Start: 11376	End: 11389
     Token: "Woche"        	Type: FIRST_UPPER_CASE	Start: 11390	End: 11395
-    Token: ","            	Type: PUNCTUATION	Start: 11395	End: 11396
+    Token: ","            	Type: COMMA	Start: 11395	End: 11396
     Token: "werde"        	Type: ALL_LOWER_CASE	Start: 11397	End: 11402
     Token: """            	Type: OPEN_PUNCT	Start: 11403	End: 11404	PTB: "``"
     Token: "mindestens"   	Type: ALL_LOWER_CASE	Start: 11404	End: 11414
@@ -1891,7 +1891,7 @@ Paragraph End: 11436
     Token: "Jahre"        	Type: FIRST_UPPER_CASE	Start: 11420	End: 11425
     Token: "anhalten"     	Type: ALL_LOWER_CASE	Start: 11426	End: 11434
     Token: """            	Type: CLOSE_PUNCT	Start: 11434	End: 11435	PTB: "''"
-    Token: "."            	Type: TERM_PUNCT_P	Start: 11435	End: 11436
+    Token: "."            	Type: PERIOD	Start: 11435	End: 11436
 
 Paragraph Start: 11440
 Paragraph End: 11896
@@ -1905,14 +1905,14 @@ Paragraph End: 11896
     Token: "deutsche"     	Type: ALL_LOWER_CASE	Start: 11481	End: 11489
     Token: "Fabrikate"    	Type: FIRST_UPPER_CASE	Start: 11490	End: 11499
     Token: "trifft"       	Type: ALL_LOWER_CASE	Start: 11500	End: 11506
-    Token: ","            	Type: PUNCTUATION	Start: 11506	End: 11507
+    Token: ","            	Type: COMMA	Start: 11506	End: 11507
     Token: "wollten"      	Type: ALL_LOWER_CASE	Start: 11508	End: 11515
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 11516	End: 11519
     Token: "Konzernlenker"	Type: FIRST_UPPER_CASE	Start: 11520	End: 11533
     Token: "lange"        	Type: ALL_LOWER_CASE	Start: 11534	End: 11539
     Token: "nicht"        	Type: ALL_LOWER_CASE	Start: 11540	End: 11545
     Token: "wahrhaben"    	Type: ALL_LOWER_CASE	Start: 11546	End: 11555
-    Token: "."            	Type: TERM_PUNCT_P	Start: 11555	End: 11556
+    Token: "."            	Type: PERIOD	Start: 11555	End: 11556
   Text Unit Start: 11557
   Text Unit End: 11769
     Token: "Waehrend"     	Type: FIRST_UPPER_CASE	Start: 11557	End: 11565
@@ -1932,7 +1932,7 @@ Paragraph End: 11896
     Token: "Millionen"    	Type: FIRST_UPPER_CASE	Start: 11669	End: 11678
     Token: "Stueck"       	Type: FIRST_UPPER_CASE	Start: 11679	End: 11685
     Token: "zunimmt"      	Type: ALL_LOWER_CASE	Start: 11686	End: 11693
-    Token: ","            	Type: PUNCTUATION	Start: 11693	End: 11694
+    Token: ","            	Type: COMMA	Start: 11693	End: 11694
     Token: "verringert"   	Type: ALL_LOWER_CASE	Start: 11695	End: 11705
     Token: "sich"         	Type: ALL_LOWER_CASE	Start: 11706	End: 11710
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 11711	End: 11714
@@ -1943,7 +1943,7 @@ Paragraph End: 11896
     Token: "mindestens"   	Type: ALL_LOWER_CASE	Start: 11750	End: 11760
     Token: "430"          	Type: DIGITAL	Start: 11761	End: 11764
     Token: "000"          	Type: DIGITAL	Start: 11765	End: 11768
-    Token: "."            	Type: TERM_PUNCT_P	Start: 11768	End: 11769
+    Token: "."            	Type: PERIOD	Start: 11768	End: 11769
   Text Unit Start: 11770
   Text Unit End: 11896
     Token: "Ein"          	Type: FIRST_UPPER_CASE	Start: 11770	End: 11773
@@ -1951,12 +1951,12 @@ Paragraph End: 11896
     Token: "Buendel"      	Type: FIRST_UPPER_CASE	Start: 11781	End: 11788
     Token: "alter"        	Type: ALL_LOWER_CASE	Start: 11789	End: 11794
     Token: "Strukturprobleme"	Type: FIRST_UPPER_CASE	Start: 11795	End: 11811
-    Token: ","            	Type: PUNCTUATION	Start: 11811	End: 11812
+    Token: ","            	Type: COMMA	Start: 11811	End: 11812
     Token: "sagt"         	Type: ALL_LOWER_CASE	Start: 11813	End: 11817
     Token: "Unternehmensberater"	Type: FIRST_UPPER_CASE	Start: 11818	End: 11837
     Token: "Roland"       	Type: FIRST_UPPER_CASE	Start: 11838	End: 11844
     Token: "Berger"       	Type: FIRST_UPPER_CASE	Start: 11845	End: 11851
-    Token: ","            	Type: PUNCTUATION	Start: 11851	End: 11852
+    Token: ","            	Type: COMMA	Start: 11851	End: 11852
     Token: "tritt"        	Type: ALL_LOWER_CASE	Start: 11853	End: 11858
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 11859	End: 11861
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 11862	End: 11865
@@ -1964,7 +1964,7 @@ Paragraph End: 11896
     Token: "nun"          	Type: ALL_LOWER_CASE	Start: 11876	End: 11879
     Token: "vehement"     	Type: ALL_LOWER_CASE	Start: 11880	End: 11888
     Token: "zutage"       	Type: ALL_LOWER_CASE	Start: 11889	End: 11895
-    Token: "."            	Type: TERM_PUNCT_P	Start: 11895	End: 11896
+    Token: "."            	Type: PERIOD	Start: 11895	End: 11896
 
 Paragraph Start: 11900
 Paragraph End: 12676
@@ -1987,7 +1987,7 @@ Paragraph End: 12676
     Token: "deutschen"    	Type: ALL_LOWER_CASE	Start: 12006	End: 12015
     Token: "Wirtschaft"   	Type: FIRST_UPPER_CASE	Start: 12016	End: 12026
     Token: "glauben"      	Type: ALL_LOWER_CASE	Start: 12027	End: 12034
-    Token: ","            	Type: PUNCTUATION	Start: 12034	End: 12035
+    Token: ","            	Type: COMMA	Start: 12034	End: 12035
     Token: "so"           	Type: ALL_LOWER_CASE	Start: 12036	End: 12038
     Token: "hat"          	Type: ALL_LOWER_CASE	Start: 12039	End: 12042
     Token: "sich"         	Type: ALL_LOWER_CASE	Start: 12043	End: 12047
@@ -1998,7 +1998,7 @@ Paragraph End: 12676
     Token: "Deutschlands" 	Type: FIRST_UPPER_CASE	Start: 12083	End: 12095
     Token: "bereits"      	Type: ALL_LOWER_CASE	Start: 12096	End: 12103
     Token: "etabliert"    	Type: ALL_LOWER_CASE	Start: 12104	End: 12113
-    Token: "."            	Type: TERM_PUNCT_P	Start: 12113	End: 12114
+    Token: "."            	Type: PERIOD	Start: 12113	End: 12114
   Text Unit Start: 12115
   Text Unit End: 12343
     Token: "Trotz"        	Type: FIRST_UPPER_CASE	Start: 12115	End: 12120
@@ -2007,7 +2007,7 @@ Paragraph End: 12676
     Token: "Zunahme"      	Type: FIRST_UPPER_CASE	Start: 12136	End: 12143
     Token: "des"          	Type: ALL_LOWER_CASE	Start: 12144	End: 12147
     Token: "Welthandels"  	Type: FIRST_UPPER_CASE	Start: 12148	End: 12159
-    Token: ","            	Type: PUNCTUATION	Start: 12159	End: 12160
+    Token: ","            	Type: COMMA	Start: 12159	End: 12160
     Token: "so"           	Type: ALL_LOWER_CASE	Start: 12161	End: 12163
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 12164	End: 12167
     Token: "OECD"         	Type: ALL_UPPER_CASE	Start: 12168	End: 12172
@@ -2020,7 +2020,7 @@ Paragraph End: 12676
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 12233	End: 12235
     Token: "24"           	Type: DIGITAL	Start: 12236	End: 12238
     Token: "Mitgliedslaendern"	Type: FIRST_UPPER_CASE	Start: 12239	End: 12256
-    Token: ","            	Type: PUNCTUATION	Start: 12256	End: 12257
+    Token: ","            	Type: COMMA	Start: 12256	End: 12257
     Token: "werde"        	Type: ALL_LOWER_CASE	Start: 12258	End: 12263
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 12264	End: 12267
     Token: "deutsche"     	Type: ALL_LOWER_CASE	Start: 12268	End: 12276
@@ -2032,7 +2032,7 @@ Paragraph End: 12676
     Token: "Effekte"      	Type: FIRST_UPPER_CASE	Start: 12317	End: 12324
     Token: "ausloesen"    	Type: ALL_LOWER_CASE	Start: 12325	End: 12334
     Token: "koennen"      	Type: ALL_LOWER_CASE	Start: 12335	End: 12342
-    Token: "."            	Type: TERM_PUNCT_P	Start: 12342	End: 12343
+    Token: "."            	Type: PERIOD	Start: 12342	End: 12343
   Text Unit Start: 12344
   Text Unit End: 12473
     Token: "Zu"           	Type: FIRST_UPPER_CASE	Start: 12344	End: 12346
@@ -2040,21 +2040,21 @@ Paragraph End: 12676
     Token: "und"          	Type: ALL_LOWER_CASE	Start: 12353	End: 12356
     Token: "zu"           	Type: ALL_LOWER_CASE	Start: 12357	End: 12359
     Token: "einseitig"    	Type: ALL_LOWER_CASE	Start: 12360	End: 12369
-    Token: ","            	Type: PUNCTUATION	Start: 12369	End: 12370
+    Token: ","            	Type: COMMA	Start: 12369	End: 12370
     Token: "urteilen"     	Type: ALL_LOWER_CASE	Start: 12371	End: 12379
     Token: "denn"         	Type: ALL_LOWER_CASE	Start: 12380	End: 12384
     Token: "auch"         	Type: ALL_LOWER_CASE	Start: 12385	End: 12389
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 12390	End: 12393
     Token: "meisten"      	Type: ALL_LOWER_CASE	Start: 12394	End: 12401
     Token: "Unternehmensberater"	Type: FIRST_UPPER_CASE	Start: 12402	End: 12421
-    Token: ","            	Type: PUNCTUATION	Start: 12421	End: 12422
+    Token: ","            	Type: COMMA	Start: 12421	End: 12422
     Token: "haben"        	Type: ALL_LOWER_CASE	Start: 12423	End: 12428
     Token: "deutsche"     	Type: ALL_LOWER_CASE	Start: 12429	End: 12437
     Token: "Konzernlenker"	Type: FIRST_UPPER_CASE	Start: 12438	End: 12451
     Token: "auf"          	Type: ALL_LOWER_CASE	Start: 12452	End: 12455
     Token: "Wachstum"     	Type: FIRST_UPPER_CASE	Start: 12456	End: 12464
     Token: "gesetzt"      	Type: ALL_LOWER_CASE	Start: 12465	End: 12472
-    Token: "."            	Type: TERM_PUNCT_P	Start: 12472	End: 12473
+    Token: "."            	Type: PERIOD	Start: 12472	End: 12473
   Text Unit Start: 12474
   Text Unit End: 12676
     Token: "Waehrend"     	Type: FIRST_UPPER_CASE	Start: 12474	End: 12482
@@ -2072,7 +2072,7 @@ Paragraph End: 12676
     Token: "bereits"      	Type: ALL_LOWER_CASE	Start: 12565	End: 12572
     Token: "konsequent"   	Type: ALL_LOWER_CASE	Start: 12573	End: 12583
     Token: "durchrationalisierten"	Type: ALL_LOWER_CASE	Start: 12584	End: 12605
-    Token: ","            	Type: PUNCTUATION	Start: 12605	End: 12606
+    Token: ","            	Type: COMMA	Start: 12605	End: 12606
     Token: "praegten"     	Type: ALL_LOWER_CASE	Start: 12607	End: 12615
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 12616	End: 12618
     Token: "Deutschland"  	Type: FIRST_UPPER_CASE	Start: 12619	End: 12630
@@ -2081,7 +2081,7 @@ Paragraph End: 12676
     Token: "Erweiterungsinvestitionen"	Type: FIRST_UPPER_CASE	Start: 12641	End: 12666
     Token: "das"          	Type: ALL_LOWER_CASE	Start: 12667	End: 12670
     Token: "Bild"         	Type: FIRST_UPPER_CASE	Start: 12671	End: 12675
-    Token: "."            	Type: TERM_PUNCT_P	Start: 12675	End: 12676
+    Token: "."            	Type: PERIOD	Start: 12675	End: 12676
 
 Paragraph Start: 12680
 Paragraph End: 12956
@@ -2093,14 +2093,14 @@ Paragraph End: 12956
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 12699	End: 12702
     Token: "Lean"         	Type: FIRST_UPPER_CASE	Start: 12703	End: 12707
     Token: "Production"   	Type: FIRST_UPPER_CASE	Start: 12708	End: 12718
-    Token: "-"            	Type: PUNCTUATION	Start: 12719	End: 12720
+    Token: "-"            	Type: HYPHEN	Start: 12719	End: 12720
     Token: "Erhoehung"    	Type: FIRST_UPPER_CASE	Start: 12721	End: 12730
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 12731	End: 12734
     Token: "Arbeitsproduktivitaet"	Type: FIRST_UPPER_CASE	Start: 12735	End: 12756
     Token: "nach"         	Type: ALL_LOWER_CASE	Start: 12757	End: 12761
     Token: "japanischem"  	Type: ALL_LOWER_CASE	Start: 12762	End: 12773
     Token: "Vorbild"      	Type: FIRST_UPPER_CASE	Start: 12774	End: 12781
-    Token: "-"            	Type: PUNCTUATION	Start: 12782	End: 12783
+    Token: "-"            	Type: HYPHEN	Start: 12782	End: 12783
     Token: "geriet"       	Type: ALL_LOWER_CASE	Start: 12784	End: 12790
     Token: "waehrend"     	Type: ALL_LOWER_CASE	Start: 12791	End: 12799
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 12800	End: 12803
@@ -2113,17 +2113,17 @@ Paragraph End: 12956
     Token: "Blickfeld"    	Type: FIRST_UPPER_CASE	Start: 12852	End: 12861
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 12862	End: 12865
     Token: "Manager"      	Type: FIRST_UPPER_CASE	Start: 12866	End: 12873
-    Token: "."            	Type: TERM_PUNCT_P	Start: 12873	End: 12874
+    Token: "."            	Type: PERIOD	Start: 12873	End: 12874
   Text Unit Start: 12875
   Text Unit End: 12956
     Token: """            	Type: OPEN_PUNCT	Start: 12875	End: 12876	PTB: "``"
     Token: "Deutsche"     	Type: FIRST_UPPER_CASE	Start: 12876	End: 12884
     Token: "Maschinen"    	Type: FIRST_UPPER_CASE	Start: 12885	End: 12894
     Token: """            	Type: CLOSE_PUNCT	Start: 12894	End: 12895	PTB: "''"
-    Token: ","            	Type: PUNCTUATION	Start: 12895	End: 12896
+    Token: ","            	Type: COMMA	Start: 12895	End: 12896
     Token: "sagt"         	Type: ALL_LOWER_CASE	Start: 12897	End: 12901
     Token: "Berger"       	Type: FIRST_UPPER_CASE	Start: 12902	End: 12908
-    Token: ","            	Type: PUNCTUATION	Start: 12908	End: 12909
+    Token: ","            	Type: COMMA	Start: 12908	End: 12909
     Token: """            	Type: OPEN_PUNCT	Start: 12910	End: 12911	PTB: "``"
     Token: "sind"         	Type: ALL_LOWER_CASE	Start: 12911	End: 12915
     Token: "fuer"         	Type: ALL_LOWER_CASE	Start: 12916	End: 12920
@@ -2133,7 +2133,7 @@ Paragraph End: 12956
     Token: "viel"         	Type: ALL_LOWER_CASE	Start: 12941	End: 12945
     Token: "zu"           	Type: ALL_LOWER_CASE	Start: 12946	End: 12948
     Token: "teuer"        	Type: ALL_LOWER_CASE	Start: 12949	End: 12954
-    Token: "."            	Type: TERM_PUNCT_P	Start: 12954	End: 12955
+    Token: "."            	Type: PERIOD	Start: 12954	End: 12955
     Token: """            	Type: CLOSE_PUNCT	Start: 12955	End: 12956	PTB: "''"
 
 Paragraph Start: 12960
@@ -2151,7 +2151,7 @@ Paragraph End: 13589
     Token: "Aufbaus"      	Type: FIRST_UPPER_CASE	Start: 13007	End: 13014
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 13015	End: 13017
     Token: "Ostdeutschland"	Type: FIRST_UPPER_CASE	Start: 13018	End: 13032
-    Token: "."            	Type: TERM_PUNCT_P	Start: 13032	End: 13033
+    Token: "."            	Type: PERIOD	Start: 13032	End: 13033
   Text Unit Start: 13034
   Text Unit End: 13127
     Token: "Auch"         	Type: FIRST_UPPER_CASE	Start: 13034	End: 13038
@@ -2166,7 +2166,7 @@ Paragraph End: 13589
     Token: "den"          	Type: ALL_LOWER_CASE	Start: 13107	End: 13110
     Token: "Garaus"       	Type: FIRST_UPPER_CASE	Start: 13111	End: 13117
     Token: "gebracht"     	Type: ALL_LOWER_CASE	Start: 13118	End: 13126
-    Token: "."            	Type: TERM_PUNCT_P	Start: 13126	End: 13127
+    Token: "."            	Type: PERIOD	Start: 13126	End: 13127
   Text Unit Start: 13128
   Text Unit End: 13331
     Token: "Waehrend"     	Type: FIRST_UPPER_CASE	Start: 13128	End: 13136
@@ -2185,22 +2185,22 @@ Paragraph End: 13589
     Token: "ehemalige"    	Type: ALL_LOWER_CASE	Start: 13223	End: 13232
     Token: "Sowjetunion"  	Type: FIRST_UPPER_CASE	Start: 13233	End: 13244
     Token: "gingen"       	Type: ALL_LOWER_CASE	Start: 13245	End: 13251
-    Token: ","            	Type: PUNCTUATION	Start: 13251	End: 13252
+    Token: ","            	Type: COMMA	Start: 13251	End: 13252
     Token: "hat"          	Type: ALL_LOWER_CASE	Start: 13253	End: 13256
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 13257	End: 13260
     Token: "Branche"      	Type: FIRST_UPPER_CASE	Start: 13261	End: 13268
     Token: "auf"          	Type: ALL_LOWER_CASE	Start: 13269	End: 13272
     Token: "Ersatzmaerkten"	Type: FIRST_UPPER_CASE	Start: 13273	End: 13287
-    Token: "-"            	Type: PUNCTUATION	Start: 13288	End: 13289
+    Token: "-"            	Type: HYPHEN	Start: 13288	End: 13289
     Token: "etwa"         	Type: ALL_LOWER_CASE	Start: 13290	End: 13294
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 13295	End: 13297
     Token: "China"        	Type: FIRST_UPPER_CASE	Start: 13298	End: 13303
-    Token: "-"            	Type: PUNCTUATION	Start: 13304	End: 13305
+    Token: "-"            	Type: HYPHEN	Start: 13304	End: 13305
     Token: "noch"         	Type: ALL_LOWER_CASE	Start: 13306	End: 13310
     Token: "nicht"        	Type: ALL_LOWER_CASE	Start: 13311	End: 13316
     Token: "Tritt"        	Type: FIRST_UPPER_CASE	Start: 13317	End: 13322
     Token: "gefasst"      	Type: ALL_LOWER_CASE	Start: 13323	End: 13330
-    Token: "."            	Type: TERM_PUNCT_P	Start: 13330	End: 13331
+    Token: "."            	Type: PERIOD	Start: 13330	End: 13331
   Text Unit Start: 13332
   Text Unit End: 13589
     Token: "Da"           	Type: FIRST_UPPER_CASE	Start: 13332	End: 13334
@@ -2217,7 +2217,7 @@ Paragraph End: 13589
     Token: "voller"       	Type: ALL_LOWER_CASE	Start: 13413	End: 13419
     Token: "Wucht"        	Type: FIRST_UPPER_CASE	Start: 13420	End: 13425
     Token: "treffen"      	Type: ALL_LOWER_CASE	Start: 13426	End: 13433
-    Token: ","            	Type: PUNCTUATION	Start: 13433	End: 13434
+    Token: ","            	Type: COMMA	Start: 13433	End: 13434
     Token: "sehen"        	Type: ALL_LOWER_CASE	Start: 13435	End: 13440
     Token: "Zukunftsforscher"	Type: FIRST_UPPER_CASE	Start: 13441	End: 13457
     Token: "wie"          	Type: ALL_LOWER_CASE	Start: 13458	End: 13461
@@ -2229,7 +2229,7 @@ Paragraph End: 13589
     Token: "Haelfte"      	Type: FIRST_UPPER_CASE	Start: 13486	End: 13493
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 13494	End: 13497
     Token: "traditionellen"	Type: ALL_LOWER_CASE	Start: 13498	End: 13512
-    Token: ","            	Type: PUNCTUATION	Start: 13512	End: 13513
+    Token: ","            	Type: COMMA	Start: 13512	End: 13513
     Token: "im"           	Type: ALL_LOWER_CASE	Start: 13514	End: 13516
     Token: "internationalen"	Type: ALL_LOWER_CASE	Start: 13517	End: 13532
     Token: "Wettbewerb"   	Type: FIRST_UPPER_CASE	Start: 13533	End: 13543
@@ -2237,7 +2237,7 @@ Paragraph End: 13589
     Token: "westdeutschen"	Type: ALL_LOWER_CASE	Start: 13554	End: 13567
     Token: "Industrie"    	Type: FIRST_UPPER_CASE	Start: 13568	End: 13577
     Token: "gefaehrdet"   	Type: ALL_LOWER_CASE	Start: 13578	End: 13588
-    Token: "."            	Type: TERM_PUNCT_P	Start: 13588	End: 13589
+    Token: "."            	Type: PERIOD	Start: 13588	End: 13589
 
 Paragraph Start: 13593
 Paragraph End: 13864
@@ -2248,22 +2248,22 @@ Paragraph End: 13864
     Token: "bis"          	Type: ALL_LOWER_CASE	Start: 13610	End: 13613
     Token: "sieben"       	Type: ALL_LOWER_CASE	Start: 13614	End: 13620
     Token: "Jahre"        	Type: FIRST_UPPER_CASE	Start: 13621	End: 13626
-    Token: ","            	Type: PUNCTUATION	Start: 13626	End: 13627
+    Token: ","            	Type: COMMA	Start: 13626	End: 13627
     Token: "schaetzt"     	Type: ALL_LOWER_CASE	Start: 13628	End: 13636
     Token: "Berger"       	Type: FIRST_UPPER_CASE	Start: 13637	End: 13643
-    Token: ","            	Type: PUNCTUATION	Start: 13643	End: 13644
+    Token: ","            	Type: COMMA	Start: 13643	End: 13644
     Token: "benoetige"    	Type: ALL_LOWER_CASE	Start: 13645	End: 13654
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 13655	End: 13658
     Token: "deutsche"     	Type: ALL_LOWER_CASE	Start: 13659	End: 13667
     Token: "Industrie"    	Type: FIRST_UPPER_CASE	Start: 13668	End: 13677
-    Token: ","            	Type: PUNCTUATION	Start: 13677	End: 13678
+    Token: ","            	Type: COMMA	Start: 13677	End: 13678
     Token: "um"           	Type: ALL_LOWER_CASE	Start: 13679	End: 13681
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 13682	End: 13685
     Token: "strukturellen"	Type: ALL_LOWER_CASE	Start: 13686	End: 13699
     Token: "Defizite"     	Type: FIRST_UPPER_CASE	Start: 13700	End: 13708
     Token: "zu"           	Type: ALL_LOWER_CASE	Start: 13709	End: 13711
     Token: "bewaeltigen"  	Type: ALL_LOWER_CASE	Start: 13712	End: 13723
-    Token: "."            	Type: TERM_PUNCT_P	Start: 13723	End: 13724
+    Token: "."            	Type: PERIOD	Start: 13723	End: 13724
   Text Unit Start: 13725
   Text Unit End: 13864
     Token: "Heute"        	Type: FIRST_UPPER_CASE	Start: 13725	End: 13730
@@ -2271,15 +2271,15 @@ Paragraph End: 13864
     Token: "es"           	Type: ALL_LOWER_CASE	Start: 13736	End: 13738
     Token: "keinen"       	Type: ALL_LOWER_CASE	Start: 13739	End: 13745
     Token: "Industriezweig"	Type: FIRST_UPPER_CASE	Start: 13746	End: 13760
-    Token: ","            	Type: PUNCTUATION	Start: 13760	End: 13761
+    Token: ","            	Type: COMMA	Start: 13760	End: 13761
     Token: "erkannte"     	Type: ALL_LOWER_CASE	Start: 13762	End: 13770
     Token: "Bundeswirtschaftsminister"	Type: FIRST_UPPER_CASE	Start: 13771	End: 13796
     Token: "Juergen"      	Type: FIRST_UPPER_CASE	Start: 13797	End: 13804
     Token: "Moellemann"   	Type: FIRST_UPPER_CASE	Start: 13805	End: 13815
-    Token: "("            	Type: OPEN_BRACKET	Start: 13816	End: 13817	PTB: "-LRB-"
+    Token: "("            	Type: OPAR	Start: 13816	End: 13817
     Token: "FDP"          	Type: ALL_UPPER_CASE	Start: 13817	End: 13820
-    Token: ")"            	Type: CLOSE_BRACKET	Start: 13820	End: 13821	PTB: "-RRB-"
-    Token: ","            	Type: PUNCTUATION	Start: 13821	End: 13822
+    Token: ")"            	Type: CPAR	Start: 13820	End: 13821
+    Token: ","            	Type: COMMA	Start: 13821	End: 13822
     Token: """            	Type: OPEN_PUNCT	Start: 13823	End: 13824	PTB: "``"
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 13824	End: 13827
     Token: "nicht"        	Type: ALL_LOWER_CASE	Start: 13828	End: 13833
@@ -2287,7 +2287,7 @@ Paragraph End: 13864
     Token: "Zeiten"       	Type: FIRST_UPPER_CASE	Start: 13843	End: 13849
     Token: "entgegengeht" 	Type: ALL_LOWER_CASE	Start: 13850	End: 13862
     Token: """            	Type: CLOSE_PUNCT	Start: 13862	End: 13863	PTB: "''"
-    Token: "."            	Type: TERM_PUNCT_P	Start: 13863	End: 13864
+    Token: "."            	Type: PERIOD	Start: 13863	End: 13864
 
 Paragraph Start: 13868
 Paragraph End: 14324
@@ -2309,7 +2309,7 @@ Paragraph End: 14324
     Token: "einer"        	Type: ALL_LOWER_CASE	Start: 13960	End: 13965
     Token: "ineffizienten"	Type: ALL_LOWER_CASE	Start: 13966	End: 13979
     Token: "Arbeitsorganisation"	Type: FIRST_UPPER_CASE	Start: 13980	End: 13999
-    Token: ","            	Type: PUNCTUATION	Start: 13999	End: 14000
+    Token: ","            	Type: COMMA	Start: 13999	End: 14000
     Token: "kaempft"      	Type: ALL_LOWER_CASE	Start: 14001	End: 14008
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 14009	End: 14012
     Token: "Maschinenbau" 	Type: FIRST_UPPER_CASE	Start: 14013	End: 14025
@@ -2317,7 +2317,7 @@ Paragraph End: 14324
     Token: "mit"          	Type: ALL_LOWER_CASE	Start: 14038	End: 14041
     Token: "immensen"     	Type: ALL_LOWER_CASE	Start: 14042	End: 14050
     Token: "Lohnstueckkosten"	Type: FIRST_UPPER_CASE	Start: 14051	End: 14067
-    Token: "."            	Type: TERM_PUNCT_P	Start: 14067	End: 14068
+    Token: "."            	Type: PERIOD	Start: 14067	End: 14068
   Text Unit Start: 14069
   Text Unit End: 14234
     Token: "Waehrend"     	Type: FIRST_UPPER_CASE	Start: 14069	End: 14077
@@ -2330,7 +2330,7 @@ Paragraph End: 14324
     Token: "ein"          	Type: ALL_LOWER_CASE	Start: 14126	End: 14129
     Token: "Prozent"      	Type: FIRST_UPPER_CASE	Start: 14130	End: 14137
     Token: "wuchs"        	Type: ALL_LOWER_CASE	Start: 14138	End: 14143
-    Token: ","            	Type: PUNCTUATION	Start: 14143	End: 14144
+    Token: ","            	Type: COMMA	Start: 14143	End: 14144
     Token: "erhoehten"    	Type: ALL_LOWER_CASE	Start: 14145	End: 14154
     Token: "sich"         	Type: ALL_LOWER_CASE	Start: 14155	End: 14159
     Token: "die"          	Type: ALL_LOWER_CASE	Start: 14160	End: 14163
@@ -2338,7 +2338,7 @@ Paragraph End: 14324
     Token: "1990"         	Type: DIGITAL	Start: 14181	End: 14185
     Token: "um"           	Type: ALL_LOWER_CASE	Start: 14186	End: 14188
     Token: "3,5"          	Type: DIGITAL	Start: 14189	End: 14192
-    Token: ","            	Type: PUNCTUATION	Start: 14192	End: 14193
+    Token: ","            	Type: COMMA	Start: 14192	End: 14193
     Token: "1991"         	Type: DIGITAL	Start: 14194	End: 14198
     Token: "um"           	Type: ALL_LOWER_CASE	Start: 14199	End: 14201
     Token: "4,5"          	Type: DIGITAL	Start: 14202	End: 14205
@@ -2348,7 +2348,7 @@ Paragraph End: 14324
     Token: "um"           	Type: ALL_LOWER_CASE	Start: 14219	End: 14221
     Token: "5,5"          	Type: DIGITAL	Start: 14222	End: 14225
     Token: "Prozent"      	Type: FIRST_UPPER_CASE	Start: 14226	End: 14233
-    Token: "."            	Type: TERM_PUNCT_P	Start: 14233	End: 14234
+    Token: "."            	Type: PERIOD	Start: 14233	End: 14234
   Text Unit Start: 14235
   Text Unit End: 14324
     Token: "Von"          	Type: FIRST_UPPER_CASE	Start: 14235	End: 14238
@@ -2362,7 +2362,7 @@ Paragraph End: 14324
     Token: "Maschinenbauer"	Type: FIRST_UPPER_CASE	Start: 14290	End: 14304
     Token: "ihren"        	Type: ALL_LOWER_CASE	Start: 14305	End: 14310
     Token: "Arbeitsplatz" 	Type: FIRST_UPPER_CASE	Start: 14311	End: 14323
-    Token: "."            	Type: TERM_PUNCT_P	Start: 14323	End: 14324
+    Token: "."            	Type: PERIOD	Start: 14323	End: 14324
 
 Paragraph Start: 14328
 Paragraph End: 14739
@@ -2383,12 +2383,12 @@ Paragraph End: 14739
     Token: "zu"           	Type: ALL_LOWER_CASE	Start: 14420	End: 14422
     Token: "Kooperationen"	Type: FIRST_UPPER_CASE	Start: 14423	End: 14436
     Token: "gezwungen"    	Type: ALL_LOWER_CASE	Start: 14437	End: 14446
-    Token: "-"            	Type: PUNCTUATION	Start: 14447	End: 14448
+    Token: "-"            	Type: HYPHEN	Start: 14447	End: 14448
     Token: "vorerst"      	Type: ALL_LOWER_CASE	Start: 14449	End: 14456
     Token: "nur"          	Type: ALL_LOWER_CASE	Start: 14457	End: 14460
     Token: "im"           	Type: ALL_LOWER_CASE	Start: 14461	End: 14463
     Token: "Vertrieb"     	Type: FIRST_UPPER_CASE	Start: 14464	End: 14472
-    Token: "."            	Type: TERM_PUNCT_P	Start: 14472	End: 14473
+    Token: "."            	Type: PERIOD	Start: 14472	End: 14473
   Text Unit Start: 14474
   Text Unit End: 14560
     Token: "Doch"         	Type: FIRST_UPPER_CASE	Start: 14474	End: 14478
@@ -2398,7 +2398,7 @@ Paragraph End: 14739
     Token: "lehrt"        	Type: ALL_LOWER_CASE	Start: 14488	End: 14493
     Token: "beten"        	Type: ALL_LOWER_CASE	Start: 14494	End: 14499
     Token: """            	Type: CLOSE_PUNCT	Start: 14499	End: 14500	PTB: "''"
-    Token: ","            	Type: PUNCTUATION	Start: 14500	End: 14501
+    Token: ","            	Type: COMMA	Start: 14500	End: 14501
     Token: "sagt"         	Type: ALL_LOWER_CASE	Start: 14502	End: 14506
     Token: "im"           	Type: ALL_LOWER_CASE	Start: 14507	End: 14509
     Token: "Blick"        	Type: FIRST_UPPER_CASE	Start: 14510	End: 14515
@@ -2408,7 +2408,7 @@ Paragraph End: 14739
     Token: "Maho-Sprecher"	Type: TOKEN	Start: 14532	End: 14545
     Token: "Wolfgang"     	Type: FIRST_UPPER_CASE	Start: 14546	End: 14554
     Token: "Ring"         	Type: FIRST_UPPER_CASE	Start: 14555	End: 14559
-    Token: "."            	Type: TERM_PUNCT_P	Start: 14559	End: 14560
+    Token: "."            	Type: PERIOD	Start: 14559	End: 14560
   Text Unit Start: 14561
   Text Unit End: 14739
     Token: "Beten"        	Type: FIRST_UPPER_CASE	Start: 14561	End: 14566
@@ -2421,7 +2421,7 @@ Paragraph End: 14739
     Token: "allerdings"   	Type: ALL_LOWER_CASE	Start: 14608	End: 14618
     Token: "nicht"        	Type: ALL_LOWER_CASE	Start: 14619	End: 14624
     Token: "weiterhelfen" 	Type: ALL_LOWER_CASE	Start: 14625	End: 14637
-    Token: ":"            	Type: PUNCTUATION	Start: 14637	End: 14638
+    Token: ":"            	Type: COLON	Start: 14637	End: 14638
     Token: "Die"          	Type: FIRST_UPPER_CASE	Start: 14639	End: 14642
     Token: "Deutschen"    	Type: FIRST_UPPER_CASE	Start: 14643	End: 14652
     Token: "gehen"        	Type: ALL_LOWER_CASE	Start: 14653	End: 14658
@@ -2429,7 +2429,7 @@ Paragraph End: 14739
     Token: "ein"          	Type: ALL_LOWER_CASE	Start: 14662	End: 14665
     Token: "schweres"     	Type: ALL_LOWER_CASE	Start: 14666	End: 14674
     Token: "Jahr"         	Type: FIRST_UPPER_CASE	Start: 14675	End: 14679
-    Token: ","            	Type: PUNCTUATION	Start: 14679	End: 14680
+    Token: ","            	Type: COMMA	Start: 14679	End: 14680
     Token: "vielleicht"   	Type: ALL_LOWER_CASE	Start: 14681	End: 14691
     Token: "das"          	Type: ALL_LOWER_CASE	Start: 14692	End: 14695
     Token: "schwerste"    	Type: ALL_LOWER_CASE	Start: 14696	End: 14705
@@ -2437,5 +2437,5 @@ Paragraph End: 14739
     Token: "Bestehen"     	Type: FIRST_UPPER_CASE	Start: 14711	End: 14719
     Token: "der"          	Type: ALL_LOWER_CASE	Start: 14720	End: 14723
     Token: "Bundesrepublik"	Type: FIRST_UPPER_CASE	Start: 14724	End: 14738
-    Token: "."            	Type: TERM_PUNCT_P	Start: 14738	End: 14739
+    Token: "."            	Type: PERIOD	Start: 14738	End: 14739
 

@@ -6,7 +6,7 @@ Paragraph End: 38
     Token: "IN"           	Type: ALL_UPPER_CASE	Start: 5	End: 7
     Token: "THE"          	Type: ALL_UPPER_CASE	Start: 8	End: 11
     Token: "LIFE"         	Type: ALL_UPPER_CASE	Start: 12	End: 16
-    Token: ","            	Type: PUNCTUATION	Start: 16	End: 17
+    Token: ","            	Type: COMMA	Start: 16	End: 17
     Token: "A"            	Type: ALL_UPPER_CASE	Start: 18	End: 19
     Token: "by"           	Type: ALL_LOWER_CASE	Start: 20	End: 22
     Token: "Mark"         	Type: FIRST_UPPER_CASE	Start: 23	End: 27
@@ -20,7 +20,7 @@ Paragraph End: 60
     Token: "IN"           	Type: ALL_UPPER_CASE	Start: 46	End: 48
     Token: "THE"          	Type: ALL_UPPER_CASE	Start: 49	End: 52
     Token: "LIFE"         	Type: ALL_UPPER_CASE	Start: 53	End: 57
-    Token: ","            	Type: PUNCTUATION	Start: 57	End: 58
+    Token: ","            	Type: COMMA	Start: 57	End: 58
     Token: "A"            	Type: ALL_UPPER_CASE	Start: 59	End: 60
 
 Paragraph Start: 64
@@ -41,10 +41,10 @@ Paragraph End: 128
   Text Unit Start: 92
   Text Unit End: 128
     Token: "Delta"        	Type: FIRST_UPPER_CASE	Start: 92	End: 97
-    Token: "|"            	Type: PUNCTUATION	Start: 98	End: 99
+    Token: "|"            	Type: PIPE	Start: 98	End: 99
     Token: "Trade"        	Type: FIRST_UPPER_CASE	Start: 100	End: 105
     Token: "Paperback"    	Type: FIRST_UPPER_CASE	Start: 106	End: 115
-    Token: "|"            	Type: PUNCTUATION	Start: 116	End: 117
+    Token: "|"            	Type: PIPE	Start: 116	End: 117
     Token: "March"        	Type: FIRST_UPPER_CASE	Start: 118	End: 123
     Token: "1996"         	Type: DIGITAL	Start: 124	End: 128
 
@@ -54,7 +54,7 @@ Paragraph End: 155
   Text Unit End: 155
     Token: "$"            	Type: LEFTSPLIT	Start: 132	End: 133
     Token: "15.95"        	Type: DIGITAL	Start: 134	End: 139
-    Token: "|"            	Type: PUNCTUATION	Start: 140	End: 141
+    Token: "|"            	Type: PIPE	Start: 140	End: 141
     Token: "0-385-31517-1"	Type: DIGITAL	Start: 142	End: 155
 
 Paragraph Start: 159
@@ -81,7 +81,7 @@ Paragraph End: 868
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 237	End: 239
     Token: "this"         	Type: ALL_LOWER_CASE	Start: 240	End: 244
     Token: "century"      	Type: ALL_LOWER_CASE	Start: 245	End: 252
-    Token: "."            	Type: TERM_PUNCT_P	Start: 252	End: 253
+    Token: "."            	Type: PERIOD	Start: 252	End: 253
   Text Unit Start: 254
   Text Unit End: 427
     Token: "But"          	Type: FIRST_UPPER_CASE	Start: 254	End: 257
@@ -90,7 +90,7 @@ Paragraph End: 868
     Token: "than"         	Type: ALL_LOWER_CASE	Start: 267	End: 271
     Token: "three"        	Type: ALL_LOWER_CASE	Start: 272	End: 277
     Token: "decades"      	Type: ALL_LOWER_CASE	Start: 278	End: 285
-    Token: ","            	Type: PUNCTUATION	Start: 285	End: 286
+    Token: ","            	Type: COMMA	Start: 285	End: 286
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 287	End: 290
     Token: "secrets"      	Type: ALL_LOWER_CASE	Start: 291	End: 298
     Token: "behind"       	Type: ALL_LOWER_CASE	Start: 299	End: 305
@@ -103,7 +103,7 @@ Paragraph End: 868
     Token: "were"         	Type: ALL_LOWER_CASE	Start: 351	End: 355
     Token: "beyond"       	Type: ALL_LOWER_CASE	Start: 356	End: 362
     Token: "reach"        	Type: ALL_LOWER_CASE	Start: 363	End: 368
-    Token: "--"           	Type: PUNCTUATION	Start: 369	End: 371
+    Token: "--"           	Type: OCHYPHEN	Start: 369	End: 371
     Token: "sealed"       	Type: ALL_LOWER_CASE	Start: 372	End: 378
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 379	End: 381
     Token: "a"            	Type: ALL_LOWER_CASE	Start: 382	End: 383
@@ -115,7 +115,7 @@ Paragraph End: 868
     Token: "Abbey"        	Type: FIRST_UPPER_CASE	Start: 408	End: 413
     Token: "Road"         	Type: FIRST_UPPER_CASE	Start: 414	End: 418
     Token: "Studios"      	Type: FIRST_UPPER_CASE	Start: 419	End: 426
-    Token: "."            	Type: TERM_PUNCT_P	Start: 426	End: 427
+    Token: "."            	Type: PERIOD	Start: 426	End: 427
   Text Unit Start: 428
   Text Unit End: 868
     Token: "In"           	Type: FIRST_UPPER_CASE	Start: 428	End: 430
@@ -141,7 +141,7 @@ Paragraph End: 868
     Token: "provides"     	Type: ALL_LOWER_CASE	Start: 552	End: 560
     Token: "a"            	Type: ALL_LOWER_CASE	Start: 561	End: 562
     Token: "new"          	Type: ALL_LOWER_CASE	Start: 563	End: 566
-    Token: ","            	Type: PUNCTUATION	Start: 566	End: 567
+    Token: ","            	Type: COMMA	Start: 566	End: 567
     Token: "fascinating"  	Type: ALL_LOWER_CASE	Start: 568	End: 579
     Token: "look"         	Type: ALL_LOWER_CASE	Start: 580	End: 584
     Token: "at"           	Type: ALL_LOWER_CASE	Start: 585	End: 587
@@ -152,7 +152,7 @@ Paragraph End: 868
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 611	End: 613
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 614	End: 617
     Token: "Beatles"      	Type: FIRST_UPPER_CASE	Start: 618	End: 625
-    Token: ","            	Type: PUNCTUATION	Start: 625	End: 626
+    Token: ","            	Type: COMMA	Start: 625	End: 626
     Token: "revealing"    	Type: ALL_LOWER_CASE	Start: 627	End: 636
     Token: "how"          	Type: ALL_LOWER_CASE	Start: 637	End: 640
     Token: "four"         	Type: ALL_LOWER_CASE	Start: 641	End: 645
@@ -167,7 +167,7 @@ Paragraph End: 868
     Token: "single"       	Type: ALL_LOWER_CASE	Start: 704	End: 710
     Token: "creative"     	Type: ALL_LOWER_CASE	Start: 711	End: 719
     Token: "force"        	Type: ALL_LOWER_CASE	Start: 720	End: 725
-    Token: ","            	Type: PUNCTUATION	Start: 725	End: 726
+    Token: ","            	Type: COMMA	Start: 725	End: 726
     Token: "how"          	Type: ALL_LOWER_CASE	Start: 727	End: 730
     Token: "they"         	Type: ALL_LOWER_CASE	Start: 731	End: 735
     Token: "came"         	Type: ALL_LOWER_CASE	Start: 736	End: 740
@@ -177,15 +177,15 @@ Paragraph End: 868
     Token: "pictures"     	Type: ALL_LOWER_CASE	Start: 759	End: 767
     Token: "with"         	Type: ALL_LOWER_CASE	Start: 768	End: 772
     Token: "sound"        	Type: ALL_LOWER_CASE	Start: 773	End: 778
-    Token: "."            	Type: TERM_PUNCT_P	Start: 778	End: 779
-    Token: "."            	Type: TERM_PUNCT_P	Start: 779	End: 780
-    Token: "."            	Type: TERM_PUNCT_P	Start: 780	End: 781
+    Token: "."            	Type: PERIOD	Start: 778	End: 779
+    Token: "."            	Type: PERIOD	Start: 779	End: 780
+    Token: "."            	Type: PERIOD	Start: 780	End: 781
     Token: "and"          	Type: ALL_LOWER_CASE	Start: 781	End: 784
     Token: "how"          	Type: ALL_LOWER_CASE	Start: 785	End: 788
     Token: "album"        	Type: ALL_LOWER_CASE	Start: 789	End: 794
     Token: "by"           	Type: ALL_LOWER_CASE	Start: 795	End: 797
     Token: "album"        	Type: ALL_LOWER_CASE	Start: 798	End: 803
-    Token: ","            	Type: PUNCTUATION	Start: 803	End: 804
+    Token: ","            	Type: COMMA	Start: 803	End: 804
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 805	End: 808
     Token: "Beatles"      	Type: FIRST_UPPER_CASE	Start: 809	End: 816
     Token: "transformed"  	Type: ALL_LOWER_CASE	Start: 817	End: 828
@@ -195,7 +195,7 @@ Paragraph End: 868
     Token: "popular"      	Type: ALL_LOWER_CASE	Start: 846	End: 853
     Token: "music"        	Type: ALL_LOWER_CASE	Start: 854	End: 859
     Token: "forever"      	Type: ALL_LOWER_CASE	Start: 860	End: 867
-    Token: "."            	Type: TERM_PUNCT_P	Start: 867	End: 868
+    Token: "."            	Type: PERIOD	Start: 867	End: 868
 
 Paragraph Start: 872
 Paragraph End: 1307
@@ -213,7 +213,7 @@ Paragraph End: 1307
     Token: "and"          	Type: ALL_LOWER_CASE	Start: 959	End: 962
     Token: "musical"      	Type: ALL_LOWER_CASE	Start: 963	End: 970
     Token: "explication"  	Type: ALL_LOWER_CASE	Start: 971	End: 982
-    Token: ","            	Type: PUNCTUATION	Start: 982	End: 983
+    Token: ","            	Type: COMMA	Start: 982	End: 983
     Token: "author"       	Type: ALL_LOWER_CASE	Start: 984	End: 990
     Token: "Mark"         	Type: FIRST_UPPER_CASE	Start: 991	End: 995
     Token: "Hertsgaard"   	Type: FIRST_UPPER_CASE	Start: 996	End: 1006
@@ -229,7 +229,7 @@ Paragraph End: 1307
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 1060	End: 1062
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 1063	End: 1066
     Token: "Beatles"      	Type: FIRST_UPPER_CASE	Start: 1067	End: 1074
-    Token: "."            	Type: TERM_PUNCT_P	Start: 1074	End: 1075
+    Token: "."            	Type: PERIOD	Start: 1074	End: 1075
   Text Unit Start: 1076
   Text Unit End: 1307
     Token: "A"            	Type: ALL_UPPER_CASE	Start: 1076	End: 1077
@@ -248,7 +248,7 @@ Paragraph End: 1307
     Token: "as"           	Type: ALL_LOWER_CASE	Start: 1145	End: 1147
     Token: "never"        	Type: ALL_LOWER_CASE	Start: 1148	End: 1153
     Token: "before"       	Type: ALL_LOWER_CASE	Start: 1154	End: 1160
-    Token: ","            	Type: PUNCTUATION	Start: 1160	End: 1161
+    Token: ","            	Type: COMMA	Start: 1160	End: 1161
     Token: "from"         	Type: ALL_LOWER_CASE	Start: 1162	End: 1166
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 1167	End: 1170
     Token: "first"        	Type: ALL_LOWER_CASE	Start: 1171	End: 1176
@@ -279,7 +279,7 @@ Paragraph End: 1307
     Token: "final"        	Type: ALL_LOWER_CASE	Start: 1288	End: 1293
     Token: "master"       	Type: ALL_LOWER_CASE	Start: 1294	End: 1300
     Token: "tapes"        	Type: ALL_LOWER_CASE	Start: 1301	End: 1306
-    Token: "."            	Type: TERM_PUNCT_P	Start: 1306	End: 1307
+    Token: "."            	Type: PERIOD	Start: 1306	End: 1307
 
 Paragraph Start: 1311
 Paragraph End: 1898
@@ -314,11 +314,11 @@ Paragraph End: 1898
     Token: "a"            	Type: ALL_LOWER_CASE	Start: 1478	End: 1479
     Token: "hard-rocking" 	Type: TOKEN	Start: 1480	End: 1492
     Token: "hit"          	Type: ALL_LOWER_CASE	Start: 1493	End: 1496
-    Token: "--"           	Type: PUNCTUATION	Start: 1497	End: 1499
+    Token: "--"           	Type: OCHYPHEN	Start: 1497	End: 1499
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 1500	End: 1502
     Token: "forty-four"   	Type: TOKEN	Start: 1503	End: 1513
     Token: "takes"        	Type: ALL_LOWER_CASE	Start: 1514	End: 1519
-    Token: "."            	Type: TERM_PUNCT_P	Start: 1519	End: 1520
+    Token: "."            	Type: PERIOD	Start: 1519	End: 1520
   Text Unit Start: 1521
   Text Unit End: 1742
     Token: "We"           	Type: FIRST_UPPER_CASE	Start: 1521	End: 1523
@@ -341,7 +341,7 @@ Paragraph End: 1898
     Token: "a"            	Type: ALL_LOWER_CASE	Start: 1608	End: 1609
     Token: "psychedelic"  	Type: ALL_LOWER_CASE	Start: 1610	End: 1621
     Token: "utopia"       	Type: ALL_LOWER_CASE	Start: 1622	End: 1628
-    Token: ","            	Type: PUNCTUATION	Start: 1628	End: 1629
+    Token: ","            	Type: COMMA	Start: 1628	End: 1629
     Token: "but"          	Type: ALL_LOWER_CASE	Start: 1630	End: 1633
     Token: "discover"     	Type: ALL_LOWER_CASE	Start: 1634	End: 1642
     Token: "it"           	Type: ALL_LOWER_CASE	Start: 1643	End: 1645
@@ -363,7 +363,7 @@ Paragraph End: 1898
     Token: "'s"           	Type: RIGHTSPLIT	Start: 1720	End: 1722
     Token: "disillusioned"	Type: ALL_LOWER_CASE	Start: 1723	End: 1736
     Token: "soul"         	Type: ALL_LOWER_CASE	Start: 1737	End: 1741
-    Token: "."            	Type: TERM_PUNCT_P	Start: 1741	End: 1742
+    Token: "."            	Type: PERIOD	Start: 1741	End: 1742
   Text Unit Start: 1743
   Text Unit End: 1898
     Token: "And"          	Type: FIRST_UPPER_CASE	Start: 1743	End: 1746
@@ -393,7 +393,7 @@ Paragraph End: 1898
     Token: "like"         	Type: ALL_LOWER_CASE	Start: 1879	End: 1883
     Token: "a"            	Type: ALL_LOWER_CASE	Start: 1884	End: 1885
     Token: "fingerprint"  	Type: ALL_LOWER_CASE	Start: 1886	End: 1897
-    Token: "."            	Type: TERM_PUNCT_P	Start: 1897	End: 1898
+    Token: "."            	Type: PERIOD	Start: 1897	End: 1898
 
 Paragraph Start: 1902
 Paragraph End: 2426
@@ -402,7 +402,7 @@ Paragraph End: 2426
     Token: "With"         	Type: FIRST_UPPER_CASE	Start: 1902	End: 1906
     Token: "rare"         	Type: ALL_LOWER_CASE	Start: 1907	End: 1911
     Token: "insight"      	Type: ALL_LOWER_CASE	Start: 1912	End: 1919
-    Token: ","            	Type: PUNCTUATION	Start: 1919	End: 1920
+    Token: ","            	Type: COMMA	Start: 1919	End: 1920
     Token: "Mark"         	Type: FIRST_UPPER_CASE	Start: 1921	End: 1925
     Token: "Hertsgaard"   	Type: FIRST_UPPER_CASE	Start: 1926	End: 1936
     Token: "unlocks"      	Type: ALL_LOWER_CASE	Start: 1937	End: 1944
@@ -416,7 +416,7 @@ Paragraph End: 2426
     Token: "dynamic"      	Type: ALL_LOWER_CASE	Start: 1979	End: 1986
     Token: "musical"      	Type: ALL_LOWER_CASE	Start: 1987	End: 1994
     Token: "collaboration"	Type: ALL_LOWER_CASE	Start: 1995	End: 2008
-    Token: ":"            	Type: PUNCTUATION	Start: 2008	End: 2009
+    Token: ":"            	Type: COLON	Start: 2008	End: 2009
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 2010	End: 2013
     Token: "competitive"  	Type: ALL_LOWER_CASE	Start: 2014	End: 2025
     Token: "and"          	Type: ALL_LOWER_CASE	Start: 2026	End: 2029
@@ -428,7 +428,7 @@ Paragraph End: 2426
     Token: "and"          	Type: ALL_LOWER_CASE	Start: 2066	End: 2069
     Token: "Paul"         	Type: FIRST_UPPER_CASE	Start: 2070	End: 2074
     Token: "McCartney"    	Type: TOKEN	Start: 2075	End: 2084
-    Token: "."            	Type: TERM_PUNCT_P	Start: 2084	End: 2085
+    Token: "."            	Type: PERIOD	Start: 2084	End: 2085
   Text Unit Start: 2086
   Text Unit End: 2308
     Token: "A"            	Type: ALL_UPPER_CASE	Start: 2086	End: 2087
@@ -459,9 +459,9 @@ Paragraph End: 2426
     Token: "seen"         	Type: ALL_LOWER_CASE	Start: 2222	End: 2226
     Token: "them"         	Type: ALL_LOWER_CASE	Start: 2227	End: 2231
     Token: "before"       	Type: ALL_LOWER_CASE	Start: 2232	End: 2238
-    Token: ":"            	Type: PUNCTUATION	Start: 2238	End: 2239
+    Token: ":"            	Type: COLON	Start: 2238	End: 2239
     Token: "Paul"         	Type: FIRST_UPPER_CASE	Start: 2240	End: 2244
-    Token: ","            	Type: PUNCTUATION	Start: 2244	End: 2245
+    Token: ","            	Type: COMMA	Start: 2244	End: 2245
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 2246	End: 2249
     Token: "optimistic"   	Type: ALL_LOWER_CASE	Start: 2250	End: 2260
     Token: "foil"         	Type: ALL_LOWER_CASE	Start: 2261	End: 2265
@@ -472,13 +472,13 @@ Paragraph End: 2426
     Token: "ominous"      	Type: ALL_LOWER_CASE	Start: 2282	End: 2289
     Token: "fragments"    	Type: ALL_LOWER_CASE	Start: 2290	End: 2299
     Token: "whole"        	Type: ALL_LOWER_CASE	Start: 2300	End: 2305
-    Token: "."            	Type: TERM_PUNCT_P	Start: 2305	End: 2306
-    Token: "."            	Type: TERM_PUNCT_P	Start: 2306	End: 2307
-    Token: "."            	Type: TERM_PUNCT_P	Start: 2307	End: 2308
+    Token: "."            	Type: PERIOD	Start: 2305	End: 2306
+    Token: "."            	Type: PERIOD	Start: 2306	End: 2307
+    Token: "."            	Type: PERIOD	Start: 2307	End: 2308
   Text Unit Start: 2308
   Text Unit End: 2426
     Token: "John"         	Type: FIRST_UPPER_CASE	Start: 2308	End: 2312
-    Token: ","            	Type: PUNCTUATION	Start: 2312	End: 2313
+    Token: ","            	Type: COMMA	Start: 2312	End: 2313
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 2314	End: 2317
     Token: "natural"      	Type: ALL_LOWER_CASE	Start: 2318	End: 2325
     Token: "poet"         	Type: ALL_LOWER_CASE	Start: 2326	End: 2330
@@ -501,19 +501,19 @@ Paragraph End: 2426
     Token: "five"         	Type: ALL_LOWER_CASE	Start: 2409	End: 2413
     Token: "word"         	Type: ALL_LOWER_CASE	Start: 2414	End: 2418
     Token: "change"       	Type: ALL_LOWER_CASE	Start: 2419	End: 2425
-    Token: "."            	Type: TERM_PUNCT_P	Start: 2425	End: 2426
+    Token: "."            	Type: PERIOD	Start: 2425	End: 2426
 
 Paragraph Start: 2430
 Paragraph End: 2666
   Text Unit Start: 2430
   Text Unit End: 2666
     Token: "Smart"        	Type: FIRST_UPPER_CASE	Start: 2430	End: 2435
-    Token: ","            	Type: PUNCTUATION	Start: 2435	End: 2436
+    Token: ","            	Type: COMMA	Start: 2435	End: 2436
     Token: "fresh"        	Type: ALL_LOWER_CASE	Start: 2437	End: 2442
-    Token: ","            	Type: PUNCTUATION	Start: 2442	End: 2443
+    Token: ","            	Type: COMMA	Start: 2442	End: 2443
     Token: "compulsively" 	Type: ALL_LOWER_CASE	Start: 2444	End: 2456
     Token: "readable"     	Type: ALL_LOWER_CASE	Start: 2457	End: 2465
-    Token: ","            	Type: PUNCTUATION	Start: 2465	End: 2466
+    Token: ","            	Type: COMMA	Start: 2465	End: 2466
     Token: "A"            	Type: ALL_UPPER_CASE	Start: 2467	End: 2468
     Token: "Day"          	Type: FIRST_UPPER_CASE	Start: 2469	End: 2472
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 2473	End: 2475
@@ -521,11 +521,11 @@ Paragraph End: 2666
     Token: "Life"         	Type: FIRST_UPPER_CASE	Start: 2480	End: 2484
     Token: "reveals"      	Type: ALL_LOWER_CASE	Start: 2485	End: 2492
     Token: "John"         	Type: FIRST_UPPER_CASE	Start: 2493	End: 2497
-    Token: ","            	Type: PUNCTUATION	Start: 2497	End: 2498
+    Token: ","            	Type: COMMA	Start: 2497	End: 2498
     Token: "Paul"         	Type: FIRST_UPPER_CASE	Start: 2499	End: 2503
-    Token: ","            	Type: PUNCTUATION	Start: 2503	End: 2504
+    Token: ","            	Type: COMMA	Start: 2503	End: 2504
     Token: "George"       	Type: FIRST_UPPER_CASE	Start: 2505	End: 2511
-    Token: ","            	Type: PUNCTUATION	Start: 2511	End: 2512
+    Token: ","            	Type: COMMA	Start: 2511	End: 2512
     Token: "and"          	Type: ALL_LOWER_CASE	Start: 2513	End: 2516
     Token: "Ringo"        	Type: FIRST_UPPER_CASE	Start: 2517	End: 2522
     Token: "not"          	Type: ALL_LOWER_CASE	Start: 2523	End: 2526
@@ -553,7 +553,7 @@ Paragraph End: 2666
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 2644	End: 2647
     Token: "twentieth"    	Type: ALL_LOWER_CASE	Start: 2648	End: 2657
     Token: "century"      	Type: ALL_LOWER_CASE	Start: 2658	End: 2665
-    Token: "."            	Type: TERM_PUNCT_P	Start: 2665	End: 2666
+    Token: "."            	Type: PERIOD	Start: 2665	End: 2666
 
 Paragraph Start: 2670
 Paragraph End: 2677
@@ -572,17 +572,17 @@ Paragraph End: 3287
     Token: "Abbey"        	Type: FIRST_UPPER_CASE	Start: 2707	End: 2712
     Token: "Road"         	Type: FIRST_UPPER_CASE	Start: 2713	End: 2717
     Token: "studios"      	Type: ALL_LOWER_CASE	Start: 2718	End: 2725
-    Token: ","            	Type: PUNCTUATION	Start: 2725	End: 2726
+    Token: ","            	Type: COMMA	Start: 2725	End: 2726
     Token: "hidden"       	Type: ALL_LOWER_CASE	Start: 2727	End: 2733
     Token: "behind"       	Type: ALL_LOWER_CASE	Start: 2734	End: 2740
     Token: "an"           	Type: ALL_LOWER_CASE	Start: 2741	End: 2743
     Token: "unmarked"     	Type: ALL_LOWER_CASE	Start: 2744	End: 2752
-    Token: ","            	Type: PUNCTUATION	Start: 2752	End: 2753
+    Token: ","            	Type: COMMA	Start: 2752	End: 2753
     Token: "triple-locked"	Type: TOKEN	Start: 2754	End: 2767
-    Token: ","            	Type: PUNCTUATION	Start: 2767	End: 2768
+    Token: ","            	Type: COMMA	Start: 2767	End: 2768
     Token: "police-alarmed"	Type: TOKEN	Start: 2769	End: 2783
     Token: "door"         	Type: ALL_LOWER_CASE	Start: 2784	End: 2788
-    Token: ","            	Type: PUNCTUATION	Start: 2788	End: 2789
+    Token: ","            	Type: COMMA	Start: 2788	End: 2789
     Token: "are"          	Type: ALL_LOWER_CASE	Start: 2790	End: 2793
     Token: "some"         	Type: ALL_LOWER_CASE	Start: 2794	End: 2798
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 2799	End: 2801
@@ -593,7 +593,7 @@ Paragraph End: 3287
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 2830	End: 2832
     Token: "twentieth-century"	Type: TOKEN	Start: 2833	End: 2850
     Token: "music"        	Type: ALL_LOWER_CASE	Start: 2851	End: 2856
-    Token: ":"            	Type: PUNCTUATION	Start: 2856	End: 2857
+    Token: ":"            	Type: COLON	Start: 2856	End: 2857
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 2858	End: 2861
     Token: "raw"          	Type: ALL_LOWER_CASE	Start: 2862	End: 2865
     Token: "tapes"        	Type: ALL_LOWER_CASE	Start: 2866	End: 2871
@@ -610,7 +610,7 @@ Paragraph End: 3287
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 2938	End: 2940
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 2941	End: 2944
     Token: "Beatles"      	Type: FIRST_UPPER_CASE	Start: 2945	End: 2952
-    Token: "."            	Type: TERM_PUNCT_P	Start: 2952	End: 2953
+    Token: "."            	Type: PERIOD	Start: 2952	End: 2953
   Text Unit Start: 2954
   Text Unit End: 3160
     Token: "One"          	Type: FIRST_UPPER_CASE	Start: 2954	End: 2957
@@ -638,7 +638,7 @@ Paragraph End: 3287
     Token: "their"        	Type: ALL_LOWER_CASE	Start: 3069	End: 3074
     Token: "years"        	Type: ALL_LOWER_CASE	Start: 3075	End: 3080
     Token: "together"     	Type: ALL_LOWER_CASE	Start: 3081	End: 3089
-    Token: "--"           	Type: PUNCTUATION	Start: 3090	End: 3092
+    Token: "--"           	Type: OCHYPHEN	Start: 3090	End: 3092
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 3093	End: 3096
     Token: "contents"     	Type: ALL_LOWER_CASE	Start: 3097	End: 3105
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 3106	End: 3108
@@ -650,7 +650,7 @@ Paragraph End: 3287
     Token: "and"          	Type: ALL_LOWER_CASE	Start: 3140	End: 3143
     Token: "fourteen"     	Type: ALL_LOWER_CASE	Start: 3144	End: 3152
     Token: "albums"       	Type: ALL_LOWER_CASE	Start: 3153	End: 3159
-    Token: "."            	Type: TERM_PUNCT_P	Start: 3159	End: 3160
+    Token: "."            	Type: PERIOD	Start: 3159	End: 3160
   Text Unit Start: 3161
   Text Unit End: 3287
     Token: "Yet"          	Type: FIRST_UPPER_CASE	Start: 3161	End: 3164
@@ -661,11 +661,11 @@ Paragraph End: 3287
     Token: "Abbey"        	Type: FIRST_UPPER_CASE	Start: 3186	End: 3191
     Token: "Road"         	Type: FIRST_UPPER_CASE	Start: 3192	End: 3196
     Token: "archives"     	Type: ALL_LOWER_CASE	Start: 3197	End: 3205
-    Token: ","            	Type: PUNCTUATION	Start: 3205	End: 3206
+    Token: ","            	Type: COMMA	Start: 3205	End: 3206
     Token: "it"           	Type: ALL_LOWER_CASE	Start: 3207	End: 3209
     Token: "turns"        	Type: ALL_LOWER_CASE	Start: 3210	End: 3215
     Token: "out"          	Type: ALL_LOWER_CASE	Start: 3216	End: 3219
-    Token: ","            	Type: PUNCTUATION	Start: 3219	End: 3220
+    Token: ","            	Type: COMMA	Start: 3219	End: 3220
     Token: "contain"      	Type: ALL_LOWER_CASE	Start: 3221	End: 3228
     Token: "more"         	Type: ALL_LOWER_CASE	Start: 3229	End: 3233
     Token: "than"         	Type: ALL_LOWER_CASE	Start: 3234	End: 3238
@@ -677,7 +677,7 @@ Paragraph End: 3287
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 3265	End: 3267
     Token: "Beatles"      	Type: FIRST_UPPER_CASE	Start: 3268	End: 3275
     Token: "recordings"   	Type: ALL_LOWER_CASE	Start: 3276	End: 3286
-    Token: "."            	Type: TERM_PUNCT_P	Start: 3286	End: 3287
+    Token: "."            	Type: PERIOD	Start: 3286	End: 3287
 
 Paragraph Start: 3291
 Paragraph End: 4140
@@ -689,9 +689,9 @@ Paragraph End: 4140
     Token: "from"         	Type: ALL_LOWER_CASE	Start: 3314	End: 3318
     Token: "June"         	Type: FIRST_UPPER_CASE	Start: 3319	End: 3323
     Token: "6"            	Type: DIGITAL	Start: 3324	End: 3325
-    Token: ","            	Type: PUNCTUATION	Start: 3325	End: 3326
+    Token: ","            	Type: COMMA	Start: 3325	End: 3326
     Token: "1962"         	Type: DIGITAL	Start: 3327	End: 3331
-    Token: ","            	Type: PUNCTUATION	Start: 3331	End: 3332
+    Token: ","            	Type: COMMA	Start: 3331	End: 3332
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 3333	End: 3336
     Token: "date"         	Type: ALL_LOWER_CASE	Start: 3337	End: 3341
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 3342	End: 3344
@@ -702,35 +702,35 @@ Paragraph End: 4140
     Token: "persuaded"    	Type: ALL_LOWER_CASE	Start: 3372	End: 3381
     Token: "George"       	Type: FIRST_UPPER_CASE	Start: 3382	End: 3388
     Token: "Martin"       	Type: FIRST_UPPER_CASE	Start: 3389	End: 3395
-    Token: ","            	Type: PUNCTUATION	Start: 3395	End: 3396
+    Token: ","            	Type: COMMA	Start: 3395	End: 3396
     Token: "a"            	Type: ALL_LOWER_CASE	Start: 3397	End: 3398
     Token: "producer"     	Type: ALL_LOWER_CASE	Start: 3399	End: 3407
     Token: "at"           	Type: ALL_LOWER_CASE	Start: 3408	End: 3410
     Token: "EMI"          	Type: ALL_UPPER_CASE	Start: 3411	End: 3414
     Token: "Records"      	Type: FIRST_UPPER_CASE	Start: 3415	End: 3422
-    Token: ","            	Type: PUNCTUATION	Start: 3422	End: 3423
+    Token: ","            	Type: COMMA	Start: 3422	End: 3423
     Token: "to"           	Type: ALL_LOWER_CASE	Start: 3424	End: 3426
     Token: "sign"         	Type: ALL_LOWER_CASE	Start: 3427	End: 3431
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 3432	End: 3435
     Token: "Beatles"      	Type: FIRST_UPPER_CASE	Start: 3436	End: 3443
-    Token: ","            	Type: PUNCTUATION	Start: 3443	End: 3444
+    Token: ","            	Type: COMMA	Start: 3443	End: 3444
     Token: "to"           	Type: ALL_LOWER_CASE	Start: 3445	End: 3447
     Token: "January"      	Type: FIRST_UPPER_CASE	Start: 3448	End: 3455
     Token: "4"            	Type: DIGITAL	Start: 3456	End: 3457
-    Token: ","            	Type: PUNCTUATION	Start: 3457	End: 3458
+    Token: ","            	Type: COMMA	Start: 3457	End: 3458
     Token: "1970"         	Type: DIGITAL	Start: 3459	End: 3463
-    Token: ","            	Type: PUNCTUATION	Start: 3463	End: 3464
+    Token: ","            	Type: COMMA	Start: 3463	End: 3464
     Token: "when"         	Type: ALL_LOWER_CASE	Start: 3465	End: 3469
     Token: "Paul"         	Type: FIRST_UPPER_CASE	Start: 3470	End: 3474
     Token: "McCartney"    	Type: TOKEN	Start: 3475	End: 3484
-    Token: ","            	Type: PUNCTUATION	Start: 3484	End: 3485
+    Token: ","            	Type: COMMA	Start: 3484	End: 3485
     Token: "George"       	Type: FIRST_UPPER_CASE	Start: 3486	End: 3492
     Token: "Harrison"     	Type: FIRST_UPPER_CASE	Start: 3493	End: 3501
-    Token: ","            	Type: PUNCTUATION	Start: 3501	End: 3502
+    Token: ","            	Type: COMMA	Start: 3501	End: 3502
     Token: "and"          	Type: ALL_LOWER_CASE	Start: 3503	End: 3506
     Token: "Ringo"        	Type: FIRST_UPPER_CASE	Start: 3507	End: 3512
     Token: "Starr"        	Type: FIRST_UPPER_CASE	Start: 3513	End: 3518
-    Token: "("            	Type: OPEN_BRACKET	Start: 3519	End: 3520	PTB: "-LRB-"
+    Token: "("            	Type: OPAR	Start: 3519	End: 3520
     Token: "John"         	Type: FIRST_UPPER_CASE	Start: 3520	End: 3524
     Token: "Lennon"       	Type: FIRST_UPPER_CASE	Start: 3525	End: 3531
     Token: "was"          	Type: ALL_LOWER_CASE	Start: 3532	End: 3535
@@ -738,7 +738,7 @@ Paragraph End: 4140
     Token: "Denmark"      	Type: FIRST_UPPER_CASE	Start: 3539	End: 3546
     Token: "on"           	Type: ALL_LOWER_CASE	Start: 3547	End: 3549
     Token: "holiday"      	Type: ALL_LOWER_CASE	Start: 3550	End: 3557
-    Token: ")"            	Type: CLOSE_BRACKET	Start: 3557	End: 3558	PTB: "-RRB-"
+    Token: ")"            	Type: CPAR	Start: 3557	End: 3558
     Token: "recorded"     	Type: ALL_LOWER_CASE	Start: 3559	End: 3567
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 3568	End: 3571
     Token: "final"        	Type: ALL_LOWER_CASE	Start: 3572	End: 3577
@@ -752,11 +752,11 @@ Paragraph End: 4140
     Token: "'s"           	Type: RIGHTSPLIT	Start: 3617	End: 3619
     Token: "farewell"     	Type: ALL_LOWER_CASE	Start: 3620	End: 3628
     Token: "album"        	Type: ALL_LOWER_CASE	Start: 3629	End: 3634
-    Token: ","            	Type: PUNCTUATION	Start: 3634	End: 3635
+    Token: ","            	Type: COMMA	Start: 3634	End: 3635
     Token: "Let"          	Type: FIRST_UPPER_CASE	Start: 3636	End: 3639
     Token: "It"           	Type: FIRST_UPPER_CASE	Start: 3640	End: 3642
     Token: "Be"           	Type: FIRST_UPPER_CASE	Start: 3643	End: 3645
-    Token: "."            	Type: TERM_PUNCT_P	Start: 3645	End: 3646
+    Token: "."            	Type: PERIOD	Start: 3645	End: 3646
   Text Unit Start: 3647
   Text Unit End: 3762
     Token: "In"           	Type: FIRST_UPPER_CASE	Start: 3647	End: 3649
@@ -766,7 +766,7 @@ Paragraph End: 4140
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 3668	End: 3670
     Token: "everything"   	Type: ALL_LOWER_CASE	Start: 3671	End: 3681
     Token: "else"         	Type: ALL_LOWER_CASE	Start: 3682	End: 3686
-    Token: ","            	Type: PUNCTUATION	Start: 3686	End: 3687
+    Token: ","            	Type: COMMA	Start: 3686	End: 3687
     Token: "stored"       	Type: ALL_LOWER_CASE	Start: 3688	End: 3694
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 3695	End: 3697
     Token: "red-and-white"	Type: TOKEN	Start: 3698	End: 3711
@@ -778,7 +778,7 @@ Paragraph End: 4140
     Token: "large"        	Type: ALL_LOWER_CASE	Start: 3740	End: 3745
     Token: "telephone"    	Type: ALL_LOWER_CASE	Start: 3746	End: 3755
     Token: "books"        	Type: ALL_LOWER_CASE	Start: 3756	End: 3761
-    Token: "."            	Type: TERM_PUNCT_P	Start: 3761	End: 3762
+    Token: "."            	Type: PERIOD	Start: 3761	End: 3762
   Text Unit Start: 3763
   Text Unit End: 3993
     Token: "Pick"         	Type: FIRST_UPPER_CASE	Start: 3763	End: 3767
@@ -786,7 +786,7 @@ Paragraph End: 4140
     Token: "favorite"     	Type: ALL_LOWER_CASE	Start: 3770	End: 3778
     Token: "Beatles"      	Type: FIRST_UPPER_CASE	Start: 3779	End: 3786
     Token: "song"         	Type: ALL_LOWER_CASE	Start: 3787	End: 3791
-    Token: ";"            	Type: PUNCTUATION	Start: 3791	End: 3792
+    Token: ";"            	Type: SCOLON	Start: 3791	End: 3792
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 3793	End: 3796
     Token: "archives"     	Type: ALL_LOWER_CASE	Start: 3797	End: 3805
     Token: "hold"         	Type: ALL_LOWER_CASE	Start: 3806	End: 3810
@@ -825,7 +825,7 @@ Paragraph End: 4140
     Token: "polished"     	Type: ALL_LOWER_CASE	Start: 3970	End: 3978
     Token: "final"        	Type: ALL_LOWER_CASE	Start: 3979	End: 3984
     Token: "version"      	Type: ALL_LOWER_CASE	Start: 3985	End: 3992
-    Token: "."            	Type: TERM_PUNCT_P	Start: 3992	End: 3993
+    Token: "."            	Type: PERIOD	Start: 3992	End: 3993
   Text Unit Start: 3994
   Text Unit End: 4140
     Token: "There"        	Type: FIRST_UPPER_CASE	Start: 3994	End: 3999
@@ -836,14 +836,14 @@ Paragraph End: 4140
     Token: "off-the-cuff" 	Type: TOKEN	Start: 4017	End: 4029
     Token: "jam"          	Type: ALL_LOWER_CASE	Start: 4030	End: 4033
     Token: "sessions"     	Type: ALL_LOWER_CASE	Start: 4034	End: 4042
-    Token: ","            	Type: PUNCTUATION	Start: 4042	End: 4043
+    Token: ","            	Type: COMMA	Start: 4042	End: 4043
     Token: "arguments"    	Type: ALL_LOWER_CASE	Start: 4044	End: 4053
-    Token: ","            	Type: PUNCTUATION	Start: 4053	End: 4054
+    Token: ","            	Type: COMMA	Start: 4053	End: 4054
     Token: "horseplay"    	Type: ALL_LOWER_CASE	Start: 4055	End: 4064
     Token: "and"          	Type: ALL_LOWER_CASE	Start: 4065	End: 4068
     Token: "studio"       	Type: ALL_LOWER_CASE	Start: 4069	End: 4075
     Token: "chat"         	Type: ALL_LOWER_CASE	Start: 4076	End: 4080
-    Token: ","            	Type: PUNCTUATION	Start: 4080	End: 4081
+    Token: ","            	Type: COMMA	Start: 4080	End: 4081
     Token: "as"           	Type: ALL_LOWER_CASE	Start: 4082	End: 4084
     Token: "well"         	Type: ALL_LOWER_CASE	Start: 4085	End: 4089
     Token: "as"           	Type: ALL_LOWER_CASE	Start: 4090	End: 4092
@@ -856,7 +856,7 @@ Paragraph End: 4140
     Token: "has"          	Type: ALL_LOWER_CASE	Start: 4124	End: 4127
     Token: "never"        	Type: ALL_LOWER_CASE	Start: 4128	End: 4133
     Token: "heard"        	Type: ALL_LOWER_CASE	Start: 4134	End: 4139
-    Token: "."            	Type: TERM_PUNCT_P	Start: 4139	End: 4140
+    Token: "."            	Type: PERIOD	Start: 4139	End: 4140
 
 Paragraph Start: 4144
 Paragraph End: 4699
@@ -871,7 +871,7 @@ Paragraph End: 4699
     Token: "for"          	Type: ALL_LOWER_CASE	Start: 4174	End: 4177
     Token: "this"         	Type: ALL_LOWER_CASE	Start: 4178	End: 4182
     Token: "book"         	Type: ALL_LOWER_CASE	Start: 4183	End: 4187
-    Token: ","            	Type: PUNCTUATION	Start: 4187	End: 4188
+    Token: ","            	Type: COMMA	Start: 4187	End: 4188
     Token: "I"            	Type: ALL_UPPER_CASE	Start: 4189	End: 4190
     Token: "was"          	Type: ALL_LOWER_CASE	Start: 4191	End: 4194
     Token: "fortunate"    	Type: ALL_LOWER_CASE	Start: 4195	End: 4204
@@ -885,7 +885,7 @@ Paragraph End: 4699
     Token: "on"           	Type: ALL_LOWER_CASE	Start: 4245	End: 4247
     Token: "two"          	Type: ALL_LOWER_CASE	Start: 4248	End: 4251
     Token: "occasions"    	Type: ALL_LOWER_CASE	Start: 4252	End: 4261
-    Token: "."            	Type: TERM_PUNCT_P	Start: 4261	End: 4262
+    Token: "."            	Type: PERIOD	Start: 4261	End: 4262
   Text Unit Start: 4263
   Text Unit End: 4447
     Token: "While"        	Type: FIRST_UPPER_CASE	Start: 4263	End: 4268
@@ -895,7 +895,7 @@ Paragraph End: 4699
     Token: "The"          	Type: FIRST_UPPER_CASE	Start: 4287	End: 4290
     Token: "New"          	Type: FIRST_UPPER_CASE	Start: 4291	End: 4294
     Token: "Yorker"       	Type: FIRST_UPPER_CASE	Start: 4295	End: 4301
-    Token: ","            	Type: PUNCTUATION	Start: 4301	End: 4302
+    Token: ","            	Type: COMMA	Start: 4301	End: 4302
     Token: "I"            	Type: ALL_UPPER_CASE	Start: 4303	End: 4304
     Token: "spent"        	Type: ALL_LOWER_CASE	Start: 4305	End: 4310
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 4311	End: 4314
@@ -907,7 +907,7 @@ Paragraph End: 4699
     Token: "inside"       	Type: ALL_LOWER_CASE	Start: 4343	End: 4349
     Token: "Abbey"        	Type: FIRST_UPPER_CASE	Start: 4350	End: 4355
     Token: "Road"         	Type: FIRST_UPPER_CASE	Start: 4356	End: 4360
-    Token: ","            	Type: PUNCTUATION	Start: 4360	End: 4361
+    Token: ","            	Type: COMMA	Start: 4360	End: 4361
     Token: "listening"    	Type: ALL_LOWER_CASE	Start: 4362	End: 4371
     Token: "to"           	Type: ALL_LOWER_CASE	Start: 4372	End: 4374
     Token: "fifty"        	Type: ALL_LOWER_CASE	Start: 4375	End: 4380
@@ -925,7 +925,7 @@ Paragraph End: 4699
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 4432	End: 4434
     Token: "John"         	Type: FIRST_UPPER_CASE	Start: 4435	End: 4439
     Token: "Lennon"       	Type: FIRST_UPPER_CASE	Start: 4440	End: 4446
-    Token: "."            	Type: TERM_PUNCT_P	Start: 4446	End: 4447
+    Token: "."            	Type: PERIOD	Start: 4446	End: 4447
   Text Unit Start: 4448
   Text Unit End: 4699
     Token: "I"            	Type: ALL_UPPER_CASE	Start: 4448	End: 4449
@@ -944,7 +944,7 @@ Paragraph End: 4699
     Token: "watch"        	Type: ALL_LOWER_CASE	Start: 4515	End: 4520
     Token: "Picasso"      	Type: FIRST_UPPER_CASE	Start: 4521	End: 4528
     Token: "sketch"       	Type: ALL_LOWER_CASE	Start: 4529	End: 4535
-    Token: ","            	Type: PUNCTUATION	Start: 4535	End: 4536
+    Token: ","            	Type: COMMA	Start: 4535	End: 4536
     Token: "and"          	Type: ALL_LOWER_CASE	Start: 4537	End: 4540
     Token: "never"        	Type: ALL_LOWER_CASE	Start: 4541	End: 4546
     Token: "more"         	Type: ALL_LOWER_CASE	Start: 4547	End: 4551
@@ -966,7 +966,7 @@ Paragraph End: 4699
     Token: "In"           	Type: FIRST_UPPER_CASE	Start: 4617	End: 4619
     Token: "The"          	Type: FIRST_UPPER_CASE	Start: 4620	End: 4623
     Token: "Life"         	Type: FIRST_UPPER_CASE	Start: 4624	End: 4628
-    Token: ","            	Type: PUNCTUATION	Start: 4628	End: 4629
+    Token: ","            	Type: COMMA	Start: 4628	End: 4629
     Token: """            	Type: CLOSE_PUNCT	Start: 4629	End: 4630	PTB: "''"
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 4631	End: 4634
     Token: "closing"      	Type: ALL_LOWER_CASE	Start: 4635	End: 4642
@@ -981,7 +981,7 @@ Paragraph End: 4699
     Token: "Club"         	Type: FIRST_UPPER_CASE	Start: 4683	End: 4687
     Token: "Band"         	Type: FIRST_UPPER_CASE	Start: 4688	End: 4692
     Token: "album"        	Type: ALL_LOWER_CASE	Start: 4693	End: 4698
-    Token: "."            	Type: TERM_PUNCT_P	Start: 4698	End: 4699
+    Token: "."            	Type: PERIOD	Start: 4698	End: 4699
 
 Paragraph Start: 4703
 Paragraph End: 6155
@@ -1002,7 +1002,7 @@ Paragraph End: 6155
     Token: "Beatles"      	Type: FIRST_UPPER_CASE	Start: 4755	End: 4762
     Token: "'"            	Type: CLOSE_PUNCT	Start: 4762	End: 4763	PTB: "''"
     Token: "career"       	Type: ALL_LOWER_CASE	Start: 4764	End: 4770
-    Token: ","            	Type: PUNCTUATION	Start: 4770	End: 4771
+    Token: ","            	Type: COMMA	Start: 4770	End: 4771
     Token: "a"            	Type: ALL_LOWER_CASE	Start: 4772	End: 4773
     Token: "time"         	Type: ALL_LOWER_CASE	Start: 4774	End: 4778
     Token: "when"         	Type: ALL_LOWER_CASE	Start: 4779	End: 4783
@@ -1014,7 +1014,7 @@ Paragraph End: 6155
     Token: "definitely"   	Type: ALL_LOWER_CASE	Start: 4801	End: 4811
     Token: "working"      	Type: ALL_LOWER_CASE	Start: 4812	End: 4819
     Token: "together"     	Type: ALL_LOWER_CASE	Start: 4820	End: 4828
-    Token: ","            	Type: PUNCTUATION	Start: 4828	End: 4829
+    Token: ","            	Type: COMMA	Start: 4828	End: 4829
     Token: "especially"   	Type: ALL_LOWER_CASE	Start: 4830	End: 4840
     Token: "on"           	Type: ALL_LOWER_CASE	Start: 4841	End: 4843
     Token: "'"            	Type: OPEN_PUNCT	Start: 4844	End: 4845	PTB: "``"
@@ -1023,13 +1023,13 @@ Paragraph End: 6155
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 4851	End: 4853
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 4854	End: 4857
     Token: "Life"         	Type: FIRST_UPPER_CASE	Start: 4858	End: 4862
-    Token: "."            	Type: TERM_PUNCT_P	Start: 4862	End: 4863
+    Token: "."            	Type: PERIOD	Start: 4862	End: 4863
     Token: "'"            	Type: CLOSE_PUNCT	Start: 4863	End: 4864	PTB: "''"
     Token: """            	Type: CLOSE_PUNCT	Start: 4865	End: 4866	PTB: "''"
   Text Unit Start: 4867
   Text Unit End: 5047
     Token: "Indeed"       	Type: FIRST_UPPER_CASE	Start: 4867	End: 4873
-    Token: ","            	Type: PUNCTUATION	Start: 4873	End: 4874
+    Token: ","            	Type: COMMA	Start: 4873	End: 4874
     Token: """            	Type: OPEN_PUNCT	Start: 4875	End: 4876	PTB: "``"
     Token: "A"            	Type: ALL_UPPER_CASE	Start: 4876	End: 4877
     Token: "Day"          	Type: FIRST_UPPER_CASE	Start: 4878	End: 4881
@@ -1043,7 +1043,7 @@ Paragraph End: 6155
     Token: "ultimate"     	Type: ALL_LOWER_CASE	Start: 4906	End: 4914
     Token: "McCartney-Lennon"	Type: TOKEN	Start: 4915	End: 4931
     Token: "collaboration"	Type: ALL_LOWER_CASE	Start: 4932	End: 4945
-    Token: ","            	Type: PUNCTUATION	Start: 4945	End: 4946
+    Token: ","            	Type: COMMA	Start: 4945	End: 4946
     Token: "a"            	Type: ALL_LOWER_CASE	Start: 4947	End: 4948
     Token: "classic"      	Type: ALL_LOWER_CASE	Start: 4949	End: 4956
     Token: "example"      	Type: ALL_LOWER_CASE	Start: 4957	End: 4964
@@ -1061,7 +1061,7 @@ Paragraph End: 6155
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 5034	End: 5036
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 5037	End: 5040
     Token: "other"        	Type: ALL_LOWER_CASE	Start: 5041	End: 5046
-    Token: "."            	Type: TERM_PUNCT_P	Start: 5046	End: 5047
+    Token: "."            	Type: PERIOD	Start: 5046	End: 5047
   Text Unit Start: 5048
   Text Unit End: 5332
     Token: "Although"     	Type: FIRST_UPPER_CASE	Start: 5048	End: 5056
@@ -1080,24 +1080,24 @@ Paragraph End: 6155
     Token: "eyeball"      	Type: ALL_LOWER_CASE	Start: 5117	End: 5124
     Token: "to"           	Type: ALL_LOWER_CASE	Start: 5125	End: 5127
     Token: "eyeball"      	Type: ALL_LOWER_CASE	Start: 5128	End: 5135
-    Token: ","            	Type: PUNCTUATION	Start: 5135	End: 5136
+    Token: ","            	Type: COMMA	Start: 5135	End: 5136
     Token: """            	Type: CLOSE_PUNCT	Start: 5136	End: 5137	PTB: "''"
     Token: "especially"   	Type: ALL_LOWER_CASE	Start: 5138	End: 5148
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 5149	End: 5151
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 5152	End: 5155
     Token: "early"        	Type: ALL_LOWER_CASE	Start: 5156	End: 5161
     Token: "days"         	Type: ALL_LOWER_CASE	Start: 5162	End: 5166
-    Token: ","            	Type: PUNCTUATION	Start: 5166	End: 5167
+    Token: ","            	Type: COMMA	Start: 5166	End: 5167
     Token: "their"        	Type: ALL_LOWER_CASE	Start: 5168	End: 5173
     Token: "usual"        	Type: ALL_LOWER_CASE	Start: 5174	End: 5179
     Token: "practice"     	Type: ALL_LOWER_CASE	Start: 5180	End: 5188
     Token: "by"           	Type: ALL_LOWER_CASE	Start: 5189	End: 5191
     Token: "this"         	Type: ALL_LOWER_CASE	Start: 5192	End: 5196
     Token: "time"         	Type: ALL_LOWER_CASE	Start: 5197	End: 5201
-    Token: ","            	Type: PUNCTUATION	Start: 5201	End: 5202
+    Token: ","            	Type: COMMA	Start: 5201	End: 5202
     Token: "January"      	Type: FIRST_UPPER_CASE	Start: 5203	End: 5210
     Token: "1967"         	Type: DIGITAL	Start: 5211	End: 5215
-    Token: ","            	Type: PUNCTUATION	Start: 5215	End: 5216
+    Token: ","            	Type: COMMA	Start: 5215	End: 5216
     Token: "was"          	Type: ALL_LOWER_CASE	Start: 5217	End: 5220
     Token: "for"          	Type: ALL_LOWER_CASE	Start: 5221	End: 5224
     Token: "one"          	Type: ALL_LOWER_CASE	Start: 5225	End: 5228
@@ -1120,7 +1120,7 @@ Paragraph End: 6155
     Token: "already"      	Type: ALL_LOWER_CASE	Start: 5307	End: 5314
     Token: "almost"       	Type: ALL_LOWER_CASE	Start: 5315	End: 5321
     Token: "completed"    	Type: ALL_LOWER_CASE	Start: 5322	End: 5331
-    Token: "."            	Type: TERM_PUNCT_P	Start: 5331	End: 5332
+    Token: "."            	Type: PERIOD	Start: 5331	End: 5332
   Text Unit Start: 5333
   Text Unit End: 5415
     Token: "In"           	Type: FIRST_UPPER_CASE	Start: 5333	End: 5335
@@ -1133,7 +1133,7 @@ Paragraph End: 6155
     Token: "In"           	Type: FIRST_UPPER_CASE	Start: 5355	End: 5357
     Token: "The"          	Type: FIRST_UPPER_CASE	Start: 5358	End: 5361
     Token: "Life"         	Type: FIRST_UPPER_CASE	Start: 5362	End: 5366
-    Token: ","            	Type: PUNCTUATION	Start: 5366	End: 5367
+    Token: ","            	Type: COMMA	Start: 5366	End: 5367
     Token: """            	Type: CLOSE_PUNCT	Start: 5367	End: 5368	PTB: "''"
     Token: "it"           	Type: ALL_LOWER_CASE	Start: 5369	End: 5371
     Token: "was"          	Type: ALL_LOWER_CASE	Start: 5372	End: 5375
@@ -1144,7 +1144,7 @@ Paragraph End: 6155
     Token: "'s"           	Type: RIGHTSPLIT	Start: 5394	End: 5396
     Token: "composition"  	Type: ALL_LOWER_CASE	Start: 5397	End: 5408
     Token: "whole"        	Type: ALL_LOWER_CASE	Start: 5409	End: 5414
-    Token: "."            	Type: TERM_PUNCT_P	Start: 5414	End: 5415
+    Token: "."            	Type: PERIOD	Start: 5414	End: 5415
   Text Unit Start: 5416
   Text Unit End: 5631
     Token: "Lennon"       	Type: FIRST_UPPER_CASE	Start: 5416	End: 5422
@@ -1154,7 +1154,7 @@ Paragraph End: 6155
     Token: "and"          	Type: ALL_LOWER_CASE	Start: 5438	End: 5441
     Token: "story"        	Type: ALL_LOWER_CASE	Start: 5442	End: 5447
     Token: "line"         	Type: ALL_LOWER_CASE	Start: 5448	End: 5452
-    Token: "--"           	Type: PUNCTUATION	Start: 5453	End: 5455
+    Token: "--"           	Type: OCHYPHEN	Start: 5453	End: 5455
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 5456	End: 5459
     Token: "man"          	Type: ALL_LOWER_CASE	Start: 5460	End: 5463
     Token: "who"          	Type: ALL_LOWER_CASE	Start: 5464	End: 5467
@@ -1166,7 +1166,7 @@ Paragraph End: 6155
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 5487	End: 5489
     Token: "a"            	Type: ALL_LOWER_CASE	Start: 5490	End: 5491
     Token: "car"          	Type: ALL_LOWER_CASE	Start: 5492	End: 5495
-    Token: ","            	Type: PUNCTUATION	Start: 5495	End: 5496
+    Token: ","            	Type: COMMA	Start: 5495	End: 5496
     Token: """            	Type: CLOSE_PUNCT	Start: 5496	End: 5497	PTB: "''"
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 5498	End: 5501
     Token: "English"      	Type: FIRST_UPPER_CASE	Start: 5502	End: 5509
@@ -1178,7 +1178,7 @@ Paragraph End: 6155
     Token: "won"          	Type: ALL_LOWER_CASE	Start: 5530	End: 5533
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 5534	End: 5537
     Token: "war"          	Type: ALL_LOWER_CASE	Start: 5538	End: 5541
-    Token: ","            	Type: PUNCTUATION	Start: 5541	End: 5542
+    Token: ","            	Type: COMMA	Start: 5541	End: 5542
     Token: """            	Type: CLOSE_PUNCT	Start: 5542	End: 5543	PTB: "''"
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 5544	End: 5547
     Token: """            	Type: OPEN_PUNCT	Start: 5548	End: 5549	PTB: "``"
@@ -1187,17 +1187,17 @@ Paragraph End: 6155
     Token: "holes"        	Type: ALL_LOWER_CASE	Start: 5563	End: 5568
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 5569	End: 5571
     Token: "Blackburn"    	Type: FIRST_UPPER_CASE	Start: 5572	End: 5581
-    Token: ","            	Type: PUNCTUATION	Start: 5581	End: 5582
+    Token: ","            	Type: COMMA	Start: 5581	End: 5582
     Token: "Lancashire"   	Type: FIRST_UPPER_CASE	Start: 5583	End: 5593
     Token: """            	Type: CLOSE_PUNCT	Start: 5593	End: 5594	PTB: "''"
-    Token: "--"           	Type: PUNCTUATION	Start: 5594	End: 5596
+    Token: "--"           	Type: OCHYPHEN	Start: 5594	End: 5596
     Token: "but"          	Type: ALL_LOWER_CASE	Start: 5596	End: 5599
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 5600	End: 5603
     Token: "song"         	Type: ALL_LOWER_CASE	Start: 5604	End: 5608
     Token: "needed"       	Type: ALL_LOWER_CASE	Start: 5609	End: 5615
     Token: "something"    	Type: ALL_LOWER_CASE	Start: 5616	End: 5625
     Token: "more"         	Type: ALL_LOWER_CASE	Start: 5626	End: 5630
-    Token: "."            	Type: TERM_PUNCT_P	Start: 5630	End: 5631
+    Token: "."            	Type: PERIOD	Start: 5630	End: 5631
   Text Unit Start: 5632
   Text Unit End: 5798
     Token: "Lennon"       	Type: FIRST_UPPER_CASE	Start: 5632	End: 5638
@@ -1207,7 +1207,7 @@ Paragraph End: 6155
     Token: "laboring"     	Type: ALL_LOWER_CASE	Start: 5651	End: 5659
     Token: "over"         	Type: ALL_LOWER_CASE	Start: 5660	End: 5664
     Token: "songs"        	Type: ALL_LOWER_CASE	Start: 5665	End: 5670
-    Token: ","            	Type: PUNCTUATION	Start: 5670	End: 5671
+    Token: ","            	Type: COMMA	Start: 5670	End: 5671
     Token: "preferring"   	Type: ALL_LOWER_CASE	Start: 5672	End: 5682
     Token: "instead"      	Type: ALL_LOWER_CASE	Start: 5683	End: 5690
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 5691	End: 5694
@@ -1215,7 +1215,7 @@ Paragraph End: 6155
     Token: "purity"       	Type: ALL_LOWER_CASE	Start: 5699	End: 5705
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 5706	End: 5708
     Token: "inspiration"  	Type: ALL_LOWER_CASE	Start: 5709	End: 5720
-    Token: ","            	Type: PUNCTUATION	Start: 5720	End: 5721
+    Token: ","            	Type: COMMA	Start: 5720	End: 5721
     Token: "so"           	Type: ALL_LOWER_CASE	Start: 5722	End: 5724
     Token: "when"         	Type: ALL_LOWER_CASE	Start: 5725	End: 5729
     Token: "he"           	Type: ALL_LOWER_CASE	Start: 5730	End: 5732
@@ -1231,7 +1231,7 @@ Paragraph End: 6155
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 5783	End: 5786
     Token: "song"         	Type: ALL_LOWER_CASE	Start: 5787	End: 5791
     Token: "aside"        	Type: ALL_LOWER_CASE	Start: 5792	End: 5797
-    Token: "."            	Type: TERM_PUNCT_P	Start: 5797	End: 5798
+    Token: "."            	Type: PERIOD	Start: 5797	End: 5798
   Text Unit Start: 5799
   Text Unit End: 5997
     Token: """            	Type: OPEN_PUNCT	Start: 5799	End: 5800	PTB: "``"
@@ -1241,7 +1241,7 @@ Paragraph End: 6155
     Token: "middle-eight" 	Type: TOKEN	Start: 5811	End: 5823
     Token: "for"          	Type: ALL_LOWER_CASE	Start: 5824	End: 5827
     Token: "it"           	Type: ALL_LOWER_CASE	Start: 5828	End: 5830
-    Token: "["            	Type: OPEN_BRACKET	Start: 5831	End: 5832	PTB: "-LSB-"
+    Token: "["            	Type: OCROCHE	Start: 5831	End: 5832
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 5832	End: 5835
     Token: """            	Type: OPEN_PUNCT	Start: 5836	End: 5837	PTB: "``"
     Token: "middle"       	Type: ALL_LOWER_CASE	Start: 5837	End: 5843
@@ -1264,8 +1264,8 @@ Paragraph End: 6155
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 5919	End: 5922
     Token: "original"     	Type: ALL_LOWER_CASE	Start: 5923	End: 5931
     Token: "verse"        	Type: ALL_LOWER_CASE	Start: 5932	End: 5937
-    Token: "]"            	Type: CLOSE_BRACKET	Start: 5937	End: 5938	PTB: "-RSB-"
-    Token: ","            	Type: PUNCTUATION	Start: 5938	End: 5939
+    Token: "]"            	Type: CCROCHE	Start: 5937	End: 5938
+    Token: ","            	Type: COMMA	Start: 5938	End: 5939
     Token: "but"          	Type: ALL_LOWER_CASE	Start: 5940	End: 5943
     Token: "that"         	Type: ALL_LOWER_CASE	Start: 5944	End: 5948
     Token: "would"        	Type: ALL_LOWER_CASE	Start: 5949	End: 5954
@@ -1273,12 +1273,12 @@ Paragraph End: 6155
     Token: "been"         	Type: ALL_LOWER_CASE	Start: 5960	End: 5964
     Token: "forcing"      	Type: ALL_LOWER_CASE	Start: 5965	End: 5972
     Token: "it"           	Type: ALL_LOWER_CASE	Start: 5973	End: 5975
-    Token: ","            	Type: PUNCTUATION	Start: 5975	End: 5976
+    Token: ","            	Type: COMMA	Start: 5975	End: 5976
     Token: """            	Type: CLOSE_PUNCT	Start: 5976	End: 5977	PTB: "''"
     Token: "he"           	Type: ALL_LOWER_CASE	Start: 5978	End: 5980
     Token: "later"        	Type: ALL_LOWER_CASE	Start: 5981	End: 5986
     Token: "explained"    	Type: ALL_LOWER_CASE	Start: 5987	End: 5996
-    Token: "."            	Type: TERM_PUNCT_P	Start: 5996	End: 5997
+    Token: "."            	Type: PERIOD	Start: 5996	End: 5997
   Text Unit Start: 5998
   Text Unit End: 6155
     Token: """            	Type: OPEN_PUNCT	Start: 5998	End: 5999	PTB: "``"
@@ -1289,12 +1289,12 @@ Paragraph End: 6155
     Token: "come"         	Type: ALL_LOWER_CASE	Start: 6016	End: 6020
     Token: "out"          	Type: ALL_LOWER_CASE	Start: 6021	End: 6024
     Token: "smooth"       	Type: ALL_LOWER_CASE	Start: 6025	End: 6031
-    Token: ","            	Type: PUNCTUATION	Start: 6031	End: 6032
+    Token: ","            	Type: COMMA	Start: 6031	End: 6032
     Token: "flowing"      	Type: ALL_LOWER_CASE	Start: 6033	End: 6040
-    Token: ","            	Type: PUNCTUATION	Start: 6040	End: 6041
+    Token: ","            	Type: COMMA	Start: 6040	End: 6041
     Token: "no"           	Type: ALL_LOWER_CASE	Start: 6042	End: 6044
     Token: "trouble"      	Type: ALL_LOWER_CASE	Start: 6045	End: 6052
-    Token: ","            	Type: PUNCTUATION	Start: 6052	End: 6053
+    Token: ","            	Type: COMMA	Start: 6052	End: 6053
     Token: "and"          	Type: ALL_LOWER_CASE	Start: 6054	End: 6057
     Token: "to"           	Type: ALL_LOWER_CASE	Start: 6058	End: 6060
     Token: "write"        	Type: ALL_LOWER_CASE	Start: 6061	End: 6066
@@ -1309,14 +1309,14 @@ Paragraph End: 6155
     Token: "a"            	Type: ALL_LOWER_CASE	Start: 6107	End: 6108
     Token: "middle"       	Type: ALL_LOWER_CASE	Start: 6109	End: 6115
     Token: "eight"        	Type: ALL_LOWER_CASE	Start: 6116	End: 6121
-    Token: ","            	Type: PUNCTUATION	Start: 6121	End: 6122
+    Token: ","            	Type: COMMA	Start: 6121	End: 6122
     Token: "but"          	Type: ALL_LOWER_CASE	Start: 6123	End: 6126
     Token: "Paul"         	Type: FIRST_UPPER_CASE	Start: 6127	End: 6131
     Token: "already"      	Type: ALL_LOWER_CASE	Start: 6132	End: 6139
     Token: "had"          	Type: ALL_LOWER_CASE	Start: 6140	End: 6143
     Token: "one"          	Type: ALL_LOWER_CASE	Start: 6144	End: 6147
     Token: "there"        	Type: ALL_LOWER_CASE	Start: 6148	End: 6153
-    Token: "."            	Type: TERM_PUNCT_P	Start: 6153	End: 6154
+    Token: "."            	Type: PERIOD	Start: 6153	End: 6154
     Token: """            	Type: CLOSE_PUNCT	Start: 6154	End: 6155	PTB: "''"
 
 Paragraph Start: 6159
@@ -1332,18 +1332,18 @@ Paragraph End: 7144
     Token: """            	Type: OPEN_PUNCT	Start: 6193	End: 6194	PTB: "``"
     Token: "Woke"         	Type: FIRST_UPPER_CASE	Start: 6194	End: 6198
     Token: "up"           	Type: ALL_LOWER_CASE	Start: 6199	End: 6201
-    Token: ","            	Type: PUNCTUATION	Start: 6201	End: 6202
+    Token: ","            	Type: COMMA	Start: 6201	End: 6202
     Token: "fell"         	Type: ALL_LOWER_CASE	Start: 6203	End: 6207
     Token: "out"          	Type: ALL_LOWER_CASE	Start: 6208	End: 6211
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 6212	End: 6214
     Token: "bed"          	Type: ALL_LOWER_CASE	Start: 6215	End: 6218
-    Token: "."            	Type: TERM_PUNCT_P	Start: 6218	End: 6219
-    Token: "."            	Type: TERM_PUNCT_P	Start: 6219	End: 6220
-    Token: "."            	Type: TERM_PUNCT_P	Start: 6220	End: 6221
+    Token: "."            	Type: PERIOD	Start: 6218	End: 6219
+    Token: "."            	Type: PERIOD	Start: 6219	End: 6220
+    Token: "."            	Type: PERIOD	Start: 6220	End: 6221
     Token: """            	Type: CLOSE_PUNCT	Start: 6221	End: 6222	PTB: "''"
     Token: "lying"        	Type: ALL_LOWER_CASE	Start: 6223	End: 6228
     Token: "around"       	Type: ALL_LOWER_CASE	Start: 6229	End: 6235
-    Token: "."            	Type: TERM_PUNCT_P	Start: 6235	End: 6236
+    Token: "."            	Type: PERIOD	Start: 6235	End: 6236
   Text Unit Start: 6237
   Text Unit End: 6518
     Token: "The"          	Type: FIRST_UPPER_CASE	Start: 6237	End: 6240
@@ -1359,7 +1359,7 @@ Paragraph End: 7144
     Token: "modern"       	Type: ALL_LOWER_CASE	Start: 6292	End: 6298
     Token: "urban"        	Type: ALL_LOWER_CASE	Start: 6299	End: 6304
     Token: "life"         	Type: ALL_LOWER_CASE	Start: 6305	End: 6309
-    Token: "--"           	Type: PUNCTUATION	Start: 6310	End: 6312
+    Token: "--"           	Type: OCHYPHEN	Start: 6310	End: 6312
     Token: "based"        	Type: ALL_LOWER_CASE	Start: 6313	End: 6318
     Token: "on"           	Type: ALL_LOWER_CASE	Start: 6319	End: 6321
     Token: "Paul"         	Type: FIRST_UPPER_CASE	Start: 6322	End: 6326
@@ -1372,7 +1372,7 @@ Paragraph End: 7144
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 6359	End: 6361
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 6362	End: 6365
     Token: "morning"      	Type: ALL_LOWER_CASE	Start: 6366	End: 6373
-    Token: "--"           	Type: PUNCTUATION	Start: 6374	End: 6376
+    Token: "--"           	Type: OCHYPHEN	Start: 6374	End: 6376
     Token: "made"         	Type: ALL_LOWER_CASE	Start: 6377	End: 6381
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 6382	End: 6385
     Token: "ideal"        	Type: ALL_LOWER_CASE	Start: 6386	End: 6391
@@ -1382,7 +1382,7 @@ Paragraph End: 7144
     Token: "'s"           	Type: RIGHTSPLIT	Start: 6412	End: 6414
     Token: "gently"       	Type: ALL_LOWER_CASE	Start: 6415	End: 6421
     Token: "ominous"      	Type: ALL_LOWER_CASE	Start: 6422	End: 6429
-    Token: ","            	Type: PUNCTUATION	Start: 6429	End: 6430
+    Token: ","            	Type: COMMA	Start: 6429	End: 6430
     Token: "dreamlike"    	Type: ALL_LOWER_CASE	Start: 6431	End: 6440
     Token: "commentary"   	Type: ALL_LOWER_CASE	Start: 6441	End: 6451
     Token: "on"           	Type: ALL_LOWER_CASE	Start: 6452	End: 6454
@@ -1391,13 +1391,13 @@ Paragraph End: 7144
     Token: "absurdity"    	Type: ALL_LOWER_CASE	Start: 6466	End: 6475
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 6476	End: 6478
     Token: "status"       	Type: ALL_LOWER_CASE	Start: 6479	End: 6485
-    Token: ","            	Type: PUNCTUATION	Start: 6485	End: 6486
+    Token: ","            	Type: COMMA	Start: 6485	End: 6486
     Token: "order"        	Type: ALL_LOWER_CASE	Start: 6487	End: 6492
-    Token: ","            	Type: PUNCTUATION	Start: 6492	End: 6493
+    Token: ","            	Type: COMMA	Start: 6492	End: 6493
     Token: "and"          	Type: ALL_LOWER_CASE	Start: 6494	End: 6497
     Token: "worldly"      	Type: ALL_LOWER_CASE	Start: 6498	End: 6505
     Token: "attachments"  	Type: ALL_LOWER_CASE	Start: 6506	End: 6517
-    Token: "."            	Type: TERM_PUNCT_P	Start: 6517	End: 6518
+    Token: "."            	Type: PERIOD	Start: 6517	End: 6518
   Text Unit Start: 6519
   Text Unit End: 6622
     Token: "The"          	Type: FIRST_UPPER_CASE	Start: 6519	End: 6522
@@ -1408,7 +1408,7 @@ Paragraph End: 7144
     Token: "song"         	Type: ALL_LOWER_CASE	Start: 6544	End: 6548
     Token: "had"          	Type: ALL_LOWER_CASE	Start: 6549	End: 6552
     Token: "come"         	Type: ALL_LOWER_CASE	Start: 6553	End: 6557
-    Token: ","            	Type: PUNCTUATION	Start: 6557	End: 6558
+    Token: ","            	Type: COMMA	Start: 6557	End: 6558
     Token: "as"           	Type: ALL_LOWER_CASE	Start: 6559	End: 6561
     Token: "it"           	Type: ALL_LOWER_CASE	Start: 6562	End: 6564
     Token: "so"           	Type: ALL_LOWER_CASE	Start: 6565	End: 6567
@@ -1416,7 +1416,7 @@ Paragraph End: 7144
     Token: "did"          	Type: ALL_LOWER_CASE	Start: 6574	End: 6577
     Token: "with"         	Type: ALL_LOWER_CASE	Start: 6578	End: 6582
     Token: "Lennon"       	Type: FIRST_UPPER_CASE	Start: 6583	End: 6589
-    Token: ","            	Type: PUNCTUATION	Start: 6589	End: 6590
+    Token: ","            	Type: COMMA	Start: 6589	End: 6590
     Token: "from"         	Type: ALL_LOWER_CASE	Start: 6591	End: 6595
     Token: "an"           	Type: ALL_LOWER_CASE	Start: 6596	End: 6598
     Token: "item"         	Type: ALL_LOWER_CASE	Start: 6599	End: 6603
@@ -1424,7 +1424,7 @@ Paragraph End: 7144
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 6607	End: 6610
     Token: "mass"         	Type: ALL_LOWER_CASE	Start: 6611	End: 6615
     Token: "media"        	Type: ALL_LOWER_CASE	Start: 6616	End: 6621
-    Token: "."            	Type: TERM_PUNCT_P	Start: 6621	End: 6622
+    Token: "."            	Type: PERIOD	Start: 6621	End: 6622
   Text Unit Start: 6623
   Text Unit End: 6694
     Token: """            	Type: OPEN_PUNCT	Start: 6623	End: 6624	PTB: "``"
@@ -1439,11 +1439,11 @@ Paragraph End: 7144
     Token: "noticed"      	Type: ALL_LOWER_CASE	Start: 6660	End: 6667
     Token: "two"          	Type: ALL_LOWER_CASE	Start: 6668	End: 6671
     Token: "stories"      	Type: ALL_LOWER_CASE	Start: 6672	End: 6679
-    Token: ","            	Type: PUNCTUATION	Start: 6679	End: 6680
+    Token: ","            	Type: COMMA	Start: 6679	End: 6680
     Token: """            	Type: CLOSE_PUNCT	Start: 6680	End: 6681	PTB: "''"
     Token: "he"           	Type: ALL_LOWER_CASE	Start: 6682	End: 6684
     Token: "recalled"     	Type: ALL_LOWER_CASE	Start: 6685	End: 6693
-    Token: "."            	Type: TERM_PUNCT_P	Start: 6693	End: 6694
+    Token: "."            	Type: PERIOD	Start: 6693	End: 6694
   Text Unit Start: 6695
   Text Unit End: 6756
     Token: """            	Type: OPEN_PUNCT	Start: 6695	End: 6696	PTB: "``"
@@ -1459,7 +1459,7 @@ Paragraph End: 7144
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 6747	End: 6749
     Token: "a"            	Type: ALL_LOWER_CASE	Start: 6750	End: 6751
     Token: "car"          	Type: ALL_LOWER_CASE	Start: 6752	End: 6755
-    Token: "."            	Type: TERM_PUNCT_P	Start: 6755	End: 6756
+    Token: "."            	Type: PERIOD	Start: 6755	End: 6756
   Text Unit Start: 6757
   Text Unit End: 6790
     Token: "That"         	Type: FIRST_UPPER_CASE	Start: 6757	End: 6761
@@ -1468,7 +1468,7 @@ Paragraph End: 7144
     Token: "main"         	Type: ALL_LOWER_CASE	Start: 6770	End: 6774
     Token: "headline"     	Type: ALL_LOWER_CASE	Start: 6775	End: 6783
     Token: "story"        	Type: ALL_LOWER_CASE	Start: 6784	End: 6789
-    Token: "."            	Type: TERM_PUNCT_P	Start: 6789	End: 6790
+    Token: "."            	Type: PERIOD	Start: 6789	End: 6790
   Text Unit Start: 6791
   Text Unit End: 6824
     Token: "He"           	Type: FIRST_UPPER_CASE	Start: 6791	End: 6793
@@ -1479,7 +1479,7 @@ Paragraph End: 7144
     Token: "a"            	Type: ALL_LOWER_CASE	Start: 6812	End: 6813
     Token: "car"          	Type: ALL_LOWER_CASE	Start: 6814	End: 6817
     Token: "crash"        	Type: ALL_LOWER_CASE	Start: 6818	End: 6823
-    Token: "."            	Type: TERM_PUNCT_P	Start: 6823	End: 6824
+    Token: "."            	Type: PERIOD	Start: 6823	End: 6824
   Text Unit Start: 6825
   Text Unit End: 6949
     Token: "On"           	Type: FIRST_UPPER_CASE	Start: 6825	End: 6827
@@ -1498,15 +1498,15 @@ Paragraph End: 7144
     Token: "streets"      	Type: ALL_LOWER_CASE	Start: 6890	End: 6897
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 6898	End: 6900
     Token: "Blackburn"    	Type: FIRST_UPPER_CASE	Start: 6901	End: 6910
-    Token: ","            	Type: PUNCTUATION	Start: 6910	End: 6911
+    Token: ","            	Type: COMMA	Start: 6910	End: 6911
     Token: "Lancashire"   	Type: FIRST_UPPER_CASE	Start: 6912	End: 6922
-    Token: ","            	Type: PUNCTUATION	Start: 6922	End: 6923
+    Token: ","            	Type: COMMA	Start: 6922	End: 6923
     Token: "that"         	Type: ALL_LOWER_CASE	Start: 6924	End: 6928
     Token: "needed"       	Type: ALL_LOWER_CASE	Start: 6929	End: 6935
     Token: "to"           	Type: ALL_LOWER_CASE	Start: 6936	End: 6938
     Token: "be"           	Type: ALL_LOWER_CASE	Start: 6939	End: 6941
     Token: "filled"       	Type: ALL_LOWER_CASE	Start: 6942	End: 6948
-    Token: "."            	Type: TERM_PUNCT_P	Start: 6948	End: 6949
+    Token: "."            	Type: PERIOD	Start: 6948	End: 6949
   Text Unit Start: 6950
   Text Unit End: 7099
     Token: "Paul"         	Type: FIRST_UPPER_CASE	Start: 6950	End: 6954
@@ -1520,7 +1520,7 @@ Paragraph End: 7144
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 7000	End: 7002
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 7003	End: 7006
     Token: "song"         	Type: ALL_LOWER_CASE	Start: 7007	End: 7011
-    Token: ","            	Type: PUNCTUATION	Start: 7011	End: 7012
+    Token: ","            	Type: COMMA	Start: 7011	End: 7012
     Token: "'"            	Type: OPEN_PUNCT	Start: 7013	End: 7014	PTB: "``"
     Token: "I"            	Type: ALL_UPPER_CASE	Start: 7014	End: 7015
     Token: "'d"           	Type: RIGHTSPLIT	Start: 7015	End: 7017
@@ -1529,7 +1529,7 @@ Paragraph End: 7144
     Token: "turn"         	Type: ALL_LOWER_CASE	Start: 7026	End: 7030
     Token: "you"          	Type: ALL_LOWER_CASE	Start: 7031	End: 7034
     Token: "on"           	Type: ALL_LOWER_CASE	Start: 7035	End: 7037
-    Token: ","            	Type: PUNCTUATION	Start: 7037	End: 7038
+    Token: ","            	Type: COMMA	Start: 7037	End: 7038
     Token: "'"            	Type: CLOSE_PUNCT	Start: 7038	End: 7039	PTB: "''"
     Token: "that"         	Type: ALL_LOWER_CASE	Start: 7040	End: 7044
     Token: "he"           	Type: ALL_LOWER_CASE	Start: 7045	End: 7047
@@ -1544,7 +1544,7 @@ Paragraph End: 7144
     Token: "could"        	Type: ALL_LOWER_CASE	Start: 7086	End: 7091
     Token: "n't"          	Type: RIGHTSPLIT	Start: 7091	End: 7094
     Token: "use"          	Type: ALL_LOWER_CASE	Start: 7095	End: 7098
-    Token: "."            	Type: TERM_PUNCT_P	Start: 7098	End: 7099
+    Token: "."            	Type: PERIOD	Start: 7098	End: 7099
   Text Unit Start: 7100
   Text Unit End: 7144
     Token: "I"            	Type: ALL_UPPER_CASE	Start: 7100	End: 7101
@@ -1557,7 +1557,7 @@ Paragraph End: 7144
     Token: "piece"        	Type: ALL_LOWER_CASE	Start: 7129	End: 7134
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 7135	End: 7137
     Token: "work"         	Type: ALL_LOWER_CASE	Start: 7138	End: 7142
-    Token: "."            	Type: TERM_PUNCT_P	Start: 7142	End: 7143
+    Token: "."            	Type: PERIOD	Start: 7142	End: 7143
     Token: """            	Type: CLOSE_PUNCT	Start: 7143	End: 7144	PTB: "''"
 
 Paragraph Start: 7148
@@ -1567,7 +1567,7 @@ Paragraph End: 8403
     Token: "The"          	Type: FIRST_UPPER_CASE	Start: 7148	End: 7151
     Token: "Guinness"     	Type: FIRST_UPPER_CASE	Start: 7152	End: 7160
     Token: "heir"         	Type: ALL_LOWER_CASE	Start: 7161	End: 7165
-    Token: ","            	Type: PUNCTUATION	Start: 7165	End: 7166
+    Token: ","            	Type: COMMA	Start: 7165	End: 7166
     Token: "whom"         	Type: ALL_LOWER_CASE	Start: 7167	End: 7171
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 7172	End: 7175
     Token: "Beatles"      	Type: FIRST_UPPER_CASE	Start: 7176	End: 7183
@@ -1575,7 +1575,7 @@ Paragraph End: 8403
     Token: "happened"     	Type: ALL_LOWER_CASE	Start: 7188	End: 7196
     Token: "to"           	Type: ALL_LOWER_CASE	Start: 7197	End: 7199
     Token: "know"         	Type: ALL_LOWER_CASE	Start: 7200	End: 7204
-    Token: ","            	Type: PUNCTUATION	Start: 7204	End: 7205
+    Token: ","            	Type: COMMA	Start: 7204	End: 7205
     Token: "was"          	Type: ALL_LOWER_CASE	Start: 7206	End: 7209
     Token: "born"         	Type: ALL_LOWER_CASE	Start: 7210	End: 7214
     Token: "to"           	Type: ALL_LOWER_CASE	Start: 7215	End: 7217
@@ -1584,7 +1584,7 @@ Paragraph End: 8403
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 7225	End: 7227
     Token: "fantastic"    	Type: ALL_LOWER_CASE	Start: 7228	End: 7237
     Token: "privilege"    	Type: ALL_LOWER_CASE	Start: 7238	End: 7247
-    Token: "."            	Type: TERM_PUNCT_P	Start: 7247	End: 7248
+    Token: "."            	Type: PERIOD	Start: 7247	End: 7248
   Text Unit Start: 7249
   Text Unit End: 7315
     Token: "By"           	Type: FIRST_UPPER_CASE	Start: 7249	End: 7251
@@ -1600,7 +1600,7 @@ Paragraph End: 8403
     Token: "made"         	Type: ALL_LOWER_CASE	Start: 7299	End: 7303
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 7304	End: 7307
     Token: "grade"        	Type: ALL_LOWER_CASE	Start: 7308	End: 7313
-    Token: "."            	Type: TERM_PUNCT_P	Start: 7313	End: 7314
+    Token: "."            	Type: PERIOD	Start: 7313	End: 7314
     Token: """            	Type: CLOSE_PUNCT	Start: 7314	End: 7315	PTB: "''"
   Text Unit Start: 7316
   Text Unit End: 7458
@@ -1610,7 +1610,7 @@ Paragraph End: 8403
     Token: "money"        	Type: ALL_LOWER_CASE	Start: 7334	End: 7339
     Token: "could"        	Type: ALL_LOWER_CASE	Start: 7340	End: 7345
     Token: "buy"          	Type: ALL_LOWER_CASE	Start: 7346	End: 7349
-    Token: ","            	Type: PUNCTUATION	Start: 7349	End: 7350
+    Token: ","            	Type: COMMA	Start: 7349	End: 7350
     Token: "but"          	Type: ALL_LOWER_CASE	Start: 7351	End: 7354
     Token: "found"        	Type: ALL_LOWER_CASE	Start: 7355	End: 7360
     Token: "himself"      	Type: ALL_LOWER_CASE	Start: 7361	End: 7368
@@ -1621,24 +1621,24 @@ Paragraph End: 8403
     Token: "death"        	Type: ALL_LOWER_CASE	Start: 7387	End: 7392
     Token: "'s"           	Type: RIGHTSPLIT	Start: 7392	End: 7394
     Token: "arbitrary"    	Type: ALL_LOWER_CASE	Start: 7395	End: 7404
-    Token: ","            	Type: PUNCTUATION	Start: 7404	End: 7405
+    Token: ","            	Type: COMMA	Start: 7404	End: 7405
     Token: "dispassionate"	Type: ALL_LOWER_CASE	Start: 7406	End: 7419
     Token: "arrival"      	Type: ALL_LOWER_CASE	Start: 7420	End: 7427
     Token: "than"         	Type: ALL_LOWER_CASE	Start: 7428	End: 7432
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 7433	End: 7436
     Token: "lowliest"     	Type: ALL_LOWER_CASE	Start: 7437	End: 7445
     Token: "proletarian"  	Type: ALL_LOWER_CASE	Start: 7446	End: 7457
-    Token: "."            	Type: TERM_PUNCT_P	Start: 7457	End: 7458
+    Token: "."            	Type: PERIOD	Start: 7457	End: 7458
   Text Unit Start: 7459
   Text Unit End: 7557
     Token: "A"            	Type: ALL_UPPER_CASE	Start: 7459	End: 7460
     Token: "momentary"    	Type: ALL_LOWER_CASE	Start: 7461	End: 7470
-    Token: ","            	Type: PUNCTUATION	Start: 7470	End: 7471
+    Token: ","            	Type: COMMA	Start: 7470	End: 7471
     Token: "all"          	Type: ALL_LOWER_CASE	Start: 7472	End: 7475
     Token: "too"          	Type: ALL_LOWER_CASE	Start: 7476	End: 7479
     Token: "human"        	Type: ALL_LOWER_CASE	Start: 7480	End: 7485
     Token: "lapse"        	Type: ALL_LOWER_CASE	Start: 7486	End: 7491
-    Token: "--"           	Type: PUNCTUATION	Start: 7491	End: 7493
+    Token: "--"           	Type: OCHYPHEN	Start: 7491	End: 7493
     Token: """            	Type: OPEN_PUNCT	Start: 7493	End: 7494	PTB: "``"
     Token: "he"           	Type: ALL_LOWER_CASE	Start: 7494	End: 7496
     Token: "did"          	Type: ALL_LOWER_CASE	Start: 7497	End: 7500
@@ -1650,12 +1650,12 @@ Paragraph End: 8403
     Token: "had"          	Type: ALL_LOWER_CASE	Start: 7527	End: 7530
     Token: "changed"      	Type: ALL_LOWER_CASE	Start: 7531	End: 7538
     Token: """            	Type: CLOSE_PUNCT	Start: 7538	End: 7539	PTB: "''"
-    Token: "--"           	Type: PUNCTUATION	Start: 7539	End: 7541
+    Token: "--"           	Type: OCHYPHEN	Start: 7539	End: 7541
     Token: "and"          	Type: ALL_LOWER_CASE	Start: 7541	End: 7544
     Token: "he"           	Type: ALL_LOWER_CASE	Start: 7545	End: 7547
     Token: "was"          	Type: ALL_LOWER_CASE	Start: 7548	End: 7551
     Token: "gone"         	Type: ALL_LOWER_CASE	Start: 7552	End: 7556
-    Token: "."            	Type: TERM_PUNCT_P	Start: 7556	End: 7557
+    Token: "."            	Type: PERIOD	Start: 7556	End: 7557
   Text Unit Start: 7558
   Text Unit End: 7627
     Token: "In"           	Type: FIRST_UPPER_CASE	Start: 7558	End: 7560
@@ -1663,16 +1663,16 @@ Paragraph End: 8403
     Token: "moment"       	Type: ALL_LOWER_CASE	Start: 7565	End: 7571
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 7572	End: 7574
     Token: "death"        	Type: ALL_LOWER_CASE	Start: 7575	End: 7580
-    Token: ","            	Type: PUNCTUATION	Start: 7580	End: 7581
+    Token: ","            	Type: COMMA	Start: 7580	End: 7581
     Token: "all"          	Type: ALL_LOWER_CASE	Start: 7582	End: 7585
     Token: "delusion"     	Type: ALL_LOWER_CASE	Start: 7586	End: 7594
     Token: "is"           	Type: ALL_LOWER_CASE	Start: 7595	End: 7597
     Token: "shattered"    	Type: ALL_LOWER_CASE	Start: 7598	End: 7607
-    Token: ","            	Type: PUNCTUATION	Start: 7607	End: 7608
+    Token: ","            	Type: COMMA	Start: 7607	End: 7608
     Token: "everyone"     	Type: ALL_LOWER_CASE	Start: 7609	End: 7617
     Token: "is"           	Type: ALL_LOWER_CASE	Start: 7618	End: 7620
     Token: "equal"        	Type: ALL_LOWER_CASE	Start: 7621	End: 7626
-    Token: "."            	Type: TERM_PUNCT_P	Start: 7626	End: 7627
+    Token: "."            	Type: PERIOD	Start: 7626	End: 7627
   Text Unit Start: 7628
   Text Unit End: 7747
     Token: "Lennon"       	Type: FIRST_UPPER_CASE	Start: 7628	End: 7634
@@ -1682,7 +1682,7 @@ Paragraph End: 8403
     Token: "with"         	Type: ALL_LOWER_CASE	Start: 7654	End: 7658
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 7659	End: 7662
     Token: "wistful"      	Type: ALL_LOWER_CASE	Start: 7663	End: 7670
-    Token: ","            	Type: PUNCTUATION	Start: 7670	End: 7671
+    Token: ","            	Type: COMMA	Start: 7670	End: 7671
     Token: "mocking"      	Type: ALL_LOWER_CASE	Start: 7672	End: 7679
     Token: "epitaph"      	Type: ALL_LOWER_CASE	Start: 7680	End: 7687
     Token: """            	Type: OPEN_PUNCT	Start: 7688	End: 7689	PTB: "``"
@@ -1698,7 +1698,7 @@ Paragraph End: 8403
     Token: "House"        	Type: FIRST_UPPER_CASE	Start: 7731	End: 7736
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 7737	End: 7739
     Token: "Lords"        	Type: FIRST_UPPER_CASE	Start: 7740	End: 7745
-    Token: "."            	Type: TERM_PUNCT_P	Start: 7745	End: 7746
+    Token: "."            	Type: PERIOD	Start: 7745	End: 7746
     Token: """            	Type: CLOSE_PUNCT	Start: 7746	End: 7747	PTB: "''"
   Text Unit Start: 7748
   Text Unit End: 7886
@@ -1720,21 +1720,21 @@ Paragraph End: 8403
     Token: "n't"          	Type: RIGHTSPLIT	Start: 7815	End: 7818
     Token: "place"        	Type: ALL_LOWER_CASE	Start: 7819	End: 7824
     Token: "it"           	Type: ALL_LOWER_CASE	Start: 7825	End: 7827
-    Token: ";"            	Type: PUNCTUATION	Start: 7827	End: 7828
+    Token: ";"            	Type: SCOLON	Start: 7827	End: 7828
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 7829	End: 7831
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 7832	End: 7835
     Token: "broad"        	Type: ALL_LOWER_CASE	Start: 7836	End: 7841
     Token: "scheme"       	Type: ALL_LOWER_CASE	Start: 7842	End: 7848
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 7849	End: 7851
     Token: "things"       	Type: ALL_LOWER_CASE	Start: 7852	End: 7858
-    Token: ","            	Type: PUNCTUATION	Start: 7858	End: 7859
+    Token: ","            	Type: COMMA	Start: 7858	End: 7859
     Token: "he"           	Type: ALL_LOWER_CASE	Start: 7860	End: 7862
     Token: "is"           	Type: ALL_LOWER_CASE	Start: 7863	End: 7865
     Token: "barely"       	Type: ALL_LOWER_CASE	Start: 7866	End: 7872
     Token: "a"            	Type: ALL_LOWER_CASE	Start: 7873	End: 7874
     Token: "bit"          	Type: ALL_LOWER_CASE	Start: 7875	End: 7878
     Token: "player"       	Type: ALL_LOWER_CASE	Start: 7879	End: 7885
-    Token: "."            	Type: TERM_PUNCT_P	Start: 7885	End: 7886
+    Token: "."            	Type: PERIOD	Start: 7885	End: 7886
   Text Unit Start: 7887
   Text Unit End: 8009
     Token: "The"          	Type: FIRST_UPPER_CASE	Start: 7887	End: 7890
@@ -1745,7 +1745,7 @@ Paragraph End: 8403
     Token: "seemed"       	Type: ALL_LOWER_CASE	Start: 7916	End: 7922
     Token: "so"           	Type: ALL_LOWER_CASE	Start: 7923	End: 7925
     Token: "important"    	Type: ALL_LOWER_CASE	Start: 7926	End: 7935
-    Token: ","            	Type: PUNCTUATION	Start: 7935	End: 7936
+    Token: ","            	Type: COMMA	Start: 7935	End: 7936
     Token: "to"           	Type: ALL_LOWER_CASE	Start: 7937	End: 7939
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 7940	End: 7943
     Token: "heir"         	Type: ALL_LOWER_CASE	Start: 7944	End: 7948
@@ -1753,14 +1753,14 @@ Paragraph End: 8403
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 7953	End: 7956
     Token: "larger"       	Type: ALL_LOWER_CASE	Start: 7957	End: 7963
     Token: "society"      	Type: ALL_LOWER_CASE	Start: 7964	End: 7971
-    Token: ","            	Type: PUNCTUATION	Start: 7971	End: 7972
+    Token: ","            	Type: COMMA	Start: 7971	End: 7972
     Token: "is"           	Type: ALL_LOWER_CASE	Start: 7973	End: 7975
     Token: "revealed"     	Type: ALL_LOWER_CASE	Start: 7976	End: 7984
     Token: "as"           	Type: ALL_LOWER_CASE	Start: 7985	End: 7987
     Token: "trivial"      	Type: ALL_LOWER_CASE	Start: 7988	End: 7995
     Token: "and"          	Type: ALL_LOWER_CASE	Start: 7996	End: 7999
     Token: "fleeting"     	Type: ALL_LOWER_CASE	Start: 8000	End: 8008
-    Token: "."            	Type: TERM_PUNCT_P	Start: 8008	End: 8009
+    Token: "."            	Type: PERIOD	Start: 8008	End: 8009
   Text Unit Start: 8010
   Text Unit End: 8234
     Token: "Equally"      	Type: FIRST_UPPER_CASE	Start: 8010	End: 8017
@@ -1778,7 +1778,7 @@ Paragraph End: 8403
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 8083	End: 8086
     Token: "final"        	Type: ALL_LOWER_CASE	Start: 8087	End: 8092
     Token: "verse"        	Type: ALL_LOWER_CASE	Start: 8093	End: 8098
-    Token: ","            	Type: PUNCTUATION	Start: 8098	End: 8099
+    Token: ","            	Type: COMMA	Start: 8098	End: 8099
     Token: "who"          	Type: ALL_LOWER_CASE	Start: 8100	End: 8103
     Token: "insist"       	Type: ALL_LOWER_CASE	Start: 8104	End: 8110
     Token: "on"           	Type: ALL_LOWER_CASE	Start: 8111	End: 8113
@@ -1793,9 +1793,9 @@ Paragraph End: 8403
     Token: "roads"        	Type: ALL_LOWER_CASE	Start: 8160	End: 8165
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 8166	End: 8168
     Token: "Blackburn"    	Type: FIRST_UPPER_CASE	Start: 8169	End: 8178
-    Token: ","            	Type: PUNCTUATION	Start: 8178	End: 8179
+    Token: ","            	Type: COMMA	Start: 8178	End: 8179
     Token: "Lancashire"   	Type: FIRST_UPPER_CASE	Start: 8180	End: 8190
-    Token: ","            	Type: PUNCTUATION	Start: 8190	End: 8191
+    Token: ","            	Type: COMMA	Start: 8190	End: 8191
     Token: "even"         	Type: ALL_LOWER_CASE	Start: 8192	End: 8196
     Token: """            	Type: OPEN_PUNCT	Start: 8197	End: 8198	PTB: "``"
     Token: "though"       	Type: ALL_LOWER_CASE	Start: 8198	End: 8204
@@ -1804,7 +1804,7 @@ Paragraph End: 8403
     Token: "were"         	Type: ALL_LOWER_CASE	Start: 8215	End: 8219
     Token: "rather"       	Type: ALL_LOWER_CASE	Start: 8220	End: 8226
     Token: "small"        	Type: ALL_LOWER_CASE	Start: 8227	End: 8232
-    Token: "."            	Type: TERM_PUNCT_P	Start: 8232	End: 8233
+    Token: "."            	Type: PERIOD	Start: 8232	End: 8233
     Token: """            	Type: CLOSE_PUNCT	Start: 8233	End: 8234	PTB: "''"
   Text Unit Start: 8235
   Text Unit End: 8284
@@ -1819,7 +1819,7 @@ Paragraph End: 8403
     Token: "turn"         	Type: ALL_LOWER_CASE	Start: 8271	End: 8275
     Token: "you"          	Type: ALL_LOWER_CASE	Start: 8276	End: 8279
     Token: "on"           	Type: ALL_LOWER_CASE	Start: 8280	End: 8282
-    Token: "."            	Type: TERM_PUNCT_P	Start: 8282	End: 8283
+    Token: "."            	Type: PERIOD	Start: 8282	End: 8283
     Token: """            	Type: CLOSE_PUNCT	Start: 8283	End: 8284	PTB: "''"
   Text Unit Start: 8285
   Text Unit End: 8403
@@ -1841,7 +1841,7 @@ Paragraph End: 8403
     Token: "offers"       	Type: ALL_LOWER_CASE	Start: 8379	End: 8385
     Token: "is"           	Type: ALL_LOWER_CASE	Start: 8386	End: 8388
     Token: "heartbreaking"	Type: ALL_LOWER_CASE	Start: 8389	End: 8402
-    Token: "."            	Type: TERM_PUNCT_P	Start: 8402	End: 8403
+    Token: "."            	Type: PERIOD	Start: 8402	End: 8403
 
 Paragraph Start: 8407
 Paragraph End: 9185
@@ -1880,7 +1880,7 @@ Paragraph End: 9185
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 8579	End: 8581
     Token: "its"          	Type: ALL_LOWER_CASE	Start: 8582	End: 8585
     Token: "lyrics"       	Type: ALL_LOWER_CASE	Start: 8586	End: 8592
-    Token: "."            	Type: TERM_PUNCT_P	Start: 8592	End: 8593
+    Token: "."            	Type: PERIOD	Start: 8592	End: 8593
   Text Unit Start: 8594
   Text Unit End: 8668
     Token: "But"          	Type: FIRST_UPPER_CASE	Start: 8594	End: 8597
@@ -1898,7 +1898,7 @@ Paragraph End: 9185
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 8649	End: 8652
     Token: "message"      	Type: ALL_LOWER_CASE	Start: 8653	End: 8660
     Token: "across"       	Type: ALL_LOWER_CASE	Start: 8661	End: 8667
-    Token: "."            	Type: TERM_PUNCT_P	Start: 8667	End: 8668
+    Token: "."            	Type: PERIOD	Start: 8667	End: 8668
   Text Unit Start: 8669
   Text Unit End: 8798
     Token: "In"           	Type: FIRST_UPPER_CASE	Start: 8669	End: 8671
@@ -1911,7 +1911,7 @@ Paragraph End: 9185
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 8722	End: 8724
     Token: "Sgt"          	Type: FIRST_UPPER_CASE	Start: 8725	End: 8728
     Token: "Pepper"       	Type: FIRST_UPPER_CASE	Start: 8729	End: 8735
-    Token: ","            	Type: PUNCTUATION	Start: 8735	End: 8736
+    Token: ","            	Type: COMMA	Start: 8735	End: 8736
     Token: "George"       	Type: FIRST_UPPER_CASE	Start: 8737	End: 8743
     Token: "Martin"       	Type: FIRST_UPPER_CASE	Start: 8744	End: 8750
     Token: "played"       	Type: ALL_LOWER_CASE	Start: 8751	End: 8757
@@ -1925,24 +1925,24 @@ Paragraph End: 9185
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 8785	End: 8787
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 8788	End: 8791
     Token: "Life"         	Type: FIRST_UPPER_CASE	Start: 8792	End: 8796
-    Token: "."            	Type: TERM_PUNCT_P	Start: 8796	End: 8797
+    Token: "."            	Type: PERIOD	Start: 8796	End: 8797
     Token: """            	Type: CLOSE_PUNCT	Start: 8797	End: 8798	PTB: "''"
   Text Unit Start: 8799
   Text Unit End: 8908
     Token: "Referring"    	Type: FIRST_UPPER_CASE	Start: 8799	End: 8808
     Token: "to"           	Type: ALL_LOWER_CASE	Start: 8809	End: 8811
     Token: "John"         	Type: FIRST_UPPER_CASE	Start: 8812	End: 8816
-    Token: ","            	Type: PUNCTUATION	Start: 8816	End: 8817
+    Token: ","            	Type: COMMA	Start: 8816	End: 8817
     Token: "Martin"       	Type: FIRST_UPPER_CASE	Start: 8818	End: 8824
     Token: "said"         	Type: ALL_LOWER_CASE	Start: 8825	End: 8829
-    Token: ","            	Type: PUNCTUATION	Start: 8829	End: 8830
+    Token: ","            	Type: COMMA	Start: 8829	End: 8830
     Token: """            	Type: OPEN_PUNCT	Start: 8831	End: 8832	PTB: "``"
     Token: "even"         	Type: ALL_LOWER_CASE	Start: 8832	End: 8836
     Token: "in"           	Type: ALL_LOWER_CASE	Start: 8837	End: 8839
     Token: "this"         	Type: ALL_LOWER_CASE	Start: 8840	End: 8844
     Token: "early"        	Type: ALL_LOWER_CASE	Start: 8845	End: 8850
     Token: "take"         	Type: ALL_LOWER_CASE	Start: 8851	End: 8855
-    Token: ","            	Type: PUNCTUATION	Start: 8855	End: 8856
+    Token: ","            	Type: COMMA	Start: 8855	End: 8856
     Token: "he"           	Type: ALL_LOWER_CASE	Start: 8857	End: 8859
     Token: "has"          	Type: ALL_LOWER_CASE	Start: 8860	End: 8863
     Token: "a"            	Type: ALL_LOWER_CASE	Start: 8864	End: 8865
@@ -1953,7 +1953,7 @@ Paragraph End: 9185
     Token: "down"         	Type: ALL_LOWER_CASE	Start: 8892	End: 8896
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 8897	End: 8900
     Token: "spine"        	Type: ALL_LOWER_CASE	Start: 8901	End: 8906
-    Token: "."            	Type: TERM_PUNCT_P	Start: 8906	End: 8907
+    Token: "."            	Type: PERIOD	Start: 8906	End: 8907
     Token: """            	Type: CLOSE_PUNCT	Start: 8907	End: 8908	PTB: "''"
   Text Unit Start: 8909
   Text Unit End: 9185
@@ -1969,17 +1969,17 @@ Paragraph End: 9185
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 8962	End: 8965
     Token: "opening"      	Type: ALL_LOWER_CASE	Start: 8966	End: 8973
     Token: "lines"        	Type: ALL_LOWER_CASE	Start: 8974	End: 8979
-    Token: "--"           	Type: PUNCTUATION	Start: 8979	End: 8981
+    Token: "--"           	Type: OCHYPHEN	Start: 8979	End: 8981
     Token: """            	Type: OPEN_PUNCT	Start: 8981	End: 8982	PTB: "``"
     Token: "I"            	Type: ALL_UPPER_CASE	Start: 8982	End: 8983
     Token: "read"         	Type: ALL_LOWER_CASE	Start: 8984	End: 8988
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 8989	End: 8992
     Token: "news"         	Type: ALL_LOWER_CASE	Start: 8993	End: 8997
     Token: "today"        	Type: ALL_LOWER_CASE	Start: 8998	End: 9003
-    Token: ","            	Type: PUNCTUATION	Start: 9003	End: 9004
+    Token: ","            	Type: COMMA	Start: 9003	End: 9004
     Token: "oh"           	Type: ALL_LOWER_CASE	Start: 9005	End: 9007
     Token: "boy"          	Type: ALL_LOWER_CASE	Start: 9008	End: 9011
-    Token: "/"            	Type: PUNCTUATION	Start: 9012	End: 9013	PTB: "\/"
+    Token: "/"            	Type: SLASH	Start: 9012	End: 9013	PTB: "\/"
     Token: "About"        	Type: FIRST_UPPER_CASE	Start: 9014	End: 9019
     Token: "a"            	Type: ALL_LOWER_CASE	Start: 9020	End: 9021
     Token: "lucky"        	Type: ALL_LOWER_CASE	Start: 9022	End: 9027
@@ -1989,7 +1989,7 @@ Paragraph End: 9185
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 9041	End: 9044
     Token: "grade"        	Type: ALL_LOWER_CASE	Start: 9045	End: 9050
     Token: """            	Type: CLOSE_PUNCT	Start: 9050	End: 9051	PTB: "''"
-    Token: "--"           	Type: PUNCTUATION	Start: 9051	End: 9053
+    Token: "--"           	Type: OCHYPHEN	Start: 9051	End: 9053
     Token: "and"          	Type: ALL_LOWER_CASE	Start: 9053	End: 9056
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 9057	End: 9060
     Token: "deep"         	Type: ALL_LOWER_CASE	Start: 9061	End: 9065
@@ -2017,7 +2017,7 @@ Paragraph End: 9185
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 9171	End: 9173
     Token: "his"          	Type: ALL_LOWER_CASE	Start: 9174	End: 9177
     Token: "friend"       	Type: ALL_LOWER_CASE	Start: 9178	End: 9184
-    Token: "."            	Type: TERM_PUNCT_P	Start: 9184	End: 9185
+    Token: "."            	Type: PERIOD	Start: 9184	End: 9185
 
 Paragraph Start: 9189
 Paragraph End: 9471
@@ -2029,21 +2029,21 @@ Paragraph End: 9471
     Token: "IN"           	Type: ALL_UPPER_CASE	Start: 9208	End: 9210
     Token: "THE"          	Type: ALL_UPPER_CASE	Start: 9211	End: 9214
     Token: "LIFE"         	Type: ALL_UPPER_CASE	Start: 9215	End: 9219
-    Token: ","            	Type: PUNCTUATION	Start: 9219	End: 9220
+    Token: ","            	Type: COMMA	Start: 9219	End: 9220
     Token: "A"            	Type: ALL_UPPER_CASE	Start: 9221	End: 9222
     Token: "by"           	Type: ALL_LOWER_CASE	Start: 9223	End: 9225
     Token: "Mark"         	Type: FIRST_UPPER_CASE	Start: 9226	End: 9230
     Token: "Hertsgaard"   	Type: FIRST_UPPER_CASE	Start: 9231	End: 9241
-    Token: "."            	Type: TERM_PUNCT_P	Start: 9241	End: 9242
+    Token: "."            	Type: PERIOD	Start: 9241	End: 9242
   Text Unit Start: 9243
   Text Unit End: 9278
     Token: "Copyright"    	Type: FIRST_UPPER_CASE	Start: 9243	End: 9252
-    Token: "©"            	Type: PUNCTUATION	Start: 9252	End: 9253
+    Token: "©"            	Type: TM	Start: 9252	End: 9253
     Token: "1996"         	Type: DIGITAL	Start: 9254	End: 9258
     Token: "by"           	Type: ALL_LOWER_CASE	Start: 9259	End: 9261
     Token: "Mark"         	Type: FIRST_UPPER_CASE	Start: 9262	End: 9266
     Token: "Hertsgaard"   	Type: FIRST_UPPER_CASE	Start: 9267	End: 9277
-    Token: "."            	Type: TERM_PUNCT_P	Start: 9277	End: 9278
+    Token: "."            	Type: PERIOD	Start: 9277	End: 9278
   Text Unit Start: 9279
   Text Unit End: 9345
     Token: "Excerpted"    	Type: FIRST_UPPER_CASE	Start: 9279	End: 9288
@@ -2051,20 +2051,20 @@ Paragraph End: 9471
     Token: "permission"   	Type: ALL_LOWER_CASE	Start: 9292	End: 9302
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 9303	End: 9305
     Token: "Delta"        	Type: FIRST_UPPER_CASE	Start: 9306	End: 9311
-    Token: ","            	Type: PUNCTUATION	Start: 9311	End: 9312
+    Token: ","            	Type: COMMA	Start: 9311	End: 9312
     Token: "a"            	Type: ALL_LOWER_CASE	Start: 9313	End: 9314
     Token: "division"     	Type: ALL_LOWER_CASE	Start: 9315	End: 9323
     Token: "of"           	Type: ALL_LOWER_CASE	Start: 9324	End: 9326
     Token: "Random"       	Type: FIRST_UPPER_CASE	Start: 9327	End: 9333
     Token: "House"        	Type: FIRST_UPPER_CASE	Start: 9334	End: 9339
-    Token: ","            	Type: PUNCTUATION	Start: 9339	End: 9340
+    Token: ","            	Type: COMMA	Start: 9339	End: 9340
     Token: "Inc."         	Type: B_ABBREVIATION	Start: 9341	End: 9345
   Text Unit Start: 9346
   Text Unit End: 9366
     Token: "All"          	Type: FIRST_UPPER_CASE	Start: 9346	End: 9349
     Token: "rights"       	Type: ALL_LOWER_CASE	Start: 9350	End: 9356
     Token: "reserved"     	Type: ALL_LOWER_CASE	Start: 9357	End: 9365
-    Token: "."            	Type: TERM_PUNCT_P	Start: 9365	End: 9366
+    Token: "."            	Type: PERIOD	Start: 9365	End: 9366
   Text Unit Start: 9367
   Text Unit End: 9471
     Token: "No"           	Type: FIRST_UPPER_CASE	Start: 9367	End: 9369
@@ -2084,5 +2084,5 @@ Paragraph End: 9471
     Token: "from"         	Type: ALL_LOWER_CASE	Start: 9452	End: 9456
     Token: "the"          	Type: ALL_LOWER_CASE	Start: 9457	End: 9460
     Token: "publisher"    	Type: ALL_LOWER_CASE	Start: 9461	End: 9470
-    Token: "."            	Type: TERM_PUNCT_P	Start: 9470	End: 9471
+    Token: "."            	Type: PERIOD	Start: 9470	End: 9471
 
