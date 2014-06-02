@@ -94,7 +94,8 @@ Paragraph Start: 138
 Paragraph End: 151
   Text Unit Start: 138
   Text Unit End: 151
-    Token: "@O'Brain"     	Type: TOKEN	Start: 138	End: 146
+    Token: "@"            	Type: PUNCTUATION	Start: 138	End: 139
+    Token: "O'Brain"      	Type: TOKEN	Start: 139	End: 146
     Token: "'s"           	Type: RIGHTSPLIT	Start: 146	End: 148
     Token: "."            	Type: TERM_PUNCT_P	Start: 148	End: 149
     Token: "."            	Type: TERM_PUNCT_P	Start: 149	End: 150
@@ -115,12 +116,9 @@ Paragraph End: 177
 Paragraph Start: 181
 Paragraph End: 187
   Text Unit Start: 181
-  Text Unit End: 185
-    Token: "L.A."         	Type: B_ABBREVIATION	Start: 181	End: 185
-  Text Unit Start: 185
   Text Unit End: 187
-    Token: "'"            	Type: OPEN_PUNCT	Start: 185	End: 186	PTB: "``"
-    Token: "s"            	Type: ALL_LOWER_CASE	Start: 186	End: 187
+    Token: "L.A."         	Type: B_ABBREVIATION	Start: 181	End: 185
+    Token: "'s"           	Type: RIGHTSPLIT	Start: 185	End: 187
 
 Paragraph Start: 191
 Paragraph End: 212
@@ -149,7 +147,8 @@ Paragraph Start: 253
 Paragraph End: 275
   Text Unit Start: 253
   Text Unit End: 275
-    Token: "@Rock'n'Roll.Genial"	Type: TOKEN	Start: 253	End: 272
+    Token: "@"            	Type: PUNCTUATION	Start: 253	End: 254
+    Token: "Rock'n'Roll.Genial"	Type: TOKEN	Start: 254	End: 272
     Token: "."            	Type: TERM_PUNCT_P	Start: 272	End: 273
     Token: "."            	Type: TERM_PUNCT_P	Start: 273	End: 274
     Token: "."            	Type: TERM_PUNCT_P	Start: 274	End: 275
@@ -158,14 +157,16 @@ Paragraph Start: 279
 Paragraph End: 292
   Text Unit Start: 279
   Text Unit End: 292
-    Token: "@Rock'n'Roll" 	Type: TOKEN	Start: 279	End: 291
+    Token: "@"            	Type: PUNCTUATION	Start: 279	End: 280
+    Token: "Rock'n'Roll"  	Type: TOKEN	Start: 280	End: 291
     Token: "."            	Type: TERM_PUNCT_P	Start: 291	End: 292
 
 Paragraph Start: 296
 Paragraph End: 314
   Text Unit Start: 296
   Text Unit End: 314
-    Token: "@sull'avvenimento"	Type: TOKEN	Start: 296	End: 313
+    Token: "@"            	Type: PUNCTUATION	Start: 296	End: 297
+    Token: "sull'avvenimento"	Type: TOKEN	Start: 297	End: 313
     Token: "."            	Type: TERM_PUNCT_P	Start: 313	End: 314
 
 Paragraph Start: 318
