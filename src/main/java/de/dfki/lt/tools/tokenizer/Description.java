@@ -25,12 +25,20 @@ package de.dfki.lt.tools.tokenizer;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.regex.Matcher;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -39,6 +47,7 @@ import org.w3c.dom.Text;
 
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.regexp.DkBricsRegExpFactory;
+import de.dfki.lt.tools.tokenizer.regexp.Match;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 import de.dfki.lt.tools.tokenizer.regexp.RegExpFactory;
 
@@ -89,6 +98,35 @@ public abstract class Description {
    * Factory for creating regular expressions.
    */
   protected static RegExpFactory FACTORY = new DkBricsRegExpFactory();
+
+  /**
+   * Single line in descriptions that marks the start of the lists section.
+   */
+  protected static String LISTS_MARKER = "LISTS:";
+
+  /**
+   * Single line in descriptions that marks the start of the definitions
+   * section.
+   */
+  protected static String DEFS_MARKER = "DEFINITIONS:";
+
+  /**
+   * Single line in descriptions that marks the start of the rules section.
+   */
+  protected static String RULES_MARKER = "RULES:";
+
+  /**
+   * Regular expression for matching references used in regular expressions of
+   * config files.
+   */
+  private static RegExp REF_MATCHER =
+    FACTORY.createRegExp("\\<[A-Za-z0-9_]+\\>");
+
+  /**
+   * Contains the logger object for logging.
+   */
+  private static final Logger LOG = LoggerFactory.getLogger(Description.class);
+
 
   /**
    * Maps a class name to a regular expression that matches all tokens of this
@@ -446,5 +484,283 @@ public abstract class Description {
         throw new InitializationException(ioe.getLocalizedMessage(), ioe);
       }
     }
+  }
+
+
+  /**
+   * Reads the definitions section from the given reader to map each token class
+   * from the definitions to a regular expression that matches all tokens of
+   * that class. Also creates and returns the definitions map.
+   *
+   * @param in
+   *          the reader
+   * @return a map of definition names to regular expression strings
+   * @throws IOException
+   *           if there is an error during reading
+   */
+  protected Map<String, String> loadDefinitions(BufferedReader in)
+      throws IOException {
+
+    // init temporary map where to store the regular expression string
+    // for each class
+    Map<String, StringBuilder> tempMap = new HashMap<>();
+
+    // this maps the definition names to their regular expression strings
+    Map<String, String> defMap = new LinkedHashMap<>();
+
+    String line;
+    while ((line = in.readLine()) != null) {
+      line = line.trim();
+      if (line.length() == 0 || line.startsWith("#")) {
+        continue;
+      }
+      if (line.equals(RULES_MARKER)) {
+        break;
+      }
+
+      int firstSep = line.indexOf(":");
+      int secondSep = line.lastIndexOf(":");
+      if (firstSep == -1 || secondSep == firstSep) {
+        LOG.error(
+          String.format(
+            "missing separator in definitions section line %s", line));
+        continue;
+      }
+      String defName = line.substring(0, firstSep).trim();
+      String regExpString = line.substring(firstSep + 1, secondSep).trim();
+      String className = line.substring(secondSep + 1).trim();
+
+      // extend class matcher:
+      // get old entry
+      StringBuilder oldRegExpr = tempMap.get(className);
+      // if there is no old entry create a new one
+      if (null == oldRegExpr) {
+        StringBuilder newRegExpr = new StringBuilder(regExpString);
+        tempMap.put(className, newRegExpr);
+      }
+      else {
+        // extend regular expression with another disjunct
+        oldRegExpr.append("|" + regExpString);
+      }
+
+      // save definition
+      if (defMap.get(defName) != null) {
+        LOG.error(
+          String.format("duplicate definition %s: %s", defName, regExpString));
+        continue;
+      }
+      defMap.put(defName, regExpString);
+    }
+
+    // create regular expressions from regular expression strings and store them
+    // under their class name in definitions map
+    for (Map.Entry<String, StringBuilder> oneEntry : tempMap.entrySet()) {
+      getDefinitionsMap().put(
+        oneEntry.getKey(),
+        FACTORY.createRegExp(oneEntry.getValue().toString()));
+    }
+
+    return defMap;
+  }
+
+
+  /**
+   * Reads the rules section from the given reader to map each rules to a
+   * regular expression that matches all tokens of that rule.
+   *
+   * each rule from the description to a regular expression that matches all
+   * tokens from that rule.
+   *
+   * @param in
+   *          the reader
+   * @param defsMap
+   *          a map of definition names to regular expression strings
+   * @throws IOException
+   *           if there is an error during reading
+   */
+  protected void loadRules(BufferedReader in, Map<String, String> defsMap)
+      throws IOException {
+
+    String line;
+    while ((line = in.readLine()) != null) {
+      line = line.trim();
+      if (line.length() == 0 || line.startsWith("#")) {
+        continue;
+      }
+      int firstSep = line.indexOf(":");
+      int secondSep = line.lastIndexOf(":");
+      if (firstSep == -1 || secondSep == firstSep) {
+        LOG.error(
+          String.format("missing separator in rules section line %s", line));
+        continue;
+      }
+      String ruleName = line.substring(0, firstSep).trim();
+      String regExpString = line.substring(firstSep + 1, secondSep).trim();
+      String className = line.substring(secondSep + 1).trim();
+
+      regExpString = replaceReferences(regExpString, defsMap);
+
+      // add rule to map
+      RegExp regExp = FACTORY.createRegExp(regExpString);
+      getRulesMap().put(ruleName, regExp);
+      // if rule has a class, add regular expression to regular expression map
+      if (className.length() > 0) {
+        getRegExpMap().put(regExp, className);
+      }
+    }
+  }
+
+
+  /**
+   * Reads the lists section from the given reader to map each token class from
+   * the lists to a set that contains all members of that class.
+   *
+   * Uses the lists section in a description file to map each token class from
+   * the lists to a set that contains all members of that class.
+   *
+   * @param in
+   *          the reader
+   * @param resourceDir
+   *          the resource directory
+   * @throws IOException
+   *           if there is an error during reading
+   */
+  protected void loadLists(BufferedReader in, String resourceDir)
+      throws IOException {
+
+    String line;
+    while ((line = in.readLine()) != null) {
+      line = line.trim();
+      if (line.length() == 0 || line.startsWith("#")) {
+        continue;
+      }
+      if (line.equals(DEFS_MARKER)) {
+        break;
+      }
+
+      int sep = line.indexOf(":");
+      if (sep == -1) {
+        LOG.error(String.format(
+          "missing separator in lists section line %s", line));
+      }
+      String listFileName = line.substring(0, sep).trim();
+      String className = line.substring(sep + 1).trim();
+      this.loadList(Paths.get(resourceDir).resolve(listFileName), className);
+    }
+  }
+
+
+  /**
+   * Loads the abbreviations list from the given path and stores its items under
+   * the given class name
+   *
+   * @param listPath
+   *          the abbreviations list path
+   * @param className
+   *          the class name
+   * @throws IOException
+   *           if there is an error when reading the list
+   */
+  private void loadList(Path listPath, String className)
+      throws IOException {
+
+    BufferedReader in =
+      new BufferedReader(
+        new InputStreamReader(
+          FileTools.openResourceFileAsStream(listPath.toString()),
+          StandardCharsets.UTF_8));
+    // init set where to store the abbreviations
+    Set<String> items = new HashSet<String>();
+    // iterate over lines of file
+    String line;
+    while ((line = in.readLine()) != null) {
+      line = line.trim();
+      // ignore lines starting with #
+      if (line.startsWith("#") || (line.length() == 0)) {
+        continue;
+      }
+      // extract the abbreviation and add it to the set
+      int end = line.indexOf('#');
+      if (-1 != end) {
+        line = line.substring(0, end).trim();
+        if (line.length() == 0) {
+          continue;
+        }
+      }
+      items.add(line);
+      // also add the upper case version
+      items.add(line.toUpperCase());
+      // also add a version with the first letter in
+      // upper case (if required)
+      char firstChar = line.charAt(0);
+      if (Character.isLowerCase(firstChar)) {
+        firstChar = Character.toUpperCase(firstChar);
+        items.add(firstChar + line.substring(1));
+      }
+    }
+    in.close();
+    // add set to lists map
+    this.getClassMembersMap().put(className, items);
+  }
+
+
+  /**
+   * Replaces references in the given regular expression string using the given
+   * reference map.
+   *
+   * @param regExpString
+   *          the regular expression string with possible references
+   * @param refMap
+   *          a map of reference name to regular expression strings
+   * @return the modified regular expression string
+   */
+  private static String replaceReferences(
+      String regExpString, Map<String, String> refMap) {
+
+    String result = regExpString;
+
+    List<Match> references = REF_MATCHER.getAllMatches(regExpString);
+
+    for (Match oneRef : references) {
+      // get reference name by removing opening and closing angle brackets
+      String refName =
+        oneRef.getImage().substring(1, oneRef.getImage().length() - 1);
+      String refRegExpr = refMap.get(refName);
+      if (null == refRegExpr) {
+        LOG.error(
+          String.format("unknown reference %s in regular expression %s",
+            refName, regExpString));
+        continue;
+      }
+      result = result.replaceFirst(
+        oneRef.getImage(), Matcher.quoteReplacement(refRegExpr));
+    }
+
+    return result;
+  }
+
+
+  /**
+   * Creates a rule that matches ALL definitions.
+   *
+   * @param defsMap
+   *          the definitions map
+   * @return a regular expression matching all definitions
+   */
+  protected static RegExp createAllRule(Map<String, String> defsMap) {
+
+    StringBuilder ruleRegExpr = new StringBuilder();
+
+    // iterate over definitions
+    List<String> defsList = new ArrayList<>(defsMap.values());
+    for (int i = 0, iMax = defsList.size(); i < iMax; i++) {
+      String regExpr = defsList.get(i);
+      // extend regular expression with another disjunct
+      ruleRegExpr.append(regExpr);
+      if (i < iMax - 1) {
+        ruleRegExpr.append("|");
+      }
+    }
+    return FACTORY.createRegExp(ruleRegExpr.toString());
   }
 }

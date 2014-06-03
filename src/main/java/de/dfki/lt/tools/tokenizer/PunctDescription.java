@@ -22,11 +22,11 @@
 
 package de.dfki.lt.tools.tokenizer;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.HashMap;
-
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.NodeList;
+import java.util.Map;
 
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
@@ -92,56 +92,42 @@ public class PunctDescription
 
   /**
    * Creates a new instance of {@link PunctDescription} for the punctuation
-   * description contained in the given DOM document.
+   * description contained in the given config file.
    *
-   * @param punctDescr
-   *          a DOM document with the punctuation description
+   * @param punctDescrPath
+   *          path to the config file
    * @exception InitializationException
    *              if an error occurs
    */
-  public PunctDescription(Document punctDescr) {
+  public PunctDescription(String punctDescrPath) {
 
     super.setDefinitionsMap(new HashMap<String, RegExp>());
     super.setRulesMap(new HashMap<String, RegExp>());
     super.setRegExpMap(new HashMap<RegExp, String>());
 
-    // build the classes matcher map
-    super.loadDefinitions(punctDescr);
-    // build the rules matcher map
-    super.loadRules(punctDescr);
-    this.createAllPunctuationRule(punctDescr);
-  }
-
-
-  /**
-   * Create a rule that matches ALL punctuation for which there are definitions.
-   */
-  private void createAllPunctuationRule(Document descrDoc) {
-
-    // get list of definitions
-    NodeList defs =
-      this.getChild(descrDoc.getDocumentElement(), DEFS).getChildNodes();
-
-    StringBuilder ruleRegExpr = new StringBuilder();
-
-    // iterate over definitions
-    for (int i = 0, iMax = defs.getLength(); i < iMax; i++) {
-      // get definition element
-      Object oneObj = defs.item(i);
-      if (!(oneObj instanceof Element)) {
-        continue;
+    // read config file
+    try {
+      BufferedReader in =
+        new BufferedReader(
+          new InputStreamReader(
+            FileTools.openResourceFileAsStream(punctDescrPath.toString()),
+            "utf-8"));
+      String line;
+      Map<String, String> defsMap = new HashMap<>();
+      while ((line = in.readLine()) != null) {
+        line = line.trim();
+        if (line.length() == 0 || line.startsWith("#")) {
+          continue;
+        }
+        if (line.equals(DEFS_MARKER)) {
+          defsMap = super.loadDefinitions(in);
+          // when loadDefs returns the reader has reached the rules section
+          super.loadRules(in, defsMap);
+        }
       }
-      Element oneDef = (Element)oneObj;
-      // get regular expression string
-      String regExpr = oneDef.getAttribute(DEF_REGEXP);
-      // extend regular expression with another disjunct
-      ruleRegExpr.append(regExpr);
-      if (i < iMax - 2) {
-        ruleRegExpr.append("|");
-      }
+      getRulesMap().put(ALL_RULE, createAllRule(defsMap));
+    } catch (IOException ioe) {
+      throw new InitializationException(ioe.getLocalizedMessage(), ioe);
     }
-    // add rule to map
-    RegExp regExp = FACTORY.createRegExp(ruleRegExpr.toString());
-    getRulesMap().put(ALL_RULE, regExp);
   }
 }

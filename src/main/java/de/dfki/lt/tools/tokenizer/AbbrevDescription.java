@@ -27,11 +27,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
-
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.NodeList;
 
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
@@ -63,30 +60,47 @@ public class AbbrevDescription
 
   /**
    * Creates a new instance of {@link AbbrevDescription} for the abbreviation
-   * description contained in the given DOM document.
+   * description contained in the given config file.
    *
-   * @param abbrDescr
-   *          a DOM document with the abbreviation description
+   * @param abbrDescrPath
+   *          path to the config file
    * @param resourceDir
    *          the name of the resource directory
    * @exception InitializationException
    *              if an error occurs
    */
   public AbbrevDescription(
-      Document abbrDescr, String resourceDir) {
+      String abbrDescrPath, String resourceDir) {
 
     super.setDefinitionsMap(new HashMap<String, RegExp>());
     super.setRulesMap(new HashMap<String, RegExp>());
     super.setRegExpMap(new HashMap<RegExp, String>());
     super.setClassMembersMap(new HashMap<String, Set<String>>());
 
-    // build the lists map
-    super.loadLists(abbrDescr, resourceDir);
-    // build the classes matcher map
-    super.loadDefinitions(abbrDescr);
-    // build the rules matcher map
-    super.loadRules(abbrDescr);
-    this.createAllAbbreviationsRule(abbrDescr);
+    // read config file
+    try {
+      BufferedReader in =
+        new BufferedReader(
+          new InputStreamReader(
+            FileTools.openResourceFileAsStream(abbrDescrPath.toString()),
+            "utf-8"));
+      String line;
+      Map<String, String> defsMap = new HashMap<>();
+      while ((line = in.readLine()) != null) {
+        line = line.trim();
+        if (line.length() == 0 || line.startsWith("#")) {
+          continue;
+        }
+        if (line.equals(LISTS_MARKER)) {
+          super.loadLists(in, resourceDir);
+          // when loadLists returns the reader has reached the definitions section
+          defsMap = super.loadDefinitions(in);
+        }
+      }
+      getRulesMap().put(ALL_RULE, createAllRule(defsMap));
+    } catch (IOException ioe) {
+      throw new InitializationException(ioe.getLocalizedMessage(), ioe);
+    }
 
     // load list of terms that only start with a capital letter when they are
     // at the beginning of a sentence.
@@ -141,39 +155,5 @@ public class AbbrevDescription
   protected Set<String> getNonCapTerms() {
 
     return this.nonCapTerms;
-  }
-
-
-  /**
-   * Create a rule that matches ALL abbreviations for which there are
-   * definitions.
-   */
-  private void createAllAbbreviationsRule(Document abbrDescr) {
-
-    // get list of definitions
-    NodeList defs =
-      this.getChild(abbrDescr.getDocumentElement(), DEFS).getChildNodes();
-
-    StringBuilder ruleRegExpr = new StringBuilder();
-
-    // iterate over definitions
-    for (int i = 0, iMax = defs.getLength(); i < iMax; i++) {
-      // get definition element
-      Object oneObj = defs.item(i);
-      if (!(oneObj instanceof Element)) {
-        continue;
-      }
-      Element oneDef = (Element)oneObj;
-      // get regular expression string
-      String regExpr = oneDef.getAttribute(DEF_REGEXP);
-      // extend regular expression with another disjunct
-      ruleRegExpr.append(regExpr);
-      if (i < iMax - 2) {
-        ruleRegExpr.append("|");
-      }
-    }
-    // add rule to map
-    RegExp regExp = FACTORY.createRegExp(ruleRegExpr.toString());
-    getRulesMap().put(ALL_RULE, regExp);
   }
 }
