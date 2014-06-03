@@ -22,9 +22,11 @@
 
 package de.dfki.lt.tools.tokenizer;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.HashMap;
-
-import org.w3c.dom.Document;
+import java.util.Map;
 
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
@@ -52,22 +54,41 @@ public class CliticsDescription
 
   /**
    * Creates a new instance of {@link CliticsDescription} for the clitics
-   * description contained in the given DOM document.
+   * description contained in the given config file.
    *
-   * @param clitDescr
-   *          a DOM document with the clitics description
+   * @param clitDescrPath
+   *          path to the config file
    * @exception InitializationException
    *              if an error occurs
    */
-  public CliticsDescription(Document clitDescr) {
+  public CliticsDescription(String clitDescrPath) {
 
     super.setDefinitionsMap(new HashMap<String, RegExp>());
     super.setRulesMap(new HashMap<String, RegExp>());
     super.setRegExpMap(new HashMap<RegExp, String>());
 
-    // build the classes matcher map
-    super.loadDefinitions(clitDescr);
-    // build the rules matcher map
-    super.loadRules(clitDescr);
+    // read config file
+    try {
+      BufferedReader in =
+        new BufferedReader(
+          new InputStreamReader(
+            FileTools.openResourceFileAsStream(clitDescrPath.toString()),
+            "utf-8"));
+      String line;
+      Map<String, String> defsMap = new HashMap<>();
+      while ((line = in.readLine()) != null) {
+        line = line.trim();
+        if (line.length() == 0 || line.startsWith("#")) {
+          continue;
+        }
+        if (line.equals(DEFS_MARKER)) {
+          defsMap = super.loadDefinitions(in);
+          // when loadDefs returns the reader has reached the rules section
+          super.loadRules(in, defsMap);
+        }
+      }
+    } catch (IOException ioe) {
+      throw new InitializationException(ioe.getLocalizedMessage(), ioe);
+    }
   }
 }

@@ -61,24 +61,24 @@ public class LanguageResource {
    * Contains the name suffix of the resource file with the punctuation
    * description.
    */
-  private static final String PUNCT_DESCR = "_punct.xml";
+  private static final String PUNCT_DESCR = "_punct.cfg";
 
   /**
    * Contains the name suffix of the resource file with the clitic description.
    */
-  private static final String CLITIC_DESCR = "_clitics.xml";
+  private static final String CLITIC_DESCR = "_clitics.cfg";
 
   /**
    * Contains the name suffix of the resource file with the abbreviations
    * description.
    */
-  private static final String ABBREV_DESCR = "_abbrev.xml";
+  private static final String ABBREV_DESCR = "_abbrev.cfg";
 
   /**
    * Contains the name suffix of the resource file with the token classes
    * description.
    */
-  private static final String CLASS_DESCR = "_classes.xml";
+  private static final String CLASS_DESCR = "_classes.cfg";
 
 
   /**
@@ -160,29 +160,26 @@ public class LanguageResource {
       this.mapSingleClass(this.getClassesRoot());
       this.mapClasses(this.getClassesRoot().getChildNodes());
 
-      // load punctuation description document
-      doc = builder.parse(
-        FileTools.openResourceFileAsStream(
+      // load punctuation description
+      this.setPunctDescr(
+        new PunctDescription(
           Paths.get(resourceDir).resolve(lang + PUNCT_DESCR).toString()));
-      this.setPunctDescr(new PunctDescription(doc));
 
-      // load clitics description document
-      doc = builder.parse(
-        FileTools.openResourceFileAsStream(
+      // load clitics description
+      this.setClitDescr(
+        new CliticsDescription(
           Paths.get(resourceDir).resolve(lang + CLITIC_DESCR).toString()));
-      this.setClitDescr(new CliticsDescription(doc));
 
-      // load abbreviation description document
-      doc = builder.parse(
-        FileTools.openResourceFileAsStream(
-          Paths.get(resourceDir).resolve(lang + ABBREV_DESCR).toString()));
-      this.setAbbrevDescr(new AbbrevDescription(doc, resourceDir));
+      // load abbreviation description
+      this.setAbbrevDescr(
+        new AbbrevDescription(
+          Paths.get(resourceDir).resolve(lang + ABBREV_DESCR).toString(),
+          resourceDir));
 
       // load token classes description document
-      doc = builder.parse(
-        FileTools.openResourceFileAsStream(
+      this.setClassseDescr(
+        new TokenClassesDescription(
           Paths.get(resourceDir).resolve(lang + CLASS_DESCR).toString()));
-      this.setClassseDescr(new TokenClassesDescription(doc));
 
     } catch (SAXException spe) {
       throw new InitializationException(spe.getLocalizedMessage(), spe);
