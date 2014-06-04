@@ -80,6 +80,11 @@ public class LanguageResource {
    */
   private static final String CLASS_DESCR = "_classes.cfg";
 
+  /**
+   * Contains the name suffix of the config file with the macros.
+   */
+  private static final String MACRO_CFG = "_macros.cfg";
+
 
   /**
    * Contains the name of the language for which this class contains the
@@ -160,26 +165,34 @@ public class LanguageResource {
       this.mapSingleClass(this.getClassesRoot());
       this.mapClasses(this.getClassesRoot().getChildNodes());
 
+      // load macros
+      Map<String, String> macrosMap = Description.loadMacros(
+        Paths.get(resourceDir).resolve(lang + MACRO_CFG).toString());
+
       // load punctuation description
       this.setPunctDescr(
         new PunctDescription(
-          Paths.get(resourceDir).resolve(lang + PUNCT_DESCR).toString()));
+          Paths.get(resourceDir).resolve(lang + PUNCT_DESCR).toString(),
+          macrosMap));
 
       // load clitics description
       this.setClitDescr(
         new CliticsDescription(
-          Paths.get(resourceDir).resolve(lang + CLITIC_DESCR).toString()));
+          Paths.get(resourceDir).resolve(lang + CLITIC_DESCR).toString(),
+          macrosMap));
 
       // load abbreviation description
       this.setAbbrevDescr(
         new AbbrevDescription(
           Paths.get(resourceDir).resolve(lang + ABBREV_DESCR).toString(),
-          resourceDir));
+          resourceDir,
+          macrosMap));
 
       // load token classes description document
       this.setClassseDescr(
         new TokenClassesDescription(
-          Paths.get(resourceDir).resolve(lang + CLASS_DESCR).toString()));
+          Paths.get(resourceDir).resolve(lang + CLASS_DESCR).toString(),
+          macrosMap));
 
     } catch (SAXException spe) {
       throw new InitializationException(spe.getLocalizedMessage(), spe);

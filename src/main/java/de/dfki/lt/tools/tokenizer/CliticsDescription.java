@@ -58,10 +58,13 @@ public class CliticsDescription
    *
    * @param clitDescrPath
    *          path to the config file
+   * @param macrosMap
+   *          a map of macro names to regular expression strings
    * @exception InitializationException
    *              if an error occurs
    */
-  public CliticsDescription(String clitDescrPath) {
+  public CliticsDescription(
+      String clitDescrPath, Map<String, String> macrosMap) {
 
     super.setDefinitionsMap(new HashMap<String, RegExp>());
     super.setRulesMap(new HashMap<String, RegExp>());
@@ -82,9 +85,9 @@ public class CliticsDescription
           continue;
         }
         if (line.equals(DEFS_MARKER)) {
-          defsMap = super.loadDefinitions(in);
+          defsMap = super.loadDefinitions(in, macrosMap);
           // when loadDefs returns the reader has reached the rules section
-          super.loadRules(in, defsMap);
+          super.loadRules(in, defsMap, macrosMap);
         }
       }
     } catch (IOException ioe) {

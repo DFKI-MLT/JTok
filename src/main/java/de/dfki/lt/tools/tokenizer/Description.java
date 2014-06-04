@@ -43,6 +43,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.regexp.DkBricsRegExpFactory;
 import de.dfki.lt.tools.tokenizer.regexp.Match;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
@@ -270,17 +271,65 @@ public abstract class Description {
 
 
   /**
+   * Reads the macro configuration from the given path.
+   *
+   * @param macroPath
+   *          path to the config file
+   * @return a map of macro names to regular expression strings
+   */
+  protected static Map<String, String> loadMacros(String macroPath) {
+
+    Map<String, String> macroMap = new HashMap<>();
+
+    // read config file
+    try {
+      BufferedReader in =
+        new BufferedReader(
+          new InputStreamReader(
+            FileTools.openResourceFileAsStream(macroPath.toString()),
+            "utf-8"));
+      String line;
+      while ((line = in.readLine()) != null) {
+        line = line.trim();
+        if (line.length() == 0 || line.startsWith("#")) {
+          continue;
+        }
+        int sep = line.indexOf(":");
+        if (sep == -1) {
+          LOG.error(String.format(
+            "missing separator in macros configuration line %s", line));
+        }
+        String macroName = line.substring(0, sep).trim();
+        String regExpString = line.substring(sep + 1).trim();
+
+        // expand possible macros
+        regExpString = replaceReferences(regExpString, macroMap);
+
+        macroMap.put(macroName, regExpString);
+      }
+    } catch (IOException ioe) {
+      throw new InitializationException(ioe.getLocalizedMessage(), ioe);
+    }
+
+    return macroMap;
+  }
+
+
+  /**
    * Reads the definitions section from the given reader to map each token class
    * from the definitions to a regular expression that matches all tokens of
    * that class. Also creates and returns the definitions map.
    *
    * @param in
    *          the reader
+   * @param macrosMap
+   *          a map of macro names to regular expression strings
    * @return a map of definition names to regular expression strings
    * @throws IOException
    *           if there is an error during reading
    */
-  protected Map<String, String> loadDefinitions(BufferedReader in)
+  protected Map<String, String> loadDefinitions(
+    BufferedReader in, Map<String, String> macrosMap)
       throws IOException {
 
     // init temporary map where to store the regular expression string
@@ -311,6 +360,9 @@ public abstract class Description {
       String defName = line.substring(0, firstSep).trim();
       String regExpString = line.substring(firstSep + 1, secondSep).trim();
       String className = line.substring(secondSep + 1).trim();
+
+      // expand possible macros
+      regExpString = replaceReferences(regExpString, macrosMap);
 
       // extend class matcher:
       // get old entry
@@ -357,10 +409,14 @@ public abstract class Description {
    *          the reader
    * @param defsMap
    *          a map of definition names to regular expression strings
+   * @param macrosMap
+   *          a map of macro names to regular expression strings
    * @throws IOException
    *           if there is an error during reading
    */
-  protected void loadRules(BufferedReader in, Map<String, String> defsMap)
+  protected void loadRules(
+      BufferedReader in, Map<String, String> defsMap,
+      Map<String, String> macrosMap)
       throws IOException {
 
     String line;
@@ -380,7 +436,10 @@ public abstract class Description {
       String regExpString = line.substring(firstSep + 1, secondSep).trim();
       String className = line.substring(secondSep + 1).trim();
 
+      // expand definitions
       regExpString = replaceReferences(regExpString, defsMap);
+      // expand possible macros
+      regExpString = replaceReferences(regExpString, macrosMap);
 
       // add rule to map
       RegExp regExp = FACTORY.createRegExp(regExpString);

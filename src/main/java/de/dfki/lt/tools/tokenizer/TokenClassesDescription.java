@@ -51,10 +51,13 @@ public class TokenClassesDescription
    *
    * @param tokClassesDescrPath
    *          path to the config file
+   * @param macrosMap
+   *          a map of macro names to regular expression strings
    * @exception InitializationException
    *              if an error occurs
    */
-  public TokenClassesDescription(String tokClassesDescrPath) {
+  public TokenClassesDescription(
+      String tokClassesDescrPath, Map<String, String> macrosMap) {
 
     super.setDefinitionsMap(new HashMap<String, RegExp>());
     super.setRulesMap(new HashMap<String, RegExp>());
@@ -75,7 +78,7 @@ public class TokenClassesDescription
           continue;
         }
         if (line.equals(DEFS_MARKER)) {
-          defsMap = super.loadDefinitions(in);
+          defsMap = super.loadDefinitions(in, macrosMap);
         }
       }
       getRulesMap().put(ALL_RULE, createAllRule(defsMap));
