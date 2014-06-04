@@ -66,11 +66,13 @@ public class AbbrevDescription
    *          path to the config file
    * @param resourceDir
    *          the name of the resource directory
+   * @param macrosMap
+   *          a map of macro names to regular expression strings
    * @exception InitializationException
    *              if an error occurs
    */
   public AbbrevDescription(
-      String abbrDescrPath, String resourceDir) {
+      String abbrDescrPath, String resourceDir, Map<String, String> macrosMap) {
 
     super.setDefinitionsMap(new HashMap<String, RegExp>());
     super.setRulesMap(new HashMap<String, RegExp>());
@@ -94,7 +96,7 @@ public class AbbrevDescription
         if (line.equals(LISTS_MARKER)) {
           super.loadLists(in, resourceDir);
           // when loadLists returns the reader has reached the definitions section
-          defsMap = super.loadDefinitions(in);
+          defsMap = super.loadDefinitions(in, macrosMap);
         }
       }
       getRulesMap().put(ALL_RULE, createAllRule(defsMap));
