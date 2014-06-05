@@ -41,7 +41,7 @@ import java.util.List;
  *
  * @author Joerg Steffen, DFKI
  */
-public class FileTools {
+public final class FileTools {
 
   /**
    * Creates a new instance of {@link FileTools}. Not to be used.
@@ -66,14 +66,15 @@ public class FileTools {
       throws IOException {
 
     int i;
-    byte ab[] = new byte[4096];
+    byte[] ab = new byte[4096];
     FileOutputStream fos = null;
     try {
       fos = new FileOutputStream(file);
       while ((i = inputStream.read(ab)) > 0) {
         fos.write(ab, 0, i);
       }
-    } finally { // always close
+    } finally {
+      // always close
       if (null != fos) {
         fos.close();
       }
@@ -100,7 +101,7 @@ public class FileTools {
     ByteArrayOutputStream bos = null;
 
     // initialize size
-    int len = con.getContentLength(); // is this really necessary?
+    int len = con.getContentLength();
     if (-1 == len) {
       len = 10000;
     }
@@ -109,7 +110,8 @@ public class FileTools {
       bos = new ByteArrayOutputStream(len);
       is = con.getInputStream();
       readInputStream(bos, is);
-    } finally { // always close
+    } finally {
+      // always close
       if (null != is) {
         is.close();
       }
@@ -143,7 +145,7 @@ public class FileTools {
     ByteArrayOutputStream bos = null;
 
     // initialize size
-    int len = con.getContentLength(); // is this really necessary?
+    int len = con.getContentLength();
     if (-1 == len) {
       len = 10000;
     }
@@ -152,7 +154,8 @@ public class FileTools {
       bos = new ByteArrayOutputStream(len);
       is = con.getInputStream();
       readInputStream(bos, is);
-    } finally { // always close
+    } finally {
+      // always close
       if (null != is) {
         is.close();
       }
@@ -214,7 +217,8 @@ public class FileTools {
     try {
       bos = new ByteArrayOutputStream();
       readInputStream(bos, is);
-    } finally { // always close
+    } finally {
+      // always close
       if (null != bos) {
         bos.close();
       }
@@ -244,7 +248,8 @@ public class FileTools {
     try {
       bos = new ByteArrayOutputStream();
       readInputStream(bos, is);
-    } finally { // always close
+    } finally {
+      // always close
       if (null != bos) {
         bos.close();
       }
@@ -288,8 +293,8 @@ public class FileTools {
     for (int i = 0; i < filesInDir.length; i++) {
       // if file is a directory, collect recursivly
       if (filesInDir[i].isDirectory()) {
-        fileNames.addAll(getFilesFromDir
-          (filesInDir[i].getAbsolutePath(), suffix));
+        fileNames.addAll(getFilesFromDir(
+          filesInDir[i].getAbsolutePath(), suffix));
       }
       else if (filesInDir[i].getName()
         .endsWith(suffix)) {
@@ -345,7 +350,8 @@ public class FileTools {
     // for some reason, the buffer must be 1 byte bigger than the file
     ByteBuffer readBuffer = ByteBuffer.allocate((int)fc.size());
     fc.read(readBuffer);
-    fis.close(); // also closes channel
+    fis.close();
+    // also closes channel
     readBuffer.rewind();
     return readBuffer;
   }

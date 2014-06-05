@@ -45,14 +45,14 @@ public class AbbrevDescription
     extends Description {
 
   /**
-   * The name of the all abbreviation rule.
-   */
-  protected static final String ALL_RULE = "ALL_RULE";
-
-  /**
    * Class name for breaking abbreviation.
    */
   public static final String B_ABBREVIATION = "B_ABBREVIATION";
+
+  /**
+   * The name of the all abbreviation rule.
+   */
+  protected static final String ALL_RULE = "ALL_RULE";
 
   /**
    * Contains the name suffix of the resource file with the abbreviations
@@ -65,18 +65,6 @@ public class AbbrevDescription
    * they are at the beginning of a sentence.
    */
   private Set<String> nonCapTerms;
-
-
-  /**
-   * Returns the set of the most common terms that only start with a capital
-   * letter when they are at the beginning of a sentence.
-   *
-   * @return a set with the terms
-   */
-  protected Set<String> getNonCapTerms() {
-
-    return this.nonCapTerms;
-  }
 
 
   /**
@@ -199,6 +187,18 @@ public class AbbrevDescription
     if (null != langIn) {
       langIn.close();
     }
+  }
+
+
+  /**
+   * Returns the set of the most common terms that only start with a capital
+   * letter when they are at the beginning of a sentence.
+   *
+   * @return a set with the terms
+   */
+  protected Set<String> getNonCapTerms() {
+  
+    return this.nonCapTerms;
   }
 
 

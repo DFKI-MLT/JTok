@@ -251,8 +251,8 @@ public class TestJTok {
     StringBuilder result = new StringBuilder();
     String newline = System.getProperty("line.separator");
     // print result as paragraphs with text units and tokens
-    for (Paragraph onePara : Outputter.createParagraphs
-      (tokenizer.tokenize(input, lang))) {
+    for (Paragraph onePara : Outputter.createParagraphs(
+        tokenizer.tokenize(input, lang))) {
       result.append(onePara.toString());
       result.append(newline);
     }

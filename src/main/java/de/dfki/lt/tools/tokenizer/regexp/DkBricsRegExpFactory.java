@@ -45,8 +45,7 @@ public class DkBricsRegExpFactory extends RegExpFactory {
    * {@inheritDoc}
    */
   @Override
-  public RegExp createRegExp(String regExpString)
-      throws InitializationException {
+  public RegExp createRegExp(String regExpString) {
 
     return new DkBricsRegExp(regExpString);
   }

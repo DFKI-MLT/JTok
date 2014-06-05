@@ -36,7 +36,15 @@ import de.dfki.lt.tools.tokenizer.annotate.AnnotatedString;
  *
  * @author Joerg Steffen, DFKI
  */
-public class Outputter {
+public final class Outputter {
+
+  /**
+   * Creates a new instance of {@link Outputter}. Not to be used.
+   */
+  private Outputter() {
+    // private constructor to enforce noninstantiability
+  }
+
 
   /**
    * Creates a list of {@link Paragraph}s with {@link TextUnit}s and

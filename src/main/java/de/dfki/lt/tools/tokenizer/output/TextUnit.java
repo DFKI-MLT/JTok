@@ -140,10 +140,8 @@ public class TextUnit {
 
     this.tokens = tokens;
     if (tokens.size() > 0) {
-      this.setStartIndex
-        (tokens.get(0).getStartIndex());
-      this.setEndIndex
-        (tokens.get(tokens.size() - 1).getEndIndex());
+      this.setStartIndex(tokens.get(0).getStartIndex());
+      this.setEndIndex(tokens.get(tokens.size() - 1).getEndIndex());
     }
     else {
       this.setStartIndex(0);

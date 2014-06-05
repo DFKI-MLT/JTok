@@ -54,8 +54,7 @@ public class JavaRegExp implements RegExp {
    * @exception InitializationException
    *              if regular expression is not well formed
    */
-  public JavaRegExp(String regExpString)
-      throws InitializationException {
+  public JavaRegExp(String regExpString) {
 
     try {
       this.re = Pattern.compile(regExpString);
