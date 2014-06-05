@@ -94,23 +94,23 @@ public abstract class Description {
   /**
    * Factory for creating regular expressions.
    */
-  protected static RegExpFactory FACTORY = new DkBricsRegExpFactory();
+  protected static final RegExpFactory FACTORY = new DkBricsRegExpFactory();
 
   /**
    * Single line in descriptions that marks the start of the lists section.
    */
-  protected static String LISTS_MARKER = "LISTS:";
+  protected static final String LISTS_MARKER = "LISTS:";
 
   /**
    * Single line in descriptions that marks the start of the definitions
    * section.
    */
-  protected static String DEFS_MARKER = "DEFINITIONS:";
+  protected static final String DEFS_MARKER = "DEFINITIONS:";
 
   /**
    * Single line in descriptions that marks the start of the rules section.
    */
-  protected static String RULES_MARKER = "RULES:";
+  protected static final String RULES_MARKER = "RULES:";
 
   /**
    * Contains the name of the folder and the the resources prefix of the common
@@ -122,7 +122,7 @@ public abstract class Description {
    * Regular expression for matching references used in regular expressions of
    * config files.
    */
-  private static RegExp REF_MATCHER =
+  private static final RegExp REF_MATCHER =
     FACTORY.createRegExp("\\<[A-Za-z0-9_]+\\>");
 
   /**
@@ -266,8 +266,8 @@ public abstract class Description {
     NodeList children = ele.getChildNodes();
     for (int i = 0, iMax = children.getLength(); i < iMax; i++) {
       Node oneChild = children.item(i);
-      if ((oneChild instanceof Element) &&
-        ((Element)oneChild).getTagName().equals(childName)) {
+      if ((oneChild instanceof Element)
+          && ((Element)oneChild).getTagName().equals(childName)) {
         return (Element)oneChild;
       }
     }

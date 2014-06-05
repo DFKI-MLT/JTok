@@ -141,10 +141,8 @@ public class Paragraph {
 
     this.textUnits = textUnits;
     if (textUnits.size() > 0) {
-      this.setStartIndex
-        (textUnits.get(0).getStartIndex());
-      this.setEndIndex
-        (textUnits.get(textUnits.size() - 1)
+      this.setStartIndex(textUnits.get(0).getStartIndex());
+      this.setEndIndex(textUnits.get(textUnits.size() - 1)
           .getEndIndex());
     }
     else {

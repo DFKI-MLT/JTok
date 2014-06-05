@@ -53,8 +53,7 @@ public class DkBricsRegExp implements RegExp {
    * @exception InitializationException
    *              if regular expression is not well formed
    */
-  public DkBricsRegExp(String regExpString)
-      throws InitializationException {
+  public DkBricsRegExp(String regExpString) {
 
     this.re = new RunAutomaton(
       new dk.brics.automaton.RegExp(regExpString).toAutomaton(true), true);

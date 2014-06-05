@@ -61,7 +61,8 @@ public class CliticsDescription
 
 
   /**
-   * Creates a new instance of {@link CliticsDescription} for the given language.
+   * Creates a new instance of {@link CliticsDescription} for the given
+   * language.
    *
    * @param resourceDir
    *          path to the folder with the language resources

@@ -48,13 +48,21 @@ import de.dfki.lt.tools.tokenizer.regexp.RegExp;
  *
  * @author Joerg Steffen, DFKI
  */
-public class AbbrevCollector {
+public final class AbbrevCollector {
 
   /**
    * Contains the logger.
    */
   private static final Logger LOG =
     LoggerFactory.getLogger(AbbrevCollector.class);
+
+
+  /**
+   * Creates a new instance of {@link AbbrevCollector}. Not to be used.
+   */
+  private AbbrevCollector() {
+    // private constructor to enforce noninstantiability
+  }
 
 
   /**

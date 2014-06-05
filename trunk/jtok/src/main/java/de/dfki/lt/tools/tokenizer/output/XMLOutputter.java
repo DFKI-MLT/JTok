@@ -56,12 +56,7 @@ import de.dfki.lt.tools.tokenizer.exceptions.ProcessingException;
  *
  * @author Joerg Steffen, DFKI
  */
-public class XMLOutputter {
-
-  /**
-   * Contains the logger object for logging.
-   */
-  private static final Logger LOG = LoggerFactory.getLogger(XMLOutputter.class);
+public final class XMLOutputter {
 
   /**
    * Name of XML elements in the result that describe a document.
@@ -121,6 +116,19 @@ public class XMLOutputter {
    * length.
    */
   public static final String LENGTH_ATT = "length";
+
+  /**
+   * Contains the logger object for logging.
+   */
+  private static final Logger LOG = LoggerFactory.getLogger(XMLOutputter.class);
+
+
+  /**
+   * Creates a new instance of {@link XMLOutputter}. Not to be used.
+   */
+  private XMLOutputter() {
+    // private constructor to enforce noninstantiability
+  }
 
 
   /**
@@ -318,12 +326,12 @@ public class XMLOutputter {
     // check for correct arguments
     if ((args.length != 2)
         && (args.length != 3)) {
-      System.out.println
-        ("This method needs two arguments:\n" +
-          "- a file name for the document to tokenize\n" +
-          "- the language of the document\n" +
-          "- an optional encoding to use (default is ISO-8859-1)\n" +
-          "Supported languages are: de, en, it");
+      System.out.println(
+        "This method needs two arguments:\n"
+          + "- a file name for the document to tokenize\n"
+          + "- the language of the document\n"
+          + "- an optional encoding to use (default is ISO-8859-1)\n"
+          + "Supported languages are: de, en, it");
       System.exit(1);
     }
 

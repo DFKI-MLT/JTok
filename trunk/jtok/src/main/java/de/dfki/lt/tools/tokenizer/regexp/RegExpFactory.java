@@ -26,7 +26,7 @@ import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 
 /**
  * Abstract class for creating objects that fit the {@link RegExp} interface.
- * 
+ *
  * @author Joerg Steffen, DFKI
  */
 public abstract class RegExpFactory {
@@ -34,13 +34,12 @@ public abstract class RegExpFactory {
   /**
    * Creates a regular expression object from the given regular expression
    * string.
-   * 
+   *
    * @param regExpString
    *          a regular expression string
    * @return a regular expression build from the regular expression string
    * @exception InitializationException
    *              if regular expression is not well formed
    */
-  public abstract RegExp createRegExp(String regExpString)
-      throws InitializationException;
+  public abstract RegExp createRegExp(String regExpString);
 }

@@ -54,16 +54,6 @@ import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 public class JTok {
 
   /**
-   * Contains the logger object for logging.
-   */
-  private static final Logger LOG = LoggerFactory.getLogger(JTok.class);
-
-  /**
-   * Property for the languages in the config.
-   */
-  private static final String LANGUAGES_PROP = "languages";
-
-  /**
    * Annotation key for the token class.
    */
   public static final String CLASS_ANNO = "class";
@@ -82,6 +72,16 @@ public class JTok {
    * Annotation value for paragraph borders.
    */
   public static final String P_BORDER = "p";
+
+  /**
+   * Contains the logger object for logging.
+   */
+  private static final Logger LOG = LoggerFactory.getLogger(JTok.class);
+
+  /**
+   * Property for the languages in the config.
+   */
+  private static final String LANGUAGES_PROP = "languages";
 
   /**
    * Maps each supported language to a language resource.
@@ -158,8 +158,7 @@ public class JTok {
    * @exception LanguageNotSupportedException
    *              if no language resource is available for this language
    */
-  public LanguageResource getLanguageResource(String lang)
-      throws LanguageNotSupportedException {
+  public LanguageResource getLanguageResource(String lang) {
 
     Object probe = this.langResources.get(lang);
     if (null != probe) {
@@ -231,7 +230,8 @@ public class JTok {
       langRes.getClassesRoot().getTagName();
 
     // iterate over input
-    for (char c = input.first(); c != CharacterIterator.DONE; c = input.next()) {
+    for (char c = input.first(); c != CharacterIterator.DONE;
+        c = input.next()) {
       if (Character.isWhitespace(c) || (c == '\u00a0')) {
         if (tokenFound) {
           // annotate newly identified token
@@ -596,13 +596,7 @@ public class JTok {
       }
       return false;
     }
-    else if (oneMatch.getEndIndex() != image.length()) {
-      // there is right context after the internal punctuation
-      return true;
-    }
-    else {
-      return false;
-    }
+    return oneMatch.getEndIndex() != image.length();
   }
 
 
@@ -887,8 +881,8 @@ public class JTok {
             }
           }
           // check if token is a breaking abbreviation
-          else if (langRes.isAncestor
-            (AbbrevDescription.B_ABBREVIATION,
+          else if (langRes.isAncestor(
+              AbbrevDescription.B_ABBREVIATION,
               (String)input.getAnnotation(CLASS_ANNO))) {
             abbrevMode = true;
           }

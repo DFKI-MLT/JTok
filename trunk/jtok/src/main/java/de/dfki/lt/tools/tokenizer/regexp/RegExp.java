@@ -39,7 +39,7 @@ public interface RegExp {
    *          the string where to look for matches
    * @return a list of matches
    */
-  public List<Match> getAllMatches(String input);
+  List<Match> getAllMatches(String input);
 
 
   /**
@@ -49,7 +49,7 @@ public interface RegExp {
    *          the string to check
    * @return a flag indicating the match
    */
-  public boolean matches(String input);
+  boolean matches(String input);
 
 
   /**
@@ -60,7 +60,7 @@ public interface RegExp {
    *          the string to check
    * @return a match or {@code null}
    */
-  public Match contains(String input);
+  Match contains(String input);
 
   /**
    * Checks if the given input contains a match for the regular expression at
@@ -71,7 +71,7 @@ public interface RegExp {
    *          the string to check
    * @return a match or {@code null}
    */
-  public Match starts(String input);
+  Match starts(String input);
 
 
   /**
@@ -83,5 +83,5 @@ public interface RegExp {
    *          the string to check
    * @return a match or {@code null}
    */
-  public Match ends(String input);
+  Match ends(String input);
 }

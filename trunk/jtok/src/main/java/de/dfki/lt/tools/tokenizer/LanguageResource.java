@@ -412,8 +412,7 @@ public class LanguageResource {
    * @exception ProcessingException
    *              if the second class name is not a defined class
    */
-  boolean isAncestor(String class1, String class2)
-      throws ProcessingException {
+  boolean isAncestor(String class1, String class2) {
 
     if (class1.equals(this.classesRootName) || class1.equals(class2)) {
       return true;

@@ -258,9 +258,9 @@ public class FastAnnotatedString implements AnnotatedString {
   @Override
   public String substring(int start, int end) {
 
-    if ((start < 0) ||
-      (end > this.endIndex) ||
-      (start > end)) {
+    if ((start < 0)
+        || (end > this.endIndex)
+        || (start > end)) {
       throw new IllegalArgumentException(
         String.format("Invalid substring range %d - %d", start, end));
     }
@@ -275,9 +275,9 @@ public class FastAnnotatedString implements AnnotatedString {
   public void annotate(String key, Object value, int start, int end) {
 
     // check if range is legal
-    if ((start < 0) ||
-      (end > this.endIndex) ||
-      (start >= end)) {
+    if ((start < 0)
+        || (end > this.endIndex)
+        || (start >= end)) {
       throw new IllegalArgumentException(
         String.format("Invalid substring range %d - %d", start, end));
     }
@@ -453,10 +453,10 @@ public class FastAnnotatedString implements AnnotatedString {
     while (this.index < this.endIndex) {
       int endAnno = this.getRunLimit(key);
       if (null != getAnnotation(key)) {
-        result.append(substring(this.index, endAnno) + "\t" +
-          this.index + "-" + endAnno + "\t" +
-          getAnnotation(key) +
-          System.getProperty("line.separator"));
+        result.append(substring(this.index, endAnno) + "\t"
+          + this.index + "-" + endAnno + "\t"
+          + getAnnotation(key)
+          + System.getProperty("line.separator"));
       }
       this.index = endAnno;
     }

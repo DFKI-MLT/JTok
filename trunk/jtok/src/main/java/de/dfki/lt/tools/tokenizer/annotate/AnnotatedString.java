@@ -96,7 +96,7 @@ public interface AnnotatedString extends CharacterIterator {
    * @return the annotation value or {@code null} if there is no annotation with
    *         the given key at that position
    */
-  public Object getAnnotation(String key);
+  Object getAnnotation(String key);
 
 
   /**
@@ -108,7 +108,7 @@ public interface AnnotatedString extends CharacterIterator {
    *          the annotation key
    * @return the index
    */
-  public int findNextAnnotation(String key);
+  int findNextAnnotation(String key);
 
 
   /**
@@ -149,7 +149,7 @@ public interface AnnotatedString extends CharacterIterator {
    *          the annotation key
    * @return the string representation
    */
-  public String toString(String key);
+  String toString(String key);
 
 
   /**
@@ -158,5 +158,5 @@ public interface AnnotatedString extends CharacterIterator {
    * @return the surface string
    */
   @Override
-  public String toString();
+  String toString();
 }

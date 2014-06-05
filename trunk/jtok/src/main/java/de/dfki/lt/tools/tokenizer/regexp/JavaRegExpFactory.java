@@ -27,7 +27,7 @@ import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 /**
  * Extends {@link RegExpFactory} for regular expressions of the java.util.regex
  * package.
- * 
+ *
  * @author Joerg Steffen, DFKI
  */
 public class JavaRegExpFactory extends RegExpFactory {
@@ -45,8 +45,7 @@ public class JavaRegExpFactory extends RegExpFactory {
    * {@inheritDoc}
    */
   @Override
-  public RegExp createRegExp(String regExpString)
-      throws InitializationException {
+  public RegExp createRegExp(String regExpString) {
 
     return new JavaRegExp(regExpString);
   }
