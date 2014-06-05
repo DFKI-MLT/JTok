@@ -22,6 +22,7 @@
 
 package de.dfki.lt.tools.tokenizer;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -56,29 +57,6 @@ public class LanguageResource {
    * Contains the name suffix of the resource file with the classes hierarchy.
    */
   private static final String CLASSES_HIERARCHY = "_class_hierarchy.xml";
-
-  /**
-   * Contains the name suffix of the resource file with the punctuation
-   * description.
-   */
-  private static final String PUNCT_DESCR = "_punct.cfg";
-
-  /**
-   * Contains the name suffix of the resource file with the clitic description.
-   */
-  private static final String CLITIC_DESCR = "_clitics.cfg";
-
-  /**
-   * Contains the name suffix of the resource file with the abbreviations
-   * description.
-   */
-  private static final String ABBREV_DESCR = "_abbrev.cfg";
-
-  /**
-   * Contains the name suffix of the resource file with the token classes
-   * description.
-   */
-  private static final String CLASS_DESCR = "_classes.cfg";
 
   /**
    * Contains the name suffix of the config file with the macros.
@@ -156,9 +134,32 @@ public class LanguageResource {
       // create builder for parsing xml
       DocumentBuilder builder = factory.newDocumentBuilder();
       // load classes hierarchy
-      Document doc = builder.parse(
-        FileTools.openResourceFileAsStream(
-          Paths.get(resourceDir).resolve(lang + CLASSES_HIERARCHY).toString()));
+      Document doc = null;
+      // try to load common classes hierarchy
+      try {
+        doc = builder.parse(
+          FileTools.openResourceFileAsStream(
+            Paths.get("jtok").resolve(Description.COMMON)
+              .resolve(Description.COMMON + CLASSES_HIERARCHY).toString()));
+      } catch (FileNotFoundException fne) {
+        // do nothing
+      }
+      // try to load language specific classes hierarchy,
+      // overwriting common one
+      try {
+        doc = builder.parse(
+          FileTools.openResourceFileAsStream(
+            Paths.get(resourceDir)
+              .resolve(lang + CLASSES_HIERARCHY).toString()));
+      } catch (FileNotFoundException fne) {
+        // do nothing
+      }
+      // at least one classes hierarchy must have been loaded
+      if (null == doc) {
+        throw new InitializationException(
+          String.format("missing class hierarchy for language %s", lang));
+      }
+
       // set hierarchy root
       this.setClassesRoot(doc.getDocumentElement());
       // map class names to dom elements
@@ -166,33 +167,30 @@ public class LanguageResource {
       this.mapClasses(this.getClassesRoot().getChildNodes());
 
       // load macros
-      Map<String, String> macrosMap = Description.loadMacros(
-        Paths.get(resourceDir).resolve(lang + MACRO_CFG).toString());
+      Map<String, String> macrosMap = new HashMap<>();
+      Description.loadMacros(
+        Paths.get("jtok").resolve(Description.COMMON)
+          .resolve(Description.COMMON + MACRO_CFG),
+        macrosMap);
+      Description.loadMacros(
+        Paths.get(resourceDir).resolve(lang + MACRO_CFG),
+        macrosMap);
 
       // load punctuation description
       this.setPunctDescr(
-        new PunctDescription(
-          Paths.get(resourceDir).resolve(lang + PUNCT_DESCR).toString(),
-          macrosMap));
+        new PunctDescription(resourceDir, lang, macrosMap));
 
       // load clitics description
       this.setClitDescr(
-        new CliticsDescription(
-          Paths.get(resourceDir).resolve(lang + CLITIC_DESCR).toString(),
-          macrosMap));
+        new CliticsDescription(resourceDir, lang, macrosMap));
 
       // load abbreviation description
       this.setAbbrevDescr(
-        new AbbrevDescription(
-          Paths.get(resourceDir).resolve(lang + ABBREV_DESCR).toString(),
-          resourceDir,
-          macrosMap));
+        new AbbrevDescription(resourceDir, lang, macrosMap));
 
       // load token classes description document
       this.setClassseDescr(
-        new TokenClassesDescription(
-          Paths.get(resourceDir).resolve(lang + CLASS_DESCR).toString(),
-          macrosMap));
+        new TokenClassesDescription(resourceDir, lang, macrosMap));
 
     } catch (SAXException spe) {
       throw new InitializationException(spe.getLocalizedMessage(), spe);
