@@ -23,8 +23,11 @@
 package de.dfki.lt.tools.tokenizer;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -51,47 +54,84 @@ public class CliticsDescription
   protected static final String ENCLITIC_RULE =
     "ENCLITIC_RULE";
 
+  /**
+   * Contains the name suffix of the resource file with the clitic description.
+   */
+  private static final String CLITIC_DESCR = "_clitics.cfg";
+
 
   /**
-   * Creates a new instance of {@link CliticsDescription} for the clitics
-   * description contained in the given config file.
+   * Creates a new instance of {@link CliticsDescription} for the given language.
    *
-   * @param clitDescrPath
-   *          path to the config file
+   * @param resourceDir
+   *          path to the folder with the language resources
+   * @param lang
+   *          the language
    * @param macrosMap
    *          a map of macro names to regular expression strings
-   * @exception InitializationException
-   *              if an error occurs
+   * @throws IOException
+   *           if there is an error when reading the configuration
    */
   public CliticsDescription(
-      String clitDescrPath, Map<String, String> macrosMap) {
+      String resourceDir, String lang, Map<String, String> macrosMap)
+      throws IOException {
 
     super.setDefinitionsMap(new HashMap<String, RegExp>());
     super.setRulesMap(new HashMap<String, RegExp>());
     super.setRegExpMap(new HashMap<RegExp, String>());
 
-    // read config file
+    Path commonDescrPath =
+        Paths.get("jtok").resolve(COMMON)
+          .resolve(COMMON + CLITIC_DESCR);
+    Path clitDescrPath =
+      Paths.get(resourceDir).resolve(lang + CLITIC_DESCR);
+
+    // open both the common config file and the language specific one
+    BufferedReader commonIn = null;
+    BufferedReader langIn = null;
     try {
-      BufferedReader in =
-        new BufferedReader(
-          new InputStreamReader(
-            FileTools.openResourceFileAsStream(clitDescrPath.toString()),
-            "utf-8"));
-      String line;
-      Map<String, String> defsMap = new HashMap<>();
-      while ((line = in.readLine()) != null) {
-        line = line.trim();
-        if (line.length() == 0 || line.startsWith("#")) {
-          continue;
-        }
-        if (line.equals(DEFS_MARKER)) {
-          defsMap = super.loadDefinitions(in, macrosMap);
-          // when loadDefs returns the reader has reached the rules section
-          super.loadRules(in, defsMap, macrosMap);
-        }
-      }
-    } catch (IOException ioe) {
-      throw new InitializationException(ioe.getLocalizedMessage(), ioe);
+      commonIn = new BufferedReader(
+        new InputStreamReader(
+          FileTools.openResourceFileAsStream(commonDescrPath.toString()),
+          "utf-8"));
+    } catch (FileNotFoundException fne) {
+      // do nothing, commonIn is still null
+    }
+    try {
+      langIn = new BufferedReader(
+        new InputStreamReader(
+          FileTools.openResourceFileAsStream(clitDescrPath.toString()),
+          "utf-8"));
+    } catch (FileNotFoundException fne) {
+      // do nothing, langIn is still null
+    }
+
+    // at least one configuration must be found
+    if (null == commonIn && null == langIn) {
+      throw new InitializationException(
+        String.format(
+          "missing clitics description for language %s", lang));
+    }
+
+    // read both config files to definitions start
+    readToDefinitions(commonIn);
+    readToDefinitions(langIn);
+
+    // read definitions
+    Map<String, String> defsMap = new HashMap<>();
+    super.loadDefinitions(commonIn, macrosMap, defsMap);
+    super.loadDefinitions(langIn, macrosMap, defsMap);
+
+    // when loadDefinitions returns the reader has reached the rules section;
+    // read rules
+    super.loadRules(commonIn, defsMap, macrosMap);
+    super.loadRules(langIn, defsMap, macrosMap);
+
+    if (null != commonIn) {
+      commonIn.close();
+    }
+    if (null != langIn) {
+      langIn.close();
     }
   }
 }

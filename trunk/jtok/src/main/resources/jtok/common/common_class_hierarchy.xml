@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This defines the class hierarchy for German. -->
+<!-- This defines the common class hierarchy. -->
+<!-- It can be replaced by a language specific one in -->
+<!-- the corresponding language folder. -->
+
 <!-- Token classes not listed here are assumed to be -->
 <!-- direct children of the root token class. -->
 
@@ -31,7 +34,7 @@
 
   <!-- punctuation -->
   <PUNCTUATION>
-  
+
     <!-- terminal punctuation -->
     <TERM_PUNCT>
       <EXCLAM/>

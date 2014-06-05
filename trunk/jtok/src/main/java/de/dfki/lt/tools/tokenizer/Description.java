@@ -23,6 +23,7 @@
 package de.dfki.lt.tools.tokenizer;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
@@ -31,7 +32,6 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -43,7 +43,6 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.regexp.DkBricsRegExpFactory;
 import de.dfki.lt.tools.tokenizer.regexp.Match;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
@@ -112,6 +111,12 @@ public abstract class Description {
    * Single line in descriptions that marks the start of the rules section.
    */
   protected static String RULES_MARKER = "RULES:";
+
+  /**
+   * Contains the name of the folder and the the resources prefix of the common
+   * resource files.
+   */
+  protected static final String COMMON = "common";
 
   /**
    * Regular expression for matching references used in regular expressions of
@@ -271,44 +276,48 @@ public abstract class Description {
 
 
   /**
-   * Reads the macro configuration from the given path.
+   * Reads the macro configuration from the given path and adds it to the given
+   * map.
    *
    * @param macroPath
    *          path to the config file
-   * @return a map of macro names to regular expression strings
+   * @param macroMap
+   *          a map of macro names to regular expression strings
+   * @return the extended map
+   * @throws IOException
+   *           if there is an error when reading the configuration
    */
-  protected static Map<String, String> loadMacros(String macroPath) {
-
-    Map<String, String> macroMap = new HashMap<>();
+  protected static Map<String, String> loadMacros(
+    Path macroPath, Map<String, String> macroMap) throws IOException {
 
     // read config file
+    BufferedReader in = null;
     try {
-      BufferedReader in =
-        new BufferedReader(
-          new InputStreamReader(
-            FileTools.openResourceFileAsStream(macroPath.toString()),
-            "utf-8"));
-      String line;
-      while ((line = in.readLine()) != null) {
-        line = line.trim();
-        if (line.length() == 0 || line.startsWith("#")) {
-          continue;
-        }
-        int sep = line.indexOf(":");
-        if (sep == -1) {
-          LOG.error(String.format(
-            "missing separator in macros configuration line %s", line));
-        }
-        String macroName = line.substring(0, sep).trim();
-        String regExpString = line.substring(sep + 1).trim();
-
-        // expand possible macros
-        regExpString = replaceReferences(regExpString, macroMap);
-
-        macroMap.put(macroName, regExpString);
+      in = new BufferedReader(
+        new InputStreamReader(
+          FileTools.openResourceFileAsStream(macroPath.toString()),
+          "utf-8"));
+    } catch (FileNotFoundException fne) {
+      return macroMap;
+    }
+    String line;
+    while ((line = in.readLine()) != null) {
+      line = line.trim();
+      if (line.length() == 0 || line.startsWith("#")) {
+        continue;
       }
-    } catch (IOException ioe) {
-      throw new InitializationException(ioe.getLocalizedMessage(), ioe);
+      int sep = line.indexOf(":");
+      if (sep == -1) {
+        LOG.error(String.format(
+          "missing separator in macros configuration line %s", line));
+      }
+      String macroName = line.substring(0, sep).trim();
+      String regExpString = line.substring(sep + 1).trim();
+
+      // expand possible macros
+      regExpString = replaceReferences(regExpString, macroMap);
+
+      macroMap.put(macroName, regExpString);
     }
 
     return macroMap;
@@ -316,28 +325,89 @@ public abstract class Description {
 
 
   /**
+   * Reads from the given reader until the lists section starts.
+   * Immediately returns if the reader is {@code null}.
+   *
+   * @param in
+   *          the reader
+   * @throws IOException
+   *           if there is an error when reading
+   */
+  protected static void readToLists(BufferedReader in)
+      throws IOException {
+
+    if (null == in) {
+      return;
+    }
+
+    String line;
+    while ((line = in.readLine()) != null) {
+      line = line.trim();
+      if (line.length() == 0 || line.startsWith("#")) {
+        continue;
+      }
+      if (line.equals(LISTS_MARKER)) {
+        break;
+      }
+    }
+  }
+
+
+  /**
+   * Reads from the given reader until the definitions section starts.
+   * Immediately returns if the reader is {@code null}.
+   *
+   * @param in
+   *          the reader
+   * @throws IOException
+   *           if there is an error when reading
+   */
+  protected static void readToDefinitions(BufferedReader in)
+      throws IOException {
+
+    if (null == in) {
+      return;
+    }
+
+    String line;
+    while ((line = in.readLine()) != null) {
+      line = line.trim();
+      if (line.length() == 0 || line.startsWith("#")) {
+        continue;
+      }
+      if (line.equals(DEFS_MARKER)) {
+        break;
+      }
+    }
+  }
+
+
+  /**
    * Reads the definitions section from the given reader to map each token class
    * from the definitions to a regular expression that matches all tokens of
-   * that class. Also creates and returns the definitions map.
+   * that class. Also extends the given definitions map.<br>
+   * Immediately returns if the reader is {@code null}.
    *
    * @param in
    *          the reader
    * @param macrosMap
    *          a map of macro names to regular expression strings
-   * @return a map of definition names to regular expression strings
+   * @param defMap
+   *          a map of definition names to regular expression strings
    * @throws IOException
    *           if there is an error during reading
    */
-  protected Map<String, String> loadDefinitions(
-    BufferedReader in, Map<String, String> macrosMap)
+  protected void loadDefinitions(BufferedReader in,
+      Map<String, String> macrosMap, Map<String, String> defMap)
       throws IOException {
+
+    if (null == in) {
+      return;
+    }
 
     // init temporary map where to store the regular expression string
     // for each class
     Map<String, StringBuilder> tempMap = new HashMap<>();
-
-    // this maps the definition names to their regular expression strings
-    Map<String, String> defMap = new LinkedHashMap<>();
 
     String line;
     while ((line = in.readLine()) != null) {
@@ -378,11 +448,6 @@ public abstract class Description {
       }
 
       // save definition
-      if (defMap.get(defName) != null) {
-        LOG.error(
-          String.format("duplicate definition %s: %s", defName, regExpString));
-        continue;
-      }
       defMap.put(defName, regExpString);
     }
 
@@ -393,17 +458,13 @@ public abstract class Description {
         oneEntry.getKey(),
         FACTORY.createRegExp(oneEntry.getValue().toString()));
     }
-
-    return defMap;
   }
 
 
   /**
    * Reads the rules section from the given reader to map each rules to a
-   * regular expression that matches all tokens of that rule.
-   *
-   * each rule from the description to a regular expression that matches all
-   * tokens from that rule.
+   * regular expression that matches all tokens of that rule.<br>
+   * Immediately returns if the reader is {@code null}.
    *
    * @param in
    *          the reader
@@ -418,6 +479,10 @@ public abstract class Description {
       BufferedReader in, Map<String, String> defsMap,
       Map<String, String> macrosMap)
       throws IOException {
+
+    if (null == in) {
+      return;
+    }
 
     String line;
     while ((line = in.readLine()) != null) {
@@ -454,10 +519,8 @@ public abstract class Description {
 
   /**
    * Reads the lists section from the given reader to map each token class from
-   * the lists to a set that contains all members of that class.
-   *
-   * Uses the lists section in a description file to map each token class from
-   * the lists to a set that contains all members of that class.
+   * the lists to a set that contains all members of that class.<br>
+   * Immediately returns if the reader is {@code null}.
    *
    * @param in
    *          the reader
@@ -468,6 +531,10 @@ public abstract class Description {
    */
   protected void loadLists(BufferedReader in, String resourceDir)
       throws IOException {
+
+    if (null == in) {
+      return;
+    }
 
     String line;
     while ((line = in.readLine()) != null) {
