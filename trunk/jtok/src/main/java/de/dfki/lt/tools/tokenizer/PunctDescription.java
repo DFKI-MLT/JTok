@@ -31,7 +31,8 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
@@ -103,7 +104,9 @@ public class PunctDescription
   /**
    * Contains the logger.
    */
-  private static final Logger LOG = Logger.getLogger(PunctDescription.class);
+  private static final Logger LOG =
+    LoggerFactory.getLogger(PunctDescription.class);
+
 
   /**
    * Creates a new instance of {@link PunctDescription} for the given language.

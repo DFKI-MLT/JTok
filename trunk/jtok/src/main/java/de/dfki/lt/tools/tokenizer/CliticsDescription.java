@@ -31,7 +31,8 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
@@ -64,7 +65,8 @@ public class CliticsDescription
   /**
    * Contains the logger.
    */
-  private static final Logger LOG = Logger.getLogger(CliticsDescription.class);
+  private static final Logger LOG =
+    LoggerFactory.getLogger(CliticsDescription.class);
 
 
   /**
