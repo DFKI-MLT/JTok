@@ -31,6 +31,8 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.log4j.Logger;
+
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 
@@ -52,6 +54,12 @@ public class TokenClassesDescription
    * description.
    */
   private static final String CLASS_DESCR = "_classes.cfg";
+
+  /**
+   * Contains the logger.
+   */
+  private static final Logger LOG =
+    Logger.getLogger(TokenClassesDescription.class);
 
 
   /**
@@ -89,6 +97,7 @@ public class TokenClassesDescription
         new InputStreamReader(
           FileTools.openResourceFileAsStream(commonDescrPath.toString()),
           "utf-8"));
+      LOG.info("loading common token classes description");
     } catch (FileNotFoundException fne) {
       // do nothing, commonIn is still null
     }
@@ -97,6 +106,8 @@ public class TokenClassesDescription
         new InputStreamReader(
           FileTools.openResourceFileAsStream(tokClassesDescrPath.toString()),
           "utf-8"));
+      LOG.info(
+        String.format("loading token classes description for %s...", lang));
     } catch (FileNotFoundException fne) {
       // do nothing, langIn is still null
     }

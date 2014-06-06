@@ -31,6 +31,8 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.log4j.Logger;
+
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 
@@ -98,6 +100,10 @@ public class PunctDescription
    */
   private static final String PUNCT_DESCR = "_punct.cfg";
 
+  /**
+   * Contains the logger.
+   */
+  private static final Logger LOG = Logger.getLogger(PunctDescription.class);
 
   /**
    * Creates a new instance of {@link PunctDescription} for the given language.
@@ -133,6 +139,7 @@ public class PunctDescription
         new InputStreamReader(
           FileTools.openResourceFileAsStream(commonDescrPath.toString()),
           "utf-8"));
+      LOG.info("loading common punctuation description...");
     } catch (FileNotFoundException fne) {
       // do nothing, commonIn is still null
     }
@@ -141,6 +148,8 @@ public class PunctDescription
         new InputStreamReader(
           FileTools.openResourceFileAsStream(punctDescrPath.toString()),
           "utf-8"));
+      LOG.info(
+        String.format("loading punctuation description for %s...", lang));
     } catch (FileNotFoundException fne) {
       // do nothing, langIn is still null
     }

@@ -35,6 +35,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
+import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -62,6 +63,11 @@ public class LanguageResource {
    * Contains the name suffix of the config file with the macros.
    */
   private static final String MACRO_CFG = "_macros.cfg";
+
+  /**
+   * Contains the logger.
+   */
+  private static final Logger LOG = Logger.getLogger(LanguageResource.class);
 
 
   /**
@@ -141,16 +147,24 @@ public class LanguageResource {
           FileTools.openResourceFileAsStream(
             Paths.get("jtok").resolve(Description.COMMON)
               .resolve(Description.COMMON + CLASSES_HIERARCHY).toString()));
+        LOG.info("loading common class hierarchy...");
       } catch (FileNotFoundException fne) {
         // do nothing
       }
       // try to load language specific classes hierarchy,
       // overwriting common one
       try {
-        doc = builder.parse(
+        Document doc2 = builder.parse(
           FileTools.openResourceFileAsStream(
             Paths.get(resourceDir)
               .resolve(lang + CLASSES_HIERARCHY).toString()));
+        if (doc == null) {
+          LOG.info(String.format("loading %s class hierarchy...", lang));
+        }
+        else {
+          LOG.info(String.format("overwriting class hierarchie for %s", lang));
+        }
+        doc = doc2;
       } catch (FileNotFoundException fne) {
         // do nothing
       }
@@ -168,10 +182,12 @@ public class LanguageResource {
 
       // load macros
       Map<String, String> macrosMap = new HashMap<>();
+      LOG.info("loading common macros...");
       Description.loadMacros(
         Paths.get("jtok").resolve(Description.COMMON)
           .resolve(Description.COMMON + MACRO_CFG),
         macrosMap);
+      LOG.info(String.format("loading macros for %s...", lang));
       Description.loadMacros(
         Paths.get(resourceDir).resolve(lang + MACRO_CFG),
         macrosMap);

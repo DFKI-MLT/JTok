@@ -33,6 +33,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+import org.apache.log4j.Logger;
+
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 
@@ -59,6 +61,11 @@ public class AbbrevDescription
    * description.
    */
   private static final String ABBREV_DESCR = "_abbrev.cfg";
+
+  /**
+   * Contains the logger.
+   */
+  private static final Logger LOG = Logger.getLogger(AbbrevDescription.class);
 
   /**
    * Contains the most common terms that only start with a capital letter when
@@ -102,6 +109,7 @@ public class AbbrevDescription
         new InputStreamReader(
           FileTools.openResourceFileAsStream(commonDescrPath.toString()),
           "utf-8"));
+      LOG.info("loading common abbreviation description...");
     } catch (FileNotFoundException fne) {
       // do nothing, commonIn is still null
     }
@@ -110,6 +118,8 @@ public class AbbrevDescription
         new InputStreamReader(
           FileTools.openResourceFileAsStream(abbrDescrPath.toString()),
           "utf-8"));
+      LOG.info(
+        String.format("loading abbreviation description for %s...", lang));
     } catch (FileNotFoundException fne) {
       // do nothing, langIn is still null
     }
@@ -197,7 +207,7 @@ public class AbbrevDescription
    * @return a set with the terms
    */
   protected Set<String> getNonCapTerms() {
-  
+
     return this.nonCapTerms;
   }
 
