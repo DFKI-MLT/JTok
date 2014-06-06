@@ -1,4 +1,4 @@
-# Prepositions
+# prepositions
 about
 above
 across
@@ -27,7 +27,7 @@ to
 towards
 under
 until
-# Pronouns
+# pronouns
 me
 mine
 my
