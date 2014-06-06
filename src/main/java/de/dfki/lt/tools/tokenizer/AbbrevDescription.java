@@ -33,7 +33,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
@@ -65,7 +66,8 @@ public class AbbrevDescription
   /**
    * Contains the logger.
    */
-  private static final Logger LOG = Logger.getLogger(AbbrevDescription.class);
+  private static final Logger LOG =
+    LoggerFactory.getLogger(AbbrevDescription.class);
 
   /**
    * Contains the most common terms that only start with a capital letter when
