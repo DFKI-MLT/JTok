@@ -31,6 +31,8 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.log4j.Logger;
+
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 
@@ -58,6 +60,11 @@ public class CliticsDescription
    * Contains the name suffix of the resource file with the clitic description.
    */
   private static final String CLITIC_DESCR = "_clitics.cfg";
+
+  /**
+   * Contains the logger.
+   */
+  private static final Logger LOG = Logger.getLogger(CliticsDescription.class);
 
 
   /**
@@ -95,6 +102,7 @@ public class CliticsDescription
         new InputStreamReader(
           FileTools.openResourceFileAsStream(commonDescrPath.toString()),
           "utf-8"));
+      LOG.info("loading common clitics description");
     } catch (FileNotFoundException fne) {
       // do nothing, commonIn is still null
     }
@@ -103,6 +111,8 @@ public class CliticsDescription
         new InputStreamReader(
           FileTools.openResourceFileAsStream(clitDescrPath.toString()),
           "utf-8"));
+      LOG.info(
+        String.format("loading clitics description for %s...", lang));
     } catch (FileNotFoundException fne) {
       // do nothing, langIn is still null
     }
