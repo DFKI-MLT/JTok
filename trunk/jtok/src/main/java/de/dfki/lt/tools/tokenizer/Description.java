@@ -641,7 +641,8 @@ public abstract class Description {
         continue;
       }
       result = result.replaceFirst(
-        oneRef.getImage(), Matcher.quoteReplacement(refRegExpr));
+        oneRef.getImage(),
+        String.format("(%s)", Matcher.quoteReplacement(refRegExpr)));
     }
 
     return result;
@@ -664,7 +665,7 @@ public abstract class Description {
     for (int i = 0, iMax = defsList.size(); i < iMax; i++) {
       String regExpr = defsList.get(i);
       // extend regular expression with another disjunct
-      ruleRegExpr.append(regExpr);
+      ruleRegExpr.append(String.format("(%s)", regExpr));
       if (i < iMax - 1) {
         ruleRegExpr.append("|");
       }
