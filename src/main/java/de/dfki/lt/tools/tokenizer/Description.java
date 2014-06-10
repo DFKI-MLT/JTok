@@ -43,6 +43,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import de.dfki.lt.tools.tokenizer.exceptions.ProcessingException;
 import de.dfki.lt.tools.tokenizer.regexp.DkBricsRegExpFactory;
 import de.dfki.lt.tools.tokenizer.regexp.Match;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
@@ -434,6 +435,12 @@ public abstract class Description {
       // expand possible macros
       regExpString = replaceReferences(regExpString, macrosMap);
 
+      // check for empty regular expression
+      if (regExpString.length() == 0) {
+        throw new ProcessingException(
+          String.format("empty regular expression in line %s", line));
+      }
+
       // extend class matcher:
       // get old entry
       StringBuilder oldRegExpr = tempMap.get(className);
@@ -454,9 +461,18 @@ public abstract class Description {
     // create regular expressions from regular expression strings and store them
     // under their class name in definitions map
     for (Map.Entry<String, StringBuilder> oneEntry : tempMap.entrySet()) {
-      getDefinitionsMap().put(
-        oneEntry.getKey(),
-        FACTORY.createRegExp(oneEntry.getValue().toString()));
+      try {
+        getDefinitionsMap().put(
+          oneEntry.getKey(),
+          FACTORY.createRegExp(oneEntry.getValue().toString()));
+      } catch (Exception e) {
+        throw new ProcessingException(
+          String.format(
+            "cannot create regular expression for %s from %s: %s",
+            oneEntry.getKey(),
+            oneEntry.getValue().toString(),
+            e.getLocalizedMessage()));
+      }
     }
   }
 
@@ -635,10 +651,9 @@ public abstract class Description {
         oneRef.getImage().substring(1, oneRef.getImage().length() - 1);
       String refRegExpr = refMap.get(refName);
       if (null == refRegExpr) {
-        LOG.error(
+        throw new ProcessingException(
           String.format("unknown reference %s in regular expression %s",
             refName, regExpString));
-        continue;
       }
       result = result.replaceFirst(
         oneRef.getImage(),
