@@ -114,12 +114,6 @@ public abstract class Description {
   protected static final String RULES_MARKER = "RULES:";
 
   /**
-   * Contains the name of the folder and the the resources prefix of the common
-   * resource files.
-   */
-  protected static final String COMMON = "common";
-
-  /**
    * Regular expression for matching references used in regular expressions of
    * config files.
    */

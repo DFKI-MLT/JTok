@@ -23,7 +23,6 @@
 package de.dfki.lt.tools.tokenizer;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.file.Path;
@@ -31,10 +30,6 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 
 /**
@@ -62,12 +57,6 @@ public class CliticsDescription
    */
   private static final String CLITIC_DESCR = "_clitics.cfg";
 
-  /**
-   * Contains the logger.
-   */
-  private static final Logger LOG =
-    LoggerFactory.getLogger(CliticsDescription.class);
-
 
   /**
    * Creates a new instance of {@link CliticsDescription} for the given
@@ -90,61 +79,24 @@ public class CliticsDescription
     super.setRulesMap(new HashMap<String, RegExp>());
     super.setRegExpMap(new HashMap<RegExp, String>());
 
-    Path commonDescrPath =
-        Paths.get("jtok").resolve(COMMON)
-          .resolve(COMMON + CLITIC_DESCR);
     Path clitDescrPath =
       Paths.get(resourceDir).resolve(lang + CLITIC_DESCR);
+    BufferedReader in = new BufferedReader(
+      new InputStreamReader(
+        FileTools.openResourceFileAsStream(clitDescrPath.toString()),
+        "utf-8"));
 
-    // open both the common config file and the language specific one
-    BufferedReader commonIn = null;
-    BufferedReader langIn = null;
-    try {
-      commonIn = new BufferedReader(
-        new InputStreamReader(
-          FileTools.openResourceFileAsStream(commonDescrPath.toString()),
-          "utf-8"));
-      LOG.info("loading common clitics description");
-    } catch (FileNotFoundException fne) {
-      // do nothing, commonIn is still null
-    }
-    try {
-      langIn = new BufferedReader(
-        new InputStreamReader(
-          FileTools.openResourceFileAsStream(clitDescrPath.toString()),
-          "utf-8"));
-      LOG.info(
-        String.format("loading clitics description for %s...", lang));
-    } catch (FileNotFoundException fne) {
-      // do nothing, langIn is still null
-    }
-
-    // at least one configuration must be found
-    if (null == commonIn && null == langIn) {
-      throw new InitializationException(
-        String.format(
-          "missing clitics description for language %s", lang));
-    }
-
-    // read both config files to definitions start
-    readToDefinitions(commonIn);
-    readToDefinitions(langIn);
+    // read config file to definitions start
+    readToDefinitions(in);
 
     // read definitions
     Map<String, String> defsMap = new HashMap<>();
-    super.loadDefinitions(commonIn, macrosMap, defsMap);
-    super.loadDefinitions(langIn, macrosMap, defsMap);
+    super.loadDefinitions(in, macrosMap, defsMap);
 
     // when loadDefinitions returns the reader has reached the rules section;
     // read rules
-    super.loadRules(commonIn, defsMap, macrosMap);
-    super.loadRules(langIn, defsMap, macrosMap);
+    super.loadRules(in, defsMap, macrosMap);
 
-    if (null != commonIn) {
-      commonIn.close();
-    }
-    if (null != langIn) {
-      langIn.close();
-    }
+    in.close();
   }
 }
