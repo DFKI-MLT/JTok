@@ -26,6 +26,7 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -143,7 +144,7 @@ public class LanguageResource {
       this.mapClasses(this.getClassesRoot().getChildNodes());
 
       // load macros
-      Map<String, String> macrosMap = new HashMap<>();
+      Map<String, String> macrosMap = new LinkedHashMap<>();
       Description.loadMacros(
         Paths.get(resourceDir).resolve(lang + MACRO_CFG),
         macrosMap);
