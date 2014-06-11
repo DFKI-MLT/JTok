@@ -37,7 +37,6 @@ import org.slf4j.LoggerFactory;
 import de.dfki.lt.tools.tokenizer.annotate.AnnotatedString;
 import de.dfki.lt.tools.tokenizer.annotate.FastAnnotatedString;
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
-import de.dfki.lt.tools.tokenizer.exceptions.LanguageNotSupportedException;
 import de.dfki.lt.tools.tokenizer.exceptions.ProcessingException;
 import de.dfki.lt.tools.tokenizer.output.Outputter;
 import de.dfki.lt.tools.tokenizer.output.Paragraph;
@@ -76,6 +75,11 @@ public class JTok {
    * Contains the logger object for logging.
    */
   private static final Logger LOG = LoggerFactory.getLogger(JTok.class);
+
+  /**
+   * The identifier of the default configuration.
+   */
+  private static final String DEFAULT = "default";
 
 
   /**
@@ -131,10 +135,13 @@ public class JTok {
       String langDir = (String)oneEntry.getValue();
       LOG.info(String.format("loading language resources for %s from %s",
         oneLanguage, langDir));
-
       this.langResources.put(
         oneLanguage, new LanguageResource(oneLanguage, langDir));
     }
+
+    // add default language resource
+    this.langResources.put(
+      DEFAULT, new LanguageResource(DEFAULT, "jtok/" + DEFAULT));
   }
 
 
@@ -143,9 +150,8 @@ public class JTok {
    *
    * @param lang
    *          the language
-   * @return the language resource
-   * @exception LanguageNotSupportedException
-   *              if no language resource is available for this language
+   * @return the language resource or the default configuration if language is
+   *         not supported
    */
   public LanguageResource getLanguageResource(String lang) {
 
@@ -153,8 +159,10 @@ public class JTok {
     if (null != probe) {
       return (LanguageResource)probe;
     }
-    throw new LanguageNotSupportedException(
-      String.format("language %s not supported", lang));
+    LOG.info(
+      String.format(
+        "language %s not supported, using default configuration", lang));
+    return this.langResources.get(DEFAULT);
   }
 
 
