@@ -37,12 +37,11 @@ import java.util.Map;
 import java.util.Set;
 import java.util.regex.Matcher;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.exceptions.ProcessingException;
 import de.dfki.lt.tools.tokenizer.regexp.DkBricsRegExpFactory;
 import de.dfki.lt.tools.tokenizer.regexp.Match;
@@ -119,11 +118,6 @@ public abstract class Description {
    */
   private static final RegExp REF_MATCHER =
     FACTORY.createRegExp("\\<[A-Za-z0-9_]+\\>");
-
-  /**
-   * Contains the logger object for logging.
-   */
-  private static final Logger LOG = LoggerFactory.getLogger(Description.class);
 
 
   /**
@@ -281,6 +275,8 @@ public abstract class Description {
    * @return the extended map
    * @throws IOException
    *           if there is an error when reading the configuration
+   * @throws InitializationException
+   *           if configuration fails
    */
   protected static Map<String, String> loadMacros(
     Path macroPath, Map<String, String> macroMap) throws IOException {
@@ -303,8 +299,9 @@ public abstract class Description {
       }
       int sep = line.indexOf(":");
       if (sep == -1) {
-        LOG.error(String.format(
-          "missing separator in macros configuration line %s", line));
+        throw new InitializationException(
+          String.format(
+            "missing separator in macros configuration line %s", line));
       }
       String macroName = line.substring(0, sep).trim();
       String regExpString = line.substring(sep + 1).trim();
@@ -391,6 +388,8 @@ public abstract class Description {
    *          a map of definition names to regular expression strings
    * @throws IOException
    *           if there is an error during reading
+   * @throws InitializationException
+   *           if configuration fails
    */
   protected void loadDefinitions(BufferedReader in,
       Map<String, String> macrosMap, Map<String, String> defMap)
@@ -417,10 +416,9 @@ public abstract class Description {
       int firstSep = line.indexOf(":");
       int secondSep = line.lastIndexOf(":");
       if (firstSep == -1 || secondSep == firstSep) {
-        LOG.error(
+        throw new InitializationException(
           String.format(
             "missing separator in definitions section line %s", line));
-        continue;
       }
       String defName = line.substring(0, firstSep).trim();
       String regExpString = line.substring(firstSep + 1, secondSep).trim();
@@ -484,6 +482,8 @@ public abstract class Description {
    *          a map of macro names to regular expression strings
    * @throws IOException
    *           if there is an error during reading
+   * @throws InitializationException
+   *           if configuration fails
    */
   protected void loadRules(
       BufferedReader in, Map<String, String> defsMap,
@@ -503,9 +503,9 @@ public abstract class Description {
       int firstSep = line.indexOf(":");
       int secondSep = line.lastIndexOf(":");
       if (firstSep == -1 || secondSep == firstSep) {
-        LOG.error(
-          String.format("missing separator in rules section line %s", line));
-        continue;
+        throw new InitializationException(
+          String.format(
+            "missing separator in rules section line %s", line));
       }
       String ruleName = line.substring(0, firstSep).trim();
       String regExpString = line.substring(firstSep + 1, secondSep).trim();
@@ -538,6 +538,8 @@ public abstract class Description {
    *          the resource directory
    * @throws IOException
    *           if there is an error during reading
+   * @throws InitializationException
+   *           if configuration fails
    */
   protected void loadLists(BufferedReader in, String resourceDir)
       throws IOException {
@@ -558,8 +560,9 @@ public abstract class Description {
 
       int sep = line.indexOf(":");
       if (sep == -1) {
-        LOG.error(String.format(
-          "missing separator in lists section line %s", line));
+        throw new InitializationException(
+          String.format(
+            "missing separator in lists section line %s", line));
       }
       String listFileName = line.substring(0, sep).trim();
       String className = line.substring(sep + 1).trim();
