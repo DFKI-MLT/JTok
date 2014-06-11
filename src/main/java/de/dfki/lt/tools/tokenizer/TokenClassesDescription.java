@@ -23,7 +23,6 @@
 package de.dfki.lt.tools.tokenizer;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.file.Path;
@@ -31,10 +30,6 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 
 /**
@@ -55,12 +50,6 @@ public class TokenClassesDescription
    * description.
    */
   private static final String CLASS_DESCR = "_classes.cfg";
-
-  /**
-   * Contains the logger.
-   */
-  private static final Logger LOG =
-    LoggerFactory.getLogger(TokenClassesDescription.class);
 
 
   /**
@@ -84,58 +73,22 @@ public class TokenClassesDescription
     super.setRulesMap(new HashMap<String, RegExp>());
     super.setRegExpMap(new HashMap<RegExp, String>());
 
-    Path commonDescrPath =
-        Paths.get("jtok").resolve(COMMON)
-          .resolve(COMMON + CLASS_DESCR);
     Path tokClassesDescrPath =
       Paths.get(resourceDir).resolve(lang + CLASS_DESCR);
+    BufferedReader in = new BufferedReader(
+      new InputStreamReader(
+        FileTools.openResourceFileAsStream(tokClassesDescrPath.toString()),
+        "utf-8"));
 
-    // open both the common config file and the language specific one
-    BufferedReader commonIn = null;
-    BufferedReader langIn = null;
-    try {
-      commonIn = new BufferedReader(
-        new InputStreamReader(
-          FileTools.openResourceFileAsStream(commonDescrPath.toString()),
-          "utf-8"));
-      LOG.info("loading common token classes description");
-    } catch (FileNotFoundException fne) {
-      // do nothing, commonIn is still null
-    }
-    try {
-      langIn = new BufferedReader(
-        new InputStreamReader(
-          FileTools.openResourceFileAsStream(tokClassesDescrPath.toString()),
-          "utf-8"));
-      LOG.info(
-        String.format("loading token classes description for %s...", lang));
-    } catch (FileNotFoundException fne) {
-      // do nothing, langIn is still null
-    }
-
-    // at least one configuration must be found
-    if (null == commonIn && null == langIn) {
-      throw new InitializationException(
-        String.format(
-          "missing token classes description for language %s", lang));
-    }
-
-    // read both config files to definitions start
-    readToDefinitions(commonIn);
-    readToDefinitions(langIn);
+    // read config file to definitions start
+    readToDefinitions(in);
 
     // read definitions
     Map<String, String> defsMap = new HashMap<>();
-    super.loadDefinitions(commonIn, macrosMap, defsMap);
-    super.loadDefinitions(langIn, macrosMap, defsMap);
+    super.loadDefinitions(in, macrosMap, defsMap);
 
     getRulesMap().put(ALL_RULE, createAllRule(defsMap));
 
-    if (null != commonIn) {
-      commonIn.close();
-    }
-    if (null != langIn) {
-      langIn.close();
-    }
+    in.close();
   }
 }

@@ -23,7 +23,6 @@
 package de.dfki.lt.tools.tokenizer;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.file.Path;
@@ -33,10 +32,6 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 
 /**
@@ -63,11 +58,6 @@ public class AbbrevDescription
    */
   private static final String ABBREV_DESCR = "_abbrev.cfg";
 
-  /**
-   * Contains the logger.
-   */
-  private static final Logger LOG =
-    LoggerFactory.getLogger(AbbrevDescription.class);
 
   /**
    * Contains the most common terms that only start with a capital letter when
@@ -97,108 +87,39 @@ public class AbbrevDescription
     super.setRegExpMap(new HashMap<RegExp, String>());
     super.setClassMembersMap(new HashMap<String, Set<String>>());
 
-    Path commonDescrPath =
-        Paths.get("jtok").resolve(COMMON)
-          .resolve(COMMON + ABBREV_DESCR);
     Path abbrDescrPath =
       Paths.get(resourceDir).resolve(lang + ABBREV_DESCR);
+    BufferedReader in = new BufferedReader(
+      new InputStreamReader(
+        FileTools.openResourceFileAsStream(abbrDescrPath.toString()),
+        "utf-8"));
 
-    // open both the common config file and the language specific one
-    BufferedReader commonIn = null;
-    BufferedReader langIn = null;
-    try {
-      commonIn = new BufferedReader(
-        new InputStreamReader(
-          FileTools.openResourceFileAsStream(commonDescrPath.toString()),
-          "utf-8"));
-      LOG.info("loading common abbreviation description...");
-    } catch (FileNotFoundException fne) {
-      // do nothing, commonIn is still null
-    }
-    try {
-      langIn = new BufferedReader(
-        new InputStreamReader(
-          FileTools.openResourceFileAsStream(abbrDescrPath.toString()),
-          "utf-8"));
-      LOG.info(
-        String.format("loading abbreviation description for %s...", lang));
-    } catch (FileNotFoundException fne) {
-      // do nothing, langIn is still null
-    }
-
-    // at least one configuration must be found
-    if (null == commonIn && null == langIn) {
-      throw new InitializationException(
-        String.format(
-          "missing abbreviation description for language %s", lang));
-    }
-
-    // read both config files to lists start
-    readToLists(commonIn);
-    readToLists(langIn);
+    // read config file to lists start
+    readToLists(in);
 
     // read lists
-    super.loadLists(commonIn, Paths.get("jtok").resolve(COMMON).toString());
-    super.loadLists(langIn, resourceDir);
+    super.loadLists(in, resourceDir);
 
     // read definitions
     Map<String, String> defsMap = new HashMap<>();
-    super.loadDefinitions(commonIn, macrosMap, defsMap);
-    super.loadDefinitions(langIn, macrosMap, defsMap);
+    super.loadDefinitions(in, macrosMap, defsMap);
 
     getRulesMap().put(ALL_RULE, createAllRule(defsMap));
 
-    if (null != commonIn) {
-      commonIn.close();
-    }
-    if (null != langIn) {
-      langIn.close();
-    }
+    in.close();
 
     // load list of terms that only start with a capital letter when they are
     // at the beginning of a sentence
-    Path commonNonCapTerms =
-      Paths.get(resourceDir).resolve("nonCapTerms.txt");
-    Path langNonCapTerms =
-      Paths.get("jtok").resolve(COMMON).resolve("nonCapTerms.txt");
-    commonIn = null;
-    langIn = null;
-    try {
-      commonIn =
-        new BufferedReader(
-          new InputStreamReader(
-            FileTools.openResourceFileAsStream(commonNonCapTerms.toString()),
-              "utf-8"));
-    } catch (FileNotFoundException fne) {
-      // do nothing, commonIn is still null
-    }
-    try {
-      langIn =
-        new BufferedReader(
-          new InputStreamReader(
-            FileTools.openResourceFileAsStream(langNonCapTerms.toString()),
-              "utf-8"));
-    } catch (FileNotFoundException fne) {
-      // do nothing, langIn is still null
-    }
+    Path nonCapTermsPath =
+    Paths.get(resourceDir).resolve("nonCapTerms.txt");
+    BufferedReader nonCopTermsIn = new BufferedReader(
+      new InputStreamReader(
+        FileTools.openResourceFileAsStream(nonCapTermsPath.toString()),
+        "utf-8"));
 
-    // at least one configuration must be found
-    if (null == commonIn && null == langIn) {
-      throw new InitializationException(
-        String.format(
-          "missing non-capital term list in abbreviation description of "
-          + "language %s", lang));
-    }
+    readNonCapTerms(nonCopTermsIn);
 
-    readNonCapTerms(commonIn);
-    readNonCapTerms(langIn);
-
-    if (null != commonIn) {
-      commonIn.close();
-    }
-    if (null != langIn) {
-      langIn.close();
-    }
+    nonCopTermsIn.close();
   }
 
 

@@ -22,7 +22,6 @@
 
 package de.dfki.lt.tools.tokenizer;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -35,8 +34,6 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -64,12 +61,6 @@ public class LanguageResource {
    * Contains the name suffix of the config file with the macros.
    */
   private static final String MACRO_CFG = "_macros.cfg";
-
-  /**
-   * Contains the logger.
-   */
-  private static final Logger LOG =
-    LoggerFactory.getLogger(LanguageResource.class);
 
 
   /**
@@ -142,40 +133,9 @@ public class LanguageResource {
       // create builder for parsing xml
       DocumentBuilder builder = factory.newDocumentBuilder();
       // load classes hierarchy
-      Document doc = null;
-      // try to load common classes hierarchy
-      try {
-        doc = builder.parse(
-          FileTools.openResourceFileAsStream(
-            Paths.get("jtok").resolve(Description.COMMON)
-              .resolve(Description.COMMON + CLASSES_HIERARCHY).toString()));
-        LOG.info("loading common class hierarchy...");
-      } catch (FileNotFoundException fne) {
-        // do nothing
-      }
-      // try to load language specific classes hierarchy,
-      // overwriting common one
-      try {
-        Document doc2 = builder.parse(
-          FileTools.openResourceFileAsStream(
-            Paths.get(resourceDir)
-              .resolve(lang + CLASSES_HIERARCHY).toString()));
-        if (doc == null) {
-          LOG.info(String.format("loading %s class hierarchy...", lang));
-        }
-        else {
-          LOG.info(String.format("overwriting class hierarchie for %s", lang));
-        }
-        doc = doc2;
-      } catch (FileNotFoundException fne) {
-        // do nothing
-      }
-      // at least one classes hierarchy must have been loaded
-      if (null == doc) {
-        throw new InitializationException(
-          String.format("missing class hierarchy for language %s", lang));
-      }
-
+      Document doc = builder.parse(
+        FileTools.openResourceFileAsStream(
+          Paths.get(resourceDir).resolve(lang + CLASSES_HIERARCHY).toString()));
       // set hierarchy root
       this.setClassesRoot(doc.getDocumentElement());
       // map class names to dom elements
@@ -184,12 +144,6 @@ public class LanguageResource {
 
       // load macros
       Map<String, String> macrosMap = new HashMap<>();
-      LOG.info("loading common macros...");
-      Description.loadMacros(
-        Paths.get("jtok").resolve(Description.COMMON)
-          .resolve(Description.COMMON + MACRO_CFG),
-        macrosMap);
-      LOG.info(String.format("loading macros for %s...", lang));
       Description.loadMacros(
         Paths.get(resourceDir).resolve(lang + MACRO_CFG),
         macrosMap);
