@@ -30,7 +30,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
-import java.util.StringTokenizer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -40,8 +39,8 @@ import de.dfki.lt.tools.tokenizer.annotate.FastAnnotatedString;
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 import de.dfki.lt.tools.tokenizer.exceptions.LanguageNotSupportedException;
 import de.dfki.lt.tools.tokenizer.exceptions.ProcessingException;
-import de.dfki.lt.tools.tokenizer.output.Paragraph;
 import de.dfki.lt.tools.tokenizer.output.Outputter;
+import de.dfki.lt.tools.tokenizer.output.Paragraph;
 import de.dfki.lt.tools.tokenizer.regexp.Match;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 
@@ -78,10 +77,6 @@ public class JTok {
    */
   private static final Logger LOG = LoggerFactory.getLogger(JTok.class);
 
-  /**
-   * Property for the languages in the config.
-   */
-  private static final String LANGUAGES_PROP = "languages";
 
   /**
    * Maps each supported language to a language resource.
@@ -129,17 +124,11 @@ public class JTok {
 
     this.langResources = new HashMap<>();
 
-    // get list of languages
-    String languages = configProps.getProperty(LANGUAGES_PROP);
-
-    // iterate over languages
-    StringTokenizer st = new StringTokenizer(languages, ",");
-
-    while (st.hasMoreTokens()) {
+    for (Map.Entry<Object, Object> oneEntry : configProps.entrySet()) {
       // get language
-      String oneLanguage = st.nextToken();
+      String oneLanguage = (String)oneEntry.getKey();
       // add language resources for that language
-      String langDir = configProps.getProperty(oneLanguage);
+      String langDir = (String)oneEntry.getValue();
       LOG.info(String.format("loading language resources for %s from %s",
         oneLanguage, langDir));
 
