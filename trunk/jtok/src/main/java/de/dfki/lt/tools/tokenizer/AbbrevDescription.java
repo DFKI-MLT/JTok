@@ -111,7 +111,7 @@ public class AbbrevDescription
     // load list of terms that only start with a capital letter when they are
     // at the beginning of a sentence
     Path nonCapTermsPath =
-    Paths.get(resourceDir).resolve("nonCapTerms.txt");
+    Paths.get(resourceDir).resolve(lang + "_nonCapTerms.txt");
     BufferedReader nonCopTermsIn = new BufferedReader(
       new InputStreamReader(
         FileTools.openResourceFileAsStream(nonCapTermsPath.toString()),
