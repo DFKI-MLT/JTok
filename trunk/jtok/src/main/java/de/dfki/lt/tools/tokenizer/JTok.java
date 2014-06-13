@@ -302,25 +302,9 @@ public class JTok {
       // required because the input index might be changed later in this method
       int nextTokenStart = input.findNextAnnotation(CLASS_ANNO);
 
-      // get the start index of the token
-      int tokenStart = input.getIndex();
-      // get the end index of the token c belongs to
-      int tokenEnd = input.getRunLimit(CLASS_ANNO);
-      // get the token content
-      String image = input.substring(tokenStart, tokenEnd);
-
       // split punctuation on the left and right side of the token
       this.splitPunctuation(input, langRes);
 
-      // split clitics from left and right side of the token
-      this.splitClitics(input, langRes);
-
-      // update the start index of the token
-      tokenStart = input.getIndex();
-      // update the end index of the token c belongs to
-      tokenEnd = input.getRunLimit(CLASS_ANNO);
-      // update the token content
-      image = input.substring(tokenStart, tokenEnd);
       // update current token annotation
       tokClass = (String)input.getAnnotation(CLASS_ANNO);
       // only check tokens with the most general class
@@ -328,6 +312,24 @@ public class JTok {
         c = input.setIndex(nextTokenStart);
         continue;
       }
+
+      // split clitics from left and right side of the token
+      this.splitClitics(input, langRes);
+
+      // update current token annotation
+      tokClass = (String)input.getAnnotation(CLASS_ANNO);
+      // only check tokens with the most general class
+      if (tokClass != rootClass) {
+        c = input.setIndex(nextTokenStart);
+        continue;
+      }
+
+      // get the start index of the token
+      int tokenStart = input.getIndex();
+      // get the end index of the token c belongs to
+      int tokenEnd = input.getRunLimit(CLASS_ANNO);
+      // get the token content
+      String image = input.substring(tokenStart, tokenEnd);
 
       // use the all rule to split image in parts consisting of
       // punctuation and non-punctuation
