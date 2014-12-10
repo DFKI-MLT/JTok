@@ -126,6 +126,10 @@ public class JTok {
    */
   private void init(Properties configProps) {
 
+    if (configProps.get(DEFAULT) == null) {
+      LOG.error("missing default language resources");
+    }
+
     this.langResources = new HashMap<>();
 
     for (Map.Entry<Object, Object> oneEntry : configProps.entrySet()) {
@@ -135,13 +139,9 @@ public class JTok {
       String langDir = (String)oneEntry.getValue();
       LOG.info(String.format("loading language resources for %s from %s",
         oneLanguage, langDir));
-      this.langResources.put(
-        oneLanguage, new LanguageResource(oneLanguage, langDir));
-    }
-
-    // add default language resource
     this.langResources.put(
-      DEFAULT, new LanguageResource(DEFAULT, "jtok/" + DEFAULT));
+            oneLanguage, new LanguageResource(oneLanguage, langDir));
+    }
   }
 
 
