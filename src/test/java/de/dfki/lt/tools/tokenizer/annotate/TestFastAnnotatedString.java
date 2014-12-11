@@ -22,8 +22,10 @@
 
 package de.dfki.lt.tools.tokenizer.annotate;
 
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertNotNull;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.not;
+import static org.hamcrest.CoreMatchers.nullValue;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -60,7 +62,7 @@ public class TestFastAnnotatedString {
 
     AnnotatedString input2 = new FastAnnotatedString("sdfslkdflsdfsldfksdf");
     input2.annotate("type", "tok", 5, 15);
-    assertEquals("kdflsdfsld\t5-15\ttok", input2.toString("type").trim());
+    assertThat(input2.toString("type").trim(), is("kdflsdfsld\t5-15\ttok"));
 
     input2.annotate("type", "mid", 9, 12);
     compareResults(input2, "expected-results/annotated-string-expected-2.txt");
@@ -92,8 +94,8 @@ public class TestFastAnnotatedString {
     String resLine;
     while ((resLine = resReader.readLine()) != null) {
       String inputLine = inputReader.readLine();
-      assertNotNull(inputLine);
-      assertEquals(resFileName + ": line " + lineCount, resLine, inputLine);
+      assertThat(inputLine, is(not(nullValue())));
+      assertThat(resFileName + ": line " + lineCount, resLine, is(inputLine));
       lineCount++;
     }
   }

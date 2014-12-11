@@ -22,8 +22,10 @@
 
 package de.dfki.lt.tools.tokenizer;
 
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertNotNull;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.not;
+import static org.hamcrest.CoreMatchers.nullValue;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -35,8 +37,8 @@ import java.util.Properties;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import de.dfki.lt.tools.tokenizer.output.Paragraph;
 import de.dfki.lt.tools.tokenizer.output.Outputter;
+import de.dfki.lt.tools.tokenizer.output.Paragraph;
 
 /**
  * Test class for {@link JTok}.
@@ -264,8 +266,8 @@ public class TestJTok {
     String resLine;
     while ((resLine = resReader.readLine()) != null) {
       String inputLine = inputReader.readLine();
-      assertNotNull(inputLine);
-      assertEquals(resFileName + ": line " + lineCount, resLine, inputLine);
+      assertThat(inputLine, is(not(nullValue())));
+      assertThat(resFileName + ": line " + lineCount, resLine, is(inputLine));
       lineCount++;
     }
   }
