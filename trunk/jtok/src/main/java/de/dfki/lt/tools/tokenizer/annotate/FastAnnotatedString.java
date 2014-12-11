@@ -28,62 +28,44 @@ import java.util.Map;
 import de.dfki.lt.tools.tokenizer.exceptions.ProcessingException;
 
 /**
- * {@link FastAnnotatedString} is a fast implementation of the
- * {@link AnnotatedString} interface. It reserves an array of objects and an
- * array of booleans for each newly introduced annotation key. This provides
- * fast access at the cost of memory. So only introduce new annotation keys if
+ * {@link FastAnnotatedString} is a fast implementation of the {@link AnnotatedString} interface. It
+ * reserves an array of objects and an array of booleans for each newly introduced annotation key.
+ * This provides fast access at the cost of memory. So only introduce new annotation keys if
  * necessary.
  *
  * @author Joerg Steffen, DFKI
  */
 public class FastAnnotatedString implements AnnotatedString {
 
-  /**
-   * Contains the current index within the string.
-   */
+  // current index within the string
   private int index;
 
-  /**
-   * Contains the index position at the end of the string.
-   */
+  // index position at the end of the string
   private int endIndex;
 
-  /**
-   * Contains the content of the string as a character array.
-   */
+  // content of the string as a character array
   private char[] content;
 
-  /**
-   * Maps annotation keys to arrays of objects holding the annotation values.
-   * The object at a certain index in the array is the annotation value of the
-   * corresponding character in the annotated string.
-   */
+  // map of annotation keys to arrays of objects holding the annotation values;
+  // the object at a certain index in the array is the annotation value of the corresponding
+  // character in the annotated string
   private Map<String, Object> annotations;
 
-  /**
-   * Maps annotation keys to arrays of booleans holding annotation borders.
-   */
+  // map of annotation keys to arrays of booleans holding annotation borders
   private Map<String, boolean[]> borders;
 
-  /**
-   * Contains the last annotation key used.
-   */
+  // last annotation key used
   private String currentKey;
 
-  /**
-   * Contains the last value array used.
-   */
+  // last value array used
   private Object[] currentValues;
 
-  /**
-   * Contains the last border array used.
-   */
+  // last border array used
   private boolean[] currentBorders;
 
 
   /**
-   * Creates a new instance of {@link FastAnnotatedString} for the given input
-   * text.
+   * Creates a new instance of {@link FastAnnotatedString} for the given input text.
    *
    * @param inputText
    *          the text to annotate
@@ -125,8 +107,7 @@ public class FastAnnotatedString implements AnnotatedString {
 
     if (0 != this.endIndex) {
       this.index = this.endIndex - 1;
-    }
-    else {
+    } else {
       this.index = this.endIndex;
     }
     return current();
@@ -212,8 +193,7 @@ public class FastAnnotatedString implements AnnotatedString {
   public char setIndex(int position) {
 
     if ((position < 0) || (position > this.endIndex)) {
-      throw new IllegalArgumentException(
-        String.format("Invalid index %d", position));
+      throw new IllegalArgumentException(String.format("Invalid index %d", position));
     }
     this.index = position;
     return current();
@@ -242,8 +222,7 @@ public class FastAnnotatedString implements AnnotatedString {
   public char charAt(int charIndex) {
 
     if ((charIndex < 0) || (charIndex > this.endIndex)) {
-      throw new IllegalArgumentException(
-        String.format("Invalid index %d", charIndex));
+      throw new IllegalArgumentException(String.format("Invalid index %d", charIndex));
     }
     if ((charIndex >= 0) && (charIndex < this.endIndex)) {
       return this.content[charIndex];
@@ -262,7 +241,7 @@ public class FastAnnotatedString implements AnnotatedString {
         || (end > this.endIndex)
         || (start > end)) {
       throw new IllegalArgumentException(
-        String.format("Invalid substring range %d - %d", start, end));
+          String.format("Invalid substring range %d - %d", start, end));
     }
     return new String(this.content, start, end - start);
   }
@@ -279,7 +258,7 @@ public class FastAnnotatedString implements AnnotatedString {
         || (end > this.endIndex)
         || (start >= end)) {
       throw new IllegalArgumentException(
-        String.format("Invalid substring range %d - %d", start, end));
+          String.format("Invalid substring range %d - %d", start, end));
     }
 
     if (!key.equals(this.currentKey)) {
@@ -297,8 +276,7 @@ public class FastAnnotatedString implements AnnotatedString {
         // store arrays
         this.annotations.put(key, this.currentValues);
         this.borders.put(key, this.currentBorders);
-      }
-      else {
+      } else {
         this.currentValues = (Object[])probe;
         this.currentBorders = this.borders.get(key);
         this.currentKey = key;
@@ -310,8 +288,7 @@ public class FastAnnotatedString implements AnnotatedString {
       this.currentValues[i] = value;
       this.currentBorders[i] = false;
     }
-    // set border for current annotation and the implicit next
-    // annotation (if there is one)
+    // set border for current annotation and the implicit next annotation (if there is one)
     this.currentBorders[start] = true;
     if (end < this.endIndex) {
       this.currentBorders[end] = true;
@@ -333,8 +310,7 @@ public class FastAnnotatedString implements AnnotatedString {
           this.currentKey = key;
           this.currentValues = (Object[])probe;
           this.currentBorders = this.borders.get(key);
-        }
-        else {
+        } else {
           return null;
         }
       }
@@ -360,8 +336,7 @@ public class FastAnnotatedString implements AnnotatedString {
         this.currentKey = key;
         this.currentValues = (Object[])this.annotations.get(key);
         this.currentBorders = (boolean[])probe;
-      }
-      else {
+      } else {
         return 0;
       }
     }
@@ -388,8 +363,7 @@ public class FastAnnotatedString implements AnnotatedString {
         this.currentKey = key;
         this.currentValues = (Object[])this.annotations.get(key);
         this.currentBorders = (boolean[])probe;
-      }
-      else {
+      } else {
         return this.endIndex;
       }
     }
@@ -416,8 +390,7 @@ public class FastAnnotatedString implements AnnotatedString {
         this.currentKey = key;
         this.currentValues = (Object[])probe;
         this.currentBorders = this.borders.get(key);
-      }
-      else {
+      } else {
         return this.endIndex;
       }
     }
@@ -454,9 +427,9 @@ public class FastAnnotatedString implements AnnotatedString {
       int endAnno = this.getRunLimit(key);
       if (null != getAnnotation(key)) {
         result.append(substring(this.index, endAnno) + "\t"
-          + this.index + "-" + endAnno + "\t"
-          + getAnnotation(key)
-          + System.getProperty("line.separator"));
+            + this.index + "-" + endAnno + "\t"
+            + getAnnotation(key)
+            + System.getProperty("line.separator"));
       }
       this.index = endAnno;
     }

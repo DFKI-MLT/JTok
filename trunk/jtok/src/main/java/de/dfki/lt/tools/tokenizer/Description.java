@@ -49,95 +49,65 @@ import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 import de.dfki.lt.tools.tokenizer.regexp.RegExpFactory;
 
 /**
- * Abstract class that provides common methods to manage the content of
- * description files.
+ * Abstract class that provides common methods to manage the content of description files.
  *
  * @author Joerg Steffen, DFKI
  */
 public abstract class Description {
 
-  /**
-   * Name of the element with the definitions in the description files.
-   */
+  /** name of the element with the definitions in the description files */
   protected static final String DEFS = "DEFINITIONS";
 
-  /**
-   * Attribute of a definition element that contains the regular expression.
-   */
+  /** attribute of a definition element that contains the regular expression */
   protected static final String DEF_REGEXP = "regexp";
 
-  /**
-   * Attribute of a definition or list element that contains the class name.
-   */
+  /** attribute of a definition or list element that contains the class name */
   protected static final String DEF_CLASS = "class";
 
-  /**
-   * Name of the element with the lists in the description files.
-   */
+  /** name of the element with the lists in the description files */
   protected static final String LISTS = "LISTS";
 
-  /**
-   * Attribute of a list element that point to the list file.
-   */
+  /** attribute of a list element that point to the list file */
   protected static final String LIST_FILE = "file";
 
-  /**
-   * Attribute of a list element that contains the encoding of the list file.
-   */
+  /** attribute of a list element that contains the encoding of the list file */
   protected static final String LIST_ENCODING = "encoding";
 
-  /**
-   * Name of the element with the rules in the description files.
-   */
+  /** name of the element with the rules in the description files */
   protected static final String RULES = "RULES";
 
-  /**
-   * Factory for creating regular expressions.
-   */
+  /** factory for creating regular expressions */
   protected static final RegExpFactory FACTORY = new DkBricsRegExpFactory();
 
-  /**
-   * Single line in descriptions that marks the start of the lists section.
-   */
+  /** single line in descriptions that marks the start of the lists section */
   protected static final String LISTS_MARKER = "LISTS:";
 
-  /**
-   * Single line in descriptions that marks the start of the definitions
-   * section.
-   */
+  /** single line in descriptions that marks the start of the definitions section */
   protected static final String DEFS_MARKER = "DEFINITIONS:";
 
-  /**
-   * Single line in descriptions that marks the start of the rules section.
-   */
+  /** single line in descriptions that marks the start of the rules section */
   protected static final String RULES_MARKER = "RULES:";
 
-  /**
-   * Regular expression for matching references used in regular expressions of
-   * config files.
-   */
-  private static final RegExp REF_MATCHER =
-    FACTORY.createRegExp("\\<[A-Za-z0-9_]+\\>");
+
+  // regular expression for matching references used in regular expressions of config files
+  private static final RegExp REF_MATCHER = FACTORY.createRegExp("\\<[A-Za-z0-9_]+\\>");
 
 
   /**
-   * Maps a class name to a regular expression that matches all tokens of this
-   * class. The regular expression is build as a disjunction of the regular
-   * expressions used in the definitions. If a rule matches expressions from
-   * more than one class, this is used to identify the class.
+   * Maps a class name to a regular expression that matches all tokens of this class. The regular
+   * expression is build as a disjunction of the regular expressions used in the definitions. If a
+   * rule matches expressions from more than one class, this is used to identify the class.
    */
   protected Map<String, RegExp> definitionsMap;
 
   /**
-   * Maps the rule names to regular expressions that match the tokens as
-   * described by the rule.
+   * Maps the rule names to regular expressions that match the tokens as described by the rule.
    */
   protected Map<String, RegExp> rulesMap;
 
   /**
-   * Maps regular expressions of rules to class names of the matched expression.
-   * This is used for rules that only match expressions that all have the same
-   * class.
+   * Maps regular expressions of rules to class names of the matched expression. This is used for
+   * rules that only match expressions that all have the same class.
    */
   protected Map<RegExp, String> regExpMap;
 
@@ -148,8 +118,6 @@ public abstract class Description {
 
 
   /**
-   * Returns the definitions map.
-   *
    * @return the definitions map
    */
   protected Map<String, RegExp> getDefinitionsMap() {
@@ -159,10 +127,8 @@ public abstract class Description {
 
 
   /**
-   * Sets the definitions map to the given parameter.
-   *
    * @param definitionsMap
-   *          a definitions map
+   *          the definitions map to set
    */
   protected void setDefinitionsMap(Map<String, RegExp> definitionsMap) {
 
@@ -171,8 +137,6 @@ public abstract class Description {
 
 
   /**
-   * Returns the rules map.
-   *
    * @return the rules map
    */
   protected Map<String, RegExp> getRulesMap() {
@@ -182,10 +146,8 @@ public abstract class Description {
 
 
   /**
-   * Sets the rules map to the given parameter.
-   *
    * @param rulesMap
-   *          a rules map
+   *          the rules map to set
    */
   protected void setRulesMap(Map<String, RegExp> rulesMap) {
 
@@ -194,8 +156,6 @@ public abstract class Description {
 
 
   /**
-   * Returns the regular expressions map.
-   *
    * @return the regular expressions map
    */
   protected Map<RegExp, String> getRegExpMap() {
@@ -205,10 +165,8 @@ public abstract class Description {
 
 
   /**
-   * Sets the regular expressions map to the given parameter.
-   *
    * @param regExpMap
-   *          a regular expressions map
+   *          the regular expressions map to set
    */
   protected void setRegExpMap(Map<RegExp, String> regExpMap) {
 
@@ -217,8 +175,6 @@ public abstract class Description {
 
 
   /**
-   * Returns the class members map.
-   *
    * @return the class members map
    */
   protected Map<String, Set<String>> getClassMembersMap() {
@@ -228,10 +184,8 @@ public abstract class Description {
 
 
   /**
-   * Sets the class members map to the given parameter.
-   *
    * @param classMembersMap
-   *          a class members map
+   *          the class members map to set
    */
   protected void setClassMembersMap(Map<String, Set<String>> classMembersMap) {
 
@@ -240,15 +194,14 @@ public abstract class Description {
 
 
   /**
-   * Returns the first child element of the given element with the given name.
-   * If no such child exists, returns {@code null}.
+   * Returns the first child element of the given element with the given name. If no such child
+   * exists, returns {@code null}.
    *
    * @param ele
    *          the parent element
    * @param childName
    *          the child name
-   * @return the first child element with the specified name or {@code null} if
-   *         no such child exists
+   * @return the first child element with the specified name or {@code null} if no such child exists
    */
   protected Element getChild(Element ele, String childName) {
 
@@ -265,8 +218,7 @@ public abstract class Description {
 
 
   /**
-   * Reads the macro configuration from the given path and adds it to the given
-   * map.
+   * Reads the macro configuration from the given path and adds it to the given map.
    *
    * @param macroPath
    *          path to the config file
@@ -278,16 +230,16 @@ public abstract class Description {
    * @throws InitializationException
    *           if configuration fails
    */
-  protected static Map<String, String> loadMacros(
-    Path macroPath, Map<String, String> macroMap) throws IOException {
+  protected static Map<String, String> loadMacros(Path macroPath, Map<String, String> macroMap)
+      throws IOException {
 
     // read config file
     BufferedReader in = null;
     try {
       in = new BufferedReader(
-        new InputStreamReader(
-          FileTools.openResourceFileAsStream(macroPath.toString()),
-          "utf-8"));
+          new InputStreamReader(
+              FileTools.openResourceFileAsStream(macroPath.toString()),
+              "utf-8"));
     } catch (FileNotFoundException fne) {
       return macroMap;
     }
@@ -300,8 +252,7 @@ public abstract class Description {
       int sep = line.indexOf(":");
       if (sep == -1) {
         throw new InitializationException(
-          String.format(
-            "missing separator in macros configuration line %s", line));
+            String.format("missing separator in macros configuration line %s", line));
       }
       String macroName = line.substring(0, sep).trim();
       String regExpString = line.substring(sep + 1).trim();
@@ -317,8 +268,8 @@ public abstract class Description {
 
 
   /**
-   * Reads from the given reader until the lists section starts.
-   * Immediately returns if the reader is {@code null}.
+   * Reads from the given reader until the lists section starts. Immediately returns if the reader
+   * is {@code null}.
    *
    * @param in
    *          the reader
@@ -346,8 +297,8 @@ public abstract class Description {
 
 
   /**
-   * Reads from the given reader until the definitions section starts.
-   * Immediately returns if the reader is {@code null}.
+   * Reads from the given reader until the definitions section starts. Immediately returns if the
+   * reader is {@code null}.
    *
    * @param in
    *          the reader
@@ -375,9 +326,9 @@ public abstract class Description {
 
 
   /**
-   * Reads the definitions section from the given reader to map each token class
-   * from the definitions to a regular expression that matches all tokens of
-   * that class. Also extends the given definitions map.<br>
+   * Reads the definitions section from the given reader to map each token class from the
+   * definitions to a regular expression that matches all tokens of that class. Also extends the
+   * given definitions map.<br>
    * Immediately returns if the reader is {@code null}.
    *
    * @param in
@@ -391,8 +342,8 @@ public abstract class Description {
    * @throws InitializationException
    *           if configuration fails
    */
-  protected void loadDefinitions(BufferedReader in,
-      Map<String, String> macrosMap, Map<String, String> defMap)
+  protected void loadDefinitions(
+      BufferedReader in, Map<String, String> macrosMap, Map<String, String> defMap)
       throws IOException {
 
     if (null == in) {
@@ -417,8 +368,7 @@ public abstract class Description {
       int secondSep = line.lastIndexOf(":");
       if (firstSep == -1 || secondSep == firstSep) {
         throw new InitializationException(
-          String.format(
-            "missing separator in definitions section line %s", line));
+            String.format("missing separator in definitions section line %s", line));
       }
       String defName = line.substring(0, firstSep).trim();
       String regExpString = line.substring(firstSep + 1, secondSep).trim();
@@ -429,8 +379,7 @@ public abstract class Description {
 
       // check for empty regular expression
       if (regExpString.length() == 0) {
-        throw new ProcessingException(
-          String.format("empty regular expression in line %s", line));
+        throw new ProcessingException(String.format("empty regular expression in line %s", line));
       }
 
       // extend class matcher:
@@ -440,8 +389,7 @@ public abstract class Description {
       if (null == oldRegExpr) {
         StringBuilder newRegExpr = new StringBuilder(regExpString);
         tempMap.put(className, newRegExpr);
-      }
-      else {
+      } else {
         // extend regular expression with another disjunct
         oldRegExpr.append("|" + regExpString);
       }
@@ -455,23 +403,22 @@ public abstract class Description {
     for (Map.Entry<String, StringBuilder> oneEntry : tempMap.entrySet()) {
       try {
         getDefinitionsMap().put(
-          oneEntry.getKey(),
-          FACTORY.createRegExp(oneEntry.getValue().toString()));
+            oneEntry.getKey(),
+            FACTORY.createRegExp(oneEntry.getValue().toString()));
       } catch (Exception e) {
         throw new ProcessingException(
-          String.format(
-            "cannot create regular expression for %s from %s: %s",
-            oneEntry.getKey(),
-            oneEntry.getValue().toString(),
-            e.getLocalizedMessage()));
+            String.format("cannot create regular expression for %s from %s: %s",
+                oneEntry.getKey(),
+                oneEntry.getValue().toString(),
+                e.getLocalizedMessage()));
       }
     }
   }
 
 
   /**
-   * Reads the rules section from the given reader to map each rules to a
-   * regular expression that matches all tokens of that rule.<br>
+   * Reads the rules section from the given reader to map each rules to a regular expression that
+   * matches all tokens of that rule.<br>
    * Immediately returns if the reader is {@code null}.
    *
    * @param in
@@ -486,8 +433,7 @@ public abstract class Description {
    *           if configuration fails
    */
   protected void loadRules(
-      BufferedReader in, Map<String, String> defsMap,
-      Map<String, String> macrosMap)
+      BufferedReader in, Map<String, String> defsMap, Map<String, String> macrosMap)
       throws IOException {
 
     if (null == in) {
@@ -504,8 +450,7 @@ public abstract class Description {
       int secondSep = line.lastIndexOf(":");
       if (firstSep == -1 || secondSep == firstSep) {
         throw new InitializationException(
-          String.format(
-            "missing separator in rules section line %s", line));
+            String.format("missing separator in rules section line %s", line));
       }
       String ruleName = line.substring(0, firstSep).trim();
       String regExpString = line.substring(firstSep + 1, secondSep).trim();
@@ -528,8 +473,8 @@ public abstract class Description {
 
 
   /**
-   * Reads the lists section from the given reader to map each token class from
-   * the lists to a set that contains all members of that class.<br>
+   * Reads the lists section from the given reader to map each token class from the lists to a set
+   * that contains all members of that class.<br>
    * Immediately returns if the reader is {@code null}.
    *
    * @param in
@@ -561,8 +506,7 @@ public abstract class Description {
       int sep = line.indexOf(":");
       if (sep == -1) {
         throw new InitializationException(
-          String.format(
-            "missing separator in lists section line %s", line));
+            String.format("missing separator in lists section line %s", line));
       }
       String listFileName = line.substring(0, sep).trim();
       String className = line.substring(sep + 1).trim();
@@ -572,8 +516,8 @@ public abstract class Description {
 
 
   /**
-   * Loads the abbreviations list from the given path and stores its items under
-   * the given class name
+   * Loads the abbreviations list from the given path and stores its items under the given class
+   * name
    *
    * @param listPath
    *          the abbreviations list path
@@ -586,10 +530,10 @@ public abstract class Description {
       throws IOException {
 
     BufferedReader in =
-      new BufferedReader(
-        new InputStreamReader(
-          FileTools.openResourceFileAsStream(listPath.toString()),
-          StandardCharsets.UTF_8));
+        new BufferedReader(
+            new InputStreamReader(
+                FileTools.openResourceFileAsStream(listPath.toString()),
+                StandardCharsets.UTF_8));
     // init set where to store the abbreviations
     Set<String> items = new HashSet<String>();
     // iterate over lines of file
@@ -626,8 +570,7 @@ public abstract class Description {
 
 
   /**
-   * Replaces references in the given regular expression string using the given
-   * reference map.
+   * Replaces references in the given regular expression string using the given reference map.
    *
    * @param regExpString
    *          the regular expression string with possible references
@@ -635,8 +578,7 @@ public abstract class Description {
    *          a map of reference name to regular expression strings
    * @return the modified regular expression string
    */
-  private static String replaceReferences(
-      String regExpString, Map<String, String> refMap) {
+  private static String replaceReferences(String regExpString, Map<String, String> refMap) {
 
     String result = regExpString;
 
@@ -644,17 +586,15 @@ public abstract class Description {
 
     for (Match oneRef : references) {
       // get reference name by removing opening and closing angle brackets
-      String refName =
-        oneRef.getImage().substring(1, oneRef.getImage().length() - 1);
+      String refName = oneRef.getImage().substring(1, oneRef.getImage().length() - 1);
       String refRegExpr = refMap.get(refName);
       if (null == refRegExpr) {
         throw new ProcessingException(
-          String.format("unknown reference %s in regular expression %s",
-            refName, regExpString));
+            String.format("unknown reference %s in regular expression %s", refName, regExpString));
       }
       result = result.replaceFirst(
-        oneRef.getImage(),
-        String.format("(%s)", Matcher.quoteReplacement(refRegExpr)));
+          oneRef.getImage(),
+          String.format("(%s)", Matcher.quoteReplacement(refRegExpr)));
     }
 
     return result;

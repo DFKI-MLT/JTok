@@ -22,11 +22,9 @@
 
 package de.dfki.lt.tools.tokenizer.regexp;
 
-import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 
 /**
- * Extends {@link RegExpFactory} for regular expressions of the
- * dk.brics.automaton package.
+ * Extends {@link RegExpFactory} for regular expressions of the dk.brics.automaton package.
  *
  * @author Joerg Steffen, DFKI
  */

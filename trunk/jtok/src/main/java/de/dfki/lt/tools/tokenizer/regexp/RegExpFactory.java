@@ -32,8 +32,7 @@ import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 public abstract class RegExpFactory {
 
   /**
-   * Creates a regular expression object from the given regular expression
-   * string.
+   * Creates a regular expression object from the given regular expression string.
    *
    * @param regExpString
    *          a regular expression string

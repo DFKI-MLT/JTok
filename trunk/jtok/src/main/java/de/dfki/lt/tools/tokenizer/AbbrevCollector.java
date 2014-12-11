@@ -43,33 +43,27 @@ import org.slf4j.LoggerFactory;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 
 /**
- * Provides methods to collect abbreviations from corpora containing a single
- * sentence per line.
+ * Provides methods to collect abbreviations from corpora containing a single sentence per line.
  *
  * @author Joerg Steffen, DFKI
  */
 public final class AbbrevCollector {
 
-  /**
-   * Contains the logger.
-   */
-  private static final Logger LOG =
-    LoggerFactory.getLogger(AbbrevCollector.class);
+  // the logger
+  private static final Logger logger = LoggerFactory.getLogger(AbbrevCollector.class);
 
 
-  /**
-   * Creates a new instance of {@link AbbrevCollector}. Not to be used.
-   */
+  // would create a new instance of {@link AbbrevCollector}; not to be used
   private AbbrevCollector() {
+
     // private constructor to enforce noninstantiability
   }
 
 
   /**
-   * Scans the given directory recursively for files with the given suffix. It
-   * is assumed that each of these files contains one sentence per line. It
-   * extracts all abbreviations from these files and stores them under the given
-   * result file name using UTF-8 encoding.
+   * Scans the given directory recursively for files with the given suffix. It is assumed that each
+   * of these files contains one sentence per line. It extracts all abbreviations from these files
+   * and stores them under the given result file name using UTF-8 encoding.
    *
    * @param dir
    *          the directory to scan
@@ -85,8 +79,7 @@ public final class AbbrevCollector {
    *           if there is a problem when reading or writing the files
    */
   public static void collect(
-      String dir, String suffix, String encoding,
-      String resultFileName, String lang)
+      String dir, String suffix, String encoding, String resultFileName, String lang)
       throws IOException {
 
     // init tokenizer and get the relevant language resource
@@ -109,18 +102,17 @@ public final class AbbrevCollector {
     Set<String> abbrevs = new HashSet<String>();
 
     // get all training files
-    List<String> trainingFiles =
-      FileTools.getFilesFromDir(dir, suffix);
+    List<String> trainingFiles = FileTools.getFilesFromDir(dir, suffix);
 
     // iterate over corpus files
     for (String oneFileName : trainingFiles) {
-      LOG.info("processing " + oneFileName + " ...");
+      logger.info("processing " + oneFileName + " ...");
 
       // init reader
       BufferedReader in =
-        new BufferedReader(
-          new InputStreamReader(
-            new FileInputStream(oneFileName), encoding));
+          new BufferedReader(
+              new InputStreamReader(
+                  new FileInputStream(oneFileName), encoding));
       String sent;
       // read lines from file
       while ((sent = in.readLine()) != null) {
@@ -148,8 +140,7 @@ public final class AbbrevCollector {
 
             // check with lists
             boolean found = false;
-            for (Map.Entry<String, Set<String>> oneEntry
-                : abbrevLists.entrySet()) {
+            for (Map.Entry<String, Set<String>> oneEntry : abbrevLists.entrySet()) {
               Set<String> oneList = oneEntry.getValue();
               if (oneList.contains(oneTok)) {
                 found = true;
@@ -165,8 +156,7 @@ public final class AbbrevCollector {
             // the terms in the list and remove the punctuation
             char firstChar = oneTok.charAt(0);
             firstChar = Character.toUpperCase(firstChar);
-            String tempTok =
-              firstChar + oneTok.substring(1, oneTok.length() - 1);
+            String tempTok = firstChar + oneTok.substring(1, oneTok.length() - 1);
             if (nonCapTerms.contains(tempTok)) {
               continue;
             }
@@ -187,9 +177,9 @@ public final class AbbrevCollector {
     PrintWriter out = null;
     try {
       out = new PrintWriter(
-        new BufferedWriter(
-          new OutputStreamWriter(
-            new FileOutputStream(resultFileName), "utf-8")));
+          new BufferedWriter(
+              new OutputStreamWriter(
+                  new FileOutputStream(resultFileName), "utf-8")));
       for (String oneAbbrev : sortedAbbrevs) {
         out.println(oneAbbrev);
       }

@@ -32,19 +32,13 @@ import java.util.List;
  */
 public class Paragraph {
 
-  /**
-   * Contains the start index of the paragraph.
-   */
+  // start index of the paragraph
   private int startIndex;
 
-  /**
-   * Contains the end index of the paragraph.
-   */
+  // the end index of the paragraph
   private int endIndex;
 
-  /**
-   * Contains a list with the text units of the paragraph.
-   */
+  // list with the text units of the paragraph
   private List<TextUnit> textUnits;
 
 
@@ -60,8 +54,7 @@ public class Paragraph {
 
 
   /**
-   * Creates a new instance of {@link Paragraph} that contains the given text
-   * units.
+   * Creates a new instance of {@link Paragraph} that contains the given text units.
    *
    * @param textUnits
    *          a list of text units
@@ -73,8 +66,6 @@ public class Paragraph {
 
 
   /**
-   * Returns the start index of the paragraph.
-   *
    * @return the start index
    */
   public int getStartIndex() {
@@ -84,10 +75,8 @@ public class Paragraph {
 
 
   /**
-   * Sets the start index of the paragraph to the given parameter.
-   *
    * @param startIndex
-   *          the start index
+   *          the start index to set
    */
   public void setStartIndex(int startIndex) {
 
@@ -96,8 +85,6 @@ public class Paragraph {
 
 
   /**
-   * Returns the end index of the paragraph.
-   *
    * @return the end index
    */
   public int getEndIndex() {
@@ -107,10 +94,8 @@ public class Paragraph {
 
 
   /**
-   * Sets the end index of the paragraph to the given parameter.
-   *
    * @param endIndex
-   *          the end index
+   *          the end index to set
    */
   public void setEndIndex(int endIndex) {
 
@@ -119,8 +104,6 @@ public class Paragraph {
 
 
   /**
-   * Returns the list with the text units of the paragraph.
-   *
    * @return the list with the text units
    */
   public List<TextUnit> getTextUnits() {
@@ -130,9 +113,9 @@ public class Paragraph {
 
 
   /**
-   * Sets the text units of the paragraph to the given parameter. As a side
-   * effect, it adjusts the start index and end index of the paragraph to the
-   * start index of the first text unit and the end index of the last text unit.
+   * Sets the text units of the paragraph to the given parameter. As a side effect, it adjusts the
+   * start index and end index of the paragraph to the start index of the first text unit and the
+   * end index of the last text unit.
    *
    * @param textUnits
    *          a list of text units
@@ -142,10 +125,8 @@ public class Paragraph {
     this.textUnits = textUnits;
     if (textUnits.size() > 0) {
       this.setStartIndex(textUnits.get(0).getStartIndex());
-      this.setEndIndex(textUnits.get(textUnits.size() - 1)
-          .getEndIndex());
-    }
-    else {
+      this.setEndIndex(textUnits.get(textUnits.size() - 1).getEndIndex());
+    } else {
       this.setStartIndex(0);
       this.setEndIndex(0);
     }
@@ -153,21 +134,19 @@ public class Paragraph {
 
 
   /**
-   * Returns a string representation of the paragraph.
-   *
-   * @return the string representation
+   * {@inheritDoc}
    */
   @Override
   public String toString() {
 
     StringBuilder result = new StringBuilder(
-      String.format("Paragraph Start: %d%nParagraph End: %d%n",
-        this.getStartIndex(),
-        this.getEndIndex()));
+        String.format("Paragraph Start: %d%nParagraph End: %d%n",
+            this.getStartIndex(),
+            this.getEndIndex()));
 
     // add text units
-    for (TextUnit oneTU : this.getTextUnits()) {
-      result.append(oneTU.toString());
+    for (TextUnit oneTu : this.getTextUnits()) {
+      result.append(oneTu.toString());
     }
 
     return result.toString();

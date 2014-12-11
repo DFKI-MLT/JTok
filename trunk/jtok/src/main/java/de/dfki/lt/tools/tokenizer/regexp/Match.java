@@ -24,32 +24,25 @@ package de.dfki.lt.tools.tokenizer.regexp;
 
 /**
  * Holds the result of matching an input string with a regular expression.
- * 
+ *
  * @author Joerg Steffen, DFKI
  */
 public class Match {
 
-  /**
-   * Contains the index within the input text where the match in its entirety
-   * began.
-   */
+  // index within the input text where the match in its entirety began
   private int startIndex;
 
-  /**
-   * Contains the index within the input string where the match in its entirety
-   * ends. The return value is the next position after the end of the string.
-   */
+  // index within the input string where the match in its entirety ends;
+  // the return value is the next position after the end of the string
   private int endIndex;
 
-  /**
-   * Contains the string matching the regular expression pattern.
-   */
+  // string matching the regular expression pattern
   private String image;
 
 
   /**
    * Creates a new instance of {@link Match} using the given parameters.
-   * 
+   *
    * @param startIndex
    *          the start index
    * @param endIndex
@@ -66,10 +59,7 @@ public class Match {
 
 
   /**
-   * Returns the index within the input text where the match in its entirety
-   * began.
-   * 
-   * @return the start index
+   * @return the index within the input text where the match in its entirety began
    */
   public int getStartIndex() {
 
@@ -78,10 +68,8 @@ public class Match {
 
 
   /**
-   * Returns the index within the input string where the match in its entirety
-   * ends. The return value is the next position after the end of the string.
-   * 
-   * @return the end index
+   * @return the index within the input string where the match in its entirety ends; the return
+   * value is the next position after the end of the string
    */
   public int getEndIndex() {
 
@@ -90,23 +78,21 @@ public class Match {
 
 
   /**
-   * Returns the string matching the regular expression pattern.
-   * 
-   * @return the matching string
+   * @return the string matching the regular expression pattern
    */
   public String getImage() {
 
     return this.image;
   }
-  
-  
+
+
   /**
    * {@inheritDoc}
    */
   @Override
   public String toString() {
-    
+
     return String.format(
-      "%d - %d: %s", this.startIndex, this.endIndex, this.image);
+        "%d - %d: %s", this.startIndex, this.endIndex, this.image);
   }
 }

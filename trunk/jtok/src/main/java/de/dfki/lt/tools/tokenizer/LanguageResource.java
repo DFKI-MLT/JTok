@@ -45,74 +45,51 @@ import de.dfki.lt.tools.tokenizer.exceptions.ProcessingException;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 
 /**
- * Manages the language-specific information needed by the tokenizer to process
- * a document of that language.
+ * Manages the language-specific information needed by the tokenizer to process a document of that
+ * language.
  *
  * @author Joerg Steffen, DFKI
  */
 public class LanguageResource {
 
-  /**
-   * Contains the name suffix of the resource file with the classes hierarchy.
-   */
+  // name suffix of the resource file with the classes hierarchy
   private static final String CLASSES_HIERARCHY = "_class_hierarchy.xml";
 
-  /**
-   * Contains the name suffix of the config file with the macros.
-   */
+  // name suffix of the config file with the macros
   private static final String MACRO_CFG = "_macros.cfg";
 
 
-  /**
-   * Contains the name of the language for which this class contains the
-   * resources.
-   */
+  // name of the language for which this class contains the resources
   private String language;
 
-  /**
-   * Contains root element of the classes hierarchy.
-   */
+  // root element of the classes hierarchy
   private Element classesRoot;
 
-  /**
-   * Contains the name of the root element of the classes hierarchy.
-   */
+  // name of the root element of the classes hierarchy
   private String classesRootName;
 
-  /**
-   * Contains a map from class names to a lists of class names that are
-   * ancestors of this class.
-   */
+  // map from class names to a lists of class names that are ancestors of this class
   private Map<String, List<String>> ancestorsMap;
 
-  /**
-   * Contains the punctuation description.
-   */
+  // punctuation description
   private PunctDescription punctDescr;
 
-  /**
-   * Contains the clitics description.
-   */
+  // clitics description
   private CliticsDescription clitDescr;
 
-  /**
-   * Contains the abbreviations description.
-   */
+  // abbreviations description
   private AbbrevDescription abbrevDescr;
 
-  /**
-   * Contains the token classes description.
-   */
+  // token classes description
   private TokenClassesDescription classesDescr;
 
 
   /**
-   * Creates a new instance of {@link LanguageResource} for teh given language
-   * using the resource description files in the given resource directory.
+   * Creates a new instance of {@link LanguageResource} for the given language using the resource
+   * description files in the given resource directory.
    *
    * @param lang
-   *          the name of the language for which this class contains the
-   *          resources
+   *          the name of the language for which this class contains the resources
    * @param resourceDir
    *          the name of the resource directory
    * @exception InitializationException
@@ -134,8 +111,8 @@ public class LanguageResource {
       DocumentBuilder builder = factory.newDocumentBuilder();
       // load classes hierarchy
       Document doc = builder.parse(
-        FileTools.openResourceFileAsStream(
-          Paths.get(resourceDir).resolve(lang + CLASSES_HIERARCHY).toString()));
+          FileTools.openResourceFileAsStream(
+              Paths.get(resourceDir).resolve(lang + CLASSES_HIERARCHY).toString()));
       // set hierarchy root
       this.setClassesRoot(doc.getDocumentElement());
       // map class names to dom elements
@@ -144,25 +121,19 @@ public class LanguageResource {
 
       // load macros
       Map<String, String> macrosMap = new HashMap<>();
-      Description.loadMacros(
-        Paths.get(resourceDir).resolve(lang + MACRO_CFG),
-        macrosMap);
+      Description.loadMacros(Paths.get(resourceDir).resolve(lang + MACRO_CFG), macrosMap);
 
       // load punctuation description
-      this.setPunctDescr(
-        new PunctDescription(resourceDir, lang, macrosMap));
+      this.setPunctDescr(new PunctDescription(resourceDir, lang, macrosMap));
 
       // load clitics description
-      this.setClitDescr(
-        new CliticsDescription(resourceDir, lang, macrosMap));
+      this.setClitDescr(new CliticsDescription(resourceDir, lang, macrosMap));
 
       // load abbreviation description
-      this.setAbbrevDescr(
-        new AbbrevDescription(resourceDir, lang, macrosMap));
+      this.setAbbrevDescr(new AbbrevDescription(resourceDir, lang, macrosMap));
 
       // load token classes description document
-      this.setClassseDescr(
-        new TokenClassesDescription(resourceDir, lang, macrosMap));
+      this.setClassseDescr(new TokenClassesDescription(resourceDir, lang, macrosMap));
 
     } catch (SAXException spe) {
       throw new InitializationException(spe.getLocalizedMessage(), spe);
@@ -175,8 +146,6 @@ public class LanguageResource {
 
 
   /**
-   * Returns the language of this language resource.
-   *
    * @return the language
    */
   public String getLanguage() {
@@ -186,8 +155,6 @@ public class LanguageResource {
 
 
   /**
-   * Returns the classes root element.
-   *
    * @return the classes root element
    */
   Element getClassesRoot() {
@@ -197,10 +164,8 @@ public class LanguageResource {
 
 
   /**
-   * Sets the the classes root element to the given parameter.
-   *
    * @param classesRoot
-   *          the classes root element
+   *          the classes root element to set
    */
   void setClassesRoot(Element classesRoot) {
 
@@ -210,8 +175,6 @@ public class LanguageResource {
 
 
   /**
-   * Returns the ancestor map.
-   *
    * @return the ancestor map
    */
   Map<String, List<String>> getAncestorsMap() {
@@ -221,10 +184,8 @@ public class LanguageResource {
 
 
   /**
-   * Sets the the ancestor map to the given parameter.
-   *
    * @param ancestorMap
-   *          the ancestor map
+   *          the ancestor map to set
    */
   void setAncestorsMap(Map<String, List<String>> ancestorMap) {
 
@@ -233,8 +194,6 @@ public class LanguageResource {
 
 
   /**
-   * Returns the punctuation description.
-   *
    * @return the punctuation description
    */
   PunctDescription getPunctDescr() {
@@ -244,10 +203,8 @@ public class LanguageResource {
 
 
   /**
-   * Sets the punctuation description to the given parameter.
-   *
    * @param punctDescr
-   *          a punctuation description
+   *          the punctuation description to set
    */
   void setPunctDescr(PunctDescription punctDescr) {
 
@@ -256,8 +213,6 @@ public class LanguageResource {
 
 
   /**
-   * Returns the clitics description.
-   *
    * @return the clitics description
    */
   CliticsDescription getClitDescr() {
@@ -267,10 +222,8 @@ public class LanguageResource {
 
 
   /**
-   * Sets the clitics description to the given parameter.
-   *
    * @param clitDescr
-   *          a clitics description
+   *          the clitics description to set
    */
   void setClitDescr(CliticsDescription clitDescr) {
 
@@ -279,8 +232,6 @@ public class LanguageResource {
 
 
   /**
-   * Returns the abbreviations description.
-   *
    * @return the abbreviations description
    */
   AbbrevDescription getAbbrevDescr() {
@@ -290,10 +241,8 @@ public class LanguageResource {
 
 
   /**
-   * Sets the abbreviations description to the given parameter.
-   *
    * @param abbrevDescr
-   *          a abbreviations description
+   *          the abbreviations description to set
    */
   void setAbbrevDescr(AbbrevDescription abbrevDescr) {
 
@@ -302,8 +251,6 @@ public class LanguageResource {
 
 
   /**
-   * Returns the token classes description.
-   *
    * @return the token classes description
    */
   TokenClassesDescription getClassesDescr() {
@@ -313,10 +260,8 @@ public class LanguageResource {
 
 
   /**
-   * Sets the token classes description to the given parameter.
-   *
    * @param classesDescr
-   *          a token classes description
+   *          the token classes description to set
    */
   void setClassseDescr(TokenClassesDescription classesDescr) {
 
@@ -325,8 +270,8 @@ public class LanguageResource {
 
 
   /**
-   * Iterates recursively over a list of class elements and adds each elements
-   * ancestors to ancestors map using the name of the element as key.
+   * Iterates recursively over a list of class elements and adds each elements ancestors to
+   * ancestors map using the name of the element as key.
    *
    * @param elementList
    *          node list of class elements
@@ -373,8 +318,8 @@ public class LanguageResource {
 
 
   /**
-   * Checks if the first given class is ancestor in the class hierarchy of the
-   * second given class> or equals the second given class.
+   * Checks if the first given class is ancestor in the class hierarchy of the second given class
+   * or equals the second given class.
    *
    * @param class1
    *          the first class name
@@ -401,70 +346,51 @@ public class LanguageResource {
 
 
   /**
-   * Returns the matcher for all punctuation from the punctuation description.
-   *
-   * @return a regular expression
+   * @return the matcher for all punctuation from the punctuation description
    */
   RegExp getAllPunctMatcher() {
 
-    return this.getPunctDescr().getRulesMap()
-      .get(PunctDescription.ALL_RULE);
+    return this.getPunctDescr().getRulesMap().get(PunctDescription.ALL_RULE);
   }
 
 
   /**
-   * Returns the matcher for internal punctuation from the punctuation
-   * description.
-   *
-   * @return a regular expression
+   * @return the matcher for internal punctuation from the punctuation description
    */
   RegExp getInternalMatcher() {
 
-    return this.getPunctDescr().getRulesMap()
-      .get(PunctDescription.INTERNAL_RULE);
+    return this.getPunctDescr().getRulesMap().get(PunctDescription.INTERNAL_RULE);
   }
 
 
   /**
-   * Returns the matcher for sentence internal punctuation from the punctuation
-   * description.
-   *
-   * @return a regular expression
+   * @return the matcher for sentence internal punctuation from the punctuation description
    */
   RegExp getInternalTuMatcher() {
 
-    return this.getPunctDescr().getRulesMap()
-      .get(PunctDescription.INTERNAL_TU_RULE);
+    return this.getPunctDescr().getRulesMap().get(PunctDescription.INTERNAL_TU_RULE);
   }
 
 
   /**
-   * Returns the matcher for proclitics from the clitics description.
-   *
-   * @return a regular expression
+   * @return the matcher for proclitics from the clitics description
    */
   RegExp getProcliticsMatcher() {
 
-    return this.getClitDescr().getRulesMap()
-      .get(CliticsDescription.PROCLITIC_RULE);
+    return this.getClitDescr().getRulesMap().get(CliticsDescription.PROCLITIC_RULE);
   }
 
 
   /**
-   * Returns the matcher for enclitics from the clitics description.
-   *
-   * @return a regular expression
+   * @return the matcher for enclitics from the clitics description
    */
   RegExp getEncliticsMatcher() {
 
-    return this.getClitDescr().getRulesMap()
-      .get(CliticsDescription.ENCLITIC_RULE);
+    return this.getClitDescr().getRulesMap().get(CliticsDescription.ENCLITIC_RULE);
   }
 
 
   /**
-   * Returns the map with the abbreviation lists.
-   *
    * @return the map with the abbreviation lists
    */
   Map<String, Set<String>> getAbbrevLists() {
@@ -474,23 +400,17 @@ public class LanguageResource {
 
 
   /**
-   * Returns the matcher for the all abbreviations from the abbreviations
-   * description.
-   *
-   * @return a regular expression
+   * @return the matcher for the all abbreviations from the abbreviations description
    */
   RegExp getAllAbbrevMatcher() {
 
-    return this.getAbbrevDescr().getRulesMap()
-      .get(AbbrevDescription.ALL_RULE);
+    return this.getAbbrevDescr().getRulesMap().get(AbbrevDescription.ALL_RULE);
   }
 
 
   /**
-   * Returns the set of the most common terms that only start with a capital
-   * letter when they are at the beginning of a sentence.
-   *
-   * @return a set with the terms
+   * @return the set of the most common terms that only start with a capital letter when they are at
+   * the beginning of a sentence
    */
   Set<String> getNonCapTerms() {
 
@@ -499,14 +419,10 @@ public class LanguageResource {
 
 
   /**
-   * Returns the matcher for all token classes from the token classes
-   * description.
-   *
-   * @return a regular expression
+   * @return the matcher for all token classes from the token classes description
    */
   RegExp getAllClassesMatcher() {
 
-    return this.getClassesDescr().getRulesMap()
-      .get(TokenClassesDescription.ALL_RULE);
+    return this.getClassesDescr().getRulesMap().get(TokenClassesDescription.ALL_RULE);
   }
 }

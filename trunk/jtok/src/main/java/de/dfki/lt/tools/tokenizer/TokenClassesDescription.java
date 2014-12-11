@@ -37,24 +37,18 @@ import de.dfki.lt.tools.tokenizer.regexp.RegExp;
  *
  * @author Joerg Steffen, DFKI
  */
-public class TokenClassesDescription
-    extends Description {
+public class TokenClassesDescription extends Description {
 
-  /**
-   * Name of the all classes rule.
-   */
+  /** name of the all classes rule */
   protected static final String ALL_RULE = "ALL_CLASSES_RULE";
 
-  /**
-   * Contains the name suffix of the resource file with the token classes
-   * description.
-   */
+
+  // name suffix of the resource file with the token classes description
   private static final String CLASS_DESCR = "_classes.cfg";
 
 
   /**
-   * Creates a new instance of {@link TokenClassesDescription} for the given
-   * language.
+   * Creates a new instance of {@link TokenClassesDescription} for the given language.
    *
    * @param resourceDir
    *          path to the folder with the language resources
@@ -65,20 +59,18 @@ public class TokenClassesDescription
    * @throws IOException
    *           if there is an error when reading the configuration
    */
-  public TokenClassesDescription(
-      String resourceDir, String lang, Map<String, String> macrosMap)
+  public TokenClassesDescription(String resourceDir, String lang, Map<String, String> macrosMap)
       throws IOException {
 
     super.setDefinitionsMap(new HashMap<String, RegExp>());
     super.setRulesMap(new HashMap<String, RegExp>());
     super.setRegExpMap(new HashMap<RegExp, String>());
 
-    Path tokClassesDescrPath =
-      Paths.get(resourceDir).resolve(lang + CLASS_DESCR);
+    Path tokClassesDescrPath = Paths.get(resourceDir).resolve(lang + CLASS_DESCR);
     BufferedReader in = new BufferedReader(
-      new InputStreamReader(
-        FileTools.openResourceFileAsStream(tokClassesDescrPath.toString()),
-        "utf-8"));
+        new InputStreamReader(
+            FileTools.openResourceFileAsStream(tokClassesDescrPath.toString()),
+            "utf-8"));
 
     // read config file to definitions start
     readToDefinitions(in);

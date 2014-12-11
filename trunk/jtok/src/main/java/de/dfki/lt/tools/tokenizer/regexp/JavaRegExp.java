@@ -31,23 +31,18 @@ import java.util.regex.PatternSyntaxException;
 import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 
 /**
- * Implements the {@link RegExp} interface for regular expressions of the
- * java.util.regex package.
+ * Implements the {@link RegExp} interface for regular expressions of the java.util.regex package.
  *
  * @author Joerg Steffen, DFKI
  */
 public class JavaRegExp implements RegExp {
 
-  /**
-   * Contains an instance of a regular expression in the java.util.regex
-   * package.
-   */
+  // instance of a regular expression in the java.util.regex package
   private Pattern re;
 
 
   /**
-   * Creates a new instance of {@link JavaRegExp} for the given regular
-   * expression string.
+   * Creates a new instance of {@link JavaRegExp} for the given regular expression string.
    *
    * @param regExpString
    *          a regular expression string

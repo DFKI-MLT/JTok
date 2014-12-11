@@ -22,11 +22,9 @@
 
 package de.dfki.lt.tools.tokenizer.regexp;
 
-import de.dfki.lt.tools.tokenizer.exceptions.InitializationException;
 
 /**
- * Extends {@link RegExpFactory} for regular expressions of the java.util.regex
- * package.
+ * Extends {@link RegExpFactory} for regular expressions of the java.util.regex package.
  *
  * @author Joerg Steffen, DFKI
  */

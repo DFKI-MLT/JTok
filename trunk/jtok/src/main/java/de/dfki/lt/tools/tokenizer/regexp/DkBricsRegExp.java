@@ -30,23 +30,19 @@ import dk.brics.automaton.AutomatonMatcher;
 import dk.brics.automaton.RunAutomaton;
 
 /**
- * Implements the {@link RegExp} interface for regular expressions of the
- * dk.brics.automaton package.
+ * Implements the {@link RegExp} interface for regular expressions of the dk.brics.automaton
+ * package.
  *
  * @author Joerg Steffen, DFKI
  */
 public class DkBricsRegExp implements RegExp {
 
-  /**
-   * Contains an instance of a regular expression in the dk.brics.automaton
-   * package.
-   */
+  // instance of a regular expression in the dk.brics.automaton package
   private RunAutomaton re;
 
 
   /**
-   * Creates a new instance of {@link DkBricsRegExp} for the given regular
-   * expression string.
+   * Creates a new instance of {@link DkBricsRegExp} for the given regular expression string.
    *
    * @param regExpString
    *          a regular expression string
@@ -55,8 +51,7 @@ public class DkBricsRegExp implements RegExp {
    */
   public DkBricsRegExp(String regExpString) {
 
-    this.re = new RunAutomaton(
-      new dk.brics.automaton.RegExp(regExpString).toAutomaton(true), true);
+    this.re = new RunAutomaton(new dk.brics.automaton.RegExp(regExpString).toAutomaton(true), true);
   }
 
 

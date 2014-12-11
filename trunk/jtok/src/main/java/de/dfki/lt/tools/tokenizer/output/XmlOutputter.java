@@ -51,82 +51,58 @@ import de.dfki.lt.tools.tokenizer.annotate.AnnotatedString;
 import de.dfki.lt.tools.tokenizer.exceptions.ProcessingException;
 
 /**
- * {@link XMLOutputter} provides static methods that return an XML presentation
- * of an {@link AnnotatedString}.
+ * {@link XmlOutputter} provides static methods that return an XML presentation of an
+ * {@link AnnotatedString}.
  *
  * @author Joerg Steffen, DFKI
  */
-public final class XMLOutputter {
+public final class XmlOutputter {
 
-  /**
-   * Name of XML elements in the result that describe a document.
-   */
+  /** name of XML elements in the result that describe a document */
   public static final String XML_DOCUMENT = "Document";
 
-  /**
-   * Name of XML elements in the result that describe a paragraph.
-   */
+  /** name of XML elements in the result that describe a paragraph */
   public static final String XML_PARAGRAPH = "p";
 
   /**
-   * Name of XML elements in the result that describe a text unit. Text units
-   * are contained in paragraphs.
+   * name of XML elements in the result that describe a text unit; text units are contained in
+   * paragraphs
    */
   public static final String XML_TEXT_UNIT = "tu";
 
-  /**
-   * Name of the XML attribute in {@code XML_TEXT_UNIT} that contains the text
-   * unit id.
-   */
+  /** name of the XML attribute in {@code XML_TEXT_UNIT} that contains the text unit id */
   public static final String ID_ATT = "id";
 
   /**
-   * Name of XML elements in the result that describe a token. Tokens are
-   * contained in text units.
+   * name of XML elements in the result that describe a token; tokens are contained in text units
    */
   public static final String XML_TOKEN = "Token";
 
-  /**
-   * Name of the XML attribute in {@code XML_TOKEN} that contains the token
-   * image.
-   */
+  /** name of the XML attribute in {@code XML_TOKEN} that contains the token image */
   public static final String IMAGE_ATT = "string";
 
   /**
-   * Name of the XML attribute in {@code XML_TOKEN} that contains the Penn
-   * Treebank token image if it is any different than the regular surface
-   * string.
+   * name of the XML attribute in {@code XML_TOKEN} that contains the Penn Treebank token image if
+   * it is any different than the regular surface string
    */
   public static final String PTB_ATT = "ptb";
 
-  /**
-   * Name of the XML attribute in {@code XML_TOKEN} that contains the token
-   * type.
-   */
+  /** name of the XML attribute in {@code XML_TOKEN} that contains the token type */
   public static final String TOK_TYPE_ATT = "type";
 
-  /**
-   * The name of the XML attribute in {@code XML_TOKEN} that contains the token
-   * offset.
-   */
+  /** name of the XML attribute in {@code XML_TOKEN} that contains the token offset */
   public static final String OFFSET_ATT = "offset";
 
-  /**
-   * Name of the XML attribute in {@code XML_TOKEN} that contains the token
-   * length.
-   */
+  /** name of the XML attribute in {@code XML_TOKEN} that contains the token length  */
   public static final String LENGTH_ATT = "length";
 
-  /**
-   * Contains the logger object for logging.
-   */
-  private static final Logger LOG = LoggerFactory.getLogger(XMLOutputter.class);
+  /** the logger */
+  private static final Logger logger = LoggerFactory.getLogger(XmlOutputter.class);
 
 
-  /**
-   * Creates a new instance of {@link XMLOutputter}. Not to be used.
-   */
-  private XMLOutputter() {
+  // would create a new instance of {@link XmlOutputter}; not to be used
+  private XmlOutputter() {
+
     // private constructor to enforce noninstantiability
   }
 
@@ -140,13 +116,12 @@ public final class XMLOutputter {
    * @exception ProcessingException
    *              if an error occurs
    */
-  public static Document createXMLDocument(AnnotatedString input) {
+  public static Document createXmlDocument(AnnotatedString input) {
 
     // create result document
     Document doc = null;
     try {
-      DocumentBuilderFactory factory =
-        DocumentBuilderFactory.newInstance();
+      DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
       DocumentBuilder builder = factory.newDocumentBuilder();
       doc = builder.newDocument();
     } catch (ParserConfigurationException pce) {
@@ -175,12 +150,10 @@ public final class XMLOutputter {
       // check if c belongs to a token
       if (null != input.getAnnotation(JTok.CLASS_ANNO)) {
         // get tag
-        String type =
-          (String)input.getAnnotation(JTok.CLASS_ANNO);
+        String type = (String)input.getAnnotation(JTok.CLASS_ANNO);
         if (null == type) {
           throw new ProcessingException(
-            String.format("undefined class %s",
-              input.getAnnotation(JTok.CLASS_ANNO)));
+              String.format("undefined class %s", input.getAnnotation(JTok.CLASS_ANNO)));
         }
         // create new element
         Element xmlToken = doc.createElement(XML_TOKEN);
@@ -247,19 +220,17 @@ public final class XMLOutputter {
    * @exception ProcessingException
    *              if an error occurs
    */
-  public static void createXMLFile(
+  public static void createXmlFile(
       AnnotatedString input, String encoding, String fileName) {
 
     // tokenize text
-    Document doc = createXMLDocument(input);
+    Document doc = createXmlDocument(input);
 
     try {
       // init writer for result
-      Writer out = new OutputStreamWriter(
-        new FileOutputStream(fileName), encoding);
+      Writer out = new OutputStreamWriter(new FileOutputStream(fileName), encoding);
       // use a transformer for output
-      Transformer transformer =
-        TransformerFactory.newInstance().newTransformer();
+      Transformer transformer = TransformerFactory.newInstance().newTransformer();
       transformer.setOutputProperty(OutputKeys.INDENT, "yes");
       transformer.setOutputProperty(OutputKeys.ENCODING, encoding);
       DOMSource source = new DOMSource(doc);
@@ -283,19 +254,17 @@ public final class XMLOutputter {
    * @exception ProcessingException
    *              if an error occurs
    */
-  public static String createXMLString(AnnotatedString input) {
+  public static String createXmlString(AnnotatedString input) {
 
     // tokenize text
-    Document doc =
-      createXMLDocument(input);
+    Document doc = createXmlDocument(input);
 
     // init output writer for result
     StringWriter out = new StringWriter();
 
     // use a transformer for output
     try {
-      Transformer transformer =
-        TransformerFactory.newInstance().newTransformer();
+      Transformer transformer = TransformerFactory.newInstance().newTransformer();
       transformer.setOutputProperty(OutputKeys.INDENT, "yes");
       DOMSource source = new DOMSource(doc);
       StreamResult result = new StreamResult(out);
@@ -314,9 +283,8 @@ public final class XMLOutputter {
    * <ul>
    * <li>a file name for the document to tokenize
    * <li>the language of the document
-   * <li>an optional encoding to use (default is ISO-8859-1)
+   * <li>an optional encoding to use (default is UTF-8)
    * </ul>
-   * Supported languages are: de, en, it
    *
    * @param args
    *          the arguments
@@ -327,16 +295,15 @@ public final class XMLOutputter {
     if ((args.length != 2)
         && (args.length != 3)) {
       System.out.println(
-        "This method needs two arguments:\n"
-          + "- a file name for the document to tokenize\n"
-          + "- the language of the document\n"
-          + "- an optional encoding to use (default is ISO-8859-1)\n"
-          + "Supported languages are: de, en, it");
+          "This method needs two arguments:\n"
+              + "- a file name for the document to tokenize\n"
+              + "- the language of the document\n"
+              + "- an optional encoding to use (default is UTF-8)");
       System.exit(1);
     }
 
     // check encoding
-    String encoding = "ISO-8859-1";
+    String encoding = "UTF-8";
     if (args.length == 3) {
       encoding = args[2];
     }
@@ -358,10 +325,10 @@ public final class XMLOutputter {
       AnnotatedString result = testTok.tokenize(text, args[1]);
 
       // print result
-      System.out.println(XMLOutputter.createXMLString(result));
+      System.out.println(XmlOutputter.createXmlString(result));
 
     } catch (IOException e) {
-      LOG.error(e.getLocalizedMessage(), e);
+      logger.error(e.getLocalizedMessage(), e);
     }
   }
 }

@@ -37,63 +37,40 @@ import de.dfki.lt.tools.tokenizer.regexp.RegExp;
  *
  * @author Joerg Steffen, DFKI
  */
-public class PunctDescription
-    extends Description {
+public class PunctDescription extends Description {
 
-  /**
-   * Class name for opening punctuation.
-   */
+  /** class name for opening punctuation */
   public static final String OPEN_PUNCT = "OPEN_PUNCT";
 
-  /**
-   * Class name for closing punctuation.
-   */
+  /** class name for closing punctuation */
   public static final String CLOSE_PUNCT = "CLOSE_PUNCT";
 
-  /**
-   * Class name for opening brackets.
-   */
+  /** class name for opening brackets */
   public static final String OPEN_BRACKET = "OPEN_BRACKET";
 
-  /**
-   * Class name for closing brackets.
-   */
+  /** class name for closing brackets */
   public static final String CLOSE_BRACKET = "CLOSE_BRACKET";
 
-  /**
-   * Class name for terminal punctuation.
-   */
+  /** class name for terminal punctuation */
   public static final String TERM_PUNCT = "TERM_PUNCT";
 
-  /**
-   * Class name for possible terminal punctuation.
-   */
+  /** class name for possible terminal punctuation */
   public static final String TERM_PUNCT_P = "TERM_PUNCT_P";
 
-  /**
-   * Name of the all punctuation rule.
-   */
+
+  /** name of the all punctuation rule */
   protected static final String ALL_RULE = "ALL_PUNCT_RULE";
 
-  /**
-   * Name of the internal punctuation rule.
-   */
+  /** name of the internal punctuation rule */
   protected static final String INTERNAL_RULE = "INTERNAL_PUNCT_RULE";
 
-  /**
-   * Name of the sentence internal punctuation rule.
-   */
+  /** name of the sentence internal punctuation rule */
   protected static final String INTERNAL_TU_RULE = "INTERNAL_TU_PUNCT_RULE";
 
-  /**
-   * Class name for ambiguous open/close punctuation.
-   */
+  /** class name for ambiguous open/close punctuation */
   protected static final String OPEN_CLOSE_PUNCT = "OPENCLOSE_PUNCT";
 
-  /**
-   * Contains the name suffix of the resource file with the punctuation
-   * description.
-   */
+  // name suffix of the resource file with the punctuation description
   private static final String PUNCT_DESCR = "_punct.cfg";
 
 
@@ -109,20 +86,18 @@ public class PunctDescription
    * @throws IOException
    *           if there is an error when reading the configuration
    */
-  public PunctDescription(
-      String resourceDir, String lang, Map<String, String> macrosMap)
+  public PunctDescription(String resourceDir, String lang, Map<String, String> macrosMap)
       throws IOException {
 
     super.setDefinitionsMap(new HashMap<String, RegExp>());
     super.setRulesMap(new HashMap<String, RegExp>());
     super.setRegExpMap(new HashMap<RegExp, String>());
 
-    Path punctDescrPath =
-      Paths.get(resourceDir).resolve(lang + PUNCT_DESCR);
+    Path punctDescrPath = Paths.get(resourceDir).resolve(lang + PUNCT_DESCR);
     BufferedReader in = new BufferedReader(
-      new InputStreamReader(
-        FileTools.openResourceFileAsStream(punctDescrPath.toString()),
-        "utf-8"));
+        new InputStreamReader(
+            FileTools.openResourceFileAsStream(punctDescrPath.toString()),
+            "utf-8"));
 
     // read config file to definitions start
     readToDefinitions(in);
