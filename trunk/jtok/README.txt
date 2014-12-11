@@ -1,4 +1,4 @@
-JTok V2.10
+JTok V2.14
 written by Joerg Steffen
 Email: steffen@dfki.de
 (c) DFKI, 2003-2014
@@ -24,17 +24,17 @@ Installation:
 =============
 JTok uses the Maven build tool (http://maven.apache.org/).
 
-Execute "mvn install" to create target/jtok-core-2.11.jar that contains the
+Execute "mvn install" to create target/jtok-core-2.14.jar that contains the
 core tokenizer classes with all required resources. This includes a default
 configuration as found in src/main/resources. It is used when no configuration
 is found elsewhere on the classpath. To use your own configuration, make sure
-to add your configuration folder in front of jtok-core-2.11.jar in the 
+to add your configuration folder in front of jtok-core-2.14.jar in the 
 classpath.
 
 Additionally, the API documentation of JTok can be found in target/apidocs. 
 
 Execute "mvn package assembly:single" to create a binary distribution of JTok
-in target/jtok-core-2.11-bin.zip that also contains all 3rd party libraries.
+in target/jtok-core-2.14-bin.zip that also contains all 3rd party libraries.
 
 
 Testing:
@@ -60,7 +60,7 @@ src/main/resources
      A default configuration is provided in the 'default' folder.
      After modifying configuration files, execute "mvn compile" to make
      them available to the runtime system or add src/main/resources to
-     the JVM classpath in front of jtok-core-2.11.jar.
+     the JVM classpath in front of jtok-core-2.14.jar.
      Another option for user specific JTok configuration is to put it
      into a folder 'jtok-user' in the classpath. This location is
      searched first for any JTok configuration. The expected folder
