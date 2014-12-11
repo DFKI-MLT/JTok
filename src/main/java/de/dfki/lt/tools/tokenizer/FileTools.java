@@ -43,9 +43,7 @@ import java.util.List;
  */
 public final class FileTools {
 
-  /**
-   * Creates a new instance of {@link FileTools}. Not to be used.
-   */
+  // would create a new instance of {@link FileTools}; not to be used
   private FileTools() {
 
     // private constructor to enforce noninstantiability
@@ -87,8 +85,7 @@ public final class FileTools {
    *
    * @param url
    *          some URL
-   * @return the content as a string or {@code null} if content could not be
-   *         read
+   * @return the content as a string or {@code null} if content could not be read
    * @exception IOException
    *              thrown when resource cannot be opened for reading
    */
@@ -131,8 +128,7 @@ public final class FileTools {
    *
    * @param url
    *          some URL
-   * @return the content as a byte array or {@code null} if content could not be
-   *         read
+   * @return the content as a byte array or {@code null} if content could not be read
    * @exception IOException
    *              thrown when resource cannot be opened for reading
    */
@@ -172,9 +168,8 @@ public final class FileTools {
 
 
   /**
-   * Reads some input stream and writes it into an output stream. The method
-   * applies some efficient buffering in byte arrays and is the basis for all
-   * read...-methods in this class.
+   * Reads some input stream and writes it into an output stream. The method applies some efficient
+   * buffering in byte arrays and is the basis for all read...-methods in this class.
    *
    * @param os
    *          some output stream.
@@ -205,8 +200,7 @@ public final class FileTools {
    *          the input stream
    * @param encoding
    *          the encoding to use
-   * @return the content of the stream as string or {@code null} if content
-   *         could not be read
+   * @return the content of the stream as string or {@code null} if content could not be read
    * @exception IOException
    *              if there is an error when reading the stream
    */
@@ -236,8 +230,7 @@ public final class FileTools {
    *
    * @param is
    *          the input stream
-   * @return the content of the stream as byte array or {@code null} if content
-   *         could not be read
+   * @return the content of the stream as byte array or {@code null} if content could not be read
    * @exception IOException
    *              if there is an error when reading the stream
    */
@@ -263,8 +256,8 @@ public final class FileTools {
 
 
   /**
-   * Recursively collects all filenames in the given directory with the given
-   * suffix and returns them in a list.
+   * Recursively collects all filenames in the given directory with the given suffix and returns
+   * them in a list.
    *
    * @param directory
    *          the directory name
@@ -293,11 +286,8 @@ public final class FileTools {
     for (int i = 0; i < filesInDir.length; i++) {
       // if file is a directory, collect recursivly
       if (filesInDir[i].isDirectory()) {
-        fileNames.addAll(getFilesFromDir(
-          filesInDir[i].getAbsolutePath(), suffix));
-      }
-      else if (filesInDir[i].getName()
-        .endsWith(suffix)) {
+        fileNames.addAll(getFilesFromDir(filesInDir[i].getAbsolutePath(), suffix));
+      } else if (filesInDir[i].getName().endsWith(suffix)) {
         // otherwise, add filename with matching suffix to result list
         fileNames.add(filesInDir[i].getAbsolutePath());
       }
@@ -332,9 +322,8 @@ public final class FileTools {
 
 
   /**
-   * New NIO based method to read the contents of a file as byte array. Only
-   * files up to size Integer.MAX_INT can be read. The byte buffer is rewinded
-   * when returned.
+   * New NIO based method to read the contents of a file as byte array. Only files up to size
+   * Integer.MAX_INT can be read. The byte buffer is rewinded when returned.
    *
    * @param file
    *          the file to read
@@ -393,8 +382,7 @@ public final class FileTools {
       throws IOException {
 
     // first check for any user specific configuration in 'jtok-user'
-    InputStream is = ClassLoader.getSystemResourceAsStream(
-      "jtok-user/" + resourceFileName);
+    InputStream is = ClassLoader.getSystemResourceAsStream("jtok-user/" + resourceFileName);
     if (null == is) {
       is = ClassLoader.getSystemResourceAsStream(resourceFileName);
       if (null == is) {

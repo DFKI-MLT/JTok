@@ -34,14 +34,14 @@ import org.junit.Test;
 
 /**
  * Test class for {@link FastAnnotatedString}.
- * 
+ *
  * @author Joerg Steffen, DFKI
  */
 public class TestFastAnnotatedString {
 
   /**
    * Tests annotated Strings.
-   * 
+   *
    * @throws IOException
    *           if there is an error when reading the result file
    */
@@ -49,8 +49,7 @@ public class TestFastAnnotatedString {
   public void testFastAnnotatedString()
       throws IOException {
 
-    AnnotatedString input1 =
-      new FastAnnotatedString("This is a test.");
+    AnnotatedString input1 = new FastAnnotatedString("This is a test.");
     // 0123456789012345
     input1.annotate("type", "tok", 0, 4);
     input1.annotate("type", "tok", 5, 7);
@@ -69,9 +68,9 @@ public class TestFastAnnotatedString {
 
 
   /**
-   * Compares the string representation of the given annotation and the expected
-   * result as read from the given file name.
-   * 
+   * Compares the string representation of the given annotation and the expected result as read from
+   * the given file name.
+   *
    * @param input
    *          the annotated string
    * @param resFileName
@@ -79,17 +78,15 @@ public class TestFastAnnotatedString {
    * @throws IOException
    *           if there is an error when reading the result file
    */
-  private void compareResults(
-      AnnotatedString input, String resFileName)
+  private void compareResults(AnnotatedString input, String resFileName)
       throws IOException {
 
-    BufferedReader resReader = new BufferedReader(
-      new InputStreamReader(
-        getClass().getClassLoader().getResourceAsStream(
-          resFileName),
-        "utf-8"));
+    BufferedReader resReader =
+        new BufferedReader(
+            new InputStreamReader(
+                getClass().getClassLoader().getResourceAsStream(resFileName), "utf-8"));
     BufferedReader inputReader =
-      new BufferedReader(new StringReader(input.toString("type")));
+        new BufferedReader(new StringReader(input.toString("type")));
     // compare line by line with expected result
     int lineCount = 1;
     String resLine;

@@ -23,16 +23,15 @@
 package de.dfki.lt.tools.tokenizer.exceptions;
 
 /**
- * {@link InitializationException} is thrown when the tokenizer can't be
- * initialized.
+ * {@link InitializationException} is thrown when the tokenizer can't be initialized.
  *
  * @author Joerg Steffen, DFKI
  */
 public class InitializationException extends RuntimeException {
 
   /**
-   * Creates a new instance of {@link InitializationException} with null as its
-   * detail message. The cause is not initialized.
+   * Creates a new instance of {@link InitializationException} with null as its detail message. The
+   * cause is not initialized.
    */
   public InitializationException() {
 
@@ -41,8 +40,8 @@ public class InitializationException extends RuntimeException {
 
 
   /**
-   * Creates a new instance of {@link InitializationException} with the given
-   * detail message. The cause is not initialized.
+   * Creates a new instance of {@link InitializationException} with the given detail message. The
+   * cause is not initialized.
    *
    * @param message
    *          the detail message
@@ -54,16 +53,14 @@ public class InitializationException extends RuntimeException {
 
 
   /**
-   * Creates a new instance of {@link InitializationException} with the
-   * specified cause and a detail message of (cause==null ? null :
-   * cause.toString()) (which typically contains the class and detail message of
-   * cause).
+   * Creates a new instance of {@link InitializationException} with the specified cause and a detail
+   * message of (cause==null ? null : cause.toString()) (which typically contains the class and
+   * detail message of cause).
    *
    * @param cause
-   *          a throwable with the cause of the exception (which is saved for
-   *          later retrieval by the {@link #getCause()} method). (A
-   *          {@code null} value is permitted, and indicates that the cause is
-   *          nonexistent or unknown.)
+   *          a throwable with the cause of the exception (which is saved for later retrieval by the
+   *          {@link #getCause()} method). (A {@code null} value is permitted, and indicates that
+   *          the cause is nonexistent or unknown.)
    */
   public InitializationException(Throwable cause) {
 
@@ -72,16 +69,15 @@ public class InitializationException extends RuntimeException {
 
 
   /**
-   * Creates a new instance of {@link InitializationException} with the given
-   * detail message and the given cause.
+   * Creates a new instance of {@link InitializationException} with the given detail message and the
+   * given cause.
    *
    * @param message
    *          the detail message
    * @param cause
-   *          a throwable with the cause of the exception (which is saved for
-   *          later retrieval by the {@link #getCause()} method). (A
-   *          {@code null} value is permitted, and indicates that the cause is
-   *          nonexistent or unknown.)
+   *          a throwable with the cause of the exception (which is saved for later retrieval by the
+   *          {@link #getCause()} method). (A {@code null} value is permitted, and indicates that
+   *          the cause is nonexistent or unknown.)
    */
   public InitializationException(String message, Throwable cause) {
 

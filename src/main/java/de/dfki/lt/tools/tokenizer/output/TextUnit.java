@@ -32,19 +32,13 @@ import java.util.List;
  */
 public class TextUnit {
 
-  /**
-   * Contains the start index of the text unit.
-   */
+  // start index of the text unit
   private int startIndex;
 
-  /**
-   * Contains the end index of the text unit.
-   */
+  // end index of the text unit
   private int endIndex;
 
-  /**
-   * Contains a list with the tokens of the text unit.
-   */
+  // list with the tokens of the text unit
   private List<Token> tokens;
 
 
@@ -72,8 +66,6 @@ public class TextUnit {
 
 
   /**
-   * Returns the start index of the text unit.
-   *
    * @return the start index
    */
   public int getStartIndex() {
@@ -83,10 +75,8 @@ public class TextUnit {
 
 
   /**
-   * Sets the start index of the text unit to the given parameter.
-   *
    * @param startIndex
-   *          an <code>int</code>
+   *          the start index to set
    */
   public void setStartIndex(int startIndex) {
 
@@ -95,8 +85,6 @@ public class TextUnit {
 
 
   /**
-   * Returns the end index of the text unit.
-   *
    * @return the end index
    */
   public int getEndIndex() {
@@ -106,10 +94,8 @@ public class TextUnit {
 
 
   /**
-   * Sets the end index of the text unit to the given parameter.
-   *
    * @param endIndex
-   *          the end index
+   *          the end index to set
    */
   public void setEndIndex(int endIndex) {
 
@@ -118,8 +104,6 @@ public class TextUnit {
 
 
   /**
-   * Returns the list with the tokens of the text unit.
-   *
    * @return the token list
    */
   public List<Token> getTokens() {
@@ -129,9 +113,9 @@ public class TextUnit {
 
 
   /**
-   * Sets the tokens of the text unit to the given parameter. As a side effect,
-   * it adjusts the start index and end index of the text unit to the start
-   * index of the first token and the end index of the last token.
+   * Sets the tokens of the text unit to the given parameter. As a side effect, it adjusts the start
+   * index and end index of the text unit to the start index of the first token and the end index of
+   * the last token.
    *
    * @param tokens
    *          a list of tokens
@@ -142,8 +126,7 @@ public class TextUnit {
     if (tokens.size() > 0) {
       this.setStartIndex(tokens.get(0).getStartIndex());
       this.setEndIndex(tokens.get(tokens.size() - 1).getEndIndex());
-    }
-    else {
+    } else {
       this.setStartIndex(0);
       this.setEndIndex(0);
     }
@@ -151,17 +134,15 @@ public class TextUnit {
 
 
   /**
-   * Returns a string representation of the text unit.
-   *
-   * @return the string representation
+   * {@inheritDoc}
    */
   @Override
   public String toString() {
 
     StringBuilder result = new StringBuilder(
-      String.format("  Text Unit Start: %d%n  Text Unit End: %d%n",
-        this.getStartIndex(),
-        this.getEndIndex()));
+        String.format("  Text Unit Start: %d%n  Text Unit End: %d%n",
+            this.getStartIndex(),
+            this.getEndIndex()));
 
     // add tokens
     for (Token oneToken : this.getTokens()) {

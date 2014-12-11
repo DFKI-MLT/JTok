@@ -39,24 +39,16 @@ public class Token {
   private static final String LCB = "-LCB-";
   private static final String RCB = "-RCB-";
 
-  /**
-   * Contains the start index of the token.
-   */
+  // start index of the token
   private int startIndex;
 
-  /**
-   * Contains the end index of the token.
-   */
+  // end index of the token
   private int endIndex;
 
-  /**
-   * Contains the type of the token.
-   */
+  // type of the token
   private String type;
 
-  /**
-   * Contains the surface image of the token.
-   */
+  // surface image of the token
   private String image;
 
 
@@ -73,17 +65,17 @@ public class Token {
 
 
   /**
-   * Creates a new instance of {@link Token} for the given start index, end
-   * index, type and surface image.
+   * Creates a new instance of {@link Token} for the given start index, end index, type and surface
+   * image.
    *
    * @param startIndex
-   *          a <code>int</code> with the start index
+   *          the start index
    * @param endIndex
-   *          a <code>int</code> with the end index
+   *          the end index
    * @param type
-   *          a <code>String</code> with the type
+   *          the type
    * @param image
-   *          a <code>String</code> with the surface image
+   *          the surface image
    */
   public Token(int startIndex, int endIndex, String type, String image) {
 
@@ -95,8 +87,6 @@ public class Token {
 
 
   /**
-   * Returns the start index of the token.
-   *
    * @return the start index
    */
   public int getStartIndex() {
@@ -106,10 +96,8 @@ public class Token {
 
 
   /**
-   * Sets the start index of the token to the given parameter.
-   *
    * @param startIndex
-   *          the start index
+   *          the start index to set
    */
   public void setStartIndex(int startIndex) {
 
@@ -118,8 +106,6 @@ public class Token {
 
 
   /**
-   * Returns the end index of the token.
-   *
    * @return the end index
    */
   public int getEndIndex() {
@@ -129,10 +115,8 @@ public class Token {
 
 
   /**
-   * Sets the end index of the token to the given parameter.
-   *
    * @param endIndex
-   *          the end index
+   *          the end index to set
    */
   public void setEndIndex(int endIndex) {
 
@@ -141,8 +125,6 @@ public class Token {
 
 
   /**
-   * Returns the type of the token.
-   *
    * @return the token type
    */
   public String getType() {
@@ -152,10 +134,8 @@ public class Token {
 
 
   /**
-   * Sets the type of the token to the given parameter.
-   *
    * @param type
-   *          the token type
+   *          the token type to set
    */
   public void setType(String type) {
 
@@ -164,8 +144,6 @@ public class Token {
 
 
   /**
-   * Returns the surface image of the token.
-   *
    * @return the surface image
    */
   public String getImage() {
@@ -175,10 +153,8 @@ public class Token {
 
 
   /**
-   * Sets the surface image of the token to the given parameter.
-   *
    * @param image
-   *          the surface image
+   *          the surface image to set
    */
   public void setImage(String image) {
 
@@ -187,11 +163,10 @@ public class Token {
 
 
   /**
-   * Returns the Penn Treebank surface image of the token if a Penn Treebank
-   * replacement took place, {@code null} otherwise.
+   * Returns the Penn Treebank surface image of the token if a Penn Treebank replacement took place,
+   * {@code null} otherwise.
    *
-   * @return the surface image as the result of the Penn Treebank token
-   *         replacement or {@code null}
+   * @return the surface image as the result of the Penn Treebank token replacement or {@code null}
    */
   public String getPtbImage() {
 
@@ -206,16 +181,15 @@ public class Token {
   public String toString() {
 
     StringBuilder result = new StringBuilder(
-      String.format("    Token: %-15s\tType: %s\tStart: %s\tEnd: %s",
-        String.format("\"%s\"", this.getImage()),
-        this.getType(),
-        this.getStartIndex(),
-        this.getEndIndex()));
+        String.format("    Token: %-15s\tType: %s\tStart: %s\tEnd: %s",
+            String.format("\"%s\"", this.getImage()),
+            this.getType(),
+            this.getStartIndex(),
+            this.getEndIndex()));
 
     String ptbImage = applyPtbFormat(this.image, this.type);
     if (null != ptbImage) {
-      result.append(
-        String.format("\tPTB: \"%s\"", ptbImage));
+      result.append(String.format("\tPTB: \"%s\"", ptbImage));
     }
     result.append(String.format("%n"));
 
@@ -224,8 +198,8 @@ public class Token {
 
 
   /**
-   * This applies some replacements used in the Penn Treebank format to the
-   * given token image of the given type.
+   * This applies some replacements used in the Penn Treebank format to the given token image of the
+   * given type.
    *
    * @param image
    *          the token image
@@ -241,36 +215,27 @@ public class Token {
 
       if (image.equals("(")) {
         result = LRB;
-      }
-      else if (image.equals("[")) {
+      } else if (image.equals("[")) {
         result = LSB;
-      }
-      else if (image.equals("{")) {
+      } else if (image.equals("{")) {
         result = LCB;
       }
-    }
-    else if (type.equals(PunctDescription.CLOSE_BRACKET)) {
+    } else if (type.equals(PunctDescription.CLOSE_BRACKET)) {
 
       if (image.equals(")")) {
         result = RRB;
-      }
-      else if (image.equals("]")) {
+      } else if (image.equals("]")) {
         result = RSB;
-      }
-      else if (image.equals("}")) {
+      } else if (image.equals("}")) {
         result = RCB;
       }
-    }
-    else if (type.equals(PunctDescription.OPEN_PUNCT)) {
+    } else if (type.equals(PunctDescription.OPEN_PUNCT)) {
       result = "``";
-    }
-    else if (type.equals(PunctDescription.CLOSE_PUNCT)) {
+    } else if (type.equals(PunctDescription.CLOSE_PUNCT)) {
       result = "''";
-    }
-    else if (image.contains("/")) {
+    } else if (image.contains("/")) {
       result = image.replace("/", "\\/");
-    }
-    else if (image.contains("*")) {
+    } else if (image.contains("*")) {
       result = image.replace("*", "\\*");
     }
 

@@ -45,9 +45,7 @@ import de.dfki.lt.tools.tokenizer.output.Outputter;
  */
 public class TestJTok {
 
-  /**
-   * Contains the tokenizer.
-   */
+  // the tokenizer to test
   private static JTok tokenizer;
 
 
@@ -82,11 +80,11 @@ public class TestJTok {
 
     // German
     this.compareResults(
-      "german/amazon.txt", "de",
-      "expected-results/german/amazon-expected.txt");
+        "german/amazon.txt", "de",
+        "expected-results/german/amazon-expected.txt");
     this.compareResults(
-      "german/german.txt", "de",
-      "expected-results/german/german-expected.txt");
+        "german/german.txt", "de",
+        "expected-results/german/german-expected.txt");
   }
 
 
@@ -102,14 +100,14 @@ public class TestJTok {
 
     // English
     this.compareResults(
-      "english/amazon-coleman.txt", "en",
-      "expected-results/english/amazon-coleman-expected.txt");
+        "english/amazon-coleman.txt", "en",
+        "expected-results/english/amazon-coleman-expected.txt");
     this.compareResults(
-      "english/english.txt", "en",
-      "expected-results/english/english-expected.txt");
+        "english/english.txt", "en",
+        "expected-results/english/english-expected.txt");
     this.compareResults(
-      "english/randomhouse-hertsgaard.txt", "en",
-      "expected-results/english/randomhouse-hertsgaard-expected.txt");
+        "english/randomhouse-hertsgaard.txt", "en",
+        "expected-results/english/randomhouse-hertsgaard-expected.txt");
   }
 
 
@@ -125,8 +123,8 @@ public class TestJTok {
 
     // Other
     this.compareResults(
-      "test/cliticsTest.txt", "en",
-      "expected-results/test/cliticsTest-expected.txt");
+        "test/cliticsTest.txt", "en",
+        "expected-results/test/cliticsTest-expected.txt");
   }
 
 
@@ -141,8 +139,8 @@ public class TestJTok {
       throws IOException {
 
     this.compareResults(
-      "test/misc.txt", "en",
-      "expected-results/test/misc-expected.txt");
+        "test/misc.txt", "en",
+        "expected-results/test/misc-expected.txt");
   }
 
 
@@ -157,8 +155,8 @@ public class TestJTok {
       throws IOException {
 
     this.compareResults(
-      "test/numbersTest.txt", "de",
-      "expected-results/test/numbersTest-expected.txt");
+        "test/numbersTest.txt", "de",
+        "expected-results/test/numbersTest-expected.txt");
   }
 
 
@@ -173,8 +171,8 @@ public class TestJTok {
       throws IOException {
 
     this.compareResults(
-      "test/paragraphTest.txt", "en",
-      "expected-results/test/paragraphTest-expected.txt");
+        "test/paragraphTest.txt", "en",
+        "expected-results/test/paragraphTest-expected.txt");
   }
 
 
@@ -189,8 +187,8 @@ public class TestJTok {
       throws IOException {
 
     this.compareResults(
-      "test/punctuationTest.txt", "en",
-      "expected-results/test/punctuationTest-expected.txt");
+        "test/punctuationTest.txt", "en",
+        "expected-results/test/punctuationTest-expected.txt");
   }
 
 
@@ -205,9 +203,10 @@ public class TestJTok {
       throws IOException {
 
     this.compareResults(
-      "test/specialCharactersTest.txt", "de",
-      "expected-results/test/specialCharactersTest-expected.txt");
+        "test/specialCharactersTest.txt", "de",
+        "expected-results/test/specialCharactersTest-expected.txt");
   }
+
 
   /**
    * Tests the method {@link JTok#tokenize(String, String)}.
@@ -220,14 +219,14 @@ public class TestJTok {
       throws IOException {
 
     this.compareResults(
-      "test/tuTest.txt", "de",
-      "expected-results/test/tuTest-expected.txt");
+        "test/tuTest.txt", "de",
+        "expected-results/test/tuTest-expected.txt");
   }
 
 
   /**
-   * Compares the tokenization result of the given input with the result as read
-   * from the given file name.
+   * Compares the tokenization result of the given input with the result as read from the given file
+   * name.
    *
    * @param inputFileName
    *          the input file to tokenize
@@ -244,27 +243,23 @@ public class TestJTok {
 
     System.out.println(inputFileName);
     // tokenize input file
-    InputStream in =
-      getClass().getClassLoader().getResourceAsStream(inputFileName);
-    String input =
-      new String(FileTools.readInputStreamToByteArray(in), "utf-8");
+    InputStream in = getClass().getClassLoader().getResourceAsStream(inputFileName);
+    String input = new String(FileTools.readInputStreamToByteArray(in), "utf-8");
     StringBuilder result = new StringBuilder();
     String newline = System.getProperty("line.separator");
     // print result as paragraphs with text units and tokens
-    for (Paragraph onePara : Outputter.createParagraphs(
-        tokenizer.tokenize(input, lang))) {
+    for (Paragraph onePara : Outputter.createParagraphs(tokenizer.tokenize(input, lang))) {
       result.append(onePara.toString());
       result.append(newline);
     }
 
     // compare line by line with expected result
-    BufferedReader resReader = new BufferedReader(
-      new InputStreamReader(
-        getClass().getClassLoader().getResourceAsStream(
-          resFileName),
-        "utf-8"));
+    BufferedReader resReader =
+        new BufferedReader(
+            new InputStreamReader(
+                getClass().getClassLoader().getResourceAsStream(resFileName), "utf-8"));
     BufferedReader inputReader =
-      new BufferedReader(new StringReader(result.toString()));
+        new BufferedReader(new StringReader(result.toString()));
     int lineCount = 1;
     String resLine;
     while ((resLine = resReader.readLine()) != null) {

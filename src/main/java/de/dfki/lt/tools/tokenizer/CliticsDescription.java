@@ -37,30 +37,21 @@ import de.dfki.lt.tools.tokenizer.regexp.RegExp;
  *
  * @author Joerg Steffen, DFKI
  */
-public class CliticsDescription
-    extends Description {
+public class CliticsDescription extends Description {
 
-  /**
-   * Name of the proclitic rule.
-   */
-  protected static final String PROCLITIC_RULE =
-    "PROCLITIC_RULE";
+  /** name of the proclitic rule */
+  protected static final String PROCLITIC_RULE = "PROCLITIC_RULE";
 
-  /**
-   * Name of the enclitic rule.
-   */
-  protected static final String ENCLITIC_RULE =
-    "ENCLITIC_RULE";
+  /** name of the enclitic rule */
+  protected static final String ENCLITIC_RULE = "ENCLITIC_RULE";
 
-  /**
-   * Contains the name suffix of the resource file with the clitic description.
-   */
+
+  // name suffix of the resource file with the clitic description
   private static final String CLITIC_DESCR = "_clitics.cfg";
 
 
   /**
-   * Creates a new instance of {@link CliticsDescription} for the given
-   * language.
+   * Creates a new instance of {@link CliticsDescription} for the given language.
    *
    * @param resourceDir
    *          path to the folder with the language resources
@@ -71,20 +62,18 @@ public class CliticsDescription
    * @throws IOException
    *           if there is an error when reading the configuration
    */
-  public CliticsDescription(
-      String resourceDir, String lang, Map<String, String> macrosMap)
+  public CliticsDescription(String resourceDir, String lang, Map<String, String> macrosMap)
       throws IOException {
 
     super.setDefinitionsMap(new HashMap<String, RegExp>());
     super.setRulesMap(new HashMap<String, RegExp>());
     super.setRegExpMap(new HashMap<RegExp, String>());
 
-    Path clitDescrPath =
-      Paths.get(resourceDir).resolve(lang + CLITIC_DESCR);
+    Path clitDescrPath = Paths.get(resourceDir).resolve(lang + CLITIC_DESCR);
     BufferedReader in = new BufferedReader(
-      new InputStreamReader(
-        FileTools.openResourceFileAsStream(clitDescrPath.toString()),
-        "utf-8"));
+        new InputStreamReader(
+            FileTools.openResourceFileAsStream(clitDescrPath.toString()),
+            "utf-8"));
 
     // read config file to definitions start
     readToDefinitions(in);

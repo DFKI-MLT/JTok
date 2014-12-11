@@ -32,8 +32,7 @@ import java.util.List;
 public interface RegExp {
 
   /**
-   * Returns a list with all matches for the regular expression in the given
-   * input.
+   * Returns a list with all matches for the regular expression in the given input.
    *
    * @param input
    *          the string where to look for matches
@@ -53,8 +52,8 @@ public interface RegExp {
 
 
   /**
-   * Checks if the given input contains a match for the regular expression. If
-   * yes, the first match is returned, {@code null} otherwise.
+   * Checks if the given input contains a match for the regular expression. If yes, the first match
+   * is returned, {@code null} otherwise.
    *
    * @param input
    *          the string to check
@@ -62,10 +61,10 @@ public interface RegExp {
    */
   Match contains(String input);
 
+
   /**
-   * Checks if the given input contains a match for the regular expression at
-   * the start of the input. If yes, the match is returned, {@code null}
-   * otherwise.
+   * Checks if the given input contains a match for the regular expression at the start of the
+   * input. If yes, the match is returned, {@code null} otherwise.
    *
    * @param input
    *          the string to check
@@ -75,9 +74,8 @@ public interface RegExp {
 
 
   /**
-   * Checks if the given input contains a match for the regular expression at
-   * the end of the input. If yes, the match is returned, {@code null}
-   * otherwise.
+   * Checks if the given input contains a match for the regular expression at the end of the input.
+   * If yes, the match is returned, {@code null} otherwise.
    *
    * @param input
    *          the string to check

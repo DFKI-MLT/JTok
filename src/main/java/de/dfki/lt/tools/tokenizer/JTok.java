@@ -44,47 +44,34 @@ import de.dfki.lt.tools.tokenizer.regexp.Match;
 import de.dfki.lt.tools.tokenizer.regexp.RegExp;
 
 /**
- * Tokenizer tool that recognizes paragraphs, sentences, tokens, punctuation,
- * numbers, abbreviations, etc.
+ * Tokenizer tool that recognizes paragraphs, sentences, tokens, punctuation, numbers,
+ * abbreviations, etc.
  *
  * @author Joerg Steffen, DFKI
  */
 public class JTok {
 
-  /**
-   * Annotation key for the token class.
-   */
+  /** annotation key for the token class */
   public static final String CLASS_ANNO = "class";
 
-  /**
-   * Annotation key for sentences and paragraph borders.
-   */
+  /** annotation key for sentences and paragraph borders */
   public static final String BORDER_ANNO = "border";
 
-  /**
-   * Annotation value for text unit borders.
-   */
+  /** annotation value for text unit borders */
   public static final String TU_BORDER = "tu";
 
-  /**
-   * Annotation value for paragraph borders.
-   */
+  /** annotation value for paragraph borders */
   public static final String P_BORDER = "p";
 
-  /**
-   * Contains the logger object for logging.
-   */
-  private static final Logger LOG = LoggerFactory.getLogger(JTok.class);
 
-  /**
-   * The identifier of the default configuration.
-   */
+  // the logger
+  private static final Logger logger = LoggerFactory.getLogger(JTok.class);
+
+  // identifier of the default configuration
   private static final String DEFAULT = "default";
 
 
-  /**
-   * Maps each supported language to a language resource.
-   */
+  // maps each supported language to a language resource
   private Map<String, LanguageResource> langResources;
 
 
@@ -127,7 +114,7 @@ public class JTok {
   private void init(Properties configProps) {
 
     if (configProps.get(DEFAULT) == null) {
-      LOG.error("missing default language resources");
+      logger.error("missing default language resources");
     }
 
     this.langResources = new HashMap<>();
@@ -137,10 +124,8 @@ public class JTok {
       String oneLanguage = (String)oneEntry.getKey();
       // add language resources for that language
       String langDir = (String)oneEntry.getValue();
-      LOG.info(String.format("loading language resources for %s from %s",
-        oneLanguage, langDir));
-    this.langResources.put(
-            oneLanguage, new LanguageResource(oneLanguage, langDir));
+      logger.info(String.format("loading language resources for %s from %s", oneLanguage, langDir));
+      this.langResources.put(oneLanguage, new LanguageResource(oneLanguage, langDir));
     }
   }
 
@@ -150,8 +135,7 @@ public class JTok {
    *
    * @param lang
    *          the language
-   * @return the language resource or the default configuration if language is
-   *         not supported
+   * @return the language resource or the default configuration if language is not supported
    */
   public LanguageResource getLanguageResource(String lang) {
 
@@ -159,16 +143,14 @@ public class JTok {
     if (null != probe) {
       return (LanguageResource)probe;
     }
-    LOG.info(
-      String.format(
-        "language %s not supported, using default configuration", lang));
+    logger.info(String.format("language %s not supported, using default configuration", lang));
     return this.langResources.get(DEFAULT);
   }
 
 
   /**
-   * Tokenizes the given text in the given language. Returns an annotated string
-   * containing the identified paragraphs with their text units and tokens.<br>
+   * Tokenizes the given text in the given language. Returns an annotated string containing the
+   * identified paragraphs with their text units and tokens.<br>
    * This method is thread-safe.
    *
    * @param inputText
@@ -177,8 +159,7 @@ public class JTok {
    *          the language of the text
    * @return an annotated string
    * @exception ProcessingException
-   *              if input data causes an error e.g. if language is not
-   *              supported
+   *              if input data causes an error e.g. if language is not supported
    */
   public AnnotatedString tokenize(String inputText, String lang) {
 
@@ -206,16 +187,14 @@ public class JTok {
 
 
   /**
-   * Identifies tokens and annotates them. Tokens are sequences of
-   * non-whitespaces.
+   * Identifies tokens and annotates them. Tokens are sequences of non-whitespaces.
    *
    * @param input
    *          an annotated string
    * @param langRes
    *          the language resource to use
    */
-  private void identifyTokens(
-      AnnotatedString input, LanguageResource langRes) {
+  private void identifyTokens(AnnotatedString input, LanguageResource langRes) {
 
     // init token start index
     int tokenStart = 0;
@@ -223,22 +202,19 @@ public class JTok {
     boolean tokenFound = false;
 
     // get classes root annotation
-    String rootClass =
-      langRes.getClassesRoot().getTagName();
+    String rootClass = langRes.getClassesRoot().getTagName();
 
     // iterate over input
-    for (char c = input.first(); c != CharacterIterator.DONE;
-        c = input.next()) {
+    for (char c = input.first(); c != CharacterIterator.DONE; c = input.next()) {
       if (Character.isWhitespace(c) || (c == '\u00a0')) {
         if (tokenFound) {
           // annotate newly identified token
           this.annotate(
-            input, CLASS_ANNO, rootClass, tokenStart, input.getIndex(),
-            input.substring(tokenStart, input.getIndex()), langRes);
+              input, CLASS_ANNO, rootClass, tokenStart, input.getIndex(),
+              input.substring(tokenStart, input.getIndex()), langRes);
           tokenFound = false;
         }
-      }
-      else if (!tokenFound) {
+      } else if (!tokenFound) {
         // a new token starts here, after some whitespaces
         tokenFound = true;
         tokenStart = input.getIndex();
@@ -247,15 +223,14 @@ public class JTok {
     // annotate last token
     if (tokenFound) {
       this.annotate(
-        input, CLASS_ANNO, rootClass, tokenStart, input.getIndex(),
-        input.substring(tokenStart, input.getIndex()), langRes);
+          input, CLASS_ANNO, rootClass, tokenStart, input.getIndex(),
+          input.substring(tokenStart, input.getIndex()), langRes);
     }
   }
 
 
   /**
-   * Identifies punctuations in the annotated tokens of the given annotated
-   * string
+   * Identifies punctuations in the annotated tokens of the given annotated string
    *
    * @param input
    *          an annotated string
@@ -264,8 +239,7 @@ public class JTok {
    * @exception ProcessingException
    *              if an error occurs
    */
-  private void identifyPunct(
-      AnnotatedString input, LanguageResource langRes) {
+  private void identifyPunct(AnnotatedString input, LanguageResource langRes) {
 
     // get the matchers needed
     RegExp allPunctMatcher = langRes.getAllPunctMatcher();
@@ -273,8 +247,7 @@ public class JTok {
 
     // get the class of the root element of the class hierarchy;
     // only tokens with this type are further examined
-    String rootClass =
-      langRes.getClassesRoot().getTagName();
+    String rootClass = langRes.getClassesRoot().getTagName();
 
     // iterate over tokens
     char c = input.setIndex(0);
@@ -364,20 +337,18 @@ public class JTok {
           // we have a breaking punctuation; create token for
           // non-punctuation before the current punctuation
           this.annotate(input, CLASS_ANNO, tokClass,
-            tokenStart + index,
-            tokenStart + oneMatch.getStartIndex(),
-            image.substring(index, oneMatch.getStartIndex()), langRes);
+              tokenStart + index,
+              tokenStart + oneMatch.getStartIndex(),
+              image.substring(index, oneMatch.getStartIndex()), langRes);
           index = oneMatch.getStartIndex();
         }
 
         // punctuation is not internal:
         // get the class of the punctuation and create token for it
-        String punctClass =
-          this.identifyPunctClass(
-            oneMatch, null, image, langRes);
+        String punctClass = this.identifyPunctClass(oneMatch, null, image, langRes);
         input.annotate(CLASS_ANNO, punctClass,
-          tokenStart + index,
-          tokenStart + oneMatch.getEndIndex());
+            tokenStart + index,
+            tokenStart + oneMatch.getEndIndex());
         index = oneMatch.getEndIndex();
       }
 
@@ -385,9 +356,9 @@ public class JTok {
       if (index != image.length()) {
         // create a token from rest of image
         this.annotate(input, CLASS_ANNO, tokClass,
-          tokenStart + index,
-          tokenStart + image.length(),
-          image.substring(index), langRes);
+            tokenStart + index,
+            tokenStart + image.length(),
+            image.substring(index), langRes);
       }
 
       // set iterator to next non-whitespace token
@@ -404,8 +375,7 @@ public class JTok {
    * @param langRes
    *          the language resource to use
    */
-  private void splitPunctuation(
-      AnnotatedString input, LanguageResource langRes) {
+  private void splitPunctuation(AnnotatedString input, LanguageResource langRes) {
 
     // get the matchers needed
     RegExp allPunctMatcher = langRes.getAllPunctMatcher();
@@ -427,17 +397,16 @@ public class JTok {
     Match startMatch = allPunctMatcher.starts(image);
     while (null != startMatch) {
       // create token for punctuation
-      String punctClass =
-        this.identifyPunctClass(startMatch, null, image, langRes);
+      String punctClass = this.identifyPunctClass(startMatch, null, image, langRes);
       input.annotate(CLASS_ANNO, punctClass,
-        tokenStart + startMatch.getStartIndex(),
-        tokenStart + startMatch.getEndIndex());
+          tokenStart + startMatch.getStartIndex(),
+          tokenStart + startMatch.getEndIndex());
       tokenStart = tokenStart + startMatch.getEndIndex();
       image = input.substring(tokenStart, tokenEnd);
       input.setIndex(tokenStart);
       if (image.length() > 0) {
         this.annotate(input, CLASS_ANNO, tokClass,
-          tokenStart, tokenEnd, image, langRes);
+            tokenStart, tokenEnd, image, langRes);
         tokClass = (String)input.getAnnotation(CLASS_ANNO);
         if (tokClass != rootClass) {
           // the remaining token could be matched with a non-root class,
@@ -445,8 +414,7 @@ public class JTok {
           break;
         }
         startMatch = allPunctMatcher.starts(image);
-      }
-      else {
+      } else {
         startMatch = null;
       }
     }
@@ -455,16 +423,15 @@ public class JTok {
     Match endMatch = allPunctMatcher.ends(image);
     while (null != endMatch) {
       // create token for punctuation
-      String punctClass =
-        this.identifyPunctClass(endMatch, null, image, langRes);
+      String punctClass = this.identifyPunctClass(endMatch, null, image, langRes);
       input.annotate(CLASS_ANNO, punctClass,
-        tokenStart + endMatch.getStartIndex(),
-        tokenStart + endMatch.getEndIndex());
+          tokenStart + endMatch.getStartIndex(),
+          tokenStart + endMatch.getEndIndex());
       tokenEnd = tokenStart + endMatch.getStartIndex();
       image = input.substring(tokenStart, tokenEnd);
       if (image.length() > 0) {
         this.annotate(input, CLASS_ANNO, tokClass,
-          tokenStart, tokenEnd, image, langRes);
+            tokenStart, tokenEnd, image, langRes);
         tokClass = (String)input.getAnnotation(CLASS_ANNO);
         if (tokClass != rootClass) {
           // the remaining token could be matched with a non-root class,
@@ -472,8 +439,7 @@ public class JTok {
           break;
         }
         endMatch = allPunctMatcher.ends(image);
-      }
-      else {
+      } else {
         endMatch = null;
       }
     }
@@ -481,16 +447,14 @@ public class JTok {
 
 
   /**
-   * Splits pro- and enclitics from the left and right side of the token if
-   * possible.
+   * Splits pro- and enclitics from the left and right side of the token if possible.
    *
    * @param input
    *          the annotate string
    * @param langRes
    *          the language resource to use
    */
-  private void splitClitics(
-      AnnotatedString input, LanguageResource langRes) {
+  private void splitClitics(AnnotatedString input, LanguageResource langRes) {
 
     // get matchers needed for clitics recognition
     RegExp proclitMatcher = langRes.getProcliticsMatcher();
@@ -514,17 +478,16 @@ public class JTok {
     // create token for proclitic
     while (null != proclit) {
       String clitClass =
-        this.identifyClass(
-          proclit.getImage(), proclitMatcher, langRes.getClitDescr());
+          this.identifyClass(proclit.getImage(), proclitMatcher, langRes.getClitDescr());
       input.annotate(CLASS_ANNO, clitClass,
-        tokenStart + proclit.getStartIndex(),
-        tokenStart + proclit.getEndIndex());
+          tokenStart + proclit.getStartIndex(),
+          tokenStart + proclit.getEndIndex());
       tokenStart = tokenStart + proclit.getEndIndex();
       image = input.substring(tokenStart, tokenEnd);
       input.setIndex(tokenStart);
       if (image.length() > 0) {
         this.annotate(input, CLASS_ANNO, tokClass,
-          tokenStart, tokenEnd, image, langRes);
+            tokenStart, tokenEnd, image, langRes);
         tokClass = (String)input.getAnnotation(CLASS_ANNO);
         if (tokClass != rootClass) {
           // the remaining token could be matched with a non-root class,
@@ -532,8 +495,7 @@ public class JTok {
           break;
         }
         proclit = proclitMatcher.starts(image);
-      }
-      else {
+      } else {
         proclit = null;
       }
     }
@@ -543,16 +505,15 @@ public class JTok {
     while (null != enclit) {
       // create tokens for enclitic
       String clitClass =
-        this.identifyClass(
-          enclit.getImage(), enclitMatcher, langRes.getClitDescr());
+          this.identifyClass(enclit.getImage(), enclitMatcher, langRes.getClitDescr());
       input.annotate(CLASS_ANNO, clitClass,
-        tokenStart + enclit.getStartIndex(),
-        tokenStart + enclit.getEndIndex());
+          tokenStart + enclit.getStartIndex(),
+          tokenStart + enclit.getEndIndex());
       tokenEnd = tokenStart + enclit.getStartIndex();
       image = input.substring(tokenStart, tokenEnd);
       if (image.length() > 0) {
         this.annotate(input, CLASS_ANNO, tokClass,
-          tokenStart, tokenEnd, image, langRes);
+            tokenStart, tokenEnd, image, langRes);
         tokClass = (String)input.getAnnotation(CLASS_ANNO);
         if (tokClass != rootClass) {
           // the remaining token could be matched with a non-root class,
@@ -560,8 +521,7 @@ public class JTok {
           break;
         }
         enclit = enclitMatcher.ends(image);
-      }
-      else {
+      } else {
         enclit = null;
       }
     }
@@ -569,8 +529,8 @@ public class JTok {
 
 
   /**
-   * Returns {@code true} if there is a right context after the punctuation
-   * matched by the given match or {@code false} when there is no right context.
+   * Returns {@code true} if there is a right context after the punctuation matched by the given
+   * match or {@code false} when there is no right context.
    *
    * @param oneMatch
    *          a match matching a punctuation
@@ -582,8 +542,7 @@ public class JTok {
    *          the string on which the punctuation matchers have been applied
    * @return a flag indicating if there is a right context
    */
-  private boolean hasRightContextEnd(
-      Match oneMatch, List<Match> matches, String image, int i) {
+  private boolean hasRightContextEnd(Match oneMatch, List<Match> matches, String image, int i) {
 
     if (i < (matches.size() - 1)) {
       // there is another punctuation later in the image
@@ -600,9 +559,8 @@ public class JTok {
 
 
   /**
-   * Annotates the given input with the given key value pair at the given range.
-   * Also checks if a more specific annotation can be found using the token
-   * classes matcher.
+   * Annotates the given input with the given key value pair at the given range. Also checks if a
+   * more specific annotation can be found using the token classes matcher.
    *
    * @param input
    *          the annotated string
@@ -613,8 +571,7 @@ public class JTok {
    * @param beginIndex
    *          the index of the first character of the range
    * @param endIndex
-   *          the index of the character following the last character of the
-   *          range
+   *          the index of the character following the last character of the range
    * @param image
    *          the surface image
    * @param langRes
@@ -628,32 +585,26 @@ public class JTok {
     RegExp allClassesMatcher = langRes.getAllClassesMatcher();
 
     if (allClassesMatcher.matches(image)) {
-      String tokenClass =
-        this.identifyClass(image,
-          allClassesMatcher,
-          langRes.getClassesDescr());
+      String tokenClass = this.identifyClass(image, allClassesMatcher, langRes.getClassesDescr());
       input.annotate(key, tokenClass, beginIndex, endIndex);
-    }
-    else {
+    } else {
       input.annotate(key, value, beginIndex, endIndex);
     }
   }
 
 
   /**
-   * Checks the class of a punctuation and returns the corresponding class name
-   * for annotation.
+   * Checks the class of a punctuation and returns the corresponding class name for annotation.
    *
    * @param punct
    *          the match for which to find the class name
    * @param regExp
-   *          the regular expression that found the punctuation as a match,
-   *          {@code null} if punctuation wasn't found via a regular expression
+   *          the regular expression that found the punctuation as a match, {@code null} if
+   *          punctuation wasn't found via a regular expression
    * @param image
    *          a string with the original token containing the punctuation
    * @param langRes
-   *          a language resource that contains everything needed for
-   *          identifying the class
+   *          a language resource that contains everything needed for identifying the class
    * @return the class name
    * @exception ProcessingException
    *              if class of punctuation can't be identified
@@ -661,21 +612,19 @@ public class JTok {
   private String identifyPunctClass(
       Match punct, RegExp regExp, String image, LanguageResource langRes) {
 
-    String oneClass =
-      this.identifyClass(punct.getImage(), regExp, langRes.getPunctDescr());
+    String oneClass = this.identifyClass(punct.getImage(), regExp, langRes.getPunctDescr());
     // check if we have an ambiguous open/close punctuation; if
     // yes, resolve it
     if (langRes.isAncestor(PunctDescription.OPEN_CLOSE_PUNCT, oneClass)) {
 
       int nextIndex = punct.getEndIndex();
       if ((nextIndex >= image.length())
-        || !Character.isLetter(image.charAt(nextIndex))) {
+          || !Character.isLetter(image.charAt(nextIndex))) {
         oneClass = PunctDescription.CLOSE_PUNCT;
-      }
-      else {
+      } else {
         int prevIndex = punct.getStartIndex() - 1;
         if ((prevIndex < 0)
-          || !Character.isLetter(image.charAt(prevIndex))) {
+            || !Character.isLetter(image.charAt(prevIndex))) {
           oneClass = PunctDescription.OPEN_PUNCT;
         }
       }
@@ -686,8 +635,8 @@ public class JTok {
 
 
   /**
-   * Identifies abbreviations in the annotated token of the given annotated
-   * string. Candidates are tokens with a followed by a period.
+   * Identifies abbreviations in the annotated token of the given annotated string. Candidates are
+   * tokens with a followed by a period.
    *
    * @param input
    *          an annotated string
@@ -696,15 +645,13 @@ public class JTok {
    * @exception ProcessingException
    *              if an error occurs
    */
-  private void identifyAbbrev(
-      AnnotatedString input, LanguageResource langRes) {
+  private void identifyAbbrev(AnnotatedString input, LanguageResource langRes) {
 
     // get matchers needed for abbreviation recognition
     RegExp allAbbrevMatcher = langRes.getAllAbbrevMatcher();
 
     // get map with abbreviation lists
-    Map<String, Set<String>> abbrevLists =
-      langRes.getAbbrevLists();
+    Map<String, Set<String>> abbrevLists = langRes.getAbbrevLists();
 
     // iterate over tokens
     char c = input.setIndex(0);
@@ -759,9 +706,7 @@ public class JTok {
         // check if token is matched by abbreviation matcher
         if (allAbbrevMatcher.matches(image)) {
           String abbrevClass =
-            this.identifyClass(image,
-              allAbbrevMatcher,
-              langRes.getAbbrevDescr());
+              this.identifyClass(image, allAbbrevMatcher, langRes.getAbbrevDescr());
           input.annotate(CLASS_ANNO, abbrevClass, tokenStart, tokenEnd);
           continue;
         }
@@ -771,8 +716,8 @@ public class JTok {
 
 
   /**
-   * Identifies text units and paragraphs in the given annotated string and
-   * annotates them under the annotation key BORDER_ANNO.
+   * Identifies text units and paragraphs in the given annotated string and annotates them under the
+   * annotation key BORDER_ANNO.
    *
    * @param input
    *          an annotated string
@@ -781,8 +726,7 @@ public class JTok {
    * @exception ProcessingException
    *              if an undefined class name is found
    */
-  private void identifyTus(
-      AnnotatedString input, LanguageResource langRes) {
+  private void identifyTus(AnnotatedString input, LanguageResource langRes) {
 
     // get matcher needed for text unit identification
     RegExp intPunctMatcher = langRes.getInternalTuMatcher();
@@ -809,37 +753,32 @@ public class JTok {
               PunctDescription.TERM_PUNCT,
               (String)input.getAnnotation(CLASS_ANNO))
               || langRes.isAncestor(
-                PunctDescription.TERM_PUNCT_P,
-                (String)input.getAnnotation(CLASS_ANNO))
+                  PunctDescription.TERM_PUNCT_P,
+                  (String)input.getAnnotation(CLASS_ANNO))
               || langRes.isAncestor(
-                PunctDescription.CLOSE_PUNCT,
-                (String)input.getAnnotation(CLASS_ANNO))
+                  PunctDescription.CLOSE_PUNCT,
+                  (String)input.getAnnotation(CLASS_ANNO))
               || langRes.isAncestor(
-                PunctDescription.CLOSE_BRACKET,
-                (String)input.getAnnotation(CLASS_ANNO))) {
+                  PunctDescription.CLOSE_BRACKET,
+                  (String)input.getAnnotation(CLASS_ANNO))) {
             // do nothing
-          }
-          // if we find a lower case letter or a punctuation that can
-          // only appear within a text unit, it was wrong alert, the
-          // sentence hasn't ended yet
-          else if (Character.isLowerCase(c)
-            || intPunctMatcher.matches(
-              input.substring(input.getIndex(), input.getIndex() + 1))) {
+          } else if (Character.isLowerCase(c)
+              || intPunctMatcher.matches(input.substring(input.getIndex(), input.getIndex() + 1))) {
+            // if we find a lower case letter or a punctuation that can
+            // only appear within a text unit, it was wrong alert, the
+            // sentence hasn't ended yet
             eosMode = false;
-          }
-          // otherwise, we just found the first element of the next
-          // sentence
-          else {
+          } else {
+            // otherwise, we just found the first element of the next sentence
             input.annotate(BORDER_ANNO, TU_BORDER, tokenStart, tokenStart + 1);
             eosMode = false;
           }
-        }
-        else if (abbrevMode) {
+        } else if (abbrevMode) {
           String image = input.substring(tokenStart, tokenEnd);
           if (langRes.getNonCapTerms().contains(image)
-            || langRes.isAncestor(
-              PunctDescription.OPEN_PUNCT,
-              (String)input.getAnnotation(CLASS_ANNO))) {
+              || langRes.isAncestor(
+                  PunctDescription.OPEN_PUNCT,
+                  (String)input.getAnnotation(CLASS_ANNO))) {
             // there is a term that only starts with a capital letter at the
             // beginning of a sentence OR
             // an opening punctuation;
@@ -851,45 +790,42 @@ public class JTok {
           // it's possible that after an abbreviation follows a
           // end-of-sentence marker
           continue;
-        }
-        else {
+        } else {
           // check if token is a end-of-sentence marker
           if (langRes.isAncestor(
               PunctDescription.TERM_PUNCT,
               (String)input.getAnnotation(CLASS_ANNO))
               || langRes.isAncestor(
-                PunctDescription.TERM_PUNCT_P,
-                (String)input.getAnnotation(CLASS_ANNO))) {
+                  PunctDescription.TERM_PUNCT_P,
+                  (String)input.getAnnotation(CLASS_ANNO))) {
             // check if next token is a whitespace or a sentence
             // continuing token
             input.setIndex(tokenEnd);
             if (null == input.getAnnotation(CLASS_ANNO)
-              || langRes.isAncestor(
-              PunctDescription.TERM_PUNCT,
-              (String)input.getAnnotation(CLASS_ANNO))
-              || langRes.isAncestor(
-                PunctDescription.TERM_PUNCT_P,
-                (String)input.getAnnotation(CLASS_ANNO))
-              || langRes.isAncestor(
-                PunctDescription.CLOSE_PUNCT,
-                (String)input.getAnnotation(CLASS_ANNO))
-              || langRes.isAncestor(
-                PunctDescription.CLOSE_BRACKET,
-                (String)input.getAnnotation(CLASS_ANNO))) {
+                || langRes.isAncestor(
+                    PunctDescription.TERM_PUNCT,
+                    (String)input.getAnnotation(CLASS_ANNO))
+                || langRes.isAncestor(
+                    PunctDescription.TERM_PUNCT_P,
+                    (String)input.getAnnotation(CLASS_ANNO))
+                || langRes.isAncestor(
+                    PunctDescription.CLOSE_PUNCT,
+                    (String)input.getAnnotation(CLASS_ANNO))
+                || langRes.isAncestor(
+                    PunctDescription.CLOSE_BRACKET,
+                    (String)input.getAnnotation(CLASS_ANNO))) {
               eosMode = true;
             }
-          }
-          // check if token is a breaking abbreviation
-          else if (langRes.isAncestor(
+          } else if (langRes.isAncestor(
               AbbrevDescription.B_ABBREVIATION,
               (String)input.getAnnotation(CLASS_ANNO))) {
+            // check if token is a breaking abbreviation
             abbrevMode = true;
           }
         }
         // set iterator to next token
         c = input.setIndex(tokenEnd);
-      }
-      else {
+      } else {
         // check for paragraph change in whitespace sequence
         if (this.isParagraphChange(input.substring(tokenStart, tokenEnd))) {
           eosMode = false;
@@ -899,10 +835,9 @@ public class JTok {
           // next token starts a new paragraph
           if (c != CharacterIterator.DONE) {
             input.annotate(BORDER_ANNO, P_BORDER,
-              input.getIndex(), input.getIndex() + 1);
+                input.getIndex(), input.getIndex() + 1);
           }
-        }
-        else {
+        } else {
           // just set iterator to next token
           c = input.setIndex(tokenEnd);
         }
@@ -912,9 +847,9 @@ public class JTok {
 
 
   /**
-   * Called with a sequence of whitespaces. It returns a flag indicating if the
-   * sequence contains a paragraph change. A paragraph change is defined as a
-   * sequence of whitespaces that contains two line breaks.
+   * Called with a sequence of whitespaces. It returns a flag indicating if the sequence contains a
+   * paragraph change. A paragraph change is defined as a sequence of whitespaces that contains two
+   * line breaks.
    *
    * @param wSpaces
    *          a string consisting only of whitespaces
@@ -946,23 +881,21 @@ public class JTok {
 
 
   /**
-   * Identifies the class of the given string and returns the corresponding
-   * class name for annotation.
+   * Identifies the class of the given string and returns the corresponding class name for
+   * annotation.
    *
    * @param string
    *          the string for which to find the class name
    * @param regExp
-   *          the regular expression that found the string as a match,
-   *          {@code null} if string wasn't found via a regular expression
+   *          the regular expression that found the string as a match, {@code null} if string wasn't
+   *          found via a regular expression
    * @param descr
-   *          a description that contains everything needed for identifying the
-   *          class
+   *          a description that contains everything needed for identifying the class
    * @return the class name
    * @exception ProcessingException
    *              if class of string can't be identified
    */
-  private String identifyClass(
-      String string, RegExp regExp, Description descr) {
+  private String identifyClass(String string, RegExp regExp, Description descr) {
 
     // first try to identify class via the regular expression
     if (null != regExp) {
@@ -979,15 +912,14 @@ public class JTok {
     for (Map.Entry<String, RegExp> oneEntry : definitionsMap.entrySet()) {
       // check if string is of that class
       String oneClass = oneEntry.getKey();
-      RegExp oneRE = oneEntry.getValue();
-      if (oneRE.matches(string)) {
+      RegExp oneRe = oneEntry.getValue();
+      if (oneRe.matches(string)) {
         // return class name
         return oneClass;
       }
     }
     // throw exception if no class for string was found
-    throw new ProcessingException(
-      String.format("could not find class for %s", string));
+    throw new ProcessingException(String.format("could not find class for %s", string));
   }
 
 
@@ -996,9 +928,8 @@ public class JTok {
    * <ul>
    * <li>a file name for the document to tokenize
    * <li>the language of the document
-   * <li>an optional encoding to use (default is ISO-8859-1)
+   * <li>an optional encoding to use (default is UTF-8)
    * </ul>
-   * Supported languages are: de, en, it
    *
    * @param args
    *          the arguments
@@ -1008,16 +939,15 @@ public class JTok {
     // check for correct arguments
     if ((args.length != 2) && (args.length != 3)) {
       System.out.format(
-        "This method needs two arguments:%n"
-          + "- a file name for the document to tokenize%n"
-          + "- the language of the document%n"
-          + "- an optional encoding to use (default is ISO-8859-1)%n"
-          + "Supported languages are: de, en, it");
+          "This method needs two arguments:%n"
+              + "- a file name for the document to tokenize%n"
+              + "- the language of the document%n"
+              + "- an optional encoding to use (default is UTF-8)");
       System.exit(1);
     }
 
     // check encoding
-    String encoding = "ISO-8859-1";
+    String encoding = "UTF-8";
     if (args.length == 3) {
       encoding = args[2];
     }
@@ -1043,7 +973,7 @@ public class JTok {
         System.out.println(onePara);
       }
     } catch (IOException e) {
-      LOG.error(e.getLocalizedMessage(), e);
+      logger.error(e.getLocalizedMessage(), e);
     }
   }
 }

@@ -39,30 +39,20 @@ import de.dfki.lt.tools.tokenizer.regexp.RegExp;
  *
  * @author Joerg Steffen, DFKI
  */
-public class AbbrevDescription
-    extends Description {
+public class AbbrevDescription extends Description {
 
-  /**
-   * Class name for breaking abbreviation.
-   */
+  /** class name for breaking abbreviation */
   public static final String B_ABBREVIATION = "B_ABBREVIATION";
 
-  /**
-   * The name of the all abbreviation rule.
-   */
+  /** name of the all abbreviation rule */
   protected static final String ALL_RULE = "ALL_RULE";
 
-  /**
-   * Contains the name suffix of the resource file with the abbreviations
-   * description.
-   */
+  // name suffix of the resource file with the abbreviations description
   private static final String ABBREV_DESCR = "_abbrev.cfg";
 
 
-  /**
-   * Contains the most common terms that only start with a capital letter when
-   * they are at the beginning of a sentence.
-   */
+  // the most common terms that only start with a capital letter when they are at the beginning
+  // of a sentence
   private Set<String> nonCapTerms;
 
 
@@ -78,8 +68,7 @@ public class AbbrevDescription
    * @throws IOException
    *           if there is an error when reading the configuration
    */
-  public AbbrevDescription(
-      String resourceDir, String lang, Map<String, String> macrosMap)
+  public AbbrevDescription(String resourceDir, String lang, Map<String, String> macrosMap)
       throws IOException {
 
     super.setDefinitionsMap(new HashMap<String, RegExp>());
@@ -87,12 +76,11 @@ public class AbbrevDescription
     super.setRegExpMap(new HashMap<RegExp, String>());
     super.setClassMembersMap(new HashMap<String, Set<String>>());
 
-    Path abbrDescrPath =
-      Paths.get(resourceDir).resolve(lang + ABBREV_DESCR);
+    Path abbrDescrPath = Paths.get(resourceDir).resolve(lang + ABBREV_DESCR);
     BufferedReader in = new BufferedReader(
-      new InputStreamReader(
-        FileTools.openResourceFileAsStream(abbrDescrPath.toString()),
-        "utf-8"));
+        new InputStreamReader(
+            FileTools.openResourceFileAsStream(abbrDescrPath.toString()),
+            "utf-8"));
 
     // read config file to lists start
     readToLists(in);
@@ -110,12 +98,11 @@ public class AbbrevDescription
 
     // load list of terms that only start with a capital letter when they are
     // at the beginning of a sentence
-    Path nonCapTermsPath =
-    Paths.get(resourceDir).resolve(lang + "_nonCapTerms.txt");
+    Path nonCapTermsPath = Paths.get(resourceDir).resolve(lang + "_nonCapTerms.txt");
     BufferedReader nonCopTermsIn = new BufferedReader(
-      new InputStreamReader(
-        FileTools.openResourceFileAsStream(nonCapTermsPath.toString()),
-        "utf-8"));
+        new InputStreamReader(
+            FileTools.openResourceFileAsStream(nonCapTermsPath.toString()),
+            "utf-8"));
 
     readNonCapTerms(nonCopTermsIn);
 
@@ -124,8 +111,8 @@ public class AbbrevDescription
 
 
   /**
-   * Returns the set of the most common terms that only start with a capital
-   * letter when they are at the beginning of a sentence.
+   * Returns the set of the most common terms that only start with a capital letter when they are at
+   * the beginning of a sentence.
    *
    * @return a set with the terms
    */
@@ -136,8 +123,8 @@ public class AbbrevDescription
 
 
   /**
-   * Reads the list of terms that only start with a capital letter when they are
-   * at the beginning of a sentence from the given reader.<br>
+   * Reads the list of terms that only start with a capital letter when they are at the beginning of
+   * a sentence from the given reader.<br>
    * Immediately returns if the reader is {@code null}.
    *
    * @param in
