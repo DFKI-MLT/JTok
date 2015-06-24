@@ -1,25 +1,24 @@
-JTok V1.10
+JTok V2.14
 written by Joerg Steffen
 Email: steffen@dfki.de
-(c) DFKI, 2003-2012
+(c) DFKI, 2003-2015
 
-This product is licensed to you under the GNU Lesser General Public License, Version 2.1.
-You may not use this product except in compliance with the license.
+This product is licensed to you under the GNU Lesser General Public License, 
+Version 2.11. You may not use this product except in compliance with the
+license.
 
-JTok provides a tokenizer that identifies paragraphs,
-sentences and tokens of an input text. Non-word tokens are further
-classified into abbreviations, numbers, punctuation and clitics.
+JTok provides a configurable tokenizer that identifies paragraphs,
+sentences and tokens of an input text. Tokens can be further
+classified into abbreviations, numbers, punctuation, etc.
 
-The package currently supports English, German and Italian, but can be
-extended easily to other languages.
+The package currently supports English, German and Italian, but also comes with
+a default configuration that can be used for other languages.
 
 The output of JTok is an instance of
 de.dfki.lt.tools.tokenizer.annotate.AnnotatedString, but there are
-methods that translate an AnnotatedString into an XML representation
+methods available that transform an AnnotatedString into an XML representation
 or into instances of Paragraph, TextUnit and Token classes.
 
-The JTok source code is available at
-http://heartofgold.opendfki.de/browser/trunk/jtok
 
 Content:
 ========
@@ -32,12 +31,13 @@ bin
 conf
      The JTok configuration files, especially the language descriptions.
      For each supported language there is a subdirectory that contains
-     several language description files in the XML format that describe
-     the token type hierarchy and definition and rules for matching the
-     different token types. For further details, see commments in the
-     XML files. Make sure to include this directory in front of
-     jtok-core-1.10.jar in the JVM classpath, otherwise the default
-     configuration included in the jar will be used.
+     several language description files that describe the token class hierarchy 
+     and definition and rules for matching the different token classes. For 
+     further details, see comments in the configuration files.
+     A default configuration is provided in the 'default' folder.
+     After modifying configuration files, execute "mvn compile" to make
+     them available to the runtime system or add src/main/resources to
+     the JVM classpath in front of jtok-core-2.14.jar.
      Another option for user specific JTok configuration is to put it
      into a folder 'jtok-user' in the classpath. This location is
      searched first for any JTok configuration. The expected folder

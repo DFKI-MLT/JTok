@@ -177,7 +177,7 @@
               <name>tokenize</name>
             </program>
             <program>
-              <mainClass>de.dfki.lt.tools.tokenizer.output.XMLOutputter</mainClass>
+              <mainClass>de.dfki.lt.tools.tokenizer.output.XmlOutputter</mainClass>
               <name>tokenixe</name>
             </program>
           </programs>
