@@ -8,15 +8,15 @@
   <packaging>jar</packaging>
 
   <name>JTok</name>
-  <description>a configurable tokenizer and sentence splitter</description>
+  <description>A Java-based configurable tokenizer and sentence splitter</description>
 
   <scm>
-    <url>http://heartofgold.opendfki.de/browser/trunk/jtok</url>
+    <url>https://github.com/DFKI-MLT/JTok</url>
   </scm>
 
   <organization>
-    <name>German Research Center for Artificial Intelligence (DFKI)</name>
-    <url>http://www.dfki.de/</url>
+    <name>Multilingual Technologies Department of the German Research Center for Artificial Intelligence, DFKI GmbH</name>
+    <url>http://www.dfki.de/web/research/mlt</url>
   </organization>
 
   <licenses>
@@ -28,8 +28,8 @@
   </licenses>
 
   <issueManagement>
-    <system>Trac</system>
-    <url>http://heartofgold.opendfki.de/wiki/TracSupport</url>
+    <system>GitHub</system>
+    <url>https://github.com/DFKI-MLT/JTok/issues</url>
   </issueManagement>
 
   <developers>
@@ -50,20 +50,14 @@
 
   <distributionManagement>
     <repository>
-      <id>dfki.lt.releases</id>
-      <name>DFKI LT Lab Release Distribution Repository</name>
-      <url>dav:${lt.repositories.base}releases</url>
+      <id>bintray</id>
+      <name>dfki-lt-maven-jtok</name>
+      <url>https://api.bintray.com/maven/dfki-lt/maven/jtok</url>
     </repository>
-    <snapshotRepository>
-      <id>dfki.lt.snapshots</id>
-      <name>DFKI LT Lab Snapshot Distribution Repository</name>
-      <url>dav:${lt.repositories.base}snapshots</url>
-    </snapshotRepository>
   </distributionManagement>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <lt.repositories.base>http://www.dfki.de/intern/lt/maven/content/repositories/</lt.repositories.base>
   </properties>
 
   <dependencies>
@@ -239,26 +233,6 @@
         </configuration>
       </plugin>
     </plugins>
-    <extensions>
-      <extension>
-        <groupId>org.apache.maven.wagon</groupId>
-        <artifactId>wagon-webdav-jackrabbit</artifactId>
-        <version>2.5</version>
-      </extension>
-    </extensions>
   </build>
-
-  <profiles>
-    <profile>
-      <id>bintray</id>
-      <distributionManagement>
-        <repository>
-          <id>bintray</id>
-          <name>dfki-lt-maven-jtok</name>
-          <url>https://api.bintray.com/maven/dfki-lt/maven/jtok</url>
-        </repository>
-      </distributionManagement>
-    </profile>
-  </profiles>
   
 </project>
