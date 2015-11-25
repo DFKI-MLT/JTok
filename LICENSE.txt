@@ -1,4 +1,4 @@
-JTok V2.14
+JTok V2.15
 written by Joerg Steffen
 Email: steffen@dfki.de
 (c) DFKI, 2003-2015
