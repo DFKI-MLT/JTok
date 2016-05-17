@@ -24,6 +24,7 @@ package de.dfki.lt.tools.tokenizer;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.text.CharacterIterator;
 import java.util.HashMap;
 import java.util.List;
@@ -86,7 +87,7 @@ public class JTok {
 
     // load tokenizer configuration
     Properties props = new Properties();
-    props.load(FileTools.openResourceFileAsStream("jtok/jtok.cfg"));
+    props.load(FileTools.openResourceFileAsStream(Paths.get("jtok/jtok.cfg")));
     this.init(props);
   }
 

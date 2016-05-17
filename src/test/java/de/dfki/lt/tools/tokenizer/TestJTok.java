@@ -32,6 +32,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.StringReader;
+import java.nio.file.Paths;
 import java.util.Properties;
 
 import org.junit.BeforeClass;
@@ -62,7 +63,7 @@ public class TestJTok {
       throws IOException {
 
     Properties tokProps = new Properties();
-    InputStream in = FileTools.openResourceFileAsStream("jtok/jtok.cfg");
+    InputStream in = FileTools.openResourceFileAsStream(Paths.get("jtok/jtok.cfg"));
     tokProps.load(in);
     in.close();
     // create new instance of JTok

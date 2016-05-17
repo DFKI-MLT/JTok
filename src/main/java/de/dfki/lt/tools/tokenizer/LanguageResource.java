@@ -112,7 +112,7 @@ public class LanguageResource {
       // load classes hierarchy
       Document doc = builder.parse(
           FileTools.openResourceFileAsStream(
-              Paths.get(resourceDir).resolve(lang + CLASSES_HIERARCHY).toString()));
+              Paths.get(resourceDir).resolve(lang + CLASSES_HIERARCHY)));
       // set hierarchy root
       this.setClassesRoot(doc.getDocumentElement());
       // map class names to dom elements

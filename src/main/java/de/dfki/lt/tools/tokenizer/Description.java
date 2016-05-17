@@ -238,7 +238,7 @@ public abstract class Description {
     try {
       in = new BufferedReader(
           new InputStreamReader(
-              FileTools.openResourceFileAsStream(macroPath.toString()),
+              FileTools.openResourceFileAsStream(macroPath),
               "utf-8"));
     } catch (FileNotFoundException fne) {
       return macroMap;
@@ -532,7 +532,7 @@ public abstract class Description {
     BufferedReader in =
         new BufferedReader(
             new InputStreamReader(
-                FileTools.openResourceFileAsStream(listPath.toString()),
+                FileTools.openResourceFileAsStream(listPath),
                 StandardCharsets.UTF_8));
     // init set where to store the abbreviations
     Set<String> items = new HashSet<String>();

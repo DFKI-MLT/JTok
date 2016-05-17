@@ -29,10 +29,14 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.URI;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -370,32 +374,37 @@ public final class FileTools {
 
 
   /**
-   * Returns an input stream for the given resource file.
+   * Returns an input stream for the given resource.
    *
-   * @param resourceFileName
-   *          the resource name
-   * @return an input stream where to read from the content of the resource file
+   * @param resourcePath
+   *          the resource path
+   * @return an input stream where to read from the content of the resource
    * @throws IOException
    *           if there is an error when reading the resource
    */
-  public static InputStream openResourceFileAsStream(String resourceFileName)
+  public static InputStream openResourceFileAsStream(Path resourcePath)
       throws IOException {
 
+    // convert to OS agnostic representation for classpath lookup
+    URI resourceUri = resourcePath.toUri();
+    String cpLookupString =
+        Paths.get("").toAbsolutePath().toUri().relativize(resourceUri).toString();
+
     // first check for any user specific configuration in 'jtok-user'
-    InputStream is = ClassLoader.getSystemResourceAsStream("jtok-user/" + resourceFileName);
+    InputStream is = ClassLoader.getSystemResourceAsStream("jtok-user/" + cpLookupString);
     if (null == is) {
-      is = ClassLoader.getSystemResourceAsStream(resourceFileName);
+      is = ClassLoader.getSystemResourceAsStream(cpLookupString);
       if (null == is) {
         // try local loader with absolute path
-        is = FileTools.class.getResourceAsStream("/" + resourceFileName);
+        is = FileTools.class.getResourceAsStream("/" + cpLookupString);
         if (null == is) {
           // try local loader, relative, just in case
-          is = FileTools.class.getResourceAsStream(resourceFileName);
+          is = FileTools.class.getResourceAsStream(cpLookupString);
           if (null == is) {
             // can't find it on classpath, so try relative to current directory
             // this will throw security exception under and applet but there's
             // no other choice left
-            is = new FileInputStream(resourceFileName);
+            is = Files.newInputStream(resourcePath);
           }
         }
       }

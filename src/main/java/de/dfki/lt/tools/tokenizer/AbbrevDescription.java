@@ -79,7 +79,7 @@ public class AbbrevDescription extends Description {
     Path abbrDescrPath = Paths.get(resourceDir).resolve(lang + ABBREV_DESCR);
     BufferedReader in = new BufferedReader(
         new InputStreamReader(
-            FileTools.openResourceFileAsStream(abbrDescrPath.toString()),
+            FileTools.openResourceFileAsStream(abbrDescrPath),
             "utf-8"));
 
     // read config file to lists start
@@ -101,7 +101,7 @@ public class AbbrevDescription extends Description {
     Path nonCapTermsPath = Paths.get(resourceDir).resolve(lang + "_nonCapTerms.txt");
     BufferedReader nonCopTermsIn = new BufferedReader(
         new InputStreamReader(
-            FileTools.openResourceFileAsStream(nonCapTermsPath.toString()),
+            FileTools.openResourceFileAsStream(nonCapTermsPath),
             "utf-8"));
 
     readNonCapTerms(nonCopTermsIn);

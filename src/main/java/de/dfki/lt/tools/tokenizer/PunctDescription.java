@@ -96,7 +96,7 @@ public class PunctDescription extends Description {
     Path punctDescrPath = Paths.get(resourceDir).resolve(lang + PUNCT_DESCR);
     BufferedReader in = new BufferedReader(
         new InputStreamReader(
-            FileTools.openResourceFileAsStream(punctDescrPath.toString()),
+            FileTools.openResourceFileAsStream(punctDescrPath),
             "utf-8"));
 
     // read config file to definitions start

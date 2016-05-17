@@ -72,7 +72,7 @@ public class CliticsDescription extends Description {
     Path clitDescrPath = Paths.get(resourceDir).resolve(lang + CLITIC_DESCR);
     BufferedReader in = new BufferedReader(
         new InputStreamReader(
-            FileTools.openResourceFileAsStream(clitDescrPath.toString()),
+            FileTools.openResourceFileAsStream(clitDescrPath),
             "utf-8"));
 
     // read config file to definitions start

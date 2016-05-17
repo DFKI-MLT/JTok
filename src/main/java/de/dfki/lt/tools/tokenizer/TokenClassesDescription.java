@@ -69,7 +69,7 @@ public class TokenClassesDescription extends Description {
     Path tokClassesDescrPath = Paths.get(resourceDir).resolve(lang + CLASS_DESCR);
     BufferedReader in = new BufferedReader(
         new InputStreamReader(
-            FileTools.openResourceFileAsStream(tokClassesDescrPath.toString()),
+            FileTools.openResourceFileAsStream(tokClassesDescrPath),
             "utf-8"));
 
     // read config file to definitions start
