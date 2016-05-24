@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/DFKI-MLT/JTok.svg?branch=master)](https://travis-ci.org/DFKI-MLT/JTok)
 
-V2.0.17
+V2.1.17
 
 written by Jörg Steffen
 
