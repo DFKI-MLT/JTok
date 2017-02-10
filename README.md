@@ -2,13 +2,13 @@
 
 [![Build Status](https://travis-ci.org/DFKI-MLT/JTok.svg?branch=master)](https://travis-ci.org/DFKI-MLT/JTok)
 
-V2.1.17
+V2.1.18
 
 written by Jörg Steffen
 
 Email: steffen@dfki.de
 
-(c) DFKI, 2003-2016
+(c) DFKI, 2003-2017
 
 This product is licensed to you under the GNU Lesser General Public License, Version 2.11. You may not use this product except in compliance with the license.
 
