@@ -799,24 +799,7 @@ public class JTok {
               || langRes.isAncestor(
                   PunctDescription.TERM_PUNCT_P,
                   (String)input.getAnnotation(CLASS_ANNO))) {
-            // check if next token is a whitespace or a sentence
-            // continuing token
-            input.setIndex(tokenEnd);
-            if (null == input.getAnnotation(CLASS_ANNO)
-                || langRes.isAncestor(
-                    PunctDescription.TERM_PUNCT,
-                    (String)input.getAnnotation(CLASS_ANNO))
-                || langRes.isAncestor(
-                    PunctDescription.TERM_PUNCT_P,
-                    (String)input.getAnnotation(CLASS_ANNO))
-                || langRes.isAncestor(
-                    PunctDescription.CLOSE_PUNCT,
-                    (String)input.getAnnotation(CLASS_ANNO))
-                || langRes.isAncestor(
-                    PunctDescription.CLOSE_BRACKET,
-                    (String)input.getAnnotation(CLASS_ANNO))) {
-              eosMode = true;
-            }
+            eosMode = true;
           } else if (langRes.isAncestor(
               AbbrevDescription.B_ABBREVIATION,
               (String)input.getAnnotation(CLASS_ANNO))) {
