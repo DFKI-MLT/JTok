@@ -209,7 +209,7 @@ public class Token {
    */
   public static String applyPtbFormat(String image, String type) {
 
-    String result = null;
+    String result = image;
 
     if (type.equals(PunctDescription.OPEN_BRACKET)) {
 
