@@ -51,10 +51,15 @@
 
   <distributionManagement>
     <repository>
-      <id>bintray</id>
-      <name>dfki-lt-maven-jtok</name>
-      <url>https://api.bintray.com/maven/dfki-lt/maven/jtok</url>
+      <id>jfrog</id>
+      <name>mlt-mvn-releases-local</name>
+      <url>https://mlt.jfrog.io/artifactory/mlt-mvn-releases-local/</url>
     </repository>
+    <snapshotRepository>
+      <id>jfrog</id>
+      <name>mlt-mvn-snapshots-local</name>
+      <url>https://mlt.jfrog.io/artifactory/mlt-mvn-snapshots-local/</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <properties>
