@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
@@ -15,8 +16,8 @@
   </scm>
 
   <organization>
-    <name>Multilingual Technologies Department of the German Research Center for Artificial Intelligence, DFKI GmbH</name>
-    <url>http://www.dfki.de/web/research/mlt</url>
+    <name>Multilinguality and Language Technology (MLT) research department of the German Research Center for Artificial Intelligence, DFKI GmbH</name>
+    <url>https://www.dfki.de/web/forschung/forschungsbereiche/sprachtechnologie-und-multilingualitaet/</url>
   </organization>
 
   <licenses>
@@ -37,9 +38,9 @@
       <id>steffen</id>
       <name>Joerg Steffen</name>
       <email>steffen@dfki.de</email>
-      <url>http://www.dfki.de/~steffen/</url>
+      <url>https://www.dfki.de/web/ueber-uns/mitarbeiter/person/jost02/</url>
       <organization>German Research Center for Artificial Intelligence (DFKI)</organization>
-      <organizationUrl>http://www.dfki.de/</organizationUrl>
+      <organizationUrl>https://www.dfki.de/</organizationUrl>
       <roles>
         <role>architect</role>
         <role>developer</role>
@@ -218,5 +219,5 @@
       </plugin>
     </plugins>
   </build>
-  
+
 </project>
