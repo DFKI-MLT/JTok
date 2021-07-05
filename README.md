@@ -1,6 +1,6 @@
 # JTok
 
-[![Build Status](https://travis-ci.org/DFKI-MLT/JTok.svg?branch=master)](https://travis-ci.org/DFKI-MLT/JTok)
+[![Build Status](https://travis-ci.com/DFKI-MLT/JTok.svg?branch=master)](https://travis-ci.com/DFKI-MLT/JTok)
 
 V2.1.19
 
