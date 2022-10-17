@@ -234,36 +234,32 @@ public abstract class Description {
       throws IOException {
 
     // read config file
-    BufferedReader in = null;
-    try {
-      in = new BufferedReader(
-          new InputStreamReader(
-              FileTools.openResourceFileAsStream(macroPath),
-              "utf-8"));
+    try (BufferedReader in = new BufferedReader(new InputStreamReader(
+                    FileTools.openResourceFileAsStream(macroPath), "utf-8"))) {
+        String line;
+        while ((line = in.readLine()) != null) {
+          line = line.trim();
+          if (line.length() == 0 || line.startsWith("#")) {
+            continue;
+          }
+          int sep = line.indexOf(":");
+          if (sep == -1) {
+            throw new InitializationException(
+                String.format("missing separator in macros configuration line %s", line));
+          }
+          String macroName = line.substring(0, sep).trim();
+          String regExpString = line.substring(sep + 1).trim();
+
+          // expand possible macros
+          regExpString = replaceReferences(regExpString, macroMap);
+
+          macroMap.put(macroName, regExpString);
+        }
+
+        return macroMap;
     } catch (FileNotFoundException fne) {
       return macroMap;
     }
-    String line;
-    while ((line = in.readLine()) != null) {
-      line = line.trim();
-      if (line.length() == 0 || line.startsWith("#")) {
-        continue;
-      }
-      int sep = line.indexOf(":");
-      if (sep == -1) {
-        throw new InitializationException(
-            String.format("missing separator in macros configuration line %s", line));
-      }
-      String macroName = line.substring(0, sep).trim();
-      String regExpString = line.substring(sep + 1).trim();
-
-      // expand possible macros
-      regExpString = replaceReferences(regExpString, macroMap);
-
-      macroMap.put(macroName, regExpString);
-    }
-
-    return macroMap;
   }
 
 
