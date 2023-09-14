@@ -1,6 +1,6 @@
 # JTok
 
-[![Build Status](https://travis-ci.com/DFKI-MLT/JTok.svg?branch=master)](https://travis-ci.com/DFKI-MLT/JTok)
+[![mvn build](https://github.com/DFKI-MLT/JTok/actions/workflows/maven.yml/badge.svg)](https://github.com/DFKI-MLT/JTok/actions/workflows/maven.yml)
 
 V2.1.19
 
