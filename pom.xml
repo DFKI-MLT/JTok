@@ -49,19 +49,6 @@
     </developer>
   </developers>
 
-  <distributionManagement>
-    <repository>
-      <id>jfrog</id>
-      <name>mlt-mvn-releases-local</name>
-      <url>https://mlt.jfrog.io/artifactory/mlt-mvn-releases-local/</url>
-    </repository>
-    <snapshotRepository>
-      <id>jfrog</id>
-      <name>mlt-mvn-snapshots-local</name>
-      <url>https://mlt.jfrog.io/artifactory/mlt-mvn-snapshots-local/</url>
-    </snapshotRepository>
-  </distributionManagement>
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>11</maven.compiler.source>
