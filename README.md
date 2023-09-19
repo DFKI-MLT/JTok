@@ -2,7 +2,7 @@
 
 [![mvn build](https://github.com/DFKI-MLT/JTok/actions/workflows/maven.yml/badge.svg)](https://github.com/DFKI-MLT/JTok/actions/workflows/maven.yml)
 
-V2.1.20
+V2.1.21
 
 written by Jörg Steffen
 
