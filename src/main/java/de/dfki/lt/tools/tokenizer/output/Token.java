@@ -227,7 +227,7 @@ public class Token {
    *
    * @param image a <code>String</code>
    * @param type a <code>String</code>
-   * @return a modified <code>String</code> or <code>null,/code> if no
+   * @return a modified <code>String</code> or <code>null</code> if no
    * replacement took place
    */
   public static String applyPtbFormat(String image, String type) {

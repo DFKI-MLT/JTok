@@ -316,7 +316,7 @@ public class FileTools {
   /**
    * This returns an input stream for the given resource file.
    *
-   * @param resourceFileName a <code>String with the resource name
+   * @param resourceFileName a <code>String</code> with the resource name
    * @return an <code>InputStream</code> where to read from the content of the
    * resource file
    * @throws FileNotFoundException if there is an error when reading the
