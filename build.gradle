@@ -26,6 +26,40 @@ publishing {
     publications {
         maven(MavenPublication) {
             from components.java
+            pom {
+                name = 'JTok'
+                description = 'tokenizer and sentence splitter'
+                organization {
+                    name = 'German Research Center for Artificial Intelligence (DFKI)'
+                    url = 'http://www.dfki.de/'
+                }
+                licenses {
+                    license {
+                        name = 'GNU Lesser General Public License (LGPL) in version 2.1 or higher'
+                        url = 'http://www.gnu.org/licenses/#LGPL'
+                        distribution = 'repo'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'steffen'
+                        name = 'Joerg Steffen'
+                        email = 'steffen@dfki.de'
+                        url = 'http://www.dfki.de/~steffen/'
+                        organization = 'German Research Center for Artificial Intelligence (DFKI)'
+                        organizationUrl = 'http://www.dfki.de/'
+                        roles = ['architect', 'developer']
+                        timezone = '+1'
+                    }
+                }
+                scm {
+                    url = 'http://heartofgold.opendfki.de/browser/trunk/jtok'
+                }
+                issueManagement {
+                    system = 'Trac'
+                    url = 'http://heartofgold.opendfki.de/wiki/TracSupport'
+                }
+            }
         }
     }
 }
