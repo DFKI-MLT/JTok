@@ -1,5 +1,6 @@
 plugins {
     id 'java-library'
+    id 'application'
     id 'maven-publish'
 }
 
@@ -20,6 +21,11 @@ java {
     sourceCompatibility = 1.6
     withJavadocJar()
     withSourcesJar()
+}
+
+application {
+    mainClass = 'de.dfki.lt.tools.tokenizer.JTok'
+    applicationName = 'tokenize'
 }
 
 publishing {
