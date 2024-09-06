@@ -33,10 +33,10 @@ publishing {
             from components.java
             pom {
                 name = 'JTok'
-                description = 'tokenizer and sentence splitter'
+                description = 'A Java-based configurable tokenizer and sentence splitter'
                 organization {
-                    name = 'German Research Center for Artificial Intelligence (DFKI)'
-                    url = 'http://www.dfki.de/'
+                    name = 'Multilinguality and Language Technology (MLT) research department of the German Research Center for Artificial Intelligence, DFKI GmbH'
+                    url = 'https://www.dfki.de/web/forschung/forschungsbereiche/sprachtechnologie-und-multilingualitaet/'
                 }
                 licenses {
                     license {
@@ -50,19 +50,19 @@ publishing {
                         id = 'steffen'
                         name = 'Joerg Steffen'
                         email = 'steffen@dfki.de'
-                        url = 'http://www.dfki.de/~steffen/'
+                        url = 'https://www.dfki.de/web/ueber-uns/mitarbeiter/person/jost02/'
                         organization = 'German Research Center for Artificial Intelligence (DFKI)'
-                        organizationUrl = 'http://www.dfki.de/'
+                        organizationUrl = 'https://www.dfki.de/'
                         roles = ['architect', 'developer']
                         timezone = '+1'
                     }
                 }
                 scm {
-                    url = 'http://heartofgold.opendfki.de/browser/trunk/jtok'
+                    url = 'https://github.com/DFKI-MLT/JTok'
                 }
                 issueManagement {
-                    system = 'Trac'
-                    url = 'http://heartofgold.opendfki.de/wiki/TracSupport'
+                    system = 'GitHub'
+                    url = 'https://github.com/DFKI-MLT/JTok/issues'
                 }
             }
         }
