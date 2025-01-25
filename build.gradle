@@ -6,7 +6,7 @@ plugins {
 }
 
 group 'de.dfki.lt.jtok'
-version '1.10.0-SNAPSHOT'
+version '1.9.4'
 
 ext {
     url = 'https://github.com/DFKI-MLT/JTok'
