@@ -7,7 +7,11 @@ plugins {
 
 group 'de.dfki.lt.jtok'
 version '1.10.0-SNAPSHOT'
-ext.isReleaseVersion = !version.endsWith("SNAPSHOT")
+
+ext {
+    url = 'https://github.com/DFKI-MLT/JTok'
+    isReleaseVersion = !version.endsWith("SNAPSHOT")
+}
 
 repositories {
     mavenCentral()
@@ -36,6 +40,7 @@ publishing {
             pom {
                 name = 'JTok'
                 description = 'A Java-based configurable tokenizer and sentence splitter'
+                url = project.url
                 organization {
                     name = 'Multilinguality and Language Technology (MLT) research department of the German Research Center for Artificial Intelligence, DFKI GmbH'
                     url = 'https://www.dfki.de/web/forschung/forschungsbereiche/sprachtechnologie-und-multilingualitaet/'
@@ -60,11 +65,11 @@ publishing {
                     }
                 }
                 scm {
-                    url = 'https://github.com/DFKI-MLT/JTok'
+                    url = project.url
                 }
                 issueManagement {
                     system = 'GitHub'
-                    url = 'https://github.com/DFKI-MLT/JTok/issues'
+                    url = "$project.url/issues"
                 }
             }
         }
