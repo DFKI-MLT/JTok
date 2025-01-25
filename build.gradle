@@ -2,10 +2,12 @@ plugins {
     id 'java-library'
     id 'application'
     id 'maven-publish'
+    id 'signing'
 }
 
 group 'de.dfki.lt.jtok'
 version '1.10.0-SNAPSHOT'
+ext.isReleaseVersion = !version.endsWith("SNAPSHOT")
 
 repositories {
     mavenCentral()
@@ -67,4 +69,13 @@ publishing {
             }
         }
     }
+}
+
+signing {
+    required { isReleaseVersion }
+    sign publishing.publications.maven
+}
+
+tasks.withType(Sign).configureEach {
+    onlyIf { isReleaseVersion }
 }
