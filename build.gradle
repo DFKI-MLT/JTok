@@ -69,6 +69,14 @@ publishing {
             }
         }
     }
+    repositories {
+        maven {
+            name 'OSSRH'
+            url isReleaseVersion ? 'https://oss.sonatype.org/service/local/staging/deploy/maven2/'
+                    : 'https://oss.sonatype.org/content/repositories/snapshots'
+            credentials(PasswordCredentials)
+        }
+    }
 }
 
 signing {
