@@ -2,13 +2,13 @@
 
 [![mvn build](https://github.com/DFKI-MLT/JTok/actions/workflows/maven.yml/badge.svg)](https://github.com/DFKI-MLT/JTok/actions/workflows/maven.yml)
 
-V2.1.21
+V2.1.22
 
 written by Jörg Steffen
 
 Email: steffen@dfki.de
 
-(c) DFKI, 2003-2023
+(c) DFKI, 2003-2025
 
 This product is licensed to you under the GNU Lesser General Public License, Version 2.11. You may not use this product except in compliance with the license.
 

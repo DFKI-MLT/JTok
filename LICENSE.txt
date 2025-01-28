@@ -1,7 +1,7 @@
-JTok V2.1.21
+JTok V2.1.22
 written by Joerg Steffen
 Email: steffen@dfki.de
-(c) DFKI, 2003-2023
+(c) DFKI, 2003-2025
 
 This product is licensed to you under the GNU Lesser General Public
 License, Version 2.1. You may not use this product except in
