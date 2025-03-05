@@ -10,14 +10,17 @@
 
   <name>JTok</name>
   <description>A Java-based configurable tokenizer and sentence splitter</description>
+  <url>https://github.com/DFKI-MLT/JTok</url>
 
   <scm>
-    <url>https://github.com/DFKI-MLT/JTok</url>
+    <connection>scm:git:git://github.com/DFKI-MLT/JTok.git</connection>
+    <developerConnection>scm:git:ssh://github.com/DFKI-MLT/JTok.git</developerConnection>
+    <url>https://github.com/DFKI-MLT/JTok/tree/master</url>
   </scm>
 
   <organization>
     <name>Multilinguality and Language Technology (MLT) research department of the German Research Center for Artificial Intelligence, DFKI GmbH</name>
-    <url>https://www.dfki.de/web/forschung/forschungsbereiche/sprachtechnologie-und-multilingualitaet/</url>
+    <url>https://www.dfki.de/en/web/research/research-departments/multilinguality-and-language-technology</url>
   </organization>
 
   <licenses>
@@ -36,9 +39,9 @@
   <developers>
     <developer>
       <id>steffen</id>
-      <name>Joerg Steffen</name>
+      <name>Jörg Steffen</name>
       <email>steffen@dfki.de</email>
-      <url>https://www.dfki.de/web/ueber-uns/mitarbeiter/person/jost02/</url>
+      <url>https://www.dfki.de/en/web/about-us/employee/person/jost02</url>
       <organization>German Research Center for Artificial Intelligence (DFKI)</organization>
       <organizationUrl>https://www.dfki.de/</organizationUrl>
       <roles>
@@ -48,6 +51,17 @@
       <timezone>+1</timezone>
     </developer>
   </developers>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -103,12 +117,12 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
-        <version>2.1.2</version>
+        <version>2.2.1</version>
         <executions>
           <execution>
             <id>attach-sources</id>
             <goals>
-              <goal>jar</goal>
+              <goal>jar-no-fork</goal>
             </goals>
           </execution>
         </executions>
@@ -116,7 +130,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.7</version>
+        <version>2.9.1</version>
         <executions>
           <execution>
             <id>attach-javadocs</id>
@@ -125,6 +139,38 @@
             </goals>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <version>1.5</version>
+        <executions>
+          <execution>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+            <configuration>
+              <keyname>${gpg.keyname}</keyname>
+              <gpgArguments>
+                <arg>--pinentry-mode</arg>
+                <arg>loopback</arg>
+              </gpgArguments>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>1.6.7</version>
+        <extensions>true</extensions>
+        <configuration>
+           <serverId>ossrh</serverId>
+           <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+           <autoReleaseAfterClose>false</autoReleaseAfterClose>
+        </configuration>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
