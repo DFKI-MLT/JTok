@@ -1,8 +1,9 @@
 # JTok
 
 [![mvn build](https://github.com/DFKI-MLT/JTok/actions/workflows/maven.yml/badge.svg)](https://github.com/DFKI-MLT/JTok/actions/workflows/maven.yml)
+![Maven Central Version](https://img.shields.io/maven-central/v/de.dfki.lt.jtok/jtok-core)
 
-V2.1.22
+V2.1.23
 
 written by Jörg Steffen
 

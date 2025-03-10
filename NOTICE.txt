@@ -1,4 +1,4 @@
-JTok V2.1.22
+JTok V2.1.23
 written by Joerg Steffen
 Email: steffen@dfki.de
 (c) DFKI, 2003-2025
