@@ -115,7 +115,7 @@ public class JTok {
   private void init(Properties configProps) {
 
     if (configProps.get(DEFAULT) == null) {
-      logger.error("missing default language resources");
+      logger.debug("missing default language resources");
     }
 
     this.langResources = new HashMap<>();
